@@ -1,0 +1,9 @@
+name: "carlos-website"
+output_dir: "."
+navbar:
+  title: "Carlos Algara"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "About Me"
+      href: about.html
