@@ -1,0 +1,12 @@
+---
+title: Curriculum Vitae
+date: 2017-05-29
+share: FALSE
+output: html_document
+---
+
+Below is my CV, or you can [download my CV in pdf format]("Algara_CV.pdf").
+
+<object data="Algara_CV.pdf" type="application/pdf" width="100%" height=800>
+<iframe src="Algara_CV.pdf" width="100%" height="100%" style="border: none;"></iframe>
+</object>

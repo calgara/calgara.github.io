@@ -5,5 +5,26 @@ navbar:
   left:
     - text: "Home"
       href: index.html
+      
+    - text: "Curriculum Vitae"
+      href: cv.html
+      
+    - text: "Research"
+      href: research.html
+      
+    - text: "Teaching"
+      href: teaching.html
+      menu:
+        - text: "POL 1, Summer Session 2017"
+          href: pol1s2017.html
+      
+    - text: "Blog"
+      href: blog.html
+      
     - text: "About Me"
       href: about.html
+      
+output:
+  html_document:
+    theme: flatly
+    css: style.css
