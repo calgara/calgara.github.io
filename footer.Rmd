@@ -1,0 +1,4 @@
+---
+output: html_document
+---
+<p>Copyright &copy; 2017 by Carlos Algara. Made with [RStudio](http://http://rstudio.com/).</p>
