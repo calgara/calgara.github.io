@@ -10,7 +10,6 @@ navbar:
       href: cv.html
       
     - text: "Research"
-      href: research.html
       menu:
         - text: "Dissertation Manuscripts"
           href: dissertation.html
@@ -18,7 +17,6 @@ navbar:
           href: working_papers.html
       
     - text: "Teaching"
-      href: teaching.html
       menu:
         - text: "POL 1, Summer Session 2017"
           href: pol1s2017.html
