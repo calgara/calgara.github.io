@@ -24,7 +24,7 @@ h1.title {
 "Popular government in a nation of more than 150 million people requires political parties which provide the electorate with a proper range of choice between alternatives of action." -***American Political Science Association*** (1950)<br/>
 <br/>
 Broadly, my dissertation evaluates how voters hold individual candidates accountable for voter perceptions of congressional job performance and what incentives emerge from this type of collective accountability.  
-<left> [Dissertation Abstract]("https://calgara.github.io/dissertation_abstract.pdf") </left>   
+<left> [Dissertation Abstract](https://calgara.github.io/dissertation_abstract.pdf) </left>   
 
   </script>
   <br/><br/>
@@ -36,7 +36,7 @@ Broadly, my dissertation evaluates how voters hold individual candidates account
 <center> **The "Collective Congress" on the Ballot? A Voter & Aggregate Level Analysis of Collective Responsibility in Congressional Elections** </center><br/>
   <div style='font-size: 89.9%;'> *Abstract:* Analyzing individual and aggregate level data, this study produces several key findings: (1) assessments of congressional job performance are directly tied to the electoral standing of the majority party; (2) positive approval ratings raise the level of support for majority party candidates among minority partisans and those closest to the minority in ideological proximity; (3) majority party incumbents gain more from congressional approval than non-incumbents and suffer less of a loss from congressional disapproval; (4) the impact of congressional approval on majority party fortunes is conditioned by how cohesive the majority party is.
   <br/>
-<left> [Full Abstract]("https://calgara.github.io/Algara_Prospectus_Ch1_Spring2017.pdf") </left> </div></div>
+<left> [Full Abstract](https://calgara.github.io/Algara_Prospectus_Ch1_Spring2017.pdf) </left> </div></div>
   </div>
 
   </script>
@@ -49,7 +49,7 @@ Broadly, my dissertation evaluates how voters hold individual candidates account
   <center> **Collective Accountability in Congressional Elections: An Analysis of Congressional Approval & Ideological Extremity** </center><br/>
   *Abstract:* Using voter and aggregate-level data, this paper argues that congressional approval indicates satisfaction with the policies and positions espoused by the median legislator of the majority party and that the effect of approval on the electoral fortunes is conditioned by the relative distance between the member and the pivotal majority median legislator. This paper finds support for this argument and contributes to the broad literature on collective accountability by finding that the effect of approval on electoral outcomes is both heterogeneous across members and conditioned by relative ideological extremity.
 <br/>
-<left> [Full Abstract]("https://calgara.github.io/Algara_Prospectus_Ch2_Spring2017.pdf") </left>
+<left> [Full Abstract](https://calgara.github.io/Algara_Prospectus_Ch2_Spring2017.pdf) </left>
 <br/>
 <br/>
 <p>Copyright &copy; 2017 by Carlos Algara. Made with [RStudio](http://http://rstudio.com/).</p>
