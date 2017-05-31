@@ -1,1 +1,3 @@
-# calgara.github.io
+# Welcome! This is the repository for my academic website built using Rmarkdown using the Rstudio interface. While relatively simple, this website provides the raw files articulating my research/teaching projects and replication code. Any questions or comments are most certaintly appreciated! Feel free to connect with me [calgara@ucdavis.edu](mailto:calgara@ucdavis.edu) or follow me on Twitter below!
+#<br>  
+#<a href = "https://twitter.com/algaraca"><img src="/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/twitter.png" alt="Twitter Logo" style="width:125px;" align ="left"></a>
