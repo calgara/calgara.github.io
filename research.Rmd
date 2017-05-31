@@ -1,6 +1,4 @@
 ---
-title: "Research"
+title: "Research in Progress"
 output: html_document
 ---
-
-Coming soon!
