@@ -4,7 +4,7 @@ subtitle: "University of California, Davis"
 date: "Summer 2017"
 author: 
 - "[Carlos Algara](mailto:calgara@ucdavis.edu)"
-- "*Download Syllabus [Here](http://campusmap.ucdavis.edu/?b=24)*"
+- "*Download Syllabus [Here](Pol1_Summer2017_Syllabus.pdf)*"
 output: html_document
 ---
 <br/>
@@ -35,14 +35,3 @@ This section of the syllabus serves a guide for course expectations (both for me
   
 ***Expectations***: Students can expect me to come prepared to seminar. This entails that students can expect me to give a strong effort to convey the given seminar's course concepts and the implications these concepts have for the main questions highlighted in the course description. This seminar will be taught in a *dynamic* fashion which will require full participation from *everyone* in the seminar. As such, most lectures will incorporate activities designed to stimulate student involvement and gage comprehension of the material. It is critical that everyone (including me) is *prepared* to discuss the seminar's assigned reading for that day and come ready to discuss the concepts and how what implications these concepts have for assessing the quality of American democracy.  
   
-***Grade Breakdown***
-  
-* 75% Midterm & Final Exam  
-* 25% Seminar Participation & Research Participation (if applicable)  
-
-  <div style='width: 900px; text-align: center; font-size: 85%;'>*Grading Rubric* <br>
-  <img src="/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/grade_table.png" alt="grade table" style="width:575px;" align = "center"/> </div>
-<br/>
-  
-***Exams:*** The midterm & final exam will feature two main components: short answer and essay. The short answer component will be both the ***definition*** and ***significance*** of a concept discussed in lecture and in the readings. The essays will require the student to use the course concepts to *develop an argument* in response to stated essay question. This includes a thesis statement and supporting evidence for the thesis statement. Study guides will be provided a week before the exam along with ``what constitutes an excellent'' short answer and essay. The midterm is worth 35% while the *cumulative* final exam is worth 40%.
-
