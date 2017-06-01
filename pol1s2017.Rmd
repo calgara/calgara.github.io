@@ -1,6 +1,48 @@
 ---
-title: "POL 1: Introduction to American Politics Summer Session 2017"
+title: "POL 1: Introduction to American Politics"
+subtitle: "University of California, Davis"
+date: "Summer 2017"
+author: 
+- "[Carlos Algara](mailto:calgara@ucdavis.edu)"
+- "*Download Syllabus [Here](http://campusmap.ucdavis.edu/?b=24)*"
 output: html_document
 ---
+<br/>
 
-Coming Soon
+## Class Time, Office Hours & Course Materials
+  
+***Lecture***: [Bainer Hall 1130](http://campusmap.ucdavis.edu/?b=24); Monday, Tuesday, Wednesday 12:10-1:50  
+***Office Hours***: [Kerr Hall 663](http://ps.udavis.edu); Wednesday 2:10-4:30  
+***Course Materials***: [Canvas](http://canvas.ucdavis.edu) & [GitPage](http://calgara.github.io/pol1s2017.html)  
+<br/>
+
+# Course Objective: How do we study & assess American democracy?  
+  
+This course offers an introduction to the systematic and meticulous study of American politics. Building on the scientific foundation of political science, this course is designed to provide an understanding into the behavior of ***citizens*** and ***institutions*** operating within the national framework of American government.  The main question motivating the course is a simple, yet complex one: how well does the American political system live up to the ideals of a representative democracy? Recognizing that representative democracy requires engaged citizens and responsive institutions, the motivating question of the course hinges on understanding:  
+  
+* How does James Madison's "Republic"" provide the fundamental theory that justifies the representative framework which underlies the American political system and what are the role of ***citizens*** and elites within this "ideal"" framework?  
+  
+* How do individual ***citizens*** make political decisions, such as which  candidate to vote for and what policies & political positions (preferences) to hold? What are the implications of how ***citizens*** make decisions for Madison's framework and the function of democracy?  
+  
+* What incentives motivate how elected elites (politicians) behave within the ***institution*** (i.e. the Congress and the presidency) in which they serve and what are the implications of differing incentives across ***institutions*** for responsiveness (policymaking)? How does collective ***institutional*** behavior, such as gridlock, fit into Madison's view of democracy?  
+  
+These thematic questions may seem daunting, but this course will give you the  necessary framework to perform careful political and social science analysis to gain leverage on these questions. This course will provide not only an understanding of how to think of the quality of American democracy but also how to engage in careful social science analysis. This course emphasizes the tools you need to assess political behaviors, practices, and institutions based on theory and evidence. Welcome to the class!  
+<br/>
+
+# Course Logistics & Requirements
+  
+This section of the syllabus serves a guide for course expectations (both for me and for you) and logistical information such as grade breakdown and course texts.  
+  
+***Expectations***: Students can expect me to come prepared to seminar. This entails that students can expect me to give a strong effort to convey the given seminar's course concepts and the implications these concepts have for the main questions highlighted in the course description. This seminar will be taught in a *dynamic* fashion which will require full participation from *everyone* in the seminar. As such, most lectures will incorporate activities designed to stimulate student involvement and gage comprehension of the material. It is critical that everyone (including me) is *prepared* to discuss the seminar's assigned reading for that day and come ready to discuss the concepts and how what implications these concepts have for assessing the quality of American democracy.  
+  
+***Grade Breakdown***
+  
+* 75% Midterm & Final Exam  
+* 25% Seminar Participation & Research Participation (if applicable)  
+
+  <div style='width: 900px; text-align: center; font-size: 85%;'>*Grading Rubric* <br>
+  <img src="/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/grade_table.png" alt="grade table" style="width:575px;" align = "center"/> </div>
+<br/>
+  
+***Exams:*** The midterm & final exam will feature two main components: short answer and essay. The short answer component will be both the ***definition*** and ***significance*** of a concept discussed in lecture and in the readings. The essays will require the student to use the course concepts to *develop an argument* in response to stated essay question. This includes a thesis statement and supporting evidence for the thesis statement. Study guides will be provided a week before the exam along with ``what constitutes an excellent'' short answer and essay. The midterm is worth 35% while the *cumulative* final exam is worth 40%.
+
