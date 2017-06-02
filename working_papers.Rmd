@@ -44,7 +44,7 @@ h1.title {
   </div>
   <center> **The U.S. Congress and the Israeli Lobby: An Analysis of the Determinants of Congressional Support for Iranian Sanctions** </center><br/>
   <center> *With Evan Sandlin, PhD Candidate, University of California, Davis* </center><br/>
-  *Abstract:* Using the case of U.S. sanctions against Iran, this paper explores the role of constituent-level and elite level variables in determining an individual congressperson’s acquiescence to the “pro-Israel” position. These findings have implications for causes of the continued strength of the US-Israel relationship as well as implications for the determinants of congressional foreign policy positions more broadly.  
+  *Abstract:* Using the case of U.S. sanctions against Iran, this paper explores the role of constituent-level and elite-level variables in determining an individual congressperson’s acquiescence to the “pro-Israel” position. These findings have implications for causes of the continued strength of the US-Israel relationship as well as implications for the determinants of congressional foreign policy positions more broadly.  
 <left> [Full Abstract](https://calgara.github.io/MPSA2017_Sandlin_Algara_Abstract.pdf) </left>
 <br/>
 <br/>
