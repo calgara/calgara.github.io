@@ -31,5 +31,127 @@ These thematic questions may seem daunting, but this course will give you the  n
 
 ## Course Road-Map & Materials  
 <br/>
+*Note:* Slidesets are posted under the meeting headers.  
+<br/>
+  
+## *1. Madison's Republic: Foundation of American Democracy*  
+***Section Objective***: Madison's theory of representative democracy, outlined in ***Federalist 10 & 51***, outlines the justification for the American constitution and our representative form of government. This section provides an understanding of the motivation underpinning a representative form of democracy, centered around Madison's argument about human nature, how representatives behave in political life, and the consequences of Madison's argument on political change. Ask yourself, is Madison's Republic democratic relative to other forms of democracy and how well does this theory explain the American system today? 
+<br/>
 
-## *1. Madison's Republic: Foundation of American Democracy*
+1. **Meeting 1**: Course Overview & ``First-Attempts'' at American Democracy  
+    + *Kollman Text:* Chapter 1: *Introduction*
+    + [The Articles of Confederation and Perpetual Union. 1777.](https://www.ourdocuments.gov/doc.php?flash=false&doc=3&page=transcript)  
+<br/>
+
+2. **Meeting 2**: The Problem of Human Nature: Self-Interest, Factions, & Collective Action
+    + [Madison, James. 1787. ``Federalist 10.'' In United States Congress Resources](https://www.congress.gov/resources/display/content/The+Federalist+Papers#TheFederalistPapers-10)
+    + *Kollman Text:* Chapter 2: *The Constitution:* Sections: What Do Constitutions Accomplish & Origins of the American Political System  
+<br/>
+
+2. **Meeting 3**: Madison's Theory: Self-Interest & Ambition as the Solution
+    + Reread: [Madison, James. 1787. ``Federalist 10.'' In United States Congress Resources](https://www.congress.gov/resources/display/content/The+Federalist+Papers#TheFederalistPapers-10)
+    + [Madison, James (or Alexander Hamilton). 1788. ``Federalist 51.'' In United States Congress Resources](https://www.congress.gov/resources/display/content/The+Federalist+Papers#TheFederalistPapers-10)
+    + [Constitution of the United States. 1788](https://www.archives.gov/founding-docs/constitution-transcript). *Particular* emphasis on Articles I, II,  IV, & VI.  
+<br/>
+
+## *2. Citizen Political Behavior: Functioning as Critical Principals*  
+***Section Objective***: It's clear that Madison's Republic posits an important role for citizens in a representative democracy. This section highlights how citizens function as *principals* of their elected representatives (i.e. agents). This section provides an understanding of which type of citizens participate in politics, what the incentives are to be "disengaged" from the political process, how well elections work, and what role parties play (if any) in helping citizens make political decisions. Pay close attention to some key questions. What are the implications of the "disengagement" incentive for the functioning of Madison's Republic? Do elections help citizens make a more "representative" form of government and how do we know when they do? How does party theory challenge Madison's republic? And, perhaps the most important question, is an informed electorate **NECESSARY** for Madison's theory to work?  
+<br/>
+
+1. **Meeting 4**: Variation in Citizen Participation: Resources and Free-Riding Incentive  
+    + *Kollman Text:* Chapter 10: *Political Participation*
+    + [Converse, Philip E. 2000. ``Assessing the Capacity of Mass Electorates.'' *Annual Review of Political Science* 3(1): 331-353.](Pol1_Summer2017/Converse 2000.pdf)
+    + ***Optional:*** (Really dense read, will go over in seminar): [Zaller, John. 1992. *Nature & Origins of Mass Opinion*. New York, NY: Cambridge University Press.](http://isites.harvard.edu/fs/docs/icb.topic1507053.files/Zaller%20Nature%20and%20Origins%20of%20Mass%20Opinion%20ch%201-2.pdf) ***Read Ch2. Information, Predispositions & Opinion.***  
+<br/>
+
+2. **Meeting 5**: Developing Political Preferences: Citizen Self-Interest    
+    + [MacKuen, Michael, Robert S. Erikson & James A. Stimson. 1992. ``Peasants or Bankers? The American Electorate and the U.S. Economy.'' *American Political Science Review* 86(3): 597-611.](Pol1_Summer2017/MacKuen, Erikson & Stimson 1992.pdf)
+    + [Verba, Sidney, Kay Lehman, Henry Brady & Norman H. Nie. 1993. ``Citizen Activity: Who Participates? What Do They Say?'' *American Political Science Review* 87(2): 303-318.](Pol1_Summer2017/Verba, Schlozman, Brady & Nie 1993.pdf)  
+<br/>
+
+3. **Meeting 6**: Overcoming Limited Information: How Citizens use Short-Cuts to Act  
+    + *Kollman Text:* Chapter 9: *Public Opinion*
+    + [Lau, Richard R. & David P. Redlawsk. 2001. ``Advantages and Disadvantages of Cognitive Heuristics in Political Decision Making.'' *American Political Science Review* 45(4): 951-971.](Pol1_Summer2017/Lau & Redlawk 2001.pdf)  
+<br/>
+
+4. **Meeting 7**: Electoral Dynamics: The Role of Campaign Context in Voting Choice  
+    + [Stone, Walter J. & Elizabeth N. Simas. 2010. ``Candidate Valence and Ideological Positions in U.S. House Elections.'' *American Journal of Political Science* 54(2): 371-388.](Pol1_Summer2017/Stone & Simas 2010.pdf)  
+    + [Abramowitz, Alan I., Brad Alexander & Matthew Gunning. 2006. ``Incumbency, Redistricting, and the Decline of Competition in U.S. House Elections.'' *Journal of Politics* 68(1): 75-88.](Pol1_Summer2017/Abramowitz, Alexander & Gunning 2006.pdf)  
+    + *Kollman Text:* Chapter 13: *Elections & Campaigns*  
+<br/>  
+
+5. **Meeting 8**: Parties in the Electorate: Helping Citizens Make Political Decisions at a Trade-off  
+    + [Levendusky, Matthew S. 2010. ``Clearer Cues, More Consistent Voters: A Benefit of Elite Polarization.'' *Political Behavior* 32(1): 111-131.](Pol1_Summer2017/Levendusky 2010.pdf)  
+    + [Bafumi, Joseph & Robert Y. Shapiro. 2009. ``A New Partisan Voter.'' *Journal of Politics* 71(1): 1-23.](Pol1_Summer2017/Bafumi & Shapiro 2009.pdf)  
+<br/>
+
+6. **Meeting 9**: Parties as Organizations: Implications of the American Party System  
+    + [Aldrich, John H. 1995. *Why Parties: The Origin and Transformation of Political Parties in America.* Chicago, IL: University of Chicago Press.](http://www.marioguerrero.info/321/8Aldrich.pdf) ***Read Ch2. Why Parties Form.***    
+    + [Bawn, Kathleen, Martin Cohen, David Karol, Seth Masket, Hans Noel & John Zaller. 2012. ``A Theory of Political Parties: Groups, Policy Demands, and Nominations in American Politics.'' *Perspectives on Politics* 10(3): 571-597.](Pol1_Summer2017/Bawn, Cohen, Karol, Maskey, Noel & Zaller 2012.pdf)  
+    + ***Optional:*** *Kollman Text:* Chapter 12: *Political Parties* Sections:  What are Parties? & In Comparison: Parties  
+<br/>
+
+<center> ***\*Download Midterm Review Here.\**** </center><br/>
+
+7. **Meeting 10**: Review for Midterm & Catch-Up.  
+<br/> 
+
+8. **Meeting 11**: Midterm Exam.  
+<br/>
+
+## *3. Post-Election: How Institutions Function within the Framework*  
+***Section Objective***: This section turns our focus from citizens, the principals in a representative democracy, to elected representatives, the agents. This section focuses on two institutions, the Congress and the Executive, and assesses the *incentives* they have to be faithful agents for voters and *whether* they provide accurate political representation. This section wraps up with a discussion on collective ***institutional*** behavior. That is, how do the differing electoral incentives found in Congress and the Presidency inherently create a *status quo bias*? How does polarization exasperate this bias, what *types of citizens* get represented, and is the system in need of reform in light of Madison's theory?
+<br/>
+<br/>
+
+1. **Meeting 12**: Congressional Incentives: Representation & Getting Re-Elected
+    + [Mayhew, David. 1974. ``The Electoral Connection and the Congress.'' In Terry Sullivan & Matthew Sullivan eds., *Congress: Structure and Policy.* New York, NY: Cambridge University Press. 1987.](Pol1_Summer2017/Mayhew 1974.pdf)
+    + [Harbridge, Laurel & Neil Malhorta. 2011. ``Electoral Incentives and Partisan Conflict in Congress: Evidence from Survey Experiments.'' *American Journal of Political Science* 55(3): 494-510.](Pol1_Summer2017/Harbridge & Malhotra 2011.pdf)
+    + *Kollman Text:* Chapter 5: *Congress* Sections: Congressional Elections  
+<br/>
+
+2. **Meeting 13**: Mechanisms of Re-election: How Congress Provides Representation      
+    + [Grimmer, Justin. 2013. ``Appropriators Not Position Takers: The Distorting Effects of Electoral Incentives on Congressional Representation.'' *American Journal of Political Science* 57(3): 624-642.](Pol1_Summer2017/Grimmer 2013.pdf)
+    + [Engstrom, Erik J. & Georg Vanberg. 2010. ``Assessing the Allocation of Pork: Evidence from Congressional Earmarks.'' *American Politics Research* 38(6): 959-985.](Pol1_Summer2017/Engstrom & Vanberg 2010.pdf)
+    + [Katz, Jonathan N. & Brian R. Sala. 1996. ``Careerism, Committee Assignments, and the Electoral Connection.'' *American Political Science Review* 90(1): 21-33](Pol1_Summer2017/Katz & Sala 1996.pdf)  
+<br/>
+
+3. **Meeting 14**: Change in Representation: Are Citizens Represented in the System?  
+    + [Bafumi, Joseph & Michael C. Herron. 2010. ``Leapfrog Representation and Extremism: A Study of American Voters and Their Members in Congress.'' *American Political Science Review* 104(3): 519-542.](Pol1_Summer2017/Bafumi & Herron 2010.pdf)  
+    + [Canes-Wrone, Brandice, Brady, David W. & John Coogan. 2002. ``Out of Step, Out of Office: Electoral Accountability and House Members' Voting.'' *American Journal of Political Science* 45(1): 136-159.](Pol1_Summer2017/Cannes-Wrone, Brady & Cogan 2002.pdf)  
+    + ***Optional:*** (will discuss:) [Theriault, Sean M. & David W. Rohde. 2011. ``The Gingrich Senators and Party Polarization in the U.S. Senate.'' *Journal of Politics* 73(4): 1011-1024.](Pol1_Summer2017/Theriault & Rohde 2011.pdf)
+    + ***Optional:*** (dense read with dated language, **foundational representation piece** will discuss:) [Miller, Warren E. & Donald C. Stokes. 1963. ``Constituency Influence in Congress.'' *American Political Science Review* 57(1): 45-56.](Pol1_Summer2017/Miller & Stokes 1963.pdf)  
+<br/>  
+
+4. **Meeting 15**: The Presidency: At-Large Constituency & Presidential Representation
+    + [Moe. Terry M. & William G. Howell. 1999. ``Unilateral Action and Presidential Power: A Theory.'' *Presidential Studies Quarterly* 29(4): 850-873.](Pol1_Summer2017/Moe & Howell 1999.pdf)  
+    + [Canes-Wrone, Brandice. 2001. ``The President’s Legislative Influence from Public Appeals.'' *American Journal of Political Science* 45(2): 313-329](Pol1_Summer2017/Canes-Wrone 2001.pdf)  
+<br/>
+
+5. **Meeting 16**: Executive-Legislative Bargaining: Inherent Status-Quo Bias  
+    + [Krehbiel, Keith. 1993. ``Pivotal Politics: A Theory in U.S. Lawmaking.'' In Steven S. Smith et al. eds. *The American Congress Reader*. New York, NY: Cambridge University Press. 2009.](Pol1_Summer2017/Krehbiel 1998.pdf) 
+    + [Binder, Sarah A. 1999. ``The Dynamics of Legislative Gridlock, 1947-96.'' *American Political Science Review* 93(3): 519-533.](Pol1_Summer2017/Binder 1999.pdf)  
+    + [Cox, Gary W. & Matthew D. McCubbins. 2005. ``Setting the Agenda: Responsible Party Government in the U.S. House of Representatives.'' In Steven S. Smith et al. eds. *The American Congress Reader*. New York, NY: Cambridge University Press. 2009.](Pol1_Summer2017/Cox & McCubbins 2005.pdf)  
+<br/>  
+
+6. **Meeting 17**: Polarization: Implications for Policymaking & Accountability
+    + [Lee, Frances E. 2015. ``How Party Polarization Affects Governance.'' *Annual Review of Political Science* 18(1): 261-282.](Pol1_Summer2017/Lee 2015.pdf)  
+    + [Jones, David R. 2010. ``Partisan Polarization and Congressional Accountability in House Elections.'' *American Journal of Political Science* 54(2): 323-337.](Pol1_Summer2017/Jones 2010.pdf)  
+<br/>
+
+7. **Meeting 18**: How Democratic is the U.S.: Policy Responsiveness
+    + [Erikson, Robert S. 2015. ``Income Inequality and Policy Responsiveness.'' *Annual Review of Political Science* 18(1): 11-29.](Pol1_Summer2017/Erikson 2015.pdf)  
+    + [Stimson, James A., Michael B. MacKuen & Robert S. Erikson. 1995. ``Dynamic Representation.'' *American Political Science Review* 89(3): 543-565.](Pol1_Summer2017/Stimson, Mackuen & Erikson 1995.pdf)    
+<br/>
+
+8. **Meeting 19**: Reform Needed? Potential Reforms from Comparative Systems
+    + [Bawn, Kathleen & Frances Rosenbluth. 2006. ``Short versus Long Coalitions: Electoral Accountability and the Size of the Public Sector.'' *American Journal of Political Science* 50(2): 251-265](Pol1_Summer2017/Bawn & Rosenbluth 2006.pdf)  
+    + [Huber, John D. & G. Bingham Powell. 1994. ``Congruence between Citizens and Policymakers in Two Visions of Liberal Democracy.'' *World Politics* 46(3): 291-326.](Pol1_Summer2017/Huber & Powell 1994.pdf)    
+<br/>
+
+<center> ***\*Download Final Exam Review Here.\**** </center><br/>
+
+9. **Meeting 20**: Review for Final Exam & Catch-Up.  
+<br/> 
+
+10. **Meeting 21**: Final Exam.
