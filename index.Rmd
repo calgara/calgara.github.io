@@ -28,4 +28,4 @@ I'm a fourth year PhD candidate in the [Department of Political Science](http://
 In addition to my dissertation, I am also involved in projects analyzing how polarization changes the nature of congressional election dynamics, how political attitudes distort proximity voting, and electoral consequences of legislative obstruction.
 <br/>
 <br/>
-<p>Copyright &copy; 2017 by Carlos Algara. Made with [RStudio](http://http://rstudio.com/).</p>
+<p>Copyright &copy; 2017 by Carlos Algara. Made with [RStudio](https://www.rstudio.com).</p>

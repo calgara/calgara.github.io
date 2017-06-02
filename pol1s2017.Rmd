@@ -157,4 +157,4 @@ These thematic questions may seem daunting, but this course will give you the  n
 10. **Meeting 21**: Final Exam.  
 <br/>
 <br/>
-<center> Copyright &copy; 2017 by Carlos Algara. Made with [RStudio](http://http://rstudio.com/). </center>
+<center> Copyright &copy; 2017 by Carlos Algara. Made with [RStudio](https://www.rstudio.com). </center>

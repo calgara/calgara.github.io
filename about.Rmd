@@ -11,7 +11,7 @@ output: html_document
 <img src="/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/me_hiking.jpg" alt="hiking" style="width:333px;" align = "left"/> 
 <div style='width: 333px; text-align: center; font-size: 85%;'>*El Dorado County, California.* <br>
 <br>
-<div style='width: 333px; text-align: left; font-size: 90%;'>Copyright &copy; 2017 by Carlos Algara. Made with [RStudio](http://http://rstudio.com/)</div></div>
+<div style='width: 333px; text-align: left; font-size: 90%;'>Copyright &copy; 2017 by Carlos Algara. Made with [RStudio](https://www.rstudio.com)</div></div>
 </div>
 
 I'm originally from the great Pacific Northwest (Tacoma, Washington) and I am a fiercly partisan Seattle Mariners baseball fan and Washington State University Cougars fan. I am a proud alumnus of [Washington State University](http://wsu.edu/) and I hold a Masters of Public Policy from [Oregon State University](http://liberalarts.oregonstate.edu/spp/). I have worked as a legislative intern in the Washington State House of Representatives and on Capitol Hill for U.S. Senator Jeff Merkley (D-OR).

@@ -48,4 +48,4 @@ h1.title {
 <left> [Full Abstract](https://calgara.github.io/MPSA2017_Sandlin_Algara_Abstract.pdf) </left>
 <br/>
 <br/>
-<p>Copyright &copy; 2017 by Carlos Algara. Made with [RStudio](http://http://rstudio.com/).</p>
+<p>Copyright &copy; 2017 by Carlos Algara. Made with [RStudio](https://www.rstudio.com.</p>
