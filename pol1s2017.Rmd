@@ -20,6 +20,17 @@ output: html_document
 
 <br/>
 
+## Welcome!
+
+This GitPage is intended to be the interactive syllabus for Pol 1: Introduction to American Politics for the 2017 Summer Session Quarter. The full syllabus for the course can be found above. Class logistics, the theoritical framework for the course, and course readings can be found below. Under each meeting header, you will find:
+  
+* Course slidesets and readings corresponding to the meeting topic.    
+  
+* Course readings corresponding to the meeting topic. With the exception of the textbook readings (designated as the ***Kollman Text*** below), if you click on the reading links, you will be taken to a PDF of the reading.  
+
+* Review sheets for the midterm and final exams.   
+<br/>
+
 ## Class Time, Office Hours & Course Materials
   
 ***Lecture***: [Bainer Hall 1130](http://campusmap.ucdavis.edu/?b=24); Monday, Tuesday, Wednesday 12:10-1:50  
@@ -42,7 +53,7 @@ These thematic questions may seem daunting, but this course will give you the  n
 
 ## Course Road-Map & Materials  
 <br/>
-*Note:* Slidesets are posted under the meeting headers.  
+***Note:*** Slidesets are posted as links in the meeting headers text.  
 <br/>
   
 ## *1. Madison's Republic: Foundation of American Democracy*  
