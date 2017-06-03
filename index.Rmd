@@ -15,8 +15,9 @@ img {
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-85450191-1', 'auto');
+  ga('create', 'UA-100362112-1', 'auto');
   ga('send', 'pageview');
+
 </script>
 <img src="/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/IMG_0062.jpg" alt="capitol" style="width:575px;" align = "top"/> 
 <div style='width: 900px; text-align: center; font-size: 75%;'>*United States Capitol, 113^th^ Congress.*</div>
