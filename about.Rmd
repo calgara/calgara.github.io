@@ -13,6 +13,7 @@ output: html_document
 }
 </style>
 </head>
+</html> 
 
 *Carlos Algara, PhD Candidate*
 </script>
