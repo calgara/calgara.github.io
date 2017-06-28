@@ -34,6 +34,7 @@ This GitPage is intended to be the interactive syllabus for Pol 1: Introduction 
 ## Class Time, Office Hours & Course Materials
   
 ***Lecture***: [Bainer Hall 1130](http://campusmap.ucdavis.edu/?b=24); Monday, Tuesday, Wednesday 12:10-1:50  
+***Discussion Section***: [Olson Hall 106](http://campusmap.ucdavis.edu/?b=112); Thursday 12:10-1:50    
 ***Office Hours***: [Kerr Hall 663](http://ps.ucdavis.edu); Wednesday 2:10-4:30  
 ***Course Materials***: [Canvas](http://canvas.ucdavis.edu) & [GitPage](http://calgara.github.io/pol1s2017.html)  
 <br/>
