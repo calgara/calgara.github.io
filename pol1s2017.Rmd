@@ -119,7 +119,7 @@ These thematic questions may seem daunting, but this course will give you the  n
 7. **Meeting 10**: Review for Midterm & Catch-Up.  
 <br/> 
 
-8. **Meeting 11**: Midterm Exam.  
+8. **Meeting 11**: Midterm Exam (July 17, 2017).  
 <br/>
 
 ## *3. Post-Election: How Institutions Function within the Framework*  
@@ -177,7 +177,7 @@ These thematic questions may seem daunting, but this course will give you the  n
 9. **Meeting 20**: Review for Final Exam & Catch-Up.  
 <br/> 
 
-10. **Meeting 21**: Final Exam.  
+10. **Meeting 21**: Final Exam (August 2, 2017).  
 <br/>
 <br/>
 <center> Copyright &copy; 2017 by Carlos Algara. Made with [RStudio](https://www.rstudio.com). </center>
