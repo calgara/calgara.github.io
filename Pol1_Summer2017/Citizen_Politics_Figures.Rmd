@@ -1,0 +1,429 @@
+---
+title: 'Citizen Political Behavior: Functioning as Critical Principals'
+subtitle: "Pol 1: Introduction to American Politics"
+author: 
+- "[Carlos Algara](mailto:calgara@ucdavis.edu)"
+date: "6/29/2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### *Using survey & aggregate data to articulate variation in citizen politics.*
+
+This Rmarkdown document contains a short tutorial on how to use the [Cooperative Congressional Election Study (CCES)](https://cces.gov.harvard.edu/pages/welcome-cooperative-congressional-election-study) to articulate descriptive trends in citizen behavior. I also use aggregate turnout data from Michael McDonald's (University of Florida) [ElectProject](http://www.electproject.org) to articulate declining voter turnout in presidential and midterm elections. In this tutorial, I include code & output that replicate figures that I use in class. I also provide a brief description of the logic of each figure to articulate a course concept.  
+  
+### 1. The Collective Dilemma & Incentive to Free-Ride  
+  
+Madison posits in Federalist 10 that citizens are motivated by self-interest to form factions that advocate on behalf of their shared interest. However, citizens are not simply motivated by their self-interest and they face a strong incentive to *free-ride* on the work of other likeminded citizens. If Madison's theory of human nature is correct, in that:   
+$$Human Nature \rightarrow_{1} Factions \leftrightarrow_{2} Representation$$  
+Where: $$\rightarrow_{1} = Self-interest;$$ 
+$$\leftrightarrow_{2} = Elections $$
+than citizens should, in theory, not face collective action problem in forming factions that advocate on their behalf. Thus, if Madison is correct, than citizens would vote in elections at a near universal rate since they will be motivated by a *common impulse of passion* to go to the polls. Of course, this is not the case given that voting is both a costly form of participation (i.e. intrinsic & information costs) and citizens have a strong incentive to free-ride on the voting behavior of other citizens that share the same collective interest. To articulate that Madison's theory is incorrect with respect to overcoming the challenge posed by collective action, I make the following figure showing aggregate voter turnout rates in presidential & midterm elections since the Civil War.
+```{r,echo=F,warning=F,message=F}
+library(gsheet) # Use the gsheet package to scrape voter turnout data from the Elect Project
+
+turnout <- gsheet2tbl('https://docs.google.com/spreadsheets/d/1bH38j6_e8yA9xq8OMlyLOL6h_iTS7ABQMKNxzFgKBDo/edit?usp=sharing') #Turnout from 1789-2014
+
+turnout2016 <- gsheet2tbl('https://docs.google.com/spreadsheets/d/1VAcF0eJ06y_8T4o2gvIL4YcyQy8pxb1zYkgXF76Uu1s/edit#gid=2030096602') #2016 Turnout
+
+# Clean-up data
+pres_turnout <- turnout[,1:2]
+midterm_turnout <- turnout[,3:4]
+colnames(pres_turnout) <- c("year","vep_turnout_rate")
+colnames(midterm_turnout) <- c("year","vep_turnout_rate")
+pres_turnout$election <- "Presidential Election"
+midterm_turnout$election <- "Midterm Election"
+turnout <- rbind(pres_turnout,midterm_turnout)
+
+turnout2016 <- turnout2016[2,c(4)]
+colnames(turnout2016) <- "vep_turnout_rate"
+turnout2016$election <- "Presidential Election"
+turnout2016$year <- 2016
+turnout2016$vep_turnout_rate <- gsub("%","",turnout2016$vep_turnout_rate)
+
+turnout <- rbind(turnout,turnout2016)
+turnout$vep_turnout_rate <- as.numeric(turnout$vep_turnout_rate)
+turnout$election <- factor(turnout$election,levels=c("Presidential Election","Midterm Election"))
+
+head(turnout)
+```
+
+Now that the data is cleaned up, I make two plots. First, I make a plot with one lowess regression line showing the overall decline in voter turnout since the conclusion of the Civil War. Second, I make a plot with two lowess regression line assessing the decline in voter turnout by presidential and midterm election type. I also note significant changes in suffrage, such as the passage of women's suffrage in 1920 and the Voting Rights Act of 1965.
+
+```{r, echo=T}
+library(ggplot2)
+# One cumulative trend of decline in voter turnout since the Civil War
+ggplot(subset(turnout,turnout$year >= 1866), aes(x=year,y=vep_turnout_rate)) + geom_point(mapping=aes(x=year,y=vep_turnout_rate, shape=election,colour=election),inherit.aes = F) + scale_shape_manual("",values=c(16,18)) + scale_colour_manual("",values=c("cyan3","firebrick3")) + theme_bw() + theme(legend.position=c(0.875, 0.85), legend.key.size = unit(0.9,"line"), legend.key = element_blank()) + scale_y_continuous(limits=c(30,90),breaks=seq(30,90,10),labels=c("30%","40%","50%","60%","70%","80%","90%"), "Eligible Voter Turnout Rate") + scale_x_continuous(breaks=seq(1866,2016,10), "") + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + geom_smooth(method = "loess", se=FALSE, color="black", size = 0.75) + ggtitle("National Voter-Turnout in Presidential & Midterm Elections in the United States, 1866-2016") + annotate(geom = "text", x = 1918, y = 80, label = "Women's Suffrage", color = "blue", angle = 90, size = 3.5) + geom_vline(xintercept=1920,linetype = "dashed",color="gray") + annotate(geom = "text", x = 1868, y = 40, label = "15th Amendment", color = "blue", angle = 90, size = 3.5) + geom_vline(xintercept=1870,linetype = "dashed",color="gray") + annotate(geom = "text", x = 1958, y = 80, label = "DC Suffrage", color = "blue", angle = 90, size = 3.5) + geom_vline(xintercept=1960,linetype = "dashed",color="gray") + annotate(geom = "text", x = 1963, y = 80, label = "Voting Rights Act", color = "blue", angle = 90, size = 3.5) + geom_vline(xintercept=1965,linetype = "dashed",color="gray") + annotate(geom = "text", x = 1969, y = 80, label = "Lowering Voting Age", color = "blue", angle = 90, size = 3.5) + geom_vline(xintercept=1971,linetype = "dashed",color="gray")
+
+# One lowess regression line per election type (presidential/midterm)
+ggplot(subset(turnout,turnout$year >= 1866), aes(x=year,y=vep_turnout_rate, shape=election,colour=election)) + geom_point() + scale_shape_manual("",values=c(16,18)) + scale_colour_manual("",values=c("cyan3","firebrick3")) + theme_bw() + theme(legend.position=c(0.875, 0.85), legend.key.size = unit(0.9,"line"), legend.key = element_blank()) + scale_y_continuous(limits=c(30,90),breaks=seq(30,90,10),labels=c("30%","40%","50%","60%","70%","80%","90%"), "Eligible Voter Turnout Rate") + scale_x_continuous(breaks=seq(1866,2016,10), "") + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + geom_smooth(method = "loess", se=FALSE, size = 0.75) + ggtitle("National Voter-Turnout in Presidential & Midterm Elections in the United States, 1866-2016") + annotate(geom = "text", x = 1918, y = 80, label = "Women's Suffrage", color = "blue", angle = 90, size = 3.5) + geom_vline(xintercept=1920,linetype = "dashed",color="gray") + annotate(geom = "text", x = 1868, y = 40, label = "15th Amendment", color = "blue", angle = 90, size = 3.5) + geom_vline(xintercept=1870,linetype = "dashed",color="gray") + annotate(geom = "text", x = 1958, y = 80, label = "DC Suffrage", color = "blue", angle = 90, size = 3.5) + geom_vline(xintercept=1960,linetype = "dashed",color="gray") + annotate(geom = "text", x = 1963, y = 80, label = "Voting Rights Act", color = "blue", angle = 90, size = 3.5) + geom_vline(xintercept=1965,linetype = "dashed",color="gray") + annotate(geom = "text", x = 1969, y = 80, label = "Lowering Voting Age", color = "blue", angle = 90, size = 3.5) + geom_vline(xintercept=1971,linetype = "dashed",color="gray")
+```
+
+### 2. Who participates in politics?  
+  
+Given that participation in politics is a costly enterprise, there is inherent variation in the types of citizens that pay this cost. This section uses individual-level data to show variation in citizen participation using various metrics and how citizen resources predict participation in politics on two dimensions: giving political contributions & voting. This section uses data from the 2016 Cooperative Congressional Election Study.  
+
+```{r,echo=T,warning=F,message=F,results="asis"}
+library(readstata13)
+cces <- read.dta13("/Users/carlosalgara/Dropbox/CCES2016_Common_original/CCES2016.dta")
+
+# Variation in political participation
+
+participation <- subset(cces,select=c(commonweight_post,CC16_300d_5,CC16_316,CC16_327,CC16_404,CC16_417a_1,CC16_417a_2,CC16_417a_3,CC16_417a_4,CC16_418a))
+colnames(participation) <- c("weight","social_media","pres_vote_12","pres_primary_vote","voting_time","attend_polmeetings","yard_sign","volunteer_campaign","donate_money","run_for_office")
+
+participation[] <- lapply(participation, as.character)
+participation[participation == "Yes"] <- 1
+participation[participation == "No"] <- 0
+participation[participation == "Yes, I definitely voted."] <- 1
+participation[participation == "I usually vote but did not vote in 2012"] <- 0
+participation[participation == "I am not sure"] <- 0
+
+participation[participation == "No, didn’t vote in a primary or caucus"] <- 0
+participation[participation == "Yes, voted in a primary or caucus"] <- 1
+
+participation$voting_time[participation$voting_time == "Don't know"] <- NA
+participation$voting_time[participation$voting_time == "Not at all"] <- 0
+participation$voting_time[participation$voting_time == "Less than 10 minutes"] <- 1
+participation$voting_time[participation$voting_time == "10 - 30 minutes"] <- 2
+participation$voting_time[participation$voting_time == "31 minutes - 1 hour"] <- 3
+participation$voting_time[participation$voting_time == "More than 1 hour"] <- 4
+
+participation[] <- lapply(participation, as.numeric)
+library(descr)
+
+frequencies <- list()
+for(i in 2:ncol(participation)){
+  x <- data.frame(freq(participation[,i],w=participation$weight,plot=F))
+  x$category <- rownames(x)
+  x <- x[,3:4]
+  x <- subset(x,x$category != "Total")
+  x <- subset(x,x$category != "NA's")
+  x$activity <- colnames(participation)[[i]]
+  frequencies[[i]] <- x
+}
+library(plyr)
+frequencies <- ldply(frequencies, data.frame)
+
+frequencies$category[frequencies$activity != "voting_time" & frequencies$category == 1] <- "Yes"
+frequencies$category[frequencies$activity != "voting_time" & frequencies$category == 0] <- "No"
+frequencies$category[frequencies$activity == "voting_time" & frequencies$category == 0] <- "0 \nNo Wait"
+frequencies$category[frequencies$activity == "voting_time" & frequencies$category == 4] <- "4 \n>1 Hour"
+
+frequencies$activity[frequencies$activity == "attend_polmeetings"] <- "Attend local political meetings?"
+frequencies$activity[frequencies$activity == "donate_money"] <- "Donate money to a candidate, campaign, \nor political organization?"
+frequencies$activity[frequencies$activity == "pres_primary_vote"] <- "Voted in the 2012 Presidential Primaries?"
+frequencies$activity[frequencies$activity == "run_for_office"] <- "Ever run for elective office?"
+frequencies$activity[frequencies$activity == "social_media"] <- "Forwarded a story, photo, video or link \nabout politics to friends?"
+frequencies$activity[frequencies$activity == "volunteer_campaign"] <- "Work for a candidate or campaign?"
+frequencies$activity[frequencies$activity == "yard_sign"] <- "Put up a political sign?"
+frequencies$activity[frequencies$activity == "pres_vote_12"] <- "Voted in the 2012 Presidential Election?"
+frequencies$activity[frequencies$activity == "voting_time"] <- "Time took to vote"
+```
+
+```{r,echo=T,fig.width = 10,fig.height=8}
+ggplot(frequencies, aes(x=category,y=Valid.Percent)) + theme_bw() + geom_bar(stat="identity") + theme_bw()  + facet_wrap(~activity, ncol = 3, scales = "free") + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + ggtitle("Variation in Different Activities of Political Participation, 2016 Cooperative Congressional Election Study") + scale_y_continuous("Weighted Percentage") + scale_x_discrete("")
+```
+
+As the figure shows, there is clear variation in participation in various political activities. Indeed, it appears that the most costly form of political participation is running for elected office given that very few people undertake such an activity despite the plethora of local officials one could theoretically run for. Moreover, there is variation in the cost of voting. Some voters spend a substantial amount of time (i.e. greater than 10 minutes) exercising their right to vote.  
+  
+### 3. Why pay the cost?
+
+It's clear that some citizens elect to pay the cost to particpate in politics rather than free-ride from other citizens that may share congruent preferences. But why do they do so? Theories of political participation, such as Riker & Ordeshook's ***Theory of the Calculus of Voting***, attribute participation to a *D* term, where *D* conceptualizes a sense of civic duty which helps citizens pay the cost of participation (in Riker & Ordeshook's case, even when the probability of a vote being pivotal is indistinguishable from 0). To explore why citizens pay the cost to participate, I investigate the CCES battery which asks campaign donors why they contribute to campaigns.
+
+```{r,echo=T,fig.width = 10,fig.height=8}
+donors <- subset(cces,select=c(commonweight_post,CC16_417e_1,CC16_417e_2,CC16_417e_3,CC16_417e_5))
+colnames(donors) <- c("weight","policy_influence","business","network","civic_duty")
+
+frequencies <- list()
+for(i in 2:ncol(donors)){
+  x <- data.frame(freq(donors[,i],w=donors$weight,plot=F))
+  x$category <- rownames(x)
+  x <- x[,3:4]
+  x <- subset(x,x$category != "Total")
+  x <- subset(x,x$category != "NA's")
+  x <- subset(x,x$category != "Skipped")
+  x <- subset(x,x$category != "Not Asked")
+  x$activity <- colnames(donors)[[i]]
+  frequencies[[i]] <- x
+}
+frequencies <- ldply(frequencies, data.frame)
+
+frequencies$activity[frequencies$activity == "business"] <- "Effective way to help my business/industry"
+frequencies$activity[frequencies$activity == "civic_duty"] <- "For anyone who can afford to contribute, it is \na civic duty to contribute financially to campaigns"
+frequencies$activity[frequencies$activity == "network"] <- "Allow me to be part of a network with other contributors"
+frequencies$activity[frequencies$activity == "policy_influence"] <- "Effective way to influence public policy"
+
+frequencies$category <- factor(frequencies$category,levels=c("Strongly disagree","Somewhat disagree","Neither agree nor disagree","Somewhat agree","Strongly agree"),labels=c("Strongly \ndisagree", "Somewhat \ndisagree","Neutral","Somewhat \nagree","Strongly \nagree"))
+
+ggplot(frequencies, aes(x=category,y=Valid.Percent)) + theme_bw() + geom_bar(stat="identity") + theme_bw()  + facet_wrap(~activity, ncol = 2, scales = "free") + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + ggtitle("Variation in the Incentive for Political Donors to Donate to Campaigns, 2016 CCES") + scale_y_continuous("Weighted Percentage") + scale_x_discrete("")
+```
+It's clear that, among campaign contributors, there is a perception of ``rational self-interest'' given the relatively few percentage of donors that agree with the notion that those that can give should out of civic duty. Donors generally given due to either becoming more connected with a donor network or as a way to influence public policy, presumably by donating to candidates that have congruent policy preferences and, if elected, will pursue those preferences legislatively.
+
+### 4. Role of Resources in Citizen Voting \& Participation
+```{r,echo=T,warning=F,message=F,fig.width = 8}
+cces <- read.dta13(paste("/Users/carlosalgara/Desktop/carlos_school/PhD_UC Davis/Research/Data/American Politics/CCES/CCES",2014,".dta",sep=""),convert.factors = T, convert.underscore = FALSE, encoding ="UTF-8")
+
+resources <- subset(cces,select=c(weight,cdid,CC401,CC417a_4,faminc,educ))
+resources[] <- lapply(resources, as.character)
+colnames(resources) <- c("weight","cdid","turnout","contribute","income","education")
+
+resources$turnout[resources$turnout == "I did not vote in the election this November."] <- 0
+resources$turnout[resources$turnout == "I thought about voting this time â€“ but didn't."] <- 0
+resources$turnout[resources$turnout == "I usually vote, but didn't this time."] <- 0
+resources$turnout[resources$turnout == "I attempted to vote but did not or could not."] <- 0
+resources$turnout[resources$turnout == "I definitely voted in the Midterm Election on November 4th."] <- 1
+
+resources$contribute[resources$contribute == "No"] <- 0
+resources$contribute[resources$contribute == "Yes"] <- 1
+
+na <- data.frame(freq(resources$income,plot=F))
+na$category <- rownames(na)
+rownames(na) <- NULL
+
+resources$income[resources$income %in% as.character(na[18,4])] <- 0
+resources$income[resources$income %in% as.character(na[1,4])] <- 1
+resources$income[resources$income %in% as.character(na[6,4])] <- 2
+resources$income[resources$income %in% as.character(na[10,4])] <- 3
+resources$income[resources$income %in% as.character(na[12,4])] <- 4
+resources$income[resources$income %in% as.character(na[13,4])] <- 5
+resources$income[resources$income %in% as.character(na[15,4])] <- 6
+resources$income[resources$income %in% as.character(na[16,4])] <- 7
+resources$income[resources$income %in% as.character(na[17,4])] <- 8
+resources$income[resources$income %in% as.character(na[2,4])] <- 9
+resources$income[resources$income %in% as.character(na[3,4])] <- 10
+resources$income[resources$income %in% as.character(na[4,4])] <- 11
+resources$income[resources$income %in% as.character(na[7,4])] <- 12
+resources$income[resources$income %in% as.character(na[8,4])] <- 13
+resources$income[resources$income %in% as.character(na[11,4])] <- 14
+resources$income[resources$income %in% as.character(na[14,4])] <- 15
+resources$income[resources$income %in% as.character(na[9,4])] <- 13
+resources$income[resources$income %in% as.character(na[5,4])] <- 11
+resources$income[resources$income %in% as.character(na[c(19,20),4])] <- NA
+
+resources$education <- factor(resources$education,levels=c("No HS","High school graduate","Some college","2-year","4-year","Post-grad"))
+
+resources$income <- as.numeric(resources$income)
+resources$weight <- as.numeric(resources$weight)
+resources$turnout <- as.numeric(resources$turnout)
+resources$contribute <- as.numeric(resources$contribute)
+
+library(effects)
+library(sandwich)
+library(lmtest)
+library(multiwayvcov)
+
+# Turnout ~ Education
+
+model <- glm(turnout ~ education, data=resources, weights=weight, family = binomial(link = "logit"))
+coeftest(model, vcov = cluster.vcov(model, cluster=resources$cdid))
+predict <- data.frame(effect("education", se=TRUE, mod = model, confidence.level = 0.95, xlevels=list(vcov. = cluster.vcov(model, cluster=resources$cdid))))
+
+predict$education <- factor(predict$education,levels=c("No HS","High school graduate","Some college","2-year","4-year","Post-grad"))
+
+ggplot(data= predict, mapping=aes(x=education, y=fit, ymin=lower, ymax=upper, fill=education)) + geom_bar(stat="identity") + geom_errorbar(width=.25) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + scale_x_discrete("Voter Education Level") + scale_y_continuous(limits=c(0,1.0), breaks=seq(0,1.0,0.05), "Probability of Turning Out to Vote") + ggtitle("Probability of Voter Turnout by Education Level in the 2014 Midterm Elections") + coord_cartesian(ylim=c(0.70,1.0)) + scale_fill_discrete(guide=FALSE)
+
+# Turnout ~ Income
+
+model <- glm(turnout ~ income, data=resources, weights=weight, family = binomial(link = "logit"))
+coeftest(model, vcov = cluster.vcov(model, cluster=resources$cdid))
+predict <- data.frame(effect("income", se=TRUE, mod = model, confidence.level = 0.95, xlevels=list(income = seq(0,15,1), (vcov. = cluster.vcov(model, cluster=resources$cdid)))))
+
+ggplot(data= predict, mapping=aes(x=income, y=fit)) + geom_line(aes(x = income, y = fit), size = 0.50) + geom_ribbon(aes(ymin=lower, ymax=upper), alpha = .2) + scale_colour_manual("",values="black") + scale_fill_manual("",values="grey12") + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + scale_x_continuous(limits=c(0,15), breaks=c(0,15), labels=c("Less than \n$10,000", "Greater than \n$500,000"), "Voter Income") + scale_y_continuous(limits=c(0.7,1.0), breaks=seq(0.7,1.0,0.05), "Probability of Turning Out to Vote") + ggtitle("Probability of Voter Turnout by Income Level in the 2014 Midterm Elections")
+
+# Contribution ~ Education
+
+model <- glm(contribute ~ education, data=resources, weights=weight, family = binomial(link = "logit"))
+coeftest(model, vcov = cluster.vcov(model, cluster=resources$cdid))
+predict <- data.frame(effect("education", se=TRUE, mod = model, confidence.level = 0.95, xlevels=list(vcov. = cluster.vcov(model, cluster=resources$cdid))))
+
+predict$education <- factor(predict$education,levels=c("No HS","High school graduate","Some college","2-year","4-year","Post-grad"))
+
+ggplot(data= predict, mapping=aes(x=education, y=fit, ymin=lower, ymax=upper, fill=education)) + geom_bar(stat="identity") + geom_errorbar(width=.25) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + scale_x_discrete("Voter Education Level") + scale_y_continuous(limits=c(0,1.0), breaks=seq(0.05,0.35,0.05), expand=c(0,0), "Probability of Contributing to a Campaign") + ggtitle("Probability of Being a Campaign Donor by Education Level in the 2014 Midterm Elections") + coord_cartesian(ylim=c(0,0.375)) + scale_fill_discrete(guide=FALSE)
+
+# Contribution ~ Income
+
+model <- glm(contribute ~ income, data=resources, weights=weight, family = binomial(link = "logit"))
+coeftest(model, vcov = cluster.vcov(model, cluster=resources$cdid))
+predict <- data.frame(effect("income", se=TRUE, mod = model, confidence.level = 0.95, xlevels=list(income = seq(0,15,1), (vcov. = cluster.vcov(model, cluster=resources$cdid)))))
+
+ggplot(data= predict, mapping=aes(x=income, y=fit)) + geom_line(aes(x = income, y = fit), size = 0.50) + geom_ribbon(aes(ymin=lower, ymax=upper), alpha = .2) + scale_colour_manual("",values="black") + scale_fill_manual("",values="grey12") + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + scale_x_continuous(limits=c(0,15), breaks=c(0,15), labels=c("Less than \n$10,000", "Greater than \n$500,000"), "Voter Income") + scale_y_continuous(limits=c(0,0.55), breaks=seq(0,0.55,0.05), "Probability of Contributing to a Campaign") + ggtitle("Probability of Being a Campaign Donor by Income Level in the 2014 Midterm Elections")
+```
+
+```{r,echo=T,warning=F,message=F,fig.width = 8}
+# Role of retrospective in citizen voting behavior
+
+cces <- read.dta13("/Users/carlosalgara/Dropbox/CCES2016_Common_original/CCES2016.dta")
+voting <- subset(cces,select=c(commonweight_post,cdid115,CC16_302,CC16_303,CC16_304,CC16_364c,CC16_365,CC16_367))
+voting[] <- lapply(voting, as.character)
+colnames(voting) <- c("weight","cdid","retro_economy","retro_income","prospective_income","pres_vote","sen_vote","house_vote")
+
+na <- data.frame(freq(voting$retro_economy,plot=F))
+na$category <- rownames(na)
+rownames(na) <- NULL
+voting$retro_economy[voting$retro_economy %in% as.character(na[1,4])] <- 1
+voting$retro_economy[voting$retro_economy %in% as.character(na[2,4])] <- 2
+voting$retro_economy[voting$retro_economy %in% as.character(na[3,4])] <- -2
+voting$retro_economy[voting$retro_economy %in% as.character(na[4,4])] <- -1
+voting$retro_economy[voting$retro_economy %in% as.character(na[5,4])] <- NA
+voting$retro_economy[voting$retro_economy %in% as.character(na[6,4])] <- 0
+voting$retro_economy[voting$retro_economy %in% as.character(na[7,4])] <- NA
+
+na <- data.frame(freq(voting$retro_income,plot=F))
+na$category <- rownames(na)
+rownames(na) <- NULL
+voting$retro_income[voting$retro_income %in% as.character(na[1,4])] <- -2
+voting$retro_income[voting$retro_income %in% as.character(na[2,4])] <- -1
+voting$retro_income[voting$retro_income %in% as.character(na[3,4])] <- 2
+voting$retro_income[voting$retro_income %in% as.character(na[4,4])] <- 1
+voting$retro_income[voting$retro_income %in% as.character(na[5,4])] <- 0
+voting$retro_income[voting$retro_income %in% as.character(na[6,4])] <- NA
+
+na <- data.frame(freq(voting$prospective_income,plot=F))
+na$category <- rownames(na)
+rownames(na) <- NULL
+voting$prospective_income[voting$prospective_income %in% as.character(na[1,4])] <- 2
+voting$prospective_income[voting$prospective_income %in% as.character(na[2,4])] <- -2
+voting$prospective_income[voting$prospective_income %in% as.character(na[3,4])] <- 1
+voting$prospective_income[voting$prospective_income %in% as.character(na[4,4])] <- -1
+voting$prospective_income[voting$prospective_income %in% as.character(na[5,4])] <- NA
+voting$prospective_income[voting$prospective_income %in% as.character(na[6,4])] <- 0
+voting$prospective_income[voting$prospective_income %in% as.character(na[7,4])] <- NA
+
+na <- data.frame(freq(voting$pres_vote,plot=F))
+na$category <- rownames(na)
+rownames(na) <- NULL
+voting$pres_vote[voting$pres_vote %in% as.character(na[1,4])] <- 0
+voting$pres_vote[voting$pres_vote %in% as.character(na[3,4])] <- 1
+voting$pres_vote[voting$pres_vote %in% as.character(na[c(2,4:8),4])] <- NA
+
+na <- data.frame(freq(voting$sen_vote,plot=F))
+na$category <- rownames(na)
+rownames(na) <- NULL
+voting$sen_vote[voting$sen_vote %in% as.character(na[1,4])] <- 1
+voting$sen_vote[voting$sen_vote %in% as.character(na[2,4])] <- 0
+voting$sen_vote[voting$sen_vote %in% as.character(na[c(3:8),4])] <- NA
+
+na <- data.frame(freq(voting$house_vote,plot=F))
+na$category <- rownames(na)
+rownames(na) <- NULL
+voting$house_vote[voting$house_vote %in% as.character(na[3,4])] <- 1
+voting$house_vote[voting$house_vote %in% as.character(na[4,4])] <- 0
+voting$house_vote[voting$house_vote %in% as.character(na[c(1:2,5:15),4])] <- NA
+
+voting[] <- lapply(voting, as.numeric)
+
+# Voting Democratic (i.e. for the in-party) in the 2016 election as a function of retrospective and prospective economic evaluations
+
+# Presidential vote ~ Retrospective economic evaluations
+
+model <- glm(pres_vote ~ retro_economy, data=voting, weights=weight, family = binomial(link = "logit"))
+coeftest(model, vcov = cluster.vcov(model, cluster=voting$cdid))
+predict <- data.frame(effect("retro_economy", se=TRUE, mod = model, confidence.level = 0.95, xlevels=list(retro_economy = seq(-2,2,1), (vcov. = cluster.vcov(model, cluster=voting$cdid)))))
+predict$retro_economy <- factor(predict$retro_economy,levels=c(-2,-1,0,1,2),labels=c("Much \nWorse","Somewhat \nWorse","Stayed \nSame","Somewhat \nBetter","Much \nBetter"))
+
+ggplot(data= predict, mapping=aes(x=retro_economy, y=fit, ymin=lower, ymax=upper, fill=retro_economy)) + geom_bar(stat="identity") + geom_errorbar(width=.25) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + scale_x_discrete("Retrospective Economic Evaluations") + scale_y_continuous(limits=c(0,1), breaks=seq(0,1,0.10), "Probability of Voting Democratic") + ggtitle("Probability of Voting Democratic by Retrospective Economic Evaluations in the \n2016 Presidential Election, Cooperative Congressional Election Study") + scale_fill_discrete(guide=FALSE)
+
+# Presidential vote ~ Retrospective income evaluations
+
+model <- glm(pres_vote ~ retro_income, data=voting, weights=weight, family = binomial(link = "logit"))
+coeftest(model, vcov = cluster.vcov(model, cluster=voting$cdid))
+predict <- data.frame(effect("retro_income", se=TRUE, mod = model, confidence.level = 0.95, xlevels=list(retro_income = seq(-2,2,1), (vcov. = cluster.vcov(model, cluster=voting$cdid)))))
+predict$retro_income <- factor(predict$retro_income,levels=c(-2,-1,0,1,2),labels=c("Decreased \nAlot","Decreased \nSomewhat","Stayed \nSame","Increased \nSomewhat","Increased \nAlot"))
+
+ggplot(data= predict, mapping=aes(x=retro_income, y=fit, ymin=lower, ymax=upper, fill=retro_income)) + geom_bar(stat="identity") + geom_errorbar(width=.25) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + scale_x_discrete("Retrospective Income Evaluations") + scale_y_continuous(limits=c(0,0.9), breaks=seq(0,0.9,0.10), "Probability of Voting Democratic") + ggtitle("Probability of Voting Democratic by Retrospective Income Evaluations in the \n2016 Presidential Election, Cooperative Congressional Election Study") + scale_fill_discrete(guide=FALSE)
+
+# Senate vote ~ Retrospective income evaluations
+
+model <- glm(sen_vote ~ retro_income, data=voting, weights=weight, family = binomial(link = "logit"))
+coeftest(model, vcov = cluster.vcov(model, cluster=voting$cdid))
+predict <- data.frame(effect("retro_income", se=TRUE, mod = model, confidence.level = 0.95, xlevels=list(retro_income = seq(-2,2,1), (vcov. = cluster.vcov(model, cluster=voting$cdid)))))
+predict$retro_income <- factor(predict$retro_income,levels=c(-2,-1,0,1,2),labels=c("Decreased \nAlot","Decreased \nSomewhat","Stayed \nSame","Increased \nSomewhat","Increased \nAlot"))
+
+ggplot(data= predict, mapping=aes(x=retro_income, y=fit, ymin=lower, ymax=upper, fill=retro_income)) + geom_bar(stat="identity") + geom_errorbar(width=.25) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + scale_x_discrete("Retrospective Income Evaluations") + scale_y_continuous(limits=c(0,0.9), breaks=seq(0,0.9,0.10), "Probability of Voting Democratic") + ggtitle("Probability of Voting Democratic by Retrospective Income Evaluations in the \n2016 Senate Elections, Cooperative Congressional Election Study") + scale_fill_discrete(guide=FALSE)
+
+# House vote ~ Retrospective income evaluations
+
+model <- glm(house_vote ~ retro_income, data=voting, weights=weight, family = binomial(link = "logit"))
+coeftest(model, vcov = cluster.vcov(model, cluster=voting$cdid))
+predict <- data.frame(effect("retro_income", se=TRUE, mod = model, confidence.level = 0.95, xlevels=list(retro_income = seq(-2,2,1), (vcov. = cluster.vcov(model, cluster=voting$cdid)))))
+predict$retro_income <- factor(predict$retro_income,levels=c(-2,-1,0,1,2),labels=c("Decreased \nAlot","Decreased \nSomewhat","Stayed \nSame","Increased \nSomewhat","Increased \nAlot"))
+
+ggplot(data= predict, mapping=aes(x=retro_income, y=fit, ymin=lower, ymax=upper, fill=retro_income)) + geom_bar(stat="identity") + geom_errorbar(width=.25) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + scale_x_discrete("Retrospective Income Evaluations") + scale_y_continuous(limits=c(0,0.9), breaks=seq(0,0.9,0.10), "Probability of Voting Democratic") + ggtitle("Probability of Voting Democratic by Retrospective Income Evaluations in the \n2016 House Elections, Cooperative Congressional Election Study") + scale_fill_discrete(guide=FALSE)
+```
+
+Should see the opposite effect in prospective economic evaluations.
+```{r,echo=T,warning=F,message=F,fig.width = 8}
+# Pres vote ~ Prospective Income Evaluations
+
+model <- glm(pres_vote ~ prospective_income, data=voting, weights=weight, family = binomial(link = "logit"))
+coeftest(model, vcov = cluster.vcov(model, cluster=voting$cdid))
+predict <- data.frame(effect("prospective_income", se=TRUE, mod = model, confidence.level = 0.95, xlevels=list(prospective_income = seq(-2,2,1), (vcov. = cluster.vcov(model, cluster=voting$cdid)))))
+predict$prospective_income <- factor(predict$prospective_income,levels=c(-2,-1,0,1,2),labels=c("Get Much \nWorse","Get Somewhat \nWorse","Stay \nSame","Get Somewhat \nBetter","Get Much \nBetter"))
+
+ggplot(data= predict, mapping=aes(x=prospective_income, y=fit, ymin=lower, ymax=upper, fill=prospective_income)) + geom_bar(stat="identity") + geom_errorbar(width=.25) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + scale_x_discrete("Prospective Income Evaluations") + scale_y_continuous(limits=c(0,1.0), breaks=seq(0,1,0.10), "Probability of Voting Democratic") + ggtitle("Probability of Voting Democratic by Prospective Income Evaluations in the \n2016 Presidential Election, Cooperative Congressional Election Study") + scale_fill_discrete(guide=FALSE)
+
+# Sen vote ~ Prospective Income Evaluations
+
+model <- glm(sen_vote ~ prospective_income, data=voting, weights=weight, family = binomial(link = "logit"))
+coeftest(model, vcov = cluster.vcov(model, cluster=voting$cdid))
+predict <- data.frame(effect("prospective_income", se=TRUE, mod = model, confidence.level = 0.95, xlevels=list(prospective_income = seq(-2,2,1), (vcov. = cluster.vcov(model, cluster=voting$cdid)))))
+predict$prospective_income <- factor(predict$prospective_income,levels=c(-2,-1,0,1,2),labels=c("Get Much \nWorse","Get Somewhat \nWorse","Stay \nSame","Get Somewhat \nBetter","Get Much \nBetter"))
+
+ggplot(data= predict, mapping=aes(x=prospective_income, y=fit, ymin=lower, ymax=upper, fill=prospective_income)) + geom_bar(stat="identity") + geom_errorbar(width=.25) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + scale_x_discrete("Prospective Income Evaluations") + scale_y_continuous(limits=c(0,1.0), breaks=seq(0,1,0.10), "Probability of Voting Democratic") + ggtitle("Probability of Voting Democratic by Prospective Income Evaluations in the \n2016 Senate Elections, Cooperative Congressional Election Study") + scale_fill_discrete(guide=FALSE)
+
+# House vote ~ Prospective Income Evaluations
+
+model <- glm(house_vote ~ prospective_income, data=voting, weights=weight, family = binomial(link = "logit"))
+coeftest(model, vcov = cluster.vcov(model, cluster=voting$cdid))
+predict <- data.frame(effect("prospective_income", se=TRUE, mod = model, confidence.level = 0.95, xlevels=list(prospective_income = seq(-2,2,1), (vcov. = cluster.vcov(model, cluster=voting$cdid)))))
+predict$prospective_income <- factor(predict$prospective_income,levels=c(-2,-1,0,1,2),labels=c("Get Much \nWorse","Get Somewhat \nWorse","Stay \nSame","Get Somewhat \nBetter","Get Much \nBetter"))
+
+ggplot(data= predict, mapping=aes(x=prospective_income, y=fit, ymin=lower, ymax=upper, fill=prospective_income)) + geom_bar(stat="identity") + geom_errorbar(width=.25) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + scale_x_discrete("Prospective Income Evaluations") + scale_y_continuous(limits=c(0,1.0), breaks=seq(0,1,0.10), "Probability of Voting Democratic") + ggtitle("Probability of Voting Democratic by Prospective Income Evaluations in the \n2016 House Elections, Cooperative Congressional Election Study") + scale_fill_discrete(guide=FALSE)
+```
+
+```{r,echo=T,warning=F,message=F,fig.width = 8}
+# Variation in political information
+
+nes <- read.dta13(paste("/Users/carlosalgara/Desktop/carlos_school/PhD_UC Davis/Research/Data/American Politics/ANES_Individual_Years/Data/NES",2016,".dta",sep=""),convert.factors = T, convert.underscore = FALSE, encoding ="UTF-8")
+
+# Correct Recall of Offices: Biden (V162072), Ryan (V162073a), John Roberts (V162076b), House Majority (V161515), Senate Majority (V161516)
+
+recall <- subset(nes,select=c(V160102,V162072,V162073a,V162076b,V161515,V161516,V162074a,V162075a,V161270,V161361x))
+colnames(recall) <- c("weight","biden","ryan","roberts","housemaj","senmaj","merkel","putin","educ","income")
+recall$housemaj[recall$housemaj %in% 1] <- 0
+recall$housemaj[recall$housemaj %in% 2] <- 1 
+recall$senmaj[recall$senmaj %in% 1] <- 0
+recall$senmaj[recall$senmaj %in% 2] <- 1
+x <- c(-7,-6,-5,-9)
+recall[recall == -9] <- NA
+recall[recall == -5] <- NA
+recall[recall == -6] <- NA
+recall[recall == -7] <- NA
+
+recall$knowledge_scale <- rowSums(recall[,c(2:8)])
+
+recall$educ[recall$educ %in% seq(1,8,1)] <- 1 # > HS
+recall$educ[recall$educ %in% 9] <- 2 # HS
+recall$educ[recall$educ %in% 10] <- 3 # Some college
+recall$educ[recall$educ %in% seq(11,12,1)] <- 4 # 2-yr college
+recall$educ[recall$educ %in% 13] <- 5 # BA
+recall$educ[recall$educ %in% seq(14,16,1)] <- 6 #Post-BA
+recall$educ[recall$educ %in% 90] <- 2
+recall$educ[recall$educ %in% 95] <- 2
+
+model <- lm(knowledge_scale~educ,data=recall,weights = weight)
+coeftest(model, vcov = vcovHC(model, "HC0"))
+predict <- data.frame(effect("educ", se=TRUE, mod = model, confidence.level = 0.95, xlevels=list(educ=seq(1,6,1),vcov. = vcovHC(model, "HC0"))))
+
+ggplot(data= predict, mapping=aes(x=educ, y=fit)) + geom_line(aes(x = educ, y = fit), size = 0.50) + geom_ribbon(aes(ymin=lower, ymax=upper), alpha = .2) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + scale_x_continuous("Voter Education Level",limits=c(1,6),breaks=c(1,2,3,4,5,6),labels=c("> HS", "HS","Some \nCollege","2-Yr \nCollege","BA","Post-Grad")) + scale_y_continuous(limits=c(3.2,5.65), breaks=seq(3.5,5.5,0.5), "Estimaed Political Knowledge") + ggtitle("Effect of Education on Citizen Political Knowledge, \n2016 American National Election Study")
+
+model <- lm(knowledge_scale~income,data=recall,weights = weight)
+coeftest(model, vcov = vcovHC(model, "HC0"))
+predict <- data.frame(effect("income", se=TRUE, mod = model, confidence.level = 0.95, xlevels=list(income=seq(1,28,1),vcov. = vcovHC(model, "HC0"))))
+
+ggplot(data= predict, mapping=aes(x=income, y=fit)) + geom_line(aes(x = income, y = fit), size = 0.50) + geom_ribbon(aes(ymin=lower, ymax=upper), alpha = .2) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + scale_x_continuous("Voter Income Level",limits=c(1,28),breaks=c(1,28),labels=c("< $5,000","> $250,000")) + scale_y_continuous("Estimaed Political Knowledge") + ggtitle("Effect of Income on Citizen Political Knowledge, \n2016 American National Election Study")
+```
