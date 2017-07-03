@@ -427,3 +427,155 @@ predict <- data.frame(effect("income", se=TRUE, mod = model, confidence.level = 
 
 ggplot(data= predict, mapping=aes(x=income, y=fit)) + geom_line(aes(x = income, y = fit), size = 0.50) + geom_ribbon(aes(ymin=lower, ymax=upper), alpha = .2) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + scale_x_continuous("Voter Income Level",limits=c(1,28),breaks=c(1,28),labels=c("< $5,000","> $250,000")) + scale_y_continuous("Estimaed Political Knowledge") + ggtitle("Effect of Income on Citizen Political Knowledge, \n2016 American National Election Study")
 ```
+
+```{r,echo=T,warning=F,message=F,fig.width = 8}
+# Partisanship & Proximity voting in Elections
+
+cces <- read.dta13("/Users/carlosalgara/Dropbox/CCES2016_Common_original/CCES2016.dta")
+
+# Variation in political participation
+
+vote <- subset(cces,select=c(commonweight_post,inputstate,cdid115,CC16_364c,CC16_365,CC16_367,pid7,CC16_340a,CC16_340d,CC16_340e,CC16_340l,CC16_340m,CC16_340n,CC16_340o))
+colnames(vote) <- c("weight","state","cd","pres_vote","senate_vote","house_vote","party_id","ideo_self","ideo_clinton","ideo_trump","ideo_dem_sen","ideo_rep_sen","ideo_dem_house","ideo_rep_house")
+
+na <- data.frame(freq(vote$pres_vote,plot=F))
+na$category <- rownames(na)
+rownames(na) <- NULL
+
+vote[] <- lapply(vote, as.character)
+
+vote$pres_vote[vote$pres_vote %in% as.character(na[1,4])] <- 0
+vote$pres_vote[vote$pres_vote %in% as.character(na[2,4])] <- 1
+vote$pres_vote[vote$pres_vote %in% as.character(na[c(3:10),4])] <- NA
+
+na <- data.frame(freq(vote$senate_vote,plot=F))
+na$category <- rownames(na)
+rownames(na) <- NULL
+
+vote$senate_vote[vote$senate_vote %in% as.character(na[1,4])] <- 1
+vote$senate_vote[vote$senate_vote %in% as.character(na[2,4])] <- 0
+vote$senate_vote[vote$senate_vote %in% as.character(na[c(3:8),4])] <- NA
+
+na <- data.frame(freq(vote$house_vote,plot=F))
+na$category <- rownames(na)
+rownames(na) <- NULL
+
+vote$house_vote[vote$house_vote %in% as.character(na[3,4])] <- 1
+vote$house_vote[vote$house_vote %in% as.character(na[4,4])] <- 0
+vote$house_vote[vote$house_vote %in% as.character(na[c(1:2,5:15),4])] <- NA
+
+na <- data.frame(freq(vote$party_id,plot=F))
+na$category <- rownames(na)
+rownames(na) <- NULL
+
+vote$party_id[vote$party_id %in% as.character(na[4,4])] <- NA
+vote$party_id[vote$party_id %in% as.character(na[9,4])] <- NA
+
+vote$party_id <- factor(vote$party_id,levels=c("Strong Republican","Not very strong Republican","Lean Republican","Independent","Lean Democrat","Not very strong Democrat","Strong Democrat"))
+
+
+# Partisanship & Presidential Voting
+
+vote$pres_vote <- as.numeric(vote$pres_vote)
+vote$house_vote <- as.numeric(vote$house_vote)
+vote$senate_vote <- as.numeric(vote$senate_vote)
+vote$weight <- as.numeric(vote$weight)
+
+model <- glm(pres_vote ~ party_id, data=vote, weights=weight, family = binomial(link = "logit"))
+coeftest(model, vcov = cluster.vcov(model, cluster=vote$state))
+predict <- data.frame(effect("party_id", se=TRUE, mod = model, confidence.level = 0.95, xlevels=list(vcov. = cluster.vcov(model, cluster=vote$state))))
+predict$party_id <- factor(predict$party_id,levels=c("Strong Republican","Lean Republican","Not very strong Republican","Independent","Not very strong Democrat","Lean Democrat","Strong Democrat"),labels=c("Strong \nRepublican","Lean \nRepublican","Weak \nRepublican","Independent","Weak \nDemocrat","Lean \nDemocrat","Strong \nDemocrat"))
+
+ggplot(predict, aes(x=party_id, y=fit, ymin=lower, ymax=upper, fill = party_id)) + geom_bar(stat="identity") + scale_fill_manual("",values = c("firebrick3","firebrick2","firebrick1","purple","dodgerblue1","dodgerblue2","dodgerblue3")) + geom_errorbar(width=.25) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + scale_y_continuous(limits=c(0,1.02), breaks=seq(0.10,1.0,0.10), expand = c(0, 0), "Predicted Probability of Democratic Vote") + scale_x_discrete("") + theme(legend.position="none") + geom_hline(yintercept = 0.50, colour = gray(1/2), lty = 2) + ggtitle("Probability of Voting Democratic by Partisanship Group, \n2016 Presidential Election (CCES)")
+
+# Senate Vote
+
+model <- glm(senate_vote ~ party_id, data=vote, weights=weight, family = binomial(link = "logit"))
+coeftest(model, vcov = cluster.vcov(model, cluster=vote$state))
+predict <- data.frame(effect("party_id", se=TRUE, mod = model, confidence.level = 0.95, xlevels=list(vcov. = cluster.vcov(model, cluster=vote$state))))
+predict$party_id <- factor(predict$party_id,levels=c("Strong Republican","Lean Republican","Not very strong Republican","Independent","Not very strong Democrat","Lean Democrat","Strong Democrat"),labels=c("Strong \nRepublican","Lean \nRepublican","Weak \nRepublican","Independent","Weak \nDemocrat","Lean \nDemocrat","Strong \nDemocrat"))
+
+ggplot(predict, aes(x=party_id, y=fit, ymin=lower, ymax=upper, fill = party_id)) + geom_bar(stat="identity") + scale_fill_manual("",values = c("firebrick3","firebrick2","firebrick1","purple","dodgerblue1","dodgerblue2","dodgerblue3")) + geom_errorbar(width=.25) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + scale_y_continuous(limits=c(0,1.02), breaks=seq(0.10,1.0,0.10), expand = c(0, 0), "Predicted Probability of Democratic Vote") + scale_x_discrete("") + theme(legend.position="none") + geom_hline(yintercept = 0.50, colour = gray(1/2), lty = 2) + ggtitle("Probability of Voting Democratic by Partisanship Group, \n2016 Senate Elections (CCES)")
+
+# House Vote
+
+vote$district <- paste(vote$state,vote$cd,sep="")
+
+model <- glm(house_vote ~ party_id, data=vote, weights=weight, family = binomial(link = "logit"))
+coeftest(model, vcov = cluster.vcov(model, cluster=vote$district))
+predict <- data.frame(effect("party_id", se=TRUE, mod = model, confidence.level = 0.95, xlevels=list(vcov. = cluster.vcov(model, cluster=vote$district))))
+predict$party_id <- factor(predict$party_id,levels=c("Strong Republican","Lean Republican","Not very strong Republican","Independent","Not very strong Democrat","Lean Democrat","Strong Democrat"),labels=c("Strong \nRepublican","Lean \nRepublican","Weak \nRepublican","Independent","Weak \nDemocrat","Lean \nDemocrat","Strong \nDemocrat"))
+
+ggplot(predict, aes(x=party_id, y=fit, ymin=lower, ymax=upper, fill = party_id)) + geom_bar(stat="identity") + scale_fill_manual("",values = c("firebrick3","firebrick2","firebrick1","purple","dodgerblue1","dodgerblue2","dodgerblue3")) + geom_errorbar(width=.25) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + scale_y_continuous(limits=c(0,1.02), breaks=seq(0.10,1.0,0.10), expand = c(0, 0), "Predicted Probability of Democratic Vote") + scale_x_discrete("") + theme(legend.position="none") + geom_hline(yintercept = 0.50, colour = gray(1/2), lty = 2) + ggtitle("Probability of Voting Democratic by Partisanship Group, \n2016 House Elections (CCES)")
+
+# Proximity Voting
+
+vote[vote == "Very Conservative"] <- 1
+vote[vote == "Conservative"] <- 2
+vote[vote == "Somewhat Conservative"] <- 3
+vote[vote == "Middle of the Road"] <- 4
+vote[vote == "Somewhat Liberal"] <- 5
+vote[vote == "Liberal"] <- 6
+vote[vote == "Very Liberal"] <- 7
+vote[vote == "Not sure"] <- NA
+
+# Correct Placement 
+
+for(i in 8:14){
+  vote[,i] <- as.numeric(vote[,i])
+}
+
+vote$pres_ideo_correct <- ifelse(vote$ideo_clinton > vote$ideo_trump, 1, ifelse(vote$ideo_clinton <= vote$ideo_trump, 0, NA))
+
+vote$sen_ideo_correct <- ifelse(vote$ideo_dem_sen > vote$ideo_rep_sen, 1, ifelse(vote$ideo_dem_sen <= vote$ideo_rep_sen, 0, NA))
+
+vote$house_ideo_correct <- ifelse(vote$ideo_dem_house > vote$ideo_rep_house, 1, ifelse(vote$ideo_dem_house <= vote$ideo_rep_house, 0, NA))
+
+# Dem proximity rule
+
+vote$pres_proximity <- abs(vote$ideo_trump - vote$ideo_self) - abs(vote$ideo_clinton - vote$ideo_self)
+vote$house_proximity <- abs(vote$ideo_rep_house - vote$ideo_self) - abs(vote$ideo_dem_house - vote$ideo_self)
+vote$senate_proximity <- abs(vote$ideo_rep_sen - vote$ideo_self) - abs(vote$ideo_dem_sen - vote$ideo_self)
+
+# Proximity Voting & Effect by Correct Placement
+
+model <- glm(pres_vote ~ pres_proximity*pres_ideo_correct + party_id, data=vote, weights=weight, family = binomial(link = "logit")) # President
+coeftest(model, vcov = cluster.vcov(model, cluster=vote$state))
+predict <- data.frame(effect("pres_proximity*pres_ideo_correct", se=TRUE, mod = model, confidence.level = 0.95, xlevels=list(pres_proximity=unique(na.omit(vote$pres_proximity)),pres_ideo_correct=c(0,1),vcov. = cluster.vcov(model, cluster=vote$state))))
+
+predict$pres_ideo_correct <- factor(predict$pres_ideo_correct,levels=c(0,1),labels=c("Incorrect Placement","Correct Placement"))
+
+ggplot(data= predict, mapping=aes(x=pres_proximity, y=fit, group=pres_ideo_correct,fill=pres_ideo_correct,linetype=pres_ideo_correct)) + geom_line(aes(x = pres_proximity, y = fit), size = 0.50) + geom_ribbon(aes(ymin=lower, ymax=upper), alpha = .2) + scale_fill_manual("",values=c("red1","dodgerblue1")) + scale_linetype_manual("",values=c("dashed","solid")) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + scale_x_continuous(limits=c(-6,6), breaks=c(-6,0,6), labels=c("-6 \nConservative", "0","0 \nLiberal"), "Voter Candidate Proximity") + scale_y_continuous(limits=c(0,1.0), breaks=seq(0,1.0,0.10), "Probability of Voting Democratic") + ggtitle("Probability of Voting Democratic by Ideological Proximity & Correct Ideological Placement of Candidates, \n2016 Presidential Election (CCES)") + theme(legend.position=c(0.85, 0.10), legend.box.just = "left", legend.key.size = unit(1,"line"), legend.key = element_rect(size = 0, color = 'white'), legend.text.align = 0, legend.box = "horizontal") + guides(fill = guide_legend(reverse=T), linetype = guide_legend(reverse=T))
+
+model <- glm(pres_vote ~ pres_proximity*pres_ideo_correct, data=vote, weights=weight, family = binomial(link = "logit")) # Senate
+coeftest(model, vcov = cluster.vcov(model, cluster=vote$state))
+predict <- data.frame(effect("pres_proximity*pres_ideo_correct", se=TRUE, mod = model, confidence.level = 0.95, xlevels=list(pres_proximity=unique(na.omit(vote$pres_proximity)),pres_ideo_correct=c(0,1),vcov. = cluster.vcov(model, cluster=vote$state))))
+
+predict$pres_ideo_correct <- factor(predict$pres_ideo_correct,levels=c(0,1),labels=c("Incorrect Placement","Correct Placement"))
+
+ggplot(data= predict, mapping=aes(x=pres_proximity, y=fit, group=pres_ideo_correct,fill=pres_ideo_correct,linetype=pres_ideo_correct)) + geom_line(aes(x = pres_proximity, y = fit), size = 0.50) + geom_ribbon(aes(ymin=lower, ymax=upper), alpha = .2) + scale_fill_manual("",values=c("red1","dodgerblue1")) + scale_linetype_manual("",values=c("dashed","solid")) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + scale_x_continuous(limits=c(-6,6), breaks=c(-6,0,6), labels=c("-6 \nConservative", "0","0 \nLiberal"), "Voter Candidate Proximity") + scale_y_continuous(limits=c(0,1.0), breaks=seq(0,1.0,0.10), "Probability of Voting Democratic") + ggtitle("Probability of Voting Democratic by Ideological Proximity & Correct Ideological Placement of Candidates, \n2016 Presidential Election (CCES)") + theme(legend.position=c(0.85, 0.10), legend.box.just = "left", legend.key.size = unit(1,"line"), legend.key = element_rect(size = 0, color = 'white'), legend.text.align = 0, legend.box = "horizontal") + guides(fill = guide_legend(reverse=T), linetype = guide_legend(reverse=T))
+
+model <- glm(senate_vote ~ senate_proximity*sen_ideo_correct, data=vote, weights=weight, family = binomial(link = "logit")) # Senate
+coeftest(model, vcov = cluster.vcov(model, cluster=vote$state))
+predict <- data.frame(effect("senate_proximity*sen_ideo_correct", se=TRUE, mod = model, confidence.level = 0.95, xlevels=list(senate_proximity=unique(na.omit(vote$senate_proximity)),sen_ideo_correct=c(0,1),vcov. = cluster.vcov(model, cluster=vote$state))))
+
+predict$sen_ideo_correct <- factor(predict$sen_ideo_correct,levels=c(0,1),labels=c("Incorrect Placement","Correct Placement"))
+
+ggplot(data= predict, mapping=aes(x=senate_proximity, y=fit, group=sen_ideo_correct,fill=sen_ideo_correct,linetype=sen_ideo_correct)) + geom_line(aes(x = senate_proximity, y = fit), size = 0.50) + geom_ribbon(aes(ymin=lower, ymax=upper), alpha = .2) + scale_fill_manual("",values=c("red1","dodgerblue1")) + scale_linetype_manual("",values=c("dashed","solid")) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + scale_x_continuous(limits=c(-6,6), breaks=c(-6,0,6), labels=c("-6 \nConservative", "0","0 \nLiberal"), "Voter Candidate Proximity") + scale_y_continuous(limits=c(0,1.0), breaks=seq(0,1.0,0.10), "Probability of Voting Democratic") + ggtitle("Probability of Voting Democratic by Ideological Proximity & Correct Ideological Placement of Candidates, \n2016 Senate Elections (CCES)") + theme(legend.position=c(0.85, 0.10), legend.box.just = "left", legend.key.size = unit(1,"line"), legend.key = element_rect(size = 0, color = 'white'), legend.text.align = 0, legend.box = "horizontal") + guides(fill = guide_legend(reverse=T), linetype = guide_legend(reverse=T))
+
+model <- glm(senate_vote ~ senate_proximity*sen_ideo_correct, data=vote, weights=weight, family = binomial(link = "logit")) # Senate
+coeftest(model, vcov = cluster.vcov(model, cluster=vote$state))
+predict <- data.frame(effect("senate_proximity*sen_ideo_correct", se=TRUE, mod = model, confidence.level = 0.95, xlevels=list(senate_proximity=unique(na.omit(vote$senate_proximity)),sen_ideo_correct=c(0,1),vcov. = cluster.vcov(model, cluster=vote$state))))
+
+predict$sen_ideo_correct <- factor(predict$sen_ideo_correct,levels=c(0,1),labels=c("Incorrect Placement","Correct Placement"))
+
+ggplot(data= predict, mapping=aes(x=senate_proximity, y=fit, group=sen_ideo_correct,fill=sen_ideo_correct,linetype=sen_ideo_correct)) + geom_line(aes(x = senate_proximity, y = fit), size = 0.50) + geom_ribbon(aes(ymin=lower, ymax=upper), alpha = .2) + scale_fill_manual("",values=c("red1","dodgerblue1")) + scale_linetype_manual("",values=c("dashed","solid")) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + scale_x_continuous(limits=c(-6,6), breaks=c(-6,0,6), labels=c("-6 \nConservative", "0","0 \nLiberal"), "Voter Candidate Proximity") + scale_y_continuous(limits=c(0,1.0), breaks=seq(0,1.0,0.10), "Probability of Voting Democratic") + ggtitle("Probability of Voting Democratic by Ideological Proximity & Correct Ideological Placement of Candidates, \n2016 Senate Elections (CCES)") + theme(legend.position=c(0.85, 0.10), legend.box.just = "left", legend.key.size = unit(1,"line"), legend.key = element_rect(size = 0, color = 'white'), legend.text.align = 0, legend.box = "horizontal") + guides(fill = guide_legend(reverse=T), linetype = guide_legend(reverse=T))
+
+model <- glm(house_vote ~ house_proximity*house_ideo_correct, data=vote, weights=weight, family = binomial(link = "logit")) # House
+coeftest(model, vcov = cluster.vcov(model, cluster=vote$district))
+predict <- data.frame(effect("house_proximity*house_ideo_correct", se=TRUE, mod = model, confidence.level = 0.95, xlevels=list(house_proximity=unique(na.omit(vote$house_proximity)),house_ideo_correct=c(0,1),vcov. = cluster.vcov(model, cluster=vote$district))))
+
+predict$house_ideo_correct <- factor(predict$house_ideo_correct,levels=c(0,1),labels=c("Incorrect Placement","Correct Placement"))
+
+ggplot(data= predict, mapping=aes(x=house_proximity, y=fit, group=house_ideo_correct,fill=house_ideo_correct,linetype=house_ideo_correct)) + geom_line(aes(x = house_proximity, y = fit), size = 0.50) + geom_ribbon(aes(ymin=lower, ymax=upper), alpha = .2) + scale_fill_manual("",values=c("red1","dodgerblue1")) + scale_linetype_manual("",values=c("dashed","solid")) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + scale_x_continuous(limits=c(-6,6), breaks=c(-6,0,6), labels=c("-6 \nConservative", "0","0 \nLiberal"), "Voter Candidate Proximity") + scale_y_continuous(limits=c(0,1.0), breaks=seq(0,1.0,0.10), "Probability of Voting Democratic") + ggtitle("Probability of Voting Democratic by Ideological Proximity & Correct Ideological Placement of Candidates, \n2016 House Elections (CCES)") + theme(legend.position=c(0.85, 0.10), legend.box.just = "left", legend.key.size = unit(1,"line"), legend.key = element_rect(size = 0, color = 'white'), legend.text.align = 0, legend.box = "horizontal") + guides(fill = guide_legend(reverse=T), linetype = guide_legend(reverse=T))
+```
