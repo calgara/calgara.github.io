@@ -125,7 +125,7 @@ These thematic questions may seem daunting, but this course will give you the  n
 <br/>
 <br/>
 
-1. **Meeting 12**: Congressional Incentives: Representation & Getting Re-Elected
+1. [ **Meeting 912*:](Pol1_Summer2017/Pol1_Meeting12_Congressional_Incentives.pdf): Congressional Incentives: Representation & Getting Re-Elected
     + [Mayhew, David. 1974. ``The Electoral Connection and the Congress.'' In Terry Sullivan & Matthew Sullivan eds., *Congress: Structure and Policy.* New York, NY: Cambridge University Press. 1987.](Pol1_Summer2017/Mayhew 1974.pdf)
     + [Harbridge, Laurel & Neil Malhorta. 2011. ``Electoral Incentives and Partisan Conflict in Congress: Evidence from Survey Experiments.'' *American Journal of Political Science* 55(3): 494-510.](Pol1_Summer2017/Harbridge & Malhotra 2011.pdf)
     + *Kollman Text:* Chapter 5: *Congress* Sections: Congressional Elections  
