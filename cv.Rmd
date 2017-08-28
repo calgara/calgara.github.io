@@ -15,10 +15,10 @@ output: html_document
 
 </script>
 
-Below is my CV, or you can [download my CV in pdf format](https://calgara.github.io/Algara_CV.pdf).
+Below is my CV, or you can [download my CV in pdf format](Algara_CV_Aug2017.pdf).
 
-<object data="Algara_CV.pdf" type="application/pdf" width="100%" height=800>
-<iframe src="Algara_CV.pdf" width="100%" height="100%" style="border: none;"></iframe>
+<object data="Algara_CV_Aug2017.pdf" type="application/pdf" width="100%" height=800>
+<iframe src="Algara_CV_Aug2017.pdf" width="100%" height="100%" style="border: none;"></iframe>
 </object>
 <p>Copyright &copy; 2017 by Carlos Algara. Made with [RStudio](https://www.rstudio.com).</p>
 
