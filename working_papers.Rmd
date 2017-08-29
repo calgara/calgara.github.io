@@ -36,15 +36,26 @@ h1.title {
   <br/><br/>
   <div class="column">
   <div class="col-xs-10 col-sm-7 text-center">
-  <div style='width: 450px; text-align: center; font-size: 85%;'>*Percentage of Senators Representing States That Lean Towards the Opposing Party By Partisan Polarization, 1920-2016* <br>
-  <img src="/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/senate_dynamics.png" alt="senate_dynamics" style="width:450px;" align = "top"/></div></div>
+  <div style='width: 450px; text-align: center; font-size: 85%;'>*Effect of Incumbency on Vote Share by Seat Type & Polarization Level, 1920-2016* <br>
+  <img src="/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/mes_by_states_plot.png" alt="senate_dynamics" style="width:450px;" align = "top"/></div></div>
   </div>
   
-  <center> **Partisanship, Incumbency, & Polarization in U.S. Senate Elections, 1920-2016** </center><br/>
+  <center> **The Conditioning Effects of Polarization on Senate Elections: A Direct-Election Era & Voter-Level Analysis** </center><br/>
   *Abstract:* Using originally collected data of the entire direct-election era, this paper asks two questions: (1) How has the incumbency advantage changed in Senate elections as the Senate becomes more ideologically polarized? And, (2) Are Senate elections becoming more partisan-centered at the expense of the incumbency advantage? This paper finds evidence that increased polarization increases the salience of partisanship and, with the exception of Senators from politically hostile states, decreases the saliency of incumbency in Senate election outcomes. These findings are confirmed using voter-level data.  
-<left> [Full Abstract](https://calgara.github.io/MPSA2017_Senate_Election_Dynamics_Algara.pdf) </left>   
-  <right>[Senate Election & Candidate Quality Data, 1914-2016]("mailto:calgara@ucdavis.edu") </right> <br/>
-  
+<left> [Full Abstract](August2017_Senate_Election_Dynamics_Algara.pdf) </left>   
+
+  </script>
+  <br/><br/>
+  <div class="column">
+  <div class="col-xs-10 col-sm-7 text-center">
+  <div style='width: 450px; text-align: center; font-size: 85%;'>*Percentage of Senators Representing States That Lean Towards the Opposing Party During the Direct-Election Era, 1914-2016 * <br>
+  <img src="/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/years_outpartisan_seats_percentage.png" alt="obstructrion" style="width:450px;" align = "top"/></div></div>
+  </div>
+  <center> **The Influence of Incumbency, Partisanship, Candidate Quality \& National Tides in U.S. Senate Elections, 1914-2016** </center><br/>
+  *Abstract:* I specify a comprehensive model of Senate election outcomes which focuses on four salient predictors of electoral outcomes: national partisan tides, incumbency, state partisanship, & candidate quality. I then evaluate this model using a novel dataset containing every Senate race since the adoption of the 17th amendment in 1913. Congruent with recent findings in the House, the model finds evidence that Senate elections are becoming more partisan-centered at the expense of a candidate quality advantage. While the model finds an increase in the incumbency advantage over time, the pivotal nature of incumbency in determining Senate election outcomes wanes during the partisan-centered period. I conclude by showing that Senate elections are becoming more nationalized & president-centered contests.  
+<left> [Full Abstract](https://calgara.github.io/August2017_Nationalization_Senate_Elections_Algara.pdf) </left>  
+    <right>[Senate Election & Candidate Quality Data, 1914-2016]("mailto:calgara@ucdavis.edu") </right> <br/>
+
   </script>
   <br/><br/>
   <div class="column">
