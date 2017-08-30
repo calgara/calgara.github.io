@@ -54,7 +54,7 @@ h1.title {
   <center> **The Influence of Incumbency, Partisanship, Candidate Quality \& National Tides in U.S. Senate Elections, 1914-2016** </center><br/>
   *Abstract:* I specify a comprehensive model of Senate election outcomes which focuses on four salient predictors of electoral outcomes: national partisan tides, incumbency, state partisanship, & candidate quality. I then evaluate this model using a novel dataset containing every Senate race since the adoption of the 17th amendment in 1913. Congruent with recent findings in the House, the model finds evidence that Senate elections are becoming more partisan-centered at the expense of a candidate quality advantage. While the model finds an increase in the incumbency advantage over time, the pivotal nature of incumbency in determining Senate election outcomes wanes during the partisan-centered period. I conclude by showing that Senate elections are becoming more nationalized & president-centered contests.  
 <left> [Full Abstract](https://calgara.github.io/August2017_Nationalization_Senate_Elections_Algara.pdf) </left>  
-    <right>[Senate Election & Candidate Quality Data, 1914-2016]("mailto:calgara@ucdavis.edu") </right> <br/>
+    <right>[Senate Election & Candidate Quality Data, 1914-2016](mailto:calgara@ucdavis.edu) </right> <br/>
 
   </script>
   <br/><br/>
