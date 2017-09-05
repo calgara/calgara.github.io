@@ -4,7 +4,7 @@ subtitle: "University of California, Davis"
 date: "Fall 2017"
 author: 
 - "[Carlos Algara](mailto:calgara@ucdavis.edu)"
-- "*Download Full Syllabus [Here](Pol1_Summer2017/Pol1_Fall2017_Syllabus.pdf)*"
+- "*Download Full Syllabus [Here](Pol1_Fall2017/Pol1_Fall2017_Syllabus.pdf)*"
 output: html_document
 ---
 <script>
