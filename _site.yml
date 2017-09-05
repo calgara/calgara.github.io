@@ -20,6 +20,8 @@ navbar:
       menu:
         - text: "POL 1, Summer 2017"
           href: pol1s2017.html
+        - text: "POL 1, Fall 2017"
+          href: pol1f2017.html
       
 #    - text: "Blog"
 #      href: blog.html

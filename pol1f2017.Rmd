@@ -1,0 +1,181 @@
+---
+title: "POL 1: Introduction to American Politics"
+subtitle: "University of California, Davis"
+date: "Fall 2017"
+author: 
+- "[Carlos Algara](mailto:calgara@ucdavis.edu)"
+- "*Download Full Syllabus [Here](Pol1_Summer2017/Pol1_Fall2017_Syllabus.pdf)*"
+output: html_document
+---
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-100362112-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<br/>
+
+## Welcome!
+
+This GitPage is intended to be the interactive syllabus for Pol 1: Introduction to American Politics for the 2017 Fall Quarter. The full syllabus for the course can be found above. Class logistics, the theoritical framework for the course, and course readings can be found below. Under each meeting header, you will find:
+  
+* Course slidesets and readings corresponding to the meeting topic.    
+  
+* Course readings corresponding to the meeting topic. With the exception of the textbook readings (designated as the ***Kollman Text*** below), if you click on the reading links, you will be taken to a PDF of the reading.  
+
+* Review sheets for the midterm and final exams.  
+
+* The substantive prompt for the ***American Politics Model Evaluation Essay*** assignment can be found [here.](Pol1_Fall2017/Pol1_Essay_Prompt.pdf) This assignment is due December 8th and is to be uploaded to the [Canvas Portal](https://login.canvas.ucdavis.edu) under the essay assignment tab.
+
+<br/>
+
+## Class Time, Office Hours & Course Materials
+  
+***Lecture***: [Hickey Gymnasium 290](http://campusmap.ucdavis.edu/?b=80); Tuesday & Thursday 8:00-9:20  
+***Discussion Section/Term Paper Period***: [Hickey Gymnasium 290](http://campusmap.ucdavis.edu/?b=80); Thursday & Thursday 9:30-9:50    
+***Office Hours***: [Kerr Hall 663](http://ps.ucdavis.edu); Tuesday 10:00-12:00 & by appointment  
+***Course Materials***: [Canvas](http://canvas.ucdavis.edu) & [GitPage](http://calgara.github.io/pol1f2017.html)  
+<br/>
+
+# Course Objective: How do we study & assess American democracy?  
+  
+This course offers an introduction to the systematic and meticulous study of American politics. Building on the scientific foundation of political science, this course is designed to provide an understanding into the behavior of ***citizens*** and ***institutions*** operating within the national framework of American government.  The main question motivating the course is a simple, yet complex one: how well does the American political system live up to the ideals of a representative democracy? Recognizing that representative democracy requires engaged citizens and responsive institutions, the motivating question of the course hinges on understanding:  
+  
+* How does James Madison's "Republic"" provide the fundamental theory that justifies the representative framework which underlies the American political system and what are the role of ***citizens*** and elites within this "ideal"" framework?  
+  
+* How do individual ***citizens*** make political decisions, such as which  candidate to vote for and what policies & political positions (preferences) to hold? What are the implications of how ***citizens*** make decisions for Madison's framework and the function of democracy? How do alternative models of representation differ from Madison's framework?    
+  
+* What incentives motivate how elected elites (politicians) behave within the ***institution*** (i.e. the Congress and the presidency) in which they serve and what are the implications of differing incentives across ***institutions*** for responsiveness (policymaking)? How does collective ***institutional*** behavior, such as gridlock, fit into Madison's view of democracy? How do parties fit (or not fit) in Madison's conception of institutional conflict between the Congress and Presidency?    
+  
+These thematic questions may seem daunting, but this course will give you the  necessary framework to perform careful political and social science analysis to gain leverage on these questions. This course will provide not only an understanding of how to think of the quality of American democracy but also how to engage in careful social science analysis. This course emphasizes the tools you need to assess political behaviors, practices, and institutions based on theory and evidence. Welcome to the class!  
+<br/>
+
+## Course Road-Map & Materials  
+<br/>
+***Note:*** Slidesets are posted as links in the meeting headers text.  
+<br/>
+  
+## *1. Madison's Republic: Foundation of American Democracy*  
+***Section Objective***: Madison's theory of representative democracy, outlined in ***Federalist 10 & 51***, outlines the justification for the American constitution and our representative form of government. This section provides an understanding of the motivation underpinning a representative form of democracy, centered around Madison's argument about human nature, how representatives behave in political life, and the consequences of Madison's argument on political change. Ask yourself, is Madison's Republic democratic relative to other forms of democracy and how well does this theory explain the American system today? 
+<br/>
+
+1. [ **Meeting 1**:]() Course Overview & ``First-Attempts'' at American Democracy  
+    + *Kollman Text:* Chapter 1: *Introduction*
+    + [The Articles of Confederation and Perpetual Union. 1777.](https://www.ourdocuments.gov/doc.php?flash=false&doc=3&page=transcript)  
+<br/>
+
+2. [ **Meeting 2**:]() The Problem of Human Nature: Self-Interest, Factions, & Collective Action
+    + [Madison, James. 1787. ``Federalist 10.'' In United States Congress Resources](https://www.congress.gov/resources/display/content/The+Federalist+Papers#TheFederalistPapers-10)
+    + *Kollman Text:* Chapter 2: *The Constitution:* Sections: What Do Constitutions Accomplish & Origins of the American Political System  
+<br/>
+
+2. [ **Meeting 3**:]() Madison's Theory: Self-Interest & Ambition as the Solution
+    + Reread: [Madison, James. 1787. ``Federalist 10.'' In United States Congress Resources](https://www.congress.gov/resources/display/content/The+Federalist+Papers#TheFederalistPapers-10)
+    + [Madison, James (or Alexander Hamilton). 1788. ``Federalist 51.'' In United States Congress Resources](https://www.congress.gov/resources/display/content/The+Federalist+Papers#TheFederalistPapers-10)
+    + [Constitution of the United States. 1788](https://www.archives.gov/founding-docs/constitution-transcript). *Particular* emphasis on Articles I, II,  IV, & VI.  
+<br/>
+
+## *2. Citizen Political Behavior: Functioning as Critical Principals*  
+***Section Objective***: It's clear that Madison's Republic posits an important role for citizens in a representative democracy. This section highlights how citizens function as *principals* of their elected representatives (i.e. agents). This section provides an understanding of which type of citizens participate in politics, what the incentives are to be "disengaged" from the political process, how well elections work, and what role parties play (if any) in helping citizens make political decisions. Pay close attention to some key questions. What are the implications of the "disengagement" incentive for the functioning of Madison's Republic? Do elections help citizens make a more "representative" form of government and how do we know when they do? How does party theory challenge Madison's republic? And, perhaps the most important question, is an informed electorate **NECESSARY** for Madison's theory to work?  
+<br/>
+
+1. [ **Meeting 4**:]() Variation in Citizen Participation: Resources and Free-Riding Incentive  
+    + *Kollman Text:* Chapter 10: *Political Participation*  
+    + [Schudson, Michael. 2000. ``America's Ignorant Voters.'' *The Wilson Quarterly* 24(2): 16-22.](Pol1_Fall2017/Schudson2000.pdf)  
+<br/>  
+    
+2. [ **Meeting 5**:]() Developing Political Preferences: Citizen Self-Interest    
+    + [Zaller, John & Stanley Feldman. 1992 ``A Simple Theory of the Survey Response: Answering Questions versus Revealing Preferences.'' *American Journal of Political Science* 36(3): 951-971.](Pol1_Fall2017/Zaller_Feldman1992.pdf)  
+    + [Linn, Suzanna, Jonathan Nagler & Marco A. Morales. 2013. ``Economics, Elections, and Voting Behavior''  In Jan E. Leighley eds., *The Oxford Handbook of American Elections and Political Behavior.* New York, NY: Oxford University Press 2015.](Pol1_Fall2017/Linn et al. 2016.pdf)  
+<br/>  
+  
+3. [ **Meeting 6**:]() Overcoming Limited Information: How Citizens use Short-Cuts to Act  
+    + *Kollman Text:* Chapter 9: *Public Opinion*
+    + [Lau, Richard R. & David P. Redlawsk. 2001. ``Advantages and Disadvantages of Cognitive Heuristics in Political Decision Making.'' *American Political Science Review* 45(4): 951-971.](Pol1_Fall2017/Lau & Redlawk 2001.pdf)  
+<br/>
+
+4.  [ **Meeting 7**:]() Electoral Dynamics: The Role of Campaign & Valence Context in Voting Choice   
+    + [Abramowitz, Alan I., Brad Alexander & Matthew Gunning. 2006. ``Incumbency, Redistricting, and the Decline of Competition in U.S. House Elections.'' *Journal of Politics* 68(1): 75-88.](Pol1_Summer2017/Abramowitz, Alexander & Gunning 2006.pdf)  
+    + [Stone, Walter J., & Matthew K. Buttice. 2010. ``Voters in Context: The Politics of Citizen Behavior''  In Jan E. Leighley eds., *The Oxford Handbook of American Elections and Political Behavior.* New York, NY: Oxford University Press 2015.](Pol1_Fall2017/Stone & Buttice 2010.pdf)
+    + *Kollman Text:* Chapter 13: *Elections & Campaigns*  
+<br/>  
+
+5. [ **Meeting 8**:]() An Alternative to the Madisonian Model of Representation: Pluralism & By-Product Representation through Interest Groups
+    + *Kollman Text:* Chapter 11: *Interest Groups & Social Movements* 
+    + [Olson Jr., Mancur 1965 *The Logic of Collective Action: Public Goods and the Theory of Groups*. Cambridge, MA: Harvard University Press.](https://moodle.drew.edu/2/pluginfile.php/225050/mod_resource/content/2/Olson%20%281967%29%20Logic%20of%20Collective%20Action%20%28book%29.pdf) ***Read Chapter IV: The "By-Product" & "Special Interest" Theories (p. 132-167)***  
+<br/>
+
+6. [ **Meeting 9**:]() Does Pluralism Provide Equitable Representation? Critiques of the By-Product Model
+    + [Gilens, Martin & Benjamin Page. 2014 ``Testing Theories of American Politics: Elites, Interest Groups, and Average Citizens.'' *Perspectives on Politics* 12(3): 564-581.](Pol1_Summer2017/Levendusky 2010.pdf)  
+    + [Schattschneider, E.E. 1960 ``The Scope & Bias of the Pressure System.'' In ***The Semisovereign People: A Realist's View of Democracy in America*** New York, NY: Holt, Rinehart & Winston.](http://faculty.smu.edu/jmwilson/schattschneider.pdf)
+<br/>  
+
+<center> [***\*Download Midterm Review Here.\****]() </center><br/>
+
+7. **Meeting 10**: Review for Midterm & Catch-Up.  
+<br/> 
+
+8. **Meeting 11**: Midterm Exam (November 2, 2017).  
+<br/>
+
+## *3. Post-Election: How Institutions Function within the Framework*  
+***Section Objective***: This section turns our focus from citizens, the principals in a representative democracy, to elected representatives, the agents. This section focuses on two institutions, the Congress and the Executive, and assesses the *incentives* they have to be faithful agents for voters and *whether* they provide accurate political representation. This section begins with how ***Party Theory*** provides a framework of representation and policymaking. This section wraps up with a discussion on collective ***institutional*** behavior. Critical questions for this section focus on comparing & contrasting Madison's model of representation, Pluralism (By-Product Theory), and Party Theory. Speaking to institutions, think about how do the differing electoral incentives found in Congress and the Presidency inherently create a *status quo bias*? How does polarization exasperate this bias, what *types of citizens* get represented, and is the system in need of reform in light of Madison's theory?  
+<br/>  
+
+1. [ **Meeting 12**:]() Parties in the Electorate: Helping Citizens Make Political Decisions at a Trade-off (***Party Theory I***)  
+    + [Levendusky, Matthew S. 2010. ``Clearer Cues, More Consistent Voters: A Benefit of Elite Polarization.'' *Political Behavior* 32(1): 111-131.](Pol1_Fall2017/Levendusky 2010.pdf)  
+    + [Bafumi, Joseph & Robert Y. Shapiro. 2009. ``A New Partisan Voter.'' *Journal of Politics* 71(1): 1-23.](Pol1_Fall2017/Bafumi & Shapiro 2009.pdf)  
+<br/>
+
+2. [ **Meeting 13**:]() Parties as Organizations: Implications of the American Party System & Procedural Cartel Theory (***Party Theory II***)  
+    + [Fiorina, Morris. 2006 ``Parties as Problem Solvers.'' In Allan S. Geber & Erik M. Patashnik eds., *Promoting the General Welfare : New Perspectives on Government Performance* Washington, DC: Brookings Institute. 2006.](Pol1_Fall2017/Fiorina 2016.pdf)
+    + [Cox, Gary W. & Matthew D. McCubbins. 2005. ``Setting the Agenda: Responsible Party Government in the U.S. House of Representatives.'' In Steven S. Smith et al. eds. *The American Congress Reader*. New York, NY: Cambridge University Press. 2009.](Pol1_Fall2017/Cox & McCubbins 2005.pdf)  
+    + ***Optional:*** *Kollman Text:* Chapter 12: *Political Parties* Sections:  What are Parties? & In Comparison: Parties  
+<br/>
+
+3. [ **Meeting 14**:]() Congressional Incentives & "*The Textbook Congress*": Representation & Getting Re-Elected
+    + [Mayhew, David. 1974. ``The Electoral Connection and the Congress.'' In Terry Sullivan & Matthew Sullivan eds., *Congress: Structure and Policy.* New York, NY: Cambridge University Press. 1987.](Pol1_Fall2017/Mayhew 1974.pdf)
+    + [Evans, C. Lawrence. 2011. ``Congressional Committees.''  In George C. Edwards III, Frances E. Lee, & Eric Schickler eds., *The Oxford Handbook of the American Congress.* New York, NY: Oxford University Press 2015.](Pol1_Fall2017/Evans_committees_2011.pdf)
+    + [Evans, Diana. 2011. ``Pork Barrel Politics.''  In George C. Edwards III, Frances E. Lee, & Eric Schickler eds., *The Oxford Handbook of the American Congress.* New York, NY: Oxford University Press 2015.](Pol1_Fall2017/Evans_pork_2011.pdf)
+    + ***Optional:*** *Kollman Text:* Chapter 5: *Congress* Sections: Congressional Elections  
+<br/>
+
+
+3. [ **Meeting 15**:]() Change in Representation: Are Citizens Represented in the System?  
+    + [Bafumi, Joseph & Michael C. Herron. 2010. ``Leapfrog Representation and Extremism: A Study of American Voters and Their Members in Congress.'' *American Political Science Review* 104(3): 519-542.](Pol1_Summer2017/Bafumi & Herron 2010.pdf)  
+    + [Bartels, Larry M., Joshua D. Clinton & John G. Greer 2014. ``Representation.''  In Richard Valelly, Suzanne Mettler, & Robert Lieberman eds., *The Oxford Handbook of American Political Development.* New York, NY: Oxford University Press 2016.](Pol1_Fall2017/Bartels et al. 2014.pdf)  
+<br/>   
+
+4. [ **Meeting 16**:]() The Presidency: At-Large Constituency & Presidential Representation
+    + [Moe. Terry M. & William G. Howell. 1999. ``Unilateral Action and Presidential Power: A Theory.'' *Presidential Studies Quarterly* 29(4): 850-873.](Pol1_Summer2017/Moe & Howell 1999.pdf)  
+    + [Canes-Wrone, Brandice. 2001. ``The President’s Legislative Influence from Public Appeals.'' *American Journal of Political Science* 45(2): 313-329](Pol1_Summer2017/Canes-Wrone 2001.pdf)  
+<br/>  
+  
+5. [ **Meeting 17**:]() Executive-Legislative Bargaining: Inherent Status-Quo Bias  
+    + [Krehbiel, Keith. 1993. ``Pivotal Politics: A Theory in U.S. Lawmaking.'' In Steven S. Smith et al. eds. *The American Congress Reader*. New York, NY: Cambridge University Press. 2009.](Pol1_Summer2017/Krehbiel 1998.pdf)  
+<br/>    
+  
+6. [**Meeting 18**:]() Polarization: Implications for Policymaking & Accountability
+    + [Rohde, David W. & John G. Greer. 2014. ``The President and Congressional Parties in an Era of Polarization.''  In George C. Edwards III & William G. Howell eds., *The Oxford Handbook of the American Presidency* New York, NY: Oxford University Press 2016.](Pol1_Fall2017/Rohde & Barthelemy 2010.pdf)
+    + [Jones, David R. 2010. ``Partisan Polarization and Congressional Accountability in House Elections.'' *American Journal of Political Science* 54(2): 323-337.](Pol1_Summer2017/Jones 2010.pdf)
+    + ***Optional:*** [Fiorina, Morris. 2014. ``The (Re) Nationalization of Congressional Elections.'' *A Hoover Institution Essay on Contemporary American Politics*.](Pol1_Fall2017/fiorina_renationalizationofcongressionalelections_7.pdf)  
+<br/>  
+
+8. [**Meeting 19**:]() Reform Needed? Potential Reforms from Comparative Systems
+    + [Shugart, Matthew S. 2006. ``Comparative Executive–Legislative Relations.''  In Sarah A. Binder, R. A. W. Rhodes & Bert A. Rockman eds., *The Oxford Handbook of Political Institutions* New York, NY: Oxford University Press 2008.](Pol1_Fall2017/Shugart2016.pdf)
+<br/>
+
+<center> [***\*Download Final Exam Review Here.\****]() </center><br/>
+
+9. **Meeting 20**: Review for Final Exam & Catch-Up.  
+<br/> 
+
+10. **Meeting 21**: Final Exam (6:00PM, December 14, 2017)
+<br/>
+<br/>
+<center> Copyright &copy; 2017 by Carlos Algara. Made with [RStudio](https://www.rstudio.com). </center>

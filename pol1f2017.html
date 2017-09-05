@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+<meta name="author" content="Carlos Algara" />
+<meta name="author" content="Download Full Syllabus Here" />
+
+
+<title>POL 1: Introduction to American Politics</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Carlos Algara</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="cv.html">CV</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Research
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="dissertation.html">Dissertation Manuscripts</a>
+    </li>
+    <li>
+      <a href="working_papers.html">Working Papers</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Teaching
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="pol1s2017.html">POL 1, Summer 2017</a>
+    </li>
+    <li>
+      <a href="pol1f2017.html">POL 1, Fall 2017</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="about.html">About Me</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">POL 1: Introduction to American Politics</h1>
+<h3 class="subtitle"><em>University of California, Davis</em></h3>
+<h4 class="author"><em><a href="mailto:calgara@ucdavis.edu">Carlos Algara</a></em></h4>
+<h4 class="author"><em><em>Download Full Syllabus <a href="Pol1_Summer2017/Pol1_Fall2017_Syllabus.pdf">Here</a></em></em></h4>
+<h4 class="date"><em>Fall 2017</em></h4>
+
+</div>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-100362112-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<p><br/></p>
+<div id="welcome" class="section level2">
+<h2>Welcome!</h2>
+<p>This GitPage is intended to be the interactive syllabus for Pol 1: Introduction to American Politics for the 2017 Fall Quarter. The full syllabus for the course can be found above. Class logistics, the theoritical framework for the course, and course readings can be found below. Under each meeting header, you will find:</p>
+<ul>
+<li><p>Course slidesets and readings corresponding to the meeting topic.</p></li>
+<li><p>Course readings corresponding to the meeting topic. With the exception of the textbook readings (designated as the <strong><em>Kollman Text</em></strong> below), if you click on the reading links, you will be taken to a PDF of the reading.</p></li>
+<li><p>Review sheets for the midterm and final exams.</p></li>
+<li><p>The substantive prompt for the <strong><em>American Politics Model Evaluation Essay</em></strong> assignment can be found <a href="Pol1_Fall2017/Pol1_Essay_Prompt.pdf">here.</a> This assignment is due December 8th and is to be uploaded to the <a href="https://login.canvas.ucdavis.edu">Canvas Portal</a> under the essay assignment tab.</p></li>
+</ul>
+<p><br/></p>
+</div>
+<div id="class-time-office-hours-course-materials" class="section level2">
+<h2>Class Time, Office Hours &amp; Course Materials</h2>
+<p><strong><em>Lecture</em></strong>: <a href="http://campusmap.ucdavis.edu/?b=80">Hickey Gymnasium 290</a>; Tuesday &amp; Thursday 8:00-9:20<br />
+<strong><em>Discussion Section/Term Paper Period</em></strong>: <a href="http://campusmap.ucdavis.edu/?b=80">Hickey Gymnasium 290</a>; Thursday &amp; Thursday 9:30-9:50<br />
+<strong><em>Office Hours</em></strong>: <a href="http://ps.ucdavis.edu">Kerr Hall 663</a>; Tuesday 10:00-12:00 &amp; by appointment<br />
+<strong><em>Course Materials</em></strong>: <a href="http://canvas.ucdavis.edu">Canvas</a> &amp; <a href="http://calgara.github.io/pol1f2017.html">GitPage</a><br />
+<br/></p>
+</div>
+<div id="course-objective-how-do-we-study-assess-american-democracy" class="section level1">
+<h1>Course Objective: How do we study &amp; assess American democracy?</h1>
+<p>This course offers an introduction to the systematic and meticulous study of American politics. Building on the scientific foundation of political science, this course is designed to provide an understanding into the behavior of <strong><em>citizens</em></strong> and <strong><em>institutions</em></strong> operating within the national framework of American government. The main question motivating the course is a simple, yet complex one: how well does the American political system live up to the ideals of a representative democracy? Recognizing that representative democracy requires engaged citizens and responsive institutions, the motivating question of the course hinges on understanding:</p>
+<ul>
+<li><p>How does James Madison’s “Republic”&quot; provide the fundamental theory that justifies the representative framework which underlies the American political system and what are the role of <strong><em>citizens</em></strong> and elites within this “ideal”&quot; framework?</p></li>
+<li><p>How do individual <strong><em>citizens</em></strong> make political decisions, such as which candidate to vote for and what policies &amp; political positions (preferences) to hold? What are the implications of how <strong><em>citizens</em></strong> make decisions for Madison’s framework and the function of democracy? How do alternative models of representation differ from Madison’s framework?</p></li>
+<li><p>What incentives motivate how elected elites (politicians) behave within the <strong><em>institution</em></strong> (i.e. the Congress and the presidency) in which they serve and what are the implications of differing incentives across <strong><em>institutions</em></strong> for responsiveness (policymaking)? How does collective <strong><em>institutional</em></strong> behavior, such as gridlock, fit into Madison’s view of democracy? How do parties fit (or not fit) in Madison’s conception of institutional conflict between the Congress and Presidency?</p></li>
+</ul>
+<p>These thematic questions may seem daunting, but this course will give you the necessary framework to perform careful political and social science analysis to gain leverage on these questions. This course will provide not only an understanding of how to think of the quality of American democracy but also how to engage in careful social science analysis. This course emphasizes the tools you need to assess political behaviors, practices, and institutions based on theory and evidence. Welcome to the class!<br />
+<br/></p>
+<div id="course-road-map-materials" class="section level2">
+<h2>Course Road-Map &amp; Materials</h2>
+<p><br/> <strong><em>Note:</em></strong> Slidesets are posted as links in the meeting headers text.<br />
+<br/></p>
+</div>
+<div id="madisons-republic-foundation-of-american-democracy" class="section level2">
+<h2><em>1. Madison’s Republic: Foundation of American Democracy</em></h2>
+<p><strong><em>Section Objective</em></strong>: Madison’s theory of representative democracy, outlined in <strong><em>Federalist 10 &amp; 51</em></strong>, outlines the justification for the American constitution and our representative form of government. This section provides an understanding of the motivation underpinning a representative form of democracy, centered around Madison’s argument about human nature, how representatives behave in political life, and the consequences of Madison’s argument on political change. Ask yourself, is Madison’s Republic democratic relative to other forms of democracy and how well does this theory explain the American system today? <br/></p>
+<ol style="list-style-type: decimal">
+<li><a href=""><strong>Meeting 1</strong>:</a> Course Overview &amp; ``First-Attempts’’ at American Democracy
+<ul>
+<li><em>Kollman Text:</em> Chapter 1: <em>Introduction</em></li>
+<li><a href="https://www.ourdocuments.gov/doc.php?flash=false&amp;doc=3&amp;page=transcript">The Articles of Confederation and Perpetual Union. 1777.</a><br />
+<br/></li>
+</ul></li>
+<li><a href=""><strong>Meeting 2</strong>:</a> The Problem of Human Nature: Self-Interest, Factions, &amp; Collective Action
+<ul>
+<li><a href="https://www.congress.gov/resources/display/content/The+Federalist+Papers#TheFederalistPapers-10">Madison, James. 1787. ``Federalist 10.’’ In United States Congress Resources</a></li>
+<li><em>Kollman Text:</em> Chapter 2: <em>The Constitution:</em> Sections: What Do Constitutions Accomplish &amp; Origins of the American Political System<br />
+<br/></li>
+</ul></li>
+<li><a href=""><strong>Meeting 3</strong>:</a> Madison’s Theory: Self-Interest &amp; Ambition as the Solution
+<ul>
+<li>Reread: <a href="https://www.congress.gov/resources/display/content/The+Federalist+Papers#TheFederalistPapers-10">Madison, James. 1787. ``Federalist 10.’’ In United States Congress Resources</a></li>
+<li><a href="https://www.congress.gov/resources/display/content/The+Federalist+Papers#TheFederalistPapers-10">Madison, James (or Alexander Hamilton). 1788. ``Federalist 51.’’ In United States Congress Resources</a></li>
+<li><a href="https://www.archives.gov/founding-docs/constitution-transcript">Constitution of the United States. 1788</a>. <em>Particular</em> emphasis on Articles I, II, IV, &amp; VI.<br />
+<br/></li>
+</ul></li>
+</ol>
+</div>
+<div id="citizen-political-behavior-functioning-as-critical-principals" class="section level2">
+<h2><em>2. Citizen Political Behavior: Functioning as Critical Principals</em></h2>
+<p><strong><em>Section Objective</em></strong>: It’s clear that Madison’s Republic posits an important role for citizens in a representative democracy. This section highlights how citizens function as <em>principals</em> of their elected representatives (i.e. agents). This section provides an understanding of which type of citizens participate in politics, what the incentives are to be “disengaged” from the political process, how well elections work, and what role parties play (if any) in helping citizens make political decisions. Pay close attention to some key questions. What are the implications of the “disengagement” incentive for the functioning of Madison’s Republic? Do elections help citizens make a more “representative” form of government and how do we know when they do? How does party theory challenge Madison’s republic? And, perhaps the most important question, is an informed electorate <strong>NECESSARY</strong> for Madison’s theory to work?<br />
+<br/></p>
+<ol style="list-style-type: decimal">
+<li><a href=""><strong>Meeting 4</strong>:</a> Variation in Citizen Participation: Resources and Free-Riding Incentive
+<ul>
+<li><em>Kollman Text:</em> Chapter 10: <em>Political Participation</em><br />
+</li>
+<li><a href="Pol1_Fall2017/Schudson2000.pdf">Schudson, Michael. 2000. ``America’s Ignorant Voters.’’ <em>The Wilson Quarterly</em> 24(2): 16-22.</a><br />
+<br/></li>
+</ul></li>
+<li><a href=""><strong>Meeting 5</strong>:</a> Developing Political Preferences: Citizen Self-Interest
+<ul>
+<li><a href="Pol1_Fall2017/Zaller_Feldman1992.pdf">Zaller, John &amp; Stanley Feldman. 1992 ``A Simple Theory of the Survey Response: Answering Questions versus Revealing Preferences.’’ <em>American Journal of Political Science</em> 36(3): 951-971.</a><br />
+</li>
+<li><a href="Pol1_Fall2017/Linn%20et%20al.%202016.pdf">Linn, Suzanna, Jonathan Nagler &amp; Marco A. Morales. 2013. ``Economics, Elections, and Voting Behavior’’ In Jan E. Leighley eds., <em>The Oxford Handbook of American Elections and Political Behavior.</em> New York, NY: Oxford University Press 2015.</a><br />
+<br/></li>
+</ul></li>
+<li><a href=""><strong>Meeting 6</strong>:</a> Overcoming Limited Information: How Citizens use Short-Cuts to Act
+<ul>
+<li><em>Kollman Text:</em> Chapter 9: <em>Public Opinion</em></li>
+<li><a href="Pol1_Fall2017/Lau%20&amp;%20Redlawk%202001.pdf">Lau, Richard R. &amp; David P. Redlawsk. 2001. ``Advantages and Disadvantages of Cognitive Heuristics in Political Decision Making.’’ <em>American Political Science Review</em> 45(4): 951-971.</a><br />
+<br/></li>
+</ul></li>
+<li><a href=""><strong>Meeting 7</strong>:</a> Electoral Dynamics: The Role of Campaign &amp; Valence Context in Voting Choice
+<ul>
+<li><a href="Pol1_Summer2017/Abramowitz,%20Alexander%20&amp;%20Gunning%202006.pdf">Abramowitz, Alan I., Brad Alexander &amp; Matthew Gunning. 2006. ``Incumbency, Redistricting, and the Decline of Competition in U.S. House Elections.’’ <em>Journal of Politics</em> 68(1): 75-88.</a><br />
+</li>
+<li><a href="Pol1_Fall2017/Stone%20&amp;%20Buttice%202010.pdf">Stone, Walter J., &amp; Matthew K. Buttice. 2010. ``Voters in Context: The Politics of Citizen Behavior’’ In Jan E. Leighley eds., <em>The Oxford Handbook of American Elections and Political Behavior.</em> New York, NY: Oxford University Press 2015.</a></li>
+<li><em>Kollman Text:</em> Chapter 13: <em>Elections &amp; Campaigns</em><br />
+<br/></li>
+</ul></li>
+<li><a href=""><strong>Meeting 8</strong>:</a> An Alternative to the Madisonian Model of Representation: Pluralism &amp; By-Product Representation through Interest Groups
+<ul>
+<li><em>Kollman Text:</em> Chapter 11: <em>Interest Groups &amp; Social Movements</em></li>
+<li><a href="https://moodle.drew.edu/2/pluginfile.php/225050/mod_resource/content/2/Olson%20%281967%29%20Logic%20of%20Collective%20Action%20%28book%29.pdf">Olson Jr., Mancur 1965 <em>The Logic of Collective Action: Public Goods and the Theory of Groups</em>. Cambridge, MA: Harvard University Press.</a> <strong><em>Read Chapter IV: The “By-Product” &amp; “Special Interest” Theories (p. 132-167)</em></strong><br />
+<br/></li>
+</ul></li>
+<li><a href=""><strong>Meeting 9</strong>:</a> Does Pluralism Provide Equitable Representation? Critiques of the By-Product Model
+<ul>
+<li><a href="Pol1_Summer2017/Levendusky%202010.pdf">Gilens, Martin &amp; Benjamin Page. 2014 ``Testing Theories of American Politics: Elites, Interest Groups, and Average Citizens.’’ <em>Perspectives on Politics</em> 12(3): 564-581.</a><br />
+</li>
+<li><a href="http://faculty.smu.edu/jmwilson/schattschneider.pdf">Schattschneider, E.E. 1960 ``The Scope &amp; Bias of the Pressure System.’’ In <strong><em>The Semisovereign People: A Realist’s View of Democracy in America</em></strong> New York, NY: Holt, Rinehart &amp; Winston.</a> <br/></li>
+</ul></li>
+</ol>
+<center>
+<a href=""><strong><em>*Download Midterm Review Here.*</em></strong></a>
+</center>
+<p><br/></p>
+<ol start="7" style="list-style-type: decimal">
+<li><p><strong>Meeting 10</strong>: Review for Midterm &amp; Catch-Up.<br />
+<br/></p></li>
+<li><p><strong>Meeting 11</strong>: Midterm Exam (November 2, 2017).<br />
+<br/></p></li>
+</ol>
+</div>
+<div id="post-election-how-institutions-function-within-the-framework" class="section level2">
+<h2><em>3. Post-Election: How Institutions Function within the Framework</em></h2>
+<p><strong><em>Section Objective</em></strong>: This section turns our focus from citizens, the principals in a representative democracy, to elected representatives, the agents. This section focuses on two institutions, the Congress and the Executive, and assesses the <em>incentives</em> they have to be faithful agents for voters and <em>whether</em> they provide accurate political representation. This section begins with how <strong><em>Party Theory</em></strong> provides a framework of representation and policymaking. This section wraps up with a discussion on collective <strong><em>institutional</em></strong> behavior. Critical questions for this section focus on comparing &amp; contrasting Madison’s model of representation, Pluralism (By-Product Theory), and Party Theory. Speaking to institutions, think about how do the differing electoral incentives found in Congress and the Presidency inherently create a <em>status quo bias</em>? How does polarization exasperate this bias, what <em>types of citizens</em> get represented, and is the system in need of reform in light of Madison’s theory?<br />
+<br/></p>
+<ol style="list-style-type: decimal">
+<li><a href=""><strong>Meeting 12</strong>:</a> Parties in the Electorate: Helping Citizens Make Political Decisions at a Trade-off (<strong><em>Party Theory I</em></strong>)
+<ul>
+<li><a href="Pol1_Fall2017/Levendusky%202010.pdf">Levendusky, Matthew S. 2010. ``Clearer Cues, More Consistent Voters: A Benefit of Elite Polarization.’’ <em>Political Behavior</em> 32(1): 111-131.</a><br />
+</li>
+<li><a href="Pol1_Fall2017/Bafumi%20&amp;%20Shapiro%202009.pdf">Bafumi, Joseph &amp; Robert Y. Shapiro. 2009. ``A New Partisan Voter.’’ <em>Journal of Politics</em> 71(1): 1-23.</a><br />
+<br/></li>
+</ul></li>
+<li><a href=""><strong>Meeting 13</strong>:</a> Parties as Organizations: Implications of the American Party System &amp; Procedural Cartel Theory (<strong><em>Party Theory II</em></strong>)
+<ul>
+<li><a href="Pol1_Fall2017/Fiorina%202016.pdf">Fiorina, Morris. 2006 ``Parties as Problem Solvers.’’ In Allan S. Geber &amp; Erik M. Patashnik eds., <em>Promoting the General Welfare : New Perspectives on Government Performance</em> Washington, DC: Brookings Institute. 2006.</a></li>
+<li><a href="Pol1_Fall2017/Cox%20&amp;%20McCubbins%202005.pdf">Cox, Gary W. &amp; Matthew D. McCubbins. 2005. ``Setting the Agenda: Responsible Party Government in the U.S. House of Representatives.’’ In Steven S. Smith et al. eds. <em>The American Congress Reader</em>. New York, NY: Cambridge University Press. 2009.</a><br />
+</li>
+<li><strong><em>Optional:</em></strong> <em>Kollman Text:</em> Chapter 12: <em>Political Parties</em> Sections: What are Parties? &amp; In Comparison: Parties<br />
+<br/></li>
+</ul></li>
+<li><a href=""><strong>Meeting 14</strong>:</a> Congressional Incentives &amp; “<em>The Textbook Congress</em>”: Representation &amp; Getting Re-Elected
+<ul>
+<li><a href="Pol1_Fall2017/Mayhew%201974.pdf">Mayhew, David. 1974. ``The Electoral Connection and the Congress.’’ In Terry Sullivan &amp; Matthew Sullivan eds., <em>Congress: Structure and Policy.</em> New York, NY: Cambridge University Press. 1987.</a></li>
+<li><a href="Pol1_Fall2017/Evans_committees_2011.pdf">Evans, C. Lawrence. 2011. ``Congressional Committees.’’ In George C. Edwards III, Frances E. Lee, &amp; Eric Schickler eds., <em>The Oxford Handbook of the American Congress.</em> New York, NY: Oxford University Press 2015.</a></li>
+<li><a href="Pol1_Fall2017/Evans_pork_2011.pdf">Evans, Diana. 2011. ``Pork Barrel Politics.’’ In George C. Edwards III, Frances E. Lee, &amp; Eric Schickler eds., <em>The Oxford Handbook of the American Congress.</em> New York, NY: Oxford University Press 2015.</a></li>
+<li><strong><em>Optional:</em></strong> <em>Kollman Text:</em> Chapter 5: <em>Congress</em> Sections: Congressional Elections<br />
+<br/></li>
+</ul></li>
+<li><a href=""><strong>Meeting 15</strong>:</a> Change in Representation: Are Citizens Represented in the System?
+<ul>
+<li><a href="Pol1_Summer2017/Bafumi%20&amp;%20Herron%202010.pdf">Bafumi, Joseph &amp; Michael C. Herron. 2010. ``Leapfrog Representation and Extremism: A Study of American Voters and Their Members in Congress.’’ <em>American Political Science Review</em> 104(3): 519-542.</a><br />
+</li>
+<li><a href="Pol1_Fall2017/Bartels%20et%20al.%202014.pdf">Bartels, Larry M., Joshua D. Clinton &amp; John G. Greer 2014. ``Representation.’’ In Richard Valelly, Suzanne Mettler, &amp; Robert Lieberman eds., <em>The Oxford Handbook of American Political Development.</em> New York, NY: Oxford University Press 2016.</a><br />
+<br/></li>
+</ul></li>
+<li><a href=""><strong>Meeting 16</strong>:</a> The Presidency: At-Large Constituency &amp; Presidential Representation
+<ul>
+<li><a href="Pol1_Summer2017/Moe%20&amp;%20Howell%201999.pdf">Moe. Terry M. &amp; William G. Howell. 1999. ``Unilateral Action and Presidential Power: A Theory.’’ <em>Presidential Studies Quarterly</em> 29(4): 850-873.</a><br />
+</li>
+<li><a href="Pol1_Summer2017/Canes-Wrone%202001.pdf">Canes-Wrone, Brandice. 2001. ``The President’s Legislative Influence from Public Appeals.’’ <em>American Journal of Political Science</em> 45(2): 313-329</a><br />
+<br/></li>
+</ul></li>
+<li><a href=""><strong>Meeting 17</strong>:</a> Executive-Legislative Bargaining: Inherent Status-Quo Bias
+<ul>
+<li><a href="Pol1_Summer2017/Krehbiel%201998.pdf">Krehbiel, Keith. 1993. ``Pivotal Politics: A Theory in U.S. Lawmaking.’’ In Steven S. Smith et al. eds. <em>The American Congress Reader</em>. New York, NY: Cambridge University Press. 2009.</a><br />
+<br/></li>
+</ul></li>
+<li><a href=""><strong>Meeting 18</strong>:</a> Polarization: Implications for Policymaking &amp; Accountability
+<ul>
+<li><a href="Pol1_Fall2017/Rohde%20&amp;%20Barthelemy%202010.pdf">Rohde, David W. &amp; John G. Greer. 2014. ``The President and Congressional Parties in an Era of Polarization.’’ In George C. Edwards III &amp; William G. Howell eds., <em>The Oxford Handbook of the American Presidency</em> New York, NY: Oxford University Press 2016.</a></li>
+<li><a href="Pol1_Summer2017/Jones%202010.pdf">Jones, David R. 2010. ``Partisan Polarization and Congressional Accountability in House Elections.’’ <em>American Journal of Political Science</em> 54(2): 323-337.</a></li>
+<li><strong><em>Optional:</em></strong> <a href="Pol1_Fall2017/fiorina_renationalizationofcongressionalelections_7.pdf">Fiorina, Morris. 2014. ``The (Re) Nationalization of Congressional Elections.’’ <em>A Hoover Institution Essay on Contemporary American Politics</em>.</a><br />
+<br/></li>
+</ul></li>
+<li><a href=""><strong>Meeting 19</strong>:</a> Reform Needed? Potential Reforms from Comparative Systems
+<ul>
+<li><a href="Pol1_Fall2017/Shugart2016.pdf">Shugart, Matthew S. 2006. ``Comparative Executive–Legislative Relations.’’ In Sarah A. Binder, R. A. W. Rhodes &amp; Bert A. Rockman eds., <em>The Oxford Handbook of Political Institutions</em> New York, NY: Oxford University Press 2008.</a> <br/></li>
+</ul></li>
+</ol>
+<center>
+<a href=""><strong><em>*Download Final Exam Review Here.*</em></strong></a>
+</center>
+<p><br/></p>
+<ol start="9" style="list-style-type: decimal">
+<li><p><strong>Meeting 20</strong>: Review for Final Exam &amp; Catch-Up.<br />
+<br/></p></li>
+<li><strong>Meeting 21</strong>: Final Exam (6:00PM, December 14, 2017) <br/> <br/>
+<center>
+Copyright © 2017 by Carlos Algara. Made with <a href="https://www.rstudio.com">RStudio</a>.
+</center></li>
+</ol>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
