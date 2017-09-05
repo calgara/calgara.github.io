@@ -100,7 +100,7 @@ These thematic questions may seem daunting, but this course will give you the  n
 <br/>
 
 4.  [ **Meeting 7**:]() Electoral Dynamics: The Role of Campaign & Valence Context in Voting Choice   
-    + [Abramowitz, Alan I., Brad Alexander & Matthew Gunning. 2006. ``Incumbency, Redistricting, and the Decline of Competition in U.S. House Elections.'' *Journal of Politics* 68(1): 75-88.](Pol1_Summer2017/Abramowitz, Alexander & Gunning 2006.pdf)  
+    + [Abramowitz, Alan I., Brad Alexander & Matthew Gunning. 2006. ``Incumbency, Redistricting, and the Decline of Competition in U.S. House Elections.'' *Journal of Politics* 68(1): 75-88.](Pol1_Fall2017/Abramowitz, Alexander & Gunning 2006.pdf)  
     + [Stone, Walter J., & Matthew K. Buttice. 2010. ``Voters in Context: The Politics of Citizen Behavior''  In Jan E. Leighley eds., *The Oxford Handbook of American Elections and Political Behavior.* New York, NY: Oxford University Press 2015.](Pol1_Fall2017/Stone_Buttice_2010.pdf)
     + *Kollman Text:* Chapter 13: *Elections & Campaigns*  
 <br/>  
@@ -111,7 +111,7 @@ These thematic questions may seem daunting, but this course will give you the  n
 <br/>
 
 6. [ **Meeting 9**:]() Does Pluralism Provide Equitable Representation? Critiques of the By-Product Model
-    + [Gilens, Martin & Benjamin Page. 2014 ``Testing Theories of American Politics: Elites, Interest Groups, and Average Citizens.'' *Perspectives on Politics* 12(3): 564-581.](Pol1_Summer2017/Gilens_Page_2014.pdf)  
+    + [Gilens, Martin & Benjamin Page. 2014 ``Testing Theories of American Politics: Elites, Interest Groups, and Average Citizens.'' *Perspectives on Politics* 12(3): 564-581.](Pol1_Fall2017/Gilens_Page_2014.pdf)  
     + [Schattschneider, E.E. 1960 ``The Scope & Bias of the Pressure System.'' In ***The Semisovereign People: A Realist's View of Democracy in America*** New York, NY: Holt, Rinehart & Winston.](http://faculty.smu.edu/jmwilson/schattschneider.pdf)
 <br/>  
 
@@ -147,22 +147,22 @@ These thematic questions may seem daunting, but this course will give you the  n
 
 
 3. [ **Meeting 15**:]() Change in Representation: Are Citizens Represented in the System?  
-    + [Bafumi, Joseph & Michael C. Herron. 2010. ``Leapfrog Representation and Extremism: A Study of American Voters and Their Members in Congress.'' *American Political Science Review* 104(3): 519-542.](Pol1_Summer2017/Bafumi & Herron 2010.pdf)  
+    + [Bafumi, Joseph & Michael C. Herron. 2010. ``Leapfrog Representation and Extremism: A Study of American Voters and Their Members in Congress.'' *American Political Science Review* 104(3): 519-542.](Pol1_Fall2017/Bafumi & Herron 2010.pdf)  
     + [Bartels, Larry M., Joshua D. Clinton & John G. Greer 2014. ``Representation.''  In Richard Valelly, Suzanne Mettler, & Robert Lieberman eds., *The Oxford Handbook of American Political Development.* New York, NY: Oxford University Press 2016.](Pol1_Fall2017/Bartels et al. 2014.pdf)  
 <br/>   
 
 4. [ **Meeting 16**:]() The Presidency: At-Large Constituency & Presidential Representation
-    + [Moe. Terry M. & William G. Howell. 1999. ``Unilateral Action and Presidential Power: A Theory.'' *Presidential Studies Quarterly* 29(4): 850-873.](Pol1_Summer2017/Moe & Howell 1999.pdf)  
-    + [Canes-Wrone, Brandice. 2001. ``The President’s Legislative Influence from Public Appeals.'' *American Journal of Political Science* 45(2): 313-329](Pol1_Summer2017/Canes-Wrone 2001.pdf)  
+    + [Moe. Terry M. & William G. Howell. 1999. ``Unilateral Action and Presidential Power: A Theory.'' *Presidential Studies Quarterly* 29(4): 850-873.](Pol1_Fall2017/Moe & Howell 1999.pdf)  
+    + [Canes-Wrone, Brandice. 2001. ``The President’s Legislative Influence from Public Appeals.'' *American Journal of Political Science* 45(2): 313-329](Pol1_Fall2017/Canes-Wrone 2001.pdf)  
 <br/>  
   
 5. [ **Meeting 17**:]() Executive-Legislative Bargaining: Inherent Status-Quo Bias  
-    + [Krehbiel, Keith. 1993. ``Pivotal Politics: A Theory in U.S. Lawmaking.'' In Steven S. Smith et al. eds. *The American Congress Reader*. New York, NY: Cambridge University Press. 2009.](Pol1_Summer2017/Krehbiel 1998.pdf)  
+    + [Krehbiel, Keith. 1993. ``Pivotal Politics: A Theory in U.S. Lawmaking.'' In Steven S. Smith et al. eds. *The American Congress Reader*. New York, NY: Cambridge University Press. 2009.](Pol1_Fall2017/Krehbiel 1998.pdf)  
 <br/>    
   
 6. [**Meeting 18**:]() Polarization: Implications for Policymaking & Accountability
     + [Rohde, David W. & John G. Greer. 2014. ``The President and Congressional Parties in an Era of Polarization.''  In George C. Edwards III & William G. Howell eds., *The Oxford Handbook of the American Presidency* New York, NY: Oxford University Press 2016.](Pol1_Fall2017/Rohde & Barthelemy 2010.pdf)
-    + [Jones, David R. 2010. ``Partisan Polarization and Congressional Accountability in House Elections.'' *American Journal of Political Science* 54(2): 323-337.](Pol1_Summer2017/Jones 2010.pdf)
+    + [Jones, David R. 2010. ``Partisan Polarization and Congressional Accountability in House Elections.'' *American Journal of Political Science* 54(2): 323-337.](Pol1_Fall2017/Jones 2010.pdf)
     + ***Optional:*** [Fiorina, Morris. 2014. ``The (Re) Nationalization of Congressional Elections.'' *A Hoover Institution Essay on Contemporary American Politics*.](Pol1_Fall2017/fiorina_renationalizationofcongressionalelections_7.pdf)  
 <br/>  
 
