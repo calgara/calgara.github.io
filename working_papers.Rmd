@@ -63,10 +63,10 @@ h1.title {
   <div style='width: 450px; text-align: center; font-size: 85%;'>*Interactive Effect of Obstruction & Partisan Majority on Senator Voteshares* <br>
   <img src="/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/obstruction.png" alt="obstructrion" style="width:450px;" align = "top"/></div></div>
   </div>
-  <center> **The Individual Consequence of Party Legislative Obstruction in the U.S. Senate** </center><br/>
+  <center> **The Member Level Determinants & Consequences of Party Legislative Obstruction in the U.S. Senate** </center><br/>
   <center> *With Joe Zamadics, PhD Candidate, University of Colorado* </center><br/>
   *Abstract:* Do procedural votes impact the re-election prospects of Senators? If so, how do members make the strategic decision to break with their party? We find that not only do certain defectors see an electoral boost, some members moderate how they vote on procedural items as their election nears. Our paper provides a new individual member measure of obstruction along with a detailed narrative explaining when members decide to support gridlock and the impact those decisions have on their reelection.  
-<left> [Full Abstract](https://calgara.github.io/Algara_Zamadics_Senate_Obstruction.pdf) </left>
+<left> [Full Abstract](https://calgara.github.io/Obstruction_Cost_Algara_Zamadics.pdf) </left>
   
   </script>
   <br/><br/>
