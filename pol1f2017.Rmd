@@ -151,7 +151,7 @@ These thematic questions may seem daunting, but this course will give you the  n
     + [Bartels, Larry M., Joshua D. Clinton & John G. Greer 2014. ``Representation.''  In Richard Valelly, Suzanne Mettler, & Robert Lieberman eds., *The Oxford Handbook of American Political Development.* New York, NY: Oxford University Press 2016.](Pol1_Fall2017/Bartels et al. 2014.pdf)  
 <br/>   
 
-4. [ **Meeting 16**:]() The Presidency: At-Large Constituency & Presidential Representation
+4. [ **Meeting 16**:](Pol1_Fall2017/Pol1_Meeting16_Presidency.pdf) The Presidency: At-Large Constituency & Presidential Representation
     + [Moe. Terry M. & William G. Howell. 1999. ``Unilateral Action and Presidential Power: A Theory.'' *Presidential Studies Quarterly* 29(4): 850-873.](Pol1_Fall2017/Moe & Howell 1999.pdf)  
     + [Canes-Wrone, Brandice. 2001. ``The President’s Legislative Influence from Public Appeals.'' *American Journal of Political Science* 45(2): 313-329](Pol1_Fall2017/Canes-Wrone 2001.pdf)  
 <br/>  
