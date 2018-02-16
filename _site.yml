@@ -26,9 +26,17 @@ navbar:
 #    - text: "Blog"
 #      href: blog.html
       
-    - text: "About Me"
-      href: about.html
+        - text: "About Me"
+          href: about.html
       
+  right:
+    - icon: fa-envelope fa-lg
+      href: mailto:calgara@ucdavis.edu
+    - icon: fa-github fa-lg
+      href: http://github.com/calgara
+    - icon: fa-twitter fa-lg
+      href: https://twitter.com/algaraca
+
 output:
   html_document:
     theme: flatly
