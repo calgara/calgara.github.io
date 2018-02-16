@@ -54,7 +54,7 @@ title: "Welcome!"
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 200px) {
   .text {font-size: 11px}
 }
 </style>
