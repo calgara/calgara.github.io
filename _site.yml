@@ -26,8 +26,8 @@ navbar:
 #    - text: "Blog"
 #      href: blog.html
       
-        - text: "About Me"
-          href: about.html
+    - text: "About Me"
+      href: about.html
       
   right:
     - icon: fa-envelope fa-lg
