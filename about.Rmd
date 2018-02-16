@@ -18,7 +18,7 @@ output: html_document
 <br/><br/>
 <div class="row">
 <div class="col-xs-10 col-sm-5 text-center">
-<img src="/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/me_hiking.jpg" alt="hiking" style="width:333px;" align = "left"/> 
+<img src="/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/me_hiking.jpg" style="width:85%; margin-right: 20px" align="left">
 <div style='width: 333px; text-align: center; font-size: 85%;'>*El Dorado County, California.* <br>
 <br>
 <div style='width: 333px; text-align: left; font-size: 90%;'>Copyright &copy; 2017 by Carlos Algara. Made with [RStudio](https://www.rstudio.com)</div></div>
