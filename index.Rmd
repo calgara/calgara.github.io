@@ -61,7 +61,7 @@ title: "Welcome!"
 </head>
 <body>
 
-<div class="slideshow-container">
+<div class="slideshow-container" align="center">
 <center>
 <div class="mySlides fade">
   <img src="/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/IMG_0062.jpg">
