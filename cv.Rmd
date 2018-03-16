@@ -1,6 +1,6 @@
 ---
 title: Curriculum Vitae
-date: 2017-11-29
+date: 2018-3-15
 share: FALSE
 output: html_document
 ---
@@ -17,8 +17,8 @@ output: html_document
 
 Below is my CV, or you can [download my CV in pdf format](Algara_CV_Mar2018.pdf).
 
-<object data="Algara_CV_Nov2017.pdf" type="application/pdf" width="100%" height=800>
-<iframe src="Algara_CV_Nov2017.pdf" width="100%" height="100%" style="border: none;"></iframe>
+<object data="Algara_CV_Mar2018.pdf" type="application/pdf" width="100%" height=800>
+<iframe src="Algara_CV_Mar2018.pdf" width="100%" height="100%" style="border: none;"></iframe>
 </object>
 <p>Copyright &copy; 2017 by Carlos Algara. Made with [RStudio](https://www.rstudio.com).</p>
 
