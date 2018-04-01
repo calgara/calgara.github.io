@@ -1,7 +1,7 @@
 ---
 title: 'Exploring the Causes of Congressional Unpopularity: The Role of Policy &
   Valence in Citizen Attitudes about Congressional Job Approval'
-subtitle: "Preliminary Congressional Approval Moodel Prepared for the Dirksen Congressional Research Grant Program Application"
+subtitle: "Preliminary Congressional Approval Model Prepared for the Dirksen Congressional Research Grant Program Application"
 author: 
 - "[Carlos Algara](mailto:calgara@ucdavis.edu) & [Joseph Broad](mailto:jbroad@ucdavis.edu)"
 date: "4/1/2018"
