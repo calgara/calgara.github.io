@@ -89,9 +89,9 @@ ces_model <- glm(cong_approval_recode ~ pid3 + pres_approval_recode + gop_proxim
 
 stargazer(ces_model,iu_model, title="Motivating Results of a Comprehensive Model of Congressional Approval", align=TRUE, dep.var.labels=c("Approval of Congressional Job Performance"), covariate.labels=c("Independent Partisan","Republican Partisan", "Member of Congress Approval","Presidential Approval","Ideological Proximity","Congressional Leadership Valence"),column.labels = c("2006 CES Model", "2014 IU Model"), omit.stat=c("ser","f"), no.space=TRUE,type = 'html')
 ```
-
+<br/>
 ![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/dirksen_center_files/model_average_marginal_effects_pid.png "Interactive Model Marginal Effects")
-
+ 
 Given the strong correlation between higher congressional leadership valence scores and greater probability of approval, we respecify the model to explore whether this valence-induced gain in approval is conditional on partisanship. Specifically, we specify an interaction term between respondent partisanship & their assessment of congressional leadership valence to estimate the potential conditional relationship. The figure above shows that higher leadership valence increases the probability of congressional approval among ***all citizens***, regardless of political partisanship. Indeed, for the 2006 model, going from a summated "F" (or 0 in the summated valence value measure) grade to an "A" grade (or 4 in the summated valence value measure) on leadership valence increases the probability of congressional approval by **20%** for Democrats, **19%** for Independents, and **15%** for Republicans. For the model using the 2014 IU study data, going from the minimum value of valence to the maximum increases the probability of approval by **12%** for Democrats, **14%** for Independents, and **11%** for Republicans. Full model results can be found below.
 
 ```{r,echo=F,warning=F,message=F,results='asis'}
