@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+<meta name="author" content="Carlos Algara &amp; Joseph Broad" />
+
+
+<title>Exploring the Causes of Congressional Unpopularity: The Role of Policy &amp; Valence in Citizen Attitudes about Congressional Job Approval</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Carlos Algara</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="cv.html">CV</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Research
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="dissertation.html">Dissertation Manuscripts</a>
+    </li>
+    <li>
+      <a href="working_papers.html">Working Papers</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Teaching
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="pol1s2017.html">POL 1, Summer 2017</a>
+    </li>
+    <li>
+      <a href="pol1f2017.html">POL 1, Fall 2017</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="about.html">About Me</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="mailto:calgara@ucdavis.edu">
+    <span class="fa fa-envelope fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="http://github.com/calgara">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://twitter.com/algaraca">
+    <span class="fa fa-twitter fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Exploring the Causes of Congressional Unpopularity: The Role of Policy &amp; Valence in Citizen Attitudes about Congressional Job Approval</h1>
+<h3 class="subtitle"><em>Preliminary Congressional Approval Prepared for the Dirksen Congressional Research Grant Program Application</em></h3>
+<h4 class="author"><em><a href="mailto:calgara@ucdavis.edu">Carlos Algara</a> &amp; <a href="mailto:jbroad@ucdavis.edu">Joseph Broad</a></em></h4>
+<h4 class="date"><em>4/1/2018</em></h4>
+
+</div>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-100362112-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<p><br/></p>
+<div id="welcome-overview-of-motivating-analysis" class="section level2">
+<h2><em>Welcome &amp; Overview of Motivating Analysis</em></h2>
+<p><br/> Welcome to this page &amp; thank you for your consideration of our application for the prestigous Congressional Research Grant program sponsored by <a href="http://www.dirksencenter.org/">The Dirksen Congressional Center</a>. In this page, you can find the specification of a congressional approval model that we use to motivate our grant application. Drawing on the only two sources of data which contain both citizen perceptions of congressional valence and measures of ideological proximity, the 2006 Congressional Election Study and the 2014 Indiana University Cooperative Congressional Election Study Module, we test our model in the analysis below. Specifically we posit that:</p>
+<ul>
+<li><p>Congressional approval is a function of collective ideological policy representation that Congress provides its citizens. As a consequence, citizens are more likely to approve of Congress the closer their preferences align to the ideological orientation of congressional policies. Building on prominent theories of legislative organization positing that congressional outputs are a reflection of the ideological preferences of the majority party <a href="http://mccubbins.us/settingtheagenda/index.html">(Cox &amp; McCubbins 2005)</a>, we hypothesize that greater congruence between a citizen’s ideological preferences and the ideological location of the congressional majority should result in higher liklihood of approving of congressional job performance.</p></li>
+<li><p>Congressional approval is a function of the collective representation the Congress provides in the area of leadership valence. Drawing on recent work of citizen vote-choice and the nature of candidate quality <a href="https://www.amazon.com/Candidates-Voters-Ideology-Representation-Elections/dp/1316510212">(Stone 2017)</a> <a href="http://electionstudy.ucdavis.edu/academic-research/candidate_positions_and_valence.pdf">(Stone &amp; Simas 2010)</a>, we define congressional leadership valence as non-policy considerations that citizens normatively value in their legislature. These include having a legislature that is transparent in its processes, not beholden to special interest, spends its time working on the pressing policy issues facing the country, encourages bipartisan legislative behavior, conducts deliberative and productive debates, and is comprised of ethical members. We posit that greater perceptions of congressional leadership valence by citizens should result in a higher liklihood of approving of congressional job performance.</p></li>
+</ul>
+<p>Given the relatively limited literature on citizen perceptions of Congress, this model is the <strong><em>first</em></strong> to argue that congressional approval is a function of ideological congruence and citizen perceptions of congressional leadership valence. Using the limited amount of data on citizen attitudes of congressional leadership valence, we show that higher assessments of leadership is correlated with higher congressional job approval assessments. Using these unique and rich datasets from the 2006 Congressional Election Study and the 2014 Indiana University Cooperative Congressional Election Study Module, we find strong support for the empirical model we present. The remaining analysis below articulates the model specification and substantive findings of our model that moviate our proposal. <br/> <br/></p>
+</div>
+<div id="specifying-a-preliminary-model-of-congression-approval" class="section level2">
+<h2><em>Specifying a Preliminary Model of Congression Approval</em></h2>
+<p>To motivate the potential that positive leadership valence and greater policy congruence causes an increase in citizen perceptions of congressional approval, we specify a statistical model of congressional approval. Specifically, we use the 2006 Congressional Election Study 2014 Indiana University CCES Module to estimate a model positing that citizen perceptions of congressional job performance is a function of leadership valence attitudes and the degree of congruence between citizen ideological preferences and congressional policies. We concentrate on the specification of our two main variables of interest below. <br/> <br/></p>
+<div id="key-independent-variables-citizen-valence-perceptions-ideological-proximity" class="section level3">
+<h3><em>Key Independent Variables: Citizen Valence Perceptions &amp; Ideological Proximity</em></h3>
+<p><br/> <br/></p>
+<p><img src="dirksen_center_files/congressional_valence_2006_all.png" title="2006 Leadership Valence Perceptions" alt="alt text" style="width:50.0%" /><img src="dirksen_center_files/congressional_valence_2014_all.png" title="2014 Leadership Valence Perceptions" alt="alt text" style="width:50.0%" /></p>
+<p>As noted in the proposal, these surveys feature a nationally representative sample of citizen attitudes of congressional leadership valence across multiple dimensions, such as the degree to which Congress holds itself to a high ethical standard or the degree Congress spends its time working to solve the nation’s problems. Citizens evaluate their assessments on these dimensions of congressional valence on a scale from “F”&quot; (0) to “A”&quot; (4). The two figures above articulate the percentage of respondents that give Congress a passing grade of C or better. As one can see, the Congress is not held in high regard on any of the multiple dimensions of Congressional leadership valence. For example, only approximately 33% of respondents in the 2006 study (the left figure) gave Congress a “C” or better on controlling special interest influence over legislation. In the 2014 study (the right figure), only about 31% of citizens gave Congress a passing grade on the same salient dimension.</p>
+<p>To construct our measure of citizen valence perceptions, we take the mean summated rating scale for the valence items in each dataset. These two measures of citizen valence perceptions, akin to a “report card” on a 4 point scale, have a high degree of internal validity (Cronbach’s <span class="math inline">\(\alpha\)</span> = 0.88 for the 2006 items &amp; 0.93 for the 2014 items, respectively). The figure below shoes the distribution of summated rating scales for the 2006 &amp; 2014 studies.</p>
+<p><img src="dirksen_center_files/histogram_citizen_reportcards_ces.png" title="2006 Histogram of Leadership Valence" alt="alt text" style="width:50.0%" /><img src="dirksen_center_files/histogram_citizen_reportcards_iu.png" title="2014 Histogram of Leadership Valence" alt="alt text" style="width:50.0%" /></p>
+<p>As one can see, citizens generally have a low opinion of congressional leadership valence. For the 2006 the distribution shows that citizens gave Congress a median grade of approximately 1.25 or, in other words, a “D”. The distribution is decidely more negative in the 2014 study, with the median grade for congressional leadership valence being an “F” for the 2014 study. This summated rating scale is our measure of citizen perceptions of leadership valence.</p>
+<p>We now turn to the specification of our other key independent variable of interest, ideological proximity to Congressional policies. Given the prominence of the majority party in controlling the legislative agenda and being directly responsible for congressional policy outputs <a href="http://mccubbins.us/settingtheagenda/index.html">(Cox &amp; McCubbins 2005)</a>, we specify ideological proximity between citizens and congressional policies as the proximity between based on a respondent’s estimated ideal point (<span class="math inline">\(C_{i}\)</span>) and the ideological positions of the two congressional parties (<span class="math inline">\(DM_{j}\)</span> and <span class="math inline">\(RM_{j}\)</span>). This model is articulated below:</p>
+<p><span class="math display">\[\text{Proximity} = |RM_{j} - C_{i}| - |DM_{j} - C_{i}|\]</span></p>
+<p>The resulting quantity in the above equation captures the relative proximity between a citizen’s ideological ideal point (preference) and the ideological ideal point locations (preferences) of the two congressional parties (the pivotal majority party which sets the ideological orientation of congressional outputs and the minority party offering policy alternatives). If the quantity in the equation is negative (<span class="math inline">\(|RM_{j} - C_{i}| &lt; |DM_{j} - C_{i}|\)</span>), the respondent is closer to congressional majority Republicans in ideological proximity. When this standard spatial model measure <a href="https://en.wikipedia.org/wiki/An_Economic_Theory_of_Democracy">(Downs 1957)</a> is positive, (<span class="math inline">\(|RM_{j} - C_{i}| &gt; |DM_{j} - C_{i}|\)</span>), the respondent is closer to congressional minority Democrats in ideological proximity.We use Aldrich-McKelvey scaling methods to correct for ideological placement biases of citizens and placement of congressional parties <a href="https://www.adamramey.com/research.html">(see Ramey 2016 for a methodological discussion)</a>. These biases include placing the opposition party in greater ideological extremity (i.e. misplacement of stimuli) or misinterpreting the policy place.</p>
+<p>We control for alternative predictors of congressional approval identified by the literature, such as partisanship <a href="http://www.jstor.org/stable/2998634?casa_token=NdroHC4j9yEAAAAA:Il3JZzD1hRz_-YZ5x887GZeTTamVp_c7vvBZQ0as_iYxC2bSGNcGjx3wrw3DjfJJYDqPXjNVNH1vaSFTB2Dy0HruT6h--GHYKM25uPYVT8LxNtRn">(Kimball 1997)</a>, approval of a citizen’s own member of Congress <a href="https://www.amazon.com/Home-Style-Members-Districts-Classics/dp/032112183X">(Fenno 1978)</a>, and citizen evaluations about the president <a href="https://www.amazon.com/Home-Style-Members-Districts-Classics/dp/032112183X">(Durr 1997)</a>. Our dependent variable of interest is whether a citizen indicates job approval of Congress or job disapproval of Congress. This congressional approval dependent variable is coded 1 if a citizen approves of congressional job performance and 0 if a citizen disapproves of congressional job performance. We should note that approximately 37% of respondents in the 2006 study approved of Congress and approximately 18% of respondents approved of Congress in the 2014 study. <br/> <br/></p>
+</div>
+<div id="motivating-evidence-of-policy-valence-component-of-congressional-approval" class="section level3">
+<h3><em>Motivating Evidence of Policy &amp; Valence Component of Congressional Approval</em></h3>
+<p><br/> <br/> <img src="dirksen_center_files/model_average_marginal_effects.png" title="Additive Model Marginal Effects" alt="alt text" /></p>
+<p>The figure above articulates the results of our motivating model. We find strong evidence that greater congruence between citizen ideological preferences and congressional policy outputs is correlated with a higher probability of approving of Congress. Going from the minimum value of ideological congruence to the maximum value of ideological congruence, the probability of approving of congressional job approval significantly increases by 5% in both the 2006 &amp; 2012 model. Similarly, going from the minimum value of summated congressional leadership valence perceptions (an “F” grade or 0 value) to the maximum value (an “A” grade or 4.0 value) significantly raises the probability of approving of Congress by a staggering 18% in 2006 and 13% in 2014. These are the results of two distinct additive models of congressional approval, one for the 2006 CES study and the other for the 2014 study. Note that, congruent with previous studies of congressional approval, presidential approval &amp; individual member of Congress approval are significant approval predictors. These models are specified with relevant survey weights have a sample size of <span class="math inline">\(N\)</span> = 891 for 2006 &amp; <span class="math inline">\(N\)</span> = 637 for 2014. The goodness-of-fit BIC statistics for the two models are 865.19 (2006) and 330.51 (2014), respectively. Full model output can be found in the table below.</p>
+<table style="text-align:center">
+<caption>
+<strong>Motivating Results of a Comprehensive Model of Congressional Approval</strong>
+</caption>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td colspan="2">
+<em>Dependent variable:</em>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td colspan="2">
+Approval of Congressional Job Performance
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+2006 CES Model
+</td>
+<td>
+2014 IU Model
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(1)
+</td>
+<td>
+(2)
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Independent Partisan
+</td>
+<td>
+-0.326
+</td>
+<td>
+0.284
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.238)
+</td>
+<td>
+(0.542)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Republican Partisan
+</td>
+<td>
+-0.071
+</td>
+<td>
+-0.020
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.283)
+</td>
+<td>
+(0.529)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Member of Congress Approval
+</td>
+<td>
+0.836<sup>***</sup>
+</td>
+<td>
+0.809<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.115)
+</td>
+<td>
+(0.239)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Presidential Approval
+</td>
+<td>
+0.312<sup>***</sup>
+</td>
+<td>
+0.626<sup>**</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.119)
+</td>
+<td>
+(0.276)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Ideological Proximity
+</td>
+<td>
+1.184<sup>***</sup>
+</td>
+<td>
+1.689<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.137)
+</td>
+<td>
+(0.178)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Congressional Leadership Valence
+</td>
+<td>
+0.862<sup>***</sup>
+</td>
+<td>
+0.512<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.132)
+</td>
+<td>
+(0.188)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Constant
+</td>
+<td>
+-6.463<sup>***</sup>
+</td>
+<td>
+-7.192<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.530)
+</td>
+<td>
+(0.941)
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Observations
+</td>
+<td>
+891
+</td>
+<td>
+637
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Log Likelihood
+</td>
+<td>
+-408.823
+</td>
+<td>
+-142.657
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Akaike Inf. Crit.
+</td>
+<td>
+831.645
+</td>
+<td>
+299.314
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+<em>Note:</em>
+</td>
+<td colspan="2" style="text-align:right">
+<sup><em></sup>p&lt;0.1; <sup><strong></sup>p&lt;0.05; <sup></strong></em></sup>p&lt;0.01
+</td>
+</tr>
+</table>
+<div class="figure">
+<img src="dirksen_center_files/model_average_marginal_effects_pid.png" title="Interactive Model Marginal Effects" alt="alt text" />
+<p class="caption">alt text</p>
+</div>
+<p>Given the strong correlation between higher congressional leadership valence scores and greater probability of approval, we respecify the model to explore whether this valence-induced gain in approval is conditional on partisanship. Specifically, we specify an interaction term between respondent partisanship &amp; their assessment of congressional leadership valence to estimate the potential conditional relationship. The figure above shows that higher leadership valence increases the probability of congressional approval among <strong><em>all citizens</em></strong>, regardless of political partisanship. Indeed, for the 2006 model, going from a summated “F” (or 0 in the summated valence value measure) grade to an “A” grade (or 4 in the summated valence value measure) on leadership valence increases the probability of congressional approval by <strong>20%</strong> for Democrats, <strong>19%</strong> for Independents, and <strong>15%</strong> for Republicans. For the model using the 2014 IU study data, going from the minimum value of valence to the maximum increases the probability of approval by <strong>12%</strong> for Democrats, <strong>14%</strong> for Independents, and <strong>11%</strong> for Republicans. Full model results can be found below.</p>
+<table style="text-align:center">
+<caption>
+<strong>Motivating Results of a Comprehensive Model of Congressional Approval</strong>
+</caption>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td colspan="2">
+<em>Dependent variable:</em>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td colspan="2">
+Approval of Congressional Job Performance
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+2006 CES Model
+</td>
+<td>
+2014 IU Model
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(1)
+</td>
+<td>
+(2)
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Independent Partisan
+</td>
+<td>
+-0.230
+</td>
+<td>
+-2.838
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.575)
+</td>
+<td>
+(1.878)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Republican Partisan
+</td>
+<td>
+0.585
+</td>
+<td>
+-0.160
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.586)
+</td>
+<td>
+(0.813)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Member of Congress Approval
+</td>
+<td>
+0.871<sup>***</sup>
+</td>
+<td>
+0.508<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.133)
+</td>
+<td>
+(0.189)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Presidential Approval
+</td>
+<td>
+0.840<sup>***</sup>
+</td>
+<td>
+0.864<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.116)
+</td>
+<td>
+(0.247)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Ideological Proximity
+</td>
+<td>
+0.313<sup>***</sup>
+</td>
+<td>
+0.756<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.120)
+</td>
+<td>
+(0.289)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Congressional Leadership Valence
+</td>
+<td>
+1.371<sup>***</sup>
+</td>
+<td>
+1.509<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.260)
+</td>
+<td>
+(0.244)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Independent Partisan X Leadership Valence
+</td>
+<td>
+-0.071
+</td>
+<td>
+1.579<sup>*</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.358)
+</td>
+<td>
+(0.839)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Republican Partisan X Leadership Valence
+</td>
+<td>
+-0.429
+</td>
+<td>
+0.024
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.337)
+</td>
+<td>
+(0.376)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Constant
+</td>
+<td>
+-6.760<sup>***</sup>
+</td>
+<td>
+-7.000<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.628)
+</td>
+<td>
+(1.000)
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Observations
+</td>
+<td>
+891
+</td>
+<td>
+637
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Log Likelihood
+</td>
+<td>
+-407.836
+</td>
+<td>
+-140.003
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Akaike Inf. Crit.
+</td>
+<td>
+833.673
+</td>
+<td>
+298.007
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+<em>Note:</em>
+</td>
+<td colspan="2" style="text-align:right">
+<sup><em></sup>p&lt;0.1; <sup><strong></sup>p&lt;0.05; <sup></strong></em></sup>p&lt;0.01
+</td>
+</tr>
+</table>
+<p><br/> <br/></p>
+</div>
+<div id="limitations-of-observational-model-need-for-causal-analysis-of-approval" class="section level3">
+<h3><em>Limitations of Observational Model &amp; Need for Causal Analysis of Approval</em></h3>
+<p><br/></p>
+<p>The results of this preliminary model of congressional approval, the <strong><em>first</em></strong> to argue that congressional approval is a function of collective congressional policy representation and leadership valence, motivates our proposal exploring the causal effects of policy and valence on citizen evaluations of congressional job performance. Using the very limited observational survey data, we show that higher ideological proximity and collective leadership perceptions are correlated with a higher probability of approval. Moreover, our model is the first to find a strong relationship between valence and approval and we find evidence that higher valence evaluations is correlated with a higher probability of approval among Democrats, Republicans, and political independents. This suggests that Congress may be able to increase its approval by providing better leadership valence and returning to the bipartisan, deliberative, and Congresses that defined the 20<span class="math inline">\(^{th}\)</span> century.</p>
+<p>However, these results have a severe limitation. Since we rely on observational data, we are unable to address whether policy proximity and valence has a causal effect on job approval. This is due to the fact that these data rely on citizen’s own perceptions of the location of congressional policies <em>and</em> the leadership valence provided by Congress which, given congressional unpopularity, is inherently biased to be poor. In the following section, we propose an innovative conjoint experiment to further explore what <em>causes</em> citizen assessments of congressional job approval by manipulating the ideological policy and leadership valence citizens receive from their Congress. We argue that such an experiment is critical to understand what causes and shapes citizen’s evaluations toward their Congress.</p>
+<p>Please refer and click here for our: <a href="dirksen_center_files/Dirksen_Center_Proposal_Algara_Broad.pdf"><strong><em>Dirksen Congressional Center Research Grant Proposal</em></strong></a>, for our proposed experimental design and more context motivating this project assessing citizen perceptions of congressional job performance.</p>
+<p>Thank you for considering our Dirksen Congressional Center Research Grant Proposal!</p>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
