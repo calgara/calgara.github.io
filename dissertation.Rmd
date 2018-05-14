@@ -13,6 +13,10 @@ output: html_document
   width: 40%;
   text-align: left;
 }
+<style>
+  .main-container {
+    max-width: 1200px !important;
+  }
 </style>
 </html> 
 
@@ -40,7 +44,7 @@ h1.title {
 
 <div class="column-left">
 <div style='width: 450px; text-align: center; font-size: 85%;'>*Quarterly Job Approval of the U.S. Congress, 1974-2016* <br>
-  <img src="/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/cong_approval_aggregate_annotated.png" alt="agg_cong_approval" align = "top"/></div></div>
+  <img src="/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/cong_approval_aggregate_annotated.png" alt="agg_cong_approval" style="width:450px;" align = "top"/></div></div>
 <div class="column-right">
   <center> **Dissertation Project Abstract** </center><br/>
   "Popular government in a nation of more than 150 million people requires political parties which provide the electorate with a proper range of choice between alternatives of action." -***American Political Science Association*** (1950)<br/>
