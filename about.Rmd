@@ -10,7 +10,7 @@ output: html_document
   }
 .column-right{
   float: right;
-  width: 60%;
+  width: 55%;
   text-align: left;
 }
 </style>
