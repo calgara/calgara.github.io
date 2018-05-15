@@ -31,10 +31,10 @@ output: html_document
 <br/>
 
 <div class="column-left">
-<img src="/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/me_hiking.jpg" alt="hiking" style="width:333px;" align = "left"/> 
-<div style='width: 333px; text-align: center; font-size: 85%;'>*El Dorado County, California.* <br>
+![El Dorado County, California.](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/me_hiking.jpg "Hiking"){ width=90% }
+<div text-align: center; font-size: 85%;'>*El Dorado County, California.* <br>
 <br>
-<div style='width: 333px; text-align: left; font-size: 90%;'>Copyright &copy; 2017 by Carlos Algara. Made with [RStudio](https://www.rstudio.com)</div></div>
+<div text-align: left; font-size: 90%;'>Copyright &copy; 2017 by Carlos Algara. Made with [RStudio](https://www.rstudio.com)</div></div>
 </div>
 
 <div class="column-right">

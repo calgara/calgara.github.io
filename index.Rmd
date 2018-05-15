@@ -69,15 +69,15 @@ title: "Welcome!"
 </div>
 
 <div class="mySlides fade">
-![](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/house_republicans.png "House GOP")
+  <img src="/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/house_republicans.png">
 </div>
 
 <div class="mySlides fade">
-![](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/10.jpg "Spatial Model")
+  <img src="/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/10.jpg">
 </div>
 
 <div class="mySlides fade">
-![](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/obstruction_115.png "Obstruction")
+  <img src="/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/obstruction_115.png">
 </div>
 
 <div class="mySlides fade">
