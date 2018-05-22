@@ -2,7 +2,7 @@
 title: 'Programming & Methods Resources Workshop'
 subtitle: "Introduction to The Grammar of Graphics (<tt>ggplot</tt>) & Data Visualization"
 author: 
-- "[Carlos Algara](mailto:calgara@ucdavis.edu)"
+- "[Carlos Algara](mailto:calgara@ucdavis.edu), [Cory Struthers (Belden)](mailto:rbelden@ucdavis.edu), & [Jaime Jackson](mailto:jajack@ucdavis.edu)"
 date: "5/25/2018"
 output: html_document
 ---
