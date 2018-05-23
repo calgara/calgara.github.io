@@ -80,8 +80,8 @@ h1.title {
 <br/>
 <br/>
 <center>
-  <div text-align: center; font-size: 85%;'>*Geographic Neighbor Particularistic Policy Bill Cosponsorship Network, 93rd U.S. House* <br>
-![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/house_particularistic_network_93_congress.png "Particularistic Network"){ width=60% }
+  <div text-align: center; font-size: 85%;'>*Particularistic Policy Bill Cosponsorship Network, 93rd U.S. Senate* <br>
+![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/senate_particularistic_network_93_congress.png.png "Particularistic Network"){ width=75% }
 </center><br/>
 <center> **The Influence of Partisan Polarization and Geographic Neighborhood Context on Congressional Cosponsorship Policy Networks** </center>
 <center> **with Ross Butters, PhD Candidate, University of California, Davis** </center><br/>
