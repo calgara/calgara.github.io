@@ -22,6 +22,8 @@ navbar:
           href: pol1s2017.html
         - text: "POL 1, Fall 2017"
           href: pol1f2017.html
+        - text: "ggplot Data Visualization Tutorial"
+          href: UCD_PS_ggplot_tutorial.html
       
 #    - text: "Blog"
 #      href: blog.html
