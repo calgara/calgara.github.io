@@ -1,45 +1,39 @@
-name: "carlos-website"
-output_dir: "."
+name: carlos-website
+output_dir: '.'
 navbar:
-  title: "Carlos Algara"
+  title: Carlos Algara
   left:
-    - text: "Home"
-      href: index.html
-      
-    - text: "CV"
-      href: cv.html
-      
-    - text: "Research"
-      menu:
-        - text: "Dissertation Manuscripts"
-          href: dissertation.html
-        - text: "Working Papers"
-          href: working_papers.html
-      
-    - text: "Teaching"
-      menu:
-        - text: "POL 1, Summer 2017"
-          href: pol1s2017.html
-        - text: "POL 1, Fall 2017"
-          href: pol1f2017.html
-        - text: "ggplot Data Visualization Tutorial"
-          href: UCD_PS_ggplot_tutorial.html
-      
-#    - text: "Blog"
-#      href: blog.html
-      
-    - text: "About Me"
-      href: about.html
-      
+  - text: Home
+    href: index.html
+  - text: CV
+    href: cv.html
+  - text: Research
+    menu:
+    - text: Dissertation Manuscripts
+      href: dissertation.html
+    - text: Working Papers
+      href: working_papers.html
+  - text: Teaching
+    menu:
+    - text: POL 1, Summer 2017
+      href: pol1s2017.html
+    - text: POL 1, Fall 2017
+      href: pol1f2017.html
+    - text: ggplot Data Visualization Tutorial
+      href: UCD_PS_ggplot_tutorial.html
+  - text: About Me
+    href: about.html
   right:
-    - icon: fa-envelope fa-lg
-      href: mailto:calgara@ucdavis.edu
-    - icon: fa-github fa-lg
-      href: http://github.com/calgara
-    - icon: fa-twitter fa-lg
-      href: https://twitter.com/algaraca
-
+  - icon: fa-envelope fa-lg
+    href: mailto:calgara@ucdavis.edu
+  - icon: fa-github fa-lg
+    href: http://github.com/calgara
+  - icon: fa-twitter fa-lg
+    href: https://twitter.com/algaraca
 output:
   html_document:
     theme: flatly
     css: style.css
+    lib_dir: site_libs
+    self_contained: no
+

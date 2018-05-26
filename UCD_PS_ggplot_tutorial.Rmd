@@ -23,7 +23,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
   
-  
+To replicate the following tutorial, you can find the replication code & data here: ***[R script](UCD_PS_ggplot_workshop_replication_code.R)*** &  ***[Tutorial Data in R Environment form](ggplot_tutorial.Rdata)***.
   
 ## *General Overview of <tt>ggplot</tt> Tutorial*
 
@@ -247,8 +247,6 @@ It's hard to see the confidence intervals! Let's do the candidates on by one to 
 ggplot(subset(sample_means,sample_means$candidate == "Hillary Clinton"),aes(x=self_placement,y=mean,ymin=lower,ymax=upper)) + geom_pointrange() +  theme_minimal() + scale_x_continuous("Respondent Liberal-Conservative Self-Placement",breaks=seq(1,7,1)) + scale_y_continuous("Mean Ideological Placement of Hillary Clinton") + ggtitle("Evaluating Differential Item Function in Citizen Ideological Placement \nof Hillary Clinton, 2016 CCES")
 
 ggplot(subset(sample_means,sample_means$candidate == "Donald Trump"),aes(x=self_placement,y=mean,ymin=lower,ymax=upper)) + geom_pointrange() +  theme_minimal() + scale_x_continuous("Respondent Liberal-Conservative Self-Placement",breaks=seq(1,7,1)) + scale_y_continuous("Mean Ideological Placement of Donald Trump") + ggtitle("Evaluating Differential Item Function in Citizen Ideological Placement \nof Donald Trump, 2016 CCES")
-
-
 ```
 
 Strong evidence for differential item functioning across respondent liberal-conservative self-placement! This would necessitate the need for method of correctinf for this distortion in left-right scale perceptions.
@@ -269,7 +267,6 @@ house$dv[house$dv == 100] <- NA
 house_elexs <- house[,c(1,17,7,15,16,19,21,8)]
 house_elexs$dvp[is.na(house_elexs$dvp) & house_elexs$dem_seat == 1] <- 100
 house_elexs$dvp[is.na(house_elexs$dvp) & house_elexs$dem_seat == 0] <- 0
-
 ```
 
 ```{r echo=T, message=F, warning=FALSE}
