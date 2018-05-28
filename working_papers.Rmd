@@ -80,8 +80,11 @@ h1.title {
 <br/>
 <br/>
 <center>
-  <div text-align: center; font-size: 85%;'>*Particularistic Policy Bill Cosponsorship Network, 93rd U.S. Senate* <br>
-![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/senate_particularistic_network_93_congress.png.png "Particularistic Network"){ width=75% }
+  <div text-align: center; font-size: 10%;'>*Geographic Neighborhood profile for IA-2, 114th Congress & Particularistic Policy Bill Cosponsorship Network, 93rd U.S. Senate*<br>
+![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/IA_2_map_example_of_main_iv.png "Particularistic Network"){ width=45% } 
+![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/senate_particularistic_network_93_congress.png.png "Particularistic Network"){ width=45% }
+
+
 </center><br/>
 <center> **The Influence of Partisan Polarization and Geographic Neighborhood Context on Congressional Cosponsorship Policy Networks** </center>
 <center> **with Ross Butters, PhD Candidate, University of California, Davis** </center><br/>
