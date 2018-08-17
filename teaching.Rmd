@@ -69,14 +69,14 @@ This teaching portfolio supplemental material is organized by course-type.
   
     + [*Course Interactive Syllabus GitPage*](https://calgara.github.io/pol1f2017.html)  
     + [*Syllabus in PDF Format*](https://calgara.github.io/Pol1_Fall2017/Pol1_Fall2017_Syllabus.pdf)  
-    + [*University Course Evaluation Summary*](teaching_evals/Fall_2017_AI.pdf)  
+    + [*University Course Evaluations*](teaching_evals/Fall_2017_AI.pdf)  
 <br/>
 
 2. Introduction to American Politics Summer Session Course (Summer 2017)  
   
     + [*Course Interactive Syllabus GitPage*](https://calgara.github.io/pol1s2017.html)  
     + [*Syllabus in PDF Format*](https://calgara.github.io/Pol1_Summer2017/Pol1_Summer2017_Syllabus.pdf)  
-    + [*University Course Evaluation Summary*](teaching_evals/Summer_2017_AI.pdf)  
+    + [*University Course Evaluations*](teaching_evals/Summer_2017_AI.pdf)  
 <br/>
 
 ## *Discussion Section Teaching Assistant*  
