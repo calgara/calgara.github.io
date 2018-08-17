@@ -1,7 +1,33 @@
 ---
-title: "Teaching"
-output: html_document
+title: "Teaching Portfolio Materials"
+output: 
+  html_document: 
+    fig_caption: yes
 ---
+<style>
+  .column-left{
+    float: left;
+    width: 40%;
+    text-align: left;
+  }
+.column-right{
+  float: right;
+  width: 40%;
+  text-align: left;
+}
+</style>
+
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</html> 
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -13,4 +39,123 @@ output: html_document
 
 </script>
 
-Coming soon!
+  <style type="text/css">
+
+h1.title {
+  color: white;
+  font-size: 0px;
+  text-align: center;
+}
+</style>
+<br/>
+<br/>
+<center>
+![](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/quad.jpg "UC Davis Quad"){ width=100% }
+</center><br/>
+<center> > ***For the mind does not require filling like a bottle, but rather, like wood, it only requires kindling to create in it an impulse to think independently and an ardent desire for the truth.***    
+-Plutarch, *De Auditu*</center>  
+  
+I have been fortunate to come across teachers that have instilled the kindling of intellectual motivation that guides my curiousity in the world around me. Spanning various disciplines and pedalogical styles, these educators have inspired me to apporaching teaching with unabashed enthusiasm and a heightened sense of awareness in conveying the importance of the material to students. During my time at the [University of California, Davis](http://ps.ucdavis.edu), I have been priviledged with the opportunity to collaborate with students in our shared pursuit of igniting the kindling for an ardent desire for truth. I hope that I played a small role in shaping the intellectual curiousity for all of my students.  
+  
+Below, you will find various links containing supplemental files supporting my job market teaching portfolio. My job market teaching portfolio, which contains a comprehensive teaching philsophy statement, can be found here:  
+<br/>
+<center> [***\* Download Job Market Teaching Portfolio Here\****](Algara_Teaching_Portfolio.pdf)</center><br/>
+This teaching portfolio supplemental material is organized by course-type.  
+<br/>
+
+## *Associate Instructor of Record*  
+
+1. Introduction to American Politics (Fall 2017)  
+  
+    + [*Course Interactive Syllabus GitPage*](https://calgara.github.io/pol1f2017.html)  
+    + [*Syllabus in PDF Format*](https://calgara.github.io/Pol1_Fall2017/Pol1_Fall2017_Syllabus.pdf)  
+    + [*University Course Evaluation Summary*](teaching_evals/Fall_2017_AI.pdf)  
+<br/>
+
+2. Introduction to American Politics Summer Session Course (Summer 2017)  
+  
+    + [*Course Interactive Syllabus GitPage*](https://calgara.github.io/pol1s2017.html)  
+    + [*Syllabus in PDF Format*](https://calgara.github.io/Pol1_Summer2017/Pol1_Summer2017_Syllabus.pdf)  
+    + [*University Course Evaluation Summary*](teaching_evals/Summer_2017_AI.pdf)  
+<br/>
+
+## *Discussion Section Teaching Assistant*  
+
+1. The Scientific Study of Politics (Lab Teaching Assistant, Spring 2018)  
+  
+    + [*Syllabus in PDF Format (Chris Hare)*](teaching_evals/pol51_spring_2017.pdf)  
+    + [*University Course Evaluation Summary*](teaching_evals/Spring_2018_Discussion.pdf)    
+<br/>
+
+2. Introduction to American Politics (Fall 2016)  
+  
+     + [*Course Syllabus in PDF Format (Walt Stone)*](teaching_evals/Pol1_syllabus_Fall2016.pdf)
+     + [*Section Syllabus in PDF Format*](teaching_evals/Pol1_Section_Syllabus_Fall_2016.pdf) 
+    + [*University Course Evaluation Summary*](teaching_evals/Fall_2016_Discussion.pdf)    
+<br/>
+
+3. Introduction to Comparative Politics (Winter 2016)  
+  
+    + [*Syllabus in PDF Format (Ethan Scheiner)*](teaching_evals/POL2_Syllabus.pdf)  
+    + [*University Course Evaluation Summary*](teaching_evals/Winter_2016_Discussion.pdf)    
+<br/>
+
+4. Introduction to American Politics (Fall 2015)  
+  
+    + [*Syllabus in PDF Format (Stuart Hill)*](teaching_evals/syllabus+Fall+2015.docx)  
+    + [*University Course Evaluation Summary*](teaching_evals/Fall_2015_Discussion.pdf)    
+<br/>
+
+5. Introduction to American Politics (Spring 2014)  
+  
+    + [*Syllabus in PDF Format (Walt Stone)*](teaching_evals/Pol1_syllabus_2014pdf)  
+    + [*Section Syllabus in PDF Format*](teaching_evals/Pol 1 Syllabus_S_2014.pdf) 
+    + [*University Course Evaluation Summary*](teaching_evals/Spring_2014_Discussion.pdf)  
+<br/>
+
+## *Teaching Assistant*  
+
+1. National Security Policy (International Relations, Winter 2018)  
+  
+    + [*Syllabus in PDF Format (Brandon Kinne)*](teaching_evals/Syllabus-POL132W18.pdf)  
+    + [*University Course Evaluation Summary*](teaching_evals/Winter_2018_TA.pdf)    
+<br/>
+
+2. Comparative Policymaking (Comparative Politics, Winter 2017)  
+  
+     + [*Syllabus in PDF Format (Matthew Shugart)*](teaching_evals/POL 140E syl 2017 W.pdf)
+    + [*University Course Evaluation Summary*](teaching_evals/Winter_2017_TA.pdf)    
+<br/>
+
+3. Democratization (Comparative Politics, Spring 2016)  
+  
+    + [*Syllabus in PDF Format (Gabriella Montinola)*](teaching_evals/Syllabus-S+2017.docx)  
+    + [*University Course Evaluation Summary*](teaching_evals/Spring_2016_TA.pdf)    
+<br/>
+
+4. American Environmental Politics (American Politics, Spring 2015)  
+  
+    + [*Syllabus in Word Doc Format (Stuart Hill)*](teaching_evals/sylabus+spring+2015.docx)  
+    + [*University Course Evaluation Summary*](teaching_evals/Spring_2015_TA.pdf)    
+<br/>
+
+5. American Environmental Politics (American Politics, Winter 2015)  
+  
+    + [*Syllabus in Word Doc Format (Stuart Hill)*](teaching_evals/sylabus+winter+2015.docx)  
+    + [*University Course Evaluation Summary*](teaching_evals/Winter_2015_TA.pdf)  
+<br/>
+
+6. California State Politics & Policy ([University of California Center Sacramento Seminar](http://uccs.ucdavis.edu), Fall 2014)  
+  
+    + [*Syllabus in PDF Format (Ben Highton & Scott  MacKenzie)*](teaching_evals/pol195--2014fall--syllabus.pdf)  
+    + [*University Course Evaluation Summary*](teaching_evals/Fall_2014_TA.pdf)  
+<br/>  
+
+7. Public Opinion of the Mass Public (American Politics, Winter 2014)  
+  
+    + [*Syllabus in Word Doc Format (Stuart Hill)*](teaching_evals/164+Syllabus+Winter+2014.docx)  
+    + [*University Course Evaluation Summary*](teaching_evals/Winter_2014_TA.pdf)
+<br/>
+<br/>
+<br/>
+<center> Copyright &copy; 2017 by Carlos Algara. Made with [RStudio](https://www.rstudio.com). </center>

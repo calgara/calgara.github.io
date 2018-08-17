@@ -15,6 +15,8 @@ navbar:
       href: working_papers.html
   - text: Teaching
     menu:
+    - text: Teaching Portfolio
+      href: teaching.html
     - text: POL 1, Summer 2017
       href: pol1s2017.html
     - text: POL 1, Fall 2017
