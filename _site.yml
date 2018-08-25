@@ -9,6 +9,8 @@ navbar:
     href: cv.html
   - text: Research
     menu:
+    - text: Research Agenda Statement
+      href: Algara_Research_Statement.pdf
     - text: Dissertation Manuscripts
       href: dissertation.html
     - text: Working Papers
