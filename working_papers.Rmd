@@ -80,10 +80,6 @@ h1.title {
 <br/>
 <br/>
 <center>
-  
-<br/>
-<br/>
-<center>
   <div text-align: center; font-size: 10%;'>*Average Country & Website World Wide Web Information Networks, 9/1/2015 - 1/30/2017*<br>
   <br/>
 ![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/third_quartile_graph_fullnetwork_color.png "County Network"){ width=45% } 
@@ -105,18 +101,21 @@ h1.title {
 </center><br/>
 <center> **The Influence of Partisan Polarization and Geographic Neighborhood Context on Congressional Cosponsorship Policy Networks** </center>
 <center> **with Ross Butters, PhD Candidate, University of California, Davis** </center><br/>
-<center> ***$\star$Manuscript in Preparation for 2018 PolNet Annual Meeting Panel $\star$[Working Manuscript Draft](PolNet2018_Algara_Butters_Prelim_Abstract.pdf) $\star$[Manuscript Data Materials](mailto:calgara@ucdavis.edu)*** </center><br/>
+<center> ***$\star$Manuscript Prepared for 2018 PolNet Annual Meeting Panel $\star$[Working Manuscript Draft](PolNet2018_Algara_Butters_Prelim_Abstract.pdf) $\star$[Manuscript Data Materials](mailto:calgara@ucdavis.edu)*** </center><br/>
           *Abstract:* The classical "Textbook Theory" of Congress posits that legislators are relatively autonomous actors who work together on a bipartisan basis to maximize their probability of re-election (Shepsle 1989). This classical district-centered theory of Congress posits that legislators are motivated to engage in bipartisan legislative behavior and work together by the geographical similarity of their respective districts. Congressional scholars have largely cast doubt on the importance of district-centered considerations to inform the behavior of legislators, shifting the focus to partisan-centered preferences (Rohde 1991, Cox & McCubbins 1993, 2005). Moreover, while scholars have debated these theories, they have said relatively little about the salience of these theories across varying policy issues. Using the distinct expression of legislative behavior provide by bill co-sponsorship and geographic proximity methods we explore the extent to which district similarity influences how legislators work together in the Congressional network across varying degrees of partisan polarization. Treating Congress as a series of distinct policy networks and using exponential random graph models (ERGM), we evaluate a theory arguing that geographic proximity is a salient predictor of legislator cooperation in district-centered policy domains (i.e. agriculture, land management), even during the hyper-partisan contemporary Congress.  
 <br/>
 <br/>
 <center>
-  <div text-align: center; font-size: 85%;'>*Percentage of Senators Representing States That Lean Towards*
-    <div text-align: center; font-size: 85%;'>*the Opposing Party During the Direct-Election Era, 1914-2016* <br>
-![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/years_outpartisan_seats_percentage.png "Declining Out-party Senators"){ width=50% }
+  <div text-align: center; font-size: 10%;'>*Partisanship of Senate Press Event Participation & Effect of Party on Strategic Legislative Collaboration*<br>
+<br/>
+![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/number_press_events_by_party_percentage.png "Partisanship Events"){ width=45% } 
+![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/senate_press_event_additive_model_coefficients_party_effect.png "Party Effect"){ width=45% }
+
+
 </center><br/>
-<center> **The Influence of Incumbency, Partisanship, Candidate Quality \& National Tides in U.S. Senate Elections, 1914-2016** </center><br/>
-<center> ***$\star$Working Manuscript in Preparation $\star$[Working Manuscript Draft](August2017_Nationalization_Senate_Elections_Algara.pdf) $\star$[Manuscript Data Materials](mailto:calgara@ucdavis.edu)*** </center><br/>
-          *Abstract:* Relative to elections for the U.S. House, little is known about what influences outcomes for the U.S. Senate. While standing models of congressional election outcomes have been applied to the Senate, many of these models fail to account for salient variables, such as candidate quality, or focus their analysis on elections during the candidate-centered era. In this paper, I specify a comprehensive model of Senate election outcomes which focuses on four salient predictors of electoral outcomes: national partisan tides, incumbency, state partisanship, and candidate quality. I then evaluate this model using a novel dataset containing every Senate race since the adoption of the 17th amendment in 1913. Congruent with recent findings in the U.S. House, the model finds evidence that Senate elections are becoming more partisan-centered at the expense of a candidate quality advantage. On the other hand, and contrary to recent studies, the model finds evidence of an incumbency advantage increase in contemporary Senate elections. However, this increase in the incumbency advantage corresponds to a decline in the pivotal role of incumbency in determining Senate election outcomes during a more partisan-centered period of elections. I conclude by showing that Senate elections are becoming more nationalized and president-centered contests.  
+<center> **The Influence of Partisan Polarization and Geographic Neighborhood Context on Congressional Cosponsorship Policy Networks**  </center><br/>
+<center> ***$\star$Working Manuscript in Preperation $\star$[Working Manuscript Draft](APSA2018_Senate_Collaboration.pdf) $\star$[Manuscript Data Materials](mailto:calgara@ucdavis.edu)*** </center><br/>
+          *Abstract:* This paper explores the extent to which shared legislator characteristics--in particular, partisanship, representing the same constituency, and sitting on one or more of the same committees--influence legislators' decisions to collaborate with their colleagues on a given issue.  To do so, we employ network analysis.  Previous studies that have done this have largely focused on bill co-sponsorship and roll-call voting.  We argue that such measures, while informative, do not sufficiently capture the high-profile strategic choices that legislators make, and so instead employ a little-used comprehensive dataset that documents all U.S. Senate press events held between 1979 and 1999, as well as between 2003 and 2009, including all of the particular senators who attended each event.  When we look at senator dyads, we find that shared party is the strongest predictor of whether two senators choose to appear at the same event and this effect increases over the time series.  As to whether shared constituency and committee membership predicts public collaboration, the evidence is more mixed, with the strength of these institutional variables attenuating over time.  Overall, our results mirror the increased levels of partisanship of the contemporary Senate that scholars have arrived at using other measures and demonstrate that such partisanship has largely erased the importance of institutional variables such as shared constituency and shared committee membership.   
 <br/>
 <br/>
 <center>
@@ -127,6 +126,26 @@ h1.title {
 <center> **with Joe Zamadics, PhD Candidate, University of Colorado, Boulder** </center><br/>
 <center> ***$\star$Working Manuscript in Preparation $\star$[Working Manuscript Draft](Congressional_Incorrect_voting_Algara_Zamadics.pdf) $\star$[Manuscript Data Materials](mailto:calgara@ucdavis.edu)*** </center><br/>
           *Abstract:* Theoretical and empirical models of congressional voting assumes that legislators vote with the sole purpose to move policy closer to their ideologically ideal point, with the most prominent being the NOMINATE model. While NOMINATE correctly classifies the vast majority of votes cast by members of Congress, a significant number of votes are misclassified and coded as spatial error. The literature on congressional voting assumes this error to be random and idiosyncratic across members. We dispute this conventional notion and argue that spatial error in congressional is not random, but rather systematic across members. We present a theory positing that spatial error is more likely on roll-call votes tackling salient policy issues and among members representing districts with greater ideological divergence between the median voter and the member's primary election constituency. Using Aldrich-McKelvey scaling to place legislators and constituencies in the same ideological common space, we find support for our theory. We attribute this finding to the greater electoral uncertainty faced by ideological moderates and members representing districts with greater ideological divergence between key constituencies. Our findings have implications for the NOMINATE model, the nature of spatial error in legislative voting, and the electoral cross-pressures faced by legislators.  
+<br/>
+<br/>
+<center>
+  <div text-align: center; font-size: 85%;'>*Quarterly Generic Ballot Differential between the Majority & Minority Party, 1962-2016* <br>
+![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/maj_generic_ballot_diff_roper.png "Generic Ballot"){ width=50% }
+</center><br/>
+<center> **The Influence of Partisan Conflict & Policy Responsiveness on Majority Party Electoral Fortunes \& Congressional Job Performance: A Time-Series Approach** </center>
+<center> **with Tzu-Ping Liu, PhD Candidate, University of California, Davis** </center><br/>
+<center> ***$\star$Working Manuscript in Preparation $\star$[Working Manuscript Draft](WPSA2017_Algara_Liu_Draft1.pdf) $\star$[Manuscript Data Materials](mailto:calgara@ucdavis.edu)*** </center><br/>
+          *Abstract:* Recent work suggests that the aggregate approval rating of the U.S. Congress is a function of both policy responsiveness by the institution and the level of partisan conflict between both parties. However, standing models of the role of partisan conflict and policy responsiveness in congressional approval focus on Congress as a collective institution, rather than distinguishing between the legislative parties. In this paper, we specify a model which posits that policy responsiveness and partisan conflict not only influence approval of Congress as a whole, but also have differing effects on the electoral standing of the majority party in their relative generic ballot advantage to the minority party. We argue that partisan conflict decreases the generic congressional ballot advantage for the majority party and the approval rating of Congress as a collective institution. We also argue that policy responsiveness by Congress to the national mood raises the electoral standing of the majority party and the collective approval of Congress. Using a unique dataset of quarterly congressional approval and congressional generic ballot differentials from 1969 to 2016, we provide a comprehensive test of our model during varying periods of congressional polarization.  
+<br/>
+<br/>
+<center>
+  <div text-align: center; font-size: 85%;'>*Percentage of Senators Representing States That Lean Towards*
+    <div text-align: center; font-size: 85%;'>*the Opposing Party During the Direct-Election Era, 1914-2016* <br>
+![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/years_outpartisan_seats_percentage.png "Declining Out-party Senators"){ width=50% }
+</center><br/>
+<center> **The Influence of Incumbency, Partisanship, Candidate Quality \& National Tides in U.S. Senate Elections, 1914-2016** </center><br/>
+<center> ***$\star$Working Manuscript in Preparation $\star$[Working Manuscript Draft](August2017_Nationalization_Senate_Elections_Algara.pdf) $\star$[Manuscript Data Materials](mailto:calgara@ucdavis.edu)*** </center><br/>
+          *Abstract:* Relative to elections for the U.S. House, little is known about what influences outcomes for the U.S. Senate. While standing models of congressional election outcomes have been applied to the Senate, many of these models fail to account for salient variables, such as candidate quality, or focus their analysis on elections during the candidate-centered era. In this paper, I specify a comprehensive model of Senate election outcomes which focuses on four salient predictors of electoral outcomes: national partisan tides, incumbency, state partisanship, and candidate quality. I then evaluate this model using a novel dataset containing every Senate race since the adoption of the 17th amendment in 1913. Congruent with recent findings in the U.S. House, the model finds evidence that Senate elections are becoming more partisan-centered at the expense of a candidate quality advantage. On the other hand, and contrary to recent studies, the model finds evidence of an incumbency advantage increase in contemporary Senate elections. However, this increase in the incumbency advantage corresponds to a decline in the pivotal role of incumbency in determining Senate election outcomes during a more partisan-centered period of elections. I conclude by showing that Senate elections are becoming more nationalized and president-centered contests.  
 <br/>
 <br/>
 <center>
