@@ -55,7 +55,7 @@ h1.title {
 </center><br/>
 <center> **The Member Level Determinants \& Consequences of Party Legislative Obstruction in the U.S. Senate** </center>
 <center> **with Joe Zamadics, PhD Candidate, University of Colorado, Boulder** </center><br/>
-<center> ***$\star$Invited to Resive & Resubmit Manuscript $\star$[Working Manuscript Draft](Obstruction_Cost_Algara_Zamadics.pdf) $\star$[Manuscript Data Materials](mailto:calgara@ucdavis.edu)*** </center><br/>
+<center> ***$\star$Manuscript Forthcoming at American Politics Research (2018) $\star$[Working Manuscript Draft](Obstruction_Cost_Algara_Zamadics.pdf) $\star$[Manuscript Data Materials](mailto:calgara@ucdavis.edu)*** </center><br/>
   *Abstract:*	Are Senators cross-pressured by party influence and constituent demands on procedural votes? We present a theory positing that Senators are indeed cross-pressured between these two demands and that they anticipate an electoral cost for their procedural voting record. In an analysis of Senate procedural votes since the 92nd Congress, we find that procedural votes are salient to voters and important to party leaders. Using a new spatial measure of obstruction preference, we demonstrate our finding three ways. First, obstruction preferences have become more polarized as the Senate experiences more intense legislative obstruction. Second, electorally vulnerable members are most likely to break from their party on procedural votes. Third, we find that voters electorally reward majority party Senators that break from their party and behave like minority party obstructionists. Our findings suggest that, unlike the House, Senate procedural votes are largely indistinguishable from substantive votes and are electorally salient.  
 <br/>
 <br/>
