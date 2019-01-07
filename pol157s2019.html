@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+<meta name="author" content="Carlos Algara" />
+<meta name="author" content="Download Full Syllabus Here" />
+
+
+<title>POL 157: American Public Opinion</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Carlos Algara</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="cv.html">CV</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Research
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="Algara_Research_Statement.pdf">Research Agenda Statement</a>
+    </li>
+    <li>
+      <a href="dissertation.html">Dissertation Manuscripts</a>
+    </li>
+    <li>
+      <a href="working_papers.html">Publications &amp; Working Papers</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Teaching
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="teaching.html">Teaching Portfolio</a>
+    </li>
+    <li>
+      <a href="pol1s2017.html">POL 157 (Sac State), Spring 2019</a>
+    </li>
+    <li>
+      <a href="pol1f2017.html">POL 1 (UCD), Fall 2017</a>
+    </li>
+    <li>
+      <a href="pol1s2017.html">POL 1 (UCD), Summer 2017</a>
+    </li>
+    <li>
+      <a href="UCD_PS_ggplot_tutorial.html">ggplot Data Visualization Tutorial</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="about.html">About Me</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="mailto:calgara@ucdavis.edu">
+    <span class="fa fa-envelope fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="http://github.com/calgara">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://twitter.com/algaraca">
+    <span class="fa fa-twitter fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">POL 157: American Public Opinion</h1>
+<h3 class="subtitle"><em>California State University, Sacramento</em></h3>
+<h4 class="author"><em><a href="mailto:calgara@ucdavis.edu">Carlos Algara</a></em></h4>
+<h4 class="author"><em><em>Download Full Syllabus <a href="Pol157_Spring2019/Pol157_Spring2019_Syllabus.pdf">Here</a></em></em></h4>
+<h4 class="date"><em>Spring 2019 Semester</em></h4>
+
+</div>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)*,i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  *)(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-100362112-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<p><br/></p>
+<div id="welcome" class="section level2">
+<h2>Welcome!</h2>
+<p>This GitPage is intended to be the interactive syllabus for Pol 157: American Public Opinion course at Sacramento State University for the 2019 Spring Semester. The full syllabus for the course can be found above. Class logistics, the theoritical framework for the course, and course readings can be found below. Under each meeting header, you will find:</p>
+<ul>
+<li><p>Course slidesets and readings corresponding to the meeting topic.</p></li>
+<li><p>Course readings corresponding to the meeting topic. If you click on the reading links, you will be taken to a PDF of the reading.</p></li>
+<li><p>Review sheets for the midterm and final exams.</p></li>
+<li><p>The substantive prompt for the <strong><em>American Political Behavior Model Evaluation Essay</em></strong> assignment can be found <a href="Pol157_Spring2019/">here.</a> This assignment is due Thursday, May 2nd, and is to be uploaded to the <a href="http://canvas.csus.edu/">Canvas Portal</a> under the essay assignment tab.<br />
+<br/></p></li>
+</ul>
+</div>
+<div id="class-time-office-hours-course-materials" class="section level2">
+<h2>Class Time, Office Hours &amp; Course Materials</h2>
+<p><strong><em>Lecture</em></strong>: <a href="https://www.csus.edu/campusmap/">Amador Hall 262</a>; Tuesday &amp; Thursday 1:30-2:45<br />
+<strong><em>Office Hours</em></strong>: <a href="https://www.csus.edu/govt/">Office TBD</a>; Tuesday 11:30-1:20 &amp; by appointment<br />
+<strong><em>Course Materials</em></strong>: <a href="http://canvas.csus.edu/">Canvas</a> &amp; <a href="http://calgara.github.io/pol157s2019.html">GitPage</a><br />
+<br/></p>
+</div>
+<div id="course-objective-how-do-we-study-american-public-opinion-its-implications-on-american-political-life" class="section level1">
+<h1>Course Objective: How do we study American Public Opinion &amp; its implications on American Political Life?</h1>
+<p>This course offers an introduction to the systematic and meticulous study of American Political Behavior in the Mass Public. Building on the scientific foundation of political science, this course is designed to provide an understanding into the determinants of political preferences held by <strong><em>citizens</em></strong> and how these preferences influence how citizens <strong><em>participate</em></strong> and gain representation within the political framework of American government. The main question motivating the course is a simple, yet complex one: how do citizens develop (<em>or fail to develop</em>) their political attitudes and what are the implications of these attitudes on political decision-making by citizens (i.e., vote preferences) and elected elites (i.e., Congress &amp; Presidency). Recognizing that coherent attitudes and engaged political participation is the “ideal” standard for representative democracy, the motivating question of the course hinges on understanding the following concept:</p>
+<ul>
+<li><p>How do political sciences study and measure <em>citizen</em> political attitudes and opinion? What are some of the challenges of using surveys to measure the opinions and attitudes of <em>citizens</em> across a range of salient and controversial political topics?</p></li>
+<li><p>How do citizens “<em>reason</em>” about political abstractions? What are the salient determinants of political attitudes and opinions of <em>citizens</em>? How do these attitudes and opinions get translated into <em>citizen electoral choice</em>? What is the role of <em>rational self-interest</em> and <em>group identity</em> in shaping the increasingly polarized nature of American political attitudes and preferences?</p></li>
+<li><p>What role do these political attitudes (or <em>lack thereof</em>) play in shaping the political decision-making process by <em>citizens</em>? Specifically, how do these attitudes determine how individual <em>citizens</em> participate in politics in the electoral arena? Does exercising these political preferences through <em>citizen political behavior</em> secure <em>dynamic representation</em> and <em>democratic policy responsiveness</em> by elected elites?</p></li>
+</ul>
+<p>These thematic questions may seem daunting, but this course will give you the necessary framework to perform careful political and social science analysis to gain leverage on these questions. This course will provide not only an understanding of how to think of the study of the causes and implications of American public opinion, but also how to engage in careful social science analysis. This course emphasizes the tools you need to assess political behaviors, practices, and institutional representation based on theory and evidence. Welcome to the class!<br/> <br/></p>
+<div id="course-road-map-materials" class="section level2">
+<h2>Course Road-Map &amp; Materials</h2>
+<p><br/> <strong><em>Note:</em></strong> Slidesets are posted as links in the meeting headers text.<br />
+<br/></p>
+</div>
+<div id="foundations-of-american-public-opinion" class="section level2">
+<h2><em>1. Foundations of American Public Opinion</em></h2>
+<p><strong><em>Section Objective</em></strong>: In the first module of this course, we dive into a broad overview of American Public Opinion. This section provides an understanding of what American Public opinion and the challenges political scientist face when studying this topic. We also explore the “ideal type” of polity, with respect to public opinion, as envisioned by the architects in the American Democratic System. In this section, we also gain applied experience of how to use survey methods (a <em>very</em> commonly used method by political scientists) to measure the opinions, attitudes, and preferences of citizens. <br/></p>
+<ol style="list-style-type: decimal">
+<li><a href="Pol157_Spring2019/"><strong>Week 1 &amp; 2 (January 22nd, January 29, &amp; January 31st)</strong>:</a> Course Overview &amp; Defining the “Ideal Citizen”&quot; in the American Democratic System. How do political scientists study public opinion? What are some of the challenges and pitfalls of such an approach?<br />
+<br/>
+<ul>
+<li><a href="https://www.congress.gov/resources/display/content/The+Federalist+Papers#TheFederalistPapers-10">Madison, James. 1787. “Federalist 10.” In United States Congress Resources</a><br />
+<br/></li>
+<li><a href="https://www.congress.gov/resources/display/content/The+Federalist+Papers#TheFederalistPapers-10">Madison, James (or Alexander Hamilton). 1788. “Federalist 51.” In United States Congress Resources</a><br />
+<br/></li>
+<li><a href="Pol157_Spring2019/Berelson%201952.pdf">Berelson, Bernard. 1952. “Democratic Theory and Public Opinion.”<em>Public Opinion Quarterly</em>. 16(3):313-330.</a><br />
+<br/></li>
+<li><a href="Pol157_Spring2019/Atekson%202010.pdf">Atkeson, Lonna R. 2010. “The State of Survey Research as a Research Tool in American Politics.” In Jan E. Leighley, ed.,<em>The Oxford Handbook of American Elections and Political Behavior</em>.</a><br />
+<br/></li>
+<li><a href="Pol157_Spring2019/Pasek%20&amp;%20Krosnick%202010.pdf">Pasek, Josh &amp; Jon A. Krosnick. 2010. “Optimizing Survey Questionnaire Design in Political Science: Insights from Psychology.” In Jan E. Leighley, ed.,<em>The Oxford Handbook of American Elections and Political Behavior</em>.</a><br />
+<br/></li>
+<li><a href="Pol157_Spring2019/howtoread.pdf">Green, Amelia Hoover. 2013. “How to Read Political Science: A Guide in Four Steps.”</a> <em>Note: This is a primer on how to read social science literature, with a focus on political science. This should be of particular interest for students without previous experience with applied quantitative methods.</em><br />
+<br/>
+<center>
+<strong>Please Note: No Class on January 31st. In lieu of class, please fill-out the class Qualtrics survey assessing political attitudes. This survey design is based on a variant of the <a href="https://cces.gov.harvard.edu"><strong><em>Cooperative Congressional Election Study</em></strong></a> and you will receive credit for completing it. Click <a href="https://ucdavis.co1.qualtrics.com/jfe/form/SV_cMjczVOGT0Hlffv"><strong><em>HERE</em></strong></a> to take the survey.</strong>
+</center>
+<br/> <br/></li>
+</ul></li>
+<li><a href="Pol157_Spring2019/"><strong>Week 3 (February 5th &amp; February 8th)</strong>:</a> How do we measure salient political topics in the mass public? How “stable” are some of the attitudinal measures?<br />
+<br/>
+<ul>
+<li><a href="Pol157_Spring2019/Druckman%20&amp;%20Lupia%202000.pdf">Druckman, James N. &amp; Arthur Lupia. 2000. “Preference Formation.” <em>Annual Review of Political Science</em>. 3:1-24.</a><br />
+<br/></li>
+<li><a href="Pol157_Spring2019/Verba%201996.pdf">Verba, Sidney. 1996. “The Citizen as Respondent: Sample Surveys and American Democracy.” <em>American Political Science Review</em>. 1-7.</a><br />
+<br/></li>
+<li><a href="Pol157_Spring2019/Zaller_Feldman1992.pdf">Zaller, John &amp; Stanley Feldman. 1992. “A Simple Theory of the Survey Response: Answering Questions versus Revealing Preferences.” <em>American Journal of Political Science</em>. 36(3): 951-971.</a><br />
+<br/></li>
+<li><a href="Pol157_Spring2019/Tourangeau%20&amp;%20Smith%201996.pdf">Tourangeau, Roger and Tom W. Smith. 1996. “Asking Sensitive Questions: The Impact of Data Collection Mode, Question Format, and Question Context.” <em>Public Opinion Quarterly</em>. 60:275-304.</a><br />
+<br/></li>
+</ul></li>
+</ol>
+</div>
+<div id="citizen-reasonging-determinants-of-political-attitudes" class="section level2">
+<h2><em>2. Citizen Reasonging &amp; Determinants of Political Attitudes</em></h2>
+<p><strong><em>Section Objective</em></strong>: In this second module of this course, we investigate the literature on how citizens reason about political abstractions and how they do (or don’t) think coherently about politics. We pay special attention to whether are able to think “ideologically” and develop coherent preferences about the “ideal” role of government in society. After discussing how citizens may fall short in this endeavor of specifying coherent preferences about government, we turn to potential <em>heuristics</em> (i.e., short-cuts) that may help citizens develop coherent political preferences.<br />
+<br/></p>
+<ol style="list-style-type: decimal">
+<li><a href="Pol157_Spring2019/"><strong>Week 4 (February 12th &amp; February 14th)</strong>:</a> How do citizens “reason” about politics in American Life? Are citizens generally able to “learn” in a political context?<br />
+<br/>
+<ul>
+<li><a href="Pol157_Spring2019/Nyhan%20&amp;%20Reifler%202010.pdf">Nyhan, Brendan &amp; Jason Reifler. 2010. “When Corrections Fail: The Persistence of Political Misconceptions.” <em>Political Behavior </em>32(2): 303-330.</a><br />
+<br/></li>
+<li><a href="Pol157_Spring2019/Gilens%202012.pdf">Gilens, Martin. 2012. “Two-Thirds Full? Citizen Competence and Democratic Governance.” In Adam Berinsky, ed., <em>New Directions in Public Opinion Research</em>.</a><br />
+<br/></li>
+<li><a href="Pol157_Spring2019/Huckfeldt%202007.pdf">Huckfeldt, Robert. 2007. “Information, Persuasion, and Political Communication Networks.” In Russel J. Dalton &amp; Hans-Dieter Klingemann, eds., <em>The Oxford Handbook of Political Behavior</em>.</a><br />
+<br/></li>
+<li><a href="Pol157_Spring2019/Campbell%202002.pdf">Campbell, A.L. 2002. “Self-Interest, Social Security, and the Distinctive Participation Patterns of Senior Citizens.” <em>American Political Science Review</em>. 96:565- 74.</a><br />
+<br/></li>
+</ul></li>
+<li><a href="Pol157_Spring2019/"><strong>Week 5 (February 19th &amp; February 21st)</strong>:</a> Now that we have discussed how citizens do (or do not) reason about politics, we turn to whether citizens hold coherent preferences that guide their micro-level political behavior. Does the mass public generally possess high levels of political knowledge and “ideological” thinking? How do citizens use (or do note use) heuristics to overcome the <em>democratic dilemma</em>?<br />
+<br/>
+<ul>
+<li><a href="Pol157_Spring2019/Kulinski%20&amp;%20Peyton%202007.pdf">Kuklinski, James H. &amp; Buddy Peyton. 2007. “Belief Systems and Political Decision Making.” In Russel J. Dalton &amp; Hans-Dieter Klingemann, eds., <em>The Oxford Handbook of Political Behavior</em>.</a><br />
+<br/></li>
+<li><a href="https://www.vox.com/policy-and-politics/2017/11/9/16614672/ideology-liberal-conservatives">Klein, Ezra. 2017. “Vox: For elites, politics is driven by ideology. For voters, it’s not.”</a><br />
+<br/></li>
+<li><a href="Pol157_Spring2019/Freeder%20et%20al.%202018.pdf">Freeder, Sean, Gabriel S. Lenz, &amp; Shad Turney. 2018. “The Importance of Knowing”What Goes with What“: Reinterpreting the Evidence on Policy Attitude Stability.” <em>Journal of Politics.</em> 81(1):1-17.</a><br />
+<br/></li>
+<li><a href="Pol157_Spring2019/Lau%20&amp;%20Redlawsk%202001.pdf">Lau, Richard R. &amp; David P. Redlawsk. 2001. “Advantages and Disadvantages of Cognitive Heuristics in Political Decision Making.” <em>American Political Science Review.</em> 45(4): 951-971.</a><br />
+<br/></li>
+<li><a href="Pol157_Spring2019/Verba%201993.pdf">Verba, Sidney, Kay Lehman, Henry Brady &amp; Norman H. Nie. 1993. “Citizen Activity: Who Participates? What Do They Say?” <em>American Political Science Review</em> 87(2): 303-318.</a><br />
+<br/> <br/></li>
+</ul></li>
+<li><a href="Pol157_Spring2019/"><strong>Week 6 (February 26th &amp; February 28th)</strong>:</a> Which models seek to explain the origins of <em>partisanship</em>, the most salient heuristic of political attitudes and choice? What are the effects of partisanship on the political behavior of citizens? Does partisanship change?<br />
+<br/>
+<ul>
+<li><a href="Pol157_Spring2019/Bartels%202008.pdf">Bartels, Larry M. 2008. “The Study of Electoral Behavior.” In Jan E. Leighley, ed., <em>The Oxford Handbook of American Elections and Political Behavior</em>.</a><br />
+<br/></li>
+<li><a href="Pol157_Spring2019/Huddy%20&amp;%20Bankert%202017.pdf">Huddy, Leonie &amp; Alexa Bankert. 2017. “Political Partisanship as a Social Identity.” In <em>The Oxford Handbook of Political Science</em>.</a><br />
+<br/></li>
+<li><a href="Pol157_Spring2019/Zingher%202018.pdf">Zingher, Joshua. 2018. “Polarization, Demographic Change, and White Flight from the Democratic Party.” <em>Journal of Politics</em>. 80(3): 860-872.</a><br />
+<br/></li>
+<li><a href="Pol157_Spring2019/Barber%20&amp;%20Pope%202018.pdf">Barber, Michael &amp; Jeremy C. Pope. 2018. “Does Party Trump Ideology? Disentangling Party and Ideology in America.” <em>American Political Science Review</em>. 1(1): 1-17.</a><br />
+<br/></li>
+</ul></li>
+</ol>
+</div>
+<div id="translating-preference-to-behavior-the-role-of-campaigns-elections-in-american-political-life" class="section level2">
+<h2><em>3. Translating Preference to Behavior: The Role of Campaigns &amp; Elections in American Political Life</em></h2>
+<p><strong><em>Section Objective</em></strong>: In this section, we turn to how citizens translate their preferences into decisions of electoral choice. We investigate and assess three main models of electoral choice: the spatial model, the partisanship model, and the retrospective model. We then turn to how well these heuristics work in various electoral contexts, particularly electoral contexts lacking a clear partisan heuristic (i.e., non-partisan contexts). Lastly we discuss citizen participation in the electoral arena, with a particular focus on the <em>socioeconomic</em> model of electoral turnout.<br />
+<br/></p>
+<ol style="list-style-type: decimal">
+<li><a href="Pol157_Spring2019/"><strong>Week 7 (March 5th &amp; March 7th)</strong>:</a> How are political preferences translated to representative choice? How do the partisan, spatial (ideological), and valence models differ in explaining citizen electoral preferences?<br />
+<br/>
+<ul>
+<li><a href="Pol157_Spring2019/Joesten%20&amp;%20Stone%202014.pdf">Joesten, Danielle A. &amp; Walter J. Stone. 2014. “Reassessing Proximity Voting: Expertise, Party, and Choice in Congressional Elections.” <em>Journal of Politics</em>. 76(3): 740-753.</a><br />
+<br/></li>
+<li><a href="Pol157_Spring2019/Bafumi%20&amp;%20Shapiro%202009.pdf">Bafumi, Joseph &amp; Robert Y. Shapiro. 2009. “A New Partisan Voter.” <em>Journal of Politics</em>. 71(1): 1-23.</a><br />
+<br/></li>
+<li><a href="Pol157_Spring2019/Grose%20&amp;%20Oppenheimer%202007.pdf">Grose, Christian R. &amp; Bruce I. Oppenheimer. 2007. “The Iraq War, Partisanship, and Candidate Attributes: Variation in Partisan Swing in the 2006 U.S. House Elections.” <em>Legislative Studies Quarterly</em>. 32(4): 531-557.</a><br />
+<br/></li>
+<li><a href="Pol157_Spring2019/Buttice%20&amp;%20Stone%202012.pdf">Buttice, Matthew K. &amp; Walter J. Stone. 2012. “Candidates Matter: Policy and Quality Differences in Congressional Elections.” <em>Journal of Politics.</em> 74(3): 870-887.</a><br />
+<br/></li>
+</ul></li>
+<li><strong>Week 8 (March 12th &amp; March 14th)</strong>: Catch-Up/Review &amp; Midterm Exam Week. For this week, we should plan on catching-up on left-over material and/or taking the class period on Tuesday (March 12th) to review the material ahead of the midterm exam.<br />
+<br/>
+<center>
+<a href="Pol157_Spring2019/"><strong><em>*Download Midterm Review Here.*</em></strong></a>
+</center>
+<br/> <br/>
+<center>
+<strong><em>Midterm Exam (March 14, 2019)</em></strong>
+</center>
+<br/> <br/>
+<center>
+<strong>Spring Break: March 18th - March 22th</strong>
+</center>
+<br/> <br/></li>
+<li><a href="Pol157_Spring2019/"><strong>Week 9 (March 26th &amp; March 28th)</strong>:</a> What are the fundamental role of campaigns in determining how citizens translate their preferences to electoral choice? What sort of citizens are predisposed to participating in the electoral process?<br />
+<br/>
+<ul>
+<li><a href="Pol157_Spring2019/Green%20&amp;%20Schwam-Baird%202016.pdf">Green, Donald P. &amp; Michael Schwam-Baird. 2016. “Mobilization, Participation, and American Democracy: A Retrospective &amp; Postscript.” <em>Party Politics.</em> 22(2): 158-164.</a><br />
+<br/></li>
+<li><a href="Pol157_Spring2019/Martinez%202010.pdf">Martinez, Michael D. 2010. “Why is American Turnout so Low and Why Should We Care?” In Jan E. Leighley, ed., <em>The Oxford Handbook of American Elections and Political Behavior</em>.</a><br />
+<br/></li>
+<li><a href="Pol157_Spring2019/Leighley%201995.pdf">Leighley, Jan E. 1995. “Attitudes, Opportunities, and Incentives-a Field Essay on Political Participation.” <em>Political Research Quarterly</em>. 48(1): 181-209.</a><br />
+<br/></li>
+<li><a href="Pol157_Spring2019/Gomez%20&amp;%20Hansford%202014.pdf">Gomez, Brad T. &amp; Thomas G. Hansford. 2014. “Economic Retrospection and the Calculus of Voting.” <em>Political Behavior.</em> 37(1): 309-329.</a><br />
+<br/></li>
+<li><a href="Pol157_Spring2019/Kalla%20&amp;%20Broockman%202017.pdf">Kalla, Joshua &amp; David E. Broockman. 2017. “The Minimal Persuasive Effects of Campaign Contact in General Elections: Evidence from 49 Field Experiments.” <em>American Political Science Review.</em> 112(1): 148-166.</a><br />
+<br/></li>
+</ul></li>
+<li><a href="Pol157_Spring2019/"><strong>Week 10 (April 2nd &amp; April 4th)</strong>:</a> How well do these models of electoral choice perform in varying electoral contexts, such as ballot referendums, local elections, and non-partisan elections? Are there limitations to translating citizen preference to electoral choice in non-candidate and party-centered context?<br />
+<br/>
+<ul>
+<li><a href="Pol157_Spring2019/Boudreau%20&amp;%20MacKenzie%202018.pdf">Boudreau, Cheryl &amp; Scott A. MacKenzie. 2018. “Wanting What is Fair: How Party Cues and Information about Income Inequality Affect Public Support for Taxes.” <em>Journal of Politics.</em> 80(2): 367-381.</a><br />
+<br/></li>
+<li><a href="Pol157_Spring2019/Boudreau%20&amp;%20Elmendorf%20&amp;%20MacKenzie%202015.pdf">Boudreau, Cheryl, Christopher S. Elmendorf &amp; Scott A. MacKenzie. 2015. “Lost in Space? Information Shortcuts, Spatial Voting, and Local Government Representation.” <em>Political Research Quarterly.</em> 68(4): 843-855.</a><br />
+<br/></li>
+<li><a href="Pol157_Spring2019/Berry%20&amp;%20Howell%202007.pdf">Berry, Christopher R. &amp; William G. Howell. 2007. “Accountability and Local Elections: Rethinking Retrospective Voting.” <em>Journal of Politics.</em> 69(3): 844-858.</a><br />
+<br/></li>
+<li><a href="Pol157_Spring2019/Bonneau%20&amp;%20Cann%202015.pdf">Bonneau, Chris W. &amp; Damon M. Cann. 2015. “Party Identification and Vote Choice in Partisan and Nonpartisan Elections.” <em>Political Behavior.</em> 37(1): 43-66.</a><br />
+<br/>
+<center>
+<strong>Please Note: No Class on April 4th due to the Annual Meeting of the Midwest Political Science Association in Chicago, IL</strong>
+</center>
+<br/> <br/></li>
+</ul></li>
+</ol>
+</div>
+<div id="cleavages-in-the-mass-public-are-citizens-polarized-in-political-preference-attitude" class="section level2">
+<h2><em>4. Cleavages in the Mass Public-Are citizens polarized in political preference &amp; attitude?</em></h2>
+<p><strong><em>Section Objective</em></strong>: In this section module we dive into a salient debate in the American public opinion literature, the debate of issue preference polarization in the mass public. We begin by setting the debate around the key analytical question: Are Americans as polarized as elites in their issue preferences? Is there a clear answer to this question? We then investigate specific aspects of this issue polarization as it relates to race and class cleavages in American society. We explore this polarization assessing work on preferences are a vast array of issues. Lastly, we conclude this section discussing the implications of issue polarization on the potential prevalence of <em>resource bias</em> in American political representation.<br />
+<br/></p>
+<ol style="list-style-type: decimal">
+<li><a href="Pol157_Spring2019/"><strong>Week 11 (April 9th &amp; April 11th)</strong>:</a> Setting the debate: are citizens fundamentally polarized in their political preferences as elected elites (i.e., members of Congress) are? Is there variation in beliefs about political tolerance in the mass public?<br />
+<br/>
+<ul>
+<li><a href="Pol157_Spring2019/">Abramowitz, Alan &amp; Kyle Saunders. 2008. “Is Polarization a Myth?” <em>Journal of Politics</em>. 70(2): 542-555</a><br />
+<br/></li>
+<li><a href="Pol157_Spring2019/Fiorina,%20Abrams%20&amp;%20Pope%202008.pdf">Fiorina, Morris P., Samuel A. Abrams, &amp; Jeremy C. Pope. 2008. “Polarization in the American Public: Misconceptions and Misreadings.” <em>Journal of Politics.</em> 70(2): 556-560.</a><br />
+<br/></li>
+<li><a href="https://www.washingtonpost.com/news/monkey-cage/wp/2016/04/09/do-americans-still-believe-in-democracy/?utm_term=.4d4173711b0d">Smith, Amy E. 2016. “The Washington Post Monkey Cage: Do Americans still believe in democracy?”</a><br />
+<br/></li>
+<li><a href="https://www.washingtonpost.com/news/monkey-cage/wp/2018/02/13/does-free-speech-help-democracy-we-did-the-research/?utm_term=.d5193889b998">Claassen, Christopher &amp; James L. Gibson. 2018. “The Washington Post Monkey Cage: This map shows where more Americans are willing to support free speech.”</a><br />
+<br/></li>
+<li><a href="https://www.washingtonpost.com/news/monkey-cage/wp/2018/12/07/are-young-people-today-hostile-to-democracy-and-capitalism-far-from-it/?utm_term=.298db2841192">Oliver, Eric &amp; Thomas Wood. 2018. “The Washington Post Monkey Cage: Are young people today hostile to democracy and capitalism? Far from it.”</a><br />
+<br/><br />
+</li>
+</ul></li>
+<li><a href="Pol157_Spring2019/"><strong>Week 12 (April 16th &amp; April 19th)</strong>:</a> What is the role of racial cleavages in American public opinion? Specifically, do different racial groups diverge in political preferences?<br />
+<br/>
+<ul>
+<li><a href="Pol157_Spring2019/Valentino%20&amp;%20Sears%202005.pdf">Valentino, Nicholas &amp; David O. Sears. 2005. “Old Times There Are Not Forgotten: Race and Partisan Realignment in the Contemporary South.” <em>American Journal of Political Science</em>. 49(3): 672-688.</a><br />
+<br/></li>
+<li><a href="Pol157_Spring2019/Kinder%20&amp;%20Winter%202001.pdf">Kinder, Donald &amp; Nicholas Winter. 2001. “Exploring the Racial Divide: Blacks, Whites, and Opinion on National Policy.” <em>American Journal of Political Science</em>. 45(2): 439-453.</a><br />
+<br/></li>
+<li><a href="Pol157_Spring2019/Brader%20et%20al.%202008.pdf">Brader, Ted, Nicholas A. Valentino, &amp; Elizabeth Suhay. 2008. “What Triggers Public Opposition to Immigration? Anxiety, Group Cues, and Immigration Threat. <em>American Journal of Political Science</em>. 52(4): 959-978.</a><br />
+<br/></li>
+<li><a href="Pol157_Spring2019/Bowler,%20Nicholson%20&amp;%20Segura%202006.pdf">Bowler, Shaun., Stephen P. Nicholson, &amp; Gary M. Segura. 2006. “Earthquakes and Aftershocks: Race, Direct Democracy, and Partisan Change.” <em>American Journal of Political Science.</em> 50(1): 146-159.</a><br />
+<br/> <br/></li>
+</ul></li>
+<li><a href="Pol157_Spring2019/"><strong>Week 13 (April 23rd &amp; April 25th)</strong>:</a> What is the role of economic and class cleavages in American political life? Do different social classes diverge on political preferences, particularly on economic preferences, and what are the potential implications of this on the <em>resource bias</em> of representation?<br />
+<br/>
+<ul>
+<li><a href="Pol157_Spring2019/Page%20et%20al.%202013.pdf">Page, Benjamin I., Larry M. Bartels, &amp; Jason Seawright. 2013 “Democracy and the Policy Preferences of Wealthy Americans.” <em>PS: Political Science and Politics.</em> 11(1): 51-73</a><br />
+<br/></li>
+<li><a href="Pol157_Spring2019/Soroka%20&amp;%20Wlezien%202008.pdf">Soroka, Stuart N. &amp; Christopher Wlezien. 2008. “On the Limits of Inequality in Representation.” <em>PS: Political Science and Politics.</em> 41(2): 319-327.</a><br />
+<br/></li>
+<li><a href="Pol157_Spring2019/Gilens%202009.pdf">Gilens, Martin. 2009. “Preference Gaps and Inequality in Representation.” <em>PS: Political Science and Politics.</em> 42(2): 335-341.</a><br />
+<br/></li>
+<li><a href="Pol157_Spring2019/Broockman%20&amp;%20Malhorta%202018.pdf">Broockman, David E. &amp; Neil A. Malhorta. 2018. “What Do Donors Want? Heterogenity by Party and Policy Domain.” <em>Working Paper Research Note.</em> 1-10.</a><br />
+<br/></li>
+</ul></li>
+</ol>
+</div>
+<div id="bringing-the-course-together-does-opinion-get-translated-into-democratic-responsiveness" class="section level2">
+<h2><em>5. Bringing the course together: Does opinion get translated into democratic responsiveness?</em></h2>
+<p><strong><em>Section Objective</em></strong>: Lastly, we conclude the course with a discussion of perhaps the most seminal equation motivating the course: does American public opinion influence the policy outputs produced by our elected agents (i.e, Congress &amp; the Presidency)? If public opinion does influence government policy responsiveness, is there variation in which citizens are able to more effectively secure this responsiveness? What could be a potential explanation of this variation? We then conclude the course on a comparative note, by investigating whether other institutional designs are more effective at translating mass public opinion into congruent government policy responsiveness.<br />
+<br/></p>
+<ol style="list-style-type: decimal">
+<li><a href="Pol157_Spring2019/"><strong>Week 14 (April 30th &amp; May 2nd)</strong>:</a> Does public opinion influence government policy? If it does, which citizen types are able to secure policy responsiveness from their government?<br />
+<br/>
+<ul>
+<li><a href="Pol157_Spring2019/Broockman%20&amp;%20Skovron%202018.pdf">Broockman, David E. &amp; Christopher Skovron. 2018. “Bias in Perceptions of Public Opinion among Political Elites.” <em>American Political Science Review</em>. 112(3): 542-563.</a><br />
+<br/></li>
+<li><a href="Pol157_Spring2019/Gilens%202005.pdf">Gilens, Martin. 2005. “Inequality and Democratic Responsiveness.” <em>Public Opinion Quarterly.</em> 69(1): 778-796.“</a><br />
+<br/></li>
+<li><a href="Pol157_Spring2019/Wlezien%201995.pdf">Wlezien, Christopher. 1995. “The Public as Thermostat: Dynamics of Preferences for Spending.” <em>American Journal of Political Science.</em> 39(4): 981-1000.</a><br />
+<br/> <br/>
+<center>
+<strong>American Political Behavior Model Evaluation Essay: Due May 2nd</strong>
+</center>
+<br/> <br/><br />
+</li>
+</ul></li>
+<li><a href="Pol157_Spring2019/"><strong>Week 15 (May 7th &amp; May 9th)</strong>:</a> Lastly, does the <em>institutional</em> framework of the United States facilitate or hinder the translation of American public opinion to legislative policy outcomes?<br />
+<br/>
+<ul>
+<li><a href="Pol157_Spring2019/Bafumi%20&amp;%20Herron%202010.pdf">Bafumi, Joseph &amp; Michael C. Herron. 2010. “Leapfrog Representation and Extremism: A Study of American Voters and Their Members in Congress.” <em>American Political Science Review</em> 104(3): 519-542.</a><br />
+<br/></li>
+<li><a href="Pol157_Spring2019/Wlezien%20&amp;%20Soroka%202012.pdf">Wlezien, Christopher &amp; Stuart N. Soroka. 2012. “Political Institutions and the Opinion-Policy Link.” <em>West European Politics.</em> 35(6): 1407-1432.</a><br />
+<br/></li>
+<li><a href="Pol157_Spring2019/Golder%20&amp;%20Ferland%202018.pdf">Golder, Matt &amp; Benjamin Ferland. 2018. “Electoral Systems and Citizen-Elite Ideological Congruence.” In Erik S. Herron, Robert J. Pekkanen &amp; Matthew S. Shugart, eds., <em>The Oxford Handbook of Electoral Systems</em>.</a><br />
+<br/>
+<center>
+<a href="Pol157_Spring2019/"><strong><em>*Download Final Exam Review Here.*</em></strong></a>
+</center>
+<br/> <br/>
+<center>
+<strong><em>Final Exam Review Period: May 9th</em></strong>
+</center>
+<br/> <br/>
+<center>
+<strong><em>Final Examination (TBD)</em></strong>
+</center>
+<br/> <br/>
+<center>
+Copyright © 2017 by Carlos Algara. Made with <a href="https://www.rstudio.com">RStudio</a>.
+</center></li>
+</ul></li>
+</ol>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

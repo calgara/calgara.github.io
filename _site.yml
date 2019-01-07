@@ -19,10 +19,12 @@ navbar:
     menu:
     - text: Teaching Portfolio
       href: teaching.html
-    - text: POL 1, Summer 2017
+    - text: POL 157 (Sac State), Spring 2019
       href: pol1s2017.html
-    - text: POL 1, Fall 2017
+    - text: POL 1 (UCD), Fall 2017
       href: pol1f2017.html
+    - text: POL 1 (UCD), Summer 2017
+      href: pol1s2017.html
     - text: ggplot Data Visualization Tutorial
       href: UCD_PS_ggplot_tutorial.html
   - text: About Me
