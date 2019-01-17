@@ -66,8 +66,6 @@ This GitPage is intended to be the interactive syllabus for Pol 157: American Pu
 <br/>
     + [Madison, James. 1787. "Federalist 10." In United States Congress Resources](https://www.congress.gov/resources/display/content/The+Federalist+Papers#TheFederalistPapers-10)  
     <br/>
-    + [Madison, James (or Alexander Hamilton). 1788. "Federalist 51." In United States Congress Resources](https://www.congress.gov/resources/display/content/The+Federalist+Papers#TheFederalistPapers-10)  
-    <br/>
     + [Berelson, Bernard. 1952. "Democratic Theory and Public Opinion."*Public Opinion Quarterly*. 16(3):313-330.](Pol157_Spring2019/Berelson 1952.pdf)  
     <br/>
     + [Atkeson, Lonna R. 2010. "The State of Survey Research as a Research Tool in American Politics." In Jan E. Leighley, ed.,*The Oxford Handbook of American Elections and Political Behavior*.](Pol157_Spring2019/Atekson 2010.pdf)  
