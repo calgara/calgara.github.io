@@ -36,7 +36,7 @@ This GitPage is intended to be the interactive syllabus for Pol 157: American Pu
 ## Class Time, Office Hours & Course Materials
   
 ***Lecture***: [Amador Hall 262](https://www.csus.edu/campusmap/); Tuesday & Thursday 1:30-2:45  
-***Office Hours***: [Office TBD](https://www.csus.edu/govt/); Tuesday 11:30-1:20 & by appointment  
+***Office Hours***: [Tahoe Hall 3001](https://www.csus.edu/govt/); Tuesday 11:30-1:20 & by appointment  
 ***Course Materials***: [Canvas](http://canvas.csus.edu/) & [GitPage](http://calgara.github.io/pol157s2019.html)  
 <br/>
 
