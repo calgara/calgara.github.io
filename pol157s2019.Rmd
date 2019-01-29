@@ -64,7 +64,7 @@ This GitPage is intended to be the interactive syllabus for Pol 157: American Pu
 ***Section Objective***: In the first module of this course, we dive into a broad overview of American Public Opinion. This section provides an understanding of what American Public opinion and the challenges political scientist face when studying this topic. We also explore the "ideal type" of polity, with respect to public opinion, as envisioned by the architects in the American Democratic System. In this section, we also gain applied experience of how to use survey methods (a *very* commonly used method by political scientists) to measure the opinions, attitudes, and preferences of citizens.
 <br/>
 
-1. [ **Week 1 \& 2 (January 22nd, January 29, & January 31st)**:](Pol157_Spring2019/) Course Overview \& Defining the "Ideal Citizen"" in the American Democratic System.  How do political scientists study public opinion? What are some of the challenges and pitfalls of such an approach?  
+1. [ **Week 1 \& 2 (January 22nd, January 29, & January 31st)**:](Pol157_Spring2019/Pol157_Week1_Course_Overview.pdf) Course Overview \& Defining the "Ideal Citizen"" in the American Democratic System.  How do political scientists study public opinion? What are some of the challenges and pitfalls of such an approach?  
 <br/>
     + [Madison, James. 1787. "Federalist 10." In United States Congress Resources](https://www.congress.gov/resources/display/content/The+Federalist+Papers#TheFederalistPapers-10)  
     <br/>
