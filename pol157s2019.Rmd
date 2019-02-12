@@ -78,7 +78,7 @@ This GitPage is intended to be the interactive syllabus for Pol 157: American Pu
 <br/>
 <center>**Please Note: No Class on January 31st. In lieu of class, please fill-out the class Qualtrics survey assessing political attitudes. This survey design is based on a variant of the [***Cooperative Congressional Election Study***](https://cces.gov.harvard.edu) and you will receive credit for completing it. Click [***HERE***](https://ucdavis.co1.qualtrics.com/jfe/form/SV_cMjczVOGT0Hlffv) to take the survey.**</center><br/>
 <br/>
-2. [ **Week 3 (February 5th & February 8th)**:](Pol157_Spring2019/) How do we measure salient political topics in the mass public? How "stable" are some of the attitudinal measures?  
+2. [ **Week 3 (February 5th & February 8th)**:](Pol157_Spring2019/Pol157_Week2_Issue_Measurement_Stability.pdf) How do we measure salient political topics in the mass public? How "stable" are some of the attitudinal measures?  
 <br/>
     + [Druckman, James N. \& Arthur Lupia. 2000. "Preference Formation." *Annual Review of Political Science*. 3:1-24.](Pol157_Spring2019/Druckman & Lupia 2000.pdf)  
     <br/>
