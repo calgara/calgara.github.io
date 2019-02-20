@@ -93,7 +93,7 @@ This GitPage is intended to be the interactive syllabus for Pol 157: American Pu
 ***Section Objective***: In this second module of this course, we investigate the literature on how citizens reason about political abstractions and how they do (or don't) think coherently about politics. We pay special attention to whether are able to think "ideologically" and develop coherent preferences about the "ideal" role of government in society. After discussing how citizens may fall short in this endeavor of specifying coherent preferences about government, we turn to potential *heuristics* (i.e., short-cuts) that may help citizens develop coherent political preferences.  
 <br/>
 
-1. [ **Week 4 (February 12th & February 14th)**:](Pol157_Spring2019/)  How do citizens "reason" about politics in American Life? Are citizens generally able to "learn" in a political context?   
+1. [ **Week 4 (February 12th & February 14th)**:](Pol157_Spring2019/Pol157_Week4_Citizen_Reasoning_Learning.pdf)  How do citizens "reason" about politics in American Life? Are citizens generally able to "learn" in a political context?   
 <br/>
     + [Nyhan, Brendan \& Jason Reifler. 2010. "When Corrections Fail: The Persistence of Political Misconceptions." *Political Behavior *32(2): 303-330.](Pol157_Spring2019/Nyhan & Reifler 2010.pdf)  
     <br/>
@@ -112,8 +112,6 @@ This GitPage is intended to be the interactive syllabus for Pol 157: American Pu
     + [Freeder, Sean, Gabriel S. Lenz, \& Shad Turney. 2018. "The Importance of Knowing "What Goes with What": Reinterpreting the Evidence on Policy Attitude Stability." *Journal of Politics.* 81(1):1-17.](Pol157_Spring2019/Freeder et al. 2018.pdf)  
     <br/>
     + [Lau, Richard R. \& David P. Redlawsk. 2001. "Advantages and Disadvantages of Cognitive Heuristics in Political Decision Making." *American Political Science Review.* 45(4): 951-971.](Pol157_Spring2019/Lau & Redlawsk 2001.pdf)  
-    <br/>
-    + [Verba, Sidney, Kay Lehman, Henry Brady \& Norman H. Nie. 1993. "Citizen Activity: Who Participates? What Do They Say?" *American Political Science Review* 87(2): 303-318.](Pol157_Spring2019/Verba 1993.pdf)  
 <br/>
 <br/>
 3. [ **Week 6 (February 26th & February 28th)**:](Pol157_Spring2019/) Which models seek to explain the origins of *partisanship*, the most salient heuristic of political attitudes and choice? What are the effects of partisanship on the political behavior of citizens? Does partisanship change?    
