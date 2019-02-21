@@ -78,7 +78,7 @@ This GitPage is intended to be the interactive syllabus for Pol 157: American Pu
 <br/>
 <center>**Please Note: No Class on January 31st. In lieu of class, please fill-out the class Qualtrics survey assessing political attitudes. This survey design is based on a variant of the [***Cooperative Congressional Election Study***](https://cces.gov.harvard.edu) and you will receive credit for completing it. Click [***HERE***](https://ucdavis.co1.qualtrics.com/jfe/form/SV_cMjczVOGT0Hlffv) to take the survey.**</center><br/>
 <br/>
-2. [ **Week 3 (February 5th & February 8th)**:](Pol157_Spring2019/Pol157_Week2_Issue_Measurement_Stability.pdf) How do we measure salient political topics in the mass public? How "stable" are some of the attitudinal measures?  
+2. [ **Week 3 (February 7th & February 12th)**:](Pol157_Spring2019/Pol157_Week2_Issue_Measurement_Stability.pdf) How do we measure salient political topics in the mass public? How "stable" are some of the attitudinal measures?  
 <br/>
     + [Druckman, James N. \& Arthur Lupia. 2000. "Preference Formation." *Annual Review of Political Science*. 3:1-24.](Pol157_Spring2019/Druckman & Lupia 2000.pdf)  
     <br/>
@@ -93,7 +93,7 @@ This GitPage is intended to be the interactive syllabus for Pol 157: American Pu
 ***Section Objective***: In this second module of this course, we investigate the literature on how citizens reason about political abstractions and how they do (or don't) think coherently about politics. We pay special attention to whether are able to think "ideologically" and develop coherent preferences about the "ideal" role of government in society. After discussing how citizens may fall short in this endeavor of specifying coherent preferences about government, we turn to potential *heuristics* (i.e., short-cuts) that may help citizens develop coherent political preferences.  
 <br/>
 
-1. [ **Week 4 (February 12th & February 14th)**:](Pol157_Spring2019/Pol157_Week4_Citizen_Reasoning_Learning.pdf)  How do citizens "reason" about politics in American Life? Are citizens generally able to "learn" in a political context?   
+1. [ **Week 4 & 5 (February 14th, February 19th, & February 21st)**:](Pol157_Spring2019/Pol157_Week4_Citizen_Reasoning_Learning.pdf)  How do citizens ``reason;; about politics in American Life? Are citizens generally able to “learn” in a political context? How do these preference and resource differences factor into how citizens participate in politics?  
 <br/>
     + [Nyhan, Brendan \& Jason Reifler. 2010. "When Corrections Fail: The Persistence of Political Misconceptions." *Political Behavior *32(2): 303-330.](Pol157_Spring2019/Nyhan & Reifler 2010.pdf)  
     <br/>
@@ -103,7 +103,10 @@ This GitPage is intended to be the interactive syllabus for Pol 157: American Pu
     <br/>
     + [Campbell, A.L. 2002. "Self-Interest, Social Security, and the Distinctive Participation Patterns of Senior Citizens." *American Political Science Review*. 96:565- 74.](Pol157_Spring2019/Campbell 2002.pdf)  
 <br/>
-2. [ **Week 5 (February 19th & February 21st)**:](Pol157_Spring2019/) Now that we have discussed how citizens do (or do not) reason about politics, we turn to whether citizens hold coherent preferences that guide their micro-level political behavior. Does the mass public generally possess high levels of political knowledge and "ideological" thinking? How do citizens use (or do note use) heuristics to overcome the *democratic dilemma*?  
+<br/>
+<center> Please click here for the [**Variation in Political Participation Module Slidesets**](Pol157_Spring2019/Pol157_Participation_Module.pdf) </center><br/>
+<br/>
+2. [ **Week 6 (February 26th & February 28th)**:](Pol157_Spring2019/) Now that we have discussed how citizens do (or do not) reason about politics, we turn to whether citizens hold coherent preferences that guide their micro-level political behavior. Does the mass public generally possess high levels of political knowledge and "ideological" thinking? How do citizens use (or do note use) heuristics to overcome the *democratic dilemma*?  
 <br/>
     + [Kuklinski, James H. \& Buddy Peyton. 2007. "Belief Systems and Political Decision Making." In Russel J. Dalton \& Hans-Dieter Klingemann, eds., *The Oxford Handbook of Political Behavior*.](Pol157_Spring2019/Kulinski & Peyton 2007.pdf)  
     <br/>
@@ -114,7 +117,7 @@ This GitPage is intended to be the interactive syllabus for Pol 157: American Pu
     + [Lau, Richard R. \& David P. Redlawsk. 2001. "Advantages and Disadvantages of Cognitive Heuristics in Political Decision Making." *American Political Science Review.* 45(4): 951-971.](Pol157_Spring2019/Lau & Redlawsk 2001.pdf)  
 <br/>
 <br/>
-3. [ **Week 6 (February 26th & February 28th)**:](Pol157_Spring2019/) Which models seek to explain the origins of *partisanship*, the most salient heuristic of political attitudes and choice? What are the effects of partisanship on the political behavior of citizens? Does partisanship change?    
+3. [ **Week 7 (March 5th & March 7th)**:](Pol157_Spring2019/) Which models seek to explain the origins of *partisanship*, the most salient heuristic of political attitudes and choice? What are the effects of partisanship on the political behavior of citizens? Does partisanship change?    
 <br/>
     + [Bartels, Larry M. 2008. "The Study of Electoral Behavior." In Jan E. Leighley, ed., *The Oxford Handbook of American Elections and Political Behavior*.](Pol157_Spring2019/Bartels 2008.pdf)  
     <br/>
@@ -124,12 +127,19 @@ This GitPage is intended to be the interactive syllabus for Pol 157: American Pu
     <br/>
     + [Barber, Michael \& Jeremy C. Pope. 2018. "Does Party Trump Ideology? Disentangling Party and Ideology in America." *American Political Science Review*. 1(1): 1-17.](Pol157_Spring2019/Barber & Pope 2018.pdf)  
 <br/>
-
+2. **Week 8 (March 12th & March 14th)**: Catch-Up/Review \& Midterm Exam Week. For this week, we should plan on catching-up on left-over material and/or taking the class period on Tuesday (March 12th) to review the material ahead of the midterm exam.  
+<br/>
+<center> [***\*Download Midterm Review Here.\****](Pol157_Spring2019/) </center><br/>
+<br/>
+<center> ***Midterm Exam (March 14, 2019)*** </center><br/>
+<br/>
+<center> **Spring Break: March 18th - March 22th** </center><br/>
+<br/>
 ## *3. Translating Preference to Behavior: The Role of Campaigns \& Elections in American Political Life*  
 ***Section Objective***: In this section, we turn to how citizens translate their preferences into decisions of electoral choice. We investigate and assess three main models of electoral choice: the spatial model, the partisanship model, and the retrospective model. We then turn to how well these heuristics work in various electoral contexts, particularly electoral contexts lacking a clear partisan heuristic (i.e., non-partisan contexts). Lastly we discuss citizen participation in the electoral arena, with a particular focus on the *socioeconomic* model of electoral turnout.  
 <br/>
 
-1. [ **Week 7 (March 5th & March 7th)**:](Pol157_Spring2019/)  How are political preferences translated to representative choice? How do the partisan, spatial (ideological), and valence models differ in explaining citizen electoral preferences?  
+1. [ **Week 9 (March 26th & March 28th)**:](Pol157_Spring2019/)  How are political preferences translated to representative choice? How do the partisan, spatial (ideological), and valence models differ in explaining citizen electoral preferences?  
 <br/>
     + [Joesten, Danielle A. \& Walter J. Stone. 2014. "Reassessing Proximity Voting: Expertise, Party, and Choice in Congressional Elections." *Journal of Politics*. 76(3): 740-753.](Pol157_Spring2019/Joesten & Stone 2014.pdf)  
     <br/>
@@ -139,27 +149,7 @@ This GitPage is intended to be the interactive syllabus for Pol 157: American Pu
     <br/>
     + [Buttice, Matthew K. \& Walter J. Stone. 2012. "Candidates Matter: Policy and Quality Differences in Congressional Elections." *Journal of Politics.* 74(3): 870-887.](Pol157_Spring2019/Buttice & Stone 2012.pdf)  
 <br/>
-2. **Week 8 (March 12th & March 14th)**: Catch-Up/Review \& Midterm Exam Week. For this week, we should plan on catching-up on left-over material and/or taking the class period on Tuesday (March 12th) to review the material ahead of the midterm exam.  
-<br/>
-<center> [***\*Download Midterm Review Here.\****](Pol157_Spring2019/) </center><br/>
-<br/>
-<center> ***Midterm Exam (March 14, 2019)*** </center><br/>
-<br/>
-<center> **Spring Break: March 18th - March 22th** </center><br/>
-<br/>
-3. [ **Week 9 (March 26th & March 28th)**:](Pol157_Spring2019/) What are the fundamental role of campaigns in determining how citizens translate their preferences to electoral choice? What sort of citizens are predisposed to participating in the electoral process?  
-<br/>
-    + [Green, Donald P. \& Michael Schwam-Baird. 2016. "Mobilization, Participation, and American Democracy: A Retrospective \& Postscript." *Party Politics.* 22(2): 158-164.](Pol157_Spring2019/Green & Schwam-Baird 2016.pdf)  
-    <br/>
-    + [Martinez, Michael D. 2010. "Why is American Turnout so Low and Why Should We Care?" In Jan E. Leighley, ed., *The Oxford Handbook of American Elections and Political Behavior*.](Pol157_Spring2019/Martinez 2010.pdf)  
-    <br/>
-    + [Leighley, Jan E. 1995. "Attitudes, Opportunities, and Incentives-a Field Essay on Political Participation." *Political Research Quarterly*. 48(1): 181-209.](Pol157_Spring2019/Leighley 1995.pdf)  
-    <br/>
-    + [Gomez, Brad T. \& Thomas G. Hansford. 2014. "Economic Retrospection and the Calculus of Voting." *Political Behavior.* 37(1): 309-329.](Pol157_Spring2019/Gomez & Hansford 2014.pdf)  
-<br/>
-    + [Kalla, Joshua \& David E. Broockman. 2017. "The Minimal Persuasive Effects of Campaign Contact in General Elections: Evidence from 49 Field Experiments." *American Political Science Review.* 112(1): 148-166.](Pol157_Spring2019/Kalla & Broockman 2017.pdf)  
-<br/>
-3. [ **Week 10 (April 2nd & April 4th)**:](Pol157_Spring2019/) How well do these models of electoral choice perform in varying electoral contexts, such as ballot referendums, local elections, and non-partisan elections? Are there limitations to translating citizen preference to electoral choice in non-candidate and party-centered context?  
+2. [ **Week 10 (April 2nd & April 4th)**:](Pol157_Spring2019/) How well do these models of electoral choice perform in varying electoral contexts, such as ballot referendums, local elections, and non-partisan elections? Are there limitations to translating citizen preference to electoral choice in non-candidate and party-centered context?  
 <br/>
     + [Boudreau, Cheryl \& Scott A. MacKenzie. 2018. "Wanting What is Fair: How Party Cues and Information about Income Inequality Affect Public Support for Taxes." *Journal of Politics.* 80(2): 367-381.](Pol157_Spring2019/Boudreau & MacKenzie 2018.pdf)  
     <br/>
