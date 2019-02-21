@@ -1,6 +1,6 @@
 ---
 title: Curriculum Vitae
-date: February 8, 2019
+date: February 20, 2019
 share: FALSE
 output: html_document
 ---
