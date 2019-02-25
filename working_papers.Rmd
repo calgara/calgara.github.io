@@ -65,7 +65,7 @@ h1.title {
 
 </center><br/>
 <center> **The Conditioning Role of Polarization in U.S. Senate Election Outcomes: A Direct-Election Era & Voter-Level Analysis** </center><br/>
-<center> ***$\star$Manuscript Forthcoming in Electoral Studies $\star$[Working Manuscript Draft](Senate_Election_Dynamics_Algara.pdf) $\star$[Manuscript Data Materials](mailto:calgara@ucdavis.edu)*** </center><br/>
+<center> ***$\star$[Manuscript Published in Electoral Studies (2019)](https://www.sciencedirect.com/science/article/pii/S0261379418301379) $\star$[Publication Link](https://www.sciencedirect.com/science/article/pii/S0261379418301379) $\star$[Manuscript Data Materials](mailto:calgara@ucdavis.edu)*** </center><br/>
           *Abstract:* Recent work finds that a decline in the incumbency advantage coincides with the rise of partisanship as a determinant of congressional electoral outcomes. While this work updates our view of congressional elections, it is unclear if this holds in the more candidate-centered and high-information electoral context of the U.S. Senate. In this paper, I address these two considerations by evaluating a theory positing that polarization conditions the influence of incumbency and partisanship as Senate election determinants. Using data on the entire direct-election Senate era and survey data, this paper finds that: (1) polarization provides a partisan advantage for candidates running in states in which they are members of the partisan majority and (2) polarization positively conditions the incumbency advantage for Senators representing states that favor the other party. These findings suggest that Senators may still successfully cultivate a personal brand in the face of growing ideological differences between the parties.  
 <br/>
 <br/>
