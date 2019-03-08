@@ -129,12 +129,13 @@ This GitPage is intended to be the interactive syllabus for Pol 157: American Pu
 <br/>
 2. **Week 8 (March 12th & March 14th)**: Catch-Up/Review \& Midterm Exam Week. For this week, we should plan on catching-up on left-over material and/or taking the class period on Tuesday (March 12th) to review the material ahead of the midterm exam.  
 <br/>
-<center> [***\*Download Midterm Review Here.\****](Pol157_Spring2019/) </center><br/>
+<center> [***\*Download Midterm Review Here.\****](Pol157_Spring2019/Pol157_Midterm_Review_Spring2019.pdf) </center><br/>
 <br/>
 <center> ***Midterm Exam (March 14, 2019)*** </center><br/>
 <br/>
 <center> **Spring Break: March 18th - March 22th** </center><br/>
 <br/>
+  
 ## *3. Translating Preference to Behavior: The Role of Campaigns \& Elections in American Political Life*  
 ***Section Objective***: In this section, we turn to how citizens translate their preferences into decisions of electoral choice. We investigate and assess three main models of electoral choice: the spatial model, the partisanship model, and the retrospective model. We then turn to how well these heuristics work in various electoral contexts, particularly electoral contexts lacking a clear partisan heuristic (i.e., non-partisan contexts). Lastly we discuss citizen participation in the electoral arena, with a particular focus on the *socioeconomic* model of electoral turnout.  
 <br/>
