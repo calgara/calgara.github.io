@@ -117,7 +117,7 @@ This GitPage is intended to be the interactive syllabus for Pol 157: American Pu
     + [Lau, Richard R. \& David P. Redlawsk. 2001. "Advantages and Disadvantages of Cognitive Heuristics in Political Decision Making." *American Political Science Review.* 45(4): 951-971.](Pol157_Spring2019/Lau & Redlawsk 2001.pdf)  
 <br/>
 <br/>
-3. [ **Week 7 (March 5th & March 7th)**:](Pol157_Spring2019/) Which models seek to explain the origins of *partisanship*, the most salient heuristic of political attitudes and choice? What are the effects of partisanship on the political behavior of citizens? Does partisanship change?    
+3. [ **Week 7 (March 5th & March 7th)**:](Pol157_Spring2019/Pol157_Week7_Partisanship.pdf) Which models seek to explain the origins of *partisanship*, the most salient heuristic of political attitudes and choice? What are the effects of partisanship on the political behavior of citizens? Does partisanship change?    
 <br/>
     + [Bartels, Larry M. 2008. "The Study of Electoral Behavior." In Jan E. Leighley, ed., *The Oxford Handbook of American Elections and Political Behavior*.](Pol157_Spring2019/Bartels 2008.pdf)  
     <br/>
