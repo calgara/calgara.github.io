@@ -38,7 +38,7 @@ navbar:
     href: https://twitter.com/algaraca
 output:
   html_document:
-    theme: flatly
+    theme: readable
     css: style.css
     lib_dir: site_libs
     self_contained: no
