@@ -30,7 +30,7 @@ This GitPage is intended to be the interactive syllabus for Pol 157: American Pu
 
 * Review sheets for the midterm and final exams.  
 
-* The substantive prompt for the ***American Political Behavior Model Evaluation Essay*** assignment can be found [here.](Pol157_Spring2019/) This assignment is due Thursday, May 2nd, and is to be uploaded to the [Canvas Portal](http://canvas.csus.edu/) under the essay assignment tab.  
+* The substantive prompt for the ***American Political Behavior Model Evaluation Essay*** assignment can be found [here.](Pol157_Spring2019/Pol157_Essay_Prompt.pdf) This assignment is due Thursday, May 9th, and is to be uploaded to the [Canvas Portal](http://canvas.csus.edu/) under the essay assignment tab.  
 <br/>
 
 ## Class Time, Office Hours & Course Materials
@@ -167,7 +167,7 @@ This GitPage is intended to be the interactive syllabus for Pol 157: American Pu
 ***Section Objective***: In this section module we dive into a salient debate in the American public opinion literature, the debate of issue preference polarization in the mass public. We begin by setting the debate around the key analytical question: Are Americans as polarized as elites in their issue preferences? Is there a clear answer to this question? We then investigate specific aspects of this issue polarization as it relates to race and class cleavages in American society. We explore this polarization assessing work on preferences are a vast array of issues. Lastly, we conclude this section discussing the implications of issue polarization on the potential prevalence of *resource bias* in American political representation.  
 <br/>
 
-1. [**Week 11 (April 9th & April 11th)**:](Pol157_Spring2019/) Setting the debate: are citizens fundamentally polarized in their political preferences as elected elites (i.e., members of Congress) are? Is there variation in beliefs about political tolerance in the mass public?  
+1. [**Week 11 (April 9th & April 11th)**:](Pol157_Spring2019/Pol157_Week11_Mass_Public_Polarization.pdf) Setting the debate: are citizens fundamentally polarized in their political preferences as elected elites (i.e., members of Congress) are? Is there variation in beliefs about political tolerance in the mass public?  
 <br/>
     + [Abramowitz, Alan \& Kyle Saunders. 2008. "Is Polarization a Myth?" *Journal of Politics*. 70(2): 542-555](Pol157_Spring2019/)  
     <br/>
@@ -190,7 +190,7 @@ This GitPage is intended to be the interactive syllabus for Pol 157: American Pu
     + [Bowler, Shaun., Stephen P. Nicholson, \& Gary M. Segura. 2006. "Earthquakes and Aftershocks: Race, Direct Democracy, and Partisan Change." *American Journal of Political Science.* 50(1): 146-159.](Pol157_Spring2019/Bowler, Nicholson & Segura 2006.pdf)  
 <br/>
 <br/>
-3. [**Week 13 (April 23rd & April 25th)**:](Pol157_Spring2019/) What is the role of economic and class cleavages in American political life? Do different social classes diverge on political preferences, particularly on economic preferences, and what are the potential implications of this on the *resource bias* of representation?     
+3. [**Week 13 (April 23rd & April 25th)**:](Pol157_Spring2019/Pol157_Week12_Racial_Cleavages.pdf) What is the role of economic and class cleavages in American political life? Do different social classes diverge on political preferences, particularly on economic preferences, and what are the potential implications of this on the *resource bias* of representation?     
 <br/>
     + [Page, Benjamin I., Larry M. Bartels, \& Jason Seawright. 2013 "Democracy and the Policy Preferences of Wealthy Americans." *PS: Political Science and Politics.* 11(1): 51-73](Pol157_Spring2019/Page et al. 2013.pdf)  
     <br/>
@@ -216,15 +216,13 @@ This GitPage is intended to be the interactive syllabus for Pol 157: American Pu
 <br/>
 <center> **American Political Behavior Model Evaluation Essay: Due May 2nd** </center><br/>
 <br/>   
-2. [**Week 15 (May 7th & May 9th)**:](Pol157_Spring2019/) Lastly, does the *institutional* framework of the United States facilitate or hinder the translation of American public opinion to legislative policy outcomes?   
+2. [**Week 15 (May 7th & May 9th)**:](Pol157_Spring2019/Pol157_Week13_Institutional_Framework.pdf) Lastly, does the *institutional* framework of the United States facilitate or hinder the translation of American public opinion to legislative policy outcomes?   
 <br/>
     + [Bafumi, Joseph \& Michael C. Herron. 2010. "Leapfrog Representation and Extremism: A Study of American Voters and Their Members in Congress." *American Political Science Review* 104(3): 519-542.](Pol157_Spring2019/Bafumi & Herron 2010.pdf)  
     <br/>
     + [Wlezien, Christopher \& Stuart N. Soroka. 2012. "Political Institutions and the Opinion-Policy Link." *West European Politics.* 35(6): 1407-1432.](Pol157_Spring2019/Wlezien & Soroka 2012.pdf)  
     <br/>
     + [Golder, Matt \& Benjamin Ferland. 2018. "Electoral Systems and Citizen-Elite Ideological Congruence." In Erik S. Herron, Robert J. Pekkanen \& Matthew S. Shugart, eds., *The Oxford Handbook of Electoral Systems*.](Pol157_Spring2019/Golder & Ferland 2018.pdf)  
-<br/>
-<center> [***\*Download Final Exam Review Here.\****](Pol157_Spring2019/) </center><br/>
 <br/>
 <center> ***Final Exam Review Period: May 9th*** </center><br/>
 <br/>
