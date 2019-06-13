@@ -4,7 +4,7 @@ library(plyr)
 library(dplyr)
 
 cd114 <- congressional_districts(cb = T, resolution = '20m')
-x <- read.csv("/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/Rshinyapp/data/state_fips_master.csv")
+x <- read.csv("/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/Rshinyapp/shiny_data/state_fips_master.csv")
 x <- subset(x,select=c(fips,state_abbr))
 x$fips <- as.character(x$fips)
 x$fips[x$fips == "1"] <- "01"
@@ -31,7 +31,7 @@ leaflet(cd114) %>%
   addPolygons(popup=popup)
 
 setwd("/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/Rshinyapp")
-load("/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/Rshinyapp/data/clean_shiny_data.Rdata")
+load("/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/Rshinyapp/shiny_data/clean_shiny_data.Rdata")
 
 cd114 <- geo_join(cd114, x, "STATEFP","STATEFP")
 cd114$district <- paste(cd114$state,cd114$CD115FP,sep="")
@@ -64,6 +64,7 @@ cd114$GEOID <- as.character(cd114$GEOID)
 
 cd114 <- cd114[order(cd114$GEOID),]
 x <- x[order(x$GEOID),]
+x$placement.mc_libcon_placement_re.2018[x$GEOID == "4001"] <- NA
 
 cd114 <- geo_join(cd114, x, "GEOID","GEOID")
 
@@ -99,18 +100,37 @@ map3
 library(RColorBrewer)
 display.brewer.all()
 
+library(htmlwidgets)
+library(htmltools)
+
+tag.map.title <- tags$style(HTML("
+  .leaflet-control.map-title { 
+    transform: translate(-50%,20%);
+    position: fixed !important;
+    left: 50%;
+    text-align: center;
+    padding-left: 10px; 
+    padding-right: 10px; 
+    background: rgba(255,255,255,0.75);
+    font-weight: bold;
+    font-size: 14px;
+  }
+"))
+
+title <- tags$div(
+  tag.map.title, HTML("Aldrich-McKelvey Liberal-Conservative Legislator Ideological Ideal Point")
+)  
+
 popup <- paste0("District: ", cd114$district_mc_name.2018 , "<br>", "Legislator Ideological Preferences: ", paste(round(cd114$placement.mc_libcon_placement_re.2018,2),sep=""))
 pal <- colorNumeric(
   palette = rev(brewer.pal(11,"RdYlBu")), #YlGnBu
   domain = cd114$placement.mc_libcon_placement_re.2018
 )
-title <- tags$div(
-  tag.map.title, HTML("AldrichLegislator Ideological")
-)  
 
-map3 <- leaflet() %>%
+map3 <- leaflet(width = "100%") %>%
   addProviderTiles("CartoDB.Positron") %>%
-  setView(lng = -98.5, lat = 39.50, zoom = 04.33) %>%
+  #addControl(title, position = "topleft", className="map-title") %>%
+  setView(lng = -98.5, lat = 39.50, zoom = 04.49) %>%
   addPolygons(data = cd114, 
               fillColor = ~pal(cd114$placement.mc_libcon_placement_re.2018), 
               color = "#b2aeae", # you need to use hex colors
@@ -121,9 +141,15 @@ map3 <- leaflet() %>%
   addLegend(pal = pal, 
             values = cd114$placement.mc_libcon_placement_re.2018, 
             position = "bottomright", 
-            title = "Estimated Legislator Ideology (2018)")#,
+            na.label = "Vacant",
+            title = "Aldrich-McKelvey Estimated <br> Liberal-Conservative Ideology <br> (2018)")#,
 #labFormat = labelFormat(suffix = "%")) 
 map3
+
+css_fix <- "div.info.legend.leaflet-control br {clear: both; clear: both;}"
+map3 <- map3 %>% prependContent(tags$style(type = "text/css", css_fix))
+
+saveWidget(map3, file="legislator_ideology_2018.html")
 
 popup <- paste0("District: ", cd114$district_mc_name.2018 , "<br>", "District Ideological Preferences: ", paste(round(cd114$aldmck_ideal_pt_district.2018,2),sep=""))
 pal <- colorNumeric(
