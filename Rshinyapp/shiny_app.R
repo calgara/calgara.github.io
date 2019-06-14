@@ -127,7 +127,7 @@ pal <- colorNumeric(
   domain = cd114$placement.mc_libcon_placement_re.2018
 )
 
-map3 <- leaflet(width = "100%") %>%
+map3 <- leaflet() %>% #width = "100%"
   addProviderTiles("CartoDB.Positron") %>%
   #addControl(title, position = "topleft", className="map-title") %>%
   setView(lng = -98.5, lat = 39.50, zoom = 04.49) %>%

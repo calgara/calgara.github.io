@@ -8,11 +8,11 @@ Thanks for visiting my website! I received my Ph.D. in Political Science from th
   
 My research agenda focuses broadly on the nature of ideological representation, collective accountability, voter decision rules in congressional elections, and legislative behavior. My dissertation project, chaired by Professors [Walter J. Stone](http://ps.ucdavis.edu/people/wstone) and [Erik J. Engstrom](http://ps.ucdavis.edu/people/engstrom), focuses on what determines citizen perceptions of congressional job performance and how these perceptions shape electoral outcomes and partisan legislative incentives. In addition to my dissertation, I am also involved in projects analyzing how polarization changes the nature of congressional election dynamics, how political attitudes distort proximity voting, and electoral consequences of legislative obstruction. I also have a methodological interest social network analysis and in latent variable measurement, particularly with respect to measurement of voter and elite ideological preferences in the common space and over time. For an illustration of this ideological scaling work, see the interactive map below highlighting ideological representation in the United States House of Representatives in 2018.  
 <br>
-<br>
+<center>
 ```{r showChoro1,echo=FALSE}
-shiny::includeHTML("/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/Rshinyapp/legislator_ideology_2018.html")
+htmltools::tags$iframe(title = "Estimated MC Ideology 2018", src = "legislator_ideology_2018.html",scrolling="no",width = "800",height="400")
 ```
-<br>
+</center>
 <br>
 Please visit my [Research Agenda Statement](Algara_Research_Statement.pdf) for an overview of my broad research agenda, current projects in this agenda, and future directions. To learn more about ongoing working projects of this research agenda, please visit the [Dissertation Manuscripts](https://calgara.github.io/dissertation.html), [Publications & Working Papers](https://calgara.github.io/working_papers.html), and [CV](https://calgara.github.io/cv.html) tabs of this website. To learn more about my teaching philosophy and comprehensive evidence of teaching effectiveness, please visit the [Teaching Porfolio](https://calgara.github.io/teaching.html).    
 <br>
