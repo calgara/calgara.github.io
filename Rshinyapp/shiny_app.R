@@ -2,6 +2,7 @@ library(tigris)
 library(leaflet)
 library(plyr)
 library(dplyr)
+library(widgetframe)
 
 cd114 <- congressional_districts(cb = T, resolution = '20m')
 x <- read.csv("/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/Rshinyapp/shiny_data/state_fips_master.csv")
@@ -148,7 +149,7 @@ map3
 
 css_fix <- "div.info.legend.leaflet-control br {clear: both; clear: both;}"
 map3 <- map3 %>% prependContent(tags$style(type = "text/css", css_fix))
-
+map3 <- frameWidget(map3)
 saveWidget(map3, file="legislator_ideology_2018.html")
 
 popup <- paste0("District: ", cd114$district_mc_name.2018 , "<br>", "District Ideological Preferences: ", paste(round(cd114$aldmck_ideal_pt_district.2018,2),sep=""))
