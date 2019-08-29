@@ -63,16 +63,24 @@ Below, you will find various links containing supplemental files supporting my j
 This teaching portfolio supplemental material is organized by course-type.  
 <br/>
 
-## *Associate Instructor of Record*  
+## *Associate Instructor of Record* 
 
-1. Introduction to American Politics (Fall 2017)  
+1. American Mass Public Opinion & Political Behavior (Spring 2019, Sacramento State University)  
+  
+    + [*Course Interactive Syllabus GitPage*](https://calgara.github.io/pol157s2019.html)  
+    + [*Syllabus in PDF Format*](https://calgara.github.io/Pol157_Spring2019/Pol157_Spring2019_Syllabus.pdf)  
+    + [*University Course Evaluations*](teaching_evals/Spring_2019_AI.pdf)  
+    + [*Department Evaluation*](teaching_evals/ALGARA2019eval.pdf)  
+<br/>
+
+2. Introduction to American Politics (Fall 2017)  
   
     + [*Course Interactive Syllabus GitPage*](https://calgara.github.io/pol1f2017.html)  
     + [*Syllabus in PDF Format*](https://calgara.github.io/Pol1_Fall2017/Pol1_Fall2017_Syllabus.pdf)  
     + [*University Course Evaluations*](teaching_evals/Fall_2017_AI.pdf)  
 <br/>
 
-2. Introduction to American Politics Summer Session Course (Summer 2017)  
+3. Introduction to American Politics Summer Session Course (Summer 2017)  
   
     + [*Course Interactive Syllabus GitPage*](https://calgara.github.io/pol1s2017.html)  
     + [*Syllabus in PDF Format*](https://calgara.github.io/Pol1_Summer2017/Pol1_Summer2017_Syllabus.pdf)  
@@ -115,43 +123,49 @@ This teaching portfolio supplemental material is organized by course-type.
 
 ## *Teaching Assistant*  
 
-1. National Security Policy (International Relations, Winter 2018)  
+1. American Public Policymaking (American Politics, Fall 2019)  
+  
+    + [*Syllabus in PDF Format (Adrienne Hosek)*](teaching_evals/POL108_syllabus_181901.pdf)  
+    + [*University Course Evaluation Summary*](teaching_evals/Fall_2019_TA.pdf)    
+<br/>
+
+2. National Security Policy (International Relations, Winter 2018)  
   
     + [*Syllabus in PDF Format (Brandon Kinne)*](teaching_evals/Syllabus-POL132W18.pdf)  
     + [*University Course Evaluation Summary*](teaching_evals/Winter_2018_TA.pdf)    
 <br/>
 
-2. Comparative Policymaking (Comparative Politics, Winter 2017)  
+3. Comparative Policymaking (Comparative Politics, Winter 2017)  
   
      + [*Syllabus in PDF Format (Matthew Shugart)*](teaching_evals/POL 140E syl 2017 W.pdf)
     + [*University Course Evaluation Summary*](teaching_evals/Winter_2017_TA.pdf)    
 <br/>
 
-3. Democratization (Comparative Politics, Spring 2016)  
+4. Democratization (Comparative Politics, Spring 2016)  
   
     + [*Syllabus in PDF Format (Gabriella Montinola)*](teaching_evals/Syllabus-S+2017.docx)  
     + [*University Course Evaluation Summary*](teaching_evals/Spring_2016_TA.pdf)    
 <br/>
 
-4. American Environmental Politics (American Politics, Spring 2015)  
+5. American Environmental Politics (American Politics, Spring 2015)  
   
     + [*Syllabus in Word Doc Format (Stuart Hill)*](teaching_evals/sylabus+spring+2015.docx)  
     + [*University Course Evaluation Summary*](teaching_evals/Spring_2015_TA.pdf)    
 <br/>
 
-5. American Environmental Politics (American Politics, Winter 2015)  
+6. American Environmental Politics (American Politics, Winter 2015)  
   
     + [*Syllabus in Word Doc Format (Stuart Hill)*](teaching_evals/sylabus+winter+2015.docx)  
     + [*University Course Evaluation Summary*](teaching_evals/Winter_2015_TA.pdf)  
 <br/>
 
-6. California State Politics & Policy ([University of California Center Sacramento Seminar](http://uccs.ucdavis.edu), Fall 2014)  
+7. California State Politics & Policy ([University of California Center Sacramento Seminar](http://uccs.ucdavis.edu), Fall 2014)  
   
     + [*Syllabus in PDF Format (Ben Highton & Scott  MacKenzie)*](teaching_evals/pol195--2014fall--syllabus.pdf)  
     + [*University Course Evaluation Summary*](teaching_evals/Fall_2014_TA.pdf)  
 <br/>  
 
-7. Public Opinion of the Mass Public (American Politics, Winter 2014)  
+8. Public Opinion of the Mass Public (American Politics, Winter 2014)  
   
     + [*Syllabus in Word Doc Format (Stuart Hill)*](teaching_evals/164+Syllabus+Winter+2014.docx)  
     + [*University Course Evaluation Summary*](teaching_evals/Winter_2014_TA.pdf)
