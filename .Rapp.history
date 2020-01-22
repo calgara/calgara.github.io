@@ -1,5 +1,3 @@
-0.5/5
-1/5
 1.5/5
 2/5
 2.5/5
@@ -4277,3 +4275,5 @@ library(rmarkdown)#
 setwd("/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io")#
 rmarkdown::render_site()
 rmarkdown::render_site()
+load("/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/CSULB_Demonstration_Replication.Rdata")
+load("/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/CSULB_Demonstration_Replication.Rdata")
