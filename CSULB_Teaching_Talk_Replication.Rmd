@@ -41,7 +41,7 @@ To replicate the following tutorial, you can find the following replication mate
 
 * ***[R Code Script](CSULB_Replication_Analysis_Posted.R)*** 
 
-* ***[Tutorial Data in R Environment form](LBSU_Demonstration_Replication.Rdata)***
+* ***[Tutorial Data in R Environment form](CSULB_Demonstration_Replication.Rdata)***
 
 * You can also find the original slide-set of the presentation here: ***[Variation in Citizen Participation: Resources & Free-Riding Incentive](Variation_Pol_Participation_CSULB_Talk.pdf)***.   
   
