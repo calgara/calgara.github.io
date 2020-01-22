@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+<meta name="author" content="Carlos Algara" />
+
+
+<title>CSU-Long Beach Active Teaching Demonstration Replication</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/readable.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 66px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+
+.section h2 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h3 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h4 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h5 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h6 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Carlos Algara</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="cv.html">CV</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Research
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="Algara_Research_Statement.pdf">Research Agenda Statement</a>
+    </li>
+    <li>
+      <a href="dissertation.html">Dissertation Manuscripts</a>
+    </li>
+    <li>
+      <a href="working_papers.html">Publications &amp; Working Papers</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Teaching
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="teaching.html">Teaching Portfolio</a>
+    </li>
+    <li>
+      <a href="pol157s2019.html">POL 157 (Sac State), Spring 2019</a>
+    </li>
+    <li>
+      <a href="pol1f2017.html">POL 1 (UCD), Fall 2017</a>
+    </li>
+    <li>
+      <a href="pol1s2017.html">POL 1 (UCD), Summer 2017</a>
+    </li>
+    <li>
+      <a href="UCD_PS_ggplot_tutorial.html">ggplot Data Visualization Tutorial</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="about.html">About Me</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="mailto:calgara@ucdavis.edu">
+    <span class="fa fa-envelope fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="http://github.com/calgara">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://twitter.com/algaraca">
+    <span class="fa fa-twitter fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">CSU-Long Beach Active Teaching Demonstration Replication</h1>
+<h3 class="subtitle"><em>Data Analysis Replication Assessing Variation in Citizen Participation</em></h3>
+<h4 class="author"><em><a href="mailto:calgara@ucdavis.edu">Carlos Algara</a></em></h4>
+<h4 class="date"><em>1/23/2020</em></h4>
+
+</div>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-100362112-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<p><br/></p>
+<p>To replicate the following tutorial, you can find the following replication materials here:</p>
+<ul>
+<li><p><strong><em><a href="CSULB_Replication_Analysis_Posted.R">R Code Script</a></em></strong></p></li>
+<li><p><strong><em><a href="LBSU_Demonstration_Replication.Rdata">Tutorial Data in R Environment form</a></em></strong></p></li>
+<li><p>You can also find the original slide-set of the presentation here: <strong><em><a href="Variation_Pol_Participation_CSULB_Talk.pdf">Variation in Citizen Participation: Resources &amp; Free-Riding Incentive</a></em></strong>.</p></li>
+</ul>
+<p>To replicate the materials, make sure to download the open-source <strong><em><a href="https://www.r-project.org">R Computing Environment</a></em></strong> and please download the tutorial R script. From there, load the data materials required to replicate the analysis using the code <tt>load()</tt> function embedded in the code. The code is verified to work with the materials posted.<br />
+<br/> <br/></p>
+<div id="using-survey-aggregate-data-to-articulate-variation-in-citizen-politics." class="section level3">
+<h3><em>Using survey &amp; aggregate data to articulate variation in citizen politics.</em></h3>
+<p>This Rmarkdown document contains a short tutorial on how to use the <a href="https://cces.gov.harvard.edu/pages/welcome-cooperative-congressional-election-study">Cooperative Congressional Election Study (CCES)</a> and <a href="https://electionstudies.org">American National Election Study (ANES)</a> to articulate descriptive trends in citizen behavior. I also use scraped (code included for this proecture) aggregate turnout data from Michael McDonald’s (University of Florida) <a href="http://www.electproject.org">ElectProject</a> to articulate declining voter turnout in presidential and midterm elections. In this tutorial, I include code &amp; output that replicate figures that I use in class. I also provide a brief description of the logic of each figure to articulate a course concept.<br />
+<br/></p>
+</div>
+<div id="the-collective-dilemma-incentive-to-free-ride" class="section level3">
+<h3>1. The Collective Dilemma &amp; Incentive to Free-Ride</h3>
+<p>Madison posits in Federalist 10 that citizens are motivated by self-interest to form factions that advocate on behalf of their shared interest. However, citizens are not simply motivated by their self-interest and they face a strong incentive to <em>free-ride</em> on the work of other likeminded citizens. If Madison’s theory of human nature is correct, in that:<br />
+<span class="math display">\[Human Nature \rightarrow_{1} Factions \leftrightarrow_{2} Representation\]</span><br />
+Where: <span class="math display">\[\rightarrow_{1} = Self-interest;\]</span> <span class="math display">\[\leftrightarrow_{2} = Elections \]</span> than citizens should, in theory, not face collective action problem in forming factions that advocate on their behalf. Thus, if Madison is correct, than citizens would vote in elections at a near universal rate since they will be motivated by a <em>common impulse of passion</em> to go to the polls. Of course, this is not the case given that voting is both a costly form of participation (i.e. intrinsic &amp; information costs) and citizens have a strong incentive to free-ride on the voting behavior of other citizens that share the same collective interest. To articulate that Madison’s theory is incorrect with respect to overcoming the challenge posed by collective action, I make the following figure showing aggregate voter turnout rates in presidential &amp; midterm elections since the Civil War.</p>
+<pre><code>## # A tibble: 6 x 3
+##    year vep_turnout_rate election             
+##   &lt;dbl&gt;            &lt;dbl&gt; &lt;fct&gt;                
+## 1  1789             11.6 Presidential Election
+## 2  1792              6.3 Presidential Election
+## 3  1796             20.1 Presidential Election
+## 4  1800             32.3 Presidential Election
+## 5  1804             23.8 Presidential Election
+## 6  1808             36.8 Presidential Election</code></pre>
+<p>Now that the data is cleaned up, I make a plot with two lowess regression line assessing the decline in voter turnout by presidential and midterm election type. I also note significant changes in suffrage, such as the passage of women’s suffrage in 1920 and the Voting Rights Act of 1965.</p>
+<pre class="r"><code># One lowess regression line per election type (presidential/midterm)
+ggplot(subset(turnout,turnout$year &gt;= 1866), aes(x=year,y=vep_turnout_rate, shape=election,colour=election)) + geom_point() + scale_shape_manual(&quot;&quot;,values=c(16,18)) + scale_colour_manual(&quot;&quot;,values=c(&quot;cyan3&quot;,&quot;firebrick3&quot;)) + theme_bw() + theme(legend.position=c(0.875, 0.85), legend.key.size = unit(0.9,&quot;line&quot;), legend.key = element_blank()) + scale_y_continuous(limits=c(30,90),breaks=seq(30,90,10),labels=c(&quot;30%&quot;,&quot;40%&quot;,&quot;50%&quot;,&quot;60%&quot;,&quot;70%&quot;,&quot;80%&quot;,&quot;90%&quot;), &quot;Eligible Voter Turnout Rate&quot;) + scale_x_continuous(breaks=seq(1866,2016,10), &quot;&quot;) + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + geom_smooth(method = &quot;loess&quot;, se=FALSE, size = 0.65) + labs(title=&quot;National Voter-Turnout in Presidential &amp; Midterm Elections in the United States, 1866-2018&quot;,subtitle =&quot;Data: United States Election Project at the University of Florida&quot;) + annotate(geom = &quot;text&quot;, x = 1918, y = 80, label = &quot;Women&#39;s Suffrage&quot;, color = &quot;blue&quot;, angle = 90, size = 3.5) + geom_vline(xintercept=1920,linetype = &quot;dashed&quot;,color=&quot;gray&quot;) + annotate(geom = &quot;text&quot;, x = 1868, y = 40, label = &quot;15th Amendment&quot;, color = &quot;blue&quot;, angle = 90, size = 3.5) + geom_vline(xintercept=1870,linetype = &quot;dashed&quot;,color=&quot;gray&quot;) + annotate(geom = &quot;text&quot;, x = 1958, y = 80, label = &quot;DC Suffrage&quot;, color = &quot;blue&quot;, angle = 90, size = 3.5) + geom_vline(xintercept=1960,linetype = &quot;dashed&quot;,color=&quot;gray&quot;) + annotate(geom = &quot;text&quot;, x = 1963, y = 80, label = &quot;Voting Rights Act&quot;, color = &quot;blue&quot;, angle = 90, size = 3.5) + geom_vline(xintercept=1965,linetype = &quot;dashed&quot;,color=&quot;gray&quot;) + annotate(geom = &quot;text&quot;, x = 1969, y = 80, label = &quot;Lowering Voting Age&quot;, color = &quot;blue&quot;, angle = 90, size = 3.5) + geom_vline(xintercept=1971,linetype = &quot;dashed&quot;,color=&quot;gray&quot;) + geom_line()</code></pre>
+<p><img src="CSULB_Teaching_Talk_Replication_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+</div>
+<div id="who-participates-in-politics" class="section level3">
+<h3>2. Who participates in politics?</h3>
+<p>Given that participation in politics is a costly enterprise, there is inherent variation in the types of citizens that pay this cost. This section uses individual-level data to show variation in citizen participation using various metrics and how citizen resources predict participation in politics on two dimensions: giving political contributions &amp; voting. This section uses data from the 2016 Cooperative Congressional Election Study.</p>
+<pre class="r"><code>########## Figure 2: Variation in Other Forms of Participation? ########## 
+
+# Variation in political participation
+
+participation &lt;- subset(cces_2016,select=c(commonweight_post,CC16_300d_5,CC16_316,CC16_327,CC16_404,CC16_417a_1,CC16_417a_2,CC16_417a_3,CC16_417a_4,CC16_418a))
+colnames(participation) &lt;- c(&quot;weight&quot;,&quot;social_media&quot;,&quot;pres_vote_12&quot;,&quot;pres_primary_vote&quot;,&quot;voting_time&quot;,&quot;attend_polmeetings&quot;,&quot;yard_sign&quot;,&quot;volunteer_campaign&quot;,&quot;donate_money&quot;,&quot;run_for_office&quot;)
+
+participation[] &lt;- lapply(participation, as.character)
+participation[participation == &quot;Yes&quot;] &lt;- 1
+participation[participation == &quot;No&quot;] &lt;- 0
+participation[participation == &quot;Yes, I definitely voted.&quot;] &lt;- 1
+participation[participation == &quot;I usually vote but did not vote in 2012&quot;] &lt;- 0
+participation[participation == &quot;I am not sure&quot;] &lt;- 0
+
+participation[participation == &quot;No, didn’t vote in a primary or caucus&quot;] &lt;- 0
+participation[participation == &quot;Yes, voted in a primary or caucus&quot;] &lt;- 1
+
+participation$voting_time[participation$voting_time == &quot;Don&#39;t know&quot;] &lt;- NA
+participation$voting_time[participation$voting_time == &quot;Not at all&quot;] &lt;- 0
+participation$voting_time[participation$voting_time == &quot;Less than 10 minutes&quot;] &lt;- 1
+participation$voting_time[participation$voting_time == &quot;10 - 30 minutes&quot;] &lt;- 2
+participation$voting_time[participation$voting_time == &quot;31 minutes - 1 hour&quot;] &lt;- 3
+participation$voting_time[participation$voting_time == &quot;More than 1 hour&quot;] &lt;- 4
+
+participation[] &lt;- lapply(participation, as.numeric)
+library(descr)
+
+frequencies &lt;- list()
+for(i in 2:ncol(participation)){
+  x &lt;- data.frame(freq(participation[,i],w=participation$weight,plot=F))
+  x$category &lt;- rownames(x)
+  x &lt;- x[,3:4]
+  x &lt;- subset(x,x$category != &quot;Total&quot;)
+  x &lt;- subset(x,x$category != &quot;NA&#39;s&quot;)
+  x$activity &lt;- colnames(participation)[[i]]
+  frequencies[[i]] &lt;- x
+}
+library(plyr)
+frequencies &lt;- ldply(frequencies, data.frame)
+
+frequencies$category[frequencies$activity != &quot;voting_time&quot; &amp; frequencies$category == 1] &lt;- &quot;Yes&quot;
+frequencies$category[frequencies$activity != &quot;voting_time&quot; &amp; frequencies$category == 0] &lt;- &quot;No&quot;
+frequencies$category[frequencies$activity == &quot;voting_time&quot; &amp; frequencies$category == 0] &lt;- &quot;0 \nNo Wait&quot;
+frequencies$category[frequencies$activity == &quot;voting_time&quot; &amp; frequencies$category == 4] &lt;- &quot;4 \n&gt;1 Hour&quot;
+
+frequencies$activity[frequencies$activity == &quot;attend_polmeetings&quot;] &lt;- &quot;Attend local political meetings?&quot;
+frequencies$activity[frequencies$activity == &quot;donate_money&quot;] &lt;- &quot;Donate money to a candidate, campaign, \nor political organization?&quot;
+frequencies$activity[frequencies$activity == &quot;pres_primary_vote&quot;] &lt;- &quot;Voted in the 2012 Presidential Primaries?&quot;
+frequencies$activity[frequencies$activity == &quot;run_for_office&quot;] &lt;- &quot;Ever run for elective office?&quot;
+frequencies$activity[frequencies$activity == &quot;social_media&quot;] &lt;- &quot;Forwarded a story, photo, video or link \nabout politics to friends?&quot;
+frequencies$activity[frequencies$activity == &quot;volunteer_campaign&quot;] &lt;- &quot;Work for a candidate or campaign?&quot;
+frequencies$activity[frequencies$activity == &quot;yard_sign&quot;] &lt;- &quot;Put up a political sign?&quot;
+frequencies$activity[frequencies$activity == &quot;pres_vote_12&quot;] &lt;- &quot;Voted in the 2012 Presidential Election?&quot;
+frequencies$activity[frequencies$activity == &quot;voting_time&quot;] &lt;- &quot;Time took to vote&quot;
+
+frequencies$Valid.Percent &lt;- round(frequencies$Valid.Percent,1)</code></pre>
+<pre class="r"><code>ggplot(frequencies, aes(x=category,y=Valid.Percent)) + theme_bw() + geom_bar(stat=&quot;identity&quot;) + theme_bw()  + facet_wrap(~activity, ncol = 3, scales = &quot;free&quot;) + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + ggtitle(&quot;Variation in Different Activities of Political Participation, 2016 Cooperative Congressional Election Study&quot;) + scale_y_continuous(&quot;Weighted Percentage&quot;) + scale_x_discrete(&quot;&quot;) + geom_text(aes(y = Valid.Percent + 5, label = paste0(Valid.Percent, &#39;%&#39;)), position = position_dodge(width = .9),size = 3.5)</code></pre>
+<p><img src="CSULB_Teaching_Talk_Replication_files/figure-html/unnamed-chunk-4-1.png" width="960" /></p>
+<p>As the figure shows, there is clear variation in participation in various political activities. Indeed, it appears that the most costly form of political participation is running for elected office given that very few people undertake such an activity despite the plethora of local officials one could theoretically run for. Moreover, there is variation in the cost of voting. Some voters spend a substantial amount of time (i.e. greater than 10 minutes) exercising their right to vote.</p>
+</div>
+<div id="role-of-resources-in-citizen-voting-participation" class="section level3">
+<h3>3. Role of Resources in Citizen Voting &amp; Participation</h3>
+<pre class="r"><code>########## Figure 3 &amp; 4: Low political sophistication ########## 
+
+# Correct Recall of Offices: Biden (V162072), Ryan (V162073a), John Roberts (V162076b), House Majority (V161515), Senate Majority (V161516)
+
+recall &lt;- subset(nes,select=c(V160102,V162072,V162073a,V162076b,V161515,V161516,V162074a,V162075a,V161270,V161361x))
+colnames(recall) &lt;- c(&quot;weight&quot;,&quot;biden&quot;,&quot;ryan&quot;,&quot;roberts&quot;,&quot;housemaj&quot;,&quot;senmaj&quot;,&quot;merkel&quot;,&quot;putin&quot;,&quot;educ&quot;,&quot;income&quot;)
+recall$housemaj[recall$housemaj %in% 1] &lt;- 0
+recall$housemaj[recall$housemaj %in% 2] &lt;- 1 
+recall$senmaj[recall$senmaj %in% 1] &lt;- 0
+recall$senmaj[recall$senmaj %in% 2] &lt;- 1
+x &lt;- c(-7,-6,-5,-9)
+recall[recall == -9] &lt;- NA
+recall[recall == -5] &lt;- NA
+recall[recall == -6] &lt;- NA
+recall[recall == -7] &lt;- NA
+
+recall2 &lt;- recall[,1:8]
+frequencies &lt;- list()
+for(i in 2:ncol(recall2)){
+  x &lt;- data.frame(freq(recall2[,i],w=recall2$weight,plot=F))
+  x$category &lt;- rownames(x)
+  x &lt;- x[,3:4]
+  x &lt;- subset(x,x$category != &quot;Total&quot;)
+  x &lt;- subset(x,x$category != &quot;NA&#39;s&quot;)
+  x$activity &lt;- colnames(recall2)[[i]]
+  frequencies[[i]] &lt;- x
+}
+frequencies &lt;- ldply(frequencies, data.frame)
+
+frequencies$category &lt;- ifelse(frequencies$category == 1, &quot;Correct Answer&quot;, ifelse(frequencies$category == 0, &quot;Incorrect Answer&quot;, NA))
+
+frequencies$activity &lt;- ifelse(frequencies$activity == &quot;biden&quot;, &quot;Vice President Joe Biden&quot;, ifelse(frequencies$activity == &quot;housemaj&quot;, &quot;House Republican Majority&quot;, ifelse(frequencies$activity == &quot;merkel&quot;, &quot;German Chancellor Angela Merkel&quot;, ifelse(frequencies$activity == &quot;putin&quot;, &quot;Russian President Vladimir Putin&quot;, ifelse(frequencies$activity == &quot;roberts&quot;, &quot;SCOTUS Chief Justice John Roberts&quot;, ifelse(frequencies$activity == &quot;senmaj&quot;, &quot;Senate Republican Majority&quot;, ifelse(frequencies$activity == &quot;ryan&quot;, &quot;Speaker Paul Ryan&quot;, NA))))))) 
+
+frequencies$Valid.Percent &lt;- round(frequencies$Valid.Percent,1)
+
+ggplot(frequencies, aes(x=category,y=Valid.Percent)) + theme_bw() + geom_bar(stat=&quot;identity&quot;) + theme_bw()  + facet_wrap(~activity, ncol = 4) + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + ggtitle(&quot;Variation in Citizen Response to Office Recall Battery, 2016 American National Election Study&quot;) + scale_y_continuous(&quot;Weighted Percentage&quot;) + scale_x_discrete(&quot;&quot;)  + geom_text(aes(y = Valid.Percent + 5, label = paste0(Valid.Percent, &#39;%&#39;)), position = position_dodge(width = .9),size = 3.5)</code></pre>
+<p><img src="CSULB_Teaching_Talk_Replication_files/figure-html/unnamed-chunk-5-1.png" width="960" /></p>
+<pre class="r"><code>recall2$total_scale &lt;- rowSums(recall2[,2:8],na.rm=T)
+x &lt;- data.frame(freq(recall2$total_scale,w=recall2$weight,plot=F))
+x$category &lt;- rownames(x)
+x &lt;- x[,2:3]
+x &lt;- subset(x,x$category != &quot;Total&quot;)
+x &lt;- subset(x,x$category != &quot;NA&#39;s&quot;)
+x$activity &lt;- &quot;Number of Correct Reponses&quot;
+
+x$Percent &lt;- round(x$Percent,1)
+ggplot(x, aes(x=category,y=Percent)) + theme_bw() + geom_bar(stat=&quot;identity&quot;) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + ggtitle(&quot;Total Number of Correct Responses to Office Recall Battery, 2016 American National Election Study&quot;) + scale_y_continuous(&quot;Weighted Percentage&quot;) + geom_text(aes(y = Percent + 0.50, label = paste0(Percent, &#39;%&#39;)), position = position_dodge(width = .9),size = 3.5) + scale_x_discrete(&quot;Total Number of Correct Responses to Political Knowledge Questions&quot;)</code></pre>
+<p><img src="CSULB_Teaching_Talk_Replication_files/figure-html/unnamed-chunk-5-2.png" width="960" /></p>
+<p>As the figure shows, there is clear evidence of variation in political knowledge among the mass public. As one can see from the visualization of <em>American National Election Study</em>, most Americans cannot recall salient political figures in society. For example, about 33% of Americans did not know that the Republicans controlled a majority of U.S. Senate seats but about 83% of Americans could tell you who Russian President Vladimir Putin was! This trend continues in the forthcoming visualization articulating to what extent are Americans knowledgable about the institutional role of Congress in American political life. This data is taken from Mondak, Carmines, Huckfeldt, Mitchell &amp; Schraufnagel 2007 <strong><em>American Journal of Political Science</em></strong> article titled `` <a href="https://www.jstor.org/stable/4122904?seq=1#metadata_info_tab_contents"><em>Does Familiarity Breed Contempt? The Impact of Information on Mass Attitudes Toward Congress</em></a>’’. Note that these data come from the 2002 American Democracy Survey sponsored by by the Center on Congress at Indiana University.</p>
+<pre class="r"><code>###### Figure 5: Mondak Data Visizualtion (manual imputation given data in tabular form in AJPS article) ##########
+
+mondak &lt;- data.frame(Valid.Percent=c(69.9,61.5,68.6,67.8,45.4,43.6,77.1,76.4,43.6),activity=c(&quot;Who decides if a law is constitutional? \nCongress or SCOTUS?&quot;,&quot;Who nominates federal judges? \nPOTUS, SCOTUS, or Congress?&quot;,&quot;How much of a majority to override veto in \nthe House/Senate? 1/2,2/3, or 3/4?&quot;,&quot;What is the main duty of Congress? Write legislation, \nadminister POTUS policies, monitor states?&quot;,&quot;How long is a U.S. Senator term? 2,4,or 6 years?&quot;,&quot;How long is a U.S. Rep term? 2, 4, or 6 years?&quot;,&quot;If both chambers pass different bills, what happens? \nPOTUS chooses, SCOTUS reviews, \nor compromise?&quot;,&quot;Where does most work in Congress take place? \nFloor, Committee, or Filibuster?&quot;,&quot;Who breaks a tie in the Senate? \nPOTUS, VP, or House Speaker?&quot;))
+
+mondak2 &lt;- mondak
+
+mondak$category &lt;- &quot;Yes&quot;
+mondak2$category &lt;- &quot;No&quot;
+
+mondak2$Valid.Percent &lt;- 100- mondak2$Valid.Percent
+
+mondak &lt;- rbind(mondak,mondak2)
+
+ggplot(mondak, aes(x=category,y=Valid.Percent)) + theme_bw() + geom_bar(stat=&quot;identity&quot;) + theme_bw()  + facet_wrap(~activity, ncol = 3) + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + ggtitle(&quot;Variation in Knowledge about Congress, 2002 ADS Survey&quot;) + scale_y_continuous(&quot;Weighted Percentage&quot;,limits=c(0,90)) + scale_x_discrete(&quot;&quot;) + geom_text(aes(y = Valid.Percent + 5, label = paste0(Valid.Percent, &#39;%&#39;)))</code></pre>
+<p><img src="CSULB_Teaching_Talk_Replication_files/figure-html/unnamed-chunk-6-1.png" width="864" /></p>
+<p>As the Figure shows, rather stunningly, Americans are stunningly ignorant as to the constitutional prerogatives held by the United States Congress. For example, only about a half of Americans can tell you the correct length of their member of Congress or United States Senator. This trend continues below in the visualization of CCES data, as Americans cannot even recall who their incumbent member of Congress is or their U.S. Senators.</p>
+<pre class="r"><code>###### Figure 6: Correct Office Recall as Political Sophistication ##########
+
+# Correct Office Recalls
+
+x &lt;- subset(cces,select=c(year,weight,correct_senator1_recall,correct_senator2_recall,correct_mc_recall_knowledge))
+x &lt;- na.omit(x)
+x &lt;- ddply(x, .(year), summarize, correct_senator1_recall=weighted.mean(correct_senator1_recall,w=weight),correct_senator2_recall=weighted.mean(correct_senator2_recall,w=weight),correct_mc_recall_knowledge=weighted.mean(correct_mc_recall_knowledge,w=weight))
+x &lt;- melt(x,id=&quot;year&quot;)
+
+x1 &lt;- subset(cces_2016_2017_2018,cces_2016_2017_2018$year %in% c(2017,2018),select=c(year,weight,correct_sen1_recall,correct_sen2_recall,correct_mc_recall))
+x1 &lt;- na.omit(x1)
+x1 &lt;- ddply(x1, .(year), summarize, correct_senator1_recall=weighted.mean(correct_sen1_recall,w=weight),correct_senator2_recall=weighted.mean(correct_sen2_recall,w=weight),correct_mc_recall_knowledge=weighted.mean(correct_mc_recall,w=weight))
+x1 &lt;- melt(x1,id=&quot;year&quot;)
+
+x &lt;- rbind(x,x1)
+
+x$variable &lt;- ifelse(x$variable == &quot;correct_senator1_recall&quot;,&quot;Sr. Senator&quot;,ifelse(x$variable == &quot;correct_senator2_recall&quot;,&quot;Jr. Senator&quot;,ifelse(x$variable == &quot;correct_mc_recall_knowledge&quot;,&quot;U.S. Rep.&quot;,NA)))
+x$value &lt;- x$value * 100
+x$year &lt;- as.numeric(x$year)
+
+ggplot(x,aes(x=year,y=value,group=variable,color=variable,label=paste(round(x$value,0),&quot;%&quot;,sep=&quot;&quot;))) + geom_line() + theme_bw() + geom_label() + theme(legend.position=&quot;none&quot;) + annotate(&quot;text&quot;, x = 2008, y = 60.5, label = &quot;U.S. \nRep&quot;,color=&quot;dodgerblue2&quot;) + annotate(&quot;text&quot;, x = 2008, y = 67, label = &quot;Sr. U.S. \nSenator&quot;,color=&quot;red&quot;) + scale_color_manual(&quot;&quot;,values=c(&quot;grey47&quot;,&quot;red&quot;,&quot;dodgerblue2&quot;)) +  annotate(&quot;text&quot;, x = 2008, y = 64, label = &quot;Jr. U.S. \nSenator&quot;,color=&quot;grey47&quot;) + scale_x_continuous(&quot;Data: Cooperative Congressional Election Study, 2008-2016&quot;,breaks=seq(2008,2018,1)) + scale_y_continuous(&quot;Percentage of Constituents Correctly Identifying&quot;) + ggtitle(&quot;Variation in the Ability of Citizens to Recall Congressional Delegation, 2008-2018 CCES&quot;)</code></pre>
+<p><img src="CSULB_Teaching_Talk_Replication_files/figure-html/unnamed-chunk-7-1.png" width="768" /></p>
+<p>Taken together, there is reason to suspect that political knowledge varies across citizens. What could potentially be the source of this variation? As we discussed, Madison does not posit the dynamic of participation costs in his theory or to what extent do these costs vary by citizens. We could suspect that the capacity to pay participation costs, particularly with respect to the instrict cost of political knowledge, can be influenced by the degree of education held by a citizen. To empirically test this <strong><em>hypothesis</em></strong>, we specify a simple regression model predicting the extent of political knowledge as a function of a citizen’s formal education. The dependent variable used to test this simple bivariate model is the knowledge scale found in Figure 4 &amp; 5 taken from our previous analysis of the American National Election Study. Results of this analysis can be found below.</p>
+<pre class="r"><code>###### Figure 7: Effect of Education on Political Knowledge ##########
+
+recall$knowledge_scale &lt;- rowSums(recall[,c(2:8)])
+
+recall$educ[recall$educ %in% seq(1,8,1)] &lt;- 1 # &gt; HS
+recall$educ[recall$educ %in% 9] &lt;- 2 # HS
+recall$educ[recall$educ %in% 10] &lt;- 3 # Some college
+recall$educ[recall$educ %in% seq(11,12,1)] &lt;- 4 # 2-yr college
+recall$educ[recall$educ %in% 13] &lt;- 5 # BA
+recall$educ[recall$educ %in% seq(14,16,1)] &lt;- 6 #Post-BA
+recall$educ[recall$educ %in% 90] &lt;- 2
+recall$educ[recall$educ %in% 95] &lt;- 2
+recall$educ &lt;- factor(recall$educ)
+
+model &lt;- lm(knowledge_scale~educ,data=recall,weights = weight)
+coeftest(model, vcov = vcovHC(model, &quot;HC0&quot;))</code></pre>
+<pre><code>## 
+## t test of coefficients:
+## 
+##             Estimate Std. Error t value  Pr(&gt;|t|)    
+## (Intercept)  2.96968    0.14762 20.1173 &lt; 2.2e-16 ***
+## educ2        0.90039    0.17017  5.2911 1.290e-07 ***
+## educ3        1.28572    0.16631  7.7309 1.385e-14 ***
+## educ4        1.41716    0.17155  8.2609 &lt; 2.2e-16 ***
+## educ5        1.93789    0.16057 12.0688 &lt; 2.2e-16 ***
+## educ6        2.48847    0.15990 15.5622 &lt; 2.2e-16 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<pre class="r"><code>predict &lt;- data.frame(effect(&quot;educ&quot;, se=TRUE, mod = model, confidence.level = 0.95, xlevels=list(educ=seq(1,6,1),vcov. = vcovHC(model, &quot;HC0&quot;))))
+
+ggplot(data= predict, mapping=aes(x=educ, y=fit,ymin=lower,ymax=upper,label=round(predict$fit,1))) + geom_errorbar(width=0.2,size=1) + geom_point(size=4, shape=21, fill=&quot;white&quot;) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + scale_x_discrete(&quot;Voter Education Level&quot;,labels=c(&quot;&gt; HS&quot;, &quot;HS&quot;,&quot;Some \nCollege&quot;,&quot;2-Yr \nCollege&quot;,&quot;BA&quot;,&quot;Post-Grad&quot;)) + scale_y_continuous(&quot;Estimated Political Knowledge&quot;,breaks=seq(0,6,0.5)) + labs(title=&quot;Effect of Education on Citizen Political Knowledge&quot;,subtitle=&quot;Data: 2016 American National Election Study&quot;) + geom_text(size=3.5,hjust =0,nudge_x = 0.175)</code></pre>
+<p><img src="CSULB_Teaching_Talk_Replication_files/figure-html/unnamed-chunk-8-1.png" width="768" /></p>
+<p>As one can see, there is a strong non-linear relationship between education and predicted political knowledge. The higher the education a given person posesses, the significantly more likely they are to hold more information about salient political facts in society. For example, the predicted level of political knowledge is approximately 5.5 out of 7 (79%) for those holding a post-graduate degree. By contrast, the predicted level of political knowledge is only 3.9 out of 7 (56%) for those holding a high school diploma. These differences in predicted political knowledge are statistically distinct from one another at <span class="math inline">\(\rho &lt; 0.001\)</span>.</p>
+<pre class="r"><code>###### Figure 8: Effect of Income on Political Knowledge ##########
+
+model &lt;- lm(knowledge_scale~income,data=recall,weights = weight)
+coeftest(model, vcov = vcovHC(model, &quot;HC0&quot;))</code></pre>
+<pre><code>## 
+## t test of coefficients:
+## 
+##              Estimate Std. Error t value  Pr(&gt;|t|)    
+## (Intercept) 3.0547601  0.0896833  34.062 &lt; 2.2e-16 ***
+## income      0.0800842  0.0047179  16.975 &lt; 2.2e-16 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<pre class="r"><code>predict &lt;- data.frame(effect(&quot;income&quot;, se=TRUE, mod = model, confidence.level = 0.95, xlevels=list(income=seq(1,28,1),vcov. = vcovHC(model, &quot;HC0&quot;))))
+
+ggplot(data= predict, mapping=aes(x=income, y=fit)) + geom_line(aes(x = income, y = fit), size = 0.50) + geom_ribbon(aes(ymin=lower, ymax=upper), alpha = .2) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + scale_x_continuous(&quot;Voter Income Level&quot;,limits=c(1,28),breaks=c(1,28),labels=c(&quot;&lt; $5,000&quot;,&quot;&gt; $250,000&quot;)) + scale_y_continuous(&quot;Estimaed Political Knowledge&quot;) + labs(title=&quot;Effect of Income on Citizen Political Knowledge&quot;, subtitle=&quot;Data: 2016 American National Election Study&quot;)</code></pre>
+<p><img src="CSULB_Teaching_Talk_Replication_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p>We find the same relationship with respect the bivariate test of voter income and estimated political knowledge. As the Figure shows, higher income citizens are far more likely to be knowledgable about political stimuli than those with lower income. Taken together, it is clear that income and education are significant predictors of the level of political knowledge and the ability to think about salient political topics of the day.</p>
+<pre class="r"><code>###### Figure 9: Effect of Education on Political Participation (Turnout) ##########
+
+# Role of resources in predicting campaign contributions &amp; voting. This section articulates the resource bias in participation &amp; voting
+
+resources &lt;- subset(cces_2016_2017_2018,cces_2016_2017_2018$year %in% c(2016,2018),select=c(year,weight,district,general_elex_turnout,contribute_money,income_clean,education_clean,white_respondent))
+resources$year &lt;- factor(resources$year)
+
+# Turnout ~ Education
+
+model &lt;- glm(general_elex_turnout ~ education_clean*year, data=resources, weights=weight, family = binomial(link = &quot;logit&quot;))
+coeftest(model, vcov = cluster.vcov(model, cluster=resources$district))</code></pre>
+<pre><code>## 
+## z test of coefficients:
+## 
+##                            Estimate Std. Error z value  Pr(&gt;|z|)    
+## (Intercept)              -0.3050091  0.0313658 -9.7242 &lt; 2.2e-16 ***
+## education_clean           0.1353142  0.0099387 13.6149 &lt; 2.2e-16 ***
+## year2018                 -0.2307191  0.0379855 -6.0739 1.249e-09 ***
+## education_clean:year2018  0.1232845  0.0119127 10.3490 &lt; 2.2e-16 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<pre class="r"><code>predict &lt;- data.frame(effect(&quot;education_clean*year&quot;, se=TRUE, mod = model, confidence.level = 0.95, xlevels=list(year=c(2016,2018),vcov. = cluster.vcov(model, cluster=resources$district))))
+
+predict$education &lt;- factor(predict$education_clean,labels=c(&quot;No HS&quot;,&quot;HS&quot;,&quot;Some college&quot;,&quot;2-year&quot;,&quot;4-year&quot;,&quot;Post-grad&quot;),levels=seq(0,5,1))
+predict$year &lt;- factor(predict$year,labels=c(&quot;2016 Presidential Election&quot;,&quot;2018 Midterm Election&quot;))
+
+ggplot(data= predict, mapping=aes(x=education, y=fit, ymin=lower, ymax=upper, fill=education,label=paste((round(predict$fit,2) * 100),&quot;%&quot;,sep=&quot;&quot;))) + geom_bar(stat=&quot;identity&quot;) + geom_errorbar(width=.25) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + scale_x_discrete(&quot;Voter Education Level&quot;) + scale_y_continuous(limits=c(0,1.0), breaks=seq(0,1.0,0.05), &quot;Probability of Turning Out to Vote&quot;) + labs(title=&quot;Probability of Voter Turnout by Education Level in 2016 &amp; 2018&quot;,caption=&quot;Data: 2016 &amp; 2018 Cooperative Congressional Election Study Voter-Validated Study&quot;) + coord_cartesian(ylim=c(0.05,0.75)) + scale_fill_discrete(guide=FALSE) + geom_label(size=3.5,nudge_y = 0.05) + facet_wrap(~year)</code></pre>
+<p><img src="CSULB_Teaching_Talk_Replication_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p>Of course, political knowledge is not the only salient dependent variable of interest. Another dimension of transaction costs of political participation can be the ability to pay the cost to vote or even engage in the relatively high cost political activity of <strong><em>contributing</em></strong> to a political campaign. We should expect that education and income should increase the probability of a given citizen to participate in voting or campaign finance activities. To test whether education is related to the likelihood of being a campaign donor, I specify a simple bivariate logistic regression model where the probability of being a campaign donor is a function of a citizen’s education level. Results of this model can be found above. As one can see the probability of turning out to vote is 71% for those that hold a post-graduate education while it is only 41% for those with a high school diploma.</p>
+<pre class="r"><code>###### Figure 10: Effect of Education on Political Participation (Campaign Donor) ##########
+
+# Contribution ~ Education
+
+model &lt;- glm(contribute_money ~ education_clean*year, data=resources, weights=weight, family = binomial(link = &quot;logit&quot;))
+coeftest(model, vcov = cluster.vcov(model, cluster=resources$district))</code></pre>
+<pre><code>## 
+## z test of coefficients:
+## 
+##                           Estimate Std. Error  z value  Pr(&gt;|z|)    
+## (Intercept)              -2.162047   0.043558 -49.6361 &lt; 2.2e-16 ***
+## education_clean           0.318822   0.012089  26.3731 &lt; 2.2e-16 ***
+## year2018                 -1.341634   0.073276 -18.3094 &lt; 2.2e-16 ***
+## education_clean:year2018  0.093884   0.019590   4.7924 1.648e-06 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<pre class="r"><code>predict &lt;- data.frame(effect(&quot;education_clean*year&quot;, se=TRUE, mod = model, confidence.level = 0.95, xlevels=list(year=c(2016,2018),vcov. = cluster.vcov(model, cluster=resources$district))))
+
+predict$education &lt;- factor(predict$education_clean,labels=c(&quot;No HS&quot;,&quot;HS&quot;,&quot;Some college&quot;,&quot;2-year&quot;,&quot;4-year&quot;,&quot;Post-grad&quot;),levels=seq(0,5,1))
+predict$year &lt;- factor(predict$year,labels=c(&quot;2016 Presidential Election&quot;,&quot;2018 Midterm Election&quot;))
+
+ggplot(data= predict, mapping=aes(x=education, y=fit, ymin=lower, ymax=upper, fill=education,label=paste((round(predict$fit,2) * 100),&quot;%&quot;,sep=&quot;&quot;))) + geom_bar(stat=&quot;identity&quot;) + geom_errorbar(width=.25) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + scale_x_discrete(&quot;Voter Education Level&quot;) + scale_y_continuous(limits=c(0,1.0), breaks=seq(0.05,0.40,0.05), expand=c(0,0), &quot;Probability of Contributing to a Campaign&quot;) + labs(title=&quot;Probability of Being a Campaign Donor by Education Level in 2016 &amp; 2018&quot;,caption=&quot;Data: 2016 &amp; 2018 Cooperative Congressional Election Study Voter-Validated Study&quot;) + coord_cartesian(ylim=c(0,0.45)) + scale_fill_discrete(guide=FALSE) + geom_label(size=3.5,nudge_y = 0.05) + facet_wrap(~year) </code></pre>
+<p><img src="CSULB_Teaching_Talk_Replication_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<p>This relationship continues with respect to the probability of being a campaign donor. As one can see, there is a strong relationship between education and the probability of being a campaign donor. For example, you are 34% more likely to contribute to a campaign if you hold a post-graduate degree and only 10% if you hold just a high school diploma. Note that the probability of contributing to a campaign is far lower, across all discrete education groups, than it is for voting. This reflects variation in the cost of differing forms of political participation, with contributing to campaigns being a far more costly form of political expression. We see the same relationship below with respect to citizen income and the probability of turning out to vote.</p>
+<pre class="r"><code>###### Figure 11: Effect of Income on Political Participation (Voter Turnout) ##########
+
+model &lt;- glm(general_elex_turnout ~ income_clean*year, data=resources, weights=weight, family = binomial(link = &quot;logit&quot;))
+coeftest(model, vcov = cluster.vcov(model, cluster=resources$district))</code></pre>
+<pre><code>## 
+## z test of coefficients:
+## 
+##                         Estimate Std. Error  z value  Pr(&gt;|z|)    
+## (Intercept)           -0.4091816  0.0331653 -12.3377 &lt; 2.2e-16 ***
+## income_clean           0.0692685  0.0047878  14.4677 &lt; 2.2e-16 ***
+## year2018              -0.1807130  0.0385249  -4.6908 2.721e-06 ***
+## income_clean:year2018  0.0406932  0.0055381   7.3478 2.014e-13 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<pre class="r"><code>predict &lt;- data.frame(effect(&quot;income_clean*year&quot;, se=TRUE, mod = model, confidence.level = 0.95, xlevels=list(income_clean = seq(0,15,1), year=c(2016,2018), (vcov. = cluster.vcov(model, cluster=resources$district)))))
+predict$year &lt;- factor(predict$year,labels=c(&quot;2016 Presidential Election&quot;,&quot;2018 Midterm Election&quot;))
+
+ggplot(data= predict, mapping=aes(x=income_clean, y=fit)) + geom_line(aes(x = income_clean, y = fit), size = 0.50) + geom_ribbon(aes(ymin=lower, ymax=upper), alpha = .2) + scale_colour_manual(&quot;&quot;,values=&quot;black&quot;) + scale_fill_manual(&quot;&quot;,values=&quot;grey12&quot;) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + scale_x_continuous(limits=c(0,15), breaks=c(0,15), labels=c(&quot;&lt; $10,000&quot;, &quot;&gt; $500K&quot;), &quot;Voter Income&quot;) + scale_y_continuous(limits=c(0.3,0.80), breaks=seq(0.3,0.80,0.05), &quot;Probability of Turning Out to Vote&quot;) + labs(title=&quot;Probability of Voter Turnout by Income Level in the 2016 &amp; 2018 Elections&quot;,caption=&quot;Data: 2016 &amp; 2018 Cooperative Congressional Election Study Voter-Validated Study&quot;) + facet_wrap(~year,ncol=2) + theme(panel.spacing = unit(2, &quot;lines&quot;))</code></pre>
+<p><img src="CSULB_Teaching_Talk_Replication_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p>Again, the higher the political resource of income, the more likely a given voter is to turnout. We can extend this analysis to the different political variable of contributing to a campaign. This bivariate analysis can be found below.</p>
+<pre class="r"><code>###### Figure 12: Effect of Income on Political Participation (Campaign Contribution) ##########
+
+# Contribution ~ Income
+
+model &lt;- glm(contribute_money ~ income_clean*year, data=resources, weights=weight, family = binomial(link = &quot;logit&quot;))
+predict &lt;- data.frame(effect(&quot;income_clean*year&quot;, se=TRUE, mod = model, confidence.level = 0.95, xlevels=list(income_clean = seq(0,15,1), year=c(2016,2018), (vcov. = cluster.vcov(model, cluster=resources$district)))))
+predict$year &lt;- factor(predict$year,labels=c(&quot;2016 Presidential Election&quot;,&quot;2018 Midterm Election&quot;))
+
+ggplot(data= predict, mapping=aes(x=income_clean, y=fit)) + geom_line(aes(x = income_clean, y = fit), size = 0.50) + geom_ribbon(aes(ymin=lower, ymax=upper), alpha = .2) + scale_colour_manual(&quot;&quot;,values=&quot;black&quot;) + scale_fill_manual(&quot;&quot;,values=&quot;grey12&quot;) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + scale_x_continuous(limits=c(0,15), breaks=c(0,15), labels=c(&quot;&lt; $10,000&quot;, &quot;&gt; $500K&quot;), &quot;Voter Income&quot;) + scale_y_continuous(limits=c(0,0.50), breaks=seq(0,0.50,0.05), &quot;Probability of Political Contribution&quot;) + labs(title=&quot;Probability of Being a Campaign Donor by Income Level in 2016 &amp; 2018&quot;,caption=&quot;Data: 2016 &amp; 2018 Cooperative Congressional Election Study Voter-Validated Study&quot;) + facet_wrap(~year,ncol=2) + theme(panel.spacing = unit(2, &quot;lines&quot;))</code></pre>
+<p><img src="CSULB_Teaching_Talk_Replication_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+<p>Again, the higher income the more likely a given citizen is to participate in the political activity of contributing to a political campaign. Yet, the probability of contributing to a campaign is only 50% for those making greater than $500,000 in annual income. By contrast, the probability of turning out to vote among these high-income citizens is approximately 72%, again reflecting the inherently more costly nature of contributing to campaigns relative to voting.</p>
+</div>
+<div id="implications-for-legislative-representation-is-the-madisonian-model-flawed" class="section level3">
+<h3>4. Implications for Legislative Representation: Is the Madisonian Model Flawed?</h3>
+<p>What does this analysis suggest for the nature of institutional legislative representation provided by the Madisonian model of democracy? To assess the implications of variation in the ability to pay participation costs among the American mass public, implications not accounted for by Madison in his ``Theory of the Republic,’’ I specify the following logical exercise. Consider a 900 person congressional district below, comprised of an equal number of citizens (450) being members of a Lutes faction and a Loggers faction. This hypothetical district is visualized below in the following waffle plot.</p>
+<pre class="r"><code>###### Figure 13: Waffle Chart of Fictional District ##########
+
+# Waffle Chart of Fictional District
+
+var &lt;- c(&quot;49ers&quot;,&quot;Titans&quot;)
+nrows &lt;- 20
+df &lt;- expand.grid(y = 1:nrows, x = 1:nrows)
+categ_table &lt;- round(table(var) * ((nrows*nrows)/(length(var))))
+categ_table</code></pre>
+<pre><code>## var
+##  49ers Titans 
+##    200    200</code></pre>
+<pre class="r"><code>df$category &lt;- factor(rep(names(categ_table), categ_table))  
+
+ggplot(df, aes(x = x, y = y, fill = category)) + geom_tile(color = &quot;black&quot;, size = 0.5) + scale_x_continuous(expand = c(0, 0)) + scale_y_continuous(expand = c(0, 0), trans = &#39;reverse&#39;) + scale_fill_manual(&quot;&quot;,values = c(&quot;gold&quot;,&quot;blue2&quot;)) + labs(title=&quot;Fictional Even District of 49ers &amp; Titans&quot;, caption=&quot;Each Square Represents a Single Voter \n(N = 200 The Beach &amp; 200 Fullerton)&quot;) + theme(plot.title = element_text(size = rel(1.2)),axis.text = element_blank(), axis.title = element_blank(), axis.ticks = element_blank(),legend.title = element_blank(), legend.position = &quot;bottom&quot;,legend.box.just = &quot;left&quot;, legend.key.size = unit(1,&quot;line&quot;), legend.key = element_rect(size = 0, color = &#39;white&#39;), legend.text.align = 0, legend.box = &quot;horizontal&quot;,legend.spacing.x = unit(0.25, &#39;cm&#39;))</code></pre>
+<p><img src="CSULB_Teaching_Talk_Replication_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
+<p>As one can see, each square represents a single citizen in this hypothetical district. You can consider this a visualization of the total population within the district and the entire universe of the potential voting pool within the district. Now consider that the pool of voters that decide to turnout on election day is simply a sample of the total population residing within a given district. Would non-universal turnout (i.e., a 100% turnout rate) be a theoritical problem with respect to secureing ``correct’’ and accurate representation where an elective representative represents the views of a majority of their citizens? The data visualization below helps shed some light on this important question.</p>
+<pre class="r"><code>###### Figure 14: Waffle Chart of Non-Bias Turnout ##########
+
+# Even turnout
+
+df$turnout &lt;- sample(0:400, 400, replace=F)
+df$turnout &lt;- ifelse(df$turnout &lt;= 200, 1,0)
+df$turnout_factor &lt;- factor(df$turnout,levels=c(1,0),labels=c(&quot;49ers&quot;,&quot;Titans&quot;))
+
+ggplot(df, aes(x = x, y = y, fill = turnout_factor)) + geom_tile(color = &quot;black&quot;, size = 0.5) + scale_x_continuous(expand = c(0, 0)) + scale_y_continuous(expand = c(0, 0), trans = &#39;reverse&#39;) + scale_fill_manual(&quot;&quot;,values = c(&quot;gold&quot;,&quot;blue2&quot;)) + labs(title=&quot;Non-Bias Turnout in Fictional Even District of 49ers &amp; Titans&quot;, caption=&quot;Each Square Represents a Single Voter \n(N = 200 The Beach &amp; 200 Fullerton voters)&quot;) + theme(plot.title = element_text(size = rel(1.2)),axis.text = element_blank(), axis.title = element_blank(), axis.ticks = element_blank(),legend.title = element_blank(), legend.position = &quot;bottom&quot;,legend.box.just = &quot;left&quot;, legend.key.size = unit(1,&quot;line&quot;), legend.key = element_rect(size = 0, color = &#39;white&#39;), legend.text.align = 0, legend.box = &quot;horizontal&quot;,legend.spacing.x = unit(0.25, &#39;cm&#39;))</code></pre>
+<p><img src="CSULB_Teaching_Talk_Replication_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
+<p>As one can see, non-universal turnout is not a significant problem with respect to potentially securing ``correct’’ representation. In this example, 400 citizens turned out to vote (a 44% turnout-rate, which is about on-par with your average off-year midterm election cycle). However, this is not a problem since this sample of voters is perfectly representative of the district population, with roughly 200 Lutes and 200 Loggers paying the cost to turn out to vote. Where could this be a problem? The visualization below can provide a clue.</p>
+<pre class="r"><code>###### Figure 15: Waffle Chart of Bias Turnout ##########
+
+df$bias2 &lt;- sample(0:400, 400, replace=F)
+df$bias2 &lt;- ifelse(df$bias2 &lt;= 100,0,1)
+df$bias2 &lt;- factor(df$bias2,levels=c(1,0),labels=c(&quot;49ers&quot;,&quot;Titans&quot;))
+
+ggplot(df, aes(x = x, y = y, fill = bias2)) + geom_tile(color = &quot;black&quot;, size = 0.5) + scale_x_continuous(expand = c(0, 0)) + scale_y_continuous(expand = c(0, 0), trans = &#39;reverse&#39;) + scale_fill_manual(&quot;&quot;,values = c(&quot;gold&quot;,&quot;blue2&quot;)) + labs(title=&quot;Bias Turnout in Fictional Even District of 49ers &amp; Titans&quot;, caption=&quot;Each Square Represents a Single Voter \n(N = 300 (75%) The Beach &amp; 100 (25%) Titans voters)&quot;) + theme(plot.title = element_text(size = rel(1.2)),axis.text = element_blank(), axis.title = element_blank(), axis.ticks = element_blank(),legend.title = element_blank(), legend.position = &quot;bottom&quot;,legend.box.just = &quot;left&quot;, legend.key.size = unit(1,&quot;line&quot;), legend.key = element_rect(size = 0, color = &#39;white&#39;), legend.text.align = 0, legend.box = &quot;horizontal&quot;,legend.spacing.x = unit(0.25, &#39;cm&#39;))</code></pre>
+<p><img src="CSULB_Teaching_Talk_Replication_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
+<p>As the waffle plot above shows, we now have a bias sample of voter turnout with respect to the total population of voters. As one can see (and reflecting the inherently superior political resources garnered by those in the Lutes faction!) 300 of the voters (75%) that showed up are members of the Lutes faction while only 100 of the voters (25%) are members of the Loggers faction. Since there is something systematicly different in the probability of paying the cost to vote between Lutes and Loggers (with Lutes having higher resources to pay these costs!), Lutes are far more likely to vote (50%, to be precise) and will vote for a representative of their faction. Now, why might this be a problem? Let’s assume that Lutes follow the <strong>Michigan Model</strong> of electoral choice and vote in accordance to their partisan group identity. Naturally, they choose a fellow Lute to represent them and this Lute legislator, acting on the inherent incentives in the representative model of delegation (i.e., Madison’s Theory of the Republic), will vote consistently and 100% in accordance to their principal. In this case, the voters that sent him or her to Capitol Hill, and ultimately who’s vote will be critical for hopes of re-election, are the electoral <strong>principals</strong>. By contrast, how did Madison envision legislative representative outcomes to look like according to his <strong><em>Theory of the Republic</em></strong>? To shed light on this question, we turn to the specification of his theoritical model in graphical form below.</p>
+<pre class="r"><code>###### Figure 15: Model of Madisonian Turnout ##########
+
+madison &lt;- data.frame(district=seq(-1,1,0.01),member=seq(-1,1,0.01))
+
+ggplot(madison,aes(x=district,y=member)) + geom_line(size=2) + scale_x_continuous(&quot;District Ideology&quot;,limits=c(-1,1),breaks=c(-1,0,1),labels=c(&quot;-1 \nConservative&quot;,&quot;0&quot;,&quot;1 \nLiberal&quot;)) + scale_y_continuous(&quot;Representative Ideology&quot;,limits=c(-1,1),breaks=c(-1,0,1),labels=c(&quot;-1 \nConservative&quot;,&quot;0&quot;,&quot;1 \nLiberal&quot;)) + ggtitle(&quot;Madisonian Model of Congressional Representation&quot;)</code></pre>
+<p><img src="CSULB_Teaching_Talk_Replication_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
+<p>Madison would envision electoral outcomes to follow a perfect one to one relationship between district ideological policy preferences and that of their legislator. Given that voters are tasked with the <strong>paramount</strong> duty to screen and hold their incumbent legislators accountable, voters will simply toss incumbents out of office that do not reflect aggregate district opinion of the majority of the population/voters. Compounding this dynamic of <strong><em>electoral accountability</em></strong> is the fact that non-incumbent challenger candidates have a strong incentive to be responsive to the concerns of the majority of citizens on the campaign trail and to pick apart an incumbent’s voting record on Capitol Hill. After all, being a member of Congress or a United States Senator is a phenomenal job with incredible related perks! Now, is Madison’s model relaized in electoral outcomes for the U.S. House or U.S. Senate? To do this, I turn to the last set of figures below showing the relationship between district ideological preferences and legislator ideological preferences by political party and legislative chamber. Please note that I use a fancy Aldrich-McKelvey latent variable scaling model to estimate citizen and elite (legislator) preferences on the same scale. For more information on this methodology and its application to assessing critical questions regarding the institutional representation provided to the American mass public by legislative elites, please see <a href="https://www.journals.uchicago.edu/doi/abs/10.1086/683395">Ramey 2015</a> and <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12151">Hare et al. 2014</a>.</p>
+<pre class="r"><code>###### Figure 15 &amp; 16: Congruence Between District &amp; Legislator Ideology ##########
+
+# Legislative Representation
+
+ggplot(senate_spatial_errors_dataset,aes(x=linmap_idealpts_median_voter,y=senator_idealpt_linmap,label=party_code_string,colour=party_code_string)) + geom_text(aes(label=party_code_string),size = 3, alpha = 1, hjust=-0.2, vjust=0) + scale_color_manual(&quot;&quot;,values=c(&quot;blue&quot;,&quot;red&quot;)) + scale_y_continuous(&quot;Legislator Ideal Point (Liberal-Conservative)&quot;,limits=c(-1,1)) + facet_wrap(~congress) + geom_smooth(method = &quot;loess&quot;, se = T, color=&quot;black&quot;,aes(x=linmap_idealpts_median_voter,y=senator_idealpt_linmap),inherit.aes = F) + theme_bw() + theme(legend.position=&quot;none&quot;) + scale_x_continuous(&quot;State Median Voter Ideal Point (Liberal-Conservative)&quot;) + labs(title=&quot;Legislative Representation in the U.S. Senate, 2008-2017&quot;,caption=&quot;Data: Scaled Ideal Points (Algara &amp; Hale 2019)&quot;)</code></pre>
+<p><img src="CSULB_Teaching_Talk_Replication_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
+<pre class="r"><code>ggplot(house_spatial_errors_dataset,aes(x=linmap_idealpts_median_voter,y=mc_idealpt_linmap,label=party_code_string,colour=party_code_string)) + geom_text(aes(label=party_code_string),size = 3, alpha = 1, hjust=-0.2, vjust=0) + scale_color_manual(&quot;&quot;,values=c(&quot;blue&quot;,&quot;red&quot;)) + scale_y_continuous(&quot;Legislator Ideal Point (Liberal-Conservative)&quot;,limits=c(-1,1)) + facet_wrap(~congress) + geom_smooth(method = &quot;loess&quot;, se = T, color=&quot;black&quot;,aes(x=linmap_idealpts_median_voter,y=mc_idealpt_linmap),inherit.aes = F) + theme_bw() + theme(legend.position=&quot;none&quot;) + scale_x_continuous(&quot;District Median Voter Ideal Point (Liberal-Conservative)&quot;) + labs(title=&quot;Legislative Representation in the U.S. House, 2008-2017&quot;,caption=&quot;Data: Scaled Ideal Points (Algara &amp; Hale 2019)&quot;)</code></pre>
+<p><img src="CSULB_Teaching_Talk_Replication_files/figure-html/unnamed-chunk-18-2.png" width="672" /></p>
+<p>As one can clearly see, there is strong evidence of a lack of congruence between constituent ideological preferences and those of their elected legislators in the U.S. House and U.S. Senate. There is also clear evidence of <em>leap-frog</em> representation found by <a href="https://www.jstor.org/stable/40863767">Bafumi &amp; Herron 2010</a>. Given the little within-party variation of ideological positions within the Democratic and Republican parties in Congress, the ideological <em>flavor</em> of your elected Democrat or Republican in Congress will be <strong><em>very</em></strong> similar independent of the type of district they represent. For example, the ideological representation provided by a Democratic (Republican) Senator or member of Congress will be essentially the same degree of policy liberal (conservative) if they represent the liberal state of California or the conservative state of Arkansas. Moreover, in the event of a seat turnover in Congress, a relatively conservative Republican will be replaced by a relatively liberal Democrat, providing for ``leap-frog’’ representation and a lack of a significant moderate contingent of legislators. In sum, Madison’s model is not realized in contemporary Congressional election outcomes. If I had the opportunity to teach an entire course of legislative representation, the U.S. Congress, or American political behavior; we would spend much of our time assessing the factors of influencing change in Congressional representation over time and the factors motivating how citizens think of institutional representation and how this influences, ultimately, their electoral behavior in holding elites accountable for what they do in office!</p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
