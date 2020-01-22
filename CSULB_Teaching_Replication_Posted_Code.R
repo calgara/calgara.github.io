@@ -1,0 +1,306 @@
+## Prep data (nothing to change here)
+install.packages(ggplot2)
+install.packages(descr)
+install.packages(plyr)
+install.packages(reshape2)
+install.packages(gsheet) # Use the gsheet package to scrape voter turnout data from the Elect Project
+install.packages(effects)
+install.packages(lmtest)
+install.packages(sandwich)
+install.packages(multiwayvcov)
+
+
+# Load Necessary Data for Replication
+
+load("CSULB_Demonstration_Replication.Rdata") # All you have to do here is load the data from a file director. For example, if I had the Rdata file on my desktop, (like here in the example), the pathway for Mac is as follows.
+
+########## Figure 1: Is Madison Correct? Variation in Voter Participation over Time ########## 
+
+turnout <- gsheet2tbl('https://docs.google.com/spreadsheets/d/1bH38j6_e8yA9xq8OMlyLOL6h_iTS7ABQMKNxzFgKBDo/edit?usp=sharing') #Scrape data from Florida's ElectProject from 1789-2018
+
+# Clean-up data
+pres_turnout <- turnout[,1:2]
+midterm_turnout <- turnout[,3:4]
+colnames(pres_turnout) <- c("year","vep_turnout_rate")
+colnames(midterm_turnout) <- c("year","vep_turnout_rate")
+pres_turnout$election <- "Presidential Election"
+midterm_turnout$election <- "Midterm Election"
+turnout <- rbind(pres_turnout,midterm_turnout)
+
+turnout$vep_turnout_rate <- as.numeric(turnout$vep_turnout_rate)
+turnout$election <- factor(turnout$election,levels=c("Presidential Election","Midterm Election"))
+
+head(turnout)
+
+# One lowess regression line per election type (presidential/midterm)
+ggplot(subset(turnout,turnout$year >= 1866), aes(x=year,y=vep_turnout_rate, shape=election,colour=election)) + geom_point() + scale_shape_manual("",values=c(16,18)) + scale_colour_manual("",values=c("cyan3","firebrick3")) + theme_bw() + theme(legend.position=c(0.875, 0.85), legend.key.size = unit(0.9,"line"), legend.key = element_blank()) + scale_y_continuous(limits=c(30,90),breaks=seq(30,90,10),labels=c("30%","40%","50%","60%","70%","80%","90%"), "Eligible Voter Turnout Rate") + scale_x_continuous(breaks=seq(1866,2016,10), "") + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + geom_smooth(method = "loess", se=FALSE, size = 0.65) + labs(title="National Voter-Turnout in Presidential & Midterm Elections in the United States, 1866-2018",subtitle ="Data: United States Election Project at the University of Florida") + annotate(geom = "text", x = 1918, y = 80, label = "Women's Suffrage", color = "blue", angle = 90, size = 3.5) + geom_vline(xintercept=1920,linetype = "dashed",color="gray") + annotate(geom = "text", x = 1868, y = 40, label = "15th Amendment", color = "blue", angle = 90, size = 3.5) + geom_vline(xintercept=1870,linetype = "dashed",color="gray") + annotate(geom = "text", x = 1958, y = 80, label = "DC Suffrage", color = "blue", angle = 90, size = 3.5) + geom_vline(xintercept=1960,linetype = "dashed",color="gray") + annotate(geom = "text", x = 1963, y = 80, label = "Voting Rights Act", color = "blue", angle = 90, size = 3.5) + geom_vline(xintercept=1965,linetype = "dashed",color="gray") + annotate(geom = "text", x = 1969, y = 80, label = "Lowering Voting Age", color = "blue", angle = 90, size = 3.5) + geom_vline(xintercept=1971,linetype = "dashed",color="gray") + geom_line()
+
+########## Figure 2: Variation in Other Forms of Participation? ########## 
+
+# Variation in political participation
+
+participation <- subset(cces_2016,select=c(commonweight_post,CC16_300d_5,CC16_316,CC16_327,CC16_404,CC16_417a_1,CC16_417a_2,CC16_417a_3,CC16_417a_4,CC16_418a))
+colnames(participation) <- c("weight","social_media","pres_vote_12","pres_primary_vote","voting_time","attend_polmeetings","yard_sign","volunteer_campaign","donate_money","run_for_office")
+
+participation[] <- lapply(participation, as.character)
+participation[participation == "Yes"] <- 1
+participation[participation == "No"] <- 0
+participation[participation == "Yes, I definitely voted."] <- 1
+participation[participation == "I usually vote but did not vote in 2012"] <- 0
+participation[participation == "I am not sure"] <- 0
+
+participation[participation == "No, didn’t vote in a primary or caucus"] <- 0
+participation[participation == "Yes, voted in a primary or caucus"] <- 1
+
+participation$voting_time[participation$voting_time == "Don't know"] <- NA
+participation$voting_time[participation$voting_time == "Not at all"] <- 0
+participation$voting_time[participation$voting_time == "Less than 10 minutes"] <- 1
+participation$voting_time[participation$voting_time == "10 - 30 minutes"] <- 2
+participation$voting_time[participation$voting_time == "31 minutes - 1 hour"] <- 3
+participation$voting_time[participation$voting_time == "More than 1 hour"] <- 4
+
+participation[] <- lapply(participation, as.numeric)
+library(descr)
+
+frequencies <- list()
+for(i in 2:ncol(participation)){
+  x <- data.frame(freq(participation[,i],w=participation$weight,plot=F))
+  x$category <- rownames(x)
+  x <- x[,3:4]
+  x <- subset(x,x$category != "Total")
+  x <- subset(x,x$category != "NA's")
+  x$activity <- colnames(participation)[[i]]
+  frequencies[[i]] <- x
+}
+library(plyr)
+frequencies <- ldply(frequencies, data.frame)
+
+frequencies$category[frequencies$activity != "voting_time" & frequencies$category == 1] <- "Yes"
+frequencies$category[frequencies$activity != "voting_time" & frequencies$category == 0] <- "No"
+frequencies$category[frequencies$activity == "voting_time" & frequencies$category == 0] <- "0 \nNo Wait"
+frequencies$category[frequencies$activity == "voting_time" & frequencies$category == 4] <- "4 \n>1 Hour"
+
+frequencies$activity[frequencies$activity == "attend_polmeetings"] <- "Attend local political meetings?"
+frequencies$activity[frequencies$activity == "donate_money"] <- "Donate money to a candidate, campaign, \nor political organization?"
+frequencies$activity[frequencies$activity == "pres_primary_vote"] <- "Voted in the 2012 Presidential Primaries?"
+frequencies$activity[frequencies$activity == "run_for_office"] <- "Ever run for elective office?"
+frequencies$activity[frequencies$activity == "social_media"] <- "Forwarded a story, photo, video or link \nabout politics to friends?"
+frequencies$activity[frequencies$activity == "volunteer_campaign"] <- "Work for a candidate or campaign?"
+frequencies$activity[frequencies$activity == "yard_sign"] <- "Put up a political sign?"
+frequencies$activity[frequencies$activity == "pres_vote_12"] <- "Voted in the 2012 Presidential Election?"
+frequencies$activity[frequencies$activity == "voting_time"] <- "Time took to vote"
+
+frequencies$Valid.Percent <- round(frequencies$Valid.Percent,1)
+
+ggplot(frequencies, aes(x=category,y=Valid.Percent)) + theme_bw() + geom_bar(stat="identity") + theme_bw()  + facet_wrap(~activity, ncol = 3, scales = "free") + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + ggtitle("Variation in Different Activities of Political Participation, 2016 Cooperative Congressional Election Study") + scale_y_continuous("Weighted Percentage") + scale_x_discrete("") + geom_text(aes(y = Valid.Percent + 5, label = paste0(Valid.Percent, '%')), position = position_dodge(width = .9),size = 3.5)
+
+########## Figure 3 & 4: Low political sophistication ########## 
+
+# Correct Recall of Offices: Biden (V162072), Ryan (V162073a), John Roberts (V162076b), House Majority (V161515), Senate Majority (V161516)
+
+recall <- subset(nes,select=c(V160102,V162072,V162073a,V162076b,V161515,V161516,V162074a,V162075a,V161270,V161361x))
+colnames(recall) <- c("weight","biden","ryan","roberts","housemaj","senmaj","merkel","putin","educ","income")
+recall$housemaj[recall$housemaj %in% 1] <- 0
+recall$housemaj[recall$housemaj %in% 2] <- 1 
+recall$senmaj[recall$senmaj %in% 1] <- 0
+recall$senmaj[recall$senmaj %in% 2] <- 1
+x <- c(-7,-6,-5,-9)
+recall[recall == -9] <- NA
+recall[recall == -5] <- NA
+recall[recall == -6] <- NA
+recall[recall == -7] <- NA
+
+freq(recall$merkel,w=recall$weight)
+
+recall2 <- recall[,1:8]
+frequencies <- list()
+for(i in 2:ncol(recall2)){
+  x <- data.frame(freq(recall2[,i],w=recall2$weight))
+  x$category <- rownames(x)
+  x <- x[,3:4]
+  x <- subset(x,x$category != "Total")
+  x <- subset(x,x$category != "NA's")
+  x$activity <- colnames(recall2)[[i]]
+  frequencies[[i]] <- x
+}
+frequencies <- ldply(frequencies, data.frame)
+
+frequencies$category <- ifelse(frequencies$category == 1, "Correct Answer", ifelse(frequencies$category == 0, "Incorrect Answer", NA))
+
+frequencies$activity <- ifelse(frequencies$activity == "biden", "Vice President Joe Biden", ifelse(frequencies$activity == "housemaj", "House Republican Majority", ifelse(frequencies$activity == "merkel", "German Chancellor Angela Merkel", ifelse(frequencies$activity == "putin", "Russian President Vladimir Putin", ifelse(frequencies$activity == "roberts", "SCOTUS Chief Justice John Roberts", ifelse(frequencies$activity == "senmaj", "Senate Republican Majority", ifelse(frequencies$activity == "ryan", "Speaker Paul Ryan", NA))))))) 
+
+frequencies$Valid.Percent <- round(frequencies$Valid.Percent,1)
+
+ggplot(frequencies, aes(x=category,y=Valid.Percent)) + theme_bw() + geom_bar(stat="identity") + theme_bw()  + facet_wrap(~activity, ncol = 4) + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + labs(title="Variation in Citizen Response to Office Recall Battery",subtitle="Data: 2016 American National Election Study") + scale_y_continuous("Weighted Percentage") + scale_x_discrete("")  + geom_text(aes(y = Valid.Percent + 5, label = paste0(Valid.Percent, '%')), position = position_dodge(width = .9),size = 3.5)
+
+recall2$total_scale <- rowSums(recall2[,2:8],na.rm=T)
+x <- data.frame(freq(recall2$total_scale,w=recall2$weight))
+x$category <- rownames(x)
+x <- x[,2:3]
+x <- subset(x,x$category != "Total")
+x <- subset(x,x$category != "NA's")
+x$activity <- "Number of Correct Reponses"
+
+x$Percent <- round(x$Percent,1)
+ggplot(x, aes(x=category,y=Percent)) + theme_bw() + geom_bar(stat="identity") + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + labs(title="Total Number of Correct Responses to Office Recall Battery", subtitle="2016 American National Election Study") + scale_y_continuous("Weighted Percentage") + geom_text(aes(y = Percent + 0.50, label = paste0(Percent, '%')), position = position_dodge(width = .9),size = 3.5) + scale_x_discrete("Total Number of Correct Responses to Political Knowledge Questions")
+
+###### Figure 5: Mondak Data Visizualtion (manual imputation given data in tabular form in AJPS article) ##########
+
+mondak <- data.frame(Valid.Percent=c(69.9,61.5,68.6,67.8,45.4,43.6,77.1,76.4,43.6),activity=c("Who decides if a law is constitutional? \nCongress or SCOTUS?","Who nominates federal judges? \nPOTUS, SCOTUS, or Congress?","How much of a majority to override veto in \nthe House/Senate? 1/2,2/3, or 3/4?","What is the main duty of Congress? Write legislation, \nadminister POTUS policies, monitor states?","How long is a U.S. Senator term? 2,4,or 6 years?","How long is a U.S. Rep term? 2, 4, or 6 years?","If both chambers pass different bills, what happens? \nPOTUS chooses, SCOTUS reviews, \nor compromise?","Where does most work in Congress take place? \nFloor, Committee, or Filibuster?","Who breaks a tie in the Senate? \nPOTUS, VP, or House Speaker?"))
+
+mondak2 <- mondak
+
+mondak$category <- "Yes"
+mondak2$category <- "No"
+
+mondak2$Valid.Percent <- 100- mondak2$Valid.Percent
+
+mondak <- rbind(mondak,mondak2)
+
+ggplot(mondak, aes(x=category,y=Valid.Percent)) + theme_bw() + geom_bar(stat="identity") + theme_bw()  + facet_wrap(~activity, ncol = 3) + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + ggtitle("Variation in Knowledge about Congress, 2002 ADS Survey") + scale_y_continuous("Weighted Percentage",limits=c(0,90)) + scale_x_discrete("") + geom_text(aes(y = Valid.Percent + 5, label = paste0(Valid.Percent, '%')))
+
+###### Figure 6: Correct Office Recall as Political Sophistication ##########
+
+# Correct Office Recalls
+
+x <- subset(cces,select=c(year,weight,correct_senator1_recall,correct_senator2_recall,correct_mc_recall_knowledge))
+x <- na.omit(x)
+x <- ddply(x, .(year), summarize, correct_senator1_recall=weighted.mean(correct_senator1_recall,w=weight),correct_senator2_recall=weighted.mean(correct_senator2_recall,w=weight),correct_mc_recall_knowledge=weighted.mean(correct_mc_recall_knowledge,w=weight))
+x <- melt(x,id="year")
+
+x1 <- subset(cces_2016_2017_2018,cces_2016_2017_2018$year %in% c(2017,2018),select=c(year,weight,correct_sen1_recall,correct_sen2_recall,correct_mc_recall))
+x1 <- na.omit(x1)
+x1 <- ddply(x1, .(year), summarize, correct_senator1_recall=weighted.mean(correct_sen1_recall,w=weight),correct_senator2_recall=weighted.mean(correct_sen2_recall,w=weight),correct_mc_recall_knowledge=weighted.mean(correct_mc_recall,w=weight))
+x1 <- melt(x1,id="year")
+
+x <- rbind(x,x1)
+
+x$variable <- ifelse(x$variable == "correct_senator1_recall","Sr. Senator",ifelse(x$variable == "correct_senator2_recall","Jr. Senator",ifelse(x$variable == "correct_mc_recall_knowledge","U.S. Rep.",NA)))
+x$value <- x$value * 100
+x$year <- as.numeric(x$year)
+
+ggplot(x,aes(x=year,y=value,group=variable,color=variable,label=paste(round(x$value,0),"%",sep=""))) + geom_line() + theme_bw() + geom_label() + theme(legend.position="none") + annotate("text", x = 2008, y = 60.5, label = "U.S. \nRep",color="dodgerblue2") + annotate("text", x = 2008, y = 67, label = "Sr. U.S. \nSenator",color="red") + scale_color_manual("",values=c("grey47","red","dodgerblue2")) +  annotate("text", x = 2008, y = 64, label = "Jr. U.S. \nSenator",color="grey47") + scale_x_continuous("Data: Cooperative Congressional Election Study, 2008-2016",breaks=seq(2008,2018,1)) + scale_y_continuous("Percentage of Constituents Correctly Identifying") + ggtitle("Variation in the Ability of Citizens to Recall Congressional Delegation, 2008-2018 CCES")
+
+###### Figure 7: Effect of Education on Political Knowledge ##########
+
+recall$knowledge_scale <- rowSums(recall[,c(2:8)])
+
+recall$educ[recall$educ %in% seq(1,8,1)] <- 1 # > HS
+recall$educ[recall$educ %in% 9] <- 2 # HS
+recall$educ[recall$educ %in% 10] <- 3 # Some college
+recall$educ[recall$educ %in% seq(11,12,1)] <- 4 # 2-yr college
+recall$educ[recall$educ %in% 13] <- 5 # BA
+recall$educ[recall$educ %in% seq(14,16,1)] <- 6 #Post-BA
+recall$educ[recall$educ %in% 90] <- 2
+recall$educ[recall$educ %in% 95] <- 2
+recall$educ <- factor(recall$educ)
+
+model <- lm(knowledge_scale~educ,data=recall,weights = weight)
+coeftest(model, vcov = vcovHC(model, "HC0"))
+predict <- data.frame(effect("educ", se=TRUE, mod = model, confidence.level = 0.95, xlevels=list(educ=seq(1,6,1),vcov. = vcovHC(model, "HC0"))))
+
+ggplot(data= predict, mapping=aes(x=educ, y=fit,ymin=lower,ymax=upper,label=round(predict$fit,1))) + geom_errorbar(width=0.2,size=1) + geom_point(size=4, shape=21, fill="white") + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + scale_x_discrete("Voter Education Level",labels=c("> HS", "HS","Some \nCollege","2-Yr \nCollege","BA","Post-Grad")) + scale_y_continuous("Estimated Political Knowledge",breaks=seq(0,6,0.5)) + labs(title="Effect of Education on Citizen Political Knowledge",subtitle="Data: 2016 American National Election Study") + geom_text(size=3.5,hjust =0,nudge_x = 0.175)
+
+###### Figure 8: Effect of Income on Political Knowledge ##########
+
+model <- lm(knowledge_scale~income,data=recall,weights = weight)
+coeftest(model, vcov = vcovHC(model, "HC0"))
+predict <- data.frame(effect("income", se=TRUE, mod = model, confidence.level = 0.95, xlevels=list(income=seq(1,28,1),vcov. = vcovHC(model, "HC0"))))
+
+ggplot(data= predict, mapping=aes(x=income, y=fit)) + geom_line(aes(x = income, y = fit), size = 0.50) + geom_ribbon(aes(ymin=lower, ymax=upper), alpha = .2) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + scale_x_continuous("Voter Income Level",limits=c(1,28),breaks=c(1,28),labels=c("< $5,000","> $250,000")) + scale_y_continuous("Estimaed Political Knowledge") + labs(title="Effect of Income on Citizen Political Knowledge", subtitle="Data: 2016 American National Election Study")
+
+###### Figure 9: Effect of Education on Political Participation (Turnout) ##########
+# Role of resources in predicting campaign contributions & voting. This section articulates the resource bias in participation & voting
+
+resources <- subset(cces_2016_2017_2018,cces_2016_2017_2018$year %in% c(2016,2018),select=c(year,weight,district,general_elex_turnout,contribute_money,income_clean,education_clean,white_respondent))
+resources$year <- factor(resources$year)
+
+# Turnout ~ Education
+
+model <- glm(general_elex_turnout ~ education_clean*year, data=resources, weights=weight, family = binomial(link = "logit"))
+coeftest(model, vcov = cluster.vcov(model, cluster=resources$district))
+predict <- data.frame(effect("education_clean*year", se=TRUE, mod = model, confidence.level = 0.95, xlevels=list(year=c(2016,2018),vcov. = cluster.vcov(model, cluster=resources$district))))
+
+predict$education <- factor(predict$education_clean,labels=c("No HS","High school","Some college","2-year","4-year","Post-grad"),levels=seq(0,5,1))
+predict$year <- factor(predict$year,labels=c("2016 Presidential Election","2018 Midterm Election"))
+
+ggplot(data= predict, mapping=aes(x=education, y=fit, ymin=lower, ymax=upper, fill=education,label=paste((round(predict$fit,2) * 100),"%",sep=""))) + geom_bar(stat="identity") + geom_errorbar(width=.25) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + scale_x_discrete("Voter Education Level") + scale_y_continuous(limits=c(0,1.0), breaks=seq(0,1.0,0.05), "Probability of Turning Out to Vote") + labs(title="Probability of Voter Turnout by Education Level in the 2016 & 2018 Elections",caption="Data: 2016 & 2018 Cooperative Congressional Election Study Voter-Validated Study") + coord_cartesian(ylim=c(0.05,0.75)) + scale_fill_discrete(guide=FALSE) + geom_label(size=3.5,nudge_y = 0.05) + facet_wrap(~year)
+
+###### Figure 10: Effect of Education on Political Participation (Campaign Donor) ##########
+
+# Contribution ~ Education
+
+model <- glm(contribute_money ~ education_clean*year, data=resources, weights=weight, family = binomial(link = "logit"))
+coeftest(model, vcov = cluster.vcov(model, cluster=resources$district))
+predict <- data.frame(effect("education_clean*year", se=TRUE, mod = model, confidence.level = 0.95, xlevels=list(year=c(2016,2018),vcov. = cluster.vcov(model, cluster=resources$district))))
+
+predict$education <- factor(predict$education_clean,labels=c("No HS","High school","Some college","2-year","4-year","Post-grad"),levels=seq(0,5,1))
+predict$year <- factor(predict$year,labels=c("2016 Presidential Election","2018 Midterm Election"))
+
+ggplot(data= predict, mapping=aes(x=education, y=fit, ymin=lower, ymax=upper, fill=education,label=paste((round(predict$fit,2) * 100),"%",sep=""))) + geom_bar(stat="identity") + geom_errorbar(width=.25) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + scale_x_discrete("Voter Education Level") + scale_y_continuous(limits=c(0,1.0), breaks=seq(0.05,0.40,0.05), expand=c(0,0), "Probability of Contributing to a Campaign") + labs(title="Probability of Being a Campaign Donor by Education Level in the 2016 & 2018 Elections",caption="Data: 2016 & 2018 Cooperative Congressional Election Study Voter-Validated Study") + coord_cartesian(ylim=c(0,0.45)) + scale_fill_discrete(guide=FALSE) + geom_label(size=3.5,nudge_y = 0.05) + facet_wrap(~year) 
+
+###### Figure 11: Effect of Income on Political Participation (Voter Turnout) ##########
+
+model <- glm(general_elex_turnout ~ income_clean*year, data=resources, weights=weight, family = binomial(link = "logit"))
+coeftest(model, vcov = cluster.vcov(model, cluster=resources$district))
+predict <- data.frame(effect("income_clean*year", se=TRUE, mod = model, confidence.level = 0.95, xlevels=list(income_clean = seq(0,15,1), year=c(2016,2018), (vcov. = cluster.vcov(model, cluster=resources$district)))))
+predict$year <- factor(predict$year,labels=c("2016 Presidential Election","2018 Midterm Election"))
+
+ggplot(data= predict, mapping=aes(x=income_clean, y=fit)) + geom_line(aes(x = income_clean, y = fit), size = 0.50) + geom_ribbon(aes(ymin=lower, ymax=upper), alpha = .2) + scale_colour_manual("",values="black") + scale_fill_manual("",values="grey12") + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + scale_x_continuous(limits=c(0,15), breaks=c(0,15), labels=c("< $10,000", "> $500K"), "Voter Income") + scale_y_continuous(limits=c(0.3,0.80), breaks=seq(0.3,0.80,0.05), "Probability of Turning Out to Vote") + labs(title="Probability of Voter Turnout by Income Level in the 2016 & 2018 Elections",caption="Data: 2016 & 2018 Cooperative Congressional Election Study Voter-Validated Study") + facet_wrap(~year,ncol=2) + theme(panel.spacing = unit(2, "lines"))
+
+###### Figure 12: Effect of Income on Political Participation (Turnout) ##########
+
+# Contribution ~ Income
+
+model <- glm(contribute_money ~ income_clean*year, data=resources, weights=weight, family = binomial(link = "logit"))
+coeftest(model, vcov = cluster.vcov(model, cluster=resources$cdid))
+predict <- data.frame(effect("income_clean*year", se=TRUE, mod = model, confidence.level = 0.95, xlevels=list(income_clean = seq(0,15,1), year=c(2016,2018), (vcov. = cluster.vcov(model, cluster=resources$district)))))
+predict$year <- factor(predict$year,labels=c("2016 Presidential Election","2018 Midterm Election"))
+
+ggplot(data= predict, mapping=aes(x=income_clean, y=fit)) + geom_line(aes(x = income_clean, y = fit), size = 0.50) + geom_ribbon(aes(ymin=lower, ymax=upper), alpha = .2) + scale_colour_manual("",values="black") + scale_fill_manual("",values="grey12") + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + scale_x_continuous(limits=c(0,15), breaks=c(0,15), labels=c("< $10,000", "> $500K"), "Voter Income") + scale_y_continuous(limits=c(0,0.50), breaks=seq(0,0.50,0.05), "Probability of Political Contribution") + labs(title="Probability of Being a Campaign Donor by Income Level in the 2016 & 2018 Elections",caption="Data: 2016 & 2018 Cooperative Congressional Election Study Voter-Validated Study") + facet_wrap(~year,ncol=2) + theme(panel.spacing = unit(2, "lines"))
+
+###### Figure 13: Waffle Chart of Fictional District ##########
+
+# Waffle Chart of Fictional District
+
+var <- c("49ers","Titans")
+nrows <- 20
+df <- expand.grid(y = 1:nrows, x = 1:nrows)
+categ_table <- round(table(var) * ((nrows*nrows)/(length(var))))
+categ_table
+
+df$category <- factor(rep(names(categ_table), categ_table))  
+
+ggplot(df, aes(x = x, y = y, fill = category)) + geom_tile(color = "black", size = 0.5) + scale_x_continuous(expand = c(0, 0)) + scale_y_continuous(expand = c(0, 0), trans = 'reverse') + scale_fill_manual("",values = c("gold","blue2")) + labs(title="Fictional Even District of 49ers & Titans", caption="Each Square Represents a Single Voter \n(N = 200 The Beach & 200 Fullerton)") + theme(plot.title = element_text(size = rel(1.2)),axis.text = element_blank(), axis.title = element_blank(), axis.ticks = element_blank(),legend.title = element_blank(), legend.position = "bottom",legend.box.just = "left", legend.key.size = unit(1,"line"), legend.key = element_rect(size = 0, color = 'white'), legend.text.align = 0, legend.box = "horizontal",legend.spacing.x = unit(0.25, 'cm'))
+
+###### Figure 14: Waffle Chart of Non-Bias Turnout ##########
+
+# Even turnout
+
+df$turnout <- sample(0:400, 400, replace=F)
+df$turnout <- ifelse(df$turnout <= 200, 1,0)
+df$turnout_factor <- factor(df$turnout,levels=c(1,0),labels=c("49ers","Titans"))
+
+ggplot(df, aes(x = x, y = y, fill = turnout_factor)) + geom_tile(color = "black", size = 0.5) + scale_x_continuous(expand = c(0, 0)) + scale_y_continuous(expand = c(0, 0), trans = 'reverse') + scale_fill_manual("",values = c("gold","blue2")) + labs(title="Non-Bias Turnout in Fictional Even District of 49ers & Titans", caption="Each Square Represents a Single Voter \n(N = 200 The Beach & 200 Fullerton voters)") + theme(plot.title = element_text(size = rel(1.2)),axis.text = element_blank(), axis.title = element_blank(), axis.ticks = element_blank(),legend.title = element_blank(), legend.position = "bottom",legend.box.just = "left", legend.key.size = unit(1,"line"), legend.key = element_rect(size = 0, color = 'white'), legend.text.align = 0, legend.box = "horizontal",legend.spacing.x = unit(0.25, 'cm'))
+
+###### Figure 14: Waffle Chart of Bias Turnout ##########
+
+df$bias2 <- sample(0:400, 400, replace=F)
+df$bias2 <- ifelse(df$bias2 <= 100,0,1)
+df$bias2 <- factor(df$bias2,levels=c(1,0),labels=c("49ers","Titans"))
+
+ggplot(df, aes(x = x, y = y, fill = bias2)) + geom_tile(color = "black", size = 0.5) + scale_x_continuous(expand = c(0, 0)) + scale_y_continuous(expand = c(0, 0), trans = 'reverse') + scale_fill_manual("",values = c("gold","blue2")) + labs(title="Bias Turnout in Fictional Even District of 49ers & Titans", caption="Each Square Represents a Single Voter \n(N = 300 (75%) The Beach & 100 (25%) Titans voters)") + theme(plot.title = element_text(size = rel(1.2)),axis.text = element_blank(), axis.title = element_blank(), axis.ticks = element_blank(),legend.title = element_blank(), legend.position = "bottom",legend.box.just = "left", legend.key.size = unit(1,"line"), legend.key = element_rect(size = 0, color = 'white'), legend.text.align = 0, legend.box = "horizontal",legend.spacing.x = unit(0.25, 'cm'))
+
+###### Figure 15: Model of Madisonian Turnout ##########
+
+madison <- data.frame(district=seq(-1,1,0.01),member=seq(-1,1,0.01))
+
+ggplot(madison,aes(x=district,y=member)) + geom_line(size=2) + scale_x_continuous("District Ideology",limits=c(-1,1),breaks=c(-1,0,1),labels=c("-1 \nConservative","0","1 \nLiberal")) + scale_y_continuous("Representative Ideology",limits=c(-1,1),breaks=c(-1,0,1),labels=c("-1 \nConservative","0","1 \nLiberal")) + ggtitle("Madisonian Model of Congressional Representation")
+
+###### Figure 15 & 16: Congruence Between District & Legislator Ideology ##########
+
+# Legislative Representation
+
+ggplot(senate_spatial_errors_dataset,aes(x=linmap_idealpts_median_voter,y=senator_idealpt_linmap,label=party_code_string,colour=party_code_string)) + geom_text(aes(label=party_code_string),size = 3, alpha = 1, hjust=-0.2, vjust=0) + scale_color_manual("",values=c("blue","red")) + scale_y_continuous("Legislator Ideal Point (Liberal-Conservative)",limits=c(-1,1)) + facet_wrap(~congress) + geom_smooth(method = "loess", se = T, color="black",aes(x=linmap_idealpts_median_voter,y=senator_idealpt_linmap),inherit.aes = F) + theme_bw() + theme(legend.position="none") + scale_x_continuous("State Median Voter Ideal Point (Liberal-Conservative)") + labs(title="Legislative Representation in the U.S. Senate, 2008-2017",caption="Data: Scaled Ideal Points (Algara & Hale 2019)")
+
+ggplot(house_spatial_errors_dataset,aes(x=linmap_idealpts_median_voter,y=mc_idealpt_linmap,label=party_code_string,colour=party_code_string)) + geom_text(aes(label=party_code_string),size = 3, alpha = 1, hjust=-0.2, vjust=0) + scale_color_manual("",values=c("blue","red")) + scale_y_continuous("Legislator Ideal Point (Liberal-Conservative)",limits=c(-1,1)) + facet_wrap(~congress) + geom_smooth(method = "loess", se = T, color="black",aes(x=linmap_idealpts_median_voter,y=mc_idealpt_linmap),inherit.aes = F) + theme_bw() + theme(legend.position="none") + scale_x_continuous("District Median Voter Ideal Point (Liberal-Conservative)") + labs(title="Legislative Representation in the U.S. House, 2008-2017",caption="Data: Scaled Ideal Points (Algara & Hale 2019)")

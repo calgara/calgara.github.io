@@ -39,7 +39,7 @@ load("/Users/carlosalgara/Desktop/carlos_school/PhD_UC Davis/Academic Job Market
 ```
 To replicate the following tutorial, you can find the following replication materials here: 
 
-* ***[R Code Script](CSULB_Replication_Analysis_Posted.R)*** 
+* ***[R Code Script](CSULB_Teaching_Replication_Posted_Code.R)*** 
 
 * ***[Tutorial Data in R Environment form](CSULB_Demonstration_Replication.Rdata)***
 
