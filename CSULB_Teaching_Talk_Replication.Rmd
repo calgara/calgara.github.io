@@ -3,7 +3,6 @@ title: "CSU-Long Beach Active Teaching Demonstration Replication"
 subtitle: "Data Analysis Replication Assessing Variation in Citizen Participation"
 author: 
 - "[Carlos Algara](mailto:calgara@ucdavis.edu)"
-date: "1/23/2020"
 output: html_document
 ---
 <script>
