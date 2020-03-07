@@ -29,13 +29,14 @@ output:
 </html> 
 
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-100362112-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-  ga('create', 'UA-100362112-1', 'auto');
-  ga('send', 'pageview');
+  gtag('config', 'UA-100362112-1');
 
 </script>
 
@@ -100,6 +101,16 @@ h1.title {
 <br/>
 <br/>
 <center>
+  <div text-align: center; font-size: 85%;'>*Distribution of Ideological Divergence between District & Partisan Medians* <br>
+![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/median_partisan_divergence_by_chamber.png "District-Member Divergence"){ width=50% }
+</center><br/>
+<center> **Legislative Signaling or Random Error? An Analysis of Spatially Incorrect Voting in Congress** </center>
+<center> **with Joe Zamadics, PhD Candidate, University of Colorado, Boulder** </center><br/>
+<center> ***$\star$Manuscirpt Invited to Revise & Resubmit at the Journal of Legislative Studies $\star$[Working Manuscript Draft](Congressional_Incorrect_voting_Algara_Zamadics.pdf) $\star$[Manuscript Data Materials](mailto:calgara@ucdavis.edu)*** </center><br/>
+          *Abstract:* Theoretical and empirical models of congressional voting assumes that legislators vote with the sole purpose to move policy closer to their ideologically ideal point, with the most prominent being the NOMINATE model. While NOMINATE correctly classifies the vast majority of votes cast by members of Congress, a significant number of votes are misclassified and coded as spatial error. The literature on congressional voting assumes this error to be random and idiosyncratic across members. We dispute this conventional notion and argue that spatial error in congressional is not random, but rather systematic across members. We present a theory positing that spatial error is more likely on roll-call votes tackling salient policy issues and among members representing districts with greater ideological divergence between the median voter and the member's primary election constituency. Using Aldrich-McKelvey scaling to place legislators and constituencies in the same ideological common space, we find support for our theory. We attribute this finding to the greater electoral uncertainty faced by ideological moderates and members representing districts with greater ideological divergence between key constituencies. Our findings have implications for the NOMINATE model, the nature of spatial error in legislative voting, and the electoral cross-pressures faced by legislators.  
+<br/>
+<br/>
+<center>
   <div text-align: center; font-size: 10%;'>*Geographic Neighborhood profile for IA-2, 114th Congress & Particularistic Policy Bill Cosponsorship Network, 93rd U.S. Senate*<br>
 <br/>
 ![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/IA_2_map_example_of_main_iv.png "IA-2 Geo Profile"){ width=45% } 
@@ -124,16 +135,6 @@ h1.title {
 <center> **Who Goes Public with Whom? A Network Analysis of U.S. Senate Press Events**  </center><br/>
 <center> ***$\star$Working Manuscript in Preperation $\star$[Working Manuscript Draft](APSA2018_Senate_Collaboration.pdf) $\star$[Manuscript Data Materials](mailto:calgara@ucdavis.edu)*** </center><br/>
           *Abstract:* This paper explores the extent to which shared legislator characteristics--in particular, partisanship, representing the same constituency, and sitting on one or more of the same committees--influence legislators' decisions to collaborate with their colleagues on a given issue.  To do so, we employ network analysis.  Previous studies that have done this have largely focused on bill co-sponsorship and roll-call voting.  We argue that such measures, while informative, do not sufficiently capture the high-profile strategic choices that legislators make, and so instead employ a little-used comprehensive dataset that documents all U.S. Senate press events held between 1979 and 1999, as well as between 2003 and 2009, including all of the particular senators who attended each event.  When we look at senator dyads, we find that shared party is the strongest predictor of whether two senators choose to appear at the same event and this effect increases over the time series.  As to whether shared constituency and committee membership predicts public collaboration, the evidence is more mixed, with the strength of these institutional variables attenuating over time.  Overall, our results mirror the increased levels of partisanship of the contemporary Senate that scholars have arrived at using other measures and demonstrate that such partisanship has largely erased the importance of institutional variables such as shared constituency and shared committee membership.   
-<br/>
-<br/>
-<center>
-  <div text-align: center; font-size: 85%;'>*Distribution of Ideological Divergence between District & Partisan Medians* <br>
-![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/median_partisan_divergence_by_chamber.png "District-Member Divergence"){ width=50% }
-</center><br/>
-<center> **Legislative Signaling or Random Error? An Analysis of Spatially Incorrect Voting in Congress** </center>
-<center> **with Joe Zamadics, PhD Candidate, University of Colorado, Boulder** </center><br/>
-<center> ***$\star$Working Manuscript in Preparation $\star$[Working Manuscript Draft](Congressional_Incorrect_voting_Algara_Zamadics.pdf) $\star$[Manuscript Data Materials](mailto:calgara@ucdavis.edu)*** </center><br/>
-          *Abstract:* Theoretical and empirical models of congressional voting assumes that legislators vote with the sole purpose to move policy closer to their ideologically ideal point, with the most prominent being the NOMINATE model. While NOMINATE correctly classifies the vast majority of votes cast by members of Congress, a significant number of votes are misclassified and coded as spatial error. The literature on congressional voting assumes this error to be random and idiosyncratic across members. We dispute this conventional notion and argue that spatial error in congressional is not random, but rather systematic across members. We present a theory positing that spatial error is more likely on roll-call votes tackling salient policy issues and among members representing districts with greater ideological divergence between the median voter and the member's primary election constituency. Using Aldrich-McKelvey scaling to place legislators and constituencies in the same ideological common space, we find support for our theory. We attribute this finding to the greater electoral uncertainty faced by ideological moderates and members representing districts with greater ideological divergence between key constituencies. Our findings have implications for the NOMINATE model, the nature of spatial error in legislative voting, and the electoral cross-pressures faced by legislators.  
 <br/>
 <br/>
 <center>
