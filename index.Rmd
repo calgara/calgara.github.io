@@ -35,7 +35,6 @@ Please visit my [Research Agenda Statement](Algara_Research_Statement.pdf) for a
   <br/>
   <p>Copyright &copy; 2017 by Carlos Algara. Made with [RStudio](https://www.rstudio.com).</p>
   
-  <script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100362112-1"></script>
 <script>
@@ -44,7 +43,4 @@ Please visit my [Research Agenda Statement](Algara_Research_Statement.pdf) for a
   gtag('js', new Date());
 
   gtag('config', 'UA-100362112-1');
-
-</script>
-
 </script>

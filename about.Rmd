@@ -53,7 +53,6 @@ Davis, CA 95616
 <a href = "https://twitter.com/algaraca"><img src="/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/twitter.png" alt="Twitter Logo" style="width:125px;" align ="left"></a>
 </div>
 
-<script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100362112-1"></script>
 <script>
@@ -62,6 +61,5 @@ Davis, CA 95616
   gtag('js', new Date());
 
   gtag('config', 'UA-100362112-1');
-
 </script>
 

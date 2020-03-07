@@ -6,7 +6,6 @@ author:
 date: "5/25/2018"
 output: html_document
 ---
-<script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100362112-1"></script>
 <script>
@@ -15,7 +14,6 @@ output: html_document
   gtag('js', new Date());
 
   gtag('config', 'UA-100362112-1');
-
 </script>
 
 <br/>
