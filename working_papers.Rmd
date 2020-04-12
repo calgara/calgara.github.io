@@ -154,12 +154,9 @@ h1.title {
 <br/>
 <br/>
 <center>
-  <div text-align: center; font-size: 10%;'>*Partisanship of Senate Press Event Participation & Effect of Party on Strategic Legislative Collaboration*<br>
+  <div text-align: center; font-size: 10%;'>*Partisanship of Senate Press Event Participation*<br>
 <br/>
-![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/number_press_events_by_party_percentage.png "Partisanship Events"){ width=45% } 
-![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/senate_press_event_additive_model_coefficients_party_effect.png "Party Effect"){ width=45% }
-
-
+![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/number_press_events_by_party_percentage.png "Partisanship Events"){ width=60% } 
 </center><br/>
 <center> **Who Goes Public with Whom? A Network Analysis of U.S. Senate Press Events**  </center><br/>
 <center> ***$\star$Working Manuscript in Preperation $\star$[Working Manuscript Draft](APSA2018_Senate_Collaboration.pdf) $\star$[Manuscript Data Materials](mailto:calgara@ucdavis.edu)*** </center><br/>
@@ -168,7 +165,7 @@ h1.title {
 <br/>
 <center>
   <div text-align: center; font-size: 85%;'>*Quarterly Generic Ballot Differential between the Majority & Minority Party, 1962-2016* <br>
-![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/maj_generic_ballot_diff_roper.png "Generic Ballot"){ width=50% }
+![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/maj_generic_ballot_diff_roper.png "Generic Ballot"){ width=65% }
 </center><br/>
 <center> **The Influence of Partisan Conflict & Policy Responsiveness on Majority Party Electoral Fortunes \& Congressional Job Performance: A Time-Series Approach** </center>
 <center> **with Tzu-Ping Liu, PhD Candidate, University of California, Davis** </center><br/>
