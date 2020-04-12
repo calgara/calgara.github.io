@@ -87,10 +87,9 @@ h1.title {
 <br/>
 <br/>
 <center>
-  <div text-align: center; font-size: 10%;'>*Average Country & Website World Wide Web Information Networks, 9/1/2015 - 1/30/2017*<br>
+  <div text-align: center; font-size: 10%;'>*Average Country World Wide Web Information Networks, 9/1/2015 - 1/30/2017*<br>
   <br/>
-![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/third_quartile_graph_fullnetwork_color.png "County Network"){ width=45% } 
-![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/third_quartile_graph_fullnetwork_websites_color.png "Website Network"){ width=45% }
+![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/third_quartile_graph_fullnetwork_color.png "Country Network"){ width=60% } 
 </center><br/>
 <center> **Diachronic Equivalence: An Examination of the International News Network** </center>
 <center> **with [George Barnett](http://communication.ucdavis.edu/people/gbarnett), Distinguished Professor of Communications, University of California, Davis** </center><br/>
@@ -99,21 +98,53 @@ h1.title {
 <br/>
 <br/>
 <center>
+<div text-align: center; font-size: 85%;'>*Perceptual & Roll-Call Based Ideal Points by Self-Placements* <br>
+![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/citizens_ideal_pts_scatter.png "Ideal Point Validation"){ width=60% }
+  </center><br/>
+  <center> **The Partisan & Ideological Determinants of Citizen Congressional Approval** </center><br/>
+  <center> ***$\star$ Manuscript Invited to Revise & Resubmit at Political Behavior $\star$ <br/> [Working Manuscript Draft](Policy_Component_of_Approval.pdf) $\star$[Manuscript Data Materials](mailto:calgara@ucdavis.edu)*** </center><br/>
+          *Abstract:* Do citizens weigh the ideological nature of collective representation provided by Congress when assessing the job performance of their national legislature? Conventional congressional approval models posit that approval is largely a function of partisan preferences or valence considerations, such as the state of the economy or assessments of presidential job performance. As a consequence, individual citizens do not weigh the collective ideological representation they receive from Congress when evaluating collective approval. However, recent aggregate-level work suggests that congressional approval rises when Congress responds to the ideological preferences of the mass public \citep{Ramirez2012}. I fill this disconnect between recent aggregate-level work and standing citizen-level models of approval by presenting a model which argues that citizens weigh the ideological representation provided by their Congress. Given that the contemporary Congress provides citizens with two contrasting options of collective ideological representation, I argue that congressional approval exhibits a distinct ideological and partisan component. Using cross-sectional and panel survey data which allows for scaling citizens and the congressional parties in the same ideological space, I find support for these two distinct components of approval. Specifically, I find that majority co-partisans and citizens closer in ideological proximity to the governing majority are more likely to approve of Congress. I also find that these two components are most salient with politically sophisticated citizens. These findings have implications for the capacity of citizens to assess the collective representation of the chief policy-making institution of their national government.  
+<br/>
+<br/>
+<center>
+<div text-align: center; font-size: 85%;'>*Quarterly Job Approval of the U.S. Congress, 1974-2016* <br>
+![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/cong_approval_aggregate_annotated.png "Quarterly Approval"){ width=65% }
+  </center><br/>
+<center> **The "Collective Congress" on the Ballot? A Voter & Aggregate Level Analysis of Collective Responsibility in Congressional Elections** </center><br/>
+  <center> ***$\star$Manuscript Invited to Revise & Resubmit at Congress & the Presidency $\star$ <br/> [Working Manuscript Draft](Algara_Collective_Accountability_September_2019.pdf) $\star$[Manuscript Data Materials](mailto:calgara@ucdavis.edu)*** </center><br/>
+          *Abstract:* Do citizens weigh the ideological nature of collective representation provided by Congress when assessing the job performance of their national legislature? While recent aggregate-level work suggests that congressional approval rises when Congress responds to the ideological preferences of the mass public, individual-level models posit that approval is a function of partisanship or valence considerations, with little consideration for policy. I fill this disconnect between two lines of research by presenting a model arguing that citizens weigh the ideological representation provided by their Congress in the face of two contrasting options of collective ideological representation in the responsible party government era. Using cross-sectional and panel survey data which allow for scaling citizens and the congressional parties in the same ideological space, I find that majority co-partisans and citizens closer in ideological proximity to the governing majority are more likely to approve of Congress. I also find that this the relationship between ideological proximity and approval is independent of partisanship. These findings have implications for the capacity of citizens to assess the collective representation of the chief policy-making institution of their national government.  
+<br/>
+<br/>
+<center>
   <div text-align: center; font-size: 85%;'>*Distribution of Ideological Divergence between District & Partisan Medians* <br>
 ![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/median_partisan_divergence_by_chamber.png "District-Member Divergence"){ width=50% }
 </center><br/>
 <center> **Legislative Signaling or Random Error? An Analysis of Spatially Incorrect Voting in Congress** </center>
-<center> **with Joe Zamadics, PhD Candidate, University of Colorado, Boulder** </center><br/>
+<center> **with Joe Zamadics, PhD, University of Colorado, Boulder** </center><br/>
 <center> ***$\star$Manuscirpt Invited to Revise & Resubmit at the Journal of Legislative Studies $\star$[Working Manuscript Draft](Congressional_Incorrect_voting_Algara_Zamadics.pdf) $\star$[Manuscript Data Materials](mailto:calgara@ucdavis.edu)*** </center><br/>
-          *Abstract:* Theoretical and empirical models of congressional voting assumes that legislators vote with the sole purpose to move policy closer to their ideologically ideal point, with the most prominent being the NOMINATE model. While NOMINATE correctly classifies the vast majority of votes cast by members of Congress, a significant number of votes are misclassified and coded as spatial error. The literature on congressional voting assumes this error to be random and idiosyncratic across members. We dispute this conventional notion and argue that spatial error in congressional is not random, but rather systematic across members. We present a theory positing that spatial error is more likely on roll-call votes tackling salient policy issues and among members representing districts with greater ideological divergence between the median voter and the member's primary election constituency. Using Aldrich-McKelvey scaling to place legislators and constituencies in the same ideological common space, we find support for our theory. We attribute this finding to the greater electoral uncertainty faced by ideological moderates and members representing districts with greater ideological divergence between key constituencies. Our findings have implications for the NOMINATE model, the nature of spatial error in legislative voting, and the electoral cross-pressures faced by legislators.  
+          *Abstract:* Theoretical and empirical models of congressional voting assumes that legislators vote with the sole purpose to move policy closer to their ideologically ideal point, with the most prominent being the NOMINATE model. While NOMINATE correctly classifies the vast majority of votes cast by members of Congress, a significant number of votes are misclassified and coded as spatial error. The literature on congressional voting assumes this error to be random and idiosyncratic across members. We dispute this conventional notion and argue that spatial error in congressional is not random, but rather systematic across members. We present a theory positing that spatial error is more likely on roll-call votes tackling salient policy issues and among members representing districts with greater ideological divergence between the median voter and the member's primary election constituency. Using Aldrich-McKelvey scaling to place legislators and constituencies in the same ideological common space, we find support for our theory. We attribute this finding to the greater electoral uncertainty faced by ideological moderates and members representing districts with greater ideological divergence between key constituencies. Our findings have implications for the NOMINATE model, the nature of spatial error in legislative voting, and the electoral cross-pressures faced by legislators. 
 <br/>
 <br/>
 <center>
-  <div text-align: center; font-size: 10%;'>*Geographic Neighborhood profile for IA-2, 114th Congress & Particularistic Policy Bill Cosponsorship Network, 93rd U.S. Senate*<br>
+  <div text-align: center; font-size: 85%;'>*Bivariate Relationship between Subnational Racial Resentment & GOP Vote Shares* <br>
+![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/scatterplots_aggregate.png "Scatterplots"){ width=70% }
+</center><br/>
+<center> **White Racial Resentment & Political Cross-Pressures in Nationalized Elections: The Case of the Republican Coalition in the Trump Era** </center>
+<center> **with Isaac Hale, PhD Candidate, University of California, Davis** </center><br/>
+<center> ***$\star$Manuscript Invited to Revise & Resubmit at Electoral Studies $\star$[Working Manuscript Draft](Algara_Hale_RR_2016_2018.pdf) $\star$[Manuscript Data Materials](mailto:calgara@ucdavis.edu)*** </center><br/>
+<center> ***$\star$[Research featured in The Sacramento Bee (July 19, 2019): White Racial Resentment is a Winning Republican Strategy, this Political Scientist Says](https://tinyurl.com/y5vrkrxb)$\star$***
+</center><br/>
+<center> ***$\star$[Research featured in The Sacramento Bee (July 24, 2019): Trump's strategy of racial resentment won't work in California](https://tinyurl.com/y3ssqw3y)$\star$***
+</center><br/>
+<center> ***$\star$[Research featured in Roll Call (August 12, 2019): California Republican backtracks, but episode could foreshadow his 2020 strategy](https://tinyurl.com/y6bnqp6o)$\star$***
+</center><br/>
+          *Abstract:* While scholars have found that Trump benefited electorally from racial resentment sentiments among whites, it is less clear how these racial resentment attitudes influence vote-choice across partisan and ideological cleavages in the electorate. It is also unclear whether racial resentment affected voting at the congressional level or electoral outcomes at the aggregate level. Using a novel measure of racial resentment at the subnational level and survey data, we make three clear findings: (1) Trump and Republican congressional candidates benefited from racial resentment both at the aggregate level and among white voters, (2) this electoral benefit for Republicans persisted during the 2018 midterm elections, and (3) the effect of resentment on vote-choice did not significantly vary across partisan and ideological cleavages in the white electorate. Our findings suggest that, even during the era of highly nationalized and partisan elections, racial resentment is still a mechanism by which Republicans can win significant electoral support among Democrats and relatively liberal voters in the white electorate. These findings have implications for the growing salience of racial resentment in the Republican electoral coalition.  
+<br/>
+<br/>
+<center>
+  <div text-align: center; font-size: 10%;'>*Geographic Neighborhood profile for IA-2, 114th Congress*<br>
 <br/>
 ![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/IA_2_map_example_of_main_iv.png "IA-2 Geo Profile"){ width=45% } 
-![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/senate_particularistic_network_93_congress.png.png "Particularistic Network"){ width=45% }
-
 
 </center><br/>
 <center> **The Influence of Partisan Polarization and Geographic Neighborhood Context on Congressional Cosponsorship Policy Networks** </center>
@@ -143,25 +174,5 @@ h1.title {
 <center> **with Tzu-Ping Liu, PhD Candidate, University of California, Davis** </center><br/>
 <center> ***$\star$Working Manuscript in Preparation $\star$[Working Manuscript Draft](WPSA2017_Algara_Liu_Draft1.pdf) $\star$[Manuscript Data Materials](mailto:calgara@ucdavis.edu)*** </center><br/>
           *Abstract:* Recent work suggests that the aggregate approval rating of the U.S. Congress is a function of both policy responsiveness by the institution and the level of partisan conflict between both parties. However, standing models of the role of partisan conflict and policy responsiveness in congressional approval focus on Congress as a collective institution, rather than distinguishing between the legislative parties. In this paper, we specify a model which posits that policy responsiveness and partisan conflict not only influence approval of Congress as a whole, but also have differing effects on the electoral standing of the majority party in their relative generic ballot advantage to the minority party. We argue that partisan conflict decreases the generic congressional ballot advantage for the majority party and the approval rating of Congress as a collective institution. We also argue that policy responsiveness by Congress to the national mood raises the electoral standing of the majority party and the collective approval of Congress. Using a unique dataset of quarterly congressional approval and congressional generic ballot differentials from 1969 to 2016, we provide a comprehensive test of our model during varying periods of congressional polarization.  
-<br/>
-<br/>
-<center>
-  <div text-align: center; font-size: 85%;'>*Percentage of Senators Representing States That Lean Towards*
-    <div text-align: center; font-size: 85%;'>*the Opposing Party During the Direct-Election Era, 1914-2016* <br>
-![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/years_outpartisan_seats_percentage.png "Declining Out-party Senators"){ width=50% }
-</center><br/>
-<center> **The Influence of Incumbency, Partisanship, Candidate Quality \& National Tides in U.S. Senate Elections, 1914-2016** </center><br/>
-<center> ***$\star$Working Manuscript in Preparation $\star$[Working Manuscript Draft](August2017_Nationalization_Senate_Elections_Algara.pdf) $\star$[Manuscript Data Materials](mailto:calgara@ucdavis.edu)*** </center><br/>
-          *Abstract:* Relative to elections for the U.S. House, little is known about what influences outcomes for the U.S. Senate. While standing models of congressional election outcomes have been applied to the Senate, many of these models fail to account for salient variables, such as candidate quality, or focus their analysis on elections during the candidate-centered era. In this paper, I specify a comprehensive model of Senate election outcomes which focuses on four salient predictors of electoral outcomes: national partisan tides, incumbency, state partisanship, and candidate quality. I then evaluate this model using a novel dataset containing every Senate race since the adoption of the 17th amendment in 1913. Congruent with recent findings in the U.S. House, the model finds evidence that Senate elections are becoming more partisan-centered at the expense of a candidate quality advantage. On the other hand, and contrary to recent studies, the model finds evidence of an incumbency advantage increase in contemporary Senate elections. However, this increase in the incumbency advantage corresponds to a decline in the pivotal role of incumbency in determining Senate election outcomes during a more partisan-centered period of elections. I conclude by showing that Senate elections are becoming more nationalized and president-centered contests.  
-<br/>
-<br/>
-<center>
-  <div text-align: center; font-size: 85%;'>*Distribution of Indicators of Pro-Lobby Support, 114^th^ Congress* <br>
-![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/lobby_counts.png "Lobby Counts"){ width=50% }
-</center><br/>
-<center> **The U.S. Congress and the Israeli Lobby: An Analysis of the Determinants of Congressional Support for Iranian Sanctions** </center>
-<center> **with Evan Sandlin, PhD Candidate, University of California, Davis** </center><br/>
-<center> ***$\star$Working Manuscript in Preparation $\star$[Working Manuscript Draft](MPSA2017_Sandlin_Algara_Abstract.pdf) $\star$[Manuscript Data Materials](mailto:calgara@ucdavis.edu)*** </center><br/>
-      *Abstract:* Since the late 1960's the US has maintained a relationship with Israel that is largely unprecedented in the history of US foreign policy. The United States Senate plays a role in maintaining this relationship and plays an essential constitutional role in foreign policymaking generally. Previous work on the determinants of congressional support of foreign policy initiatives focuses on the electoral connection, emphasizing a role for constituent-based variables when determining a Senator’s foreign policy votes. However this limited scholarship fails to account for a legislator's perception of the national interest and how this influences their foreign policy positions. Additionally, Mearsheimer and Walt (2007) note that the "Israel Lobby" sways US foreign policy but the extent of this influence on congress is unclear. Using the salient case of U.S. sanctions against Iran, this paper explores the role of constituent-level and elite level variables in determining an individual Senator's acquiescence to the ``pro-Israel'' position. These findings have implications for causes of the continued strength of the US-Israel relationship as well as implications for the determinants of congressional foreign policy positions more broadly.  
 <br/>
   <p>Copyright &copy; 2017 by Carlos Algara. Made with [RStudio](https://www.rstudio.com).</p>
