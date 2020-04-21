@@ -34,6 +34,8 @@ navbar:
     href: http://github.com/calgara
   - icon: fa-twitter fa-lg
     href: https://twitter.com/algaraca
+  - icon: fa-graduation-cap fa-lg
+    href: https://scholar.google.com/citations?user=AJASqUMAAAAJ&hl=en&oi=ao
 output:
   html_document:
     theme: readable
