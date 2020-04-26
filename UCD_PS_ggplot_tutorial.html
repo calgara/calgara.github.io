@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 <meta name="author" content="Carlos Algara, Cory Struthers (Belden), &amp; Jaime Jackson" />
@@ -23,7 +23,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -72,9 +73,7 @@ h6 {
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -88,13 +87,18 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
 }
+.html-widget {
+  margin-bottom: 20px;
+}
 button.code-folding-btn:focus {
   outline: none;
+}
+summary {
+  display: list-item;
 }
 </style>
 
@@ -110,7 +114,6 @@ body {
   padding-top: 71px;
   margin-top: -71px;
 }
-
 .section h2 {
   padding-top: 71px;
   margin-top: -71px;
@@ -130,6 +133,43 @@ body {
 .section h6 {
   padding-top: 71px;
   margin-top: -71px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -151,19 +191,74 @@ $(document).ready(function () {
 });
 </script>
 
-
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-</script>
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
 
 <!-- code folding -->
 
 
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
 
 
 
@@ -231,7 +326,7 @@ $(document).ready(function () {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="mailto:calgara@ucdavis.edu">
+  <a href="mailto:caalgara@utep.edu">
     <span class="fa fa-envelope fa-lg"></span>
      
   </a>
@@ -264,9 +359,9 @@ $(document).ready(function () {
 
 
 <h1 class="title toc-ignore">Programming &amp; Methods Resources Workshop</h1>
-<h3 class="subtitle"><em>Introduction to The Grammar of Graphics (<tt>ggplot</tt>) &amp; Data Visualization</em></h3>
-<h4 class="author"><em><a href="mailto:calgara@ucdavis.edu">Carlos Algara</a>, <a href="mailto:rbelden@ucdavis.edu">Cory Struthers (Belden)</a>, &amp; <a href="mailto:jajack@ucdavis.edu">Jaime Jackson</a></em></h4>
-<h4 class="date"><em>5/25/2018</em></h4>
+<h3 class="subtitle">Introduction to The Grammar of Graphics (<tt>ggplot</tt>) &amp; Data Visualization</h3>
+<h4 class="author"><a href="mailto:calgara@ucdavis.edu">Carlos Algara</a>, <a href="mailto:rbelden@ucdavis.edu">Cory Struthers (Belden)</a>, &amp; <a href="mailto:jajack@ucdavis.edu">Jaime Jackson</a></h4>
+<h4 class="date">5/25/2018</h4>
 
 </div>
 
@@ -315,20 +410,19 @@ load(&quot;/Users/carlosalgara/Desktop/carlos_school/PhD_UC Davis/Dissertation P
 
 print(as_tibble(rescaled_overtime_idealpts_2008_2016))</code></pre>
 <pre><code>## # A tibble: 262,896 x 10
-##    year  case_id year_district_id intercept aldmck_weight_p… idealpt
-##    &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;                &lt;dbl&gt;            &lt;dbl&gt;   &lt;dbl&gt;
-##  1 2008  112     2008 NY14           -0.653            0.218   0.218
-##  2 2008  11212   2008 CA23           -2.18             0.435  -1.31 
-##  3 2008  11488   2008 WA8            -0.943            0.354   1.18 
-##  4 2008  11710   2008 MA2            -0.843            0.281   0.562
-##  5 2008  11902   2008 IL10           -3.05             0.653  -0.435
-##  6 2008  12118   2008 MI15           -1.41             0.326  -1.09 
-##  7 2008  12517   2008 CA43           -0.957            0.261  -0.696
-##  8 2008  127     2008 NY22           -1.32             0.331  -0.994
-##  9 2008  1300    2008 CA7            -1.09             0.326  -0.435
-## 10 2008  13717   2008 NC4            -1.09             0.653   2.83 
-## # … with 262,886 more rows, and 4 more variables: selfplace &lt;dbl&gt;,
-## #   polinfo &lt;dbl&gt;, idealpts_linear_map_overtime &lt;dbl&gt;, pid7 &lt;chr&gt;</code></pre>
+##    year  case_id year_district_id intercept aldmck_weight_p… idealpt selfplace polinfo
+##    &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;                &lt;dbl&gt;            &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt;
+##  1 2008  112     2008 NY14           -0.653            0.218   0.218         4   1.00 
+##  2 2008  11212   2008 CA23           -2.18             0.435  -1.31          2   1.00 
+##  3 2008  11488   2008 WA8            -0.943            0.354   1.18          6   0.977
+##  4 2008  11710   2008 MA2            -0.843            0.281   0.562         5   0.987
+##  5 2008  11902   2008 IL10           -3.05             0.653  -0.435         4   1.00 
+##  6 2008  12118   2008 MI15           -1.41             0.326  -1.09          1   1.00 
+##  7 2008  12517   2008 CA43           -0.957            0.261  -0.696         1   1.00 
+##  8 2008  127     2008 NY22           -1.32             0.331  -0.994         1   0.879
+##  9 2008  1300    2008 CA7            -1.09             0.326  -0.435         2   1.00 
+## 10 2008  13717   2008 NC4            -1.09             0.653   2.83          6   1.00 
+## # … with 262,886 more rows, and 2 more variables: idealpts_linear_map_overtime &lt;dbl&gt;, pid7 &lt;chr&gt;</code></pre>
 <pre class="r"><code># Huge data frame of scaled Aldrich-McKelvey ideal points for each CCES respondent from 2008-2016. For more information on the method deriving these scaled ideal points, see Ramey (2016).
 
 # Of course, countless studies suggest that the distribution of ideological preferences of the mass public is unimodal. Let&#39;s make a density plot to see if this is the case.
@@ -347,20 +441,19 @@ rescaled_overtime_idealpts_2008_2016$pid3 &lt;- ifelse(rescaled_overtime_idealpt
 
 print(as_tibble(rescaled_overtime_idealpts_2008_2016)) # Let&#39;s check it out</code></pre>
 <pre><code>## # A tibble: 262,896 x 11
-##    year  case_id year_district_id intercept aldmck_weight_p… idealpt
-##    &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;                &lt;dbl&gt;            &lt;dbl&gt;   &lt;dbl&gt;
-##  1 2008  112     2008 NY14           -0.653            0.218   0.218
-##  2 2008  11212   2008 CA23           -2.18             0.435  -1.31 
-##  3 2008  11488   2008 WA8            -0.943            0.354   1.18 
-##  4 2008  11710   2008 MA2            -0.843            0.281   0.562
-##  5 2008  11902   2008 IL10           -3.05             0.653  -0.435
-##  6 2008  12118   2008 MI15           -1.41             0.326  -1.09 
-##  7 2008  12517   2008 CA43           -0.957            0.261  -0.696
-##  8 2008  127     2008 NY22           -1.32             0.331  -0.994
-##  9 2008  1300    2008 CA7            -1.09             0.326  -0.435
-## 10 2008  13717   2008 NC4            -1.09             0.653   2.83 
-## # … with 262,886 more rows, and 5 more variables: selfplace &lt;dbl&gt;,
-## #   polinfo &lt;dbl&gt;, idealpts_linear_map_overtime &lt;dbl&gt;, pid7 &lt;chr&gt;,
+##    year  case_id year_district_id intercept aldmck_weight_p… idealpt selfplace polinfo
+##    &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;                &lt;dbl&gt;            &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt;
+##  1 2008  112     2008 NY14           -0.653            0.218   0.218         4   1.00 
+##  2 2008  11212   2008 CA23           -2.18             0.435  -1.31          2   1.00 
+##  3 2008  11488   2008 WA8            -0.943            0.354   1.18          6   0.977
+##  4 2008  11710   2008 MA2            -0.843            0.281   0.562         5   0.987
+##  5 2008  11902   2008 IL10           -3.05             0.653  -0.435         4   1.00 
+##  6 2008  12118   2008 MI15           -1.41             0.326  -1.09          1   1.00 
+##  7 2008  12517   2008 CA43           -0.957            0.261  -0.696         1   1.00 
+##  8 2008  127     2008 NY22           -1.32             0.331  -0.994         1   0.879
+##  9 2008  1300    2008 CA7            -1.09             0.326  -0.435         2   1.00 
+## 10 2008  13717   2008 NC4            -1.09             0.653   2.83          6   1.00 
+## # … with 262,886 more rows, and 3 more variables: idealpts_linear_map_overtime &lt;dbl&gt;, pid7 &lt;chr&gt;,
 ## #   pid3 &lt;chr&gt;</code></pre>
 <pre class="r"><code>ggplot(data=rescaled_overtime_idealpts_2008_2016,aes(x=idealpt,color=pid3)) + geom_density()</code></pre>
 <p><img src="UCD_PS_ggplot_tutorial_files/figure-html/r-3.png" width="672" /></p>
@@ -379,20 +472,19 @@ ggplot(subset(rescaled_overtime_idealpts_2008_2016,rescaled_overtime_idealpts_20
 
 print(as_tibble(aldmck_congress))</code></pre>
 <pre><code>## # A tibble: 1,900 x 6
-##    district placement.dem_p… placement.rep_p… placement.dem_h…
-##    &lt;chr&gt;               &lt;dbl&gt;            &lt;dbl&gt;            &lt;dbl&gt;
-##  1 AK1                -0.390            0.816         -0.287  
-##  2 AL5                -0.390            0.816         -0.115  
-##  3 AL3                -0.390            0.816         -0.234  
-##  4 AL2                -0.390            0.816          0.0107 
-##  5 AL4                -0.390            0.816          0.0506 
-##  6 AZ1                -0.390            0.816         -0.00825
-##  7 AZ2                -0.390            0.816          0.0454 
-##  8 AZ3                -0.390            0.816         -0.246  
-##  9 AZ4                -0.390            0.816         -0.132  
-## 10 AZ5                -0.390            0.816         -0.209  
-## # … with 1,890 more rows, and 2 more variables:
-## #   placement.rep_hse_libcon_placement &lt;dbl&gt;, year &lt;dbl&gt;</code></pre>
+##    district placement.dem_pty_l… placement.rep_pty_l… placement.dem_hse_l… placement.rep_hse_…  year
+##    &lt;chr&gt;                   &lt;dbl&gt;                &lt;dbl&gt;                &lt;dbl&gt;               &lt;dbl&gt; &lt;dbl&gt;
+##  1 AK1                    -0.390                0.816             -0.287                 0.832  2008
+##  2 AL5                    -0.390                0.816             -0.115                 1.01   2008
+##  3 AL3                    -0.390                0.816             -0.234                 0.724  2008
+##  4 AL2                    -0.390                0.816              0.0107                0.912  2008
+##  5 AL4                    -0.390                0.816              0.0506                0.790  2008
+##  6 AZ1                    -0.390                0.816             -0.00825               0.629  2008
+##  7 AZ2                    -0.390                0.816              0.0454                0.727  2008
+##  8 AZ3                    -0.390                0.816             -0.246                 0.827  2008
+##  9 AZ4                    -0.390                0.816             -0.132                 0.461  2008
+## 10 AZ5                    -0.390                0.816             -0.209                 0.762  2008
+## # … with 1,890 more rows</code></pre>
 <pre class="r"><code># Oh no, we have to manipulate the dataframe. Urgh, bummer, but easy!
 
 house_candidates &lt;- subset(aldmck_congress,select=c(&quot;year&quot;,&quot;district&quot;,&quot;placement.dem_hse_libcon_placement&quot;,&quot;placement.rep_hse_libcon_placement&quot;)) # Extract the variables you want
@@ -418,21 +510,19 @@ ggplot(rescaled_overtime_idealpts_2008_2016, aes(x=selfplace, y=idealpts_linear_
 
 as_tibble(approval)</code></pre>
 <pre><code>## # A tibble: 4,075 x 12
-##        X Organization Polling.Start Polling.End Approve Disapprove
-##    &lt;int&gt; &lt;fct&gt;        &lt;fct&gt;         &lt;fct&gt;         &lt;int&gt;      &lt;int&gt;
-##  1     1 Quinnipiac … 2017-01-20    2017-01-25       36         44
-##  2     2 TIPP / IBD   2017-01-27    2017-02-02       42         48
-##  3     3 CNN          2017-01-31    2017-02-02       44         53
-##  4     4 CBS News     2017-02-01    2017-02-02       40         48
-##  5     5 Quinnipiac … 2017-02-02    2017-02-06       42         51
-##  6     6 Pew          2017-02-07    2017-02-12       39         56
-##  7     7 Fox          2017-02-11    2017-02-13       48         47
-##  8     8 Kaiser Fami… 2017-02-13    2017-02-19       41         52
-##  9     9 McClatchy /… 2017-02-15    2017-02-19       41         49
-## 10    10 Quinnipiac … 2017-02-16    2017-02-21       38         55
-## # … with 4,065 more rows, and 6 more variables: No.Opinion &lt;fct&gt;,
-## #   Sample.Size &lt;int&gt;, president &lt;fct&gt;, year &lt;int&gt;,
-## #   approval_measure &lt;dbl&gt;, series &lt;fct&gt;</code></pre>
+##        X Organization Polling.Start Polling.End Approve Disapprove No.Opinion Sample.Size president
+##    &lt;int&gt; &lt;chr&gt;        &lt;chr&gt;         &lt;chr&gt;         &lt;int&gt;      &lt;int&gt; &lt;chr&gt;            &lt;int&gt; &lt;chr&gt;    
+##  1     1 Quinnipiac … 2017-01-20    2017-01-25       36         44 19                1190 Trump    
+##  2     2 TIPP / IBD   2017-01-27    2017-02-02       42         48 9                  885 Trump    
+##  3     3 CNN          2017-01-31    2017-02-02       44         53 3                 1002 Trump    
+##  4     4 CBS News     2017-02-01    2017-02-02       40         48 12                1019 Trump    
+##  5     5 Quinnipiac … 2017-02-02    2017-02-06       42         51 7                 1155 Trump    
+##  6     6 Pew          2017-02-07    2017-02-12       39         56 6                 1503 Trump    
+##  7     7 Fox          2017-02-11    2017-02-13       48         47 6                 1013 Trump    
+##  8     8 Kaiser Fami… 2017-02-13    2017-02-19       41         52 7                 1160 Trump    
+##  9     9 McClatchy /… 2017-02-15    2017-02-19       41         49 9                 1073 Trump    
+## 10    10 Quinnipiac … 2017-02-16    2017-02-21       38         55 7                 1323 Trump    
+## # … with 4,065 more rows, and 3 more variables: year &lt;int&gt;, approval_measure &lt;dbl&gt;, series &lt;chr&gt;</code></pre>
 <pre class="r"><code>ggplot(approval, aes(x = approval_measure)) + geom_histogram(alpha=.2,fill=&quot;black&quot;,color=&quot;black&quot;) + theme_minimal() + scale_x_continuous(&quot;Presidential Approval Polling&quot;) + ggtitle(&quot;Distribution of Presidential Approval Polling Data, 1969-2017&quot;) </code></pre>
 <p><img src="UCD_PS_ggplot_tutorial_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
 <p>Let’s make a simple figure of presidential approval over time. Note, since we have data that is daily given the polling end date, we have to convert the date variable to something <span class="math inline">\(\texttt{ggplot}\)</span> can use.</p>
@@ -461,20 +551,19 @@ ggplot(mean_approval,aes(x=year,y=approval_mean,label=president)) + geom_line() 
 <p>While we implicitly plotted a bivariate relationship using the box-plot in the previous example, we can provide more explicit examples for studying bivariate relationships. Let’s use data on the 2016 U.S. House elections to look at the relationship between presidential voteshare and House election voteshare. Also, let’s fit a simple bivariate regression line to see in which districts Democratic candidates underperformed Clinton and which candidates over-performed Clinton. This will be articulated in the residual distance between the individual points and the point-estimate articulated in the regression line. In other words, the distance between the observed value <span class="math inline">\(Y\)</span> (in this case, the vote share won by the Democratic House candidate) and <span class="math inline">\(\hat{Y}\)</span> (in this case, the predicted vote share won by the Democratic House candidate articulated in the regression line).</p>
 <pre class="r"><code>as_tibble(house)</code></pre>
 <pre><code>## # A tibble: 25,367 x 15
-##     year  stcd state cd    inc   pwin     dv   dvp fr    po1   po2   redist
-##    &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; 
-##  1  1900   101 AL    1     Demo… Demo…  82.7  NA   &quot;&quot;    Amat… Noth… &quot;&quot;    
-##  2  1900   102 AL    2     Demo… Demo…  98.3  83.3 &quot;&quot;    Only… Noth… &quot;&quot;    
-##  3  1900   103 AL    3     Demo… Demo…  80.2  96.9 &quot;&quot;    Amat… Noth… &quot;&quot;    
-##  4  1900   104 AL    4     Demo… Demo…  97.4  54.9 &quot;&quot;    Only… Noth… &quot;&quot;    
-##  5  1900   105 AL    5     Demo… Demo…  67.0  77.9 &quot;&quot;    Amat… Noth… &quot;&quot;    
-##  6  1900   106 AL    6     Demo… Demo…  65.7  69.8 &quot;&quot;    Amat… Noth… &quot;&quot;    
-##  7  1900   107 AL    7     GOP … Demo…  51.8  44.6 &quot;&quot;    Qual… Noth… &quot;&quot;    
-##  8  1900   108 AL    8     Demo… Demo…  59.7  84.8 &quot;&quot;    Amat… Noth… &quot;&quot;    
-##  9  1900   109 AL    9     Demo… Demo… 100    83.0 &quot;&quot;    No c… Noth… &quot;&quot;    
-## 10  1900   401 AR    1     Demo… Demo…  72.4  84.6 &quot;&quot;    Amat… Noth… &quot;&quot;    
-## # … with 25,357 more rows, and 3 more variables: dexp &lt;dbl&gt;, rexp &lt;dbl&gt;,
-## #   dpres &lt;dbl&gt;</code></pre>
+##     year  stcd state cd    inc     pwin      dv   dvp fr    po1      po2    redist  dexp  rexp dpres
+##    &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt;  &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+##  1  1900   101 AL    1     Democr… Democ…  82.7  NA   &quot;&quot;    Amateur… Nothi… &quot;&quot;        NA    NA  70.1
+##  2  1900   102 AL    2     Democr… Democ…  98.3  83.3 &quot;&quot;    Only De… Nothi… &quot;&quot;        NA    NA  65.7
+##  3  1900   103 AL    3     Democr… Democ…  80.2  96.9 &quot;&quot;    Amateur… Nothi… &quot;&quot;        NA    NA  70.8
+##  4  1900   104 AL    4     Democr… Democ…  97.4  54.9 &quot;&quot;    Only De… Nothi… &quot;&quot;        NA    NA  63.4
+##  5  1900   105 AL    5     Democr… Democ…  67.0  77.9 &quot;&quot;    Amateur… Nothi… &quot;&quot;        NA    NA  59.7
+##  6  1900   106 AL    6     Democr… Democ…  65.7  69.8 &quot;&quot;    Amateur… Nothi… &quot;&quot;        NA    NA  59.9
+##  7  1900   107 AL    7     GOP In… Democ…  51.8  44.6 &quot;&quot;    Quality… Nothi… &quot;&quot;        NA    NA  45.9
+##  8  1900   108 AL    8     Democr… Democ…  59.7  84.8 &quot;&quot;    Amateur… Nothi… &quot;&quot;        NA    NA  55.2
+##  9  1900   109 AL    9     Democr… Democ… 100    83.0 &quot;&quot;    No chal… Nothi… &quot;&quot;        NA    NA  62.5
+## 10  1900   401 AR    1     Democr… Democ…  72.4  84.6 &quot;&quot;    Amateur… Nothi… &quot;&quot;        NA    NA  67.2
+## # … with 25,357 more rows</code></pre>
 <pre class="r"><code>ggplot(subset(house,house$year %in% 2016),aes(x=dpres,y=dv)) + geom_point(shape=1) + geom_smooth(method=&#39;lm&#39;,SE=T,color=&quot;black&quot;) + theme_bw() + scale_x_continuous(&quot;District Two-Party Vote Share Won by the Democratic Presidential Candidate&quot;) + scale_y_continuous(&quot;District Two-Party Vote Share Won \nby the Democratic House Candidate&quot;) + ggtitle(&quot;Scatterplot of Democratic House Vote-Share by \nDemocratic Presidential Vote-Share in 2016&quot;)</code></pre>
 <p><img src="UCD_PS_ggplot_tutorial_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
 <p>Sometimes you want to add labels to the point scatters, so you can gain more information about outliers. Thus, let’s recreate the scatter plot with district labels and colors for partisan control before the election.</p>
@@ -533,10 +622,9 @@ sample_means$dt_upper_ci &lt;- sample_means$dt_placement + sample_means$margin_o
 # Let&#39;s rework our dataframe to get Trump and Clinton on the same plot
 
 colnames(sample_means)</code></pre>
-<pre><code>##  [1] &quot;self_placement&quot;      &quot;hrc_sd&quot;              &quot;dt_sd&quot;              
-##  [4] &quot;hrc_placement&quot;       &quot;dt_placement&quot;        &quot;self_placement_n&quot;   
-##  [7] &quot;margin_of_error_hrc&quot; &quot;margin_of_error_dt&quot;  &quot;hrc_lower_ci&quot;       
-## [10] &quot;hrc_upper_ci&quot;        &quot;dt_lower_ci&quot;         &quot;dt_upper_ci&quot;</code></pre>
+<pre><code>##  [1] &quot;self_placement&quot;      &quot;hrc_sd&quot;              &quot;dt_sd&quot;               &quot;hrc_placement&quot;      
+##  [5] &quot;dt_placement&quot;        &quot;self_placement_n&quot;    &quot;margin_of_error_hrc&quot; &quot;margin_of_error_dt&quot; 
+##  [9] &quot;hrc_lower_ci&quot;        &quot;hrc_upper_ci&quot;        &quot;dt_lower_ci&quot;         &quot;dt_upper_ci&quot;</code></pre>
 <pre class="r"><code>hrc &lt;- sample_means[,c(1,4,9,10)]
 dt &lt;- sample_means[,c(1,5,11,12)]
 
@@ -562,19 +650,19 @@ ggplot(sample_means,aes(x=self_placement,y=mean,ymin=lower,ymax=upper,color=cand
 <p>In this section, we turn to post-estimating model quantitites of interest. First, let’s explore estimating average marginal effects from a simple regression model. We return to our House dataset and specify a pooled vote-share model of House elections from 1900-2016.</p>
 <pre class="r"><code>as_tibble(house_elexs)</code></pre>
 <pre><code>## # A tibble: 25,367 x 8
-##     year district    dv dpres dem_seat dem_incumbency dem_qual_advant…
-##    &lt;int&gt; &lt;chr&gt;    &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt;          &lt;dbl&gt;            &lt;dbl&gt;
-##  1  1900 AL1       82.7  70.1        1              1                1
-##  2  1900 AL2       98.3  65.7       NA              0               NA
-##  3  1900 AL3       80.2  70.8        1              1                1
-##  4  1900 AL4       97.4  63.4       NA              0               NA
-##  5  1900 AL5       67.0  59.7       NA              0               NA
-##  6  1900 AL6       65.7  59.9        1              1                1
-##  7  1900 AL7       51.8  45.9        0             -1                0
-##  8  1900 AL8       59.7  55.2        1              1                1
-##  9  1900 AL9       NA    62.5        1              1               NA
-## 10  1900 AR1       72.4  67.2        1              1                1
-## # … with 25,357 more rows, and 1 more variable: dvp &lt;dbl&gt;</code></pre>
+##     year district    dv dpres dem_seat dem_incumbency dem_qual_advantage_tri   dvp
+##    &lt;int&gt; &lt;chr&gt;    &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt;          &lt;dbl&gt;                  &lt;dbl&gt; &lt;dbl&gt;
+##  1  1900 AL1       82.7  70.1        1              1                      1 100  
+##  2  1900 AL2       98.3  65.7       NA              0                     NA  83.3
+##  3  1900 AL3       80.2  70.8        1              1                      1  96.9
+##  4  1900 AL4       97.4  63.4       NA              0                     NA  54.9
+##  5  1900 AL5       67.0  59.7       NA              0                     NA  77.9
+##  6  1900 AL6       65.7  59.9        1              1                      1  69.8
+##  7  1900 AL7       51.8  45.9        0             -1                      0  44.6
+##  8  1900 AL8       59.7  55.2        1              1                      1  84.8
+##  9  1900 AL9       NA    62.5        1              1                     NA  83.0
+## 10  1900 AR1       72.4  67.2        1              1                      1  84.6
+## # … with 25,357 more rows</code></pre>
 <pre class="r"><code>library(margins) # Load Thomas Leeper&#39;s Margins Package
 
 summary(model &lt;- glm(dv ~ dem_incumbency + dpres + dem_qual_advantage_tri + dem_seat + dvp, data=house_elexs)) # Estimate our pooled model</code></pre>
@@ -609,18 +697,12 @@ summary(model &lt;- glm(dv ~ dem_incumbency + dpres + dem_qual_advantage_tri + d
 <pre class="r"><code>mes &lt;- data.frame(summary(margins(model, change=&quot;dydx&quot;, vcov.=vcovHC(model, &quot;HC3&quot;))))</code></pre>
 <p>Leeper’s <a href="https://github.com/leeper/margins">“margins”</a> command allows us to look at the average marginal effect of our covariates, in this case incumbency (<span class="math inline">\(\texttt{dem_incumbency}\)</span>), district partisanship (<span class="math inline">\(\texttt{dpres}\)</span>), candidate quality ((<span class="math inline">\(\texttt{dem_qual_advantage_tri}\)</span>)), seat partisanship (<span class="math inline">\(\texttt{dem_seat}\)</span>), and previous district election vote share (<span class="math inline">\(\texttt{dem_seat}\)</span>). Let’s use <span class="math inline">\(\texttt{ggplot}\)</span> to create a nice coefficient plot articulating average marginal effects of our key variables.</p>
 <pre class="r"><code>head(mes)</code></pre>
-<pre><code>##                   factor        AME          SE         z             p
-## 1         dem_incumbency  3.5883609 0.250843172 14.305197  2.030632e-46
-## 2 dem_qual_advantage_tri  4.8743943 0.141756967 34.385571 4.143372e-259
-## 3               dem_seat -1.0210655 0.517397022 -1.973466  4.844247e-02
-## 4                  dpres  0.2533264 0.005140253 49.282871  0.000000e+00
-## 5                    dvp  0.3067922 0.004740174 64.721719  0.000000e+00
-##        lower        upper
-## 1  3.0967173  4.080004475
-## 2  4.5965557  5.152232844
-## 3 -2.0351451 -0.006986002
-## 4  0.2432517  0.263401143
-## 5  0.2975017  0.316082809</code></pre>
+<pre><code>##                   factor        AME          SE         z             p      lower        upper
+## 1         dem_incumbency  3.5883609 0.250843172 14.305197  2.030632e-46  3.0967173  4.080004475
+## 2 dem_qual_advantage_tri  4.8743943 0.141756967 34.385571 4.143372e-259  4.5965557  5.152232844
+## 3               dem_seat -1.0210655 0.517397022 -1.973466  4.844247e-02 -2.0351451 -0.006986002
+## 4                  dpres  0.2533264 0.005140253 49.282871  0.000000e+00  0.2432517  0.263401143
+## 5                    dvp  0.3067922 0.004740174 64.721719  0.000000e+00  0.2975017  0.316082809</code></pre>
 <pre class="r"><code>mes$factor &lt;- ifelse(mes$factor == &quot;dem_incumbency&quot;,&quot;Incumbency&quot;,ifelse(mes$factor == &quot;dem_qual_advantage_tri&quot;,&quot;Candidate Quality&quot;,ifelse(mes$factor == &quot;dem_seat&quot;,&quot;Seat Partisanship&quot;,ifelse(mes$factor == &quot;dpres&quot;,&quot;District Partisanship&quot;,ifelse(mes$factor == &quot;dvp&quot;,&quot;Previous District Dem Vote-Share&quot;,NA)))))
 
 mes$factor &lt;- factor(mes$factor)
@@ -640,20 +722,20 @@ mes_yearly[[i]] &lt;- mes
 mes_yearly &lt;- ldply(mes_yearly,data.frame) # Unpack the list
 
 head(mes_yearly)</code></pre>
-<pre><code>##                   factor          AME         SE            z            p
-## 1         dem_incumbency  1.501725236 1.26763582  1.184666146 2.361495e-01
-## 2 dem_qual_advantage_tri  2.297765264 0.85224960  2.696117725 7.015287e-03
-## 3               dem_seat -2.367765474 2.80955169 -0.842755620 3.993651e-01
-## 4                  dpres  0.450783378 0.04800085  9.391154388 5.934621e-21
-## 5                    dvp  0.456198360 0.04821108  9.462520724 3.006075e-21
-## 6         dem_incumbency -0.005740137 2.36512318 -0.002426993 9.980635e-01
-##        lower     upper election_year
-## 1 -0.9827953 3.9862458          1900
-## 2  0.6273867 3.9681438          1900
-## 3 -7.8743856 3.1388546          1900
-## 4  0.3567034 0.5448633          1900
-## 5  0.3617064 0.5506903          1900
-## 6 -4.6412964 4.6298161          1902</code></pre>
+<pre><code>##                   factor          AME         SE            z            p      lower     upper
+## 1         dem_incumbency  1.501725236 1.26763582  1.184666146 2.361495e-01 -0.9827953 3.9862458
+## 2 dem_qual_advantage_tri  2.297765264 0.85224960  2.696117725 7.015287e-03  0.6273867 3.9681438
+## 3               dem_seat -2.367765474 2.80955169 -0.842755620 3.993651e-01 -7.8743856 3.1388546
+## 4                  dpres  0.450783378 0.04800085  9.391154388 5.934621e-21  0.3567034 0.5448633
+## 5                    dvp  0.456198360 0.04821108  9.462520724 3.006075e-21  0.3617064 0.5506903
+## 6         dem_incumbency -0.005740137 2.36512318 -0.002426993 9.980635e-01 -4.6412964 4.6298161
+##   election_year
+## 1          1900
+## 2          1900
+## 3          1900
+## 4          1900
+## 5          1900
+## 6          1902</code></pre>
 <pre class="r"><code>mes_yearly$factor &lt;- ifelse(mes_yearly$factor == &quot;dem_incumbency&quot;, &quot;Incumbency Advantage&quot;,ifelse(mes_yearly$factor == &quot;dpres&quot;, &quot;District Partisanship&quot;,mes_yearly$factor))
 
 ggplot(subset(mes_yearly,mes_yearly$factor %in% c(&quot;Incumbency Advantage&quot;)),aes(x=election_year,y=AME,ymin=lower,ymax=upper)) + geom_pointrange() + theme_minimal() + ggtitle(&quot;Effect of Incumbency on House Election Outcomes from 1900-2016&quot;) + scale_x_continuous(&quot;&quot;,breaks=seq(1900,2016,10)) + geom_smooth(method=&quot;loess&quot;) + geom_hline(yintercept = 0, colour = gray(1/2), lty = 2)</code></pre>
@@ -698,13 +780,13 @@ ggplot(data= predict, mapping=aes(x=income, y=fit)) + geom_line(aes(x = income, 
 model &lt;- glm(turnout ~ education*income, data=resources, weights=weight, family = binomial(link = &quot;logit&quot;))
 predict &lt;- data.frame(effect(&quot;education*income&quot;, se=TRUE, mod = model, confidence.level = 0.95, xlevels=list(income=unique(resources$income),vcov. = cluster.vcov(model, cluster=resources$cdid))))
 head(predict)</code></pre>
-<pre><code>##              education income       fit         se     lower     upper
-## 1                No HS      1 0.6283484 0.04786570 0.6061895 0.6499804
-## 2 High school graduate      1 0.7500554 0.03281379 0.7378055 0.7619176
-## 3         Some college      1 0.7583516 0.04081959 0.7433891 0.7727085
-## 4               2-year      1 0.7905850 0.06771523 0.7677654 0.8117123
-## 5               4-year      1 0.8395945 0.06619911 0.8213420 0.8563085
-## 6            Post-grad      1 0.8769348 0.12883629 0.8469924 0.9016978</code></pre>
+<pre><code>##              education income       fit          se     lower     upper
+## 1                No HS      1 0.6283484 0.011177917 0.6061895 0.6499804
+## 2 High school graduate      1 0.7500554 0.006151676 0.7378055 0.7619176
+## 3         Some college      1 0.7583516 0.007480371 0.7433891 0.7727085
+## 4               2-year      1 0.7905850 0.011210956 0.7677654 0.8117123
+## 5               4-year      1 0.8395945 0.008915404 0.8213420 0.8563085
+## 6            Post-grad      1 0.8769348 0.013904029 0.8469924 0.9016978</code></pre>
 <pre class="r"><code>predict$education &lt;- factor(predict$education,levels=c(&quot;No HS&quot;,&quot;High school graduate&quot;,&quot;Some college&quot;,&quot;2-year&quot;,&quot;4-year&quot;,&quot;Post-grad&quot;))
 
 ggplot(predict, aes(x=income, y=fit, group=education,fill=education,linetype=education)) + geom_line(aes(x = income, y = fit), size = 0.50) + geom_ribbon(aes(ymin=lower, ymax=upper), alpha = .2) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + scale_x_continuous(limits=c(0,15), breaks=c(0,15), labels=c(&quot;Less than \n$10,000&quot;, &quot;Greater than \n$500,000&quot;), &quot;Voter Income&quot;) + scale_y_continuous(limits=c(0.5,1.0), breaks=seq(0.5,1.0,0.05), &quot;Probability of Turning Out to Vote&quot;) + ggtitle(&quot;Probability of Voter Turnout by Income &amp; Education Level in the 2014 \nMidterm Elections&quot;) + theme(legend.position=&quot;bottom&quot;, legend.box.just = &quot;left&quot;, legend.key.size = unit(1,&quot;line&quot;), legend.key = element_rect(size = 0, color = &#39;white&#39;), legend.text.align = 0, legend.box = &quot;horizontal&quot;) + scale_fill_discrete(&quot;&quot;) + scale_linetype_discrete(&quot;&quot;)</code></pre>
@@ -785,23 +867,23 @@ state_shp &lt;- readOGR(&quot;/Users/carlosalgara/Desktop/carlos_school/PhD_UC D
 
 as_tibble(state_shp@data) # Dataframe embedded in the Spatial Polygons Data Frame</code></pre>
 <pre><code>## # A tibble: 52 x 9
-##    STATEFP STATENS  AFFGEOID  GEOID STUSPS NAME       LSAD  ALAND   AWATER 
-##    &lt;fct&gt;   &lt;fct&gt;    &lt;fct&gt;     &lt;fct&gt; &lt;fct&gt;  &lt;fct&gt;      &lt;fct&gt; &lt;fct&gt;   &lt;fct&gt;  
-##  1 23      01779787 0400000U… 23    ME     Maine      00    798852… 117487…
-##  2 15      01779782 0400000U… 15    HI     Hawaii     00    166341… 117776…
-##  3 04      01779777 0400000U… 04    AZ     Arizona    00    294198… 102734…
-##  4 05      00068085 0400000U… 05    AR     Arkansas   00    134771… 296019…
-##  5 10      01779781 0400000U… 10    DE     Delaware   00    504719… 139872…
-##  6 13      01705317 0400000U… 13    GA     Georgia    00    149169… 474110…
-##  7 27      00662849 0400000U… 27    MN     Minnesota  00    206232… 189291…
-##  8 02      01785533 0400000U… 02    AK     Alaska     00    147794… 245390…
-##  9 06      01779778 0400000U… 06    CA     California 00    403501… 204667…
-## 10 11      01702382 0400000U… 11    DC     District … 00    158364… 186334…
+##    STATEFP STATENS  AFFGEOID    GEOID STUSPS NAME                 LSAD  ALAND         AWATER      
+##    &lt;chr&gt;   &lt;chr&gt;    &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt;                &lt;chr&gt; &lt;chr&gt;         &lt;chr&gt;       
+##  1 23      01779787 0400000US23 23    ME     Maine                00    79885221885   11748755195 
+##  2 15      01779782 0400000US15 15    HI     Hawaii               00    16634100855   11777698394 
+##  3 04      01779777 0400000US04 04    AZ     Arizona              00    294198560125  1027346486  
+##  4 05      00068085 0400000US05 05    AR     Arkansas             00    134771517596  2960191698  
+##  5 10      01779781 0400000US10 10    DE     Delaware             00    5047194742    1398720828  
+##  6 13      01705317 0400000US13 13    GA     Georgia              00    149169848456  4741100880  
+##  7 27      00662849 0400000US27 27    MN     Minnesota            00    206232257655  18929176411 
+##  8 02      01785533 0400000US02 02    AK     Alaska               00    1477946266785 245390495931
+##  9 06      01779778 0400000US06 06    CA     California           00    403501101370  20466718403 
+## 10 11      01702382 0400000US11 11    DC     District of Columbia 00    158364992     18633403    
 ## # … with 42 more rows</code></pre>
 <pre class="r"><code>as_tibble(state_shp@data$NAME) # What type of states are in the file? We don&#39;t want territories!</code></pre>
 <pre><code>## # A tibble: 52 x 1
 ##    value               
-##    &lt;fct&gt;               
+##    &lt;chr&gt;               
 ##  1 Maine               
 ##  2 Hawaii              
 ##  3 Arizona             
@@ -848,18 +930,18 @@ state_pres_approval$state_pres_approval_percent &lt;- state_pres_approval$median
 
 as_tibble(state_pres_approval) # Check to see if it worked. Clearly it did!</code></pre>
 <pre><code>## # A tibble: 510 x 9
-##    param   state  year  mean     sd median q_025 q_975 state_pres_approval…
-##    &lt;chr&gt;   &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;                &lt;dbl&gt;
-##  1 theta_… AK     2008 0.396 0.0549  0.403 0.309 0.490                 40.3
-##  2 theta_… AK     2009 0.443 0.0403  0.449 0.376 0.495                 44.9
-##  3 theta_… AK     2010 0.403 0.0583  0.415 0.314 0.471                 41.5
-##  4 theta_… AK     2011 0.413 0.0526  0.418 0.329 0.477                 41.8
-##  5 theta_… AK     2012 0.462 0.0654  0.475 0.365 0.536                 47.5
-##  6 theta_… AK     2013 0.400 0.0451  0.411 0.330 0.457                 41.1
-##  7 theta_… AK     2014 0.403 0.0532  0.400 0.324 0.467                 40.0
-##  8 theta_… AK     2015 0.421 0.0531  0.414 0.334 0.498                 41.4
-##  9 theta_… AK     2016 0.495 0.0538  0.503 0.411 0.559                 50.3
-## 10 theta_… AK     2017 0.434 0.0482  0.443 0.368 0.512                 44.3
+##    param     state  year  mean     sd median q_025 q_975 state_pres_approval_percent
+##    &lt;chr&gt;     &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;                       &lt;dbl&gt;
+##  1 theta_bar AK     2008 0.396 0.0549  0.403 0.309 0.490                        40.3
+##  2 theta_bar AK     2009 0.443 0.0403  0.449 0.376 0.495                        44.9
+##  3 theta_bar AK     2010 0.403 0.0583  0.415 0.314 0.471                        41.5
+##  4 theta_bar AK     2011 0.413 0.0526  0.418 0.329 0.477                        41.8
+##  5 theta_bar AK     2012 0.462 0.0654  0.475 0.365 0.536                        47.5
+##  6 theta_bar AK     2013 0.400 0.0451  0.411 0.330 0.457                        41.1
+##  7 theta_bar AK     2014 0.403 0.0532  0.400 0.324 0.467                        40.0
+##  8 theta_bar AK     2015 0.421 0.0531  0.414 0.334 0.498                        41.4
+##  9 theta_bar AK     2016 0.495 0.0538  0.503 0.411 0.559                        50.3
+## 10 theta_bar AK     2017 0.434 0.0482  0.443 0.368 0.512                        44.3
 ## # … with 500 more rows</code></pre>
 <pre class="r"><code>approval_2016 &lt;- subset(state_pres_approval,state_pres_approval$year == 2016) # Subet our data
 
@@ -885,37 +967,30 @@ library(ggnet)
 
 as_tibble(x) # This network data is in dyadic form, where each row indicates a pair of Senators.</code></pre>
 <pre><code>## # A tibble: 4,802 x 43
-##    state_senator_j state_senator_i senator_j senator_i number_cosponso…
-##    &lt;chr&gt;           &lt;chr&gt;               &lt;int&gt;     &lt;int&gt;            &lt;int&gt;
-##  1 AK              AL                   1898      1548               22
-##  2 AK              AL                   1898      1049                9
-##  3 AK              AL                   1694      1548               28
-##  4 AK              AL                   1694      1049               13
-##  5 AK              AR                   1898      1687               43
-##  6 AK              AR                   1694      1701               37
-##  7 AK              AR                   1898      1701               54
-##  8 AK              AR                   1694      1687               47
-##  9 AK              AZ                   1694      1633               22
-## 10 AK              AZ                   1694       754               27
-## # … with 4,792 more rows, and 38 more variables: congress &lt;int&gt;,
-## #   icpsr_id_senator_i &lt;int&gt;, NameFull_senator_i &lt;chr&gt;,
-## #   Class_senator_i &lt;int&gt;, Party_senator_i &lt;int&gt;, ComC_senator_i &lt;int&gt;,
-## #   ComR_senator_i &lt;int&gt;, DW1_senator_i &lt;dbl&gt;, Gender_senator_i &lt;int&gt;,
-## #   Majority_senator_i &lt;int&gt;, bioguide_id_senator_i &lt;chr&gt;,
-## #   seniority_num_of_congresses_senator_i &lt;int&gt;,
-## #   election_year_senator_i &lt;int&gt;,
-## #   senator_up_for_relection_senator_i &lt;int&gt;, icpsr_id_senator_j &lt;int&gt;,
-## #   NameFull_senator_j &lt;chr&gt;, Class_senator_j &lt;int&gt;,
-## #   Party_senator_j &lt;int&gt;, ComC_senator_j &lt;int&gt;, ComR_senator_j &lt;int&gt;,
+##    state_senator_j state_senator_i senator_j senator_i number_cosponso… congress icpsr_id_senato…
+##    &lt;chr&gt;           &lt;chr&gt;               &lt;int&gt;     &lt;int&gt;            &lt;int&gt;    &lt;int&gt;            &lt;int&gt;
+##  1 AK              AL                   1898      1548               22      113            49700
+##  2 AK              AL                   1898      1049                9      113            94659
+##  3 AK              AL                   1694      1548               28      113            49700
+##  4 AK              AL                   1694      1049               13      113            94659
+##  5 AK              AR                   1898      1687               43      113            20101
+##  6 AK              AR                   1694      1701               37      113            40301
+##  7 AK              AR                   1898      1701               54      113            40301
+##  8 AK              AR                   1694      1687               47      113            20101
+##  9 AK              AZ                   1694      1633               22      113            20100
+## 10 AK              AZ                   1694       754               27      113            15039
+## # … with 4,792 more rows, and 36 more variables: NameFull_senator_i &lt;chr&gt;, Class_senator_i &lt;int&gt;,
+## #   Party_senator_i &lt;int&gt;, ComC_senator_i &lt;int&gt;, ComR_senator_i &lt;int&gt;, DW1_senator_i &lt;dbl&gt;,
+## #   Gender_senator_i &lt;int&gt;, Majority_senator_i &lt;int&gt;, bioguide_id_senator_i &lt;chr&gt;,
+## #   seniority_num_of_congresses_senator_i &lt;int&gt;, election_year_senator_i &lt;int&gt;,
+## #   senator_up_for_relection_senator_i &lt;int&gt;, icpsr_id_senator_j &lt;int&gt;, NameFull_senator_j &lt;chr&gt;,
+## #   Class_senator_j &lt;int&gt;, Party_senator_j &lt;int&gt;, ComC_senator_j &lt;int&gt;, ComR_senator_j &lt;int&gt;,
 ## #   DW1_senator_j &lt;dbl&gt;, Gender_senator_j &lt;int&gt;, Majority_senator_j &lt;int&gt;,
-## #   bioguide_id_senator_j &lt;chr&gt;,
-## #   seniority_num_of_congresses_senator_j &lt;int&gt;,
-## #   election_year_senator_j &lt;int&gt;,
-## #   senator_up_for_relection_senator_j &lt;int&gt;, same_committee &lt;int&gt;,
-## #   same_gender &lt;chr&gt;, same_party &lt;chr&gt;, same_majority &lt;chr&gt;,
-## #   same_state_dyad &lt;int&gt;, number_cosponsored_bills_particularistic &lt;int&gt;,
-## #   neighbor_adjacency &lt;int&gt;, centroid_distance &lt;dbl&gt;,
-## #   centroid_distance_miles &lt;dbl&gt;, co_id &lt;fct&gt;, edge &lt;dbl&gt;</code></pre>
+## #   bioguide_id_senator_j &lt;chr&gt;, seniority_num_of_congresses_senator_j &lt;int&gt;,
+## #   election_year_senator_j &lt;int&gt;, senator_up_for_relection_senator_j &lt;int&gt;, same_committee &lt;int&gt;,
+## #   same_gender &lt;chr&gt;, same_party &lt;chr&gt;, same_majority &lt;chr&gt;, same_state_dyad &lt;int&gt;,
+## #   number_cosponsored_bills_particularistic &lt;int&gt;, neighbor_adjacency &lt;int&gt;,
+## #   centroid_distance &lt;dbl&gt;, centroid_distance_miles &lt;dbl&gt;, co_id &lt;chr&gt;, edge &lt;dbl&gt;</code></pre>
 <pre class="r"><code>adj &lt;- graph.data.frame(x[,c(8,21,43)],directed=T) # Let&#39;s create a network object! What we want to extract is a dataframe where the first column is Senator i, the second column is Senator J, and the last column is a binary variable indicating
 adj &lt;- get.adjacency(adj,attr=&#39;edge&#39;,sparse=FALSE) # Convert the edge list to an adjacency matrix
 x_ergm &lt;- network(adj, matrix.type = &quot;adjacency&quot;, ignore.eval = FALSE,directed = F,weighted = F,names.eval=&quot;edge&quot;) # Convert the adjacency matrix to a network object
@@ -935,38 +1010,30 @@ party &lt;- subset(party,party$duplicates == 1)
 party &lt;- data.frame(party)
 party$duplicates &lt;- NULL
 network.vertex.names(x_ergm)</code></pre>
-<pre><code>##  [1] &quot;Jefferson Sessions&quot; &quot;Richard Shelby&quot;     &quot;John Boozman&quot;      
-##  [4] &quot;Mark Pryor&quot;         &quot;Jeff Flake&quot;         &quot;John McCain&quot;       
-##  [7] &quot;Dianne Feinstein&quot;   &quot;Barbara Boxer&quot;      &quot;Michael Bennet&quot;    
-## [10] &quot;Mark Udall&quot;         &quot;Richard Blumenthal&quot; &quot;Christopher Murphy&quot;
-## [13] &quot;Thomas Carper&quot;      &quot;Chris Coons&quot;        &quot;Marco Rubio&quot;       
-## [16] &quot;Bill Nelson&quot;        &quot;John Isakson&quot;       &quot;Saxby Chambliss&quot;   
-## [19] &quot;Brian Schatz&quot;       &quot;Mazie Hirono&quot;       &quot;Charles Grassley&quot;  
-## [22] &quot;Thomas Harkin&quot;      &quot;James Risch&quot;        &quot;Michael Crapo&quot;     
-## [25] &quot;Richard Durbin&quot;     &quot;Mark Kirk&quot;          &quot;Daniel Coats&quot;      
-## [28] &quot;Joe Donnelly&quot;       &quot;Jerry Moran&quot;        &quot;Pat Roberts&quot;       
-## [31] &quot;Rand Paul&quot;          &quot;Mitch McConnell&quot;    &quot;David Vitter&quot;      
-## [34] &quot;Mary Landrieu&quot;      &quot;Elizabeth Warren&quot;   &quot;Benjamin Cardin&quot;   
-## [37] &quot;Barbara Mikulski&quot;   &quot;Susan Collins&quot;      &quot;Angus King&quot;        
-## [40] &quot;Debbie Stabenow&quot;    &quot;Carl Levin&quot;         &quot;Amy Klobuchar&quot;     
-## [43] &quot;Alan Franken&quot;       &quot;Roy Blunt&quot;          &quot;Claire McCaskill&quot;  
-## [46] &quot;Thad Cochran&quot;       &quot;Roger Wicker&quot;       &quot;Max Baucus&quot;        
-## [49] &quot;Jon Tester&quot;         &quot;Kay Hagan&quot;          &quot;Richard Burr&quot;      
-## [52] &quot;John Hoeven&quot;        &quot;Heidi Heitkamp&quot;     &quot;Deb Fischer&quot;       
-## [55] &quot;Mike Johanns&quot;       &quot;Jeanne Shaheen&quot;     &quot;Kelly Ayotte&quot;      
-## [58] &quot;Robert Menendez&quot;    &quot;Frank Lautenberg&quot;   &quot;Tom Udall&quot;         
-## [61] &quot;Martin Heinrich&quot;    &quot;Harry Reid&quot;         &quot;Dean Heller&quot;       
-## [64] &quot;Charles Schumer&quot;    &quot;Kirsten Gillibrand&quot; &quot;Robert Portman&quot;    
-## [67] &quot;Sherrod Brown&quot;      &quot;Thomas Coburn&quot;      &quot;James Inhofe&quot;      
-## [70] &quot;Ron Wyden&quot;          &quot;Jeff Merkley&quot;       &quot;Patrick Toomey&quot;    
-## [73] &quot;Robert Casey&quot;       &quot;Sheldon Whitehouse&quot; &quot;John Reed&quot;         
-## [76] &quot;Lindsey Graham&quot;     &quot;Tim Scott&quot;          &quot;Tim Johnson&quot;       
-## [79] &quot;John Thune&quot;         &quot;Lamar Alexander&quot;    &quot;Bob Corker&quot;        
-## [82] &quot;John Cornyn&quot;        &quot;Ted Cruz&quot;           &quot;Orrin Hatch&quot;       
-## [85] &quot;Mike Lee&quot;           &quot;Timothy Kaine&quot;      &quot;Mark Warner&quot;       
-## [88] &quot;Bernard Sanders&quot;    &quot;Patrick Leahy&quot;      &quot;Maria Cantwell&quot;    
-## [91] &quot;Patty Murray&quot;       &quot;Ron Johnson&quot;        &quot;Tammy Baldwin&quot;     
-## [94] &quot;John Rockefeller&quot;   &quot;Joe Manchin&quot;        &quot;Michael Enzi&quot;      
+<pre><code>##  [1] &quot;Jefferson Sessions&quot; &quot;Richard Shelby&quot;     &quot;John Boozman&quot;       &quot;Mark Pryor&quot;        
+##  [5] &quot;Jeff Flake&quot;         &quot;John McCain&quot;        &quot;Dianne Feinstein&quot;   &quot;Barbara Boxer&quot;     
+##  [9] &quot;Michael Bennet&quot;     &quot;Mark Udall&quot;         &quot;Richard Blumenthal&quot; &quot;Christopher Murphy&quot;
+## [13] &quot;Thomas Carper&quot;      &quot;Chris Coons&quot;        &quot;Marco Rubio&quot;        &quot;Bill Nelson&quot;       
+## [17] &quot;John Isakson&quot;       &quot;Saxby Chambliss&quot;    &quot;Brian Schatz&quot;       &quot;Mazie Hirono&quot;      
+## [21] &quot;Charles Grassley&quot;   &quot;Thomas Harkin&quot;      &quot;James Risch&quot;        &quot;Michael Crapo&quot;     
+## [25] &quot;Richard Durbin&quot;     &quot;Mark Kirk&quot;          &quot;Daniel Coats&quot;       &quot;Joe Donnelly&quot;      
+## [29] &quot;Jerry Moran&quot;        &quot;Pat Roberts&quot;        &quot;Rand Paul&quot;          &quot;Mitch McConnell&quot;   
+## [33] &quot;David Vitter&quot;       &quot;Mary Landrieu&quot;      &quot;Elizabeth Warren&quot;   &quot;Benjamin Cardin&quot;   
+## [37] &quot;Barbara Mikulski&quot;   &quot;Susan Collins&quot;      &quot;Angus King&quot;         &quot;Debbie Stabenow&quot;   
+## [41] &quot;Carl Levin&quot;         &quot;Amy Klobuchar&quot;      &quot;Alan Franken&quot;       &quot;Roy Blunt&quot;         
+## [45] &quot;Claire McCaskill&quot;   &quot;Thad Cochran&quot;       &quot;Roger Wicker&quot;       &quot;Max Baucus&quot;        
+## [49] &quot;Jon Tester&quot;         &quot;Kay Hagan&quot;          &quot;Richard Burr&quot;       &quot;John Hoeven&quot;       
+## [53] &quot;Heidi Heitkamp&quot;     &quot;Deb Fischer&quot;        &quot;Mike Johanns&quot;       &quot;Jeanne Shaheen&quot;    
+## [57] &quot;Kelly Ayotte&quot;       &quot;Robert Menendez&quot;    &quot;Frank Lautenberg&quot;   &quot;Tom Udall&quot;         
+## [61] &quot;Martin Heinrich&quot;    &quot;Harry Reid&quot;         &quot;Dean Heller&quot;        &quot;Charles Schumer&quot;   
+## [65] &quot;Kirsten Gillibrand&quot; &quot;Robert Portman&quot;     &quot;Sherrod Brown&quot;      &quot;Thomas Coburn&quot;     
+## [69] &quot;James Inhofe&quot;       &quot;Ron Wyden&quot;          &quot;Jeff Merkley&quot;       &quot;Patrick Toomey&quot;    
+## [73] &quot;Robert Casey&quot;       &quot;Sheldon Whitehouse&quot; &quot;John Reed&quot;          &quot;Lindsey Graham&quot;    
+## [77] &quot;Tim Scott&quot;          &quot;Tim Johnson&quot;        &quot;John Thune&quot;         &quot;Lamar Alexander&quot;   
+## [81] &quot;Bob Corker&quot;         &quot;John Cornyn&quot;        &quot;Ted Cruz&quot;           &quot;Orrin Hatch&quot;       
+## [85] &quot;Mike Lee&quot;           &quot;Timothy Kaine&quot;      &quot;Mark Warner&quot;        &quot;Bernard Sanders&quot;   
+## [89] &quot;Patrick Leahy&quot;      &quot;Maria Cantwell&quot;     &quot;Patty Murray&quot;       &quot;Ron Johnson&quot;       
+## [93] &quot;Tammy Baldwin&quot;      &quot;John Rockefeller&quot;   &quot;Joe Manchin&quot;        &quot;Michael Enzi&quot;      
 ## [97] &quot;John Barrasso&quot;      &quot;Mark Begich&quot;        &quot;Lisa Murkowski&quot;</code></pre>
 <pre class="r"><code>x_ergm%v%&#39;party&#39;&lt;- party$Party_senator # Merge the party attributes for each Senator!
 x_ergm%v%&#39;state&#39;&lt;- party$State_senator # Merge the state attributes for each Senator!
@@ -997,6 +1064,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

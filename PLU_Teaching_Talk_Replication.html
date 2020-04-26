@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 <meta name="author" content="Carlos Algara" />
@@ -23,7 +23,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -72,9 +73,7 @@ h6 {
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -88,13 +87,18 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
 }
+.html-widget {
+  margin-bottom: 20px;
+}
 button.code-folding-btn:focus {
   outline: none;
+}
+summary {
+  display: list-item;
 }
 </style>
 
@@ -110,7 +114,6 @@ body {
   padding-top: 71px;
   margin-top: -71px;
 }
-
 .section h2 {
   padding-top: 71px;
   margin-top: -71px;
@@ -130,6 +133,43 @@ body {
 .section h6 {
   padding-top: 71px;
   margin-top: -71px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -151,19 +191,74 @@ $(document).ready(function () {
 });
 </script>
 
-
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-</script>
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
 
 <!-- code folding -->
 
 
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
 
 
 
@@ -231,7 +326,7 @@ $(document).ready(function () {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="mailto:calgara@ucdavis.edu">
+  <a href="mailto:caalgara@utep.edu">
     <span class="fa fa-envelope fa-lg"></span>
      
   </a>
@@ -264,9 +359,9 @@ $(document).ready(function () {
 
 
 <h1 class="title toc-ignore">PLU Active Teaching Demonstration Replication</h1>
-<h3 class="subtitle"><em>Data Analysis Replication Assessing Variation in Citizen Participation</em></h3>
-<h4 class="author"><em><a href="mailto:calgara@ucdavis.edu">Carlos Algara</a></em></h4>
-<h4 class="date"><em>4/10/2019</em></h4>
+<h3 class="subtitle">Data Analysis Replication Assessing Variation in Citizen Participation</h3>
+<h4 class="author"><a href="mailto:calgara@ucdavis.edu">Carlos Algara</a></h4>
+<h4 class="date">4/10/2019</h4>
 
 </div>
 
@@ -312,6 +407,7 @@ Where: <span class="math display">\[\rightarrow_{1} = Self-interest;\]</span> <s
 <p>Now that the data is cleaned up, I make a plot with two lowess regression line assessing the decline in voter turnout by presidential and midterm election type. I also note significant changes in suffrage, such as the passage of women’s suffrage in 1920 and the Voting Rights Act of 1965.</p>
 <pre class="r"><code># One lowess regression line per election type (presidential/midterm)
 ggplot(subset(turnout,turnout$year &gt;= 1866), aes(x=year,y=vep_turnout_rate, shape=election,colour=election)) + geom_point() + scale_shape_manual(&quot;&quot;,values=c(16,18)) + scale_colour_manual(&quot;&quot;,values=c(&quot;cyan3&quot;,&quot;firebrick3&quot;)) + theme_bw() + theme(legend.position=c(0.875, 0.85), legend.key.size = unit(0.9,&quot;line&quot;), legend.key = element_blank()) + scale_y_continuous(limits=c(30,90),breaks=seq(30,90,10),labels=c(&quot;30%&quot;,&quot;40%&quot;,&quot;50%&quot;,&quot;60%&quot;,&quot;70%&quot;,&quot;80%&quot;,&quot;90%&quot;), &quot;Eligible Voter Turnout Rate&quot;) + scale_x_continuous(breaks=seq(1866,2016,10), &quot;&quot;) + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + geom_smooth(method = &quot;loess&quot;, se=FALSE, size = 0.75) + ggtitle(&quot;National Voter-Turnout in Presidential &amp; Midterm Elections in the United States, 1866-2016&quot;) + annotate(geom = &quot;text&quot;, x = 1918, y = 80, label = &quot;Women&#39;s Suffrage&quot;, color = &quot;blue&quot;, angle = 90, size = 3.5) + geom_vline(xintercept=1920,linetype = &quot;dashed&quot;,color=&quot;gray&quot;) + annotate(geom = &quot;text&quot;, x = 1868, y = 40, label = &quot;15th Amendment&quot;, color = &quot;blue&quot;, angle = 90, size = 3.5) + geom_vline(xintercept=1870,linetype = &quot;dashed&quot;,color=&quot;gray&quot;) + annotate(geom = &quot;text&quot;, x = 1958, y = 80, label = &quot;DC Suffrage&quot;, color = &quot;blue&quot;, angle = 90, size = 3.5) + geom_vline(xintercept=1960,linetype = &quot;dashed&quot;,color=&quot;gray&quot;) + annotate(geom = &quot;text&quot;, x = 1963, y = 80, label = &quot;Voting Rights Act&quot;, color = &quot;blue&quot;, angle = 90, size = 3.5) + geom_vline(xintercept=1965,linetype = &quot;dashed&quot;,color=&quot;gray&quot;) + annotate(geom = &quot;text&quot;, x = 1969, y = 80, label = &quot;Lowering Voting Age&quot;, color = &quot;blue&quot;, angle = 90, size = 3.5) + geom_vline(xintercept=1971,linetype = &quot;dashed&quot;,color=&quot;gray&quot;)</code></pre>
+<pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
 <p><img src="PLU_Teaching_Talk_Replication_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
 </div>
 <div id="who-participates-in-politics" class="section level3">
@@ -717,6 +813,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
