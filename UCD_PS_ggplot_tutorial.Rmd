@@ -379,7 +379,7 @@ predict <- data.frame(effect("education", se=TRUE, mod = model, confidence.level
 
 predict$education <- factor(predict$education,levels=c("No HS","High school graduate","Some college","2-year","4-year","Post-grad"))
 
-ggplot(data= predict, mapping=aes(x=education, y=fit, ymin=lower, ymax=upper, fill=education)) + geom_bar(stat="identity") + geom_errorbar(width=.25) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + scale_x_discrete("Voter Education Level") + scale_y_continuous(limits=c(0,1.0), breaks=seq(0,1.0,0.05), "Probability of Turning Out to Vote") + ggtitle("Probability of Voter Turnout by Education Level in the 2014 Midterm Elections") + coord_cartesian(ylim=c(0.70,1.0)) + scale_fill_discrete(guide=FALSE)
+ggplot(data= predict, mapping=aes(x=education, y=fit, fill=education)) + geom_bar(stat="identity") + geom_errorbar(data=predict,aes(ymin=lower,ymax=upper),width=.25) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + scale_x_discrete("Voter Education Level") + scale_y_continuous(limits=c(0,1.0), breaks=seq(0,1.0,0.05), "Probability of Turning Out to Vote") + ggtitle("Probability of Voter Turnout by Education Level in the 2014 Midterm Elections") + coord_cartesian(ylim=c(0.70,1.0)) + scale_fill_discrete(guide=FALSE)
 
 # Turnout ~ Income
 
