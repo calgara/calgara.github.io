@@ -1,6 +1,6 @@
 ---
 title: Curriculum Vitae
-date: July 3, 2020
+date: July 9, 2020
 share: FALSE
 output: html_document
 ---
