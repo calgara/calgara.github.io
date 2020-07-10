@@ -103,7 +103,7 @@ h1.title {
 ![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/scientific_knowledge_irt_curves.png "IRT Curves"){ width=60% } 
 </center><br/>
 <center> **The Conditional Effects of Scientific Knowledge & Gender on Support for COVID-19 Government Containment Policies in a Partisan America** </center>
-<center> **with [Sam Fuller](http://ps.ucdavis.edu), PhD Candidate Political Science, University of California, Davis** </center>
+<center> **with [Sam Fuller](http://ps.ucdavis.edu), PhD Candidate, Political Science, University of California, Davis** </center>
 <center> **& [Christopher Hare](http://www.christopherdhare.com), Assistant Professor of Political Science, University of California, Davis** </center><br/>
 <center> ***$\star$[Manuscript Published in Politics & Gender (2020)](https://www.cambridge.org/core/journals/politics-and-gender/article/conditional-effects-of-scientific-knowledge-gender-on-support-for-covid19-government-containment-policies-in-a-partisan-america/C4AEB27D4046433749A883941AC74809) $\star$[Publication Link](https://www.cambridge.org/core/journals/politics-and-gender/article/conditional-effects-of-scientific-knowledge-gender-on-support-for-covid19-government-containment-policies-in-a-partisan-america/C4AEB27D4046433749A883941AC74809) $\star$[Manuscript Data Materials](mailto:caalgara@utep.edu)*** </center><br/>
 <center> ***$\star$[Research accepted for Politics & Gender as part of the Cambridge Coronavirus Collection](https://www.cambridge.org/core/journals/politics-and-gender/virtual-special-issues/gender-politics-and-the-global-pandemic)$\star$***
