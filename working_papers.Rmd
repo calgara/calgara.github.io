@@ -17,7 +17,6 @@ output:
 }
 </style>
 
-<!DOCTYPE html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -48,8 +47,8 @@ h1.title {
 <br/>
 <br/>
 <center>
-  <div text-align: center; font-size: 85%;'>*Interactive Effect of Obstruction & Partisan Majority on Senator Voteshares* <br>
-![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/obstruction.png "Obstruction Dynamics"){ width=50% }
+  *Interactive Effect of Obstruction & Partisan Majority on Senator Voteshares* <br>
+![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/obstruction.png "Obstruction Dynamics"){ width=50% }
 
 </center><br/>
 <center> **The Member Level Determinants \& Consequences of Party Legislative Obstruction in the U.S. Senate** </center>
@@ -61,8 +60,8 @@ h1.title {
 <br/>
 <br/>
 <center>
-  <div text-align: center; font-size: 85%;'>*Effect of Incumbency on Vote Share by Seat Type & Polarization Level, 1920-2016* <br>
-![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/mes_by_states_plot.png "Senate Election Dynamics"){ width=50% }
+  *Effect of Incumbency on Vote Share by Seat Type & Polarization Level, 1920-2016* <br>
+![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/mes_by_states_plot.png "Senate Election Dynamics"){ width=50% }
 
 </center><br/>
 <center> **The Conditioning Role of Polarization in U.S. Senate Election Outcomes: A Direct-Election Era & Voter-Level Analysis** </center><br/>
@@ -73,8 +72,8 @@ h1.title {
 <br/>
 <br/>
 <center>
-  <div text-align: center; font-size: 85%;'>*Distribution of 2016 Federal Election Candidate Positions* <br>
-![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/candidate_stimuli_placements_lines.png "House & Senate Candidate Positions"){ width=60% }
+  *Distribution of 2016 Federal Election Candidate Positions* <br>
+![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/candidate_stimuli_placements_lines.png "House & Senate Candidate Positions"){ width=60% }
 </center><br/>
 <center> **The Distorting Effects of Racial Animus on Proximity Voting in the 2016 Elections** </center>
 <center> **with Isaac Hale, PhD Candidate, University of California, Davis** </center><br/>
@@ -87,9 +86,9 @@ h1.title {
 <br/>
 <br/>
 <center>
-  <div text-align: center; font-size: 10%;'>*Average Country World Wide Web Information Networks, 9/1/2015 - 1/30/2017*<br>
+  *Average Country World Wide Web Information Networks, 9/1/2015 - 1/30/2017*<br>
   <br/>
-![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/third_quartile_graph_fullnetwork_color.png "Country Network"){ width=60% } 
+![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/third_quartile_graph_fullnetwork_color.png "Country Network"){ width=60% } 
 </center><br/>
 <center> **Diachronic Equivalence: An Examination of the International News Network** </center>
 <center> **with [George Barnett](http://communication.ucdavis.edu/people/gbarnett), Distinguished Professor of Communications, University of California, Davis** </center><br/>
@@ -98,9 +97,9 @@ h1.title {
 <br/>
 <br/>
 <center>
-  <div text-align: center; font-size: 10%;'>*Item Characteristic Curves of Latent Scientific Knowledge*<br>
+  *Item Characteristic Curves of Latent Scientific Knowledge*<br>
   <br/>
-![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/scientific_knowledge_irt_curves.png "IRT Curves"){ width=60% } 
+![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/scientific_knowledge_irt_curves.png "IRT Curves"){ width=60% } 
 </center><br/>
 <center> **The Conditional Effects of Scientific Knowledge & Gender on Support for COVID-19 Government Containment Policies in a Partisan America** </center>
 <center> **with [Sam Fuller](http://ps.ucdavis.edu), PhD Candidate, Political Science, University of California, Davis** </center>
@@ -112,8 +111,8 @@ h1.title {
 <br/>
 <br/>
 <center>
-<div text-align: center; font-size: 85%;'>*Perceptual & Roll-Call Based Ideal Points by Self-Placements* <br>
-![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/citizens_ideal_pts_scatter.png "Ideal Point Validation"){ width=60% }
+*Perceptual & Roll-Call Based Ideal Points by Self-Placements* <br>
+![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/citizens_ideal_pts_scatter.png "Ideal Point Validation"){ width=60% }
   </center><br/>
   <center> **The Partisan & Ideological Determinants of Citizen Congressional Approval** </center><br/>
   <center> ***$\star$ Manuscript Invited to Revise & Resubmit at Political Behavior $\star$ <br/> [Working Manuscript Draft](Policy_Component_of_Approval.pdf) $\star$[Manuscript Data Materials](mailto:caalgara@utep.edu)*** </center><br/>
@@ -121,8 +120,8 @@ h1.title {
 <br/>
 <br/>
 <center>
-<div text-align: center; font-size: 85%;'>*Quarterly Job Approval of the U.S. Congress, 1974-2016* <br>
-![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/cong_approval_aggregate_annotated.png "Quarterly Approval"){ width=65% }
+*Quarterly Job Approval of the U.S. Congress, 1974-2016* <br>
+![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/cong_approval_aggregate_annotated.png "Quarterly Approval"){ width=65% }
   </center><br/>
 <center> **The "Collective Congress" on the Ballot? A Voter & Aggregate Level Analysis of Collective Responsibility in Congressional Elections** </center><br/>
   <center> ***$\star$Manuscript Invited to Revise & Resubmit at Congress & the Presidency $\star$ <br/> [Working Manuscript Draft](Algara_Collective_Accountability_September_2019.pdf) $\star$[Manuscript Data Materials](mailto:caalgara@utep.edu)*** </center><br/>
@@ -130,8 +129,8 @@ h1.title {
 <br/>
 <br/>
 <center>
-  <div text-align: center; font-size: 85%;'>*Distribution of Ideological Divergence between District & Partisan Medians* <br>
-![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/median_partisan_divergence_by_chamber.png "District-Member Divergence"){ width=50% }
+  *Distribution of Ideological Divergence between District & Partisan Medians* <br>
+![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/median_partisan_divergence_by_chamber.png "District-Member Divergence"){ width=50% }
 </center><br/>
 <center> **Legislative Signaling or Random Error? An Analysis of Spatially Incorrect Voting in Congress** </center>
 <center> **with Joe Zamadics, PhD, University of Colorado, Boulder** </center><br/>
@@ -140,8 +139,8 @@ h1.title {
 <br/>
 <br/>
 <center>
-  <div text-align: center; font-size: 85%;'>*Bivariate Relationship between Subnational Racial Resentment & GOP Vote Shares* <br>
-![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/scatterplots_aggregate.png "Scatterplots"){ width=70% }
+  *Bivariate Relationship between Subnational Racial Resentment & GOP Vote Shares* <br>
+![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/scatterplots_aggregate.png "Scatterplots"){ width=70% }
 </center><br/>
 <center> **White Racial Resentment & Political Cross-Pressures in Nationalized Elections: The Case of the Republican Coalition in the Trump Era** </center>
 <center> **with Isaac Hale, PhD Candidate, University of California, Davis** </center><br/>
@@ -156,9 +155,9 @@ h1.title {
 <br/>
 <br/>
 <center>
-  <div text-align: center; font-size: 10%;'>*Geographic Neighborhood profile for IA-2, 114th Congress*<br>
+  *Geographic Neighborhood profile for IA-2, 114th Congress*<br>
 <br/>
-![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/IA_2_map_example_of_main_iv.png "IA-2 Geo Profile"){ width=45% } 
+![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/IA_2_map_example_of_main_iv.png "IA-2 Geo Profile"){ width=45% } 
 
 </center><br/>
 <center> **The Influence of Partisan Polarization and Geographic Neighborhood Context on Congressional Cosponsorship Policy Networks** </center>
@@ -168,9 +167,9 @@ h1.title {
 <br/>
 <br/>
 <center>
-  <div text-align: center; font-size: 10%;'>*Partisanship of Senate Press Event Participation*<br>
+  *Partisanship of Senate Press Event Participation*<br>
 <br/>
-![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/number_press_events_by_party_percentage.png "Partisanship Events"){ width=60% } 
+![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/number_press_events_by_party_percentage.png "Partisanship Events"){ width=60% } 
 </center><br/>
 <center> **Who Goes Public with Whom? A Network Analysis of U.S. Senate Press Events**  </center><br/>
 <center> ***$\star$Working Manuscript in Preperation $\star$[Working Manuscript Draft](APSA2018_Senate_Collaboration.pdf) $\star$[Manuscript Data Materials](mailto:caalgara@utep.edu)*** </center><br/>
@@ -178,8 +177,8 @@ h1.title {
 <br/>
 <br/>
 <center>
-  <div text-align: center; font-size: 85%;'>*Quarterly Generic Ballot Differential between the Majority & Minority Party, 1962-2016* <br>
-![alt text](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/maj_generic_ballot_diff_roper.png "Generic Ballot"){ width=65% }
+  *Quarterly Generic Ballot Differential between the Majority & Minority Party, 1962-2016* <br>
+![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/maj_generic_ballot_diff_roper.png "Generic Ballot"){ width=65% }
 </center><br/>
 <center> **The Influence of Partisan Conflict & Policy Responsiveness on Majority Party Electoral Fortunes \& Congressional Job Performance: A Time-Series Approach** </center>
 <center> **with Tzu-Ping Liu, PhD Candidate, University of California, Davis** </center><br/>
