@@ -17,6 +17,8 @@ navbar:
     menu:
     - text: Teaching Portfolio
       href: teaching.html
+    - text: POL 5310 (UTEP), Spring 2021
+      href: pol5310s2021.html
     - text: POL 157 (Sac State), Spring 2019
       href: pol157s2019.html
     - text: POL 1 (UCD), Fall 2017

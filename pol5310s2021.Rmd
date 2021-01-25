@@ -1,0 +1,278 @@
+---
+title: "POL 5310: American Political Behavior: Citizen Preferences, Behavior & Representation"
+subtitle: "University of Texas, El Paso"
+date: "Spring 2021"
+author: 
+- "[Dr. Carlos Algara](mailto:caalgara@utep)"
+- "*Download Full Syllabus [Here](PolS5310_Spring2021/PolS5310_Syllabus_Algara.pdf)*"
+output: html_document
+---
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-100362112-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<br/>
+
+## Welcome!
+
+This GitPage is intended to be the interactive syllabus for Pol 5310: American Political Behavior: Citizen Preferences, Behavior & Representation for the 2021 Spring Semester The full syllabus for the course can be found above. Class logistics, the theoritical framework for the course, and course readings can be found below. Under each meeting header, you will find:
+  
+* Course outline and readings corresponding to the meeting topic.    
+  
+* Course readings corresponding to the meeting topic. If you click on the reading links, you will be taken to a PDF of the reading.  
+
+* The ***How to Read Social Science Research Articles Reading Guide*** for the course can be found [here](PolS5310_Spring2021/PolS5310_Reading_Guide.pdf). Please refer to this guide when reading the scholarly work throughout this semester.    
+
+<br/>
+
+## Class Time, Office Hours & Course Materials
+  
+***Lecture***: [Online Format](PolS5310_Spring2021/PolS5310_Reading_Guide.pdf); Monday 6:00-8:50 (Mountain Standard Time, El Paso Local Time)  
+***Office Hours***: [Online Format](PolS5310_Spring2021/PolS5310_Reading_Guide.pdf); Monday 2:00-4:00 (Mountain Standard Time, El Paso Local Time) & by appointment  
+***Course Materials***: [GitPage](http://calgara.github.io/pol5310s2021.html)  
+<br/>
+
+# Course Objective: How do we study political behavior in the United States & what are the implications of this research on the quality of political representation in America??  
+  
+  
+This course offers an introduction to the systematic and meticulous study of American political behavior and, ultimately, how this influences the degree of political representation provided by political elites. The political behavior field is constructed broadly within the American politics subfield, with the political behavior literature encompassing the underpinning of political decision-making, opinion formation, in addition to more ``concrete'' expressions of political behavior such as voting and political activism. In this course, we concentrate on this literature *and* also assess the implications of citizen political behavior on the quality of political representation provided by their elected elites.  
+  
+Building on the scientific foundation of political science, this course is designed to provide an understanding into what ***shapes*** political behavior (i.e., partisanship, ideological preferences, democratic participation) and what how these ***behavioral*** considerations influence ***responsiveness***by our American political institutions. The main question motivating the course is a simple, yet complex one:
+***what factors influence the political behavior of citizens and what are the implications of this behavior for how elites provide descriptive and ideological representation?***  
+  
+Recognizing the pivotal model of representation in the American political system is predicated on the ability of citizens to translate their preferences and behavior to ensure democratic responsiveness from the American political elites, the motivating question of the course hinges on understanding the following concepts:  
+
+* How do political sciences study and measure differing dimensions of political behavior in the study of American politics? How do we make a distinction between "attitudes" and ``behavior'' in the study of American politics? How do we define both of these distinctions in the study of American politics?  
+
+* Now that we have discussed how political scientists traditionally study political behavior, we now turn to the "meat of the course." How well are citizens able to form opinions about politics, particularly with respect to partisanship and ideological preferences on the role of government in society? Is there a potential danger to the consistent finding in the literature that citizens know relatively little about "hard political issues" such as political ideology? Moreover, does this concern hold when assessing variation in *which* types of citizens participate in politics?  
+
+* Lastly, we consider the implications of political behavior on the degree of representation provided by citizen's elected elites. Do elites accurately represent the views of the majority of citizens they are tasked with representing? How do we know if this is or not the case? Moreover, would this degree of legislative representation be more equitable if citizens participated more in politics?  
+
+These thematic questions may seem daunting, but this course will give you the  necessary framework to perform careful political and social science analysis to gain leverage on these questions. This course will provide not only an understanding of how to study the specific mechanisms by which political behavior manifests itself in American political life and how this behavior influences the nature of political representation in the political system. This course will engage with primary sources of political science literature that will inform us how to engage in careful social science analysis. This course emphasizes the tools you need to assess political behaviors, practices, and institutional representation based on theory and evidence. Welcome to the class!  
+<br/>
+
+## Course Road-Map & Materials  
+<br/>
+***Note:*** Access to the readings can be found in the links below.  
+<br/>
+  
+## *1. Course Overview & Defining the ``Institutional Parameters'' in the American Democratic System (1/25/2021)*  
+***Section Objective***:We briefly discuss the theoretical logical underpinning the American political system and the fundamental role of citizens in our polity. This week serves as an overview into the parameters of our political system and how institutions may, in theory, play a role in shaping citizen political behavior and institutional responsiveness. We tie in this articulation of our democratic institutions with why the study of political behavior and public opinion is so critically important in political science.  
+<br/>
+
+* Madison, James. 1787. *Federalist 10.* In [United States Congress Resources](https://www.congress.gov/resources/display/content/The+Federalist+Papers#TheFederalistPapers-10)  
+
+*  Madison, James (or Alexander Hamilton). 1788. *Federalist 51.* In [United States Congress Resources](https://www.congress.gov/resources/display/content/The+Federalist+Papers#TheFederalistPapers-10)  
+
+* [Berelson, Bernard. 1952. ``Democratic Theory and Public Opinion.'' *Public Opinion Quarterly*. 16(3):313-330.](PolS5310_Spring2021/Berelson 1952.pdf)  
+<br/>
+
+## *2. Classical Studies of Partisanship (2/1/2021)*  
+***Section Objective***: In this module, we discuss the classical works assessing perhaps the most important variable in the study of American political behavior, partisanship. This section, we look at classical studies developing theories explaining partisan preferences held by American voters and discuss why partisanship is so ingrained in the political psyche of Americans.  
+<br/>
+
+* [Campbell, Angus, Philip E. Converse, Warren E. Miller, & Donald E. Stokes. 1960. *The American Voter*, Chapter 2: Theoretical Orientation.](PolS5310_Spring2021/Campbell, Converse, MIller & Stokes_The American Voter_1960.pdf)
+
+* [MacKuen, Michael, Robert Erikson, & James Stimson. 1989. "Macropartisanship." *American Political Science Review*. 83(4): 1125-1142.](PolS5310_Spring2021/MacKuen, Erikson, Stimson - 1989 - Macropartisanship.pdf)  
+
+* [Bartels, Larry. 2002. "Beyond the Running Tally: Partisan Bias in Political Perceptions." *Political Behavior*. 24(2): 117-150.](PolS5310_Spring2021/Bartels - 2002 - Beyond the Running Tally.pdf)  
+
+* [Green, Donald, Bradley Palmquist, & Eric Schickler. 2002. *Partisan Hearts and Minds: Political Parties and the Social Identities of Voters*, Chapter 1: Introduction.](PolS5310_Spring2021/green.pdf)  
+<br/>
+
+## *3. Contemporary Studies of Partisanship (2/8/2021)*  
+***Section Objective***: In this module, we discuss the contemporary works assessing perhaps the most important variable in the study of American political behavior, partisanship. Leveraging new data and methods, we discuss recent insights in how partisanship changes over time (if at all) and whether partisanship causes changes in preferences (or the other way around). Moreover, we will also discuss if partisanship is ``increasing in strength'' as a predictor variable over time.  
+<br/>
+
+* [Barber, Michael & Jeremy C. Pope. 2018. "Does Party Trump Ideology? Disentangling Party and Ideology in America." *American Political Science Review*. 1(1): 1-17.](PolS5310_Spring2021/Barber, Pope - 2019 - Does Party Trump Ideology Disentangling Party and Ideology in America.pdf)
+
+* [Highton, Benjamin & Cindy D. Kam. 2011. "The Long-Term Dynamics of Partisanship and Issue Orientations" *Journal of Politics*. 1(1): 202-215.](PolS5310_Spring2021/Highton & Kam 2011.pdf)  
+
+* [Bafumi, Joseph & Robert Y. Shapiro. 2009. "A New Partisan Voter." *Journal of Politics*. 71(1): 1-23.](PolS5310_Spring2021/Bafumi, Shapiro - 2009 - A New Partisan Voter.pdf)  
+
+* [Abramowitz, Alan I., and Steven Webster. 2016. "The Rise of Negative Partisanship and the Nationalization of US Elections in the 21st Century." *Electoral Studies*. 41: 12-22.](PolS5310_Spring2021/Abramowitz, Webster - 2016 - The rise of negative partisanship and the nationalization of U.S. elections in the 21st century.pdf)  
+
+* [Mason, Lilliana. 2015. "I Disrespectfully Agree: The Differential Effects of Partisan Sorting on Social and Issue Polarization." *American Journal of Political Science*. 59(1): 128-145](PolS5310_Spring2021/Mason - 2015 - I Disrespectfully Agree The Differential Effects of Partisan Sorting on Social and Issue Polarization.pdf)  
+<br/>
+  
+## *4. An Ideological Mass Public? (2/15/2021)*  
+***Section Objective***: In this module, we discuss work assessing if Americans are capable of ``ideological thinking'' and whether this degree of political sophistication is required for citizens to make rational decisions.  
+<br/>
+  
+* [Converse, Philip E. 1964. ``The Nature of Belief Systems in Mass Publics.'' In *Ideology and Discontent*, ed. David E. Apter. London: Free Press of Glencoe.](PolS5310_Spring2021/The nature of belief systems in mass publics 1964.pdf)
+
+* [Conover, Pamela Johnston, & Stanley Feldman. 1981. "The Origins and Meaning of Liberal/Conservative Self-Identifications." *American Journal of Political Science*. 25(4): 617-645.](PolS5310_Spring2021/Conover & Feldman 1981.pdf)  
+
+* [Ellis, Christopher, \& James A. Stimson. 2009. "Symbolic Ideology in the American Electorate." *Electoral Studies*. 28(3): 388-402.](PolS5310_Spring2021/Ellis, Stimson - 2009 - Symbolic ideology in the American electorate.pdf)  
+
+* [Mason, Lilliana. 2018. "Ideologues without Issues: The Polarizing Consequences of Ideological Identities." *Public Opinion Quarterly.* 82(S1): 280-301.](PolS5310_Spring2021/Mason 2018.pdf)  
+
+* [Broockman, David & Neil Malhorta. 2020. "What Do Partisan Donors Want?" *Public Opinion Quarterly.* 84(1): 104-118.](PolS5310_Spring2021/Broockman & Malhorta 2019.pdf)  
+<br/>
+  
+## *5. Turnout and Participation, Do Citizens Participate? (2/22/2021)*  
+***Section Objective***: In this module, we discuss what factors motivate the propensity of participating in politics among voters. Specifically, what factors motivate the propensity of individuals to turnout to vote and what role do campaigns play (or not play) in driving voters to the polls?    
+<br/>
+  
+* [Ojeda, Christopher. 2018. "The Two Income-Participation Gaps." *American Journal of Political Science*. 62(4): 813-829.](PolS5310_Spring2021/Ojeda 2018.pdf)
+
+* [Gerber, Alan S. & Donald P. Green. 2000. "The Effects of Canvassing, Telephone Calls, and Direct Mail on Voter Turnout: A Field Experiment." *American Political Science Review*. 94(3): 653-663.](PolS5310_Spring2021/Gerber, Green - 2000 - The Effects of Canvassing, Telephone Calls, and Direct Mail on Voter Turnout A Field Experiment.pdf)  
+
+* [Hayes, Danny & Seth C. McKee. 2009. "The Participatory Effects of Redistricting." *American Journal of Political Science.* 53(4): 1006-1023.](PolS5310_Spring2021/Hayes & McKee 2009.pdf)  
+
+* [Valenzuela, Ali A. & Melissa R. Michelson. 2016. "Turnout, Status, and Identity: Mobilizing Latinos to Vote with Group Appeals." *American Political Science Review.* 110(4): 615-630.](PolS5310_Spring2021/Valenzuela & Michelson 2016.pdf)  
+
+* [Grimmer, Justin, Eitan Hersh, Marc Meredith, Jonathan Mummolo, & Clayton Nall. 2018. "Obstacles to Estimating Voter ID Laws’ Effect on Turnout." *Journal of Politics.* 80(3): 1045-1051.](PolS5310_Spring2021/Grimmer et al. - 2018 - Obstacles to Estimating Voter ID Laws’ Effect on Turnout.pdf)  
+<br/>
+  
+## *6. Do Citizens Use Ideological Preferences to Vote? (3/1/2021)*  
+***Section Objective***:  In this module, we discuss whether citizens are able to use their ideological preferences to hold electoral candidates accountable. To do this, we assess the spatial model of electoral choice, its assumptions and whether citizens are up to the task of voting in spatial terms.  
+<br/>
+  
+* [Joesten, Danielle & Walter J. Stone. 2014. "Reassessing Proximity Voting: Expertise, Party, and Choice in Congressional Elections." *Journal of Politics.* 76(3): 740-753.](PolS5310_Spring2021/Joesten, Stone - 2014 - Reassessing Proximity Voting Expertise, Party, and Choice in Congressional Elections.pdf)
+
+* [Downs, Anthony. 1957. ``The Statics and Dynamics of Party Ideologies''. In *An Economic Theory of Democracy* (pp. 114–141). Harper & Row.](PolS5310_Spring2021/Downs - 1957 - The Statics and Dynamics of Party Ideologies.pdf)  
+
+* [Jessee, Stephen. A. 2010. "Partisan Bias, Political Information and Spatial Voting in the 2008 Presidential Election." *Journal of Politics*. 72(2), 327–340. ](PolS5310_Spring2021/Jessee - 2010 - Partisan Bias, Political Information and Spatial Voting in the 2008 Presidential Election.pdf)  
+
+* [Boatright, Robert G. 2008. "Who are the Spatial Voting Violators?" *Electoral Studies*. 27(1): 116–125.](PolS5310_Spring2021/Boatright - 2008 - Who are the spatial voting violators.pdf)  
+
+* [Buttice, Matthew K., & Stone, Walter J. 2012. "Candidates Matter: Policy and Quality Differences in Congressional Elections." *Journal of Politics*. 74(3): 870–887.](PolS5310_Spring2021/Buttice, Stone - 2012 - Candidates Matter Policy and Quality Differences in Congressional Elections.pdf)  
+<br/>
+  
+## *7. Does White Racial Resentment Shape Political Behavior? (3/8/2021)*  
+***Section Objective***:  In this section, we assess the role of racial resentment in shaping the political identity and behavior of white Americans. We explore the extent to which partisan preferences closely align with racial resentment attitudes among whites, is there a fundamental change? Moreover, we explore to what extent racial resentment is a heuristic for electoral choice among white Americans and whether this is a salient determinant of choice during the age of Trump.   
+<br/>
+  
+* [Engelhardt, Andrew M. 2019. "Racial Attitudes through a Partisan Lens." *British Journal of Political Science*. Forthcoming.](PolS5310_Spring2021/racial_attitudes_through_a_partisan_lens.pdf)
+
+* [Algara, Carlos & Isaac Hale. 2020. "Racial attitudes & political cross-pressures in nationalized elections: The case of the Republican coalition in the Trump era." *Electoral Studies*. 1-13.](PolS5310_Spring2021/electoral_studies_publication.pdf)  
+
+* [Edsall, Tom. 2020 ``Biden Is Not out of the Woods.'' In *The New York Times*.](https://www.nytimes.com/2020/10/14/opinion/biden-trump-presidential-election.html) 
+
+* [Zingher, Joshua. 2018. "Polarization, Demographic Change, and White Flight from the Democratic Party." *Journal of Politics*. 80(3): 860-872.](PolS5310_Spring2021/Zingher - 2018 - Polarization, Demographic Change, and White Flight from the Democratic Party.pdf)  
+
+* [Buyuker, Beyza, Amanda Jadidi D'Urso, Alexandra Filindra, and Noah J. Kaplan. 2020. "Race Politics Research and the American Presidency: Thinking about White Attitudes, Identities and Vote Choice in the Trump Era and Beyond." *The Journal of Race, Ethnicity, and Politics*. 1–42.](PolS5310_Spring2021/race-politics-research-and-the-american-presidency-thinking-about-white-attitudes-identities-and-vote-choice-in-the-trump-era-and-beyond.pdf)  
+
+* [Setzler, Mark & Alixandra B. Yanus. 2018. "Why Did Women Vote for Donald Trump." *PS: Political Science & Politics*. 51(3): 523–527.](PolS5310_Spring2021/why-did-women-vote-for-donald-trump.pdf)  
+<br/>
+<center> ***No-Seminar Due to Spring Break: March 15, 2021*** </center><br/>
+
+## *8. Does Sexism and Sexist Attitudes Shape Political Behavior? (3/22/2021)*  
+***Section Objective***: In this section, we build off the previous literature on racial resentment and assess whether sexism plays a significant role in political behavior. Specifically, we assess the role of political behavior within the context of electoral choice and candidate evaluations.  
+<br/>
+  
+* [Bonilla, Tabitha and Alvin B. Tillery Jr. 2020. "Which Identity Frames Boost Support for and Mobilization in the #BlackLivesMatter Movement? An Experimental Test." *American Political Science Review*. 114(4): 947-962.](PolS5310_Spring2021/which-identity-frames-boost-support-for-and-mobilization-in-the-blacklivesmatter-movement-an-experimental-test.pdf)
+
+* [Ondercin, Heather L. 2017."Who Is Responsible for the Gender Gap? The Dynamics of Men’s and Women’s Democratic Macropartisanship, 1950–2012." *Political Research Quarterly*. 70(4): 749-761.](PolS5310_Spring2021/Ondercin 2017.pdf)  
+
+* [Barnes, Tiffany \& Erin C. Cassese. 2017. "American Party Women: A Look at the Gender Gap within Parties." *Political Research Quarterly*. 70(1): 127-141.](PolS5310_Spring2021/Barnes & Cassese 2017.pdf) 
+
+* [Dolan, Kathleen. 1998. "Voting for Women in the 'Year of the Woman.'" *American Journal of Political Science*. 42(1): 272-293.](PolS5310_Spring2021/Dolan 1998.pdf)  
+
+* [Bauer, Nichole M. 2020. "Shifting Standards: How Voters Evaluate the Qualifications of Female and Male Candidates." *The Journal of Politics*. 82(1): 1-12.](PolS5310_Spring2021/race-politics-research-and-the-american-presidency-thinking-about-white-attitudes-identities-and-vote-choice-in-the-trump-era-and-beyond.pdf)  
+
+* [Setzler, Mark & Alixandra B. Yanus. 2018. "Why Did Women Vote for Donald Trump." *PS: Political Science & Politics*. 51(3): 523–527.](PolS5310_Spring2021/why-did-women-vote-for-donald-trump.pdf)  
+<br/>
+  
+## *9. Are ``regular'' Americans and Elites Polarized? (3/29/2021)*  
+***Section Objective***: In this section, we begin by assessing whether the mass public are polarized on ideological grounds at levels comparable to elites (i.e., members of Congress). We assess whether citizens are able to think ideologically and are becoming more polarized over time. This is a huge debate in the literature and this section should uncover more questions than answers. Note that the first two articles by Abramowitz & Saunders and Fiorina et al. set the stage of the debate.  
+<br/>
+  
+* [Abramowitz, Alan & Kyle Saunders. 2008. "Is Polarization a Myth?" *Journal of Politics*. 70(2): 542-555](PolS5310_Spring2021/Abramowitz, Saunders - 2008 - Is Polarization a Myth.pdf)
+
+* [Fiorina, Morris P., Samuel A. Abrams, & Jeremy C. Pope. 2008. "Polarization in the American Public: Misconceptions and Misreadings." *Journal of Politics.* 70(2): 556-560.](PolS5310_Spring2021/Fiorina, Abrams, Pope - 2008 - Polarization in the American Public Misconceptions and Misreadings.pdf)  
+
+* [Layman, Geoffrey C., Thomas M. Carsey, John C. Green, Richard Herrera, & Rosalyn Cooperman. 2010. "Activists and conflict extension in American party politics." *American Political Science Review*. 104(2): 324-346.](PolS5310_Spring2021/Layman et al. - 2010 - Activists and Conflict Extension in American Party Politics.pdf) 
+
+* [Graham, Matthew H. & Milan W. Svolik. 2020. "Democracy in America? Partisanship, Polarization, and the Robustness of Support for Democracy in the United States." *American Political Science Review*. 114(2): 392-409.](PolS5310_Spring2021/democracy_in_america_partisanship_polarization_and_the_robustness_of_support_for_democracy_in_the_united_states.pdf)  
+
+* [Tesler, Michael. 2012. "The spillover of racialization into health care: How President Obama polarized public opinion by racial attitudes and race." *American Journal of Political Science*. 56(3): 690-704.](PolS5310_Spring2021/Tesler - 2012 - The Spillover of Racialization into Health Care How President Obama Polarized Public Opinion by Racial Attitudes and Rac.pdf)  
+
+* [Iyengar, Shanto, Gaurav Sood, and Yphtach Lelkes. 2012. "Affect, Not Ideology A Social Identity Perspective on Polarization." *Public Opinion Quarterly*. 76(3): 405–431.](PolS5310_Spring2021/Iyengar, Sood, Lelkes - 2012 - Affect, Not Ideology A Social Identity Perspective on Polarization.pdf)  
+<br/>
+  
+## *10. Are Americans Able to Effectively Evaluate their Collective National Institutions? (4/5/2021)*  
+***Section Objective***: In this module, we assess the critical question of whether citizens are able to assess the job performance of their collective institutions, such as the presidency, U.S. Congress, Supreme Court, state legislatures, and Governors. We will also discuss the implications of this literature on the broader question of collective accountability.  
+<br/>
+  
+* [Algara, Carlos (2021) "Congressional Approval \& Responsible Party Government: The Role of Partisanship & Ideology in Citizen Assessments of the Contemporary U.S. Congress." Forthcoming at *Political Behavior*.](PolS5310_Spring2021/Algara 2021.pdf)
+
+* [Langehennig, Stefani, Joseph Zamadics & Jenny Wolak. 2019. "State Policy Outcomes and State Legislative Approval." *Political Research Quarterly*. 72(4):929-943.](PolS5310_Spring2021/Zamadics SPPQ.pdf)  
+
+* [Cohen, Jeffrey E. & James D. King. 2004. "Relative Unemployment and Gubernatorial Popularity." *Journal of Politics*. 66(4):1267-1282.](PolS5310_Spring2021/Cohen & King 2004.pdf) 
+
+* [Lebo, Matthew J. & Daniel Cassino. 2007. "The Aggregated Consequences of Motivated Reasoning and the Dyanmics of Partisan Presidential Approval." 28(6): 719-746.](PolS5310_Spring2021/Lebo, Cassino - 2007 - The Aggregated Consequences of Motivated Reasoning and the Dynamics of Partisan Presidential Approval.pdf)  
+
+* [Malhotra, Neil, and Stephen A. Jessee. 2014. "Ideological proximity and support for the Supreme Court." *Political Behavior*. 36(4): 817-846.](PolS5310_Spring2021/Malhotra, Jessee - 2014 - Ideological Proximity and Support for The Supreme Court.pdf)  
+<br/>
+  
+## *11. Are Americans Ideologically Represented by their Elites? (4/5/2021)*  
+***Section Objective***: In this module, we assess the critical question of whether citizens are ideologically represented by their elected elites. In particular, we assess whether Madisonian *dyadic representation* exists between the mass public and their elected legislators exists. If Americans are not represented, what are the implications of this for political behavior and the nature of our democratic institutions? Do Americans know the intricacies of elite representation, such as the complex rules underpinning ideological representation by the U.S. Senate?  
+<br/>
+  
+* [Miller, Warren E. & Donald E. Stokes. 1963. "Constituency Influence in Congress." *American Political Science Review*. 57(1): 45-56.](PolS5310_Spring2021/Miller, Stokes - 1963 - Constituency Influence in Congress.pdf)
+
+* [Bafumi, Joseph & Michael Herron. 2010. "Leapfrog Representation and Extremism: A Study of American Voters and Their Members of Congress." *American Political Science Review*. 104(1): 519-542.](PolS5310_Spring2021/Bafumi, Herron - 2010 - Leapfrog Representation and Extremism A Study of American Voters and Their Members in Congress.pdf)  
+
+* [Broockman, David E., \& Christopher Skovorn. 2018. "Bias in Perceptions of Public Opinion among Political Elites." *American Political Science Review.* 112(3): 542–563. ](PolS5310_Spring2021/Broockman, Skovron - 2018 - Conservative Bias in Perceptions of Public Opinion Among American Political Elites.pdf) 
+
+* [Thomsen, Danielle M. 2014. "Ideological Moderates Won't Run: How Party Fit Matters for Partisan Polarization in Congress." *Journal of Politics*. 76(3): 786-797.](PolS5310_Spring2021/Thomsen 2014.pdf)  
+
+* [Smith, Steven S. & Hong Min Park. 2013. ``Americans' Attitudes about the Senate Filibuster.'' *American Politics Research*. 41(5): 735-760.](PolS5310_Spring2021/Smith, Park - 2013 - Americans’ Attitudes About the Senate Filibuster.pdf)  
+<br/>
+  
+## *12. Are Americans *Descriptively* Represented by Elites? What's the Difference? (4/5/2021)*  
+***Section Objective***: In this module, we ask how do political scientists traditionally view the role of descriptive representation in the American context? Is there variation in representation across the race of legislators? Are minority candidates successfully able to mobilize members of their racial group when they run for elected office?    
+<br/>
+  
+* [Gay, Claudine. 2002. "Spirals of Trust? The Effect of Descriptive Representation on the Relationship Between Citizens and Their Government." *American Journal of Political Science*. 46(4): 717-732.](PolS5310_Spring2021/Gay 2002.pdf)
+
+* [Butler, Daniel \& David E. Broockman. 2011. "Do Politicians Racially Discriminate Against Constituents? A Field Experiment on State Legislators." *American Journal of Political Science.* 55(3):463-477.](PolS5310_Spring2021/Butler & Broockman 2011.pdf)  
+
+* [Lowande, Kenneth, Melinda Ritchie, & Erinn Lauterbach. 2019. "Descriptive and Substantive Representation in Congress: Evidence from 80,000 Congressional Inquiries." *American Journal of Political Science*. 63(3): 644-659.](PolS5310_Spring2021/Lowande, Ritchie, & Lauterbach 2019.pdf) 
+
+* [Broockman, David E. 2013. "Black Politicians are More Intrinsically Motivated to Advance Blacks’ interests: A Field Experiment Manipulating Political Incentives." *American Journal of Political Science.* 57(3): 521-536.](PolS5310_Spring2021/Broockman 2013.pdf)  
+
+* [Fraga, Bernard L. 2016. "Candidates or districts? Reevaluating the Role of Race in Voter Turnout." *American Journal of Political Science*. 60(1): 97-122.](PolS5310_Spring2021/Fraga 2016.pdf)  
+<br/>
+  
+## *13. Does the Party System **Respond** to Changes in the Political Preferences of the Electorate? (4/26/2021)*  
+***Section Objective***: We explore the role societal cleavages play in shaping the electoral coalitions of the two major parties. Why are the two parties thought of as a collection of organized interests and what does this mean for groups (i.e., racial \& religious) securing policy representation from their elected elites? Why are the elections of 1964 and 1980 considered "critical junctures" in terms of racial and religious realignment within the two parties?      
+<br/>
+  
+* [Bawn, Kathleen et al. 2012. "A Theory of Political Parties: Groups, Policy Demands and Nominations in American Politics." *Perspectives on Politics.* 10(03): 571–97.](PolS5310_Spring2021/Bawn et al. - 2012 - A Theory of Political Parties Groups, Policy Demands and Nominations in American Politics.pdf)
+
+* [Carmines, Edward G. & James A. Stimson. 1986. "On the Structure and Sequence of Issue Evolution." *American Political Science Review.* 80(3): 901-920.](PolS5310_Spring2021/Carmines & Stimson 1986.pdf)  
+
+* [Hajnal, Zoltan & Michael Rivera. 2014. "Immigration, Latinos, and White Partisan Politics: The New Democratic Direction." *American Journal of Political Science.* 58(4): 773-789.](PolS5310_Spring2021/Hajnal & Rivera 2014.pdf) 
+
+* [Adams, Greg D. 1997. "Abortion: Evidence of an Issue Evolution." *American Journal of Political Science.* 41(3): 718-737.](PolS5310_Spring2021/adams 1997.pdf)  
+
+* [Killian Mitchell \ Clyde Wilcox. 2008. "Do Abortion Attitudes Lead to Party Switching?" *Political Research Quarterly*. 61(4):561-573. ](PolS5310_Spring2021/Killian & Wilcox 2008.pdf)  
+<br/>
+  
+## *14. How are the Standing Models of Political Behavior Being Applied to the Ongoing COVID-19 Pandemic? (5/3/2021)*  
+***Section Objective***: Lastly, we consider the rapid research being produced to assess the ongoing behavioral dynamics of COVID-19 pandemic. We will look at papers looking at the role of race, trust, scientific knowledge in shaping attitudes about COVID-19 policies. We will also assess work assessing attitudes surrounding the prevalence of taking the vaccine in the mass public.        
+<br/>
+  
+* [Algara, Carlos, Sam Fuller, & Christopher Hare. 2020. "The Conditional Effect of Scientific Knowledge and Gender on Support for COVID-19 Government Containment Policies in a Partisan America.” *Politics & Gender*. 16(4): 1075–1083.](PolS5310_Spring2021/P&G_Published_Article.pdf)
+
+* [Reny, Tyler T. 2020. "Masculine Norms and Infectious Disease: The Case of COVID-19." *Politics & Gender*. 16(4): 1028–1035.](PolS5310_Spring2021/Reny 2020.pdf)  
+
+* [Kazemian, Sara, Carlos Algara, & Sam Fuller. 2021. "Institutional Trust, Race, & Support for COVID-19 Containment Government Policies." *Unpublished working paper.*](PolS5310_Spring2021/) 
+
+* [Motta, Matt, Dominik Stecula, & Christina Farhart. 2020. "How Right-Leaning Media Coverage of COVID-19 Facilitated the Spread of Misinformation in the Early Stages of the Pandemic in the U.S." *Canadian Journal of Political Science*. 53(2): 335–342.](PolS5310_Spring2021/how-right-leaning-media-coverage-of-covid-19-facilitated-the-spread-of-misinformation-in-the-early-stages-of-the-pandemic-in-the-us.pdf)  
+
+* [Kreps, Sarah, Sandip Prasad, John S. Brownstein, Yulin Hswen, Brian T. Garibaldi, Baobao Zhang, & Douglas L. Kriner. 2020. "Factors associated with US adults' likelihood of accepting COVID-19 vaccination." *JAMA Network Open*. 3(10): e2025594-e2025594.](PolS5310_Spring2021/kreps_2020_oi_200840_1605646100.83354.pdf)                
+
+<br/>
+<br/>
+<center> Copyright &copy; 2017 by Carlos Algara. Made with [RStudio](https://www.rstudio.com). </center>

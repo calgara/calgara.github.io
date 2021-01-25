@@ -2,34 +2,14 @@
 title: "Welcome!"
 ---
 
-<img src="/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/Bio_Photo.JPG" style="width:30%; border:5px solid; margin-right: 20px" align="left">
+<img src="/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/Bio_Photo.JPG" style="width:30%; border:5px solid; margin-right: 20px" align="left">
 
 Thanks for visiting my website! I am an Assistant Professor of Political Science at the [University of Texas at El Paso](https://www.utep.edu/liberalarts/political-science/) and a Faculty Affiliate at the [Center of Effective Lawmaking](https://thelawmakers.org). Beginning in July 2021, I will be an Assistant Professor of Political Science at [Claremont Graduate University](https://www.cgu.edu/school/ssspe/division-of-politics-economics/politics-government-department/). I also served as a part of the American Political Science Association [Congressional Fellowship Program](https://www.apsanet.org/cfp) 2019-2020 class of Congressional Fellows, placed in the United States Senate. I received my Ph.D. in Political Science from the [University of California, Davis](http://ps.ucdavis.edu/) in June 2019.  
   
-My research agenda focuses broadly on the nature of ideological representation, collective accountability, voter decision rules in congressional elections, and legislative behavior. My graduate work, advised by Professors [Walter J. Stone](http://ps.ucdavis.edu/people/wstone) and [Erik J. Engstrom](http://ps.ucdavis.edu/people/engstrom), focused on what determines citizen perceptions of congressional job performance and how these perceptions shape electoral outcomes and partisan legislative incentives. In addition, I am also involved in projects analyzing how polarization changes the nature of congressional election dynamics, how political attitudes distort proximity voting and democratic participation, and the dynamics of legislative obstruction and collaboration. I also have a methodological interest in social network analysis and in latent variable measurement, particularly with respect to measurement of voter and elite ideological preferences in the common space and over time. For an illustration of this ideological scaling work, see the interactive map below highlighting ideological representation in the United States House of Representatives in 2018.  
-<br>
-<center>
-```{r echo=FALSE, results="hide", include=FALSE, message=FALSE}
-library(tigris)
-library(leaflet)
-library(plyr)
-library(dplyr)
-library(widgetframe)
-library(RColorBrewer)
-library(htmlwidgets)
-library(htmltools)
-
-load("/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/Rshinyapp/shiny_data/clean_shiny_data.Rdata")
-```
-```{r echo=FALSE, width = "800px", height = "400px", out.width = "80%"}
-map3
-```
-</center>
-<br>
-Please visit my [Research Agenda Statement](Algara_Research_Statement.pdf) for an overview of my broad research agenda, current projects in this agenda, and future directions. To learn more about ongoing working projects of this research agenda, please visit the [Publications & Working Papers](https://calgara.github.io/working_papers.html) and [CV](https://calgara.github.io/cv.html) tabs of this website. To learn more about my teaching philosophy and comprehensive evidence of teaching effectiveness, please visit the [Teaching Porfolio](https://calgara.github.io/teaching.html).    
+My research agenda focuses broadly on the nature of ideological representation, collective accountability, voter decision rules in congressional elections, and legislative behavior. My graduate work, advised by Professors [Walter J. Stone](http://ps.ucdavis.edu/people/wstone) and [Erik J. Engstrom](http://ps.ucdavis.edu/people/engstrom), focused on what determines citizen perceptions of congressional job performance and how these perceptions shape electoral outcomes and partisan legislative incentives. In addition, I am also involved in projects analyzing how polarization changes the nature of congressional election dynamics, how political attitudes distort proximity voting and democratic participation, and the dynamics of legislative obstruction and collaboration. I also have a methodological interest in social network analysis and in latent variable measurement, particularly with respect to measurement of voter and elite ideological preferences in the common space and over time.    
 <br>
   <center>
-  <a href = "https://twitter.com/algaraca"><img src="/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/twitter.png" alt="Twitter Logo" style="width:140px;" align ="center"></a>
+  <a href = "https://twitter.com/algaraca"><img src="/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/twitter.png" alt="Twitter Logo" style="width:140px;" align ="center"></a>
   </center>
   <br/>
   <br/>

@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Dr. Carlos Algara" />
+<meta name="author" content="Download Full Syllabus Here" />
+
+
+<title>POL 5310: American Political Behavior: Citizen Preferences, Behavior &amp; Representation</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/readable.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 66px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h2 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h3 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h4 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h5 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h6 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Carlos Algara</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="cv.html">CV</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Research
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="Algara_Research_Statement.pdf">Research Agenda Statement</a>
+    </li>
+    <li>
+      <a href="working_papers.html">Publications &amp; Working Papers</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Teaching
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="teaching.html">Teaching Portfolio</a>
+    </li>
+    <li>
+      <a href="pol5310s2021.html">POL 5310 (UTEP), Spring 2021</a>
+    </li>
+    <li>
+      <a href="pol157s2019.html">POL 157 (Sac State), Spring 2019</a>
+    </li>
+    <li>
+      <a href="pol1f2017.html">POL 1 (UCD), Fall 2017</a>
+    </li>
+    <li>
+      <a href="pol1s2017.html">POL 1 (UCD), Summer 2017</a>
+    </li>
+    <li>
+      <a href="UCD_PS_ggplot_tutorial.html">ggplot Data Visualization Tutorial</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="about.html">About Me</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="mailto:caalgara@utep.edu">
+    <span class="fa fa-envelope fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="http://github.com/calgara">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://twitter.com/algaraca">
+    <span class="fa fa-twitter fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://scholar.google.com/citations?user=AJASqUMAAAAJ&amp;hl=en&amp;oi=ao">
+    <span class="fa fa-graduation-cap fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">POL 5310: American Political Behavior: Citizen Preferences, Behavior &amp; Representation</h1>
+<h3 class="subtitle">University of Texas, El Paso</h3>
+<h4 class="author"><a href="mailto:caalgara@utep">Dr. Carlos Algara</a></h4>
+<h4 class="author"><em>Download Full Syllabus <a href="PolS5310_Spring2021/PolS5310_Syllabus_Algara.pdf">Here</a></em></h4>
+<h4 class="date">Spring 2021</h4>
+
+</div>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-100362112-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<p><br/></p>
+<div id="welcome" class="section level2">
+<h2>Welcome!</h2>
+<p>This GitPage is intended to be the interactive syllabus for Pol 5310: American Political Behavior: Citizen Preferences, Behavior &amp; Representation for the 2021 Spring Semester The full syllabus for the course can be found above. Class logistics, the theoritical framework for the course, and course readings can be found below. Under each meeting header, you will find:</p>
+<ul>
+<li><p>Course outline and readings corresponding to the meeting topic.</p></li>
+<li><p>Course readings corresponding to the meeting topic. If you click on the reading links, you will be taken to a PDF of the reading.</p></li>
+<li><p>The <strong><em>How to Read Social Science Research Articles Reading Guide</em></strong> for the course can be found <a href="PolS5310_Spring2021/PolS5310_Reading_Guide.pdf">here</a>. Please refer to this guide when reading the scholarly work throughout this semester.</p></li>
+</ul>
+<p><br/></p>
+</div>
+<div id="class-time-office-hours-course-materials" class="section level2">
+<h2>Class Time, Office Hours &amp; Course Materials</h2>
+<p><strong><em>Lecture</em></strong>: <a href="PolS5310_Spring2021/PolS5310_Reading_Guide.pdf">Online Format</a>; Monday 6:00-8:50 (Mountain Standard Time, El Paso Local Time)<br />
+<strong><em>Office Hours</em></strong>: <a href="PolS5310_Spring2021/PolS5310_Reading_Guide.pdf">Online Format</a>; Monday 2:00-4:00 (Mountain Standard Time, El Paso Local Time) &amp; by appointment<br />
+<strong><em>Course Materials</em></strong>: <a href="http://calgara.github.io/pol5310s2021.html">GitPage</a><br />
+<br/></p>
+</div>
+<div id="course-objective-how-do-we-study-political-behavior-in-the-united-states-what-are-the-implications-of-this-research-on-the-quality-of-political-representation-in-america" class="section level1">
+<h1>Course Objective: How do we study political behavior in the United States &amp; what are the implications of this research on the quality of political representation in America??</h1>
+<p>This course offers an introduction to the systematic and meticulous study of American political behavior and, ultimately, how this influences the degree of political representation provided by political elites. The political behavior field is constructed broadly within the American politics subfield, with the political behavior literature encompassing the underpinning of political decision-making, opinion formation, in addition to more ``concrete’’ expressions of political behavior such as voting and political activism. In this course, we concentrate on this literature <em>and</em> also assess the implications of citizen political behavior on the quality of political representation provided by their elected elites.</p>
+<p>Building on the scientific foundation of political science, this course is designed to provide an understanding into what <strong><em>shapes</em></strong> political behavior (i.e., partisanship, ideological preferences, democratic participation) and what how these <strong><em>behavioral</em></strong> considerations influence <strong><em>responsiveness</em></strong>by our American political institutions. The main question motivating the course is a simple, yet complex one: <strong><em>what factors influence the political behavior of citizens and what are the implications of this behavior for how elites provide descriptive and ideological representation?</em></strong></p>
+<p>Recognizing the pivotal model of representation in the American political system is predicated on the ability of citizens to translate their preferences and behavior to ensure democratic responsiveness from the American political elites, the motivating question of the course hinges on understanding the following concepts:</p>
+<ul>
+<li><p>How do political sciences study and measure differing dimensions of political behavior in the study of American politics? How do we make a distinction between “attitudes” and ``behavior’’ in the study of American politics? How do we define both of these distinctions in the study of American politics?</p></li>
+<li><p>Now that we have discussed how political scientists traditionally study political behavior, we now turn to the “meat of the course.” How well are citizens able to form opinions about politics, particularly with respect to partisanship and ideological preferences on the role of government in society? Is there a potential danger to the consistent finding in the literature that citizens know relatively little about “hard political issues” such as political ideology? Moreover, does this concern hold when assessing variation in <em>which</em> types of citizens participate in politics?</p></li>
+<li><p>Lastly, we consider the implications of political behavior on the degree of representation provided by citizen’s elected elites. Do elites accurately represent the views of the majority of citizens they are tasked with representing? How do we know if this is or not the case? Moreover, would this degree of legislative representation be more equitable if citizens participated more in politics?</p></li>
+</ul>
+<p>These thematic questions may seem daunting, but this course will give you the necessary framework to perform careful political and social science analysis to gain leverage on these questions. This course will provide not only an understanding of how to study the specific mechanisms by which political behavior manifests itself in American political life and how this behavior influences the nature of political representation in the political system. This course will engage with primary sources of political science literature that will inform us how to engage in careful social science analysis. This course emphasizes the tools you need to assess political behaviors, practices, and institutional representation based on theory and evidence. Welcome to the class!<br />
+<br/></p>
+<div id="course-road-map-materials" class="section level2">
+<h2>Course Road-Map &amp; Materials</h2>
+<p><br/> <strong><em>Note:</em></strong> Access to the readings can be found in the links below.<br />
+<br/></p>
+</div>
+<div id="course-overview-defining-the-institutional-parameters-in-the-american-democratic-system-1252021" class="section level2">
+<h2><em>1. Course Overview &amp; Defining the ``Institutional Parameters’’ in the American Democratic System (1/25/2021)</em></h2>
+<p><strong><em>Section Objective</em></strong>:We briefly discuss the theoretical logical underpinning the American political system and the fundamental role of citizens in our polity. This week serves as an overview into the parameters of our political system and how institutions may, in theory, play a role in shaping citizen political behavior and institutional responsiveness. We tie in this articulation of our democratic institutions with why the study of political behavior and public opinion is so critically important in political science.<br />
+<br/></p>
+<ul>
+<li><p>Madison, James. 1787. <em>Federalist 10.</em> In <a href="https://www.congress.gov/resources/display/content/The+Federalist+Papers#TheFederalistPapers-10">United States Congress Resources</a></p></li>
+<li><p>Madison, James (or Alexander Hamilton). 1788. <em>Federalist 51.</em> In <a href="https://www.congress.gov/resources/display/content/The+Federalist+Papers#TheFederalistPapers-10">United States Congress Resources</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Berelson%201952.pdf">Berelson, Bernard. 1952. ``Democratic Theory and Public Opinion.’’ <em>Public Opinion Quarterly</em>. 16(3):313-330.</a><br />
+<br/></p></li>
+</ul>
+</div>
+<div id="classical-studies-of-partisanship-212021" class="section level2">
+<h2><em>2. Classical Studies of Partisanship (2/1/2021)</em></h2>
+<p><strong><em>Section Objective</em></strong>: In this module, we discuss the classical works assessing perhaps the most important variable in the study of American political behavior, partisanship. This section, we look at classical studies developing theories explaining partisan preferences held by American voters and discuss why partisanship is so ingrained in the political psyche of Americans.<br />
+<br/></p>
+<ul>
+<li><p><a href="PolS5310_Spring2021/Campbell,%20Converse,%20MIller%20&amp;%20Stokes_The%20American%20Voter_1960.pdf">Campbell, Angus, Philip E. Converse, Warren E. Miller, &amp; Donald E. Stokes. 1960. <em>The American Voter</em>, Chapter 2: Theoretical Orientation.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/MacKuen,%20Erikson,%20Stimson%20-%201989%20-%20Macropartisanship.pdf">MacKuen, Michael, Robert Erikson, &amp; James Stimson. 1989. “Macropartisanship.” <em>American Political Science Review</em>. 83(4): 1125-1142.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Bartels%20-%202002%20-%20Beyond%20the%20Running%20Tally.pdf">Bartels, Larry. 2002. “Beyond the Running Tally: Partisan Bias in Political Perceptions.” <em>Political Behavior</em>. 24(2): 117-150.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/green.pdf">Green, Donald, Bradley Palmquist, &amp; Eric Schickler. 2002. <em>Partisan Hearts and Minds: Political Parties and the Social Identities of Voters</em>, Chapter 1: Introduction.</a><br />
+<br/></p></li>
+</ul>
+</div>
+<div id="contemporary-studies-of-partisanship-282021" class="section level2">
+<h2><em>3. Contemporary Studies of Partisanship (2/8/2021)</em></h2>
+<p><strong><em>Section Objective</em></strong>: In this module, we discuss the contemporary works assessing perhaps the most important variable in the study of American political behavior, partisanship. Leveraging new data and methods, we discuss recent insights in how partisanship changes over time (if at all) and whether partisanship causes changes in preferences (or the other way around). Moreover, we will also discuss if partisanship is ``increasing in strength’’ as a predictor variable over time.<br />
+<br/></p>
+<ul>
+<li><p><a href="PolS5310_Spring2021/Barber,%20Pope%20-%202019%20-%20Does%20Party%20Trump%20Ideology%20Disentangling%20Party%20and%20Ideology%20in%20America.pdf">Barber, Michael &amp; Jeremy C. Pope. 2018. “Does Party Trump Ideology? Disentangling Party and Ideology in America.” <em>American Political Science Review</em>. 1(1): 1-17.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Highton%20&amp;%20Kam%202011.pdf">Highton, Benjamin &amp; Cindy D. Kam. 2011. “The Long-Term Dynamics of Partisanship and Issue Orientations” <em>Journal of Politics</em>. 1(1): 202-215.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Bafumi,%20Shapiro%20-%202009%20-%20A%20New%20Partisan%20Voter.pdf">Bafumi, Joseph &amp; Robert Y. Shapiro. 2009. “A New Partisan Voter.” <em>Journal of Politics</em>. 71(1): 1-23.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Abramowitz,%20Webster%20-%202016%20-%20The%20rise%20of%20negative%20partisanship%20and%20the%20nationalization%20of%20U.S.%20elections%20in%20the%2021st%20century.pdf">Abramowitz, Alan I., and Steven Webster. 2016. “The Rise of Negative Partisanship and the Nationalization of US Elections in the 21st Century.” <em>Electoral Studies</em>. 41: 12-22.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Mason%20-%202015%20-%20I%20Disrespectfully%20Agree%20The%20Differential%20Effects%20of%20Partisan%20Sorting%20on%20Social%20and%20Issue%20Polarization.pdf">Mason, Lilliana. 2015. “I Disrespectfully Agree: The Differential Effects of Partisan Sorting on Social and Issue Polarization.” <em>American Journal of Political Science</em>. 59(1): 128-145</a><br />
+<br/></p></li>
+</ul>
+</div>
+<div id="an-ideological-mass-public-2152021" class="section level2">
+<h2><em>4. An Ideological Mass Public? (2/15/2021)</em></h2>
+<p><strong><em>Section Objective</em></strong>: In this module, we discuss work assessing if Americans are capable of ``ideological thinking’’ and whether this degree of political sophistication is required for citizens to make rational decisions.<br />
+<br/></p>
+<ul>
+<li><p><a href="PolS5310_Spring2021/The%20nature%20of%20belief%20systems%20in%20mass%20publics%201964.pdf">Converse, Philip E. 1964. ``The Nature of Belief Systems in Mass Publics.’’ In <em>Ideology and Discontent</em>, ed. David E. Apter. London: Free Press of Glencoe.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Conover%20&amp;%20Feldman%201981.pdf">Conover, Pamela Johnston, &amp; Stanley Feldman. 1981. “The Origins and Meaning of Liberal/Conservative Self-Identifications.” <em>American Journal of Political Science</em>. 25(4): 617-645.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Ellis,%20Stimson%20-%202009%20-%20Symbolic%20ideology%20in%20the%20American%20electorate.pdf">Ellis, Christopher, &amp; James A. Stimson. 2009. “Symbolic Ideology in the American Electorate.” <em>Electoral Studies</em>. 28(3): 388-402.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Mason%202018.pdf">Mason, Lilliana. 2018. “Ideologues without Issues: The Polarizing Consequences of Ideological Identities.” <em>Public Opinion Quarterly.</em> 82(S1): 280-301.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Broockman%20&amp;%20Malhorta%202019.pdf">Broockman, David &amp; Neil Malhorta. 2020. “What Do Partisan Donors Want?” <em>Public Opinion Quarterly.</em> 84(1): 104-118.</a><br />
+<br/></p></li>
+</ul>
+</div>
+<div id="turnout-and-participation-do-citizens-participate-2222021" class="section level2">
+<h2><em>5. Turnout and Participation, Do Citizens Participate? (2/22/2021)</em></h2>
+<p><strong><em>Section Objective</em></strong>: In this module, we discuss what factors motivate the propensity of participating in politics among voters. Specifically, what factors motivate the propensity of individuals to turnout to vote and what role do campaigns play (or not play) in driving voters to the polls?<br />
+<br/></p>
+<ul>
+<li><p><a href="PolS5310_Spring2021/Ojeda%202018.pdf">Ojeda, Christopher. 2018. “The Two Income-Participation Gaps.” <em>American Journal of Political Science</em>. 62(4): 813-829.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Gerber,%20Green%20-%202000%20-%20The%20Effects%20of%20Canvassing,%20Telephone%20Calls,%20and%20Direct%20Mail%20on%20Voter%20Turnout%20A%20Field%20Experiment.pdf">Gerber, Alan S. &amp; Donald P. Green. 2000. “The Effects of Canvassing, Telephone Calls, and Direct Mail on Voter Turnout: A Field Experiment.” <em>American Political Science Review</em>. 94(3): 653-663.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Hayes%20&amp;%20McKee%202009.pdf">Hayes, Danny &amp; Seth C. McKee. 2009. “The Participatory Effects of Redistricting.” <em>American Journal of Political Science.</em> 53(4): 1006-1023.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Valenzuela%20&amp;%20Michelson%202016.pdf">Valenzuela, Ali A. &amp; Melissa R. Michelson. 2016. “Turnout, Status, and Identity: Mobilizing Latinos to Vote with Group Appeals.” <em>American Political Science Review.</em> 110(4): 615-630.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Grimmer%20et%20al.%20-%202018%20-%20Obstacles%20to%20Estimating%20Voter%20ID%20Laws’%20Effect%20on%20Turnout.pdf">Grimmer, Justin, Eitan Hersh, Marc Meredith, Jonathan Mummolo, &amp; Clayton Nall. 2018. “Obstacles to Estimating Voter ID Laws’ Effect on Turnout.” <em>Journal of Politics.</em> 80(3): 1045-1051.</a><br />
+<br/></p></li>
+</ul>
+</div>
+<div id="do-citizens-use-ideological-preferences-to-vote-312021" class="section level2">
+<h2><em>6. Do Citizens Use Ideological Preferences to Vote? (3/1/2021)</em></h2>
+<p><strong><em>Section Objective</em></strong>: In this module, we discuss whether citizens are able to use their ideological preferences to hold electoral candidates accountable. To do this, we assess the spatial model of electoral choice, its assumptions and whether citizens are up to the task of voting in spatial terms.<br />
+<br/></p>
+<ul>
+<li><p><a href="PolS5310_Spring2021/Joesten,%20Stone%20-%202014%20-%20Reassessing%20Proximity%20Voting%20Expertise,%20Party,%20and%20Choice%20in%20Congressional%20Elections.pdf">Joesten, Danielle &amp; Walter J. Stone. 2014. “Reassessing Proximity Voting: Expertise, Party, and Choice in Congressional Elections.” <em>Journal of Politics.</em> 76(3): 740-753.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Downs%20-%201957%20-%20The%20Statics%20and%20Dynamics%20of%20Party%20Ideologies.pdf">Downs, Anthony. 1957. ``The Statics and Dynamics of Party Ideologies’’. In <em>An Economic Theory of Democracy</em> (pp. 114–141). Harper &amp; Row.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Jessee%20-%202010%20-%20Partisan%20Bias,%20Political%20Information%20and%20Spatial%20Voting%20in%20the%202008%20Presidential%20Election.pdf">Jessee, Stephen. A. 2010. “Partisan Bias, Political Information and Spatial Voting in the 2008 Presidential Election.” <em>Journal of Politics</em>. 72(2), 327–340.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Boatright%20-%202008%20-%20Who%20are%20the%20spatial%20voting%20violators.pdf">Boatright, Robert G. 2008. “Who are the Spatial Voting Violators?” <em>Electoral Studies</em>. 27(1): 116–125.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Buttice,%20Stone%20-%202012%20-%20Candidates%20Matter%20Policy%20and%20Quality%20Differences%20in%20Congressional%20Elections.pdf">Buttice, Matthew K., &amp; Stone, Walter J. 2012. “Candidates Matter: Policy and Quality Differences in Congressional Elections.” <em>Journal of Politics</em>. 74(3): 870–887.</a><br />
+<br/></p></li>
+</ul>
+</div>
+<div id="does-white-racial-resentment-shape-political-behavior-382021" class="section level2">
+<h2><em>7. Does White Racial Resentment Shape Political Behavior? (3/8/2021)</em></h2>
+<p><strong><em>Section Objective</em></strong>: In this section, we assess the role of racial resentment in shaping the political identity and behavior of white Americans. We explore the extent to which partisan preferences closely align with racial resentment attitudes among whites, is there a fundamental change? Moreover, we explore to what extent racial resentment is a heuristic for electoral choice among white Americans and whether this is a salient determinant of choice during the age of Trump.<br />
+<br/></p>
+<ul>
+<li><p><a href="PolS5310_Spring2021/racial_attitudes_through_a_partisan_lens.pdf">Engelhardt, Andrew M. 2019. “Racial Attitudes through a Partisan Lens.” <em>British Journal of Political Science</em>. Forthcoming.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/electoral_studies_publication.pdf">Algara, Carlos &amp; Isaac Hale. 2020. “Racial attitudes &amp; political cross-pressures in nationalized elections: The case of the Republican coalition in the Trump era.” <em>Electoral Studies</em>. 1-13.</a></p></li>
+<li><p><a href="https://www.nytimes.com/2020/10/14/opinion/biden-trump-presidential-election.html">Edsall, Tom. 2020 ``Biden Is Not out of the Woods.’’ In <em>The New York Times</em>.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Zingher%20-%202018%20-%20Polarization,%20Demographic%20Change,%20and%20White%20Flight%20from%20the%20Democratic%20Party.pdf">Zingher, Joshua. 2018. “Polarization, Demographic Change, and White Flight from the Democratic Party.” <em>Journal of Politics</em>. 80(3): 860-872.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/race-politics-research-and-the-american-presidency-thinking-about-white-attitudes-identities-and-vote-choice-in-the-trump-era-and-beyond.pdf">Buyuker, Beyza, Amanda Jadidi D’Urso, Alexandra Filindra, and Noah J. Kaplan. 2020. “Race Politics Research and the American Presidency: Thinking about White Attitudes, Identities and Vote Choice in the Trump Era and Beyond.” <em>The Journal of Race, Ethnicity, and Politics</em>. 1–42.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/why-did-women-vote-for-donald-trump.pdf">Setzler, Mark &amp; Alixandra B. Yanus. 2018. “Why Did Women Vote for Donald Trump.” <em>PS: Political Science &amp; Politics</em>. 51(3): 523–527.</a><br />
+<br/></p>
+<center>
+<p><strong><em>No-Seminar Due to Spring Break: March 15, 2021</em></strong></p>
+</center>
+<p><br/></p></li>
+</ul>
+</div>
+<div id="does-sexism-and-sexist-attitudes-shape-political-behavior-3222021" class="section level2">
+<h2><em>8. Does Sexism and Sexist Attitudes Shape Political Behavior? (3/22/2021)</em></h2>
+<p><strong><em>Section Objective</em></strong>: In this section, we build off the previous literature on racial resentment and assess whether sexism plays a significant role in political behavior. Specifically, we assess the role of political behavior within the context of electoral choice and candidate evaluations.<br />
+<br/></p>
+<ul>
+<li><p><a href="PolS5310_Spring2021/which-identity-frames-boost-support-for-and-mobilization-in-the-blacklivesmatter-movement-an-experimental-test.pdf">Bonilla, Tabitha and Alvin B. Tillery Jr. 2020. “Which Identity Frames Boost Support for and Mobilization in the #BlackLivesMatter Movement? An Experimental Test.” <em>American Political Science Review</em>. 114(4): 947-962.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Ondercin%202017.pdf">Ondercin, Heather L. 2017.“Who Is Responsible for the Gender Gap? The Dynamics of Men’s and Women’s Democratic Macropartisanship, 1950–2012.” <em>Political Research Quarterly</em>. 70(4): 749-761.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Barnes%20&amp;%20Cassese%202017.pdf">Barnes, Tiffany &amp; Erin C. Cassese. 2017. “American Party Women: A Look at the Gender Gap within Parties.” <em>Political Research Quarterly</em>. 70(1): 127-141.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Dolan%201998.pdf">Dolan, Kathleen. 1998. “Voting for Women in the ‘Year of the Woman.’” <em>American Journal of Political Science</em>. 42(1): 272-293.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/race-politics-research-and-the-american-presidency-thinking-about-white-attitudes-identities-and-vote-choice-in-the-trump-era-and-beyond.pdf">Bauer, Nichole M. 2020. “Shifting Standards: How Voters Evaluate the Qualifications of Female and Male Candidates.” <em>The Journal of Politics</em>. 82(1): 1-12.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/why-did-women-vote-for-donald-trump.pdf">Setzler, Mark &amp; Alixandra B. Yanus. 2018. “Why Did Women Vote for Donald Trump.” <em>PS: Political Science &amp; Politics</em>. 51(3): 523–527.</a><br />
+<br/></p></li>
+</ul>
+</div>
+<div id="are-regular-americans-and-elites-polarized-3292021" class="section level2">
+<h2><em>9. Are ``regular’’ Americans and Elites Polarized? (3/29/2021)</em></h2>
+<p><strong><em>Section Objective</em></strong>: In this section, we begin by assessing whether the mass public are polarized on ideological grounds at levels comparable to elites (i.e., members of Congress). We assess whether citizens are able to think ideologically and are becoming more polarized over time. This is a huge debate in the literature and this section should uncover more questions than answers. Note that the first two articles by Abramowitz &amp; Saunders and Fiorina et al. set the stage of the debate.<br />
+<br/></p>
+<ul>
+<li><p><a href="PolS5310_Spring2021/Abramowitz,%20Saunders%20-%202008%20-%20Is%20Polarization%20a%20Myth.pdf">Abramowitz, Alan &amp; Kyle Saunders. 2008. “Is Polarization a Myth?” <em>Journal of Politics</em>. 70(2): 542-555</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Fiorina,%20Abrams,%20Pope%20-%202008%20-%20Polarization%20in%20the%20American%20Public%20Misconceptions%20and%20Misreadings.pdf">Fiorina, Morris P., Samuel A. Abrams, &amp; Jeremy C. Pope. 2008. “Polarization in the American Public: Misconceptions and Misreadings.” <em>Journal of Politics.</em> 70(2): 556-560.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Layman%20et%20al.%20-%202010%20-%20Activists%20and%20Conflict%20Extension%20in%20American%20Party%20Politics.pdf">Layman, Geoffrey C., Thomas M. Carsey, John C. Green, Richard Herrera, &amp; Rosalyn Cooperman. 2010. “Activists and conflict extension in American party politics.” <em>American Political Science Review</em>. 104(2): 324-346.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/democracy_in_america_partisanship_polarization_and_the_robustness_of_support_for_democracy_in_the_united_states.pdf">Graham, Matthew H. &amp; Milan W. Svolik. 2020. “Democracy in America? Partisanship, Polarization, and the Robustness of Support for Democracy in the United States.” <em>American Political Science Review</em>. 114(2): 392-409.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Tesler%20-%202012%20-%20The%20Spillover%20of%20Racialization%20into%20Health%20Care%20How%20President%20Obama%20Polarized%20Public%20Opinion%20by%20Racial%20Attitudes%20and%20Rac.pdf">Tesler, Michael. 2012. “The spillover of racialization into health care: How President Obama polarized public opinion by racial attitudes and race.” <em>American Journal of Political Science</em>. 56(3): 690-704.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Iyengar,%20Sood,%20Lelkes%20-%202012%20-%20Affect,%20Not%20Ideology%20A%20Social%20Identity%20Perspective%20on%20Polarization.pdf">Iyengar, Shanto, Gaurav Sood, and Yphtach Lelkes. 2012. “Affect, Not Ideology A Social Identity Perspective on Polarization.” <em>Public Opinion Quarterly</em>. 76(3): 405–431.</a><br />
+<br/></p></li>
+</ul>
+</div>
+<div id="are-americans-able-to-effectively-evaluate-their-collective-national-institutions-452021" class="section level2">
+<h2><em>10. Are Americans Able to Effectively Evaluate their Collective National Institutions? (4/5/2021)</em></h2>
+<p><strong><em>Section Objective</em></strong>: In this module, we assess the critical question of whether citizens are able to assess the job performance of their collective institutions, such as the presidency, U.S. Congress, Supreme Court, state legislatures, and Governors. We will also discuss the implications of this literature on the broader question of collective accountability.<br />
+<br/></p>
+<ul>
+<li><p><a href="PolS5310_Spring2021/Algara%202021.pdf">Algara, Carlos (2021) “Congressional Approval &amp; Responsible Party Government: The Role of Partisanship &amp; Ideology in Citizen Assessments of the Contemporary U.S. Congress.” Forthcoming at <em>Political Behavior</em>.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Zamadics%20SPPQ.pdf">Langehennig, Stefani, Joseph Zamadics &amp; Jenny Wolak. 2019. “State Policy Outcomes and State Legislative Approval.” <em>Political Research Quarterly</em>. 72(4):929-943.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Cohen%20&amp;%20King%202004.pdf">Cohen, Jeffrey E. &amp; James D. King. 2004. “Relative Unemployment and Gubernatorial Popularity.” <em>Journal of Politics</em>. 66(4):1267-1282.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Lebo,%20Cassino%20-%202007%20-%20The%20Aggregated%20Consequences%20of%20Motivated%20Reasoning%20and%20the%20Dynamics%20of%20Partisan%20Presidential%20Approval.pdf">Lebo, Matthew J. &amp; Daniel Cassino. 2007. “The Aggregated Consequences of Motivated Reasoning and the Dyanmics of Partisan Presidential Approval.” 28(6): 719-746.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Malhotra,%20Jessee%20-%202014%20-%20Ideological%20Proximity%20and%20Support%20for%20The%20Supreme%20Court.pdf">Malhotra, Neil, and Stephen A. Jessee. 2014. “Ideological proximity and support for the Supreme Court.” <em>Political Behavior</em>. 36(4): 817-846.</a><br />
+<br/></p></li>
+</ul>
+</div>
+<div id="are-americans-ideologically-represented-by-their-elites-452021" class="section level2">
+<h2><em>11. Are Americans Ideologically Represented by their Elites? (4/5/2021)</em></h2>
+<p><strong><em>Section Objective</em></strong>: In this module, we assess the critical question of whether citizens are ideologically represented by their elected elites. In particular, we assess whether Madisonian <em>dyadic representation</em> exists between the mass public and their elected legislators exists. If Americans are not represented, what are the implications of this for political behavior and the nature of our democratic institutions? Do Americans know the intricacies of elite representation, such as the complex rules underpinning ideological representation by the U.S. Senate?<br />
+<br/></p>
+<ul>
+<li><p><a href="PolS5310_Spring2021/Miller,%20Stokes%20-%201963%20-%20Constituency%20Influence%20in%20Congress.pdf">Miller, Warren E. &amp; Donald E. Stokes. 1963. “Constituency Influence in Congress.” <em>American Political Science Review</em>. 57(1): 45-56.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Bafumi,%20Herron%20-%202010%20-%20Leapfrog%20Representation%20and%20Extremism%20A%20Study%20of%20American%20Voters%20and%20Their%20Members%20in%20Congress.pdf">Bafumi, Joseph &amp; Michael Herron. 2010. “Leapfrog Representation and Extremism: A Study of American Voters and Their Members of Congress.” <em>American Political Science Review</em>. 104(1): 519-542.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Broockman,%20Skovron%20-%202018%20-%20Conservative%20Bias%20in%20Perceptions%20of%20Public%20Opinion%20Among%20American%20Political%20Elites.pdf">Broockman, David E., &amp; Christopher Skovorn. 2018. “Bias in Perceptions of Public Opinion among Political Elites.” <em>American Political Science Review.</em> 112(3): 542–563.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Thomsen%202014.pdf">Thomsen, Danielle M. 2014. “Ideological Moderates Won’t Run: How Party Fit Matters for Partisan Polarization in Congress.” <em>Journal of Politics</em>. 76(3): 786-797.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Smith,%20Park%20-%202013%20-%20Americans’%20Attitudes%20About%20the%20Senate%20Filibuster.pdf">Smith, Steven S. &amp; Hong Min Park. 2013. ``Americans’ Attitudes about the Senate Filibuster.’’ <em>American Politics Research</em>. 41(5): 735-760.</a><br />
+<br/></p></li>
+</ul>
+</div>
+<div id="are-americans-descriptively-represented-by-elites-whats-the-difference-452021-section-objective-in-this-module-we-ask-how-do-political-scientists-traditionally-view-the-role-of-descriptive-representation-in-the-american-context-is-there-variation-in-representation-across-the-race-of-legislators-are-minority-candidates-successfully-able-to-mobilize-members-of-their-racial-group-when-they-run-for-elected-office" class="section level2">
+<h2><em>12. Are Americans </em>Descriptively* Represented by Elites? What’s the Difference? (4/5/2021)*<br />
+<strong><em>Section Objective</em></strong>: In this module, we ask how do political scientists traditionally view the role of descriptive representation in the American context? Is there variation in representation across the race of legislators? Are minority candidates successfully able to mobilize members of their racial group when they run for elected office?</h2>
+<p><br/></p>
+<ul>
+<li><p><a href="PolS5310_Spring2021/Gay%202002.pdf">Gay, Claudine. 2002. “Spirals of Trust? The Effect of Descriptive Representation on the Relationship Between Citizens and Their Government.” <em>American Journal of Political Science</em>. 46(4): 717-732.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Butler%20&amp;%20Broockman%202011.pdf">Butler, Daniel &amp; David E. Broockman. 2011. “Do Politicians Racially Discriminate Against Constituents? A Field Experiment on State Legislators.” <em>American Journal of Political Science.</em> 55(3):463-477.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Lowande,%20Ritchie,%20&amp;%20Lauterbach%202019.pdf">Lowande, Kenneth, Melinda Ritchie, &amp; Erinn Lauterbach. 2019. “Descriptive and Substantive Representation in Congress: Evidence from 80,000 Congressional Inquiries.” <em>American Journal of Political Science</em>. 63(3): 644-659.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Broockman%202013.pdf">Broockman, David E. 2013. “Black Politicians are More Intrinsically Motivated to Advance Blacks’ interests: A Field Experiment Manipulating Political Incentives.” <em>American Journal of Political Science.</em> 57(3): 521-536.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Fraga%202016.pdf">Fraga, Bernard L. 2016. “Candidates or districts? Reevaluating the Role of Race in Voter Turnout.” <em>American Journal of Political Science</em>. 60(1): 97-122.</a><br />
+<br/></p></li>
+</ul>
+</div>
+<div id="does-the-party-system-respond-to-changes-in-the-political-preferences-of-the-electorate-4262021" class="section level2">
+<h2><em>13. Does the Party System <strong>Respond</strong> to Changes in the Political Preferences of the Electorate? (4/26/2021)</em></h2>
+<p><strong><em>Section Objective</em></strong>: We explore the role societal cleavages play in shaping the electoral coalitions of the two major parties. Why are the two parties thought of as a collection of organized interests and what does this mean for groups (i.e., racial &amp; religious) securing policy representation from their elected elites? Why are the elections of 1964 and 1980 considered “critical junctures” in terms of racial and religious realignment within the two parties?<br />
+<br/></p>
+<ul>
+<li><p><a href="PolS5310_Spring2021/Bawn%20et%20al.%20-%202012%20-%20A%20Theory%20of%20Political%20Parties%20Groups,%20Policy%20Demands%20and%20Nominations%20in%20American%20Politics.pdf">Bawn, Kathleen et al. 2012. “A Theory of Political Parties: Groups, Policy Demands and Nominations in American Politics.” <em>Perspectives on Politics.</em> 10(03): 571–97.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Carmines%20&amp;%20Stimson%201986.pdf">Carmines, Edward G. &amp; James A. Stimson. 1986. “On the Structure and Sequence of Issue Evolution.” <em>American Political Science Review.</em> 80(3): 901-920.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Hajnal%20&amp;%20Rivera%202014.pdf">Hajnal, Zoltan &amp; Michael Rivera. 2014. “Immigration, Latinos, and White Partisan Politics: The New Democratic Direction.” <em>American Journal of Political Science.</em> 58(4): 773-789.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/adams%201997.pdf">Adams, Greg D. 1997. “Abortion: Evidence of an Issue Evolution.” <em>American Journal of Political Science.</em> 41(3): 718-737.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Killian%20&amp;%20Wilcox%202008.pdf">Killian Mitchell  Clyde Wilcox. 2008. “Do Abortion Attitudes Lead to Party Switching?” <em>Political Research Quarterly</em>. 61(4):561-573.</a><br />
+<br/></p></li>
+</ul>
+</div>
+<div id="how-are-the-standing-models-of-political-behavior-being-applied-to-the-ongoing-covid-19-pandemic-532021" class="section level2">
+<h2><em>14. How are the Standing Models of Political Behavior Being Applied to the Ongoing COVID-19 Pandemic? (5/3/2021)</em></h2>
+<p><strong><em>Section Objective</em></strong>: Lastly, we consider the rapid research being produced to assess the ongoing behavioral dynamics of COVID-19 pandemic. We will look at papers looking at the role of race, trust, scientific knowledge in shaping attitudes about COVID-19 policies. We will also assess work assessing attitudes surrounding the prevalence of taking the vaccine in the mass public.<br />
+<br/></p>
+<ul>
+<li><p><a href="PolS5310_Spring2021/P&amp;G_Published_Article.pdf">Algara, Carlos, Sam Fuller, &amp; Christopher Hare. 2020. “The Conditional Effect of Scientific Knowledge and Gender on Support for COVID-19 Government Containment Policies in a Partisan America.” <em>Politics &amp; Gender</em>. 16(4): 1075–1083.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/Reny%202020.pdf">Reny, Tyler T. 2020. “Masculine Norms and Infectious Disease: The Case of COVID-19.” <em>Politics &amp; Gender</em>. 16(4): 1028–1035.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/">Kazemian, Sara, Carlos Algara, &amp; Sam Fuller. 2021. “Institutional Trust, Race, &amp; Support for COVID-19 Containment Government Policies.” <em>Unpublished working paper.</em></a></p></li>
+<li><p><a href="PolS5310_Spring2021/how-right-leaning-media-coverage-of-covid-19-facilitated-the-spread-of-misinformation-in-the-early-stages-of-the-pandemic-in-the-us.pdf">Motta, Matt, Dominik Stecula, &amp; Christina Farhart. 2020. “How Right-Leaning Media Coverage of COVID-19 Facilitated the Spread of Misinformation in the Early Stages of the Pandemic in the U.S.” <em>Canadian Journal of Political Science</em>. 53(2): 335–342.</a></p></li>
+<li><p><a href="PolS5310_Spring2021/kreps_2020_oi_200840_1605646100.83354.pdf">Kreps, Sarah, Sandip Prasad, John S. Brownstein, Yulin Hswen, Brian T. Garibaldi, Baobao Zhang, &amp; Douglas L. Kriner. 2020. “Factors associated with US adults’ likelihood of accepting COVID-19 vaccination.” <em>JAMA Network Open</em>. 3(10): e2025594-e2025594.</a></p></li>
+</ul>
+<br/> <br/>
+<center>
+Copyright © 2017 by Carlos Algara. Made with <a href="https://www.rstudio.com">RStudio</a>.
+</center>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
