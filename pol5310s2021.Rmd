@@ -3,7 +3,7 @@ title: "POL 5310: American Political Behavior: Citizen Preferences, Behavior & R
 subtitle: "University of Texas, El Paso"
 date: "Spring 2021"
 author: 
-- "[Dr. Carlos Algara](mailto:caalgara@utep)"
+- "[Dr. Carlos Algara](mailto:caalgara@utep.edu)"
 - "*Download Full Syllabus [Here](PolS5310_Spring2021/PolS5310_Syllabus_Algara.pdf)*"
 output: html_document
 ---
