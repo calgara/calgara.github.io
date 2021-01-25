@@ -34,8 +34,8 @@ This GitPage is intended to be the interactive syllabus for Pol 5310: American P
 
 ## Class Time, Office Hours & Course Materials
   
-***Lecture***: [Online Format](PolS5310_Spring2021/PolS5310_Syllabus_Algara.pdf); Monday 6:00pm-8:50pm (Mountain Standard Time, El Paso Local Time)  
-***Office Hours***: [Online Format](PolS5310_Spring2021/PolS5310_Syllabus_Algara.pdf); Monday 2:00pm-4:00pm (Mountain Standard Time, El Paso Local Time) & by appointment  
+***Lecture***: [Online Format](PolS5310_Spring2021/PolS5310_Syllabus_Algara.pdf); Monday 6:00-8:50pm (Mountain Standard Time, El Paso Local Time)  
+***Office Hours***: [Online Format](PolS5310_Spring2021/PolS5310_Syllabus_Algara.pdf); Monday 2:00-4:00pm (Mountain Standard Time, El Paso Local Time) & by appointment  
 ***Course Materials***: [Course GitPage](http://calgara.github.io/pol5310s2021.html)  
 <br/>
 
