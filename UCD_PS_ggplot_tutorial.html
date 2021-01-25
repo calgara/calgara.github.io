@@ -307,6 +307,9 @@ $(document).ready(function () {
       <a href="teaching.html">Teaching Portfolio</a>
     </li>
     <li>
+      <a href="pol5310s2021.html">POL 5310 (UTEP), Spring 2021</a>
+    </li>
+    <li>
       <a href="pol157s2019.html">POL 157 (Sac State), Spring 2019</a>
     </li>
     <li>
@@ -404,7 +407,7 @@ library(readstata13) # Load readstata13 to read Stata Files
 library(dplyr) # Loaad dplyr, which provides tools that I always use, like as_tibble
 library(reshape) # Load reshape, which provides for the melt function needed for data manipulation.
 
-load(&quot;/Users/carlosalgara/Desktop/carlos_school/PhD_UC Davis/Dissertation Project/Ch2_Electoral_Implications_Approval/Aldrich_McKelvey_Scaling/Aldrich_McKelvey_Scaling_2008_2016_Positions_Results.Rdata&quot;) # Load R environment containing various estimations of candidate &amp; citizen ideological ideal points from 2008-2016.
+load(&quot;/Users/caalgara/Desktop/carlos_school/PhD_UC Davis/Dissertation Project/Ch2_Electoral_Implications_Approval/Aldrich_McKelvey_Scaling/Aldrich_McKelvey_Scaling_2008_2016_Positions_Results.Rdata&quot;) # Load R environment containing various estimations of candidate &amp; citizen ideological ideal points from 2008-2016.
 
 # Let&#39;s explore the nature of ideological preferences in the American electorate over time!
 
@@ -507,7 +510,7 @@ ggplot(house_candidates, aes(x = value, fill = variable,linetype=variable)) + ge
 ggplot(rescaled_overtime_idealpts_2008_2016, aes(x=selfplace, y=idealpts_linear_map_overtime, group=selfplace)) + geom_boxplot(colour = &quot;black&quot;,outlier.shape = NA) + scale_y_continuous(&quot;Liberal-Conservative Aldrich-McKelvey Ideal Point Estimates&quot;,limits=c(-2.5,2.5),breaks=seq(-2,2,1)) + scale_x_continuous(&quot;Liberal-Conservative Raw Ideological Self-Placement&quot;,breaks=seq(1,7,1)) + scale_fill_discrete(guide=F) + stat_summary(fun.y = mean, geom=&quot;point&quot;,colour=&quot;black&quot;, size=2.00, shape= 17) + scale_shape_discrete(&quot;&quot;) + theme_minimal()</code></pre>
 <p><img src="UCD_PS_ggplot_tutorial_files/figure-html/r-6.png" width="672" /></p>
 <p>We can also plot descriptives, such as line graphs articulating trends in time. Let’s load some data presidential approval from the great people at the <a href="www.ropercenter.com">Roper Center</a> and also make a histogram for initial evaluation of our approval data.</p>
-<pre class="r"><code>approval &lt;- read.csv(&quot;/Users/carlosalgara/Desktop/carlos_school/PhD_UC Davis/Research/Data/American Politics/Presidential_Approval/presidents_survey_marginals_1969_2017.csv&quot;)
+<pre class="r"><code>approval &lt;- read.csv(&quot;/Users/caalgara/Desktop/carlos_school/PhD_UC Davis/Research/Data/American Politics/Presidential_Approval/presidents_survey_marginals_1969_2017.csv&quot;)
 
 as_tibble(approval)</code></pre>
 <pre><code>## # A tibble: 4,075 x 12
@@ -580,9 +583,9 @@ ggplot(subset(house,house$year %in% 2016),aes(x=dpres,y=dv,color=dem_seat,label=
 <p>What if I was interested in looking at multiple election cycles of interest? Looks look at the pivotal elections of 1974, 1994, 2006, and 2010. Let’s take a look!</p>
 <pre class="r"><code>ggplot(subset(house,house$year %in% c(1974, 1994,2006,2010)),aes(x=dpres,y=dv,color=dem_seat,label=district)) + geom_point(shape=1) + geom_smooth(method=&#39;lm&#39;,SE=T,color=&quot;black&quot;) + theme_minimal() + scale_color_manual(&quot;Seat Partisanship&quot;,values=c(&quot;red&quot;,&quot;blue&quot;)) + scale_x_continuous(&quot;District Two-Party Vote Share Won by the Democratic Presidential Candidate&quot;,breaks=seq(0,100,10)) + scale_y_continuous(&quot;District Two-Party Vote Share Won \nby the Democratic House Candidate&quot;,breaks=seq(0,100,25)) + ggtitle(&quot;Scatterplot of Democratic House Vote-Share by \nDemocratic Presidential Vote-Share&quot;)  + geom_hline(yintercept = 50, colour = gray(1/2), lty = 2) + theme(legend.position=&quot;bottom&quot;) + facet_wrap(~year,ncol=2) + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_blank()) # The last part of the code takes out all gridlines.</code></pre>
 <p><img src="UCD_PS_ggplot_tutorial_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
-<p>In the next section, we will explore how to articulate the results of a simple analysis of variance. For this, we will evaluate the nature of differential item functioning (DIF) in citizen perceptions of political candidates and parties. The problem of DIF can be illustrated in the following example in which the ideological placement of the Democratic party might vary by the ideological perception of a survey respondent. For example, a conserative respondent may place the Democrats on the far-left of the scale (at a 1 on the standard liberal-conservative 7 point scale) while a liberal respondent may place the Democrats more towards the center of the scale (at a 3 or so on the standard liberal-conservative scale). While methods, such as Aldrich-McKelvey scaling, corrects for this measurement error and estimates ``true’’ ideological positions of political stimului (see <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12151">Hare et al. 2016</a> for further details on this estimation), it is important to empirically atriculate the problem.</p>
+<p>In the next section, we will explore how to articulate the results of a simple analysis of variance. For this, we will evaluate the nature of differential item functioning (DIF) in citizen perceptions of political candidates and parties. The problem of DIF can be illustrated in the following example in which the ideological placement of the Democratic party might vary by the ideological perception of a survey respondent. For example, a conserative respondent may place the Democrats on the far-left of the scale (at a 1 on the standard liberal-conservative 7 point scale) while a liberal respondent may place the Democrats more towards the center of the scale (at a 3 or so on the standard liberal-conservative scale). While methods, such as Aldrich-McKelvey scaling, corrects for this measurement error and estimates ``true’’ ideological positions of political stimului (see <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12151">Hare et al. 2016</a> for further details on this estimation), it is important to empirically atriculate the problem.</p>
 <p>For this, we turn to the 2016 <a href="https://cces.gov.harvard.edu">Cooperative Congressional Election Study</a> to see if DIF manifests itself in the mass public.</p>
-<pre class="r"><code>cces &lt;- read.dta13(&quot;/Users/carlosalgara/Dropbox/CCES2016_UCD_original/common/CCES2016.dta&quot;,convert.factors = F)
+<pre class="r"><code>cces &lt;- read.dta13(&quot;/Users/caalgara/Dropbox/CCES2016_UCD_original/common/CCES2016.dta&quot;,convert.factors = F)
 cces &lt;- subset(cces,select=c(&quot;CC16_340a&quot;,&quot;CC16_340d&quot;,&quot;CC16_340e&quot;))
 colnames(cces) &lt;- c(&quot;self_placement&quot;,&quot;hrc_placement&quot;,&quot;dt_placement&quot;)
 
@@ -867,9 +870,9 @@ ggplot(data= predict, mapping=aes(x=hetero, y=fit)) + geom_line(aes(x = hetero, 
 
 library(rgdal)
 
-state_shp &lt;- readOGR(&quot;/Users/carlosalgara/Desktop/carlos_school/PhD_UC Davis/Research/Data/American Politics/US House_District_Shape_Files/cb_2016_us_state_20m.shp&quot;)</code></pre>
+state_shp &lt;- readOGR(&quot;/Users/caalgara/Desktop/carlos_school/PhD_UC Davis/Research/Data/American Politics/US House_District_Shape_Files/cb_2016_us_state_20m.shp&quot;)</code></pre>
 <pre><code>## OGR data source with driver: ESRI Shapefile 
-## Source: &quot;/Users/carlosalgara/Desktop/carlos_school/PhD_UC Davis/Research/Data/American Politics/US House_District_Shape_Files/cb_2016_us_state_20m.shp&quot;, layer: &quot;cb_2016_us_state_20m&quot;
+## Source: &quot;/Users/caalgara/Desktop/carlos_school/PhD_UC Davis/Research/Data/American Politics/US House_District_Shape_Files/cb_2016_us_state_20m.shp&quot;, layer: &quot;cb_2016_us_state_20m&quot;
 ## with 52 features
 ## It has 9 fields
 ## Integer64 fields read as strings:  ALAND AWATER</code></pre>
@@ -915,7 +918,7 @@ state_shp &lt;- subset(state_shp,state_shp@data$NAME != &quot;District of Columb
 ggplot(state_shp, aes(x = long, y = lat, group = group)) + geom_polygon(fill = &quot;gray&quot;, color = &quot;black&quot;) + theme_void() + coord_equal() + coord_fixed(1.3)</code></pre>
 <p><img src="UCD_PS_ggplot_tutorial_files/figure-html/unnamed-chunk-21-1.png" width="672" /></p>
 <p>Now that we have successfully loaded our shapefile containing our mapping data into R, let’s merge some state presidential approval data and make a map showing the spatial variation in approval for President Barack Obama in 2016.</p>
-<pre class="r"><code>state_pres_approval &lt;- read.dta13(&quot;/Users/carlosalgara/Desktop/carlos_school/PhD_UC Davis/Dissertation Project/Ch2_Electoral_Implications_Approval/MRP_Estimation/state_presidential_approval_dynamic_mrp_estimates.dta&quot;) # Load the data
+<pre class="r"><code>state_pres_approval &lt;- read.dta13(&quot;/Users/caalgara/Desktop/carlos_school/PhD_UC Davis/Dissertation Project/Ch2_Electoral_Implications_Approval/MRP_Estimation/state_presidential_approval_dynamic_mrp_estimates.dta&quot;) # Load the data
 
 as_tibble(state_pres_approval) # Get a glimpse of the data structure. These are Dynamic MRP state-level estimates (see: Caughey &amp; Warshaw (2015) for technical details on the Dynamic MRP model) of presidential approval from 2008-2017. </code></pre>
 <pre><code>## # A tibble: 510 x 8

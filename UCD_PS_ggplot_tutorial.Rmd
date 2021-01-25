@@ -61,7 +61,7 @@ library(readstata13) # Load readstata13 to read Stata Files
 library(dplyr) # Loaad dplyr, which provides tools that I always use, like as_tibble
 library(reshape) # Load reshape, which provides for the melt function needed for data manipulation.
 
-load("/Users/carlosalgara/Desktop/carlos_school/PhD_UC Davis/Dissertation Project/Ch2_Electoral_Implications_Approval/Aldrich_McKelvey_Scaling/Aldrich_McKelvey_Scaling_2008_2016_Positions_Results.Rdata") # Load R environment containing various estimations of candidate & citizen ideological ideal points from 2008-2016.
+load("/Users/caalgara/Desktop/carlos_school/PhD_UC Davis/Dissertation Project/Ch2_Electoral_Implications_Approval/Aldrich_McKelvey_Scaling/Aldrich_McKelvey_Scaling_2008_2016_Positions_Results.Rdata") # Load R environment containing various estimations of candidate & citizen ideological ideal points from 2008-2016.
 
 # Let's explore the nature of ideological preferences in the American electorate over time!
 
@@ -123,7 +123,7 @@ ggplot(rescaled_overtime_idealpts_2008_2016, aes(x=selfplace, y=idealpts_linear_
 We can also plot descriptives, such as line graphs articulating trends in time. Let's load some data presidential approval from the great people at the [Roper Center](www.ropercenter.com) and also make a histogram for initial evaluation of our approval data.
 
 ```{r echo=T, message=F, warning=FALSE}
-approval <- read.csv("/Users/carlosalgara/Desktop/carlos_school/PhD_UC Davis/Research/Data/American Politics/Presidential_Approval/presidents_survey_marginals_1969_2017.csv")
+approval <- read.csv("/Users/caalgara/Desktop/carlos_school/PhD_UC Davis/Research/Data/American Politics/Presidential_Approval/presidents_survey_marginals_1969_2017.csv")
 
 as_tibble(approval)
 
@@ -165,7 +165,7 @@ ggplot(mean_approval,aes(x=year,y=approval_mean,label=president)) + geom_line() 
 
 While we implicitly plotted a bivariate relationship using the box-plot in the previous example, we can provide more explicit examples for studying bivariate relationships. Let's use data on the 2016 U.S. House elections to look at the relationship between presidential voteshare and House election voteshare. Also, let's fit a simple bivariate regression line to see in which districts Democratic candidates underperformed Clinton and which candidates over-performed Clinton. This will be articulated in the residual distance between the individual points and the point-estimate articulated in the regression line. In other words, the distance between the observed value $Y$ (in this case, the vote share won by the Democratic House candidate) and $\hat{Y}$ (in this case, the predicted vote share won by the Democratic House candidate articulated in the regression line).
 ```{r echo=F, message=F, warning=FALSE}
-house <- read.dta13("/Users/carlosalgara/Desktop/carlos_school/PhD_UC Davis/Research/Data/American Politics/Carson_House_Elections/carson_jacobson_house_elex_1900_2016.dta")
+house <- read.dta13("/Users/caalgara/Desktop/carlos_school/PhD_UC Davis/Research/Data/American Politics/Carson_House_Elections/carson_jacobson_house_elex_1900_2016.dta")
 house$dv[house$pwin == "Democratic Win" & is.na(house$dv)] <- 100 # Fix missing uncontested election data
 house$dv[house$pwin == "Republican Win" & is.na(house$dv)] <- 0 # Fix missing uncontested election data
 ```
@@ -195,7 +195,7 @@ In the next section, we will explore how to articulate the results of a simple a
 For this, we turn to the 2016 [Cooperative Congressional Election Study](https://cces.gov.harvard.edu) to see if DIF manifests itself in the mass public.
 
 ```{r echo=T, message=F, warning=FALSE}
-cces <- read.dta13("/Users/carlosalgara/Dropbox/CCES2016_UCD_original/common/CCES2016.dta",convert.factors = F)
+cces <- read.dta13("/Users/caalgara/Dropbox/CCES2016_UCD_original/common/CCES2016.dta",convert.factors = F)
 cces <- subset(cces,select=c("CC16_340a","CC16_340d","CC16_340e"))
 colnames(cces) <- c("self_placement","hrc_placement","dt_placement")
 
@@ -316,7 +316,7 @@ ggplot(subset(mes_yearly,mes_yearly$factor %in% c("District Partisanship")),aes(
 Now let's turn to logits! Let's extract some predicted probabilities! For this example, we turn to investigating the relationship between income, education, and the probability of turning out to vote using data from the 2014 Cooperative Congressional Election Study.
 
 ```{r echo=F, message=F, warning=FALSE}
-cces <- read.dta13(paste("/Users/carlosalgara/Desktop/carlos_school/PhD_UC Davis/Research/Data/American Politics/CCES/CCES",2014,".dta",sep=""),convert.factors = T, convert.underscore = FALSE, encoding ="UTF-8")
+cces <- read.dta13(paste("/Users/caalgara/Desktop/carlos_school/PhD_UC Davis/Research/Data/American Politics/CCES/CCES",2014,".dta",sep=""),convert.factors = T, convert.underscore = FALSE, encoding ="UTF-8")
 
 resources <- subset(cces,select=c(weight,cdid,CC401,CC417a_4,faminc,educ))
 resources[] <- lapply(resources, as.character)
@@ -405,8 +405,8 @@ ggplot(predict, aes(x=income, y=fit, group=education,fill=education,linetype=edu
 Among those with no HS diploma, income has a pronounced positive effect on the probability of turning out to vote. For the other education categories, not so much, especially among those with a post-grad. We can also use the code to estimate predicted probabilities for models with categorical dependent variables. Let's explore this by specifying a multinomial logistic regression evaluating the effect of social network poltiical disagreement on a citizen's approval evaluation of President Barack Obama in 2016. For this analysis, we will use data from the 2016 UCD & UGA modeul.
 
 ```{r echo=F, message=F, warning=FALSE}
-cces <- read.dta13("/Users/carlosalgara/Dropbox/CCES2016_UCD_original/CCES16_UCDUGA_combined.dta",convert.factors = T, convert.underscore = FALSE, encoding ="UTF-8")
-cces_variables <- read.csv("/Users/carlosalgara/Desktop/carlos_school/PhD_UC Davis/Research/Twitter/Butters_NetworkDisagreement.csv",stringsAsFactors = F)
+cces <- read.dta13("/Users/caalgara/Dropbox/CCES2016_UCD_original/CCES16_UCDUGA_combined.dta",convert.factors = T, convert.underscore = FALSE, encoding ="UTF-8")
+cces_variables <- read.csv("/Users/caalgara/Desktop/carlos_school/PhD_UC Davis/Research/Twitter/Butters_NetworkDisagreement.csv",stringsAsFactors = F)
 
 # Subset the data based on the specified variables in the spreadsheet
 
@@ -575,7 +575,7 @@ For this exercise, we need to load a shapefile into R.
 
 library(rgdal)
 
-state_shp <- readOGR("/Users/carlosalgara/Desktop/carlos_school/PhD_UC Davis/Research/Data/American Politics/US House_District_Shape_Files/cb_2016_us_state_20m.shp")
+state_shp <- readOGR("/Users/caalgara/Desktop/carlos_school/PhD_UC Davis/Research/Data/American Politics/US House_District_Shape_Files/cb_2016_us_state_20m.shp")
 
 # Let's explore the data embedded in the shape file
 
@@ -596,7 +596,7 @@ ggplot(state_shp, aes(x = long, y = lat, group = group)) + geom_polygon(fill = "
 Now that we have successfully loaded our shapefile containing our mapping data into R, let's merge some state  presidential approval data and make a map showing the spatial variation in approval for President Barack Obama in 2016.
 
 ```{r echo=T, message=F, warning=FALSE}
-state_pres_approval <- read.dta13("/Users/carlosalgara/Desktop/carlos_school/PhD_UC Davis/Dissertation Project/Ch2_Electoral_Implications_Approval/MRP_Estimation/state_presidential_approval_dynamic_mrp_estimates.dta") # Load the data
+state_pres_approval <- read.dta13("/Users/caalgara/Desktop/carlos_school/PhD_UC Davis/Dissertation Project/Ch2_Electoral_Implications_Approval/MRP_Estimation/state_presidential_approval_dynamic_mrp_estimates.dta") # Load the data
 
 as_tibble(state_pres_approval) # Get a glimpse of the data structure. These are Dynamic MRP state-level estimates (see: Caughey & Warshaw (2015) for technical details on the Dynamic MRP model) of presidential approval from 2008-2017. 
 
@@ -638,7 +638,7 @@ idmaker = function(vec){
   return(paste(sort(vec), collapse=""))
 }
 
-senate <- read.csv(paste("/Users/carlosalgara/Desktop/carlos_school/PhD_UC Davis/Research/Submissions & Applications/Pol_Net_2018/Raw_Network_Legislator_attributes_Data/U.S. Senate/","senate_programmatic_particularistic_",113,"congress_network.csv",sep=""),stringsAsFactors=FALSE, na.strings=c(""," ","NA"))
+senate <- read.csv(paste("/Users/caalgara/Desktop/carlos_school/PhD_UC Davis/Research/Submissions & Applications/Pol_Net_2018/Raw_Network_Legislator_attributes_Data/U.S. Senate/","senate_programmatic_particularistic_",113,"congress_network.csv",sep=""),stringsAsFactors=FALSE, na.strings=c(""," ","NA"))
 senate$X <- NULL
 co_id <- apply(as.matrix(senate[, c("NameFull_senator_j", "NameFull_senator_i")]), 1, idmaker)
 senate <- cbind(senate, co_id)
