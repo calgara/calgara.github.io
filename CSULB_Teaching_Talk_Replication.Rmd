@@ -33,7 +33,7 @@ library(multiwayvcov)
 
 # Load Necessary Data for Replication
 
-load("/Users/carlosalgara/Desktop/carlos_school/PhD_UC Davis/Academic Job Market/2019_2020_JM_Updated_Materials/Campus Visit Materials/California State University, Long Beach/Teaching Talk/LBSU_Demonstration_Replication.Rdata")
+load("/Users/caalgara/Desktop/carlos_school/PhD_UC Davis/Academic Job Market/2019_2020_JM_Updated_Materials/Campus Visit Materials/California State University, Long Beach/Teaching Talk/LBSU_Demonstration_Replication.Rdata")
 
 ```
 To replicate the following tutorial, you can find the following replication materials here: 
