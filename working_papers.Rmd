@@ -137,11 +137,21 @@ gtag('config', 'UA-100362112-1');
   <center> **with [Sam Fuller](http://ps.ucdavis.edu), PhD Candidate, Political Science, University of California, Davis** </center>
   <center> **[Christopher Hare](http://www.christopherdhare.com), Assistant Professor of Political Science, University of California, Davis** </center>
   <center> **& [Sara Kazemian](http://ps.ucdavis.edu), PhD Candidate, Political Science, University of California, Davis** </center><br/>
-  <center> ***$\star$[Manuscript Published in Social Science Quarterly (2020)]() $\star$[Publication Link](https://onlinelibrary.wiley.com/doi/full/10.1111/ssqu.12894) $\star$[Manuscript Data Materials](mailto:caalgara@utep.edu)*** </center><br/>
+  <center> ***$\star$[Manuscript Published in Social Science Quarterly (2020)](https://onlinelibrary.wiley.com/doi/full/10.1111/ssqu.12894) $\star$[Publication Link](https://onlinelibrary.wiley.com/doi/full/10.1111/ssqu.12894) $\star$[Manuscript Data Materials](mailto:caalgara@utep.edu)*** </center><br/>
   *Abstract:* With the onset of the 2020 COVID-19 pandemic in the United States, state governments and the federal administration were forced to craft social distancing recommendations advising the general public on how they could combat the transmission of the deadly virus. These recommendations, and sometimes orders, advised against many daily social activities such as visiting family members, restaurant dining, and sporting event attendance. Adherence to and support of these measures has been varied, with many flouting mask and group-gathering recommendations/orders. This has reduced the effectiveness of these measures and lead to virus resurgences across the U.S. In this research note, we examine the role scientific knowledge and gender play in influencing citizens' comfort and risk perceptions regarding social distancing recommendations and orders. In both the general population and within parties, we find that women with high scientific knowledge are much less comfortable breaking social distancing guidelines than their male counterparts and women with lower scientific knowledge. These findings shed light on how both knowledge and gender interact to drive (non)compliance with government policies during a public health crisis in an increasingly polarized America.  
 <br/>
 <br/>
 <center>
+  *Distribution of Ideological Divergence between District & Partisan Medians* <br>
+![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/median_partisan_divergence_by_chamber.png "District-Member Divergence"){ width=50% }
+</center><br/>
+<center> **Ideological Cross-Pressures or Random Error? An Analysis of Spatially Incorrect Voting in the U.S. House & U.S. Senate** </center>
+<center> **with Joe Zamadics, PhD, University of Colorado, Boulder** </center><br/>
+<center> ***$\star$[Manuscript Published at the Journal of Legislative Studies](https://www.tandfonline.com/doi/abs/10.1080/13572334.2021.1874686) $\star$[Working Manuscript Publication Link](https://www.tandfonline.com/doi/abs/10.1080/13572334.2021.1874686) $\star$[Manuscript Data Materials](mailto:caalgara@utep.edu)*** </center><br/>
+          *Abstract:* Theoretical and empirical models of congressional voting assumes that legislators vote with the sole purpose to move policy closer to their ideologically ideal point, with the most prominent being the NOMINATE model. While NOMINATE correctly classifies the vast majority of votes cast by members of Congress, a significant number of votes are misclassified and coded as spatial error. The literature on congressional voting assumes this error to be random and idiosyncratic across members. We dispute this conventional notion and argue that spatial error in congressional is not random, but rather systematic across members. We present a theory positing that spatial error is more likely on roll-call votes tackling salient policy issues and among members representing districts with greater ideological divergence between the median voter and the member's primary election constituency. Using Aldrich-McKelvey scaling to place legislators and constituencies in the same ideological common space, we find support for our theory. We attribute this finding to the greater electoral uncertainty faced by ideological moderates and members representing districts with greater ideological divergence between key constituencies. Our findings have implications for the NOMINATE model, the nature of spatial error in legislative voting, and the electoral cross-pressures faced by legislators. 
+<br/>
+  <br/>
+  <center>
   *Quarterly Job Approval of the U.S. Congress, 1974-2016* <br>
   ![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/cong_approval_aggregate_annotated.png "Quarterly Approval"){ width=65% }
 </center><br/>
@@ -160,16 +170,6 @@ gtag('config', 'UA-100362112-1');
 <br/>
 <br/>
 <center>
-  *Distribution of Ideological Divergence between District & Partisan Medians* <br>
-![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/median_partisan_divergence_by_chamber.png "District-Member Divergence"){ width=50% }
-</center><br/>
-<center> **Ideological Cross-Pressures or Random Error? An Analysis of Spatially Incorrect Voting in the U.S. House & U.S. Senate** </center>
-<center> **with Joe Zamadics, PhD, University of Colorado, Boulder** </center><br/>
-<center> ***$\star$Manuscirpt Accepted at the Journal of Legislative Studies $\star$[Working Manuscript Draft](Congressional_Incorrect_voting_Algara_Zamadics.pdf) $\star$[Manuscript Data Materials](mailto:caalgara@utep.edu)*** </center><br/>
-          *Abstract:* Theoretical and empirical models of congressional voting assumes that legislators vote with the sole purpose to move policy closer to their ideologically ideal point, with the most prominent being the NOMINATE model. While NOMINATE correctly classifies the vast majority of votes cast by members of Congress, a significant number of votes are misclassified and coded as spatial error. The literature on congressional voting assumes this error to be random and idiosyncratic across members. We dispute this conventional notion and argue that spatial error in congressional is not random, but rather systematic across members. We present a theory positing that spatial error is more likely on roll-call votes tackling salient policy issues and among members representing districts with greater ideological divergence between the median voter and the member's primary election constituency. Using Aldrich-McKelvey scaling to place legislators and constituencies in the same ideological common space, we find support for our theory. We attribute this finding to the greater electoral uncertainty faced by ideological moderates and members representing districts with greater ideological divergence between key constituencies. Our findings have implications for the NOMINATE model, the nature of spatial error in legislative voting, and the electoral cross-pressures faced by legislators. 
-<br/>
-  <br/>
-  <center>
   *Geographic Neighborhood profile for IA-2, 114th Congress*<br>
   <br/>
   ![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/IA_2_map_example_of_main_iv.png "IA-2 Geo Profile"){ width=45% } 
