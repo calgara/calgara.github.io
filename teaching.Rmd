@@ -50,7 +50,7 @@ h1.title {
 <br/>
 <br/>
 <center>
-![](/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/figures/quad.jpg "UC Davis Quad"){ width=100% }
+![](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/quad.jpg "UC Davis Quad"){ width=100% }
 </center><br/>
 <center> > ***For the mind does not require filling like a bottle, but rather, like wood, it only requires kindling to create in it an impulse to think independently and an ardent desire for the truth.***    
 -Plutarch, *De Auditu*</center>  
