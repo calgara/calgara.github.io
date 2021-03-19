@@ -1,5 +1,5 @@
 ---
-  title: "Published & Working Research Manuscripts"
+  title: "Peer-Reviewed Publications"
   output: html_document
   fig_caption: yes
 ---
@@ -165,39 +165,7 @@ gtag('config', 'UA-100362112-1');
 ![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/citizens_ideal_pts_scatter.png "Ideal Point Validation"){ width=60% }
   </center><br/>
   <center> **The Partisan & Ideological Determinants of Citizen Congressional Approval** </center><br/>
-  <center> ***$\star$ Manuscript Accepted at Political Behavior $\star$ <br/> [Working Manuscript Draft](Policy_Component_of_Approval.pdf) $\star$[Manuscript Data Materials](mailto:caalgara@utep.edu)*** </center><br/>
+  <center> ***$\star$ [Manuscript Published in Political Behavior](https://link.springer.com/article/10.1007/s11109-021-09678-x) $\star$ <br/> [Publication Link](https://link.springer.com/article/10.1007/s11109-021-09678-x) $\star$[Manuscript Replication Materials](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/VQCGNW)*** </center><br/>
           *Abstract:* Do citizens weigh the ideological nature of collective representation provided by Congress when assessing the job performance of their national legislature? While recent aggregate-level work suggests that congressional approval rises when Congress responds to the ideological preferences of the mass public, individual-level models posit that approval is a function of partisanship or valence considerations, with little consideration for policy. I fill this disconnect between two lines of research by presenting a model arguing that citizens weigh the ideological representation provided by their Congress in the face of two contrasting options of collective ideological representation in the responsible party government era. Using cross-sectional and panel survey data which allow for scaling citizens and the congressional parties in the same ideological space, I find that majority co-partisans and citizens closer in ideological proximity to the governing majority are more likely to approve of Congress. I also find that this the relationship between ideological proximity and approval is independent of partisanship. These findings have implications for the capacity of citizens to assess the collective representation of the chief policy-making institution of their national government.  
-<br/>
-<br/>
-<center>
-  *Geographic Neighborhood profile for IA-2, 114th Congress*<br>
-  <br/>
-  ![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/IA_2_map_example_of_main_iv.png "IA-2 Geo Profile"){ width=45% } 
-
-</center><br/>
-  <center> **The Influence of Partisan Polarization and Geographic Neighborhood Context on Congressional Cosponsorship Policy Networks** </center>
-  <center> **with Ross Butters, PhD Candidate, University of California, Davis** </center><br/>
-  <center> ***$\star$Manuscript Prepared for 2018 PolNet Annual Meeting Panel $\star$[Working Manuscript Draft](PolNet2018_Algara_Butters_Prelim_Abstract.pdf) $\star$[Manuscript Data Materials](mailto:caalgara@utep.edu)*** </center><br/>
-  *Abstract:* The classical "Textbook Theory" of Congress posits that legislators are relatively autonomous actors who work together on a bipartisan basis to maximize their probability of re-election (Shepsle 1989). This classical district-centered theory of Congress posits that legislators are motivated to engage in bipartisan legislative behavior and work together by the geographical similarity of their respective districts. Congressional scholars have largely cast doubt on the importance of district-centered considerations to inform the behavior of legislators, shifting the focus to partisan-centered preferences (Rohde 1991, Cox & McCubbins 1993, 2005). Moreover, while scholars have debated these theories, they have said relatively little about the salience of these theories across varying policy issues. Using the distinct expression of legislative behavior provide by bill co-sponsorship and geographic proximity methods we explore the extent to which district similarity influences how legislators work together in the Congressional network across varying degrees of partisan polarization. Treating Congress as a series of distinct policy networks and using exponential random graph models (ERGM), we evaluate a theory arguing that geographic proximity is a salient predictor of legislator cooperation in district-centered policy domains (i.e. agriculture, land management), even during the hyper-partisan contemporary Congress.  
-<br/>
-  <br/>
-  <center>
-  *Partisanship of Senate Press Event Participation*<br>
-  <br/>
-  ![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/number_press_events_by_party_percentage.png "Partisanship Events"){ width=60% } 
-</center><br/>
-  <center> **Who Goes Public with Whom? A Network Analysis of U.S. Senate Press Events**  </center><br/>
-  <center> ***$\star$Working Manuscript in Preperation $\star$[Working Manuscript Draft](APSA2018_Senate_Collaboration.pdf) $\star$[Manuscript Data Materials](mailto:caalgara@utep.edu)*** </center><br/>
-  *Abstract:* This paper explores the extent to which shared legislator characteristics--in particular, partisanship, representing the same constituency, and sitting on one or more of the same committees--influence legislators' decisions to collaborate with their colleagues on a given issue.  To do so, we employ network analysis.  Previous studies that have done this have largely focused on bill co-sponsorship and roll-call voting.  We argue that such measures, while informative, do not sufficiently capture the high-profile strategic choices that legislators make, and so instead employ a little-used comprehensive dataset that documents all U.S. Senate press events held between 1979 and 1999, as well as between 2003 and 2009, including all of the particular senators who attended each event.  When we look at senator dyads, we find that shared party is the strongest predictor of whether two senators choose to appear at the same event and this effect increases over the time series.  As to whether shared constituency and committee membership predicts public collaboration, the evidence is more mixed, with the strength of these institutional variables attenuating over time.  Overall, our results mirror the increased levels of partisanship of the contemporary Senate that scholars have arrived at using other measures and demonstrate that such partisanship has largely erased the importance of institutional variables such as shared constituency and shared committee membership.   
-<br/>
-<br/>
-<center>
-  *Quarterly Generic Ballot Differential between the Majority & Minority Party, 1962-2016* <br>
-![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/maj_generic_ballot_diff_roper.png "Generic Ballot"){ width=65% }
-</center><br/>
-<center> **The Influence of Partisan Conflict & Policy Responsiveness on Majority Party Electoral Fortunes \& Congressional Job Performance: A Time-Series Approach** </center>
-<center> **with Tzu-Ping Liu, PhD Candidate, University of California, Davis** </center><br/>
-<center> ***$\star$Working Manuscript in Preparation $\star$[Working Manuscript Draft](WPSA2017_Algara_Liu_Draft1.pdf) $\star$[Manuscript Data Materials](mailto:caalgara@utep.edu)*** </center><br/>
-          *Abstract:* Recent work suggests that the aggregate approval rating of the U.S. Congress is a function of both policy responsiveness by the institution and the level of partisan conflict between both parties. However, standing models of the role of partisan conflict and policy responsiveness in congressional approval focus on Congress as a collective institution, rather than distinguishing between the legislative parties. In this paper, we specify a model which posits that policy responsiveness and partisan conflict not only influence approval of Congress as a whole, but also have differing effects on the electoral standing of the majority party in their relative generic ballot advantage to the minority party. We argue that partisan conflict decreases the generic congressional ballot advantage for the majority party and the approval rating of Congress as a collective institution. We also argue that policy responsiveness by Congress to the national mood raises the electoral standing of the majority party and the collective approval of Congress. Using a unique dataset of quarterly congressional approval and congressional generic ballot differentials from 1969 to 2016, we provide a comprehensive test of our model during varying periods of congressional polarization.  
 <br/>
   <p>Copyright &copy; 2017 by Carlos Algara. Made with [RStudio](https://www.rstudio.com).</p>

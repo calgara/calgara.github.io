@@ -9,9 +9,9 @@ navbar:
     href: cv.html
   - text: Research
     menu:
-    - text: Research Agenda Statement
-      href: Algara_Research_Statement.pdf
-    - text: Publications & Working Papers
+    - text: Media Appearances
+      href: media.html
+    - text: Publications
       href: working_papers.html
   - text: Teaching
     menu:

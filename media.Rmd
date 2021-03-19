@@ -1,0 +1,81 @@
+---
+title: "Media Coverage"
+output: 
+  html_document: 
+    fig_caption: yes
+---
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-100362112-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</script>
+  
+  <style type="text/css">
+  
+  h1.title {
+    color: DarkRed;
+    text-align: center;
+  }
+</style>
+  <br/>
+  <br/>
+![](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/brookings2.png){ width=65% }
+  <br/>
+  <br/>
+  
+Thank you for visiting my media coverage page! Much of my research focuses on the role on electoral competition and legislative representation in the United States and political parties, with some of this work receiving media coverage. Given my role as a former U.S. Senate staffer focusing on legislative procedural reform, as a part of my 2019-2020 APSA Congressional Fellows, I have also provided interview commentary on the current state and future prospects of procedural (filibuster) reform in the contemporary Senate. Please find the links below to my media coverage and how my research relates to current political developments. Please feel free to email me, as well!  
+<br/>
+
+### ***PRINT MEDIA***  
+
+* [U.S. News & World Report: Ted Cruz's trip to Mexico earned him widespread criticism. Will it matter for his political future?](https://www.usatoday.com/story/news/politics/2021/02/19/ted-cruz-mexico-trip-draws-criticism-but-hurt-him-politically/4506496001/)  
+* [U.S. News & World Report: Joe Biden Hopes to Bring Back the Old Senate--It Could Be Tough](https://www.usnews.com/news/politics/articles/2021-01-26/joe-biden-hopes-to-bring-back-the-old-senate-it-could-be-tough)  
+* [The Connecticut Post (Bridgeport, NY): Blumenthal, Murphy push to change the filibuster](https://www.ctinsider.com/news/ctpost/article/Blumenthal-Murphy-push-to-change-the-filibuster-15898235.php)  
+* [The Times Union (Albany, NY): McConnell releases Schumer from filibuster promises, but left still pushes](https://www.timesunion.com/news/article/How-the-filibuster-is-squeezing-Schumer-from-both-15896670.php)  
+* [KTSM NBC 9 (El Paso, TX): Latino and Black families facing multiple hardships, White House working to provide relief](https://www.ktsm.com/news/political-news/latino-and-black-families-facing-multiple-hardships-white-house-working-to-provide-relief/)  
+* [Forbes Magazine: Democrats Win The Senate. What Should Businesses Expect?](https://www.forbes.com/sites/zengernews/2021/01/08/democrats-win-the-senate-what-should-businesses-expect/?sh=5fcf98ab1852)  
+* [San Antonio Express News: Texas Democrats face `fundamental reckoning' after another statewide sweep](https://www.expressnews.com/news/election2020/article/Texas-Democrats-face-fundamental-reckoning-15702658.php)  
+* [San Antonio Express News: How Tony Gonzales kept a competitive Texas congressional district red](https://www.expressnews.com/news/local/politics/electionresults/us_house_by_texas_county/article/How-Tony-Gonzales-kept-a-South-Texas-swing-15702858.php)  
+* [El Heraldo de Juárez (Juárez, Mexico): Cuestionada la posibilidad de reelegirse de Trump, afirma politólogo de UTEP](https://www.elheraldodejuarez.com.mx/local/el-paso/cuestionada-la-posibilidad-de-reelegirse-de-trump-afirma-politologo-de-utep-5968019.html)  
+* [UC Davis Magaizine: Election: Do Attitudes About Race Affect Vote Choice?](https://www.ucdavis.edu/curiosity-gap/election-do-attitudes-about-race-affect-vote-choice)  
+* [Kongressen Independent Online Media (København, Denmark)](https://www.kongressen.com/trump-forsoeger-at-goere-olie-til-et-valgtema-for-at-vinde-texas/)  
+* [The New York Times: Biden Is Not Out of the Woods](https://www.nytimes.com/2020/10/14/opinion/biden-trump-presidential-election.html)  
+* [The North American Project (Las Cruces, NM): Border wall and immigration restriction: Latinos for Trump have their eye on November](https://www.northamericanproject.com/stories/border-wall-and-immigration-restriction)  
+* [City & State New York: Congress is getting more diverse. Now its caucuses could too.](https://www.cityandstateny.com/articles/politics/news-politics/congress-getting-more-diverse-now-its-caucuses-could-too.html)  
+* [APSA Political Science Now: Will Trump & Congressional Republicans Benefit from White Racial Attitudes in 2020?](https://politicalsciencenow.com/will-trump-congressional-republicans-benefit-from-white-racial-attitudes-in-2020/)  
+* [The Texas Tribune: As its U.S. House members of color depart, Texas GOP grapples with its lack of diversity](https://www.texastribune.org/2019/10/08/texas-2020-elections-all-white-gop-house-delegation/)  
+* [La Croix (Paris, France): Au sein du parti républicain, des anti-Trump bien silencieux](https://www.la-croix.com/Monde/Ameriques/Au-sein-parti-republicain-anti-Trump-bien-silencieux-2019-08-27-1201043412)  
+* [Roll Call: Duncan Hunter said person making ‘OK’ sign in photo was a ‘stranger.’ The man calls Hunter a friend](https://www.rollcall.com/2019/08/12/duncan-hunter-said-person-making-ok-sign-in-photo-was-a-stranger-the-man-calls-hunter-a-friend/)  
+* [The Sacramento Bee: Trump’s strategy of racial resentment won’t work in California, researcher says](https://www.sacbee.com/news/politics-government/capitol-alert/article232884162.html)  
+* [The Sacramento Bee: White racial resentment is a winning Republican strategy, this political scientist says](https://www.sacbee.com/news/politics-government/capitol-alert/article232884162.html)  
+* [3 Streams Blog: Does gender explain support for COVID-19 policies?](https://medium.com/3streams/how-gender-scientific-knowledge-partisanship-shape-support-for-covid-19-policies-68b90e741ec8)  
+* [Leg Branch: The national tide falls short in the U.S. Senate](https://www.legbranch.org/the-national-tide-falls-short-in-the-u-s-senate/)  
+* [La Tecera (Santiago, Chile): Ataques racistas de Trump a congresistas definen tono de su campaña presidencial](https://www.latercera.com/mundo/noticia/ataques-racistas-trump-congresistas-definen-tono-campana-presidencial/743936/)  
+* [The New York Times: Trump Sets the 2020 Tone: Like 2016, Only This Time 'the Squad' Is Here](https://www.nytimes.com/2019/07/16/us/politics/trump-election-squad.html)  
+* [The Pacific Standard: Trump's Racist Remarks Helped Boost Down-Ballot Republicans in 2016](https://psmag.com/news/trumps-racist-remarks-helped-down-ballot-gop-candidates-in-2016)  
+* [The New York Times: The Deepening 'Racialization' of American Politics](https://www.nytimes.com/2019/02/27/opinion/trump-obama-race.html)  
+* [London School of Economics & Policy Blog: Senators who vote against their party to end debate are more likely to win tough re-election races back home.](https://blogs.lse.ac.uk/usappblog/2019/03/14/senators-who-vote-against-their-party-to-end-debate-are-more-likely-to-win-tough-re-election-races-back-home/)
+<br/>
+<br/>
+
+### ***VIDEO + AUDIO MEDIA***   
+
+* [The Brookings Institution: Debating the Elimination of the Legislative Filibuster](https://www.c-span.org/video/?508198-1/brookings-institution-discussion-eliminating-filibuster)  
+* [National Public Radio (KQED Affiliate; San Francisco, CA): Why White Voters Overwhelmingly Supported Trump -- Again](https://www.kqed.org/forum/2010101880834/why-white-voters-overwhelmingly-supported-trump-again)  
+* [Rock Talk (Dartmouth College): What Now? Post-Election Analysis](https://soundcloud.com/nelson-rockydartmouth/rocky-talk-episode-eighteen-what-now-post-election-analysis-with-dr-carlos-algara)  
+* [Rocky Watch (The Nelson A. Rockefeller Center for Public Policy at Dartmouth College): What Now? 2020 Presidential Post-Election Analysis](https://podcasts.apple.com/us/podcast/rocky-talk-episode-eighteen-what-now-post-election/id1501730033?i=1000500992224)  
+* [UTEP Student Engagement & Leadership Center: The Constitution, Then & Now](https://www.youtube.com/watch?v=l9EORSVPuOA)  
+* [National Public Radio (KERA Affiliate; Dallas, TX): John Cornyn Has Served In The U.S. Senate 18 Years. What's His Record?](https://www.keranews.org/politics/2020-08-25/john-cornyn-has-served-in-the-u-s-senate-18-years-whats-his-record)
+
+  
+<br/>
+<br/>
+<br/>
+<center> Copyright &copy; 2017 by Carlos Algara. Made with [RStudio](https://www.rstudio.com). </center>

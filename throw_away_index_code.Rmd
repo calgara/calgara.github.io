@@ -1,0 +1,29 @@
+---
+title: "index_throw_away_code"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<br>
+<center>
+```{r echo=FALSE, results="hide", include=FALSE, message=FALSE}
+library(tigris)
+library(leaflet)
+library(plyr)
+library(dplyr)
+library(widgetframe)
+library(RColorBrewer)
+library(htmlwidgets)
+library(htmltools)
+
+load("/Users/carlosalgara/Dropbox/Github_Website/calgara.github.io/Rshinyapp/shiny_data/clean_shiny_data.Rdata")
+```
+```{r echo=FALSE, width = "800px", height = "400px", out.width = "80%"}
+map3
+```
+</center>
+<br>
+Please visit my [Research Agenda Statement](Algara_Research_Statement.pdf) for an overview of my broad research agenda, current projects in this agenda, and future directions. To learn more about ongoing working projects of this research agenda, please visit the [Publications & Working Papers](https://calgara.github.io/working_papers.html) and [CV](https://calgara.github.io/cv.html) tabs of this website. To learn more about my teaching philosophy and comprehensive evidence of teaching effectiveness, please visit the [Teaching Porfolio](https://calgara.github.io/teaching.html).    
