@@ -46,11 +46,11 @@ I'm originally from the great Pacific Northwest (Tacoma, Washington) and I am a 
 When I am not busy studying or reading about the Congress (rarely), I enjoy exploring the vast state of California and watching any basketball, baseball, or football game in front of me. I also enjoy playing around and tweeting about data visualization in R. Thank you for visiting!  
 <br>
 **Contact Information:**    
-Department of Political Science  
-University of Texas at El Paso    
-500 West University Avenue    
-El Paso, TX 79968    
-[caalgara@utep.edu](mailto:caalgara@utep.edu)
+Department of Politics & Government  
+Claremont Graduate University    
+150 E. 10th Street    
+Claremont, California 91711    
+[carlos.algara@cgu.edu](mailto:carlos.algara@cgu.edu)
 <br>
 <br>
 <style><div text-align: left; font-size: 90%;'></style>Copyright &copy; 2017 by Carlos Algara. Made with [RStudio](https://www.rstudio.com)</div></div>
