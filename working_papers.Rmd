@@ -46,6 +46,17 @@ gtag('config', 'UA-100362112-1');
   <br/>
   <br/>
   <center>
+*Latent Scientific Trust Across Racial Group Samples* <br>
+![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/scientific_trust_boxplots_by_race3.png "Scientific trust across races"){ width=60% }
+  </center><br/>
+  <center> **The Role of Race and Scientific Trust on Support for COVID-19 Social Distancing Measures in the United States** </center>
+    <center> **With [Sara Kazemian](http://ps.ucdavis.edu), PhD Candidate, Political Science, University of California, Davis** </center>
+  <center> **& [Sam Fuller](http://ps.ucdavis.edu), PhD Candidate, Political Science, University of California, Davis** </center><br/>
+  <center> ***$\star$ [Manuscript Published in PLoS One](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254127) $\star$ <br/> [Publication Link](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254127) $\star$[Manuscript Replication Materials](https://doi.org/10.7910/DVN/0RMZHK)*** </center><br/>
+          *Abstract:* Pundits and academics across disciplines note that the human toll brought forth by the novel coronavirus (COVID-19) pandemic in the United States (U.S.) is fundamentally unequal for communities of color. Standing literature on public health posits that one of the chief predictors of racial disparity in health outcomes is a lack of institutional trust among minority communities. Furthermore, in our own county-level analysis from the U.S., we find that counties with higher percentages of Black and Hispanic residents have had vastly higher cumulative deaths from COVID-19. In light of this standing literature and our own analysis, it is critical to better understand how to mitigate or prevent these unequal outcomes for any future pandemic or public health emergency. Therefore, we assess the claim that raising institutional trust, primarily scientific trust, is key to mitigating these racial inequities. Leveraging a new, pre-pandemic measure of scientific trust, we find that trust in science, unlike trust in politicians or the media, significantly raises support for COVID-19 social distancing policies across racial lines. Our findings suggest that increasing scientific trust is essential to garnering support for public health policies that lessen the severity of the current, and potentially a future, pandemic.  
+<br/>
+<br/>
+  <center>
 *Perceptual & Roll-Call Based Ideal Points by Self-Placements* <br>
 ![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/citizens_ideal_pts_scatter.png "Ideal Point Validation"){ width=60% }
   </center><br/>
