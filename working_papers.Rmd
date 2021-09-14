@@ -46,6 +46,16 @@ gtag('config', 'UA-100362112-1');
   <br/>
   <br/>
   <center>
+*1988 Presidential Election Margins in the U.S. Counties* <br> 
+![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/election1988.png "1988 Presidential Election"){ width=60% }
+  </center><br/>
+  <center> **Partisanship & Nationalization in American Elections: Evidence from Presidential, Senatorial, & Gubernatorial Elections in the U.S. Counties, 1872-2020** </center>
+    <center> **With [Sharif Amlani](http://ps.ucdavis.edu), PhD Candidate, Political Science, University of California, Davis** </center><br/>
+  <center> ***$\star$ [Manuscript Published in Electoral Studies](https://www.sciencedirect.com/science/article/pii/S0261379421001050?dgcid=author) $\star$ <br/> [Publication Link](https://www.sciencedirect.com/science/article/pii/S0261379421001050?dgcid=author) $\star$[Manuscript Replication Materials](https://doi.org/10.7910/DVN/DGUMFI)*** </center><br/>
+          *Abstract:* Scholars argue that contemporary American elections are pronounced in their degree of partisanship and nationalization. While much of this work largely uncovers a heightened degree of nationalization in contemporary elections, little is known about how far back these patterns generalize. Given the limited availability of American electoral data, this work also generally focuses on a single office or during a certain segment of the post-war period since 1946. Moreover, this work largely focuses on states as salient units of analysis, masking potential variation found in U.S. counties, the smallest geographical unit constituting panel observations over time and across elections. In this note, we leverage a novel dataset of county-level election returns for President, U.S. Senate, and Governor, to specify a model assessing whether American elections are more nationalized and partisan than during any other period since the Civil War. We find evidence that presidential and Senate elections are more partisan today than any period since the Civil War, while gubernatorial elections are as partisan today as they were during the late 1800s. Our findings have implications for contemporary-based theories explaining the rise of partisanship in American elections and demonstrates the utility of county-level data in assessing electoral changes in America.  
+  <br/>
+  <br/>
+  <center>
 *Latent Scientific Trust Across Racial Group Samples* <br>
 ![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/scientific_trust_boxplots_by_race3.png "Scientific trust across races"){ width=60% }
   </center><br/>
