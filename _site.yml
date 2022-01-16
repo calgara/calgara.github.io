@@ -15,16 +15,8 @@ navbar:
       href: working_papers.html
   - text: Teaching
     menu:
-    - text: Teaching Portfolio
-      href: teaching.html
-    - text: POL 5310 (UTEP), Spring 2021
-      href: pol5310s2021.html
-    - text: POL 157 (Sac State), Spring 2019
-      href: pol157s2019.html
-    - text: POL 1 (UCD), Fall 2017
-      href: pol1f2017.html
-    - text: POL 1 (UCD), Summer 2017
-      href: pol1s2017.html
+    - text: Teaching Resources
+      href: teaching_resources.html
     - text: ggplot Data Visualization Tutorial
       href: UCD_PS_ggplot_tutorial.html
   - text: About Me

@@ -304,19 +304,7 @@ $(document).ready(function () {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="teaching.html">Teaching Portfolio</a>
-    </li>
-    <li>
-      <a href="pol5310s2021.html">POL 5310 (UTEP), Spring 2021</a>
-    </li>
-    <li>
-      <a href="pol157s2019.html">POL 157 (Sac State), Spring 2019</a>
-    </li>
-    <li>
-      <a href="pol1f2017.html">POL 1 (UCD), Fall 2017</a>
-    </li>
-    <li>
-      <a href="pol1s2017.html">POL 1 (UCD), Summer 2017</a>
+      <a href="teaching_resources.html">Teaching Resources</a>
     </li>
     <li>
       <a href="UCD_PS_ggplot_tutorial.html">ggplot Data Visualization Tutorial</a>
@@ -412,19 +400,19 @@ load(&quot;/Users/caalgara/Desktop/carlos_school/PhD_UC Davis/Dissertation Proje
 # Let&#39;s explore the nature of ideological preferences in the American electorate over time!
 
 print(as_tibble(rescaled_overtime_idealpts_2008_2016))</code></pre>
-<pre><code>## # A tibble: 262,896 x 10
-##    year  case_id year_district_id intercept aldmck_weight_p… idealpt selfplace
-##    &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;                &lt;dbl&gt;            &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt;
-##  1 2008  112     2008 NY14           -0.653            0.218   0.218         4
-##  2 2008  11212   2008 CA23           -2.18             0.435  -1.31          2
-##  3 2008  11488   2008 WA8            -0.943            0.354   1.18          6
-##  4 2008  11710   2008 MA2            -0.843            0.281   0.562         5
-##  5 2008  11902   2008 IL10           -3.05             0.653  -0.435         4
-##  6 2008  12118   2008 MI15           -1.41             0.326  -1.09          1
-##  7 2008  12517   2008 CA43           -0.957            0.261  -0.696         1
-##  8 2008  127     2008 NY22           -1.32             0.331  -0.994         1
-##  9 2008  1300    2008 CA7            -1.09             0.326  -0.435         2
-## 10 2008  13717   2008 NC4            -1.09             0.653   2.83          6
+<pre><code>## # A tibble: 262,896 × 10
+##    year  case_id year_district_id intercept aldmck_weight_par… idealpt selfplace
+##    &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;                &lt;dbl&gt;              &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt;
+##  1 2008  112     2008 NY14           -0.653              0.218   0.218         4
+##  2 2008  11212   2008 CA23           -2.18               0.435  -1.31          2
+##  3 2008  11488   2008 WA8            -0.943              0.354   1.18          6
+##  4 2008  11710   2008 MA2            -0.843              0.281   0.562         5
+##  5 2008  11902   2008 IL10           -3.05               0.653  -0.435         4
+##  6 2008  12118   2008 MI15           -1.41               0.326  -1.09          1
+##  7 2008  12517   2008 CA43           -0.957              0.261  -0.696         1
+##  8 2008  127     2008 NY22           -1.32               0.331  -0.994         1
+##  9 2008  1300    2008 CA7            -1.09               0.326  -0.435         2
+## 10 2008  13717   2008 NC4            -1.09               0.653   2.83          6
 ## # … with 262,886 more rows, and 3 more variables: polinfo &lt;dbl&gt;,
 ## #   idealpts_linear_map_overtime &lt;dbl&gt;, pid7 &lt;chr&gt;</code></pre>
 <pre class="r"><code># Huge data frame of scaled Aldrich-McKelvey ideal points for each CCES respondent from 2008-2016. For more information on the method deriving these scaled ideal points, see Ramey (2016).
@@ -444,19 +432,19 @@ ggplot(data=rescaled_overtime_idealpts_2008_2016,aes(x=idealpt)) + geom_density(
 rescaled_overtime_idealpts_2008_2016$pid3 &lt;- ifelse(rescaled_overtime_idealpts_2008_2016$pid7 %in% c(&quot;Lean Republican&quot;,&quot;Not very strong Republican&quot;,&quot;Strong Republican&quot;),&quot;Republican&quot;,ifelse(rescaled_overtime_idealpts_2008_2016$pid7 %in% c(&quot;Lean Democrat&quot;,&quot;Not very strong Democrat&quot;,&quot;Strong Democrat&quot;),&quot;Democrat&quot;,ifelse(rescaled_overtime_idealpts_2008_2016$pid7 %in% c(&quot;Independent&quot;),&quot;Independent&quot;,NA)))
 
 print(as_tibble(rescaled_overtime_idealpts_2008_2016)) # Let&#39;s check it out</code></pre>
-<pre><code>## # A tibble: 262,896 x 11
-##    year  case_id year_district_id intercept aldmck_weight_p… idealpt selfplace
-##    &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;                &lt;dbl&gt;            &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt;
-##  1 2008  112     2008 NY14           -0.653            0.218   0.218         4
-##  2 2008  11212   2008 CA23           -2.18             0.435  -1.31          2
-##  3 2008  11488   2008 WA8            -0.943            0.354   1.18          6
-##  4 2008  11710   2008 MA2            -0.843            0.281   0.562         5
-##  5 2008  11902   2008 IL10           -3.05             0.653  -0.435         4
-##  6 2008  12118   2008 MI15           -1.41             0.326  -1.09          1
-##  7 2008  12517   2008 CA43           -0.957            0.261  -0.696         1
-##  8 2008  127     2008 NY22           -1.32             0.331  -0.994         1
-##  9 2008  1300    2008 CA7            -1.09             0.326  -0.435         2
-## 10 2008  13717   2008 NC4            -1.09             0.653   2.83          6
+<pre><code>## # A tibble: 262,896 × 11
+##    year  case_id year_district_id intercept aldmck_weight_par… idealpt selfplace
+##    &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;                &lt;dbl&gt;              &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt;
+##  1 2008  112     2008 NY14           -0.653              0.218   0.218         4
+##  2 2008  11212   2008 CA23           -2.18               0.435  -1.31          2
+##  3 2008  11488   2008 WA8            -0.943              0.354   1.18          6
+##  4 2008  11710   2008 MA2            -0.843              0.281   0.562         5
+##  5 2008  11902   2008 IL10           -3.05               0.653  -0.435         4
+##  6 2008  12118   2008 MI15           -1.41               0.326  -1.09          1
+##  7 2008  12517   2008 CA43           -0.957              0.261  -0.696         1
+##  8 2008  127     2008 NY22           -1.32               0.331  -0.994         1
+##  9 2008  1300    2008 CA7            -1.09               0.326  -0.435         2
+## 10 2008  13717   2008 NC4            -1.09               0.653   2.83          6
 ## # … with 262,886 more rows, and 4 more variables: polinfo &lt;dbl&gt;,
 ## #   idealpts_linear_map_overtime &lt;dbl&gt;, pid7 &lt;chr&gt;, pid3 &lt;chr&gt;</code></pre>
 <pre class="r"><code>ggplot(data=rescaled_overtime_idealpts_2008_2016,aes(x=idealpt,color=pid3)) + geom_density()</code></pre>
@@ -475,19 +463,19 @@ ggplot(subset(rescaled_overtime_idealpts_2008_2016,rescaled_overtime_idealpts_20
 <pre class="r"><code># This is cool, let&#39;s do House candidates! First, let&#39;s check the data frame.
 
 print(as_tibble(aldmck_congress))</code></pre>
-<pre><code>## # A tibble: 1,900 x 6
-##    district placement.dem_p… placement.rep_p… placement.dem_h… placement.rep_h…
-##    &lt;chr&gt;               &lt;dbl&gt;            &lt;dbl&gt;            &lt;dbl&gt;            &lt;dbl&gt;
-##  1 AK1                -0.390            0.816         -0.287              0.832
-##  2 AL5                -0.390            0.816         -0.115              1.01 
-##  3 AL3                -0.390            0.816         -0.234              0.724
-##  4 AL2                -0.390            0.816          0.0107             0.912
-##  5 AL4                -0.390            0.816          0.0506             0.790
-##  6 AZ1                -0.390            0.816         -0.00825            0.629
-##  7 AZ2                -0.390            0.816          0.0454             0.727
-##  8 AZ3                -0.390            0.816         -0.246              0.827
-##  9 AZ4                -0.390            0.816         -0.132              0.461
-## 10 AZ5                -0.390            0.816         -0.209              0.762
+<pre><code>## # A tibble: 1,900 × 6
+##    district placement.dem_pt… placement.rep_p… placement.dem_h… placement.rep_h…
+##    &lt;chr&gt;                &lt;dbl&gt;            &lt;dbl&gt;            &lt;dbl&gt;            &lt;dbl&gt;
+##  1 AK1                 -0.390            0.816         -0.287              0.832
+##  2 AL5                 -0.390            0.816         -0.115              1.01 
+##  3 AL3                 -0.390            0.816         -0.234              0.724
+##  4 AL2                 -0.390            0.816          0.0107             0.912
+##  5 AL4                 -0.390            0.816          0.0506             0.790
+##  6 AZ1                 -0.390            0.816         -0.00825            0.629
+##  7 AZ2                 -0.390            0.816          0.0454             0.727
+##  8 AZ3                 -0.390            0.816         -0.246              0.827
+##  9 AZ4                 -0.390            0.816         -0.132              0.461
+## 10 AZ5                 -0.390            0.816         -0.209              0.762
 ## # … with 1,890 more rows, and 1 more variable: year &lt;dbl&gt;</code></pre>
 <pre class="r"><code># Oh no, we have to manipulate the dataframe. Urgh, bummer, but easy!
 
@@ -513,19 +501,19 @@ ggplot(rescaled_overtime_idealpts_2008_2016, aes(x=selfplace, y=idealpts_linear_
 <pre class="r"><code>approval &lt;- read.csv(&quot;/Users/caalgara/Desktop/carlos_school/PhD_UC Davis/Research/Data/American Politics/Presidential_Approval/presidents_survey_marginals_1969_2017.csv&quot;)
 
 as_tibble(approval)</code></pre>
-<pre><code>## # A tibble: 4,075 x 12
-##        X Organization Polling.Start Polling.End Approve Disapprove No.Opinion
-##    &lt;int&gt; &lt;chr&gt;        &lt;chr&gt;         &lt;chr&gt;         &lt;int&gt;      &lt;int&gt; &lt;chr&gt;     
-##  1     1 Quinnipiac … 2017-01-20    2017-01-25       36         44 19        
-##  2     2 TIPP / IBD   2017-01-27    2017-02-02       42         48 9         
-##  3     3 CNN          2017-01-31    2017-02-02       44         53 3         
-##  4     4 CBS News     2017-02-01    2017-02-02       40         48 12        
-##  5     5 Quinnipiac … 2017-02-02    2017-02-06       42         51 7         
-##  6     6 Pew          2017-02-07    2017-02-12       39         56 6         
-##  7     7 Fox          2017-02-11    2017-02-13       48         47 6         
-##  8     8 Kaiser Fami… 2017-02-13    2017-02-19       41         52 7         
-##  9     9 McClatchy /… 2017-02-15    2017-02-19       41         49 9         
-## 10    10 Quinnipiac … 2017-02-16    2017-02-21       38         55 7         
+<pre><code>## # A tibble: 4,075 × 12
+##        X Organization    Polling.Start Polling.End Approve Disapprove No.Opinion
+##    &lt;int&gt; &lt;chr&gt;           &lt;chr&gt;         &lt;chr&gt;         &lt;int&gt;      &lt;int&gt; &lt;chr&gt;     
+##  1     1 Quinnipiac Uni… 2017-01-20    2017-01-25       36         44 19        
+##  2     2 TIPP / IBD      2017-01-27    2017-02-02       42         48 9         
+##  3     3 CNN             2017-01-31    2017-02-02       44         53 3         
+##  4     4 CBS News        2017-02-01    2017-02-02       40         48 12        
+##  5     5 Quinnipiac Uni… 2017-02-02    2017-02-06       42         51 7         
+##  6     6 Pew             2017-02-07    2017-02-12       39         56 6         
+##  7     7 Fox             2017-02-11    2017-02-13       48         47 6         
+##  8     8 Kaiser Family … 2017-02-13    2017-02-19       41         52 7         
+##  9     9 McClatchy / Ma… 2017-02-15    2017-02-19       41         49 9         
+## 10    10 Quinnipiac Uni… 2017-02-16    2017-02-21       38         55 7         
 ## # … with 4,065 more rows, and 5 more variables: Sample.Size &lt;int&gt;,
 ## #   president &lt;chr&gt;, year &lt;int&gt;, approval_measure &lt;dbl&gt;, series &lt;chr&gt;</code></pre>
 <pre class="r"><code>ggplot(approval, aes(x = approval_measure)) + geom_histogram(alpha=.2,fill=&quot;black&quot;,color=&quot;black&quot;) + theme_minimal() + scale_x_continuous(&quot;Presidential Approval Polling&quot;) + ggtitle(&quot;Distribution of Presidential Approval Polling Data, 1969-2017&quot;) </code></pre>
@@ -555,19 +543,19 @@ ggplot(mean_approval,aes(x=year,y=approval_mean,label=president)) + geom_line() 
 <h2><em>Plotting Bivariate Relationships</em></h2>
 <p>While we implicitly plotted a bivariate relationship using the box-plot in the previous example, we can provide more explicit examples for studying bivariate relationships. Let’s use data on the 2016 U.S. House elections to look at the relationship between presidential voteshare and House election voteshare. Also, let’s fit a simple bivariate regression line to see in which districts Democratic candidates underperformed Clinton and which candidates over-performed Clinton. This will be articulated in the residual distance between the individual points and the point-estimate articulated in the regression line. In other words, the distance between the observed value <span class="math inline">\(Y\)</span> (in this case, the vote share won by the Democratic House candidate) and <span class="math inline">\(\hat{Y}\)</span> (in this case, the predicted vote share won by the Democratic House candidate articulated in the regression line).</p>
 <pre class="r"><code>as_tibble(house)</code></pre>
-<pre><code>## # A tibble: 25,367 x 15
-##     year  stcd state cd    inc   pwin     dv   dvp fr    po1   po2   redist
-##    &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; 
-##  1  1900   101 AL    1     Demo… Demo…  82.7  NA   &quot;&quot;    Amat… Noth… &quot;&quot;    
-##  2  1900   102 AL    2     Demo… Demo…  98.3  83.3 &quot;&quot;    Only… Noth… &quot;&quot;    
-##  3  1900   103 AL    3     Demo… Demo…  80.2  96.9 &quot;&quot;    Amat… Noth… &quot;&quot;    
-##  4  1900   104 AL    4     Demo… Demo…  97.4  54.9 &quot;&quot;    Only… Noth… &quot;&quot;    
-##  5  1900   105 AL    5     Demo… Demo…  67.0  77.9 &quot;&quot;    Amat… Noth… &quot;&quot;    
-##  6  1900   106 AL    6     Demo… Demo…  65.7  69.8 &quot;&quot;    Amat… Noth… &quot;&quot;    
-##  7  1900   107 AL    7     GOP … Demo…  51.8  44.6 &quot;&quot;    Qual… Noth… &quot;&quot;    
-##  8  1900   108 AL    8     Demo… Demo…  59.7  84.8 &quot;&quot;    Amat… Noth… &quot;&quot;    
-##  9  1900   109 AL    9     Demo… Demo… 100    83.0 &quot;&quot;    No c… Noth… &quot;&quot;    
-## 10  1900   401 AR    1     Demo… Demo…  72.4  84.6 &quot;&quot;    Amat… Noth… &quot;&quot;    
+<pre><code>## # A tibble: 25,367 × 15
+##     year  stcd state cd    inc     pwin      dv   dvp fr    po1     po2   redist
+##    &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; &lt;chr&gt; 
+##  1  1900   101 AL    1     Democr… Democ…  82.7  NA   &quot;&quot;    Amateu… Noth… &quot;&quot;    
+##  2  1900   102 AL    2     Democr… Democ…  98.3  83.3 &quot;&quot;    Only D… Noth… &quot;&quot;    
+##  3  1900   103 AL    3     Democr… Democ…  80.2  96.9 &quot;&quot;    Amateu… Noth… &quot;&quot;    
+##  4  1900   104 AL    4     Democr… Democ…  97.4  54.9 &quot;&quot;    Only D… Noth… &quot;&quot;    
+##  5  1900   105 AL    5     Democr… Democ…  67.0  77.9 &quot;&quot;    Amateu… Noth… &quot;&quot;    
+##  6  1900   106 AL    6     Democr… Democ…  65.7  69.8 &quot;&quot;    Amateu… Noth… &quot;&quot;    
+##  7  1900   107 AL    7     GOP In… Democ…  51.8  44.6 &quot;&quot;    Qualit… Noth… &quot;&quot;    
+##  8  1900   108 AL    8     Democr… Democ…  59.7  84.8 &quot;&quot;    Amateu… Noth… &quot;&quot;    
+##  9  1900   109 AL    9     Democr… Democ… 100    83.0 &quot;&quot;    No cha… Noth… &quot;&quot;    
+## 10  1900   401 AR    1     Democr… Democ…  72.4  84.6 &quot;&quot;    Amateu… Noth… &quot;&quot;    
 ## # … with 25,357 more rows, and 3 more variables: dexp &lt;dbl&gt;, rexp &lt;dbl&gt;,
 ## #   dpres &lt;dbl&gt;</code></pre>
 <pre class="r"><code>ggplot(subset(house,house$year %in% 2016),aes(x=dpres,y=dv)) + geom_point(shape=1) + geom_smooth(method=&#39;lm&#39;,SE=T,color=&quot;black&quot;) + theme_bw() + scale_x_continuous(&quot;District Two-Party Vote Share Won by the Democratic Presidential Candidate&quot;) + scale_y_continuous(&quot;District Two-Party Vote Share Won \nby the Democratic House Candidate&quot;) + ggtitle(&quot;Scatterplot of Democratic House Vote-Share by \nDemocratic Presidential Vote-Share in 2016&quot;)</code></pre>
@@ -590,7 +578,7 @@ cces &lt;- subset(cces,select=c(&quot;CC16_340a&quot;,&quot;CC16_340d&quot;,&quo
 colnames(cces) &lt;- c(&quot;self_placement&quot;,&quot;hrc_placement&quot;,&quot;dt_placement&quot;)
 
 as_tibble(cces)</code></pre>
-<pre><code>## # A tibble: 64,600 x 3
+<pre><code>## # A tibble: 64,600 × 3
 ##    self_placement hrc_placement dt_placement
 ##             &lt;int&gt;         &lt;int&gt;        &lt;int&gt;
 ##  1              3             1            7
@@ -656,7 +644,7 @@ ggplot(sample_means,aes(x=self_placement,y=mean,ymin=lower,ymax=upper,color=cand
 <h2><em>Plotting Model Quantities of Interest</em></h2>
 <p>In this section, we turn to post-estimating model quantitites of interest. First, let’s explore estimating average marginal effects from a simple regression model. We return to our House dataset and specify a pooled vote-share model of House elections from 1900-2016.</p>
 <pre class="r"><code>as_tibble(house_elexs)</code></pre>
-<pre><code>## # A tibble: 25,367 x 8
+<pre><code>## # A tibble: 25,367 × 8
 ##     year district    dv dpres dem_seat dem_incumbency dem_qual_advantage_…   dvp
 ##    &lt;int&gt; &lt;chr&gt;    &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt;          &lt;dbl&gt;                &lt;dbl&gt; &lt;dbl&gt;
 ##  1  1900 AL1       82.7  70.1        1              1                    1 100  
@@ -757,7 +745,7 @@ ggplot(subset(mes_yearly,mes_yearly$factor %in% c(&quot;Incumbency Advantage&quo
 <p><img src="UCD_PS_ggplot_tutorial_files/figure-html/unnamed-chunk-15-2.png" width="672" /></p>
 <p>Now let’s turn to logits! Let’s extract some predicted probabilities! For this example, we turn to investigating the relationship between income, education, and the probability of turning out to vote using data from the 2014 Cooperative Congressional Election Study.</p>
 <pre class="r"><code>as_tibble(resources)</code></pre>
-<pre><code>## # A tibble: 56,200 x 6
+<pre><code>## # A tibble: 56,200 × 6
 ##    weight cdid  turnout contribute income education           
 ##     &lt;dbl&gt; &lt;chr&gt;   &lt;dbl&gt;      &lt;dbl&gt;  &lt;dbl&gt; &lt;fct&gt;               
 ##  1  1.61  4           0          0      1 High school graduate
@@ -879,22 +867,22 @@ state_shp &lt;- readOGR(&quot;/Users/caalgara/Desktop/carlos_school/PhD_UC Davis
 <pre class="r"><code># Let&#39;s explore the data embedded in the shape file
 
 as_tibble(state_shp@data) # Dataframe embedded in the Spatial Polygons Data Frame</code></pre>
-<pre><code>## # A tibble: 52 x 9
-##    STATEFP STATENS  AFFGEOID   GEOID STUSPS NAME         LSAD  ALAND    AWATER  
-##    &lt;chr&gt;   &lt;chr&gt;    &lt;chr&gt;      &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt;        &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt;   
-##  1 23      01779787 0400000US… 23    ME     Maine        00    7988522… 1174875…
-##  2 15      01779782 0400000US… 15    HI     Hawaii       00    1663410… 1177769…
-##  3 04      01779777 0400000US… 04    AZ     Arizona      00    2941985… 1027346…
-##  4 05      00068085 0400000US… 05    AR     Arkansas     00    1347715… 2960191…
-##  5 10      01779781 0400000US… 10    DE     Delaware     00    5047194… 1398720…
-##  6 13      01705317 0400000US… 13    GA     Georgia      00    1491698… 4741100…
-##  7 27      00662849 0400000US… 27    MN     Minnesota    00    2062322… 1892917…
-##  8 02      01785533 0400000US… 02    AK     Alaska       00    1477946… 2453904…
-##  9 06      01779778 0400000US… 06    CA     California   00    4035011… 2046671…
-## 10 11      01702382 0400000US… 11    DC     District of… 00    1583649… 18633403
+<pre><code>## # A tibble: 52 × 9
+##    STATEFP STATENS  AFFGEOID    GEOID STUSPS NAME        LSAD  ALAND    AWATER  
+##    &lt;chr&gt;   &lt;chr&gt;    &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt;   
+##  1 23      01779787 0400000US23 23    ME     Maine       00    7988522… 1174875…
+##  2 15      01779782 0400000US15 15    HI     Hawaii      00    1663410… 1177769…
+##  3 04      01779777 0400000US04 04    AZ     Arizona     00    2941985… 1027346…
+##  4 05      00068085 0400000US05 05    AR     Arkansas    00    1347715… 2960191…
+##  5 10      01779781 0400000US10 10    DE     Delaware    00    5047194… 1398720…
+##  6 13      01705317 0400000US13 13    GA     Georgia     00    1491698… 4741100…
+##  7 27      00662849 0400000US27 27    MN     Minnesota   00    2062322… 1892917…
+##  8 02      01785533 0400000US02 02    AK     Alaska      00    1477946… 2453904…
+##  9 06      01779778 0400000US06 06    CA     California  00    4035011… 2046671…
+## 10 11      01702382 0400000US11 11    DC     District o… 00    1583649… 18633403
 ## # … with 42 more rows</code></pre>
 <pre class="r"><code>as_tibble(state_shp@data$NAME) # What type of states are in the file? We don&#39;t want territories!</code></pre>
-<pre><code>## # A tibble: 52 x 1
+<pre><code>## # A tibble: 52 × 1
 ##    value               
 ##    &lt;chr&gt;               
 ##  1 Maine               
@@ -921,7 +909,7 @@ ggplot(state_shp, aes(x = long, y = lat, group = group)) + geom_polygon(fill = &
 <pre class="r"><code>state_pres_approval &lt;- read.dta13(&quot;/Users/caalgara/Desktop/carlos_school/PhD_UC Davis/Dissertation Project/Ch2_Electoral_Implications_Approval/MRP_Estimation/state_presidential_approval_dynamic_mrp_estimates.dta&quot;) # Load the data
 
 as_tibble(state_pres_approval) # Get a glimpse of the data structure. These are Dynamic MRP state-level estimates (see: Caughey &amp; Warshaw (2015) for technical details on the Dynamic MRP model) of presidential approval from 2008-2017. </code></pre>
-<pre><code>## # A tibble: 510 x 8
+<pre><code>## # A tibble: 510 × 8
 ##    param     state  year  mean     sd median q_025 q_975
 ##    &lt;chr&gt;     &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
 ##  1 theta_bar AK     2008 0.396 0.0549  0.403 0.309 0.490
@@ -942,19 +930,19 @@ as_tibble(state_pres_approval) # Get a glimpse of the data structure. These are 
 state_pres_approval$state_pres_approval_percent &lt;- state_pres_approval$median * 100
 
 as_tibble(state_pres_approval) # Check to see if it worked. Clearly it did!</code></pre>
-<pre><code>## # A tibble: 510 x 9
-##    param    state  year  mean     sd median q_025 q_975 state_pres_approval_per…
-##    &lt;chr&gt;    &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;                    &lt;dbl&gt;
-##  1 theta_b… AK     2008 0.396 0.0549  0.403 0.309 0.490                     40.3
-##  2 theta_b… AK     2009 0.443 0.0403  0.449 0.376 0.495                     44.9
-##  3 theta_b… AK     2010 0.403 0.0583  0.415 0.314 0.471                     41.5
-##  4 theta_b… AK     2011 0.413 0.0526  0.418 0.329 0.477                     41.8
-##  5 theta_b… AK     2012 0.462 0.0654  0.475 0.365 0.536                     47.5
-##  6 theta_b… AK     2013 0.400 0.0451  0.411 0.330 0.457                     41.1
-##  7 theta_b… AK     2014 0.403 0.0532  0.400 0.324 0.467                     40.0
-##  8 theta_b… AK     2015 0.421 0.0531  0.414 0.334 0.498                     41.4
-##  9 theta_b… AK     2016 0.495 0.0538  0.503 0.411 0.559                     50.3
-## 10 theta_b… AK     2017 0.434 0.0482  0.443 0.368 0.512                     44.3
+<pre><code>## # A tibble: 510 × 9
+##    param     state  year  mean     sd median q_025 q_975 state_pres_approval_pe…
+##    &lt;chr&gt;     &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;                   &lt;dbl&gt;
+##  1 theta_bar AK     2008 0.396 0.0549  0.403 0.309 0.490                    40.3
+##  2 theta_bar AK     2009 0.443 0.0403  0.449 0.376 0.495                    44.9
+##  3 theta_bar AK     2010 0.403 0.0583  0.415 0.314 0.471                    41.5
+##  4 theta_bar AK     2011 0.413 0.0526  0.418 0.329 0.477                    41.8
+##  5 theta_bar AK     2012 0.462 0.0654  0.475 0.365 0.536                    47.5
+##  6 theta_bar AK     2013 0.400 0.0451  0.411 0.330 0.457                    41.1
+##  7 theta_bar AK     2014 0.403 0.0532  0.400 0.324 0.467                    40.0
+##  8 theta_bar AK     2015 0.421 0.0531  0.414 0.334 0.498                    41.4
+##  9 theta_bar AK     2016 0.495 0.0538  0.503 0.411 0.559                    50.3
+## 10 theta_bar AK     2017 0.434 0.0482  0.443 0.368 0.512                    44.3
 ## # … with 500 more rows</code></pre>
 <pre class="r"><code>approval_2016 &lt;- subset(state_pres_approval,state_pres_approval$year == 2016) # Subet our data
 
@@ -979,7 +967,7 @@ library(igraph)
 library(ggnet)
 
 as_tibble(x) # This network data is in dyadic form, where each row indicates a pair of Senators.</code></pre>
-<pre><code>## # A tibble: 4,802 x 43
+<pre><code>## # A tibble: 4,802 × 43
 ##    state_senator_j state_senator_i senator_j senator_i number_cosponso… congress
 ##    &lt;chr&gt;           &lt;chr&gt;               &lt;int&gt;     &lt;int&gt;            &lt;int&gt;    &lt;int&gt;
 ##  1 AK              AL                   1898      1548               22      113
@@ -998,16 +986,7 @@ as_tibble(x) # This network data is in dyadic form, where each row indicates a p
 ## #   Gender_senator_i &lt;int&gt;, Majority_senator_i &lt;int&gt;,
 ## #   bioguide_id_senator_i &lt;chr&gt;, seniority_num_of_congresses_senator_i &lt;int&gt;,
 ## #   election_year_senator_i &lt;int&gt;, senator_up_for_relection_senator_i &lt;int&gt;,
-## #   icpsr_id_senator_j &lt;int&gt;, NameFull_senator_j &lt;chr&gt;, Class_senator_j &lt;int&gt;,
-## #   Party_senator_j &lt;int&gt;, ComC_senator_j &lt;int&gt;, ComR_senator_j &lt;int&gt;,
-## #   DW1_senator_j &lt;dbl&gt;, Gender_senator_j &lt;int&gt;, Majority_senator_j &lt;int&gt;,
-## #   bioguide_id_senator_j &lt;chr&gt;, seniority_num_of_congresses_senator_j &lt;int&gt;,
-## #   election_year_senator_j &lt;int&gt;, senator_up_for_relection_senator_j &lt;int&gt;,
-## #   same_committee &lt;int&gt;, same_gender &lt;chr&gt;, same_party &lt;chr&gt;,
-## #   same_majority &lt;chr&gt;, same_state_dyad &lt;int&gt;,
-## #   number_cosponsored_bills_particularistic &lt;int&gt;, neighbor_adjacency &lt;int&gt;,
-## #   centroid_distance &lt;dbl&gt;, centroid_distance_miles &lt;dbl&gt;, co_id &lt;chr&gt;,
-## #   edge &lt;dbl&gt;</code></pre>
+## #   icpsr_id_senator_j &lt;int&gt;, NameFull_senator_j &lt;chr&gt;, …</code></pre>
 <pre class="r"><code>adj &lt;- graph.data.frame(x[,c(8,21,43)],directed=T) # Let&#39;s create a network object! What we want to extract is a dataframe where the first column is Senator i, the second column is Senator J, and the last column is a binary variable indicating
 adj &lt;- get.adjacency(adj,attr=&#39;edge&#39;,sparse=FALSE) # Convert the edge list to an adjacency matrix
 x_ergm &lt;- network(adj, matrix.type = &quot;adjacency&quot;, ignore.eval = FALSE,directed = F,weighted = F,names.eval=&quot;edge&quot;) # Convert the adjacency matrix to a network object
