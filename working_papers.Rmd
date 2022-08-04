@@ -46,11 +46,22 @@ gtag('config', 'UA-100362112-1');
   <br/>
   <br/>
   <center>
+*Long-Run Multipliers (LRMs) of Error Correction Models Monthly Covariates* <br> 
+![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/gecm_models_t_test.png "LRM Hypothesis Testing"){ width=60% }
+  </center><br/>  
+  <center> **Fenno's Paradox in a Polarized Age: How Polarization Lowers the Mass Public's Assessments of the Congress & Legislators** </center>
+  <center> **With [Byengseon Bae](), Graduate Student, Department of Politics & Government, Claremont Graduate University** </center><br/>
+  <center> ***$\star$[Manuscript Forthcoming in Congress & the Presidency]() $\star$ <br/> [Publication Link]() $\star$[Manuscript Data Materials](mailto:carlos.algara@cgu.edu)***   <br/>
+<br/>
+          *Abstract:* Fenno (1975) famously posited that the mass public's assessments of the U.S. Congress are rooted in a paradox, with citizens holding negative evaluations of the collective Congress while holding favorable views of their individual members of Congress. Since the conceptualization of Fenno's Paradox, the Congress underwent pronounced changes due to increased ideological polarization between increasingly homogeneous parties comprised of more partisan loyal, ideologically extreme, legislators. In this paper, we ask whether this partisan polarization shifted the public’s assessments of the Congress and their individual representatives over time. Leveraging over 45 years of new data measuring the monthly approval of Congress and legislators with a fully specified model, we find that greater polarization lowers the approval rating of both over time, suggesting that greater polarization weakens Fenno’s Paradox by considerably lowering legislator approval. We explore the underlying mechanism of this finding at the individual-level, finding that co-partisan support for Congress and opposing-partisan support for legislators collapses since 1980. Taken together, our results suggest that partisan polarization plays a large role in motivating the historic decline in congressional approval and the ability of legislators to amass a personal incumbency advantage.  
+  <br/>
+  <br/>
+  <center>
 *The Partisan 2020 U.S. Senate Elections: Congruence Between President-Elect Biden & Senate Democrats* <br> 
 ![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/senate_scatterplots.png "Senate scatterplots"){ width=60% }
   </center><br/>
   <center> **Do Voters Balance Partisan Control of the Federal Government During the Partisan Era? Assessing the Case of the 2021 Georgia U.S. Senate Runoffs** </center>
-    <center> **With [Isaac Hale](www.isaacdhale.com), Assistant Professor, Department of Political Science, Occidental College** </center>
+<center> **With [Isaac Hale](www.isaacdhale.com), Assistant Professor, Department of Political Science, Occidental College** </center>
 <center> **& [Cory Struthers](https://corystruthers.weebly.com), Assistant Professor, Department of Political Science, University of Georgia** </center><br/>
   <center> ***$\star$[Manuscript Published in American Politics Research](https://doi.org/10.1177/1532673X211070819) $\star$ <br/> [Publication Link](https://doi.org/10.1177/1532673X211070819) $\star$[Manuscript Data Materials](mailto:carlos.algara@cgu.edu)***   <br/>
 <br/>

@@ -13,24 +13,38 @@
 
 <title>Peer-Reviewed Publications</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/readable.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
-<style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -43,32 +57,8 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
+
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 
@@ -79,10 +69,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -99,40 +85,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 66px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 71px;
-  margin-top: -71px;
-}
-.section h2 {
-  padding-top: 71px;
-  margin-top: -71px;
-}
-.section h3 {
-  padding-top: 71px;
-  margin-top: -71px;
-}
-.section h4 {
-  padding-top: 71px;
-  margin-top: -71px;
-}
-.section h5 {
-  padding-top: 71px;
-  margin-top: -71px;
-}
-.section h6 {
-  padding-top: 71px;
-  margin-top: -71px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -160,7 +122,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -172,7 +134,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -183,10 +145,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -198,7 +173,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -265,7 +239,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -281,7 +255,7 @@ $(document).ready(function () {
   <a href="cv.html">CV</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Research
      
     <span class="caret"></span>
@@ -296,7 +270,7 @@ $(document).ready(function () {
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Teaching
      
     <span class="caret"></span>
@@ -344,7 +318,7 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -392,289 +366,826 @@ gtag('config', 'UA-100362112-1');
 </style>
 <br/> <br/>
 <center>
-<em>The Partisan 2020 U.S. Senate Elections: Congruence Between President-Elect Biden &amp; Senate Democrats</em> <br> <img src="figures/senate_scatterplots.png" title="Senate scatterplots" style="width:60.0%" alt="alt text" />
+<em>Long-Run Multipliers (LRMs) of Error Correction Models Monthly
+Covariates</em> <br> <img
+src="figures/gecm_models_t_test.png"
+title="LRM Hypothesis Testing" style="width:60.0%" alt="alt text" />
+</center>
+<br/><br />
+
+<center>
+<strong>Fenno’s Paradox in a Polarized Age: How Polarization Lowers the
+Mass Public’s Assessments of the Congress &amp; Legislators</strong>
+</center>
+<center>
+<strong>With <a href="">Byengseon Bae</a>, Graduate Student, Department
+of Politics &amp; Government, Claremont Graduate University</strong>
 </center>
 <br/>
 <center>
-<strong>Do Voters Balance Partisan Control of the Federal Government During the Partisan Era? Assessing the Case of the 2021 Georgia U.S. Senate Runoffs</strong>
-</center>
-<center>
-<strong>With <a href="www.isaacdhale.com">Isaac Hale</a>, Assistant Professor, Department of Political Science, Occidental College</strong>
-</center>
-<center>
-<strong>&amp; <a href="https://corystruthers.weebly.com">Cory Struthers</a>, Assistant Professor, Department of Political Science, University of Georgia</strong>
-</center>
-<br/>
-<center>
-<strong><em><span class="math inline">\(\star\)</span><a href="https://doi.org/10.1177/1532673X211070819">Manuscript Published in American Politics Research</a> <span class="math inline">\(\star\)</span> <br/> <a href="https://doi.org/10.1177/1532673X211070819">Publication Link</a> <span class="math inline">\(\star\)</span><a href="mailto:carlos.algara@cgu.edu">Manuscript Data Materials</a></em></strong> <br/> <br/> <em>Abstract:</em> Recent work on American presidential elections posits that voters engage in anticipatory balancing. Anticipatory balancing predicts voters who prefer divided government will split their ticket in order to moderate collective policy outcomes by forcing agreement among institutions controlled by opposing parties. We test this theory within the case of the 2021 Georgia U.S. Senate runoffs, which solely determined whether Democrats would have unified control of the federal government by determining majority control of the Senate given preceding November victories by President-elect Biden and House Democrats. Leveraging an original survey of Georgia voters, we find no evidence of balancing within the general electorate and among partisans across differing model specifications. We confirm this lack of balancing in qualitative content analysis of voter electoral runoff intentions. We reconcile this lack of evidence for balancing to original analysis showing the unprecedented partisan nature of contemporary Senate elections since direct-election began in 1914.<br />
+<strong><em><span class="math inline">\(\star\)</span><a
+href="">Manuscript Forthcoming in Congress &amp; the Presidency</a>
+<span class="math inline">\(\star\)</span> <br/> <a href="">Publication
+Link</a> <span class="math inline">\(\star\)</span><a
+href="mailto:carlos.algara@cgu.edu">Manuscript Data
+Materials</a></em></strong> <br/> <br/> <em>Abstract:</em> Fenno (1975)
+famously posited that the mass public’s assessments of the U.S. Congress
+are rooted in a paradox, with citizens holding negative evaluations of
+the collective Congress while holding favorable views of their
+individual members of Congress. Since the conceptualization of Fenno’s
+Paradox, the Congress underwent pronounced changes due to increased
+ideological polarization between increasingly homogeneous parties
+comprised of more partisan loyal, ideologically extreme, legislators. In
+this paper, we ask whether this partisan polarization shifted the
+public’s assessments of the Congress and their individual
+representatives over time. Leveraging over 45 years of new data
+measuring the monthly approval of Congress and legislators with a fully
+specified model, we find that greater polarization lowers the approval
+rating of both over time, suggesting that greater polarization weakens
+Fenno’s Paradox by considerably lowering legislator approval. We explore
+the underlying mechanism of this finding at the individual-level,
+finding that co-partisan support for Congress and opposing-partisan
+support for legislators collapses since 1980. Taken together, our
+results suggest that partisan polarization plays a large role in
+motivating the historic decline in congressional approval and the
+ability of legislators to amass a personal incumbency advantage.<br />
 <br/> <br/>
 <center>
-<em>Great Polarization &amp; Obstruction in the U.S. Senate</em> <br> <img src="figures/prop_cloture_polarization.png" title="Proportion Cloture Votes" style="width:60.0%" alt="alt text" />
+<em>The Partisan 2020 U.S. Senate Elections: Congruence Between
+President-Elect Biden &amp; Senate Democrats</em> <br> <img
+src="figures/senate_scatterplots.png"
+title="Senate scatterplots" style="width:60.0%" alt="alt text" />
 </center>
 <br/>
 <center>
-<strong>The Rising Electoral Role of Polarization &amp; Implications for Policymaking in the United States Senate: Assessing the Consequences of Polarization in the Senate from 1914-2020</strong>
+<strong>Do Voters Balance Partisan Control of the Federal Government
+During the Partisan Era? Assessing the Case of the 2021 Georgia U.S.
+Senate Runoffs</strong>
 </center>
 <center>
-<strong>With <a href="https://political-science.providence.edu">Savannah Johnston</a>, Visting Assistant Professor, Providence College &amp; 2020-2021 APSA Congressional Fellow</strong>
+<strong>With <a href="www.isaacdhale.com">Isaac Hale</a>, Assistant
+Professor, Department of Political Science, Occidental College</strong>
+</center>
+<center>
+<strong>&amp; <a href="https://corystruthers.weebly.com">Cory
+Struthers</a>, Assistant Professor, Department of Political Science,
+University of Georgia</strong>
 </center>
 <br/>
 <center>
-<strong><em><span class="math inline">\(\star\)</span> <a href="https://www.degruyter.com/document/doi/10.1515/for-2021-2034/html">Manuscript Published in The Forum: A Journal of Applied Research in Contemporary Politics</a> <span class="math inline">\(\star\)</span> <br/> <a href="https://www.degruyter.com/document/doi/10.1515/for-2021-2034/html">Publication Link</a> <span class="math inline">\(\star\)</span><a href="mailto:carlos.algara@cgu.edu">Manuscript Replication Materials</a></em></strong>
-<center>
-<strong><em><span class="math inline">\(\star\)</span><a href="">Research part of the January 2022 Special Symposium on the United States Senate</a><span class="math inline">\(\star\)</span></em></strong>
-</center>
-<br/> <em>Abstract:</em> The dramatic Democratic victories in the 2021 Georgia U.S. Senate runoffs handed Democrats their first majority since 2015 and, with this, unified Democratic control of Washington for the first time since 2011. While Democratic Leaders and President Joe Biden crafted their agenda, any hope of policy passage rested on complete unity in a 50-50 Senate and a narrow majority in the U.S. House. Against this backdrop, the 117<span class="math inline">\(^\text{th}\)</span> Senate is the most polarized since direct-election began in 1914 and, by popular accounts, the least deliberative in a generation. In this article, we examine the implications of partisan polarization for policymaking in the U.S. Senate throughout the direct-election era. First, we show that greater polarization coincides with more partisan Senate election outcomes, congruent with recent trends in the House. Today, over 90% of Senators represent states carried by their party’s presidential nominee. Secondly, we show that polarization coincides with higher levels of observable obstruction, conflict, partisan unity, and narrower majorities. Lastly, we show that this polarization coincides with lower levels of deliberation in the form of consideration of floor amendments and committee meetings. Taken together, we paint a picture of a polarized Senate that is more partisan, more obstructionist, and less deliberative.<br />
+<strong><em><span class="math inline">\(\star\)</span><a
+href="https://doi.org/10.1177/1532673X211070819">Manuscript Published in
+American Politics Research</a> <span
+class="math inline">\(\star\)</span> <br/> <a
+href="https://doi.org/10.1177/1532673X211070819">Publication Link</a>
+<span class="math inline">\(\star\)</span><a
+href="mailto:carlos.algara@cgu.edu">Manuscript Data
+Materials</a></em></strong> <br/> <br/> <em>Abstract:</em> Recent work
+on American presidential elections posits that voters engage in
+anticipatory balancing. Anticipatory balancing predicts voters who
+prefer divided government will split their ticket in order to moderate
+collective policy outcomes by forcing agreement among institutions
+controlled by opposing parties. We test this theory within the case of
+the 2021 Georgia U.S. Senate runoffs, which solely determined whether
+Democrats would have unified control of the federal government by
+determining majority control of the Senate given preceding November
+victories by President-elect Biden and House Democrats. Leveraging an
+original survey of Georgia voters, we find no evidence of balancing
+within the general electorate and among partisans across differing model
+specifications. We confirm this lack of balancing in qualitative content
+analysis of voter electoral runoff intentions. We reconcile this lack of
+evidence for balancing to original analysis showing the unprecedented
+partisan nature of contemporary Senate elections since direct-election
+began in 1914.<br />
 <br/> <br/>
 <center>
-<em>1988 Presidential Election Margins in the U.S. Counties</em> <br> <img src="figures/election1988.png" title="1988 Presidential Election" style="width:60.0%" alt="alt text" />
+<em>Great Polarization &amp; Obstruction in the U.S. Senate</em> <br>
+<img
+src="figures/prop_cloture_polarization.png"
+title="Proportion Cloture Votes" style="width:60.0%" alt="alt text" />
 </center>
 <br/>
 <center>
-<strong>Partisanship &amp; Nationalization in American Elections: Evidence from Presidential, Senatorial, &amp; Gubernatorial Elections in the U.S. Counties, 1872-2020</strong>
+<strong>The Rising Electoral Role of Polarization &amp; Implications for
+Policymaking in the United States Senate: Assessing the Consequences of
+Polarization in the Senate from 1914-2020</strong>
 </center>
 <center>
-<strong>With <a href="http://ps.ucdavis.edu">Sharif Amlani</a>, PhD Candidate, Political Science, University of California, Davis</strong>
+<strong>With <a href="https://political-science.providence.edu">Savannah
+Johnston</a>, Visting Assistant Professor, Providence College &amp;
+2020-2021 APSA Congressional Fellow</strong>
 </center>
 <br/>
 <center>
-<strong><em><span class="math inline">\(\star\)</span> <a href="https://www.sciencedirect.com/science/article/pii/S0261379421001050?dgcid=author">Manuscript Published in Electoral Studies</a> <span class="math inline">\(\star\)</span> <br/> <a href="https://www.sciencedirect.com/science/article/pii/S0261379421001050?dgcid=author">Publication Link</a> <span class="math inline">\(\star\)</span><a href="https://doi.org/10.7910/DVN/DGUMFI">Manuscript Replication Materials</a></em></strong>
+<strong><em><span class="math inline">\(\star\)</span> <a
+href="https://www.degruyter.com/document/doi/10.1515/for-2021-2034/html">Manuscript
+Published in The Forum: A Journal of Applied Research in Contemporary
+Politics</a> <span class="math inline">\(\star\)</span> <br/> <a
+href="https://www.degruyter.com/document/doi/10.1515/for-2021-2034/html">Publication
+Link</a> <span class="math inline">\(\star\)</span><a
+href="mailto:carlos.algara@cgu.edu">Manuscript Replication
+Materials</a></em></strong>
 <center>
-<strong><em><span class="math inline">\(\star\)</span><a href="https://view.e.economist.com/?qs=6674f1f6886465b3956ca476c3f15bfa657c4620773f72802ed3d1c3c0dbc744771c896e2f4892cf4eec3b05e3b16bcfef3e11a99bb3ccb5f798d07c386af28796aaabd1ebdf26baf2b743d1740912dc">Research featured in The Economist (October 29, 2021): The Democrats’ structural disadvantage is not caused by demographics alone</a><span class="math inline">\(\star\)</span></em></strong>
+<strong><em><span class="math inline">\(\star\)</span><a
+href="">Research part of the January 2022 Special Symposium on the
+United States Senate</a><span
+class="math inline">\(\star\)</span></em></strong>
 </center>
-<br/> <em>Abstract:</em> Scholars argue that contemporary American elections are pronounced in their degree of partisanship and nationalization. While much of this work largely uncovers a heightened degree of nationalization in contemporary elections, little is known about how far back these patterns generalize. Given the limited availability of American electoral data, this work also generally focuses on a single office or during a certain segment of the post-war period since 1946. Moreover, this work largely focuses on states as salient units of analysis, masking potential variation found in U.S. counties, the smallest geographical unit constituting panel observations over time and across elections. In this note, we leverage a novel dataset of county-level election returns for President, U.S. Senate, and Governor, to specify a model assessing whether American elections are more nationalized and partisan than during any other period since the Civil War. We find evidence that presidential and Senate elections are more partisan today than any period since the Civil War, while gubernatorial elections are as partisan today as they were during the late 1800s. Our findings have implications for contemporary-based theories explaining the rise of partisanship in American elections and demonstrates the utility of county-level data in assessing electoral changes in America.<br />
+<br/> <em>Abstract:</em> The dramatic Democratic victories in the 2021
+Georgia U.S. Senate runoffs handed Democrats their first majority since
+2015 and, with this, unified Democratic control of Washington for the
+first time since 2011. While Democratic Leaders and President Joe Biden
+crafted their agenda, any hope of policy passage rested on complete
+unity in a 50-50 Senate and a narrow majority in the U.S. House. Against
+this backdrop, the 117<span class="math inline">\(^\text{th}\)</span>
+Senate is the most polarized since direct-election began in 1914 and, by
+popular accounts, the least deliberative in a generation. In this
+article, we examine the implications of partisan polarization for
+policymaking in the U.S. Senate throughout the direct-election era.
+First, we show that greater polarization coincides with more partisan
+Senate election outcomes, congruent with recent trends in the House.
+Today, over 90% of Senators represent states carried by their party’s
+presidential nominee. Secondly, we show that polarization coincides with
+higher levels of observable obstruction, conflict, partisan unity, and
+narrower majorities. Lastly, we show that this polarization coincides
+with lower levels of deliberation in the form of consideration of floor
+amendments and committee meetings. Taken together, we paint a picture of
+a polarized Senate that is more partisan, more obstructionist, and less
+deliberative.<br />
 <br/> <br/>
 <center>
-<em>Latent Scientific Trust Across Racial Group Samples</em> <br> <img src="figures/scientific_trust_boxplots_by_race3.png" title="Scientific trust across races" style="width:60.0%" alt="alt text" />
+<em>1988 Presidential Election Margins in the U.S. Counties</em> <br>
+<img
+src="figures/election1988.png"
+title="1988 Presidential Election" style="width:60.0%" alt="alt text" />
 </center>
 <br/>
 <center>
-<strong>The Role of Race and Scientific Trust on Support for COVID-19 Social Distancing Measures in the United States</strong>
+<strong>Partisanship &amp; Nationalization in American Elections:
+Evidence from Presidential, Senatorial, &amp; Gubernatorial Elections in
+the U.S. Counties, 1872-2020</strong>
 </center>
 <center>
-<strong>With <a href="http://ps.ucdavis.edu">Sara Kazemian</a>, PhD Candidate, Political Science, University of California, Davis</strong>
-</center>
-<center>
-<strong>&amp; <a href="http://ps.ucdavis.edu">Sam Fuller</a>, PhD Candidate, Political Science, University of California, Davis</strong>
+<strong>With <a href="http://ps.ucdavis.edu">Sharif Amlani</a>, PhD
+Candidate, Political Science, University of California, Davis</strong>
 </center>
 <br/>
 <center>
-<strong><em><span class="math inline">\(\star\)</span> <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254127">Manuscript Published in PLoS One</a> <span class="math inline">\(\star\)</span> <br/> <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254127">Publication Link</a> <span class="math inline">\(\star\)</span><a href="https://doi.org/10.7910/DVN/0RMZHK">Manuscript Replication Materials</a></em></strong>
+<strong><em><span class="math inline">\(\star\)</span> <a
+href="https://www.sciencedirect.com/science/article/pii/S0261379421001050?dgcid=author">Manuscript
+Published in Electoral Studies</a> <span
+class="math inline">\(\star\)</span> <br/> <a
+href="https://www.sciencedirect.com/science/article/pii/S0261379421001050?dgcid=author">Publication
+Link</a> <span class="math inline">\(\star\)</span><a
+href="https://doi.org/10.7910/DVN/DGUMFI">Manuscript Replication
+Materials</a></em></strong>
 <center>
-<strong><em><span class="math inline">\(\star\)</span><a href="https://pubmed.ncbi.nlm.nih.gov/34242275/">Research Reprinted in U.S. National Library of Medicine Center for Biotechnology Information PubMed Archive</a><span class="math inline">\(\star\)</span></em></strong>
+<strong><em><span class="math inline">\(\star\)</span><a
+href="https://view.e.economist.com/?qs=6674f1f6886465b3956ca476c3f15bfa657c4620773f72802ed3d1c3c0dbc744771c896e2f4892cf4eec3b05e3b16bcfef3e11a99bb3ccb5f798d07c386af28796aaabd1ebdf26baf2b743d1740912dc">Research
+featured in The Economist (October 29, 2021): The Democrats’ structural
+disadvantage is not caused by demographics alone</a><span
+class="math inline">\(\star\)</span></em></strong>
 </center>
-<br/> <em>Abstract:</em> Pundits and academics across disciplines note that the human toll brought forth by the novel coronavirus (COVID-19) pandemic in the United States (U.S.) is fundamentally unequal for communities of color. Standing literature on public health posits that one of the chief predictors of racial disparity in health outcomes is a lack of institutional trust among minority communities. Furthermore, in our own county-level analysis from the U.S., we find that counties with higher percentages of Black and Hispanic residents have had vastly higher cumulative deaths from COVID-19. In light of this standing literature and our own analysis, it is critical to better understand how to mitigate or prevent these unequal outcomes for any future pandemic or public health emergency. Therefore, we assess the claim that raising institutional trust, primarily scientific trust, is key to mitigating these racial inequities. Leveraging a new, pre-pandemic measure of scientific trust, we find that trust in science, unlike trust in politicians or the media, significantly raises support for COVID-19 social distancing policies across racial lines. Our findings suggest that increasing scientific trust is essential to garnering support for public health policies that lessen the severity of the current, and potentially a future, pandemic.<br />
+<br/> <em>Abstract:</em> Scholars argue that contemporary American
+elections are pronounced in their degree of partisanship and
+nationalization. While much of this work largely uncovers a heightened
+degree of nationalization in contemporary elections, little is known
+about how far back these patterns generalize. Given the limited
+availability of American electoral data, this work also generally
+focuses on a single office or during a certain segment of the post-war
+period since 1946. Moreover, this work largely focuses on states as
+salient units of analysis, masking potential variation found in U.S.
+counties, the smallest geographical unit constituting panel observations
+over time and across elections. In this note, we leverage a novel
+dataset of county-level election returns for President, U.S. Senate, and
+Governor, to specify a model assessing whether American elections are
+more nationalized and partisan than during any other period since the
+Civil War. We find evidence that presidential and Senate elections are
+more partisan today than any period since the Civil War, while
+gubernatorial elections are as partisan today as they were during the
+late 1800s. Our findings have implications for contemporary-based
+theories explaining the rise of partisanship in American elections and
+demonstrates the utility of county-level data in assessing electoral
+changes in America.<br />
 <br/> <br/>
 <center>
-<em>Perceptual &amp; Roll-Call Based Ideal Points by Self-Placements</em> <br> <img src="figures/citizens_ideal_pts_scatter.png" title="Ideal Point Validation" style="width:60.0%" alt="alt text" />
+<em>Latent Scientific Trust Across Racial Group Samples</em> <br> <img
+src="figures/scientific_trust_boxplots_by_race3.png"
+title="Scientific trust across races" style="width:60.0%"
+alt="alt text" />
 </center>
 <br/>
 <center>
-<strong>The Partisan &amp; Ideological Determinants of Citizen Congressional Approval</strong>
+<strong>The Role of Race and Scientific Trust on Support for COVID-19
+Social Distancing Measures in the United States</strong>
+</center>
+<center>
+<strong>With <a href="http://ps.ucdavis.edu">Sara Kazemian</a>, PhD
+Candidate, Political Science, University of California, Davis</strong>
+</center>
+<center>
+<strong>&amp; <a href="http://ps.ucdavis.edu">Sam Fuller</a>, PhD
+Candidate, Political Science, University of California, Davis</strong>
 </center>
 <br/>
 <center>
-<strong><em><span class="math inline">\(\star\)</span> <a href="https://link.springer.com/article/10.1007/s11109-021-09678-x">Manuscript Published in Political Behavior</a> <span class="math inline">\(\star\)</span> <br/> <a href="https://link.springer.com/article/10.1007/s11109-021-09678-x">Publication Link</a> <span class="math inline">\(\star\)</span><a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/VQCGNW">Manuscript Replication Materials</a></em></strong>
+<strong><em><span class="math inline">\(\star\)</span> <a
+href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254127">Manuscript
+Published in PLoS One</a> <span class="math inline">\(\star\)</span>
+<br/> <a
+href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254127">Publication
+Link</a> <span class="math inline">\(\star\)</span><a
+href="https://doi.org/10.7910/DVN/0RMZHK">Manuscript Replication
+Materials</a></em></strong>
 <center>
-<strong><em><span class="math inline">\(\star\)</span><a href="https://soundcloud.com/user-735940457-95015381/how-voters-judge-congress">Research Featured in Niskanen Center Science of Politics Podcast: How Voters Judge Congress (May 5, 2021)</a><span class="math inline">\(\star\)</span></em></strong>
-<center>
-<strong><em><span class="math inline">\(\star\)</span><a href="https://www.rollcall.com/2021/06/22/more-activists-should-work-for-congress-staffers-say/">Research Featured in Roll Call: `More activists should go work for Congress, these staffers say’ (June 22, 2021)</a><span class="math inline">\(\star\)</span></em></strong>
+<strong><em><span class="math inline">\(\star\)</span><a
+href="https://pubmed.ncbi.nlm.nih.gov/34242275/">Research Reprinted in
+U.S. National Library of Medicine Center for Biotechnology Information
+PubMed Archive</a><span
+class="math inline">\(\star\)</span></em></strong>
 </center>
-<br/> <em>Abstract:</em> Do citizens weigh the ideological nature of collective representation provided by Congress when assessing the job performance of their national legislature? While recent aggregate-level work suggests that congressional approval rises when Congress responds to the ideological preferences of the mass public, individual-level models posit that approval is a function of partisanship or valence considerations, with little consideration for policy. I fill this disconnect between two lines of research by presenting a model arguing that citizens weigh the ideological representation provided by their Congress in the face of two contrasting options of collective ideological representation in the responsible party government era. Using cross-sectional and panel survey data which allow for scaling citizens and the congressional parties in the same ideological space, I find that majority co-partisans and citizens closer in ideological proximity to the governing majority are more likely to approve of Congress. I also find that this the relationship between ideological proximity and approval is independent of partisanship. These findings have implications for the capacity of citizens to assess the collective representation of the chief policy-making institution of their national government.<br />
+<br/> <em>Abstract:</em> Pundits and academics across disciplines note
+that the human toll brought forth by the novel coronavirus (COVID-19)
+pandemic in the United States (U.S.) is fundamentally unequal for
+communities of color. Standing literature on public health posits that
+one of the chief predictors of racial disparity in health outcomes is a
+lack of institutional trust among minority communities. Furthermore, in
+our own county-level analysis from the U.S., we find that counties with
+higher percentages of Black and Hispanic residents have had vastly
+higher cumulative deaths from COVID-19. In light of this standing
+literature and our own analysis, it is critical to better understand how
+to mitigate or prevent these unequal outcomes for any future pandemic or
+public health emergency. Therefore, we assess the claim that raising
+institutional trust, primarily scientific trust, is key to mitigating
+these racial inequities. Leveraging a new, pre-pandemic measure of
+scientific trust, we find that trust in science, unlike trust in
+politicians or the media, significantly raises support for COVID-19
+social distancing policies across racial lines. Our findings suggest
+that increasing scientific trust is essential to garnering support for
+public health policies that lessen the severity of the current, and
+potentially a future, pandemic.<br />
 <br/> <br/>
 <center>
-<em>Quarterly Job Approval of the U.S. Congress, 1974-2016</em> <br> <img src="figures/cong_approval_aggregate_annotated.png" title="Quarterly Approval" style="width:65.0%" alt="alt text" />
+<em>Perceptual &amp; Roll-Call Based Ideal Points by
+Self-Placements</em> <br> <img
+src="figures/citizens_ideal_pts_scatter.png"
+title="Ideal Point Validation" style="width:60.0%" alt="alt text" />
 </center>
 <br/>
 <center>
-<strong>The “Collective Congress” on the Ballot? A Voter &amp; Aggregate Level Analysis of Collective Responsibility in Congressional Elections</strong>
+<strong>The Partisan &amp; Ideological Determinants of Citizen
+Congressional Approval</strong>
 </center>
 <br/>
 <center>
-<strong><em><span class="math inline">\(\star\)</span><a href="https://www.tandfonline.com/doi/full/10.1080/07343469.2020.1814903?scroll=top&amp;needAccess=true">Manuscript Published in Congress &amp; the Presidency (2020)</a> <span class="math inline">\(\star\)</span> <br/> <a href="https://www.tandfonline.com/doi/full/10.1080/07343469.2020.1814903?scroll=top&amp;needAccess=true">Publication Link</a> <span class="math inline">\(\star\)</span><a href="mailto:carlos.algara@cgu.edu">Manuscript Data Materials</a></em></strong>
+<strong><em><span class="math inline">\(\star\)</span> <a
+href="https://link.springer.com/article/10.1007/s11109-021-09678-x">Manuscript
+Published in Political Behavior</a> <span
+class="math inline">\(\star\)</span> <br/> <a
+href="https://link.springer.com/article/10.1007/s11109-021-09678-x">Publication
+Link</a> <span class="math inline">\(\star\)</span><a
+href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/VQCGNW">Manuscript
+Replication Materials</a></em></strong>
+<center>
+<strong><em><span class="math inline">\(\star\)</span><a
+href="https://soundcloud.com/user-735940457-95015381/how-voters-judge-congress">Research
+Featured in Niskanen Center Science of Politics Podcast: How Voters
+Judge Congress (May 5, 2021)</a><span
+class="math inline">\(\star\)</span></em></strong>
+<center>
+<strong><em><span class="math inline">\(\star\)</span><a
+href="https://www.rollcall.com/2021/06/22/more-activists-should-work-for-congress-staffers-say/">Research
+Featured in Roll Call: `More activists should go work for Congress,
+these staffers say’ (June 22, 2021)</a><span
+class="math inline">\(\star\)</span></em></strong>
 </center>
-<br/> <em>Abstract:</em> The traditional view among scholars is that voters do not weigh congressional job performance in their congressional voting decisions. Recent work challenges this notion and provides evidence that congressional job approval matters at the ballot box. However, scholars are divided as to which party benefits from positive job approval ratings. Moreover, the literature is unclear regarding the conditions under which voters hold individual candidates accountable for the collective performance of Congress. Analyzing individual and aggregate level data, this study produces several key findings: (1) assessments of congressional job performance are directly tied to the electoral standing of the majority party; (2) positive approval ratings raise the level of support for majority party candidates among minority partisans and those closest to the minority in ideological proximity; (3) majority party incumbents gain more from congressional approval than non-incumbents and suffer less of a loss from congressional disapproval; (4) the impact of congressional approval on majority party fortunes is conditioned by how cohesive the majority party is. These findings provide a clearer narrative of how collective accountability works in congressional elections and the incentives for majority and minority party behavior in the contemporary Congress.<br />
+<br/> <em>Abstract:</em> Do citizens weigh the ideological nature of
+collective representation provided by Congress when assessing the job
+performance of their national legislature? While recent aggregate-level
+work suggests that congressional approval rises when Congress responds
+to the ideological preferences of the mass public, individual-level
+models posit that approval is a function of partisanship or valence
+considerations, with little consideration for policy. I fill this
+disconnect between two lines of research by presenting a model arguing
+that citizens weigh the ideological representation provided by their
+Congress in the face of two contrasting options of collective
+ideological representation in the responsible party government era.
+Using cross-sectional and panel survey data which allow for scaling
+citizens and the congressional parties in the same ideological space, I
+find that majority co-partisans and citizens closer in ideological
+proximity to the governing majority are more likely to approve of
+Congress. I also find that this the relationship between ideological
+proximity and approval is independent of partisanship. These findings
+have implications for the capacity of citizens to assess the collective
+representation of the chief policy-making institution of their national
+government.<br />
 <br/> <br/>
 <center>
-<em>Distribution of Ideological Divergence between District &amp; Partisan Medians</em> <br> <img src="figures/median_partisan_divergence_by_chamber.png" title="District-Member Divergence" style="width:50.0%" alt="alt text" />
+<em>Quarterly Job Approval of the U.S. Congress, 1974-2016</em> <br>
+<img
+src="figures/cong_approval_aggregate_annotated.png"
+title="Quarterly Approval" style="width:65.0%" alt="alt text" />
 </center>
 <br/>
 <center>
-<strong>Ideological Cross-Pressures or Random Error? An Analysis of Spatially Incorrect Voting in the U.S. House &amp; U.S. Senate</strong>
+<strong>The “Collective Congress” on the Ballot? A Voter &amp; Aggregate
+Level Analysis of Collective Responsibility in Congressional
+Elections</strong>
+</center>
+<br/>
+<center>
+<strong><em><span class="math inline">\(\star\)</span><a
+href="https://www.tandfonline.com/doi/full/10.1080/07343469.2020.1814903?scroll=top&amp;needAccess=true">Manuscript
+Published in Congress &amp; the Presidency (2020)</a> <span
+class="math inline">\(\star\)</span> <br/> <a
+href="https://www.tandfonline.com/doi/full/10.1080/07343469.2020.1814903?scroll=top&amp;needAccess=true">Publication
+Link</a> <span class="math inline">\(\star\)</span><a
+href="mailto:carlos.algara@cgu.edu">Manuscript Data
+Materials</a></em></strong>
+</center>
+<br/> <em>Abstract:</em> The traditional view among scholars is that
+voters do not weigh congressional job performance in their congressional
+voting decisions. Recent work challenges this notion and provides
+evidence that congressional job approval matters at the ballot box.
+However, scholars are divided as to which party benefits from positive
+job approval ratings. Moreover, the literature is unclear regarding the
+conditions under which voters hold individual candidates accountable for
+the collective performance of Congress. Analyzing individual and
+aggregate level data, this study produces several key findings: (1)
+assessments of congressional job performance are directly tied to the
+electoral standing of the majority party; (2) positive approval ratings
+raise the level of support for majority party candidates among minority
+partisans and those closest to the minority in ideological proximity;
+(3) majority party incumbents gain more from congressional approval than
+non-incumbents and suffer less of a loss from congressional disapproval;
+(4) the impact of congressional approval on majority party fortunes is
+conditioned by how cohesive the majority party is. These findings
+provide a clearer narrative of how collective accountability works in
+congressional elections and the incentives for majority and minority
+party behavior in the contemporary Congress.<br />
+<br/> <br/>
+<center>
+<em>Distribution of Ideological Divergence between District &amp;
+Partisan Medians</em> <br> <img
+src="figures/median_partisan_divergence_by_chamber.png"
+title="District-Member Divergence" style="width:50.0%" alt="alt text" />
+</center>
+<br/>
+<center>
+<strong>Ideological Cross-Pressures or Random Error? An Analysis of
+Spatially Incorrect Voting in the U.S. House &amp; U.S. Senate</strong>
 </center>
 <center>
 <strong>with Joe Zamadics, PhD, University of Colorado, Boulder</strong>
 </center>
 <br/>
 <center>
-<strong><em><span class="math inline">\(\star\)</span><a href="https://www.tandfonline.com/doi/abs/10.1080/13572334.2021.1874686">Manuscript Published at the Journal of Legislative Studies</a> <span class="math inline">\(\star\)</span><a href="https://www.tandfonline.com/doi/abs/10.1080/13572334.2021.1874686">Working Manuscript Publication Link</a> <span class="math inline">\(\star\)</span><a href="mailto:carlos.algara@cgu.edu">Manuscript Data Materials</a></em></strong>
+<strong><em><span class="math inline">\(\star\)</span><a
+href="https://www.tandfonline.com/doi/abs/10.1080/13572334.2021.1874686">Manuscript
+Published at the Journal of Legislative Studies</a> <span
+class="math inline">\(\star\)</span><a
+href="https://www.tandfonline.com/doi/abs/10.1080/13572334.2021.1874686">Working
+Manuscript Publication Link</a> <span
+class="math inline">\(\star\)</span><a
+href="mailto:carlos.algara@cgu.edu">Manuscript Data
+Materials</a></em></strong>
 </center>
-<br/> <em>Abstract:</em> Theoretical and empirical models of congressional voting assumes that legislators vote with the sole purpose to move policy closer to their ideologically ideal point, with the most prominent being the NOMINATE model. While NOMINATE correctly classifies the vast majority of votes cast by members of Congress, a significant number of votes are misclassified and coded as spatial error. The literature on congressional voting assumes this error to be random and idiosyncratic across members. We dispute this conventional notion and argue that spatial error in congressional is not random, but rather systematic across members. We present a theory positing that spatial error is more likely on roll-call votes tackling salient policy issues and among members representing districts with greater ideological divergence between the median voter and the member’s primary election constituency. Using Aldrich-McKelvey scaling to place legislators and constituencies in the same ideological common space, we find support for our theory. We attribute this finding to the greater electoral uncertainty faced by ideological moderates and members representing districts with greater ideological divergence between key constituencies. Our findings have implications for the NOMINATE model, the nature of spatial error in legislative voting, and the electoral cross-pressures faced by legislators. <br/> <br/>
+<br/> <em>Abstract:</em> Theoretical and empirical models of
+congressional voting assumes that legislators vote with the sole purpose
+to move policy closer to their ideologically ideal point, with the most
+prominent being the NOMINATE model. While NOMINATE correctly classifies
+the vast majority of votes cast by members of Congress, a significant
+number of votes are misclassified and coded as spatial error. The
+literature on congressional voting assumes this error to be random and
+idiosyncratic across members. We dispute this conventional notion and
+argue that spatial error in congressional is not random, but rather
+systematic across members. We present a theory positing that spatial
+error is more likely on roll-call votes tackling salient policy issues
+and among members representing districts with greater ideological
+divergence between the median voter and the member’s primary election
+constituency. Using Aldrich-McKelvey scaling to place legislators and
+constituencies in the same ideological common space, we find support for
+our theory. We attribute this finding to the greater electoral
+uncertainty faced by ideological moderates and members representing
+districts with greater ideological divergence between key
+constituencies. Our findings have implications for the NOMINATE model,
+the nature of spatial error in legislative voting, and the electoral
+cross-pressures faced by legislators. <br/> <br/>
 <center>
-<em>Item Characteristic Curves of Latent COVID-19 Activity Comfort</em><br> <br/> <img src="figures/comfort_irt_curves_probs.png" title="IRT Curves" style="width:60.0%" alt="alt text" />
+<em>Item Characteristic Curves of Latent COVID-19 Activity
+Comfort</em><br> <br/> <img
+src="figures/comfort_irt_curves_probs.png"
+title="IRT Curves" style="width:60.0%" alt="alt text" />
 </center>
 <br/>
 <center>
-<strong>The Interactive Effects of Scientific Knowledge &amp; Gender on COVID-19 Social Distancing Compliance</strong>
+<strong>The Interactive Effects of Scientific Knowledge &amp; Gender on
+COVID-19 Social Distancing Compliance</strong>
 </center>
 <center>
-<strong>with <a href="http://ps.ucdavis.edu">Sam Fuller</a>, PhD Candidate, Political Science, University of California, Davis</strong>
+<strong>with <a href="http://ps.ucdavis.edu">Sam Fuller</a>, PhD
+Candidate, Political Science, University of California, Davis</strong>
 </center>
 <center>
-<strong><a href="http://www.christopherdhare.com">Christopher Hare</a>, Assistant Professor of Political Science, University of California, Davis</strong>
+<strong><a href="http://www.christopherdhare.com">Christopher Hare</a>,
+Assistant Professor of Political Science, University of California,
+Davis</strong>
 </center>
 <center>
-<strong>&amp; <a href="http://ps.ucdavis.edu">Sara Kazemian</a>, PhD Candidate, Political Science, University of California, Davis</strong>
+<strong>&amp; <a href="http://ps.ucdavis.edu">Sara Kazemian</a>, PhD
+Candidate, Political Science, University of California, Davis</strong>
 </center>
 <br/>
 <center>
-<strong><em><span class="math inline">\(\star\)</span><a href="https://onlinelibrary.wiley.com/doi/full/10.1111/ssqu.12894">Manuscript Published in Social Science Quarterly (2020)</a> <span class="math inline">\(\star\)</span><a href="https://onlinelibrary.wiley.com/doi/full/10.1111/ssqu.12894">Publication Link</a> <span class="math inline">\(\star\)</span><a href="mailto:carlos.algara@cgu.edu">Manuscript Data Materials</a></em></strong>
+<strong><em><span class="math inline">\(\star\)</span><a
+href="https://onlinelibrary.wiley.com/doi/full/10.1111/ssqu.12894">Manuscript
+Published in Social Science Quarterly (2020)</a> <span
+class="math inline">\(\star\)</span><a
+href="https://onlinelibrary.wiley.com/doi/full/10.1111/ssqu.12894">Publication
+Link</a> <span class="math inline">\(\star\)</span><a
+href="mailto:carlos.algara@cgu.edu">Manuscript Data
+Materials</a></em></strong>
 </center>
-<br/> <em>Abstract:</em> With the onset of the 2020 COVID-19 pandemic in the United States, state governments and the federal administration were forced to craft social distancing recommendations advising the general public on how they could combat the transmission of the deadly virus. These recommendations, and sometimes orders, advised against many daily social activities such as visiting family members, restaurant dining, and sporting event attendance. Adherence to and support of these measures has been varied, with many flouting mask and group-gathering recommendations/orders. This has reduced the effectiveness of these measures and lead to virus resurgences across the U.S. In this research note, we examine the role scientific knowledge and gender play in influencing citizens’ comfort and risk perceptions regarding social distancing recommendations and orders. In both the general population and within parties, we find that women with high scientific knowledge are much less comfortable breaking social distancing guidelines than their male counterparts and women with lower scientific knowledge. These findings shed light on how both knowledge and gender interact to drive (non)compliance with government policies during a public health crisis in an increasingly polarized America.<br />
+<br/> <em>Abstract:</em> With the onset of the 2020 COVID-19 pandemic in
+the United States, state governments and the federal administration were
+forced to craft social distancing recommendations advising the general
+public on how they could combat the transmission of the deadly virus.
+These recommendations, and sometimes orders, advised against many daily
+social activities such as visiting family members, restaurant dining,
+and sporting event attendance. Adherence to and support of these
+measures has been varied, with many flouting mask and group-gathering
+recommendations/orders. This has reduced the effectiveness of these
+measures and lead to virus resurgences across the U.S. In this research
+note, we examine the role scientific knowledge and gender play in
+influencing citizens’ comfort and risk perceptions regarding social
+distancing recommendations and orders. In both the general population
+and within parties, we find that women with high scientific knowledge
+are much less comfortable breaking social distancing guidelines than
+their male counterparts and women with lower scientific knowledge. These
+findings shed light on how both knowledge and gender interact to drive
+(non)compliance with government policies during a public health crisis
+in an increasingly polarized America.<br />
 <br/> <br/>
 <center>
-<em>Bivariate Relationship between Subnational Racial Resentment &amp; GOP Vote Shares</em> <br> <img src="figures/scatterplots_aggregate.png" title="Scatterplots" style="width:70.0%" alt="alt text" />
+<em>Bivariate Relationship between Subnational Racial Resentment &amp;
+GOP Vote Shares</em> <br> <img
+src="figures/scatterplots_aggregate.png"
+title="Scatterplots" style="width:70.0%" alt="alt text" />
 </center>
 <br/>
 <center>
-<strong>Racial attitudes &amp; political cross-pressures in nationalized elections: The case of the Republican coalition in the Trump era</strong>
+<strong>Racial attitudes &amp; political cross-pressures in nationalized
+elections: The case of the Republican coalition in the Trump
+era</strong>
 </center>
 <center>
-<strong>with Isaac Hale, Associate Instructor, University of California, Davis</strong>
+<strong>with Isaac Hale, Associate Instructor, University of California,
+Davis</strong>
 </center>
 <br/>
 <center>
-<strong><em><span class="math inline">\(\star\)</span><a href="https://www.sciencedirect.com/science/article/abs/pii/S0261379420300901">Manuscript Published in Electoral Studies (2020)</a> <span class="math inline">\(\star\)</span><a href="https://www.sciencedirect.com/science/article/abs/pii/S0261379420300901">Publication Link</a> <span class="math inline">\(\star\)</span><a href="mailto:carlos.algara@cgu.edu">Manuscript Data Materials</a></em></strong>
+<strong><em><span class="math inline">\(\star\)</span><a
+href="https://www.sciencedirect.com/science/article/abs/pii/S0261379420300901">Manuscript
+Published in Electoral Studies (2020)</a> <span
+class="math inline">\(\star\)</span><a
+href="https://www.sciencedirect.com/science/article/abs/pii/S0261379420300901">Publication
+Link</a> <span class="math inline">\(\star\)</span><a
+href="mailto:carlos.algara@cgu.edu">Manuscript Data
+Materials</a></em></strong>
 </center>
 <br/>
 <center>
-<strong><em><span class="math inline">\(\star\)</span><a href="https://tinyurl.com/y5vrkrxb">Research featured in The Sacramento Bee (July 19, 2019): White Racial Resentment is a Winning Republican Strategy, this Political Scientist Says</a><span class="math inline">\(\star\)</span></em></strong>
+<strong><em><span class="math inline">\(\star\)</span><a
+href="https://tinyurl.com/y5vrkrxb">Research featured in The Sacramento
+Bee (July 19, 2019): White Racial Resentment is a Winning Republican
+Strategy, this Political Scientist Says</a><span
+class="math inline">\(\star\)</span></em></strong>
 </center>
 <br/>
 <center>
-<strong><em><span class="math inline">\(\star\)</span><a href="https://tinyurl.com/y3ssqw3y">Research featured in The Sacramento Bee (July 24, 2019): Trump’s strategy of racial resentment won’t work in California</a><span class="math inline">\(\star\)</span></em></strong>
+<strong><em><span class="math inline">\(\star\)</span><a
+href="https://tinyurl.com/y3ssqw3y">Research featured in The Sacramento
+Bee (July 24, 2019): Trump’s strategy of racial resentment won’t work in
+California</a><span class="math inline">\(\star\)</span></em></strong>
 </center>
 <br/>
 <center>
-<strong><em><span class="math inline">\(\star\)</span><a href="https://tinyurl.com/y6bnqp6o">Research featured in Roll Call (August 12, 2019): California Republican backtracks, but episode could foreshadow his 2020 strategy</a><span class="math inline">\(\star\)</span></em></strong>
+<strong><em><span class="math inline">\(\star\)</span><a
+href="https://tinyurl.com/y6bnqp6o">Research featured in Roll Call
+(August 12, 2019): California Republican backtracks, but episode could
+foreshadow his 2020 strategy</a><span
+class="math inline">\(\star\)</span></em></strong>
 </center>
 <br/>
 <center>
-<strong><em><span class="math inline">\(\star\)</span><a href="https://politicalsciencenow.com/will-trump-congressional-republicans-benefit-from-white-racial-attitudes-in-2020/">Research featured in Political Science Now APSA Blog (July 22, 2020): Will Trump &amp; Congressional Republicans Benefit from White Racial Attitudes in 2020?</a><span class="math inline">\(\star\)</span></em></strong>
+<strong><em><span class="math inline">\(\star\)</span><a
+href="https://politicalsciencenow.com/will-trump-congressional-republicans-benefit-from-white-racial-attitudes-in-2020/">Research
+featured in Political Science Now APSA Blog (July 22, 2020): Will Trump
+&amp; Congressional Republicans Benefit from White Racial Attitudes in
+2020?</a><span class="math inline">\(\star\)</span></em></strong>
 </center>
-<br/> <em>Abstract:</em> While scholars have found that Trump was able to capitalize on the racial attitudes of white voters, it is less clear how these racial attitudes influence vote-choice across partisan and ideological cleavages in the electorate. It is also unclear whether racial attitudes affected voting at the congressional level or electoral outcomes at the aggregate level. Using a novel measure of racial attitudes at the subnational level and survey data, we make three clear findings: (1) Trump and Republican congressional candidates benefited from racial attitudes both at the aggregate level and among white voters, (2) this electoral benefit for Republicans persisted during the 2018 midterm elections, and (3) the effect of attitudes on vote-choice did not significantly vary across partisan and ideological cleavages in the white electorate. Our findings suggest that, even during the era of highly nationalized and partisan elections, racial attitudes are still a mechanism by which Republicans can win significant electoral support among Democrats and relatively liberal voters in the white electorate. These findings have implications for the growing salience of race in the Republican electoral coalition.<br />
+<br/> <em>Abstract:</em> While scholars have found that Trump was able
+to capitalize on the racial attitudes of white voters, it is less clear
+how these racial attitudes influence vote-choice across partisan and
+ideological cleavages in the electorate. It is also unclear whether
+racial attitudes affected voting at the congressional level or electoral
+outcomes at the aggregate level. Using a novel measure of racial
+attitudes at the subnational level and survey data, we make three clear
+findings: (1) Trump and Republican congressional candidates benefited
+from racial attitudes both at the aggregate level and among white
+voters, (2) this electoral benefit for Republicans persisted during the
+2018 midterm elections, and (3) the effect of attitudes on vote-choice
+did not significantly vary across partisan and ideological cleavages in
+the white electorate. Our findings suggest that, even during the era of
+highly nationalized and partisan elections, racial attitudes are still a
+mechanism by which Republicans can win significant electoral support
+among Democrats and relatively liberal voters in the white electorate.
+These findings have implications for the growing salience of race in the
+Republican electoral coalition.<br />
 <br/> <br/>
 <center>
-<em>Item Characteristic Curves of Latent Scientific Knowledge</em><br> <br/> <img src="figures/scientific_knowledge_irt_curves.png" title="IRT Curves" style="width:60.0%" alt="alt text" />
+<em>Item Characteristic Curves of Latent Scientific Knowledge</em><br>
+<br/> <img
+src="figures/scientific_knowledge_irt_curves.png"
+title="IRT Curves" style="width:60.0%" alt="alt text" />
 </center>
 <br/>
 <center>
-<strong>The Conditional Effects of Scientific Knowledge &amp; Gender on Support for COVID-19 Government Containment Policies in a Partisan America</strong>
+<strong>The Conditional Effects of Scientific Knowledge &amp; Gender on
+Support for COVID-19 Government Containment Policies in a Partisan
+America</strong>
 </center>
 <center>
-<strong>with <a href="http://ps.ucdavis.edu">Sam Fuller</a>, PhD Candidate, Political Science, University of California, Davis</strong>
+<strong>with <a href="http://ps.ucdavis.edu">Sam Fuller</a>, PhD
+Candidate, Political Science, University of California, Davis</strong>
 </center>
 <center>
-<strong>&amp; <a href="http://www.christopherdhare.com">Christopher Hare</a>, Assistant Professor of Political Science, University of California, Davis</strong>
+<strong>&amp; <a href="http://www.christopherdhare.com">Christopher
+Hare</a>, Assistant Professor of Political Science, University of
+California, Davis</strong>
 </center>
 <br/>
 <center>
-<strong><em><span class="math inline">\(\star\)</span><a href="https://www.cambridge.org/core/journals/politics-and-gender/article/conditional-effects-of-scientific-knowledge-gender-on-support-for-covid19-government-containment-policies-in-a-partisan-america/C4AEB27D4046433749A883941AC74809">Manuscript Published in Politics &amp; Gender (2020)</a> <span class="math inline">\(\star\)</span><a href="https://www.cambridge.org/core/journals/politics-and-gender/article/conditional-effects-of-scientific-knowledge-gender-on-support-for-covid19-government-containment-policies-in-a-partisan-america/C4AEB27D4046433749A883941AC74809">Publication Link</a> <span class="math inline">\(\star\)</span><a href="mailto:carlos.algara@cgu.edu">Manuscript Data Materials</a></em></strong>
+<strong><em><span class="math inline">\(\star\)</span><a
+href="https://www.cambridge.org/core/journals/politics-and-gender/article/conditional-effects-of-scientific-knowledge-gender-on-support-for-covid19-government-containment-policies-in-a-partisan-america/C4AEB27D4046433749A883941AC74809">Manuscript
+Published in Politics &amp; Gender (2020)</a> <span
+class="math inline">\(\star\)</span><a
+href="https://www.cambridge.org/core/journals/politics-and-gender/article/conditional-effects-of-scientific-knowledge-gender-on-support-for-covid19-government-containment-policies-in-a-partisan-america/C4AEB27D4046433749A883941AC74809">Publication
+Link</a> <span class="math inline">\(\star\)</span><a
+href="mailto:carlos.algara@cgu.edu">Manuscript Data
+Materials</a></em></strong>
 </center>
 <br/>
 <center>
-<strong><em><span class="math inline">\(\star\)</span><a href="https://www.cambridge.org/core/journals/politics-and-gender/virtual-special-issues/gender-politics-and-the-global-pandemic">Research accepted for Politics &amp; Gender as part of the Cambridge Coronavirus Collection</a><span class="math inline">\(\star\)</span></em></strong>
+<strong><em><span class="math inline">\(\star\)</span><a
+href="https://www.cambridge.org/core/journals/politics-and-gender/virtual-special-issues/gender-politics-and-the-global-pandemic">Research
+accepted for Politics &amp; Gender as part of the Cambridge Coronavirus
+Collection</a><span class="math inline">\(\star\)</span></em></strong>
 </center>
 <br/>
 <center>
-<strong><em><span class="math inline">\(\star\)</span><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7684197/">Research reprinted as part of the Public Health Emergency COVID-19 Initiative, U.S. National Library of Medicine: National Institutes of Health</a><span class="math inline">\(\star\)</span></em></strong>
+<strong><em><span class="math inline">\(\star\)</span><a
+href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7684197/">Research
+reprinted as part of the Public Health Emergency COVID-19 Initiative,
+U.S. National Library of Medicine: National Institutes of
+Health</a><span class="math inline">\(\star\)</span></em></strong>
 </center>
-<br/> <em>Abstract:</em> With the onset of the 2020 COVID-19 pandemic in the United States, many state and local governments were forced to implement necessary policies to contain transmission of the deadly virus. These policies ranged from closing most businesses to more controversial proposals, such as postponing primary elections. In this research note, we examine the role scientific knowledge and gender played in citizen perceptions of these virus containment policies both in the general population and among partisans. We find that while a gender gap persists in scientific knowledge, both in the general population and within the parties, women are generally more likely to use this knowledge to inform their policy views on necessary government action during the COVID-19 pandemic. These findings shed light on how knowledge and gender intersect to drive support for government intervention during the time of a severe public health crisis in a partisan America.<br />
+<br/> <em>Abstract:</em> With the onset of the 2020 COVID-19 pandemic in
+the United States, many state and local governments were forced to
+implement necessary policies to contain transmission of the deadly
+virus. These policies ranged from closing most businesses to more
+controversial proposals, such as postponing primary elections. In this
+research note, we examine the role scientific knowledge and gender
+played in citizen perceptions of these virus containment policies both
+in the general population and among partisans. We find that while a
+gender gap persists in scientific knowledge, both in the general
+population and within the parties, women are generally more likely to
+use this knowledge to inform their policy views on necessary government
+action during the COVID-19 pandemic. These findings shed light on how
+knowledge and gender intersect to drive support for government
+intervention during the time of a severe public health crisis in a
+partisan America.<br />
 <br/> <br/>
 <center>
-<em>Average Country World Wide Web Information Networks, 9/1/2015 - 1/30/2017</em><br> <br/> <img src="figures/third_quartile_graph_fullnetwork_color.png" title="Country Network" style="width:60.0%" alt="alt text" />
+<em>Average Country World Wide Web Information Networks, 9/1/2015 -
+1/30/2017</em><br> <br/> <img
+src="figures/third_quartile_graph_fullnetwork_color.png"
+title="Country Network" style="width:60.0%" alt="alt text" />
 </center>
 <br/>
 <center>
-<strong>Diachronic Equivalence: An Examination of the International News Network</strong>
+<strong>Diachronic Equivalence: An Examination of the International News
+Network</strong>
 </center>
 <center>
-<strong>with <a href="http://communication.ucdavis.edu/people/gbarnett">George Barnett</a>, Distinguished Professor of Communications, University of California, Davis</strong>
+<strong>with <a
+href="http://communication.ucdavis.edu/people/gbarnett">George
+Barnett</a>, Distinguished Professor of Communications, University of
+California, Davis</strong>
 </center>
 <br/>
 <center>
-<strong><em><span class="math inline">\(\star\)</span><a href="https://link.springer.com/article/10.1007/s13278-019-0549-y">Manuscript Published in Social Network Analysis &amp; Mining (2019)</a> <span class="math inline">\(\star\)</span><a href="https://link.springer.com/article/10.1007/s13278-019-0549-y">Publication Link</a> <span class="math inline">\(\star\)</span><a href="mailto:carlos.algara@cgu.edu">Manuscript Data Materials</a></em></strong>
+<strong><em><span class="math inline">\(\star\)</span><a
+href="https://link.springer.com/article/10.1007/s13278-019-0549-y">Manuscript
+Published in Social Network Analysis &amp; Mining (2019)</a> <span
+class="math inline">\(\star\)</span><a
+href="https://link.springer.com/article/10.1007/s13278-019-0549-y">Publication
+Link</a> <span class="math inline">\(\star\)</span><a
+href="mailto:carlos.algara@cgu.edu">Manuscript Data
+Materials</a></em></strong>
 </center>
-<br/> <em>Abstract:</em> Barabási (2014) argues that a significant proportion of nodes can be randomly removed from any scale-free network without it breaking apart. Gao, Barzel and Barabási (2016) suggest that three additional properties of networks, density, heterogeneity and symmetry, facilitate their ability to adjust their activities to retain functionality in times of stress. Barnett and Jiang (2016) examined the World Wide Web and found that while there are changes in the use of individual websites in this scale-free network due to weekly cycles in viewing specific websites, extreme events as well as other social and cultural events, the overall network is remarkably stable. This paper suggests an additional property, the structural equivalence of nodes that facilitates network stability. Further, it differentiates between two forms of equivalence, synchronous or structural equivalence, and diachronic equivalence, which indicates that two nodes’ position in a network change over time in a similar manner. A subset of the World Wide Web, the international news network is examined to demonstrate these notions. Daily data on the use of the world’s 44 most frequently visited news websites by 118 countries were mined over the 17 month period September 1, 2015 to January 30, 2017, to create a longitudinal two-mode network (countries and websites). The results suggest that individual structurally and diachronic equivalent nodes may be removed from both the international and website networks without impacting how the network changes over time.<br />
+<br/> <em>Abstract:</em> Barabási (2014) argues that a significant
+proportion of nodes can be randomly removed from any scale-free network
+without it breaking apart. Gao, Barzel and Barabási (2016) suggest that
+three additional properties of networks, density, heterogeneity and
+symmetry, facilitate their ability to adjust their activities to retain
+functionality in times of stress. Barnett and Jiang (2016) examined the
+World Wide Web and found that while there are changes in the use of
+individual websites in this scale-free network due to weekly cycles in
+viewing specific websites, extreme events as well as other social and
+cultural events, the overall network is remarkably stable. This paper
+suggests an additional property, the structural equivalence of nodes
+that facilitates network stability. Further, it differentiates between
+two forms of equivalence, synchronous or structural equivalence, and
+diachronic equivalence, which indicates that two nodes’ position in a
+network change over time in a similar manner. A subset of the World Wide
+Web, the international news network is examined to demonstrate these
+notions. Daily data on the use of the world’s 44 most frequently visited
+news websites by 118 countries were mined over the 17 month period
+September 1, 2015 to January 30, 2017, to create a longitudinal two-mode
+network (countries and websites). The results suggest that individual
+structurally and diachronic equivalent nodes may be removed from both
+the international and website networks without impacting how the network
+changes over time.<br />
 <br/> <br/>
 <center>
-<p><em>Effect of Incumbency on Vote Share by Seat Type &amp; Polarization Level, 1920-2016</em> <br> <img src="figures/mes_by_states_plot.png" title="Senate Election Dynamics" style="width:50.0%" alt="alt text" /></p>
+<p><em>Effect of Incumbency on Vote Share by Seat Type &amp;
+Polarization Level, 1920-2016</em> <br> <img
+src="figures/mes_by_states_plot.png"
+title="Senate Election Dynamics" style="width:50.0%"
+alt="alt text" /></p>
 </center>
 <br/>
 <center>
-<strong>The Conditioning Role of Polarization in U.S. Senate Election Outcomes: A Direct-Election Era &amp; Voter-Level Analysis</strong>
+<strong>The Conditioning Role of Polarization in U.S. Senate Election
+Outcomes: A Direct-Election Era &amp; Voter-Level Analysis</strong>
 </center>
 <br/>
 <center>
-<strong><em><span class="math inline">\(\star\)</span><a href="https://www.sciencedirect.com/science/article/pii/S0261379418301379">Manuscript Published in Electoral Studies (2019)</a> <span class="math inline">\(\star\)</span><a href="https://www.sciencedirect.com/science/article/pii/S0261379418301379">Publication Link</a> <span class="math inline">\(\star\)</span><a href="mailto:carlos.algara@cgu.edu">Manuscript Data Materials</a></em></strong>
+<strong><em><span class="math inline">\(\star\)</span><a
+href="https://www.sciencedirect.com/science/article/pii/S0261379418301379">Manuscript
+Published in Electoral Studies (2019)</a> <span
+class="math inline">\(\star\)</span><a
+href="https://www.sciencedirect.com/science/article/pii/S0261379418301379">Publication
+Link</a> <span class="math inline">\(\star\)</span><a
+href="mailto:carlos.algara@cgu.edu">Manuscript Data
+Materials</a></em></strong>
 </center>
 <br/>
 <center>
-<strong><em><span class="math inline">\(\star\)</span><a href="http://bit.ly/2JpdHZt">Research featured in Invited LegBranch Blog Post: The National Tide Falls Short in the U.S. Senate (March 19, 2019)</a><span class="math inline">\(\star\)</span></em></strong>
+<strong><em><span class="math inline">\(\star\)</span><a
+href="http://bit.ly/2JpdHZt">Research featured in Invited LegBranch Blog
+Post: The National Tide Falls Short in the U.S. Senate (March 19,
+2019)</a><span class="math inline">\(\star\)</span></em></strong>
 </center>
 <br/>
 <center>
-<strong><em><span class="math inline">\(\star\)</span><a href="https://fivethirtyeight.com/features/why-the-presidents-party-almost-always-has-a-bad-midterm/">Research featured at FiveThirtyEight: Why The President’s Party Almost Always Has A Bad Midterm (January 3, 2022)</a><span class="math inline">\(\star\)</span></em></strong>
+<strong><em><span class="math inline">\(\star\)</span><a
+href="https://fivethirtyeight.com/features/why-the-presidents-party-almost-always-has-a-bad-midterm/">Research
+featured at FiveThirtyEight: Why The President’s Party Almost Always Has
+A Bad Midterm (January 3, 2022)</a><span
+class="math inline">\(\star\)</span></em></strong>
 </center>
 <br/><br />
-<em>Abstract:</em> Recent work finds that a decline in the incumbency advantage coincides with the rise of partisanship as a determinant of congressional electoral outcomes. While this work updates our view of congressional elections, it is unclear if this holds in the more candidate-centered and high-information electoral context of the U.S. Senate. In this paper, I address these two considerations by evaluating a theory positing that polarization conditions the influence of incumbency and partisanship as Senate election determinants. Using data on the entire direct-election Senate era and survey data, this paper finds that: (1) polarization provides a partisan advantage for candidates running in states in which they are members of the partisan majority and (2) polarization positively conditions the incumbency advantage for Senators representing states that favor the other party. These findings suggest that Senators may still successfully cultivate a personal brand in the face of growing ideological differences between the parties.<br />
+<em>Abstract:</em> Recent work finds that a decline in the incumbency
+advantage coincides with the rise of partisanship as a determinant of
+congressional electoral outcomes. While this work updates our view of
+congressional elections, it is unclear if this holds in the more
+candidate-centered and high-information electoral context of the U.S.
+Senate. In this paper, I address these two considerations by evaluating
+a theory positing that polarization conditions the influence of
+incumbency and partisanship as Senate election determinants. Using data
+on the entire direct-election Senate era and survey data, this paper
+finds that: (1) polarization provides a partisan advantage for
+candidates running in states in which they are members of the partisan
+majority and (2) polarization positively conditions the incumbency
+advantage for Senators representing states that favor the other party.
+These findings suggest that Senators may still successfully cultivate a
+personal brand in the face of growing ideological differences between
+the parties.<br />
 <br/> <br/>
 <center>
-<em>Distribution of 2016 Federal Election Candidate Positions</em> <br> <img src="figures/candidate_stimuli_placements_lines.png" title="House &amp; Senate Candidate Positions" style="width:60.0%" alt="alt text" />
+<em>Distribution of 2016 Federal Election Candidate Positions</em> <br>
+<img
+src="figures/candidate_stimuli_placements_lines.png"
+title="House &amp; Senate Candidate Positions" style="width:60.0%"
+alt="alt text" />
 </center>
 <br/>
 <center>
-<strong>The Distorting Effects of Racial Animus on Proximity Voting in the 2016 Elections</strong>
+<strong>The Distorting Effects of Racial Animus on Proximity Voting in
+the 2016 Elections</strong>
 </center>
 <center>
-<strong>with Isaac Hale, PhD Candidate, University of California, Davis</strong>
+<strong>with Isaac Hale, PhD Candidate, University of California,
+Davis</strong>
 </center>
 <br/>
 <center>
-<strong><em><span class="math inline">\(\star\)</span><a href="https://www.sciencedirect.com/science/article/pii/S0261379418302774">Manuscript Published in Electoral Studies (2019)</a> <span class="math inline">\(\star\)</span><a href="https://www.sciencedirect.com/science/article/pii/S0261379418302774">Publication Link</a> <span class="math inline">\(\star\)</span><a href="mailto:carlos.algara@cgu.edu">Manuscript Data Materials</a></em></strong>
+<strong><em><span class="math inline">\(\star\)</span><a
+href="https://www.sciencedirect.com/science/article/pii/S0261379418302774">Manuscript
+Published in Electoral Studies (2019)</a> <span
+class="math inline">\(\star\)</span><a
+href="https://www.sciencedirect.com/science/article/pii/S0261379418302774">Publication
+Link</a> <span class="math inline">\(\star\)</span><a
+href="mailto:carlos.algara@cgu.edu">Manuscript Data
+Materials</a></em></strong>
 </center>
 <br/>
 <center>
-<strong><em><span class="math inline">\(\star\)</span><a href="https://www.nytimes.com/2019/02/27/opinion/trump-obama-race.html">Research featured in The New York Times (Feb. 27, 2019): The Deepening `Racialization’ of American Politics</a><span class="math inline">\(\star\)</span></em></strong>
+<strong><em><span class="math inline">\(\star\)</span><a
+href="https://www.nytimes.com/2019/02/27/opinion/trump-obama-race.html">Research
+featured in The New York Times (Feb. 27, 2019): The Deepening
+`Racialization’ of American Politics</a><span
+class="math inline">\(\star\)</span></em></strong>
 </center>
 <br/>
 <center>
-<strong><em><span class="math inline">\(\star\)</span><a href="https://psmag.com/news/trumps-racist-remarks-helped-down-ballot-gop-candidates-in-2016">Research featured in Pacific Standard (April 8, 2019): Trump’s Racist Remarks Helped Boost Down-Ballot GOP in 2016</a><span class="math inline">\(\star\)</span></em></strong>
+<strong><em><span class="math inline">\(\star\)</span><a
+href="https://psmag.com/news/trumps-racist-remarks-helped-down-ballot-gop-candidates-in-2016">Research
+featured in Pacific Standard (April 8, 2019): Trump’s Racist Remarks
+Helped Boost Down-Ballot GOP in 2016</a><span
+class="math inline">\(\star\)</span></em></strong>
 </center>
-<br/> <em>Abstract:</em> While the use of racial appeals by the 2016 Trump campaign is indisputable, researchers are actively debating their precise role in influencing voter behavior in the election. We seek to expand upon existing research which finds that racial animus electorally benefited the Trump campaign. We examine to what extent those benefits redounded to GOP candidates down-ballot and whether racial animus distorted ideological proximity voting in the 2016 election. We find that racial animus among voters helped Republicans at multiple ballot levels and that higher levels of racial animus distorted correct proximity voting among voters ideologically closest to the Democratic candidate. Our findings suggest that high salience campaign appeals on race at the presidential level can influence elections for the House and Senate. We also provide evidence that the process of racial partisan realignment is incomplete, as some white voters still vote incongruously with their ideology due to racial animus.<br />
+<br/> <em>Abstract:</em> While the use of racial appeals by the 2016
+Trump campaign is indisputable, researchers are actively debating their
+precise role in influencing voter behavior in the election. We seek to
+expand upon existing research which finds that racial animus electorally
+benefited the Trump campaign. We examine to what extent those benefits
+redounded to GOP candidates down-ballot and whether racial animus
+distorted ideological proximity voting in the 2016 election. We find
+that racial animus among voters helped Republicans at multiple ballot
+levels and that higher levels of racial animus distorted correct
+proximity voting among voters ideologically closest to the Democratic
+candidate. Our findings suggest that high salience campaign appeals on
+race at the presidential level can influence elections for the House and
+Senate. We also provide evidence that the process of racial partisan
+realignment is incomplete, as some white voters still vote incongruously
+with their ideology due to racial animus.<br />
 <br/> <br/>
 <center>
-<p><em>Interactive Effect of Obstruction &amp; Partisan Majority on Senator Voteshares</em> <br> <img src="figures/obstruction.png" title="Obstruction Dynamics" style="width:50.0%" alt="alt text" /></p>
+<p><em>Interactive Effect of Obstruction &amp; Partisan Majority on
+Senator Voteshares</em> <br> <img
+src="figures/obstruction.png"
+title="Obstruction Dynamics" style="width:50.0%" alt="alt text" /></p>
 </center>
 <br/>
 <center>
-<strong>The Member Level Determinants &amp; Consequences of Party Legislative Obstruction in the U.S. Senate</strong>
+<strong>The Member Level Determinants &amp; Consequences of Party
+Legislative Obstruction in the U.S. Senate</strong>
 </center>
 <center>
-<strong>with Joe Zamadics, PhD Candidate, University of Colorado, Boulder</strong>
+<strong>with Joe Zamadics, PhD Candidate, University of Colorado,
+Boulder</strong>
 </center>
 <br/>
 <center>
-<strong><em><span class="math inline">\(\star\)</span><a href="https://journals.sagepub.com/doi/10.1177/1532673X18812403">Manuscript Published in American Politics Research (2019)</a> <span class="math inline">\(\star\)</span><a href="https://journals.sagepub.com/doi/10.1177/1532673X18812403">Publication Link</a> <span class="math inline">\(\star\)</span><a href="mailto:carlos.algara@cgu.edu">Manuscript Data Materials</a></em></strong>
+<strong><em><span class="math inline">\(\star\)</span><a
+href="https://journals.sagepub.com/doi/10.1177/1532673X18812403">Manuscript
+Published in American Politics Research (2019)</a> <span
+class="math inline">\(\star\)</span><a
+href="https://journals.sagepub.com/doi/10.1177/1532673X18812403">Publication
+Link</a> <span class="math inline">\(\star\)</span><a
+href="mailto:carlos.algara@cgu.edu">Manuscript Data
+Materials</a></em></strong>
 </center>
 <br/>
 <center>
-<strong><em><span class="math inline">\(\star\)</span><a href="http://bit.ly/2ChBLYg">Research featured in Invited London School of Economics United States Politics &amp; Policy Blog Post (March 14, 2019)</a><span class="math inline">\(\star\)</span></em></strong>
+<strong><em><span class="math inline">\(\star\)</span><a
+href="http://bit.ly/2ChBLYg">Research featured in Invited London School
+of Economics United States Politics &amp; Policy Blog Post (March 14,
+2019)</a><span class="math inline">\(\star\)</span></em></strong>
 </center>
-<br/> <em>Abstract:</em> Are Senators cross-pressured by party influence and constituent demands on procedural votes? We present a theory positing that Senators are indeed cross-pressured between these two demands and that they anticipate an electoral cost for their procedural voting record. In an analysis of Senate procedural votes since the 92nd Congress, we find that procedural votes are salient to voters and important to party leaders. Using a new spatial measure of obstruction preference, we demonstrate our finding three ways. First, obstruction preferences have become more polarized as the Senate experiences more intense legislative obstruction. Second, electorally vulnerable members are most likely to break from their party on procedural votes. Third, we find that voters electorally reward majority party Senators that break from their party and behave like minority party obstructionists. Our findings suggest that, unlike the House, Senate procedural votes are largely indistinguishable from substantive votes and are electorally salient.<br />
+<br/> <em>Abstract:</em> Are Senators cross-pressured by party influence
+and constituent demands on procedural votes? We present a theory
+positing that Senators are indeed cross-pressured between these two
+demands and that they anticipate an electoral cost for their procedural
+voting record. In an analysis of Senate procedural votes since the 92nd
+Congress, we find that procedural votes are salient to voters and
+important to party leaders. Using a new spatial measure of obstruction
+preference, we demonstrate our finding three ways. First, obstruction
+preferences have become more polarized as the Senate experiences more
+intense legislative obstruction. Second, electorally vulnerable members
+are most likely to break from their party on procedural votes. Third, we
+find that voters electorally reward majority party Senators that break
+from their party and behave like minority party obstructionists. Our
+findings suggest that, unlike the House, Senate procedural votes are
+largely indistinguishable from substantive votes and are electorally
+salient.<br />
 <br/> <br/>
 <p>
-Copyright © 2017 by Carlos Algara. Made with <a href="https://www.rstudio.com">RStudio</a>.
+Copyright © 2017 by Carlos Algara. Made with <a
+href="https://www.rstudio.com">RStudio</a>.
 </p>
 
 
@@ -686,7 +1197,7 @@ Copyright © 2017 by Carlos Algara. Made with <a href="https://www.rstudio.com">
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -704,7 +1215,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>

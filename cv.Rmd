@@ -1,6 +1,6 @@
 ---
 title: Curriculum Vitae
-date: July 26, 2022
+date: August 4, 2022
 share: FALSE
 output: html_document
 ---
@@ -14,10 +14,10 @@ output: html_document
   gtag('config', 'UA-100362112-1');
 </script>
 
-Below is my CV, or you can [download my CV in pdf format](Algara_CV_July2022.pdf).
+Below is my CV, or you can [download my CV in pdf format](Algara_CV_August2022.pdf).
 
-<object data="Algara_CV_July2022.pdf" type="application/pdf" width="100%" height=800>
-<iframe src="Algara_CV_July2022.pdf" width="100%" height="100%" style="border: none;"></iframe>
+<object data="Algara_CV_August2022.pdf" type="application/pdf" width="100%" height=800>
+<iframe src="Algara_CV_August2022.pdf" width="100%" height="100%" style="border: none;"></iframe>
 </object>
 <p>Copyright &copy; 2017 by Carlos Algara. Made with [RStudio](https://www.rstudio.com).</p>
 
