@@ -13,24 +13,38 @@
 
 <title>Media Coverage</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/readable.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
-<style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -43,32 +57,8 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
+
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 
@@ -79,10 +69,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -99,40 +85,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 66px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 71px;
-  margin-top: -71px;
-}
-.section h2 {
-  padding-top: 71px;
-  margin-top: -71px;
-}
-.section h3 {
-  padding-top: 71px;
-  margin-top: -71px;
-}
-.section h4 {
-  padding-top: 71px;
-  margin-top: -71px;
-}
-.section h5 {
-  padding-top: 71px;
-  margin-top: -71px;
-}
-.section h6 {
-  padding-top: 71px;
-  margin-top: -71px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -160,7 +122,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -172,7 +134,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -183,10 +145,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -198,7 +173,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -265,7 +239,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -281,7 +255,7 @@ $(document).ready(function () {
   <a href="cv.html">CV</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Research
      
     <span class="caret"></span>
@@ -296,7 +270,7 @@ $(document).ready(function () {
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Teaching
      
     <span class="caret"></span>
@@ -344,7 +318,7 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -371,120 +345,283 @@ $(document).ready(function () {
     text-align: center;
   }
 </style>
-<p><br/> <br/> <img src="figures/brookings2.png" style="width:65.0%" /> <br/> <br/></p>
-<p>Thank you for visiting my media coverage page! Much of my research focuses on the role on electoral competition and legislative representation in the United States and political parties, with some of this work receiving media coverage. Given my role as a former U.S. Senate staffer focusing on legislative procedural reform, as a part of my 2019-2020 APSA Congressional Fellows, I have also provided interview commentary on the current state and future prospects of procedural (filibuster) reform in the contemporary Senate. Please find the links below to my media coverage and how my research relates to current political developments. Please feel free to email me, as well!<br />
+<p><br/> <br/> <img
+src="figures/brookings2.png"
+style="width:65.0%" /> <br/> <br/></p>
+<p>Thank you for visiting my media coverage page! Much of my research
+focuses on the role on electoral competition and legislative
+representation in the United States and political parties, with some of
+this work receiving media coverage. Given my role as a former U.S.
+Senate staffer focusing on legislative procedural reform, as a part of
+my 2019-2020 APSA Congressional Fellows, I have also provided interview
+commentary on the current state and future prospects of procedural
+(filibuster) reform in the contemporary Senate. Please find the links
+below to my media coverage and how my research relates to current
+political developments. Please feel free to email me, as well!<br />
 <br/></p>
 <div id="print-media" class="section level3">
 <h3><strong><em>PRINT MEDIA</em></strong></h3>
 <ul>
-<li><a href="https://nymag.com/intelligencer/2022/03/bidens-war-bounce-isnt-big-enough-to-save-the-midterms.html">The New Yorker (New York, NY): Biden’s War Bounce Isn’t Big Enough to Save the Midterms</a><br />
+<li><a
+href="https://www.courthousenews.com/sweeping-budget-package-could-give-senate-democrats-a-midterm-boost/">Courthouse
+News Service (Washington, DC): Sweeping budget package could give Senate
+Democrats a midterm boost</a><br />
 </li>
-<li><a href="https://floridapolitics.com/archives/498404-delegation-for-2-18-22-divided-clinton-again-national-guard-vaxxed-out/">Florida Politics (Tallahassee, FL): Partisanship is nothing new, but never like it is today</a><br />
+<li><a
+href="https://nymag.com/intelligencer/2022/03/bidens-war-bounce-isnt-big-enough-to-save-the-midterms.html">The
+New Yorker (New York, NY): Biden’s War Bounce Isn’t Big Enough to Save
+the Midterms</a><br />
 </li>
-<li><a href="https://www.vox.com/22899204/midterm-elections-president-biden-thermostatic-opinion">Vox News (Washington, DC): The presidential penalty: Why voters so often punish the president in midterm elections</a><br />
+<li><a
+href="https://floridapolitics.com/archives/498404-delegation-for-2-18-22-divided-clinton-again-national-guard-vaxxed-out/">Florida
+Politics (Tallahassee, FL): Partisanship is nothing new, but never like
+it is today</a><br />
 </li>
-<li><a href="https://www.courthousenews.com/sharply-divided-senate-awaits-bidens-supreme-court-nominee/">Courthouse News Service (Washington, DC): Sharply divided Senate awaits Biden’s Supreme Court nominee</a><br />
+<li><a
+href="https://www.vox.com/22899204/midterm-elections-president-biden-thermostatic-opinion">Vox
+News (Washington, DC): The presidential penalty: Why voters so often
+punish the president in midterm elections</a><br />
 </li>
-<li><a href="https://www.courthousenews.com/for-future-of-voting-rights-and-the-senate-fate-of-filibuster-looms-large/">Courthouse News Service (Washington, DC): For future of voting rights, and the Senate, fate of filibuster looms large</a><br />
+<li><a
+href="https://www.courthousenews.com/sharply-divided-senate-awaits-bidens-supreme-court-nominee/">Courthouse
+News Service (Washington, DC): Sharply divided Senate awaits Biden’s
+Supreme Court nominee</a><br />
 </li>
-<li><a href="https://library.cqpress.com/cqresearcher/document.php?id=cqresrre2021101502">Congressional Quarterly Researcher (Washington, DC): The Senate Filibuster, Does it impede democracy?</a><br />
+<li><a
+href="https://www.courthousenews.com/for-future-of-voting-rights-and-the-senate-fate-of-filibuster-looms-large/">Courthouse
+News Service (Washington, DC): For future of voting rights, and the
+Senate, fate of filibuster looms large</a><br />
 </li>
-<li><a href="https://view.e.economist.com/?qs=6674f1f6886465b3956ca476c3f15bfa657c4620773f72802ed3d1c3c0dbc744771c896e2f4892cf4eec3b05e3b16bcfef3e11a99bb3ccb5f798d07c386af28796aaabd1ebdf26baf2b743d1740912dc">The Economist (Washington, DC): The Democrats’ structural disadvantage is not caused by demographics alone</a><br />
+<li><a
+href="https://library.cqpress.com/cqresearcher/document.php?id=cqresrre2021101502">Congressional
+Quarterly Researcher (Washington, DC): The Senate Filibuster, Does it
+impede democracy?</a><br />
 </li>
-<li><a href="https://www.rollcall.com/2021/06/22/more-activists-should-work-for-congress-staffers-say/">Roll Call (Washington, DC): More activists should go work for Congress, these staffers say</a><br />
+<li><a
+href="https://view.e.economist.com/?qs=6674f1f6886465b3956ca476c3f15bfa657c4620773f72802ed3d1c3c0dbc744771c896e2f4892cf4eec3b05e3b16bcfef3e11a99bb3ccb5f798d07c386af28796aaabd1ebdf26baf2b743d1740912dc">The
+Economist (Washington, DC): The Democrats’ structural disadvantage is
+not caused by demographics alone</a><br />
 </li>
-<li><a href="https://www.statesman.com/story/news/2021/07/19/texas-house-democrats-took-big-risk-quorum-break-work/7998252002/">Austin American-Statesman (Austin, TX): Texas House Democrats took big risk in quorum break, but will their DC gambit work?</a><br />
+<li><a
+href="https://www.rollcall.com/2021/06/22/more-activists-should-work-for-congress-staffers-say/">Roll
+Call (Washington, DC): More activists should go work for Congress, these
+staffers say</a><br />
 </li>
-<li><a href="https://noticiasya.com/el-paso/2021/04/27/censo-texas-tendra-dos-nuevos-representantes-en-el-congreso/">Noticias Ya Univision (El Paso, TX): Censo: Texas tendrá dos nuevos representantes en el Congreso</a><br />
+<li><a
+href="https://www.statesman.com/story/news/2021/07/19/texas-house-democrats-took-big-risk-quorum-break-work/7998252002/">Austin
+American-Statesman (Austin, TX): Texas House Democrats took big risk in
+quorum break, but will their DC gambit work?</a><br />
 </li>
-<li><a href="https://www.newsweek.com/filibuster-threatens-joe-biden-democrats-agenda-leaving-all-eyes-joe-manchin-1579186">Newsweek: Filibuster Threatens Joe Biden, Democrats Agenda, Leaving All Eyes on Joe Manchin</a><br />
+<li><a
+href="https://noticiasya.com/el-paso/2021/04/27/censo-texas-tendra-dos-nuevos-representantes-en-el-congreso/">Noticias
+Ya Univision (El Paso, TX): Censo: Texas tendrá dos nuevos
+representantes en el Congreso</a><br />
 </li>
-<li><a href="https://www.usatoday.com/story/news/politics/2021/02/19/ted-cruz-mexico-trip-draws-criticism-but-hurt-him-politically/4506496001/">U.S. News &amp; World Report: Ted Cruz’s trip to Mexico earned him widespread criticism. Will it matter for his political future?</a><br />
+<li><a
+href="https://www.newsweek.com/filibuster-threatens-joe-biden-democrats-agenda-leaving-all-eyes-joe-manchin-1579186">Newsweek:
+Filibuster Threatens Joe Biden, Democrats Agenda, Leaving All Eyes on
+Joe Manchin</a><br />
 </li>
-<li><a href="https://www.usnews.com/news/politics/articles/2021-01-26/joe-biden-hopes-to-bring-back-the-old-senate-it-could-be-tough">U.S. News &amp; World Report: Joe Biden Hopes to Bring Back the Old Senate–It Could Be Tough</a><br />
+<li><a
+href="https://www.usatoday.com/story/news/politics/2021/02/19/ted-cruz-mexico-trip-draws-criticism-but-hurt-him-politically/4506496001/">U.S.
+News &amp; World Report: Ted Cruz’s trip to Mexico earned him widespread
+criticism. Will it matter for his political future?</a><br />
 </li>
-<li><a href="https://www.ctinsider.com/news/ctpost/article/Blumenthal-Murphy-push-to-change-the-filibuster-15898235.php">The Connecticut Post (Bridgeport, NY): Blumenthal, Murphy push to change the filibuster</a><br />
+<li><a
+href="https://www.usnews.com/news/politics/articles/2021-01-26/joe-biden-hopes-to-bring-back-the-old-senate-it-could-be-tough">U.S.
+News &amp; World Report: Joe Biden Hopes to Bring Back the Old Senate–It
+Could Be Tough</a><br />
 </li>
-<li><a href="https://www.timesunion.com/news/article/How-the-filibuster-is-squeezing-Schumer-from-both-15896670.php">The Times Union (Albany, NY): McConnell releases Schumer from filibuster promises, but left still pushes</a><br />
+<li><a
+href="https://www.ctinsider.com/news/ctpost/article/Blumenthal-Murphy-push-to-change-the-filibuster-15898235.php">The
+Connecticut Post (Bridgeport, NY): Blumenthal, Murphy push to change the
+filibuster</a><br />
 </li>
-<li><a href="https://www.ktsm.com/news/political-news/latino-and-black-families-facing-multiple-hardships-white-house-working-to-provide-relief/">KTSM NBC 9 (El Paso, TX): Latino and Black families facing multiple hardships, White House working to provide relief</a><br />
+<li><a
+href="https://www.timesunion.com/news/article/How-the-filibuster-is-squeezing-Schumer-from-both-15896670.php">The
+Times Union (Albany, NY): McConnell releases Schumer from filibuster
+promises, but left still pushes</a><br />
 </li>
-<li><a href="https://www.forbes.com/sites/zengernews/2021/01/08/democrats-win-the-senate-what-should-businesses-expect/?sh=5fcf98ab1852">Forbes Magazine: Democrats Win The Senate. What Should Businesses Expect?</a><br />
+<li><a
+href="https://www.ktsm.com/news/political-news/latino-and-black-families-facing-multiple-hardships-white-house-working-to-provide-relief/">KTSM
+NBC 9 (El Paso, TX): Latino and Black families facing multiple
+hardships, White House working to provide relief</a><br />
 </li>
-<li><a href="https://www.expressnews.com/news/election2020/article/Texas-Democrats-face-fundamental-reckoning-15702658.php">San Antonio Express News: Texas Democrats face `fundamental reckoning’ after another statewide sweep</a><br />
+<li><a
+href="https://www.forbes.com/sites/zengernews/2021/01/08/democrats-win-the-senate-what-should-businesses-expect/?sh=5fcf98ab1852">Forbes
+Magazine: Democrats Win The Senate. What Should Businesses
+Expect?</a><br />
 </li>
-<li><a href="https://www.expressnews.com/news/local/politics/electionresults/us_house_by_texas_county/article/How-Tony-Gonzales-kept-a-South-Texas-swing-15702858.php">San Antonio Express News: How Tony Gonzales kept a competitive Texas congressional district red</a><br />
+<li><a
+href="https://www.expressnews.com/news/election2020/article/Texas-Democrats-face-fundamental-reckoning-15702658.php">San
+Antonio Express News: Texas Democrats face `fundamental reckoning’ after
+another statewide sweep</a><br />
 </li>
-<li><a href="https://www.elheraldodejuarez.com.mx/local/el-paso/cuestionada-la-posibilidad-de-reelegirse-de-trump-afirma-politologo-de-utep-5968019.html">El Heraldo de Juárez (Juárez, Mexico): Cuestionada la posibilidad de reelegirse de Trump, afirma politólogo de UTEP</a><br />
+<li><a
+href="https://www.expressnews.com/news/local/politics/electionresults/us_house_by_texas_county/article/How-Tony-Gonzales-kept-a-South-Texas-swing-15702858.php">San
+Antonio Express News: How Tony Gonzales kept a competitive Texas
+congressional district red</a><br />
 </li>
-<li><a href="https://www.ucdavis.edu/curiosity-gap/election-do-attitudes-about-race-affect-vote-choice">UC Davis Magaizine: Election: Do Attitudes About Race Affect Vote Choice?</a><br />
+<li><a
+href="https://www.elheraldodejuarez.com.mx/local/el-paso/cuestionada-la-posibilidad-de-reelegirse-de-trump-afirma-politologo-de-utep-5968019.html">El
+Heraldo de Juárez (Juárez, Mexico): Cuestionada la posibilidad de
+reelegirse de Trump, afirma politólogo de UTEP</a><br />
 </li>
-<li><a href="https://www.kongressen.com/trump-forsoeger-at-goere-olie-til-et-valgtema-for-at-vinde-texas/">Kongressen Independent Online Media (København, Denmark)</a><br />
+<li><a
+href="https://www.ucdavis.edu/curiosity-gap/election-do-attitudes-about-race-affect-vote-choice">UC
+Davis Magaizine: Election: Do Attitudes About Race Affect Vote
+Choice?</a><br />
 </li>
-<li><a href="https://www.nytimes.com/2020/10/14/opinion/biden-trump-presidential-election.html">The New York Times: Biden Is Not Out of the Woods</a><br />
+<li><a
+href="https://www.kongressen.com/trump-forsoeger-at-goere-olie-til-et-valgtema-for-at-vinde-texas/">Kongressen
+Independent Online Media (København, Denmark)</a><br />
 </li>
-<li><a href="https://www.northamericanproject.com/stories/border-wall-and-immigration-restriction">The North American Project (Las Cruces, NM): Border wall and immigration restriction: Latinos for Trump have their eye on November</a><br />
+<li><a
+href="https://www.nytimes.com/2020/10/14/opinion/biden-trump-presidential-election.html">The
+New York Times: Biden Is Not Out of the Woods</a><br />
 </li>
-<li><a href="https://www.cityandstateny.com/articles/politics/news-politics/congress-getting-more-diverse-now-its-caucuses-could-too.html">City &amp; State New York: Congress is getting more diverse. Now its caucuses could too.</a><br />
+<li><a
+href="https://www.northamericanproject.com/stories/border-wall-and-immigration-restriction">The
+North American Project (Las Cruces, NM): Border wall and immigration
+restriction: Latinos for Trump have their eye on November</a><br />
 </li>
-<li><a href="https://politicalsciencenow.com/will-trump-congressional-republicans-benefit-from-white-racial-attitudes-in-2020/">APSA Political Science Now: Will Trump &amp; Congressional Republicans Benefit from White Racial Attitudes in 2020?</a><br />
+<li><a
+href="https://www.cityandstateny.com/articles/politics/news-politics/congress-getting-more-diverse-now-its-caucuses-could-too.html">City
+&amp; State New York: Congress is getting more diverse. Now its caucuses
+could too.</a><br />
 </li>
-<li><a href="https://www.texastribune.org/2019/10/08/texas-2020-elections-all-white-gop-house-delegation/">The Texas Tribune: As its U.S. House members of color depart, Texas GOP grapples with its lack of diversity</a><br />
+<li><a
+href="https://politicalsciencenow.com/will-trump-congressional-republicans-benefit-from-white-racial-attitudes-in-2020/">APSA
+Political Science Now: Will Trump &amp; Congressional Republicans
+Benefit from White Racial Attitudes in 2020?</a><br />
 </li>
-<li><a href="https://www.la-croix.com/Monde/Ameriques/Au-sein-parti-republicain-anti-Trump-bien-silencieux-2019-08-27-1201043412">La Croix (Paris, France): Au sein du parti républicain, des anti-Trump bien silencieux</a><br />
+<li><a
+href="https://www.texastribune.org/2019/10/08/texas-2020-elections-all-white-gop-house-delegation/">The
+Texas Tribune: As its U.S. House members of color depart, Texas GOP
+grapples with its lack of diversity</a><br />
 </li>
-<li><a href="https://www.rollcall.com/2019/08/12/duncan-hunter-said-person-making-ok-sign-in-photo-was-a-stranger-the-man-calls-hunter-a-friend/">Roll Call: Duncan Hunter said person making ‘OK’ sign in photo was a ‘stranger.’ The man calls Hunter a friend</a><br />
+<li><a
+href="https://www.la-croix.com/Monde/Ameriques/Au-sein-parti-republicain-anti-Trump-bien-silencieux-2019-08-27-1201043412">La
+Croix (Paris, France): Au sein du parti républicain, des anti-Trump bien
+silencieux</a><br />
 </li>
-<li><a href="https://www.sacbee.com/news/politics-government/capitol-alert/article232884162.html">The Sacramento Bee: Trump’s strategy of racial resentment won’t work in California, researcher says</a><br />
+<li><a
+href="https://www.rollcall.com/2019/08/12/duncan-hunter-said-person-making-ok-sign-in-photo-was-a-stranger-the-man-calls-hunter-a-friend/">Roll
+Call: Duncan Hunter said person making ‘OK’ sign in photo was a
+‘stranger.’ The man calls Hunter a friend</a><br />
 </li>
-<li><a href="https://www.sacbee.com/news/politics-government/capitol-alert/article232884162.html">The Sacramento Bee: White racial resentment is a winning Republican strategy, this political scientist says</a><br />
+<li><a
+href="https://www.sacbee.com/news/politics-government/capitol-alert/article232884162.html">The
+Sacramento Bee: Trump’s strategy of racial resentment won’t work in
+California, researcher says</a><br />
 </li>
-<li><a href="https://medium.com/3streams/how-gender-scientific-knowledge-partisanship-shape-support-for-covid-19-policies-68b90e741ec8">3 Streams Blog: Does gender explain support for COVID-19 policies?</a><br />
+<li><a
+href="https://www.sacbee.com/news/politics-government/capitol-alert/article232884162.html">The
+Sacramento Bee: White racial resentment is a winning Republican
+strategy, this political scientist says</a><br />
 </li>
-<li><a href="https://www.legbranch.org/the-national-tide-falls-short-in-the-u-s-senate/">Leg Branch: The national tide falls short in the U.S. Senate</a><br />
+<li><a
+href="https://medium.com/3streams/how-gender-scientific-knowledge-partisanship-shape-support-for-covid-19-policies-68b90e741ec8">3
+Streams Blog: Does gender explain support for COVID-19
+policies?</a><br />
 </li>
-<li><a href="https://www.latercera.com/mundo/noticia/ataques-racistas-trump-congresistas-definen-tono-campana-presidencial/743936/">La Tecera (Santiago, Chile): Ataques racistas de Trump a congresistas definen tono de su campaña presidencial</a><br />
+<li><a
+href="https://www.legbranch.org/the-national-tide-falls-short-in-the-u-s-senate/">Leg
+Branch: The national tide falls short in the U.S. Senate</a><br />
 </li>
-<li><a href="https://www.nytimes.com/2019/07/16/us/politics/trump-election-squad.html">The New York Times: Trump Sets the 2020 Tone: Like 2016, Only This Time ‘the Squad’ Is Here</a><br />
+<li><a
+href="https://www.latercera.com/mundo/noticia/ataques-racistas-trump-congresistas-definen-tono-campana-presidencial/743936/">La
+Tecera (Santiago, Chile): Ataques racistas de Trump a congresistas
+definen tono de su campaña presidencial</a><br />
 </li>
-<li><a href="https://psmag.com/news/trumps-racist-remarks-helped-down-ballot-gop-candidates-in-2016">The Pacific Standard: Trump’s Racist Remarks Helped Boost Down-Ballot Republicans in 2016</a><br />
+<li><a
+href="https://www.nytimes.com/2019/07/16/us/politics/trump-election-squad.html">The
+New York Times: Trump Sets the 2020 Tone: Like 2016, Only This Time ‘the
+Squad’ Is Here</a><br />
 </li>
-<li><a href="https://www.nytimes.com/2019/02/27/opinion/trump-obama-race.html">The New York Times: The Deepening ‘Racialization’ of American Politics</a><br />
+<li><a
+href="https://psmag.com/news/trumps-racist-remarks-helped-down-ballot-gop-candidates-in-2016">The
+Pacific Standard: Trump’s Racist Remarks Helped Boost Down-Ballot
+Republicans in 2016</a><br />
 </li>
-<li><a href="https://blogs.lse.ac.uk/usappblog/2019/03/14/senators-who-vote-against-their-party-to-end-debate-are-more-likely-to-win-tough-re-election-races-back-home/">London School of Economics &amp; Policy Blog: Senators who vote against their party to end debate are more likely to win tough re-election races back home.</a> <br/> <br/></li>
+<li><a
+href="https://www.nytimes.com/2019/02/27/opinion/trump-obama-race.html">The
+New York Times: The Deepening ‘Racialization’ of American
+Politics</a><br />
+</li>
+<li><a
+href="https://blogs.lse.ac.uk/usappblog/2019/03/14/senators-who-vote-against-their-party-to-end-debate-are-more-likely-to-win-tough-re-election-races-back-home/">London
+School of Economics &amp; Policy Blog: Senators who vote against their
+party to end debate are more likely to win tough re-election races back
+home.</a> <br/> <br/></li>
 </ul>
 </div>
 <div id="video-audio-media" class="section level3">
 <h3><strong><em>VIDEO + AUDIO MEDIA</em></strong></h3>
 <ul>
-<li><p><a href="https://www.c-span.org/video/?508198-1/brookings-institution-discussion-eliminating-filibuster">Niskanen Center Science of Politics Podcast: How Voters Judge Congress</a><br />
+<li><p><a
+href="https://www.c-span.org/video/?508198-1/brookings-institution-discussion-eliminating-filibuster">Niskanen
+Center Science of Politics Podcast: How Voters Judge Congress</a><br />
 <iframe width="560" height="315" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1043133985&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe></p>
-<div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-<a href="https://soundcloud.com/user-735940457-95015381" title="Niskanen Center - The Science of Politics" target="_blank" style="color: #cccccc; text-decoration: none;">Niskanen Center - The Science of Politics</a> · <a href="https://soundcloud.com/user-735940457-95015381/how-voters-judge-congress" title="How Voters Judge Congress" target="_blank" style="color: #cccccc; text-decoration: none;">How Voters Judge Congress</a>
+<div
+style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+<a href="https://soundcloud.com/user-735940457-95015381" title="Niskanen Center - The Science of Politics" target="_blank" style="color: #cccccc; text-decoration: none;">Niskanen
+Center - The Science of Politics</a> ·
+<a href="https://soundcloud.com/user-735940457-95015381/how-voters-judge-congress" title="How Voters Judge Congress" target="_blank" style="color: #cccccc; text-decoration: none;">How
+Voters Judge Congress</a>
 </div></li>
-<li><p><a href="https://www.c-span.org/video/?508198-1/brookings-institution-discussion-eliminating-filibuster">The Brookings Institution: Debating the Elimination of the Legislative Filibuster</a><br />
+<li><p><a
+href="https://www.c-span.org/video/?508198-1/brookings-institution-discussion-eliminating-filibuster">The
+Brookings Institution: Debating the Elimination of the Legislative
+Filibuster</a><br />
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Y25bBr_ohDk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p></li>
-<li><p><a href="https://www.youtube.com/watch?v=lhXH8r9AQnw">Edward R. Murrow College of Communication, Washington State University: Proud to be First! First Generation College Students Panel Discussion</a><br />
+<li><p><a href="https://www.youtube.com/watch?v=lhXH8r9AQnw">Edward R.
+Murrow College of Communication, Washington State University: Proud to
+be First! First Generation College Students Panel Discussion</a><br />
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lhXH8r9AQnw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p></li>
-<li><p><a href="https://www.kqed.org/forum/2010101880834/why-white-voters-overwhelmingly-supported-trump-again">National Public Radio (KQED Affiliate; San Francisco, CA): Why White Voters Overwhelmingly Supported Trump – Again</a><br />
+<li><p><a
+href="https://www.kqed.org/forum/2010101880834/why-white-voters-overwhelmingly-supported-trump-again">National
+Public Radio (KQED Affiliate; San Francisco, CA): Why White Voters
+Overwhelmingly Supported Trump – Again</a><br />
 <iframe allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/us/podcast/why-white-voters-overwhelmingly-supported-trump-again/id73329719?i=1000499076827"></iframe></p></li>
-<li><p><a href="https://zoom.us/rec/play/KX1_-QRCyYRlp-uonVPbBNRYYUgy6H161z4_IrvdFm0c6HQo_znczOYcl-be_WsVzQdqq6RPRRVmsIKc.TLvankETsY0WwWP9?startTime=1613063062000&amp;_x_zm_rtaid=hSvEasDuQYuXsO4l83leag.1616865666026.f98962106050e5e162310ee5d411ae49&amp;_x_zm_rhtaid=662">UTEP Student Engagement &amp; Leadership Center: Post-2020 Election Conversation</a><br />
+<li><p><a
+href="https://zoom.us/rec/play/KX1_-QRCyYRlp-uonVPbBNRYYUgy6H161z4_IrvdFm0c6HQo_znczOYcl-be_WsVzQdqq6RPRRVmsIKc.TLvankETsY0WwWP9?startTime=1613063062000&amp;_x_zm_rtaid=hSvEasDuQYuXsO4l83leag.1616865666026.f98962106050e5e162310ee5d411ae49&amp;_x_zm_rhtaid=662">UTEP
+Student Engagement &amp; Leadership Center: Post-2020 Election
+Conversation</a><br />
 <iframe width="560" height="315" src="https://zoom.us/rec/play/KX1_-QRCyYRlp-uonVPbBNRYYUgy6H161z4_IrvdFm0c6HQo_znczOYcl-be_WsVzQdqq6RPRRVmsIKc.TLvankETsY0WwWP9?startTime=1613063062000&_x_zm_rtaid=hSvEasDuQYuXsO4l83leag.1616865666026.f98962106050e5e162310ee5d411ae49&_x_zm_rhtaid=662" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p></li>
-<li><p><a href="https://podcasts.apple.com/us/podcast/rocky-talk-episode-eighteen-what-now-post-election/id1501730033?i=1000500992224">Rock Talk (Dartmouth College): What Now? Post-Election Analysis</a><br />
+<li><p><a
+href="https://podcasts.apple.com/us/podcast/rocky-talk-episode-eighteen-what-now-post-election/id1501730033?i=1000500992224">Rock
+Talk (Dartmouth College): What Now? Post-Election Analysis</a><br />
 <iframe width="100%" height="175" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/939531403&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe></p>
-<div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-<a href="https://soundcloud.com/nelson-rockydartmouth" title="The Nelson A Rockefeller Center" target="_blank" style="color: #cccccc; text-decoration: none;">The Nelson A Rockefeller Center</a> · <a href="https://soundcloud.com/nelson-rockydartmouth/rocky-talk-episode-eighteen-what-now-post-election-analysis-with-dr-carlos-algara" title="Rocky Talk - Episode Eighteen: What now? Post-Election Analysis with Dr. Carlos Algara" target="_blank" style="color: #cccccc; text-decoration: none;">Rocky Talk - Episode Eighteen: What now? Post-Election Analysis with Dr. Carlos Algara</a>
+<div
+style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+<a href="https://soundcloud.com/nelson-rockydartmouth" title="The Nelson A Rockefeller Center" target="_blank" style="color: #cccccc; text-decoration: none;">The
+Nelson A Rockefeller Center</a> ·
+<a href="https://soundcloud.com/nelson-rockydartmouth/rocky-talk-episode-eighteen-what-now-post-election-analysis-with-dr-carlos-algara" title="Rocky Talk - Episode Eighteen: What now? Post-Election Analysis with Dr. Carlos Algara" target="_blank" style="color: #cccccc; text-decoration: none;">Rocky
+Talk - Episode Eighteen: What now? Post-Election Analysis with
+Dr. Carlos Algara</a>
 </div></li>
-<li><p><a href="https://rockefeller.dartmouth.edu/news-events/news-events/rocky-watch">Rocky Watch (The Nelson A. Rockefeller Center for Public Policy at Dartmouth College): What Now? 2020 Presidential Post-Election Analysis</a><br />
+<li><p><a
+href="https://rockefeller.dartmouth.edu/news-events/news-events/rocky-watch">Rocky
+Watch (The Nelson A. Rockefeller Center for Public Policy at Dartmouth
+College): What Now? 2020 Presidential Post-Election Analysis</a><br />
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jId2vaVlZBo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p></li>
-<li><p><a href="https://www.youtube.com/watch?v=l9EORSVPuOA">UTEP Student Engagement &amp; Leadership Center: The Constitution, Then &amp; Now</a><br />
+<li><p><a href="https://www.youtube.com/watch?v=l9EORSVPuOA">UTEP
+Student Engagement &amp; Leadership Center: The Constitution, Then &amp;
+Now</a><br />
 <iframe width="560" height="315" src="https://www.youtube.com/embed/l9EORSVPuOA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p></li>
-<li><p><a href="https://www.keranews.org/politics/2020-08-25/john-cornyn-has-served-in-the-u-s-senate-18-years-whats-his-record">National Public Radio (KERA Affiliate; Dallas, TX): John Cornyn Has Served In The U.S. Senate 18 Years. What’s His Record?</a><br />
-<audio controls> <source width="100%" height="175" src="https://cpa.ds.npr.org/kera/audio/2020/08/john_cornyn_has_served_in_the_u.s._senate_18_years._what___s_his_record.mp3" type="audio/mp3"/> </audio></p></li>
+<li><p><a
+href="https://www.keranews.org/politics/2020-08-25/john-cornyn-has-served-in-the-u-s-senate-18-years-whats-his-record">National
+Public Radio (KERA Affiliate; Dallas, TX): John Cornyn Has Served In The
+U.S. Senate 18 Years. What’s His Record?</a><br />
+<audio controls>
+<source width="100%" height="175" src="https://cpa.ds.npr.org/kera/audio/2020/08/john_cornyn_has_served_in_the_u.s._senate_18_years._what___s_his_record.mp3" type="audio/mp3"/>
+</audio></p></li>
 </ul>
 <br/> <br/> <br/>
 <center>
-Copyright © 2017 by Carlos Algara. Made with <a href="https://www.rstudio.com">RStudio</a>.
+Copyright © 2017 by Carlos Algara. Made with <a
+href="https://www.rstudio.com">RStudio</a>.
 </center>
 </div>
 
@@ -497,7 +634,7 @@ Copyright © 2017 by Carlos Algara. Made with <a href="https://www.rstudio.com">
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -515,7 +652,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
