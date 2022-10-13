@@ -46,11 +46,38 @@ gtag('config', 'UA-100362112-1');
   <br/>
   <br/>
   <center>
+*2016-2020 Gain in President Trump's County-Level Support* <br> 
+![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/presidential_swing.png "2016-2020 Support Change"){ width=60% }
+  </center><br/>  
+  <center> **Nail in the Coffin or Lifeline? Evaluating the Electoral Impact of COVID-19 on President Trump in the 2020 Election** </center>
+<center> **With [Sharif Amlani](https://www.sharifamlani.com/home), PhD Candidate, Political Science, University of California, Davis** </center>
+  <center> **With [Samuel Collitt](), PhD Candidate, Department of Political Science, University of California, Davis** </center>
+  <center> **With [Sara Kazemian](https://www.sarakazemian.com/home), PhD Candidate, Department of Political Science, University of California, Davis** </center>
+    <center> **& [Isaac Hale](https://www.isaacdhale.com), Assistant Professor, Department of Political Science, Occidental College** </center><br/>
+  <center> ***$\star$[Manuscript Forthcoming in Political Behavior]() $\star$ <br/> [Publication Link]() $\star$[Manuscript Data Materials](https://doi.org/10.7910/DVN/RX2WBG)***   <br/>
+<br/>
+          *Abstract:* From the onset of the first confirmed case of COVID-19 in January 2020 to Election Day in November, the United States experienced over 9,400,000 cases and 232,000 deaths. This crisis largely defined the campaign between former Vice President Joe Biden and President Donald Trump, centering on the Trump administration's efforts in mitigating the number of cases and deaths. While conventional wisdom suggested that Trump and his party would lose support due to the severity of COVID-19 across the country, such an effect is hotly debated empirically and theoretically. In this research, we evaluate the extent to which the severity of the COVID-19 pandemic influenced support for President Trump in the 2020 election. Across differing modeling strategies and a variety of data sources, we find evidence that President Trump gained support in counties with higher COVID-19 deaths. We provide an explanation for this finding by showing that voters concerned about the economic impacts of pandemic-related restrictions on activity were more likely to support Trump and that local COVID-19 severity was predictive of these economic concerns. While COVID-19 likely contributed to Trump's loss in 2020, our analysis demonstrates that he gained support among voters in localities worst affected by the pandemic.  
+  <br/>
+  <br/>
+  <center>
+*State COVID-19 Lottery Implementation* <br> 
+![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/plos_one_map.png "State COVID-19 Lottery Implementation"){ width=60% }
+  </center><br/>  
+  <center> **Assessing the effectiveness of COVID-19 vaccine lotteries: A cross-state synthetic control methods approach** </center>
+  <center> **With [Sam Fuller](ps.ucdavis.edu), PhD Candidate, Department of Political Science, University of California, Davis** </center>
+  <center> **With [Sara Kazemian](https://www.sarakazemian.com/home), PhD Candidate, Department of Political Science, University of California, Davis** </center>
+<center> **& [Daniel J. Simmons](https://simmonsdj.com), Assistant Professor, Department of Political Science, Saint Michael's College** </center><br/>
+  <center> ***$\star$[Manuscript Published in PLoS One](https://journals.plos.org/plosone/article/authors?id=10.1371/journal.pone.0274374) $\star$ <br/> [Publication Link](https://journals.plos.org/plosone/article/authors?id=10.1371/journal.pone.0274374) $\star$[Manuscript Data Materials](https://doi.org/10.7910/DVN/K1XX02)***   <br/>
+<br/>
+          *Abstract:* Vaccines are the most effective means at combating sickness and death caused by COVID-19. Yet, there are significant populations within the United States who are vaccine-hesitant, some due to ideological or pseudo-scientific motivations, others due to significant perceived and real costs from vaccination. Given this vaccine hesitancy, twenty state governors from May 12th to July 21st 2021 implemented some form of vaccination lottery aiming to increase low vaccination rates. In the aftermath of these programs, however, the critical question of whether these lotteries had a direct effect on vaccination remains. Previous literature on financial incentives for public health behaviors is consistent: Financial incentives significantly increase incentivized behaviors. Yet, work done specifically on state vaccine lotteries is both limited in scope and mixed in its conclusions. To help fill this gap in the literature, we use synthetic control methods to analyze all 20 states and causally identify, for eighteen states, the effects of their lotteries on both first-dose and complete vaccination rates. Within those eighteen states, we find strong evidence that all but three states’ lotteries had positive effects on first-dose vaccination. We find for complete vaccinations, however, over half the states analyzed had negative or null effects. We explore possibilities related to these mixed results including the states’ overall partisanship, vaccine hesitancy, and the size of their lotteries finding null effects for each of these explanations. Therefore, we conclude that the design of these programs is likely to blame: Every state lottery only incentivized first-doses with no additional or contingent incentive based on a second dose. Our findings suggest that the design of financial incentives is critical to their success, or failure, but generally, these programs can induce an uptake in vaccination across diverse demographic, ideological, and geographic contexts in the United States.  
+  <br/>
+  <br/>
+  <center>
 *Long-Run Multipliers (LRMs) of Error Correction Models Monthly Covariates* <br> 
 ![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/gecm_models_t_test.png "LRM Hypothesis Testing"){ width=60% }
   </center><br/>  
   <center> **Fenno's Paradox in a Polarized Age: How Polarization Lowers the Mass Public's Assessments of the Congress & Legislators** </center>
-  <center> **With [Byengseon Bae](), Graduate Student, Department of Politics & Government, Claremont Graduate University** </center><br/>
+  <center> **With [Byengseon Bae](https://www.cgu.edu/school/ssspe/division-of-politics-economics/), Graduate Student, Department of Politics & Government, Claremont Graduate University** </center><br/>
   <center> ***$\star$[Manuscript Forthcoming in Congress & the Presidency]() $\star$ <br/> [Publication Link]() $\star$[Manuscript Data Materials](mailto:carlos.algara@cgu.edu)***   <br/>
 <br/>
           *Abstract:* Fenno (1975) famously posited that the mass public's assessments of the U.S. Congress are rooted in a paradox, with citizens holding negative evaluations of the collective Congress while holding favorable views of their individual members of Congress. Since the conceptualization of Fenno's Paradox, the Congress underwent pronounced changes due to increased ideological polarization between increasingly homogeneous parties comprised of more partisan loyal, ideologically extreme, legislators. In this paper, we ask whether this partisan polarization shifted the public’s assessments of the Congress and their individual representatives over time. Leveraging over 45 years of new data measuring the monthly approval of Congress and legislators with a fully specified model, we find that greater polarization lowers the approval rating of both over time, suggesting that greater polarization weakens Fenno’s Paradox by considerably lowering legislator approval. We explore the underlying mechanism of this finding at the individual-level, finding that co-partisan support for Congress and opposing-partisan support for legislators collapses since 1980. Taken together, our results suggest that partisan polarization plays a large role in motivating the historic decline in congressional approval and the ability of legislators to amass a personal incumbency advantage.  
@@ -85,7 +112,7 @@ gtag('config', 'UA-100362112-1');
 ![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/election1988.png "1988 Presidential Election"){ width=60% }
   </center><br/>
   <center> **Partisanship & Nationalization in American Elections: Evidence from Presidential, Senatorial, & Gubernatorial Elections in the U.S. Counties, 1872-2020** </center>
-<center> **With [Sharif Amlani](http://ps.ucdavis.edu), PhD Candidate, Political Science, University of California, Davis** </center><br/>
+<center> **With [Sharif Amlani](https://www.sharifamlani.com/home), PhD Candidate, Political Science, University of California, Davis** </center><br/>
   <center> ***$\star$ [Manuscript Published in Electoral Studies](https://www.sciencedirect.com/science/article/pii/S0261379421001050?dgcid=author) $\star$ <br/> [Publication Link](https://www.sciencedirect.com/science/article/pii/S0261379421001050?dgcid=author) $\star$[Manuscript Replication Materials](https://doi.org/10.7910/DVN/DGUMFI)***
   <center> ***$\star$[Research featured in The Economist (October 29, 2021): The Democrats' structural disadvantage is not caused by demographics alone ](https://view.e.economist.com/?qs=6674f1f6886465b3956ca476c3f15bfa657c4620773f72802ed3d1c3c0dbc744771c896e2f4892cf4eec3b05e3b16bcfef3e11a99bb3ccb5f798d07c386af28796aaabd1ebdf26baf2b743d1740912dc)$\star$***
   </center><br/>
@@ -97,7 +124,7 @@ gtag('config', 'UA-100362112-1');
 ![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/scientific_trust_boxplots_by_race3.png "Scientific trust across races"){ width=60% }
   </center><br/>
   <center> **The Role of Race and Scientific Trust on Support for COVID-19 Social Distancing Measures in the United States** </center>
-  <center> **With [Sara Kazemian](http://ps.ucdavis.edu), PhD Candidate, Political Science, University of California, Davis** </center>
+  <center> **With [Sara Kazemian](https://www.sarakazemian.com/home), PhD Candidate, Political Science, University of California, Davis** </center>
   <center> **& [Sam Fuller](http://ps.ucdavis.edu), PhD Candidate, Political Science, University of California, Davis** </center><br/>
   <center> ***$\star$ [Manuscript Published in PLoS One](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254127) $\star$ <br/> [Publication Link](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254127) $\star$[Manuscript Replication Materials](https://doi.org/10.7910/DVN/0RMZHK)***   <center> ***$\star$[Research Reprinted in U.S. National Library of Medicine Center for Biotechnology Information PubMed Archive](https://pubmed.ncbi.nlm.nih.gov/34242275/)$\star$***
   </center><br/>
@@ -143,7 +170,7 @@ gtag('config', 'UA-100362112-1');
   <center> **The Interactive Effects of Scientific Knowledge \& Gender on COVID-19 Social Distancing Compliance** </center>
   <center> **with [Sam Fuller](http://ps.ucdavis.edu), PhD Candidate, Political Science, University of California, Davis** </center>
   <center> **[Christopher Hare](http://www.christopherdhare.com), Assistant Professor of Political Science, University of California, Davis** </center>
-  <center> **& [Sara Kazemian](http://ps.ucdavis.edu), PhD Candidate, Political Science, University of California, Davis** </center><br/>
+  <center> **& [Sara Kazemian](https://www.sarakazemian.com/home), PhD Candidate, Political Science, University of California, Davis** </center><br/>
   <center> ***$\star$[Manuscript Published in Social Science Quarterly (2020)](https://onlinelibrary.wiley.com/doi/full/10.1111/ssqu.12894) $\star$[Publication Link](https://onlinelibrary.wiley.com/doi/full/10.1111/ssqu.12894) $\star$[Manuscript Data Materials](mailto:carlos.algara@cgu.edu)*** </center><br/>
   *Abstract:* With the onset of the 2020 COVID-19 pandemic in the United States, state governments and the federal administration were forced to craft social distancing recommendations advising the general public on how they could combat the transmission of the deadly virus. These recommendations, and sometimes orders, advised against many daily social activities such as visiting family members, restaurant dining, and sporting event attendance. Adherence to and support of these measures has been varied, with many flouting mask and group-gathering recommendations/orders. This has reduced the effectiveness of these measures and lead to virus resurgences across the U.S. In this research note, we examine the role scientific knowledge and gender play in influencing citizens' comfort and risk perceptions regarding social distancing recommendations and orders. In both the general population and within parties, we find that women with high scientific knowledge are much less comfortable breaking social distancing guidelines than their male counterparts and women with lower scientific knowledge. These findings shed light on how both knowledge and gender interact to drive (non)compliance with government policies during a public health crisis in an increasingly polarized America.  
 <br/>
