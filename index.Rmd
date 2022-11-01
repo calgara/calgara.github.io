@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Welcome!"
 ---
 
 <img src="/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/Bio_Photo.JPG" style="width:30%; border:5px solid; margin-right: 20px" align="left">
