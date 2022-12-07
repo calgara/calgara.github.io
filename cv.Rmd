@@ -1,6 +1,6 @@
 ---
 title: Curriculum Vitae
-date: December 3, 2022
+date: December 6, 2022
 share: FALSE
 output: html_document
 ---
