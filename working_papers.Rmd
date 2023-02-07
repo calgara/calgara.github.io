@@ -46,6 +46,17 @@ gtag('config', 'UA-100362112-1');
   <br/>
   <br/>
   <center>
+*Distribution of Citizen Ideal Points & Party Positions in the General Liberal-Conservative Ideological Space By Country* <br> 
+![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/algara_zur.jpeg "By-County Ideal Points & Party Positions"){ width=70% }
+  </center><br/>  
+  <center> **The Downsian Roots of Affective Polarization** </center>
+  <center> **With [Roi Zur](https://www.roizur.com), Assistant Professor (Lecturer), Univesrity of Essex** </center><br/>
+  <center> ***$\star$[Manuscript Published in Electoral Studies](https://www.sciencedirect.com/science/article/pii/S0261379423000033) $\star$ <br/> [Publication Link](https://www.sciencedirect.com/science/article/pii/S0261379423000033) $\star$[Manuscript Data Materials](mailto:carlos.algara@cgu.edu)***   <br/>
+<br/>
+          *Abstract:* A growing literature studies the relationship between ideological and affective polarization. By taking a Downsian approach to affective polarization we contribute to this literature and demonstrating that affective polarization is driven by congruence between citizens and their party, relative to other parties, in the general liberal-conservative space and across a host of salient issue domains. We find robust support for our theory using individual-level national election survey data from the United States, United Kingdom, Germany, and Finland. Moreover, we find that ideological differences inform affective polarization independently from partisan identifications and that they drive more out-party animosity than in-party affinity. These findings have implications towards a more unified understanding of the citizen determinants of affective polarization and the role ideology plays in shaping the views held by partisans across democracies.  
+  <br/>
+  <br/>
+  <center>
 *2016-2020 Gain in President Trump's County-Level Support* <br> 
 ![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/presidential_swing.png "2016-2020 Support Change"){ width=60% }
   </center><br/>  
@@ -53,7 +64,7 @@ gtag('config', 'UA-100362112-1');
 <center> **With [Sharif Amlani](https://www.sharifamlani.com/home), PhD Candidate, Political Science, University of California, Davis** </center>
   <center> **With [Samuel Collitt](), PhD Candidate, Department of Political Science, University of California, Davis** </center>
   <center> **With [Sara Kazemian](https://www.sarakazemian.com/home), PhD Candidate, Department of Political Science, University of California, Davis** </center>
-    <center> **& [Isaac Hale](https://www.isaacdhale.com), Assistant Professor, Department of Political Science, Occidental College** </center><br/>
+  <center> **& [Isaac Hale](https://www.isaacdhale.com), Assistant Professor, Department of Political Science, Occidental College** </center><br/>
   <center> ***$\star$[Manuscript Published in Political Behavior]() $\star$ <br/> [Publication Link](https://link.springer.com/article/10.1007/s11109-022-09826-x) $\star$[Manuscript Data Materials](https://doi.org/10.7910/DVN/RX2WBG)***   <br/>
 <br/>
   <center> ***$\star$[Research featured in London School of Economics United States Politics \& Policy Blog Post (October 31, 2022)](https://tinyurl.com/yc2jn88s)$\star$***
