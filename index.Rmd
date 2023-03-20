@@ -2,7 +2,7 @@
 title: "Welcome!"
 ---
 
-<img src="/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/Bio_Photo.JPG" style="width:30%; border:5px solid; margin-right: 20px" align="left">
+<img src="/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/mar_portraits.jpg" style="width:30%; border:5px solid; margin-right: 20px" align="left">
 
 Thanks for visiting my website! I am the Mary Toepelt Nicolai & George S. Blair Assistant Professor of Politics & Government at [Claremont Graduate University](https://www.cgu.edu/school/ssspe/division-of-politics-economics/politics-government-department/) and a Faculty Affiliate at the [Center of Effective Lawmaking](https://thelawmakers.org). I also served as a part of the American Political Science Association [Congressional Fellowship Program](https://www.apsanet.org/cfp) 2019-2020 class of Congressional Fellows, placed in the United States Senate. I received my Ph.D. in Political Science from the [University of California, Davis](http://ps.ucdavis.edu/) in June 2019. Prior to arriving at CGU, I served as an Assistant Professor of Political Science at the University of Texas at El Paso.      
   
