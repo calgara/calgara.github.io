@@ -46,11 +46,22 @@ gtag('config', 'UA-100362112-1');
   <br/>
   <br/>
   <center>
+*Additive Effects of Various COVID-19 Vaccine Attributes on Vaccination Choice* <br> 
+![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/lucid_conjoint_full_sample_effects.png "Conjoint Experimental Causal Effects"){ width=70% }
+  </center><br/>  
+  <center> **Incentivizing COVID-19 Vaccination in a Polarized and Partisan United States** </center>
+  <center> **With [Daniel Simmons](https://simmonsdj.com), Assistant Professor, University of Wisconsin-Eau Claire** </center><br/>
+  <center> ***$\star$[Manuscript Published in Journal of Health Politics, Policy, and Law](https://doi.org/10.1215/03616878-10637717) $\star$ <br/> [Publication Link](https://doi.org/10.1215/03616878-10637717) $\star$[Manuscript Data Materials](mailto:carlos.algara@cgu.edu)***   <br/>
+<br/>
+          *Abstract:* Context: As COVID-19 vaccines were rolled out in early 2011, governments at all levels in the US faced significant difficulty in consistently and efficiently administering injections in the face of vaccination resistance among a public increasingly political polarized on vaccination preferences prior to the beginning of the mass vaccinations. Methods: Using an original conjoint experiment fielded to a nationally representative sample prior to the mass proliferation of COVID-19 vaccines, we examine how different incentives (e.g., employer mandates, state-organized or health care provider–organized vaccination clinics, or financial incentives) affect the public’s preference to get vaccinated. We also test how financial incentive preferences correlate with self-reported vaccination intention using observational data from the Kaiser Family Foundation June 2021 Health Tracking Poll. Findings: We find financial incentives positively influence vaccine preferences among the mass public and all partisan groups, including Republicans initially “unlikely” to be vaccinated. Using the observational data, we replicate our experimental findings showing positive financial incentive attitudes positively correlate with self-reported vaccination disclosures.Conclusions: Our results provide support for direct financial incentives, rather than other incentives, as being a valuable tool for policymakers tasked with alleviating vaccination resistance among a US mass public increasingly polarized along partisan lines.  
+  <br/>
+  <br/>
+  <center>
 *Distribution of Citizen Ideal Points & Party Positions in the General Liberal-Conservative Ideological Space By Country* <br> 
-![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/algara_zur.jpeg "By-County Ideal Points & Party Positions"){ width=70% }
+![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/algara_zur.jpeg "By-Country Ideal Points & Party Positions"){ width=70% }
   </center><br/>  
   <center> **The Downsian Roots of Affective Polarization** </center>
-  <center> **With [Roi Zur](https://www.roizur.com), Assistant Professor (Lecturer), Univesrity of Essex** </center><br/>
+  <center> **With [Roi Zur](https://www.roizur.com), Assistant Professor (Lecturer), University of Essex** </center><br/>
   <center> ***$\star$[Manuscript Published in Electoral Studies](https://www.sciencedirect.com/science/article/pii/S0261379423000033) $\star$ <br/> [Publication Link](https://www.sciencedirect.com/science/article/pii/S0261379423000033) $\star$[Manuscript Data Materials](mailto:carlos.algara@cgu.edu)***   <br/>
 <br/>
           *Abstract:* A growing literature studies the relationship between ideological and affective polarization. By taking a Downsian approach to affective polarization we contribute to this literature and demonstrating that affective polarization is driven by congruence between citizens and their party, relative to other parties, in the general liberal-conservative space and across a host of salient issue domains. We find robust support for our theory using individual-level national election survey data from the United States, United Kingdom, Germany, and Finland. Moreover, we find that ideological differences inform affective polarization independently from partisan identifications and that they drive more out-party animosity than in-party affinity. These findings have implications towards a more unified understanding of the citizen determinants of affective polarization and the role ideology plays in shaping the views held by partisans across democracies.  
