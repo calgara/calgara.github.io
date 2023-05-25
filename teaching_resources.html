@@ -13,24 +13,38 @@
 
 <title>Teaching Resources</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/readable.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
-<style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -43,32 +57,8 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
+
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 
@@ -79,10 +69,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -99,40 +85,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 66px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 71px;
-  margin-top: -71px;
-}
-.section h2 {
-  padding-top: 71px;
-  margin-top: -71px;
-}
-.section h3 {
-  padding-top: 71px;
-  margin-top: -71px;
-}
-.section h4 {
-  padding-top: 71px;
-  margin-top: -71px;
-}
-.section h5 {
-  padding-top: 71px;
-  margin-top: -71px;
-}
-.section h6 {
-  padding-top: 71px;
-  margin-top: -71px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -160,7 +122,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -172,7 +134,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -183,10 +145,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -198,7 +173,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -265,7 +239,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -281,7 +255,7 @@ $(document).ready(function () {
   <a href="cv.html">CV</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Research
      
     <span class="caret"></span>
@@ -296,7 +270,7 @@ $(document).ready(function () {
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Teaching
      
     <span class="caret"></span>
@@ -344,7 +318,7 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -394,84 +368,148 @@ h1.title {
 </style>
 <br/> <br/>
 <center>
-<img src="figures/quad.jpg" title="UC Davis Quad" style="width:100.0%" />
+<img
+src="figures/quad.jpg"
+title="UC Davis Quad" style="width:100.0%" />
 </center>
 <br/>
 <center>
 <blockquote>
-<strong><em>For the mind does not require filling like a bottle, but rather, like wood, it only requires kindling to create in it an impulse to think independently and an ardent desire for the truth.</em></strong><br />
+<strong><em>For the mind does not require filling like a bottle, but
+rather, like wood, it only requires kindling to create in it an impulse
+to think independently and an ardent desire for the
+truth.</em></strong><br />
 -Plutarch, <em>De Auditu</em>
 </center>
 </blockquote>
-<p>I have been fortunate to come across teachers that have instilled the kindling of intellectual motivation that guides my curiousity in the world around me. Spanning various disciplines and pedalogical styles, these educators have inspired me to apporaching teaching with unabashed enthusiasm and a heightened sense of awareness in conveying the importance of the material to students. As a political scientist, I am priviledged with the opportunity to collaborate with students in our shared pursuit of igniting the kindling for an ardent desire for truth. I hope that I played a small role in shaping the intellectual curiousity for all of my students.</p>
-<p>Below, you will find various links containing supplemental files highlighting the courses I teach. My general teaching philosphy can be found here: <a href="Algara_Teaching_Philosophy_Statement.pdf">Teaching Philosophy</a> and this teaching page supplemental material is organized by institution.<br />
+<p>I have been fortunate to come across teachers that have instilled the
+kindling of intellectual motivation that guides my curiousity in the
+world around me. Spanning various disciplines and pedalogical styles,
+these educators have inspired me to apporaching teaching with unabashed
+enthusiasm and a heightened sense of awareness in conveying the
+importance of the material to students. As a political scientist, I am
+priviledged with the opportunity to collaborate with students in our
+shared pursuit of igniting the kindling for an ardent desire for truth.
+I hope that I played a small role in shaping the intellectual curiousity
+for all of my students.</p>
+<p>Below, you will find various links containing supplemental files
+highlighting the courses I teach. My general teaching philosphy can be
+found here: <a href="Algara_Teaching_Philosophy_Statement.pdf">Teaching
+Philosophy</a> and this teaching page supplemental material is organized
+by institution.<br />
 <br/></p>
-<div id="claremont-graduate-university-graduate-courses" class="section level2">
+<div id="claremont-graduate-university-graduate-courses"
+class="section level2">
 <h2><em>Claremont Graduate University (Graduate Courses)</em></h2>
 <ol style="list-style-type: decimal">
-<li>PP 300: American Politics &amp; Institutions Graduate Core Seminar (Fall 2021 Online Graduate Course)
+<li>PP 300: American Politics &amp; Institutions Graduate Core Seminar
+(Fall 2021, Fall 2022)
 <ul>
-<li><a href="PP300_AP_Core_Fall2021_Syllabus.pdf"><em>Syllabus in PDF Format</em></a><br />
+<li><a href="PP300_AP_Core_Fall2022_Syllabus.pdf"><em>Syllabus in PDF
+Format</em></a><br />
 <br/></li>
 </ul></li>
-<li>PP 313: Representation &amp; Accountability in American Democracy (Fall 2021 Online Graduate Course)
+<li>PP 313: Representation &amp; Accountability in American Democracy
+(Fall 2021, Fall 2022)
 <ul>
-<li><a href="PP313_AP_Representation_Fall2021_Syllabus.pdf"><em>Syllabus in PDF Format</em></a><br />
+<li><a href="PP313_AP_Representation_Fall2022_Syllabus.pdf"><em>Syllabus
+in PDF Format</em></a><br />
 <br/></li>
 </ul></li>
-<li>PP 305: Presidential &amp; Congressional Relations in the United States (Spring 2022 Hybrid Graduate Course)
+<li>PP 305: Presidential &amp; Congressional Relations in the United
+States (Spring 2022, Spring 2023)
 <ul>
-<li><a href="PP305_Executive_Legislative_Relations_Spring2022_Syllabus.pdf"><em>Syllabus in PDF Format</em></a><br />
+<li><a
+href="PP305_Executive_Legislative_Relations_Spring2023_Syllabus.pdf"><em>Syllabus
+in PDF Format</em></a><br />
+<br/></li>
+</ul></li>
+<li>PP 487L: Maximum Likelihood Estimation &amp; Applied Research
+Methods in Political Science (Spring 2023)
+<ul>
+<li><a href="PP487_MLE_Spring2023_Syllabus.pdf"><em>Syllabus in PDF
+Format</em></a><br />
+<br/></li>
+</ul></li>
+<li>PP 319I: Special Topics in American Politics: Critically Evaluating
+Democracy in America –Backsliding? (Summer 2023)
+<ul>
+<li><a href="PP319I_Democracy_Summer2023_Syllabus.pdf"><em>Syllabus in
+PDF Format</em></a><br />
 <br/></li>
 </ul></li>
 </ol>
 </div>
-<div id="university-of-texas-el-paso-undergraduate-graduate-courses" class="section level2">
-<h2><em>University of Texas, El Paso (Undergraduate &amp; Graduate Courses)</em></h2>
+<div id="university-of-texas-el-paso-undergraduate-graduate-courses"
+class="section level2">
+<h2><em>University of Texas, El Paso (Undergraduate &amp; Graduate
+Courses)</em></h2>
 <ol style="list-style-type: decimal">
-<li>PolS 2311: Introduction to American Politics (Fall 2020 Online Undergraduate Course)
+<li>PolS 2311: Introduction to American Politics (Fall 2020 Online
+Undergraduate Course)
 <ul>
-<li><a href="PolS2311_Syllabus_Algara.pdf"><em>Syllabus in PDF Format</em></a><br />
+<li><a href="PolS2311_Syllabus_Algara.pdf"><em>Syllabus in PDF
+Format</em></a><br />
 <br/></li>
 </ul></li>
-<li>PolS 5310: American Political Behavior: Citizen Preferences, Behavior &amp; Representation (Spring 2021 Online Graduate Course)
+<li>PolS 5310: American Political Behavior: Citizen Preferences,
+Behavior &amp; Representation (Spring 2021 Online Graduate Course)
 <ul>
-<li><a href="https://calgara.github.io/pol5310s2021.html"><em>Course Interactive Syllabus GitPage</em></a></li>
-<li><a href="PolS5310_Syllabus_Algara.pdf"><em>Syllabus in PDF Format</em></a><br />
+<li><a href="https://calgara.github.io/pol5310s2021.html"><em>Course
+Interactive Syllabus GitPage</em></a></li>
+<li><a href="PolS5310_Syllabus_Algara.pdf"><em>Syllabus in PDF
+Format</em></a><br />
 <br/></li>
 </ul></li>
-<li>PolS4310: The United States Congress, Legislative Behavior &amp; Representation (Summer 2021 Asynchronous Undergraduate Course)
+<li>PolS4310: The United States Congress, Legislative Behavior &amp;
+Representation (Summer 2021 Asynchronous Undergraduate Course)
 <ul>
-<li><a href="PolS4310_Congress_Summer2021.pdf"><em>Syllabus in PDF Format</em></a><br />
+<li><a href="PolS4310_Congress_Summer2021.pdf"><em>Syllabus in PDF
+Format</em></a><br />
 <br/></li>
 </ul></li>
 </ol>
 </div>
-<div id="university-of-california-davis-california-state-university-sacramento-undergraduate-courses" class="section level2">
-<h2><em>University of California, Davis &amp; California State University, Sacramento (Undergraduate Courses)</em></h2>
+<div
+id="university-of-california-davis-california-state-university-sacramento-undergraduate-courses"
+class="section level2">
+<h2><em>University of California, Davis &amp; California State
+University, Sacramento (Undergraduate Courses)</em></h2>
 <ol style="list-style-type: decimal">
-<li>POL 157: American Mass Public Opinion &amp; Political Behavior (Spring 2019, Sacramento State University)
+<li>POL 157: American Mass Public Opinion &amp; Political Behavior
+(Spring 2019, Sacramento State University)
 <ul>
-<li><a href="https://calgara.github.io/pol157s2019.html"><em>Course Interactive Syllabus GitPage</em></a><br />
+<li><a href="https://calgara.github.io/pol157s2019.html"><em>Course
+Interactive Syllabus GitPage</em></a><br />
 </li>
-<li><a href="https://calgara.github.io/Pol157_Spring2019/Pol157_Spring2019_Syllabus.pdf"><em>Syllabus in PDF Format</em></a><br />
+<li><a
+href="https://calgara.github.io/Pol157_Spring2019/Pol157_Spring2019_Syllabus.pdf"><em>Syllabus
+in PDF Format</em></a><br />
 <br/></li>
 </ul></li>
 <li>POL 1: Introduction to American Politics (Fall 2017)
 <ul>
-<li><a href="https://calgara.github.io/pol1f2017.html"><em>Course Interactive Syllabus GitPage</em></a><br />
+<li><a href="https://calgara.github.io/pol1f2017.html"><em>Course
+Interactive Syllabus GitPage</em></a><br />
 </li>
-<li><a href="https://calgara.github.io/Pol1_Fall2017/Pol1_Fall2017_Syllabus.pdf"><em>Syllabus in PDF Format</em></a><br />
+<li><a
+href="https://calgara.github.io/Pol1_Fall2017/Pol1_Fall2017_Syllabus.pdf"><em>Syllabus
+in PDF Format</em></a><br />
 <br/></li>
 </ul></li>
-<li>POL 1: Introduction to American Politics Summer Session Course (Summer 2017)
+<li>POL 1: Introduction to American Politics Summer Session Course
+(Summer 2017)
 <ul>
-<li><a href="https://calgara.github.io/pol1s2017.html"><em>Course Interactive Syllabus GitPage</em></a><br />
+<li><a href="https://calgara.github.io/pol1s2017.html"><em>Course
+Interactive Syllabus GitPage</em></a><br />
 </li>
-<li><a href="https://calgara.github.io/Pol1_Summer2017/Pol1_Summer2017_Syllabus.pdf"><em>Syllabus in PDF Format</em></a><br />
+<li><a
+href="https://calgara.github.io/Pol1_Summer2017/Pol1_Summer2017_Syllabus.pdf"><em>Syllabus
+in PDF Format</em></a><br />
 <br/> <br/> <br/>
 <center>
-Copyright © 2017 by Carlos Algara. Made with <a href="https://www.rstudio.com">RStudio</a>.
+Copyright © 2017 by Carlos Algara. Made with <a
+href="https://www.rstudio.com">RStudio</a>.
 </center></li>
 </ul></li>
 </ol>
@@ -486,7 +524,7 @@ Copyright © 2017 by Carlos Algara. Made with <a href="https://www.rstudio.com">
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -504,7 +542,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>

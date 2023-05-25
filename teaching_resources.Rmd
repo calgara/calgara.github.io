@@ -62,16 +62,24 @@ Below, you will find various links containing supplemental files highlighting th
 
 ## *Claremont Graduate University (Graduate Courses)* 
 
-1. PP 300: American Politics & Institutions Graduate Core Seminar (Fall 2021 Online Graduate Course)
-    + [*Syllabus in PDF Format*](PP300_AP_Core_Fall2021_Syllabus.pdf)  
+1. PP 300: American Politics & Institutions Graduate Core Seminar (Fall 2021, Fall 2022)
+    + [*Syllabus in PDF Format*](PP300_AP_Core_Fall2022_Syllabus.pdf)  
 <br/>
 
-2. PP 313: Representation & Accountability in American Democracy (Fall 2021 Online Graduate Course)  
-    + [*Syllabus in PDF Format*](PP313_AP_Representation_Fall2021_Syllabus.pdf)  
+2. PP 313: Representation & Accountability in American Democracy (Fall 2021, Fall 2022)  
+    + [*Syllabus in PDF Format*](PP313_AP_Representation_Fall2022_Syllabus.pdf)  
 <br/>
 
-3. PP 305: Presidential & Congressional Relations in the United States (Spring 2022 Hybrid Graduate Course)  
-    + [*Syllabus in PDF Format*](PP305_Executive_Legislative_Relations_Spring2022_Syllabus.pdf)  
+3. PP 305: Presidential & Congressional Relations in the United States (Spring 2022, Spring 2023)  
+    + [*Syllabus in PDF Format*](PP305_Executive_Legislative_Relations_Spring2023_Syllabus.pdf)  
+<br/>
+
+4. PP 487L: Maximum Likelihood Estimation & Applied Research Methods in Political Science (Spring 2023)  
+    + [*Syllabus in PDF Format*](PP487_MLE_Spring2023_Syllabus.pdf)  
+<br/>
+
+5. PP 319I: Special Topics in American Politics: Critically Evaluating Democracy in America --Backsliding? (Summer 2023)  
+    + [*Syllabus in PDF Format*](PP319I_Democracy_Summer2023_Syllabus.pdf)  
 <br/>
 
 ## *University of Texas, El Paso (Undergraduate & Graduate Courses)* 
