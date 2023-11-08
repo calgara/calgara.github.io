@@ -53,7 +53,7 @@ Claremont, California 91711
 [carlos.algara@cgu.edu](mailto:carlos.algara@cgu.edu)
 <br>
 <br>
-<style><div text-align: left; font-size: 90%;'></style>Copyright &copy; 2017 by Carlos Algara. Made with [RStudio](https://www.rstudio.com)</div></div>
+<!-- <style><div text-align: left; font-size: 90%;'></style>Copyright &copy; 2017 by Carlos Algara. Made with [RStudio](https://www.rstudio.com)</div></div> -->
 
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
