@@ -13,7 +13,7 @@ My research agenda focuses broadly on the nature of ideological representation, 
   </center>
   <br/>
   <br/>
-  <p>Copyright &copy; 2017 by Carlos Algara. Made with [RStudio](https://www.rstudio.com).</p>
+  <!-- <p>Copyright &copy; 2017 by Carlos Algara. Made with [RStudio](https://www.rstudio.com).</p> -->
   
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100362112-1"></script>

@@ -46,13 +46,37 @@ gtag('config', 'UA-100362112-1');
   <br/>
   <br/>
   <center>
+*The Decline of Quality Challengers in U.S. House \& Senate Elections* <br> 
+![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/quality_challengers.png "Quality Challengers"){ width=70% }
+  </center><br/>  
+  <center> **Do Quality Candidates and Incumbents Still Matter in the Partisan World? Comparing Trends & Relationship Between Candidate Differentials and Congressional Election Outcomes, 1900-2022** </center>
+  <center> **With [Byengseon Bae](https://www.cgu.edu/school/ssspe/division-of-politics-economics/), Graduate Student, Department of Politics & Government, Claremont Graduate University** </center><br/>
+  <center> ***$\star$[Manuscript Forthcoming in the Journal of Political Marketing]() $\star$ <br/> [Publication Link]() $\star$[Manuscript Data Materials](mailto:carlos.algara@cgu.edu)***<br/>
+  <center> ***$\star$[Research featured in The Washington Post (December 7, 2022)](https://www.washingtonpost.com/politics/2022/12/07/walker-warnock-senate-democrats-republicans/)$\star$***
+  </center><br/>
+          *Abstract:* The increase in elite-level polarization and changing partisan nature of elections to the U.S. House led scholars to posit that candidate characteristics are minor considerations in determining these election outcomes. However, it is not clear if these trends extend to the U.S. Senate or if candidate considerations have lost the relatively minor predictive power they exhibited during the 2010s, particularly as partisanship continued to rise as a predictor of election outcomes. Using historical data on elections to the U.S. House and Senate from 1900 to the recent 2022 midterm elections, we test whether the incumbency advantage and candidate quality differentials are still salient predictors of congressional elections. We find that the incumbency advantage largely disappeared as a salient component of election outcomes for both chambers as partisanship increasingly shapes these outcomes. By contrast, we find that candidate quality differentials, while waning, still can play a considerable role in shaping congressional election outcomes, particularly in the Senate. We conclude by showing that the declining emergence of quality candidates may have played a pivotal role during the 2022 election cycle by costing Republicans control of the U.S. Senate.  
+  <br/>
+  <br/>
+  <center>
+*Distribution of Scaled Latent Racial Attitudes by Samples* <br> 
+![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/jrep_attitudes.png "Scaled Latent Racial Attitudes"){ width=70% }
+  </center><br/>  
+  <center> **Race, Partisanship, and Democratic Politics: The Role of Racial Attitudes in Motivating White Americans’ Electoral Participation** </center>
+  <center> **With [Isaac Hale](https://simmonsdj.com), Assistant Professor, Occidental College** </center><br/>
+  <center> ***$\star$[Manuscript Published in the Journal of Race, Ethnicity, and Politics](https://doi.org/10.1017/rep.2023.16) $\star$ <br/> [Publication Link](https://doi.org/10.1017/rep.2023.16) $\star$[Manuscript Data Materials](mailto:carlos.algara@cgu.edu)***   <br/>
+<br/>
+          *Abstract:* While there is considerable research on the role racial attitudes play in shaping white political preferences, relatively little is known about how racial attitudes influence white participation in democratic politics. We present a model examining the relationship between racial attitudes and political participation in the 2016, 2018, and 2020 U.S. national elections. Using a variety of measures of political participation, our analysis presents a clear finding: the direction of the relationship between latent conservative racial attitudes and political participation is asymmetrical among partisan sub-groups, with conservative racial attitudes motivating participation among white Republicans and, to a greater degree, depressing participation among white Democrats. This finding has stark implications for how racialized appeals are likely to be deployed in an era of increasing affective partisan polarization.  
+  <br/>
+  <br/>
+  <center>
 *Additive Effects of Various COVID-19 Vaccine Attributes on Vaccination Choice* <br> 
 ![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/lucid_conjoint_full_sample_effects.png "Conjoint Experimental Causal Effects"){ width=70% }
   </center><br/>  
   <center> **Incentivizing COVID-19 Vaccination in a Polarized and Partisan United States** </center>
   <center> **With [Daniel Simmons](https://simmonsdj.com), Assistant Professor, University of Wisconsin-Eau Claire** </center><br/>
   <center> ***$\star$[Manuscript Published in Journal of Health Politics, Policy, and Law](https://doi.org/10.1215/03616878-10637717) $\star$ <br/> [Publication Link](https://doi.org/10.1215/03616878-10637717) $\star$[Manuscript Data Materials](mailto:carlos.algara@cgu.edu)***   <br/>
-<br/>
+    <center> ***$\star$[Research featured in The Washington Post (August 25, 2021)](https://www.washingtonpost.com/politics/2021/08/25/little-20-cash-might-persuade-reluctant-get-vaccinated-our-research-finds/)$\star$***
+  </center><br/>
           *Abstract:* Context: As COVID-19 vaccines were rolled out in early 2011, governments at all levels in the US faced significant difficulty in consistently and efficiently administering injections in the face of vaccination resistance among a public increasingly political polarized on vaccination preferences prior to the beginning of the mass vaccinations. Methods: Using an original conjoint experiment fielded to a nationally representative sample prior to the mass proliferation of COVID-19 vaccines, we examine how different incentives (e.g., employer mandates, state-organized or health care provider–organized vaccination clinics, or financial incentives) affect the public’s preference to get vaccinated. We also test how financial incentive preferences correlate with self-reported vaccination intention using observational data from the Kaiser Family Foundation June 2021 Health Tracking Poll. Findings: We find financial incentives positively influence vaccine preferences among the mass public and all partisan groups, including Republicans initially “unlikely” to be vaccinated. Using the observational data, we replicate our experimental findings showing positive financial incentive attitudes positively correlate with self-reported vaccination disclosures.Conclusions: Our results provide support for direct financial incentives, rather than other incentives, as being a valuable tool for policymakers tasked with alleviating vaccination resistance among a US mass public increasingly polarized along partisan lines.  
   <br/>
   <br/>
@@ -285,4 +309,4 @@ gtag('config', 'UA-100362112-1');
   *Abstract:*	Are Senators cross-pressured by party influence and constituent demands on procedural votes? We present a theory positing that Senators are indeed cross-pressured between these two demands and that they anticipate an electoral cost for their procedural voting record. In an analysis of Senate procedural votes since the 92nd Congress, we find that procedural votes are salient to voters and important to party leaders. Using a new spatial measure of obstruction preference, we demonstrate our finding three ways. First, obstruction preferences have become more polarized as the Senate experiences more intense legislative obstruction. Second, electorally vulnerable members are most likely to break from their party on procedural votes. Third, we find that voters electorally reward majority party Senators that break from their party and behave like minority party obstructionists. Our findings suggest that, unlike the House, Senate procedural votes are largely indistinguishable from substantive votes and are electorally salient.  
 <br/>
   <br/>
-  <p>Copyright &copy; 2017 by Carlos Algara. Made with [RStudio](https://www.rstudio.com).</p>
+  <!-- <p>Copyright &copy; 2017 by Carlos Algara. Made with [RStudio](https://www.rstudio.com).</p> -->

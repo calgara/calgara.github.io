@@ -115,4 +115,4 @@ Below, you will find various links containing supplemental files highlighting th
 <br/>
 <br/>
 <br/>
-<center> Copyright &copy; 2017 by Carlos Algara. Made with [RStudio](https://www.rstudio.com). </center>
+  <!-- <p>Copyright &copy; 2017 by Carlos Algara. Made with [RStudio](https://www.rstudio.com).</p> -->
