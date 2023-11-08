@@ -126,4 +126,4 @@ Thank you for visiting my media coverage page! Much of my research focuses on th
 <br/>
 <br/>
 <br/>
-<center> Copyright &copy; 2017 by Carlos Algara. Made with [RStudio](https://www.rstudio.com). </center>
+  <!-- <p>Copyright &copy; 2017 by Carlos Algara. Made with [RStudio](https://www.rstudio.com).</p> -->
