@@ -1,6 +1,15 @@
 ---
 title: "Welcome!"
 ---
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BSHV58HW4C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BSHV58HW4C');
+</script>
 
 <img src="/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/mar_portraits.jpg" style="width:30%; border:5px solid; margin-right: 20px" align="left">
 
@@ -14,13 +23,3 @@ My research agenda focuses broadly on the nature of ideological representation, 
   <br/>
   <br/>
   <!-- <p>Copyright &copy; 2017 by Carlos Algara. Made with [RStudio](https://www.rstudio.com).</p> -->
-  
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-100362112-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-100362112-1');
-</script>

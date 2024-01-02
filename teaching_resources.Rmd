@@ -4,6 +4,16 @@ output:
   html_document: 
     fig_caption: yes
 ---
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BSHV58HW4C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BSHV58HW4C');
+</script>
+
 <style>
   .column-left{
     float: left;
@@ -112,7 +122,5 @@ Below, you will find various links containing supplemental files highlighting th
 3. POL 1: Introduction to American Politics Summer Session Course (Summer 2017)  
     + [*Course Interactive Syllabus GitPage*](https://calgara.github.io/pol1s2017.html)  
     + [*Syllabus in PDF Format*](https://calgara.github.io/Pol1_Summer2017/Pol1_Summer2017_Syllabus.pdf)  
-<br/>
-<br/>
-<br/>
+    
   <!-- <p>Copyright &copy; 2017 by Carlos Algara. Made with [RStudio](https://www.rstudio.com).</p> -->

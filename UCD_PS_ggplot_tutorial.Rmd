@@ -6,14 +6,14 @@ author:
 date: "5/25/2018"
 output: html_document
 ---
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-100362112-1"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BSHV58HW4C"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-100362112-1');
+  gtag('config', 'G-BSHV58HW4C');
 </script>
 
 <br/>

@@ -14,24 +14,38 @@
 
 <title>Programming &amp; Methods Resources Workshop</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/readable.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
-<style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -44,32 +58,8 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
+
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 
@@ -80,10 +70,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -100,40 +86,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 66px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 71px;
-  margin-top: -71px;
-}
-.section h2 {
-  padding-top: 71px;
-  margin-top: -71px;
-}
-.section h3 {
-  padding-top: 71px;
-  margin-top: -71px;
-}
-.section h4 {
-  padding-top: 71px;
-  margin-top: -71px;
-}
-.section h5 {
-  padding-top: 71px;
-  margin-top: -71px;
-}
-.section h6 {
-  padding-top: 71px;
-  margin-top: -71px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -161,7 +123,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -173,7 +135,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -184,10 +146,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -199,7 +174,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -266,7 +240,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -282,7 +256,7 @@ $(document).ready(function () {
   <a href="cv.html">CV</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Research
      
     <span class="caret"></span>
@@ -297,7 +271,7 @@ $(document).ready(function () {
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Teaching
      
     <span class="caret"></span>
@@ -345,50 +319,92 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
-<h1 class="title toc-ignore">Programming &amp; Methods Resources Workshop</h1>
-<h3 class="subtitle">Introduction to The Grammar of Graphics (<tt>ggplot</tt>) &amp; Data Visualization</h3>
-<h4 class="author"><a href="mailto:calgara@ucdavis.edu">Carlos Algara</a>, <a href="mailto:rbelden@ucdavis.edu">Cory Struthers (Belden)</a>, &amp; <a href="mailto:jajack@ucdavis.edu">Jaime Jackson</a></h4>
+<h1 class="title toc-ignore">Programming &amp; Methods Resources
+Workshop</h1>
+<h3 class="subtitle">Introduction to The Grammar of Graphics
+(<tt>ggplot</tt>) &amp; Data Visualization</h3>
+<h4 class="author"><a href="mailto:calgara@ucdavis.edu">Carlos
+Algara</a>, <a href="mailto:rbelden@ucdavis.edu">Cory Struthers
+(Belden)</a>, &amp; <a href="mailto:jajack@ucdavis.edu">Jaime
+Jackson</a></h4>
 <h4 class="date">5/25/2018</h4>
 
 </div>
 
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-100362112-1"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BSHV58HW4C"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-100362112-1');
+  gtag('config', 'G-BSHV58HW4C');
 </script>
 <p><br/></p>
-<p>To replicate the following tutorial, you can find the replication code &amp; data here: <strong><em><a href="UCD_PS_ggplot_workshop_replication_code.R">R script</a></em></strong> &amp; <strong><em><a href="ggplot_tutorial.Rdata">Tutorial Data in R Environment form</a></em></strong>.</p>
+<p>To replicate the following tutorial, you can find the replication
+code &amp; data here: <strong><em><a
+href="UCD_PS_ggplot_workshop_replication_code.R">R
+script</a></em></strong> &amp; <strong><em><a
+href="ggplot_tutorial.Rdata">Tutorial Data in R Environment
+form</a></em></strong>.</p>
 <div id="general-overview-of-ggplot-tutorial" class="section level2">
 <h2><em>General Overview of <tt>ggplot</tt> Tutorial</em></h2>
-<p>The basic logic (&amp; relative advantages) behind the ggplot coding interface can be summarized in the following key points:</p>
+<p>The basic logic (&amp; relative advantages) behind the ggplot coding
+interface can be summarized in the following key points:</p>
 <ul>
-<li><p>Consistent langugage underlies the code, commonly referred to as the ``grammar of graphics’’ (Wilkinson 2005)</p></li>
-<li><p>Very flexible programming which can, with few changes, be used to create multiple types of data visualization. For example, it takes one simple section of code to change a bar chart to a line graph.</p></li>
-<li><p>Many themes are available to polish and cutomize your high resolution plots.</p></li>
-<li><p>Most importantly, for our purposes, <tt>ggplot</tt> code is fully intergrated in the <tt>R</tt> computing environment. What this means is that we can derive multiple quantities of interest (descriptive statistics, model output, post-estimated model quantities of interest, etc.) using various packages and plot them using <tt>ggplot</tt></p></li>
-<li><p><strong><em>HUGE</em></strong>, I’m talking HUGE, user community dedicated to providing crowd sourced code for whatever cutomization you seek in the <tt>ggplot</tt> environment.</p></li>
+<li><p>Consistent langugage underlies the code, commonly referred to as
+the ``grammar of graphics’’ (Wilkinson 2005)</p></li>
+<li><p>Very flexible programming which can, with few changes, be used to
+create multiple types of data visualization. For example, it takes one
+simple section of code to change a bar chart to a line graph.</p></li>
+<li><p>Many themes are available to polish and cutomize your high
+resolution plots.</p></li>
+<li><p>Most importantly, for our purposes, <tt>ggplot</tt> code is fully
+intergrated in the <tt>R</tt> computing environment. What this means is
+that we can derive multiple quantities of interest (descriptive
+statistics, model output, post-estimated model quantities of interest,
+etc.) using various packages and plot them using
+<tt>ggplot</tt></p></li>
+<li><p><strong><em>HUGE</em></strong>, I’m talking HUGE, user community
+dedicated to providing crowd sourced code for whatever cutomization you
+seek in the <tt>ggplot</tt> environment.</p></li>
 </ul>
-<p>In this tutorial, I will provide an applied tutorial to understanding the logic of the <tt>ggplot</tt> language while completing the following tasks:</p>
+<p>In this tutorial, I will provide an applied tutorial to understanding
+the logic of the <tt>ggplot</tt> language while completing the following
+tasks:</p>
 <ol style="list-style-type: decimal">
-<li><p>Plotting descriptive distributions of key variables (histograms, density plots, bar charts, dot plots)</p></li>
-<li><p>Plotting simple bivariate relationships of interest with appropriate measures of uncertainty around estimates (scatterplots, difference of means bar charts, boxplots)</p></li>
-<li><p>Plotting model quantities of interests that provide for a graphical interpretation of our empirical work rather than tables. We will make coefficient plots articulating model output, plots articulating interactive relationships of interest, and post-estimation plots of interest (predicted probabilities from a logistic regerssion, marginal effects plots).</p></li>
-<li><p>Basic preview to graphic add-ons to <tt>ggplot</tt> which provides for spatial mapping and plotting of social networks. <br/> <br/></p></li>
+<li><p>Plotting descriptive distributions of key variables (histograms,
+density plots, bar charts, dot plots)</p></li>
+<li><p>Plotting simple bivariate relationships of interest with
+appropriate measures of uncertainty around estimates (scatterplots,
+difference of means bar charts, boxplots)</p></li>
+<li><p>Plotting model quantities of interests that provide for a
+graphical interpretation of our empirical work rather than tables. We
+will make coefficient plots articulating model output, plots
+articulating interactive relationships of interest, and post-estimation
+plots of interest (predicted probabilities from a logistic regerssion,
+marginal effects plots).</p></li>
+<li><p>Basic preview to graphic add-ons to <tt>ggplot</tt> which
+provides for spatial mapping and plotting of social networks. <br/>
+<br/></p></li>
 </ol>
 </div>
 <div id="plotting-descriptives" class="section level2">
 <h2><em>Plotting Descriptives</em></h2>
-<p>For this example, let’s tackle a problem plaguing the nature of ideological representation and congruence between the mass public and their elected elites (see <a href="http://www.jstor.org/stable/2110458?seq=1#page_scan_tab_contents">Achen’s (1978)</a> critique of the infamous <a href="http://www.jstor.org/stable/1952717?seq=1#page_scan_tab_contents">Miller &amp; Stokes (1963)</a> study as a primer on the methodological problem). Let’s start by loading, exploring the data, and walking through some examples of plotting describtive data.</p>
+<p>For this example, let’s tackle a problem plaguing the nature of
+ideological representation and congruence between the mass public and
+their elected elites (see <a
+href="http://www.jstor.org/stable/2110458?seq=1#page_scan_tab_contents">Achen’s
+(1978)</a> critique of the infamous <a
+href="http://www.jstor.org/stable/1952717?seq=1#page_scan_tab_contents">Miller
+&amp; Stokes (1963)</a> study as a primer on the methodological
+problem). Let’s start by loading, exploring the data, and walking
+through some examples of plotting describtive data.</p>
 <pre class="r"><code>library(ggplot2) # Load ggplot2
 library(plyr) # Loaad plyr, which provides tools for summarizing data
 library(readstata13) # Load readstata13 to read Stata Files
@@ -401,19 +417,20 @@ load(&quot;/Users/caalgara/Desktop/carlos_school/PhD_UC Davis/Dissertation Proje
 
 print(as_tibble(rescaled_overtime_idealpts_2008_2016))</code></pre>
 <pre><code>## # A tibble: 262,896 × 10
-##    year  case_id year_district_id intercept aldmck_weight_par… idealpt selfplace
-##    &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;                &lt;dbl&gt;              &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt;
-##  1 2008  112     2008 NY14           -0.653              0.218   0.218         4
-##  2 2008  11212   2008 CA23           -2.18               0.435  -1.31          2
-##  3 2008  11488   2008 WA8            -0.943              0.354   1.18          6
-##  4 2008  11710   2008 MA2            -0.843              0.281   0.562         5
-##  5 2008  11902   2008 IL10           -3.05               0.653  -0.435         4
-##  6 2008  12118   2008 MI15           -1.41               0.326  -1.09          1
-##  7 2008  12517   2008 CA43           -0.957              0.261  -0.696         1
-##  8 2008  127     2008 NY22           -1.32               0.331  -0.994         1
-##  9 2008  1300    2008 CA7            -1.09               0.326  -0.435         2
-## 10 2008  13717   2008 NC4            -1.09               0.653   2.83          6
-## # … with 262,886 more rows, and 3 more variables: polinfo &lt;dbl&gt;,
+##    year  case_id year_district_id intercept aldmck_weight_parameter idealpt
+##    &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;                &lt;dbl&gt;                   &lt;dbl&gt;   &lt;dbl&gt;
+##  1 2008  112     2008 NY14           -0.653                   0.218   0.218
+##  2 2008  11212   2008 CA23           -2.18                    0.435  -1.31 
+##  3 2008  11488   2008 WA8            -0.943                   0.354   1.18 
+##  4 2008  11710   2008 MA2            -0.843                   0.281   0.562
+##  5 2008  11902   2008 IL10           -3.05                    0.653  -0.435
+##  6 2008  12118   2008 MI15           -1.41                    0.326  -1.09 
+##  7 2008  12517   2008 CA43           -0.957                   0.261  -0.696
+##  8 2008  127     2008 NY22           -1.32                    0.331  -0.994
+##  9 2008  1300    2008 CA7            -1.09                    0.326  -0.435
+## 10 2008  13717   2008 NC4            -1.09                    0.653   2.83 
+## # ℹ 262,886 more rows
+## # ℹ 4 more variables: selfplace &lt;dbl&gt;, polinfo &lt;dbl&gt;,
 ## #   idealpts_linear_map_overtime &lt;dbl&gt;, pid7 &lt;chr&gt;</code></pre>
 <pre class="r"><code># Huge data frame of scaled Aldrich-McKelvey ideal points for each CCES respondent from 2008-2016. For more information on the method deriving these scaled ideal points, see Ramey (2016).
 
@@ -433,19 +450,20 @@ rescaled_overtime_idealpts_2008_2016$pid3 &lt;- ifelse(rescaled_overtime_idealpt
 
 print(as_tibble(rescaled_overtime_idealpts_2008_2016)) # Let&#39;s check it out</code></pre>
 <pre><code>## # A tibble: 262,896 × 11
-##    year  case_id year_district_id intercept aldmck_weight_par… idealpt selfplace
-##    &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;                &lt;dbl&gt;              &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt;
-##  1 2008  112     2008 NY14           -0.653              0.218   0.218         4
-##  2 2008  11212   2008 CA23           -2.18               0.435  -1.31          2
-##  3 2008  11488   2008 WA8            -0.943              0.354   1.18          6
-##  4 2008  11710   2008 MA2            -0.843              0.281   0.562         5
-##  5 2008  11902   2008 IL10           -3.05               0.653  -0.435         4
-##  6 2008  12118   2008 MI15           -1.41               0.326  -1.09          1
-##  7 2008  12517   2008 CA43           -0.957              0.261  -0.696         1
-##  8 2008  127     2008 NY22           -1.32               0.331  -0.994         1
-##  9 2008  1300    2008 CA7            -1.09               0.326  -0.435         2
-## 10 2008  13717   2008 NC4            -1.09               0.653   2.83          6
-## # … with 262,886 more rows, and 4 more variables: polinfo &lt;dbl&gt;,
+##    year  case_id year_district_id intercept aldmck_weight_parameter idealpt
+##    &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;                &lt;dbl&gt;                   &lt;dbl&gt;   &lt;dbl&gt;
+##  1 2008  112     2008 NY14           -0.653                   0.218   0.218
+##  2 2008  11212   2008 CA23           -2.18                    0.435  -1.31 
+##  3 2008  11488   2008 WA8            -0.943                   0.354   1.18 
+##  4 2008  11710   2008 MA2            -0.843                   0.281   0.562
+##  5 2008  11902   2008 IL10           -3.05                    0.653  -0.435
+##  6 2008  12118   2008 MI15           -1.41                    0.326  -1.09 
+##  7 2008  12517   2008 CA43           -0.957                   0.261  -0.696
+##  8 2008  127     2008 NY22           -1.32                    0.331  -0.994
+##  9 2008  1300    2008 CA7            -1.09                    0.326  -0.435
+## 10 2008  13717   2008 NC4            -1.09                    0.653   2.83 
+## # ℹ 262,886 more rows
+## # ℹ 5 more variables: selfplace &lt;dbl&gt;, polinfo &lt;dbl&gt;,
 ## #   idealpts_linear_map_overtime &lt;dbl&gt;, pid7 &lt;chr&gt;, pid3 &lt;chr&gt;</code></pre>
 <pre class="r"><code>ggplot(data=rescaled_overtime_idealpts_2008_2016,aes(x=idealpt,color=pid3)) + geom_density()</code></pre>
 <p><img src="UCD_PS_ggplot_tutorial_files/figure-html/r-3.png" width="672" /></p>
@@ -464,19 +482,22 @@ ggplot(subset(rescaled_overtime_idealpts_2008_2016,rescaled_overtime_idealpts_20
 
 print(as_tibble(aldmck_congress))</code></pre>
 <pre><code>## # A tibble: 1,900 × 6
-##    district placement.dem_pt… placement.rep_p… placement.dem_h… placement.rep_h…
-##    &lt;chr&gt;                &lt;dbl&gt;            &lt;dbl&gt;            &lt;dbl&gt;            &lt;dbl&gt;
-##  1 AK1                 -0.390            0.816         -0.287              0.832
-##  2 AL5                 -0.390            0.816         -0.115              1.01 
-##  3 AL3                 -0.390            0.816         -0.234              0.724
-##  4 AL2                 -0.390            0.816          0.0107             0.912
-##  5 AL4                 -0.390            0.816          0.0506             0.790
-##  6 AZ1                 -0.390            0.816         -0.00825            0.629
-##  7 AZ2                 -0.390            0.816          0.0454             0.727
-##  8 AZ3                 -0.390            0.816         -0.246              0.827
-##  9 AZ4                 -0.390            0.816         -0.132              0.461
-## 10 AZ5                 -0.390            0.816         -0.209              0.762
-## # … with 1,890 more rows, and 1 more variable: year &lt;dbl&gt;</code></pre>
+##    district placement.dem_pty_li…¹ placement.rep_pty_li…² placement.dem_hse_li…³
+##    &lt;chr&gt;                     &lt;dbl&gt;                  &lt;dbl&gt;                  &lt;dbl&gt;
+##  1 AK1                      -0.390                  0.816               -0.287  
+##  2 AL5                      -0.390                  0.816               -0.115  
+##  3 AL3                      -0.390                  0.816               -0.234  
+##  4 AL2                      -0.390                  0.816                0.0107 
+##  5 AL4                      -0.390                  0.816                0.0506 
+##  6 AZ1                      -0.390                  0.816               -0.00825
+##  7 AZ2                      -0.390                  0.816                0.0454 
+##  8 AZ3                      -0.390                  0.816               -0.246  
+##  9 AZ4                      -0.390                  0.816               -0.132  
+## 10 AZ5                      -0.390                  0.816               -0.209  
+## # ℹ 1,890 more rows
+## # ℹ abbreviated names: ¹​placement.dem_pty_libcon_placement,
+## #   ²​placement.rep_pty_libcon_placement, ³​placement.dem_hse_libcon_placement
+## # ℹ 2 more variables: placement.rep_hse_libcon_placement &lt;dbl&gt;, year &lt;dbl&gt;</code></pre>
 <pre class="r"><code># Oh no, we have to manipulate the dataframe. Urgh, bummer, but easy!
 
 house_candidates &lt;- subset(aldmck_congress,select=c(&quot;year&quot;,&quot;district&quot;,&quot;placement.dem_hse_libcon_placement&quot;,&quot;placement.rep_hse_libcon_placement&quot;)) # Extract the variables you want
@@ -497,7 +518,10 @@ ggplot(house_candidates, aes(x = value, fill = variable,linetype=variable)) + ge
 
 ggplot(rescaled_overtime_idealpts_2008_2016, aes(x=selfplace, y=idealpts_linear_map_overtime, group=selfplace)) + geom_boxplot(colour = &quot;black&quot;,outlier.shape = NA) + scale_y_continuous(&quot;Liberal-Conservative Aldrich-McKelvey Ideal Point Estimates&quot;,limits=c(-2.5,2.5),breaks=seq(-2,2,1)) + scale_x_continuous(&quot;Liberal-Conservative Raw Ideological Self-Placement&quot;,breaks=seq(1,7,1)) + scale_fill_discrete(guide=F) + stat_summary(fun.y = mean, geom=&quot;point&quot;,colour=&quot;black&quot;, size=2.00, shape= 17) + scale_shape_discrete(&quot;&quot;) + theme_minimal()</code></pre>
 <p><img src="UCD_PS_ggplot_tutorial_files/figure-html/r-6.png" width="672" /></p>
-<p>We can also plot descriptives, such as line graphs articulating trends in time. Let’s load some data presidential approval from the great people at the <a href="www.ropercenter.com">Roper Center</a> and also make a histogram for initial evaluation of our approval data.</p>
+<p>We can also plot descriptives, such as line graphs articulating
+trends in time. Let’s load some data presidential approval from the
+great people at the <a href="www.ropercenter.com">Roper Center</a> and
+also make a histogram for initial evaluation of our approval data.</p>
 <pre class="r"><code>approval &lt;- read.csv(&quot;/Users/caalgara/Desktop/carlos_school/PhD_UC Davis/Research/Data/American Politics/Presidential_Approval/presidents_survey_marginals_1969_2017.csv&quot;)
 
 as_tibble(approval)</code></pre>
@@ -514,22 +538,35 @@ as_tibble(approval)</code></pre>
 ##  8     8 Kaiser Family … 2017-02-13    2017-02-19       41         52 7         
 ##  9     9 McClatchy / Ma… 2017-02-15    2017-02-19       41         49 9         
 ## 10    10 Quinnipiac Uni… 2017-02-16    2017-02-21       38         55 7         
-## # … with 4,065 more rows, and 5 more variables: Sample.Size &lt;int&gt;,
-## #   president &lt;chr&gt;, year &lt;int&gt;, approval_measure &lt;dbl&gt;, series &lt;chr&gt;</code></pre>
+## # ℹ 4,065 more rows
+## # ℹ 5 more variables: Sample.Size &lt;int&gt;, president &lt;chr&gt;, year &lt;int&gt;,
+## #   approval_measure &lt;dbl&gt;, series &lt;chr&gt;</code></pre>
 <pre class="r"><code>ggplot(approval, aes(x = approval_measure)) + geom_histogram(alpha=.2,fill=&quot;black&quot;,color=&quot;black&quot;) + theme_minimal() + scale_x_continuous(&quot;Presidential Approval Polling&quot;) + ggtitle(&quot;Distribution of Presidential Approval Polling Data, 1969-2017&quot;) </code></pre>
 <p><img src="UCD_PS_ggplot_tutorial_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
-<p>Let’s make a simple figure of presidential approval over time. Note, since we have data that is daily given the polling end date, we have to convert the date variable to something <span class="math inline">\(\texttt{ggplot}\)</span> can use.</p>
+<p>Let’s make a simple figure of presidential approval over time. Note,
+since we have data that is daily given the polling end date, we have to
+convert the date variable to something <span
+class="math inline">\(\texttt{ggplot}\)</span> can use.</p>
 <pre class="r"><code>approval$Polling.End &lt;- as.Date(approval$Polling.End)
 ggplot(approval,aes(x=Polling.End,y=approval_measure)) + geom_line()</code></pre>
 <p><img src="UCD_PS_ggplot_tutorial_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
-<p>This is a really noisy plot, given the number of polls we have (<span class="math inline">\(N\)</span> = 4,075). Perhaps we are interested in a single president. <span class="math inline">\(\texttt{ggplot}\)</span> provides for flexibility in subsetting data for our purposes. Consider the following simple line graph looking at the history of presidential approval during the presidency of George W. Bush.</p>
+<p>This is a really noisy plot, given the number of polls we have (<span
+class="math inline">\(N\)</span> = 4,075). Perhaps we are interested in
+a single president. <span class="math inline">\(\texttt{ggplot}\)</span>
+provides for flexibility in subsetting data for our purposes. Consider
+the following simple line graph looking at the history of presidential
+approval during the presidency of George W. Bush.</p>
 <pre class="r"><code>ggplot(subset(approval,approval$president == &quot;Bush&quot;),aes(x=Polling.End,y=approval_measure)) + geom_line() + ggtitle(&quot;Presidential Approval during the George W. Bush Administration, 2001-2009&quot;)</code></pre>
 <p><img src="UCD_PS_ggplot_tutorial_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
-<p>Still a little noisy. What we could do is plot this using a series of boxplots by year to see how well George Bush’s approval rating held up over the years.</p>
+<p>Still a little noisy. What we could do is plot this using a series of
+boxplots by year to see how well George Bush’s approval rating held up
+over the years.</p>
 <pre class="r"><code>approval$year_factor &lt;- factor(approval$year,levels=seq(1969,2017,1))
 ggplot(subset(approval,approval$president == &quot;Bush&quot;),aes(x=year_factor,y=approval_measure)) + geom_boxplot() + ggtitle(&quot;Presidential Approval during the George W. Bush Administration, 2001-2009&quot;)</code></pre>
 <p><img src="UCD_PS_ggplot_tutorial_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
-<p>Why don’t we take the mean for each year and fix our line graph? Let’s add labels too to make the plot pretty and distinguish between Presidents.</p>
+<p>Why don’t we take the mean for each year and fix our line graph?
+Let’s add labels too to make the plot pretty and distinguish between
+Presidents.</p>
 <pre class="r"><code>mean_approval &lt;- ddply(approval, .(year), summarize,  approval_mean =mean(approval_measure, na.rm = T))
 
 mean_approval$president &lt;- ifelse(mean_approval$year %in% 1969, &quot;Nixon&quot;,ifelse(mean_approval$year %in% 1974, &quot;Ford&quot;,ifelse(mean_approval$year %in% 1977, &quot;Carter&quot;,ifelse(mean_approval$year %in% 1981, &quot;Reagan&quot;,ifelse(mean_approval$year %in% 1989, &quot;Bush 43&quot;,ifelse(mean_approval$year %in% 1993, &quot;Clinton&quot;,ifelse(mean_approval$year %in% 2001, &quot;W. Bush&quot;,ifelse(mean_approval$year %in% 2009, &quot;Obama&quot;,ifelse(mean_approval$year %in% 2017, &quot;Trump&quot;,NA)))))))))
@@ -541,26 +578,43 @@ ggplot(mean_approval,aes(x=year,y=approval_mean,label=president)) + geom_line() 
 </div>
 <div id="plotting-bivariate-relationships" class="section level2">
 <h2><em>Plotting Bivariate Relationships</em></h2>
-<p>While we implicitly plotted a bivariate relationship using the box-plot in the previous example, we can provide more explicit examples for studying bivariate relationships. Let’s use data on the 2016 U.S. House elections to look at the relationship between presidential voteshare and House election voteshare. Also, let’s fit a simple bivariate regression line to see in which districts Democratic candidates underperformed Clinton and which candidates over-performed Clinton. This will be articulated in the residual distance between the individual points and the point-estimate articulated in the regression line. In other words, the distance between the observed value <span class="math inline">\(Y\)</span> (in this case, the vote share won by the Democratic House candidate) and <span class="math inline">\(\hat{Y}\)</span> (in this case, the predicted vote share won by the Democratic House candidate articulated in the regression line).</p>
+<p>While we implicitly plotted a bivariate relationship using the
+box-plot in the previous example, we can provide more explicit examples
+for studying bivariate relationships. Let’s use data on the 2016 U.S.
+House elections to look at the relationship between presidential
+voteshare and House election voteshare. Also, let’s fit a simple
+bivariate regression line to see in which districts Democratic
+candidates underperformed Clinton and which candidates over-performed
+Clinton. This will be articulated in the residual distance between the
+individual points and the point-estimate articulated in the regression
+line. In other words, the distance between the observed value <span
+class="math inline">\(Y\)</span> (in this case, the vote share won by
+the Democratic House candidate) and <span
+class="math inline">\(\hat{Y}\)</span> (in this case, the predicted vote
+share won by the Democratic House candidate articulated in the
+regression line).</p>
 <pre class="r"><code>as_tibble(house)</code></pre>
 <pre><code>## # A tibble: 25,367 × 15
-##     year  stcd state cd    inc     pwin      dv   dvp fr    po1     po2   redist
-##    &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; &lt;chr&gt; 
-##  1  1900   101 AL    1     Democr… Democ…  82.7  NA   &quot;&quot;    Amateu… Noth… &quot;&quot;    
-##  2  1900   102 AL    2     Democr… Democ…  98.3  83.3 &quot;&quot;    Only D… Noth… &quot;&quot;    
-##  3  1900   103 AL    3     Democr… Democ…  80.2  96.9 &quot;&quot;    Amateu… Noth… &quot;&quot;    
-##  4  1900   104 AL    4     Democr… Democ…  97.4  54.9 &quot;&quot;    Only D… Noth… &quot;&quot;    
-##  5  1900   105 AL    5     Democr… Democ…  67.0  77.9 &quot;&quot;    Amateu… Noth… &quot;&quot;    
-##  6  1900   106 AL    6     Democr… Democ…  65.7  69.8 &quot;&quot;    Amateu… Noth… &quot;&quot;    
-##  7  1900   107 AL    7     GOP In… Democ…  51.8  44.6 &quot;&quot;    Qualit… Noth… &quot;&quot;    
-##  8  1900   108 AL    8     Democr… Democ…  59.7  84.8 &quot;&quot;    Amateu… Noth… &quot;&quot;    
-##  9  1900   109 AL    9     Democr… Democ… 100    83.0 &quot;&quot;    No cha… Noth… &quot;&quot;    
-## 10  1900   401 AR    1     Democr… Democ…  72.4  84.6 &quot;&quot;    Amateu… Noth… &quot;&quot;    
-## # … with 25,357 more rows, and 3 more variables: dexp &lt;dbl&gt;, rexp &lt;dbl&gt;,
-## #   dpres &lt;dbl&gt;</code></pre>
+##     year  stcd state cd    inc        pwin     dv   dvp fr    po1   po2   redist
+##    &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;      &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; 
+##  1  1900   101 AL    1     Democrati… Demo…  82.7  NA   &quot;&quot;    Amat… Noth… &quot;&quot;    
+##  2  1900   102 AL    2     Democrati… Demo…  98.3  83.3 &quot;&quot;    Only… Noth… &quot;&quot;    
+##  3  1900   103 AL    3     Democrati… Demo…  80.2  96.9 &quot;&quot;    Amat… Noth… &quot;&quot;    
+##  4  1900   104 AL    4     Democrati… Demo…  97.4  54.9 &quot;&quot;    Only… Noth… &quot;&quot;    
+##  5  1900   105 AL    5     Democrati… Demo…  67.0  77.9 &quot;&quot;    Amat… Noth… &quot;&quot;    
+##  6  1900   106 AL    6     Democrati… Demo…  65.7  69.8 &quot;&quot;    Amat… Noth… &quot;&quot;    
+##  7  1900   107 AL    7     GOP Incum… Demo…  51.8  44.6 &quot;&quot;    Qual… Noth… &quot;&quot;    
+##  8  1900   108 AL    8     Democrati… Demo…  59.7  84.8 &quot;&quot;    Amat… Noth… &quot;&quot;    
+##  9  1900   109 AL    9     Democrati… Demo… 100    83.0 &quot;&quot;    No c… Noth… &quot;&quot;    
+## 10  1900   401 AR    1     Democrati… Demo…  72.4  84.6 &quot;&quot;    Amat… Noth… &quot;&quot;    
+## # ℹ 25,357 more rows
+## # ℹ 3 more variables: dexp &lt;dbl&gt;, rexp &lt;dbl&gt;, dpres &lt;dbl&gt;</code></pre>
 <pre class="r"><code>ggplot(subset(house,house$year %in% 2016),aes(x=dpres,y=dv)) + geom_point(shape=1) + geom_smooth(method=&#39;lm&#39;,SE=T,color=&quot;black&quot;) + theme_bw() + scale_x_continuous(&quot;District Two-Party Vote Share Won by the Democratic Presidential Candidate&quot;) + scale_y_continuous(&quot;District Two-Party Vote Share Won \nby the Democratic House Candidate&quot;) + ggtitle(&quot;Scatterplot of Democratic House Vote-Share by \nDemocratic Presidential Vote-Share in 2016&quot;)</code></pre>
 <p><img src="UCD_PS_ggplot_tutorial_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
-<p>Sometimes you want to add labels to the point scatters, so you can gain more information about outliers. Thus, let’s recreate the scatter plot with district labels and colors for partisan control before the election.</p>
+<p>Sometimes you want to add labels to the point scatters, so you can
+gain more information about outliers. Thus, let’s recreate the scatter
+plot with district labels and colors for partisan control before the
+election.</p>
 <pre class="r"><code>house$dem_seat &lt;- ifelse(house$inc == &quot;Dem Incum v. Dem Challenger&quot;,1,ifelse(house$inc == &quot;Democratic Incumbent&quot;,1,ifelse(house$inc == &quot;Democratic Open Seat&quot;,1,ifelse(house$inc == &quot;Two Democrats, open seat&quot;,1,0))))
 house$dem_seat &lt;- factor(house$dem_seat,levels=c(0,1),labels=c(&quot;GOP Seat&quot;,&quot;Democratic Seat&quot;))
 
@@ -568,11 +622,30 @@ house$district &lt;- paste(house$state,house$cd,sep=&quot;&quot;)
 
 ggplot(subset(house,house$year %in% 2016),aes(x=dpres,y=dv,color=dem_seat,label=district)) + geom_text(size=2) + geom_smooth(method=&#39;lm&#39;,SE=T,color=&quot;black&quot;) + theme_bw() + scale_color_manual(&quot;Seat Partisanship&quot;,values=c(&quot;red&quot;,&quot;blue&quot;)) + scale_x_continuous(&quot;District Two-Party Vote Share Won by the Democratic Presidential Candidate&quot;,breaks=seq(0,100,10)) + scale_y_continuous(&quot;District Two-Party Vote Share Won \nby the Democratic House Candidate&quot;,breaks=seq(0,100,10)) + ggtitle(&quot;Scatterplot of Democratic House Vote-Share by \nDemocratic Presidential Vote-Share&quot;)  + geom_hline(yintercept = 50, colour = gray(1/2), lty = 2) + theme(legend.position=&quot;bottom&quot;)</code></pre>
 <p><img src="UCD_PS_ggplot_tutorial_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
-<p>What if I was interested in looking at multiple election cycles of interest? Looks look at the pivotal elections of 1974, 1994, 2006, and 2010. Let’s take a look!</p>
+<p>What if I was interested in looking at multiple election cycles of
+interest? Looks look at the pivotal elections of 1974, 1994, 2006, and
+2010. Let’s take a look!</p>
 <pre class="r"><code>ggplot(subset(house,house$year %in% c(1974, 1994,2006,2010)),aes(x=dpres,y=dv,color=dem_seat,label=district)) + geom_point(shape=1) + geom_smooth(method=&#39;lm&#39;,SE=T,color=&quot;black&quot;) + theme_minimal() + scale_color_manual(&quot;Seat Partisanship&quot;,values=c(&quot;red&quot;,&quot;blue&quot;)) + scale_x_continuous(&quot;District Two-Party Vote Share Won by the Democratic Presidential Candidate&quot;,breaks=seq(0,100,10)) + scale_y_continuous(&quot;District Two-Party Vote Share Won \nby the Democratic House Candidate&quot;,breaks=seq(0,100,25)) + ggtitle(&quot;Scatterplot of Democratic House Vote-Share by \nDemocratic Presidential Vote-Share&quot;)  + geom_hline(yintercept = 50, colour = gray(1/2), lty = 2) + theme(legend.position=&quot;bottom&quot;) + facet_wrap(~year,ncol=2) + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_blank()) # The last part of the code takes out all gridlines.</code></pre>
 <p><img src="UCD_PS_ggplot_tutorial_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
-<p>In the next section, we will explore how to articulate the results of a simple analysis of variance. For this, we will evaluate the nature of differential item functioning (DIF) in citizen perceptions of political candidates and parties. The problem of DIF can be illustrated in the following example in which the ideological placement of the Democratic party might vary by the ideological perception of a survey respondent. For example, a conserative respondent may place the Democrats on the far-left of the scale (at a 1 on the standard liberal-conservative 7 point scale) while a liberal respondent may place the Democrats more towards the center of the scale (at a 3 or so on the standard liberal-conservative scale). While methods, such as Aldrich-McKelvey scaling, corrects for this measurement error and estimates ``true’’ ideological positions of political stimului (see <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12151">Hare et al. 2016</a> for further details on this estimation), it is important to empirically atriculate the problem.</p>
-<p>For this, we turn to the 2016 <a href="https://cces.gov.harvard.edu">Cooperative Congressional Election Study</a> to see if DIF manifests itself in the mass public.</p>
+<p>In the next section, we will explore how to articulate the results of
+a simple analysis of variance. For this, we will evaluate the nature of
+differential item functioning (DIF) in citizen perceptions of political
+candidates and parties. The problem of DIF can be illustrated in the
+following example in which the ideological placement of the Democratic
+party might vary by the ideological perception of a survey respondent.
+For example, a conserative respondent may place the Democrats on the
+far-left of the scale (at a 1 on the standard liberal-conservative 7
+point scale) while a liberal respondent may place the Democrats more
+towards the center of the scale (at a 3 or so on the standard
+liberal-conservative scale). While methods, such as Aldrich-McKelvey
+scaling, corrects for this measurement error and estimates ``true’’
+ideological positions of political stimului (see <a
+href="https://onlinelibrary.wiley.com/doi/abs/10.1111/ajps.12151">Hare
+et al. 2016</a> for further details on this estimation), it is important
+to empirically atriculate the problem.</p>
+<p>For this, we turn to the 2016 <a
+href="https://cces.gov.harvard.edu">Cooperative Congressional Election
+Study</a> to see if DIF manifests itself in the mass public.</p>
 <pre class="r"><code>cces &lt;- read.dta13(&quot;/Users/caalgara/Dropbox/CCES2016_UCD_original/common/CCES2016.dta&quot;,convert.factors = F)
 cces &lt;- subset(cces,select=c(&quot;CC16_340a&quot;,&quot;CC16_340d&quot;,&quot;CC16_340e&quot;))
 colnames(cces) &lt;- c(&quot;self_placement&quot;,&quot;hrc_placement&quot;,&quot;dt_placement&quot;)
@@ -591,7 +664,7 @@ as_tibble(cces)</code></pre>
 ##  8              4             4            1
 ##  9              6             1            5
 ## 10              5             1            6
-## # … with 64,590 more rows</code></pre>
+## # ℹ 64,590 more rows</code></pre>
 <pre class="r"><code>cces[cces == 8] &lt;- NA # Recode 8, the missing code, to missing
 cces &lt;- na.omit(cces)
 
@@ -633,31 +706,39 @@ sample_means &lt;- rbind(hrc,dt)
 
 ggplot(sample_means,aes(x=self_placement,y=mean,ymin=lower,ymax=upper,color=candidate)) + geom_pointrange() + scale_color_manual(&quot;2016 Presidential Candidate&quot;,values=c(&quot;red&quot;,&quot;blue&quot;)) +  theme_minimal() + scale_x_continuous(&quot;Respondent Liberal-Conservative Self-Placement&quot;,breaks=seq(1,7,1)) + scale_y_continuous(&quot;Mean Ideological Placement of Hillary Clinton&quot;) + ggtitle(&quot;Evaluating Differential Item Function in Citizen Ideological Placement \nof the 2016 Presidential Candidates&quot;) + theme(legend.position=&quot;bottom&quot;)</code></pre>
 <p><img src="UCD_PS_ggplot_tutorial_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
-<p>It’s hard to see the confidence intervals! Let’s do the candidates on by one to see the DIF up-close.</p>
+<p>It’s hard to see the confidence intervals! Let’s do the candidates on
+by one to see the DIF up-close.</p>
 <pre class="r"><code>ggplot(subset(sample_means,sample_means$candidate == &quot;Hillary Clinton&quot;),aes(x=self_placement,y=mean,ymin=lower,ymax=upper)) + geom_pointrange() +  theme_minimal() + scale_x_continuous(&quot;Respondent Liberal-Conservative Self-Placement&quot;,breaks=seq(1,7,1)) + scale_y_continuous(&quot;Mean Ideological Placement of Hillary Clinton&quot;) + ggtitle(&quot;Evaluating Differential Item Function in Citizen Ideological Placement \nof Hillary Clinton, 2016 CCES&quot;)</code></pre>
 <p><img src="UCD_PS_ggplot_tutorial_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
 <pre class="r"><code>ggplot(subset(sample_means,sample_means$candidate == &quot;Donald Trump&quot;),aes(x=self_placement,y=mean,ymin=lower,ymax=upper)) + geom_pointrange() +  theme_minimal() + scale_x_continuous(&quot;Respondent Liberal-Conservative Self-Placement&quot;,breaks=seq(1,7,1)) + scale_y_continuous(&quot;Mean Ideological Placement of Donald Trump&quot;) + ggtitle(&quot;Evaluating Differential Item Function in Citizen Ideological Placement \nof Donald Trump, 2016 CCES&quot;)</code></pre>
 <p><img src="UCD_PS_ggplot_tutorial_files/figure-html/unnamed-chunk-11-2.png" width="672" /></p>
-<p>Strong evidence for differential item functioning across respondent liberal-conservative self-placement! This would necessitate the need for method of correctinf for this distortion in left-right scale perceptions.</p>
+<p>Strong evidence for differential item functioning across respondent
+liberal-conservative self-placement! This would necessitate the need for
+method of correctinf for this distortion in left-right scale
+perceptions.</p>
 </div>
 <div id="plotting-model-quantities-of-interest" class="section level2">
 <h2><em>Plotting Model Quantities of Interest</em></h2>
-<p>In this section, we turn to post-estimating model quantitites of interest. First, let’s explore estimating average marginal effects from a simple regression model. We return to our House dataset and specify a pooled vote-share model of House elections from 1900-2016.</p>
+<p>In this section, we turn to post-estimating model quantitites of
+interest. First, let’s explore estimating average marginal effects from
+a simple regression model. We return to our House dataset and specify a
+pooled vote-share model of House elections from 1900-2016.</p>
 <pre class="r"><code>as_tibble(house_elexs)</code></pre>
 <pre><code>## # A tibble: 25,367 × 8
-##     year district    dv dpres dem_seat dem_incumbency dem_qual_advantage_…   dvp
-##    &lt;int&gt; &lt;chr&gt;    &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt;          &lt;dbl&gt;                &lt;dbl&gt; &lt;dbl&gt;
-##  1  1900 AL1       82.7  70.1        1              1                    1 100  
-##  2  1900 AL2       98.3  65.7       NA              0                   NA  83.3
-##  3  1900 AL3       80.2  70.8        1              1                    1  96.9
-##  4  1900 AL4       97.4  63.4       NA              0                   NA  54.9
-##  5  1900 AL5       67.0  59.7       NA              0                   NA  77.9
-##  6  1900 AL6       65.7  59.9        1              1                    1  69.8
-##  7  1900 AL7       51.8  45.9        0             -1                    0  44.6
-##  8  1900 AL8       59.7  55.2        1              1                    1  84.8
-##  9  1900 AL9       NA    62.5        1              1                   NA  83.0
-## 10  1900 AR1       72.4  67.2        1              1                    1  84.6
-## # … with 25,357 more rows</code></pre>
+##     year district    dv dpres dem_seat dem_incumbency dem_qual_advantage_tri
+##    &lt;int&gt; &lt;chr&gt;    &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt;          &lt;dbl&gt;                  &lt;dbl&gt;
+##  1  1900 AL1       82.7  70.1        1              1                      1
+##  2  1900 AL2       98.3  65.7       NA              0                     NA
+##  3  1900 AL3       80.2  70.8        1              1                      1
+##  4  1900 AL4       97.4  63.4       NA              0                     NA
+##  5  1900 AL5       67.0  59.7       NA              0                     NA
+##  6  1900 AL6       65.7  59.9        1              1                      1
+##  7  1900 AL7       51.8  45.9        0             -1                      0
+##  8  1900 AL8       59.7  55.2        1              1                      1
+##  9  1900 AL9       NA    62.5        1              1                     NA
+## 10  1900 AR1       72.4  67.2        1              1                      1
+## # ℹ 25,357 more rows
+## # ℹ 1 more variable: dvp &lt;dbl&gt;</code></pre>
 <pre class="r"><code>library(margins) # Load Thomas Leeper&#39;s Margins Package
 
 summary(model &lt;- glm(dv ~ dem_incumbency + dpres + dem_qual_advantage_tri + dem_seat + dvp, data=house_elexs)) # Estimate our pooled model</code></pre>
@@ -690,7 +771,19 @@ summary(model &lt;- glm(dv ~ dem_incumbency + dpres + dem_qual_advantage_tri + d
 ## 
 ## Number of Fisher Scoring iterations: 2</code></pre>
 <pre class="r"><code>mes &lt;- data.frame(summary(margins(model, change=&quot;dydx&quot;, vcov.=vcovHC(model, &quot;HC3&quot;))))</code></pre>
-<p>Leeper’s <a href="https://github.com/leeper/margins">“margins”</a> command allows us to look at the average marginal effect of our covariates, in this case incumbency (<span class="math inline">\(\texttt{dem_incumbency}\)</span>), district partisanship (<span class="math inline">\(\texttt{dpres}\)</span>), candidate quality ((<span class="math inline">\(\texttt{dem_qual_advantage_tri}\)</span>)), seat partisanship (<span class="math inline">\(\texttt{dem_seat}\)</span>), and previous district election vote share (<span class="math inline">\(\texttt{dem_seat}\)</span>). Let’s use <span class="math inline">\(\texttt{ggplot}\)</span> to create a nice coefficient plot articulating average marginal effects of our key variables.</p>
+<p>Leeper’s <a href="https://github.com/leeper/margins">“margins”</a>
+command allows us to look at the average marginal effect of our
+covariates, in this case incumbency (<span
+class="math inline">\(\texttt{dem_incumbency}\)</span>), district
+partisanship (<span class="math inline">\(\texttt{dpres}\)</span>),
+candidate quality ((<span
+class="math inline">\(\texttt{dem_qual_advantage_tri}\)</span>)), seat
+partisanship (<span class="math inline">\(\texttt{dem_seat}\)</span>),
+and previous district election vote share (<span
+class="math inline">\(\texttt{dem_seat}\)</span>). Let’s use <span
+class="math inline">\(\texttt{ggplot}\)</span> to create a nice
+coefficient plot articulating average marginal effects of our key
+variables.</p>
 <pre class="r"><code>head(mes)</code></pre>
 <pre><code>##                   factor        AME          SE         z             p
 ## 1         dem_incumbency  3.5883609 0.250843172 14.305197  2.030632e-46
@@ -710,7 +803,13 @@ mes$factor &lt;- factor(mes$factor)
 
 ggplot(mes,aes(x=factor,y=AME,ymin=lower,ymax=upper,group=factor,shape=factor)) + theme_minimal() + geom_errorbar(width=0.2,size=1) + geom_point(size=3, fill=&quot;white&quot;,position= position_dodge(width=1.0)) + scale_x_discrete(&quot;&quot;) + scale_shape_manual(&quot;&quot;,values=c(21,21,21,21,21)) + theme(legend.position=&quot;none&quot;) + coord_flip() + geom_hline(yintercept = 0, colour = gray(1/2), lty = 2) + scale_y_continuous(&quot;Average Marginal Effect&quot;) + ggtitle(&quot;Average Marginal Effect of Model Covarates on House Election Vote Shares&quot;)</code></pre>
 <p><img src="UCD_PS_ggplot_tutorial_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
-<p>Of course, election dynamics have changed over time and it may be inapproriate to specify a pooled model. Some work argues that the effect of incumbency and state partisanship, in particular, on House election outcomes have varied as elections move from candidate-centered to partisan-centered contexts. Let’s estimate our model yearly to explore these two specific dynamics, incumbency and state partisanship, and how they vary over time.</p>
+<p>Of course, election dynamics have changed over time and it may be
+inapproriate to specify a pooled model. Some work argues that the effect
+of incumbency and state partisanship, in particular, on House election
+outcomes have varied as elections move from candidate-centered to
+partisan-centered contexts. Let’s estimate our model yearly to explore
+these two specific dynamics, incumbency and state partisanship, and how
+they vary over time.</p>
 <pre class="r"><code>mes_yearly &lt;- list()
 for(i in seq(1900,2016,2)){
   x &lt;- subset(house,house$year == i)
@@ -743,7 +842,10 @@ ggplot(subset(mes_yearly,mes_yearly$factor %in% c(&quot;Incumbency Advantage&quo
 <p><img src="UCD_PS_ggplot_tutorial_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
 <pre class="r"><code>ggplot(subset(mes_yearly,mes_yearly$factor %in% c(&quot;District Partisanship&quot;)),aes(x=election_year,y=AME,ymin=lower,ymax=upper)) + geom_pointrange() + theme_minimal() + ggtitle(&quot;Effect of District Partisanship on House Election Outcomes from 1900-2016&quot;) + scale_x_continuous(&quot;&quot;,breaks=seq(1900,2016,10)) + geom_smooth(method=&quot;loess&quot;) + geom_hline(yintercept = 0, colour = gray(1/2), lty = 2)</code></pre>
 <p><img src="UCD_PS_ggplot_tutorial_files/figure-html/unnamed-chunk-15-2.png" width="672" /></p>
-<p>Now let’s turn to logits! Let’s extract some predicted probabilities! For this example, we turn to investigating the relationship between income, education, and the probability of turning out to vote using data from the 2014 Cooperative Congressional Election Study.</p>
+<p>Now let’s turn to logits! Let’s extract some predicted probabilities!
+For this example, we turn to investigating the relationship between
+income, education, and the probability of turning out to vote using data
+from the 2014 Cooperative Congressional Election Study.</p>
 <pre class="r"><code>as_tibble(resources)</code></pre>
 <pre><code>## # A tibble: 56,200 × 6
 ##    weight cdid  turnout contribute income education           
@@ -758,7 +860,7 @@ ggplot(subset(mes_yearly,mes_yearly$factor %in% c(&quot;Incumbency Advantage&quo
 ##  8  0.635 13         NA         NA      7 2-year              
 ##  9  2.11  20         NA         NA     NA High school graduate
 ## 10  0.308 8           1          1     10 Post-grad           
-## # … with 56,190 more rows</code></pre>
+## # ℹ 56,190 more rows</code></pre>
 <pre class="r"><code># Turnout ~ Education
 
 model &lt;- glm(turnout ~ education, data=resources, weights=weight, family = binomial(link = &quot;logit&quot;))
@@ -775,7 +877,9 @@ predict &lt;- data.frame(effect(&quot;income&quot;, se=TRUE, mod = model, confid
 
 ggplot(data= predict, mapping=aes(x=income, y=fit)) + geom_line(aes(x = income, y = fit), size = 0.50) + geom_ribbon(aes(ymin=lower, ymax=upper), alpha = .2) + scale_colour_manual(&quot;&quot;,values=&quot;black&quot;) + scale_fill_manual(&quot;&quot;,values=&quot;grey12&quot;) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + scale_x_continuous(limits=c(0,15), breaks=c(0,15), labels=c(&quot;Less than \n$10,000&quot;, &quot;Greater than \n$500,000&quot;), &quot;Voter Income&quot;) + scale_y_continuous(limits=c(0.7,1.0), breaks=seq(0.7,1.0,0.05), &quot;Probability of Turning Out to Vote&quot;) + ggtitle(&quot;Probability of Voter Turnout by Income Level in the 2014 Midterm Elections&quot;)</code></pre>
 <p><img src="UCD_PS_ggplot_tutorial_files/figure-html/unnamed-chunk-17-2.png" width="672" /></p>
-<p>What if we want to specify a logistic regression model positing that the effect of education on turning out to vote is conditioned by income? Let’s explore that in the following code.</p>
+<p>What if we want to specify a logistic regression model positing that
+the effect of education on turning out to vote is conditioned by income?
+Let’s explore that in the following code.</p>
 <pre class="r"><code>resources$education &lt;- factor(resources$education,levels=c(&quot;No HS&quot;,&quot;High school graduate&quot;,&quot;Some college&quot;,&quot;2-year&quot;,&quot;4-year&quot;,&quot;Post-grad&quot;))
 
 model &lt;- glm(turnout ~ education*income, data=resources, weights=weight, family = binomial(link = &quot;logit&quot;))
@@ -792,7 +896,15 @@ head(predict)</code></pre>
 
 ggplot(predict, aes(x=income, y=fit, group=education,fill=education,linetype=education)) + geom_line(aes(x = income, y = fit), size = 0.50) + geom_ribbon(aes(ymin=lower, ymax=upper), alpha = .2) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + scale_x_continuous(limits=c(0,15), breaks=c(0,15), labels=c(&quot;Less than \n$10,000&quot;, &quot;Greater than \n$500,000&quot;), &quot;Voter Income&quot;) + scale_y_continuous(limits=c(0.5,1.0), breaks=seq(0.5,1.0,0.05), &quot;Probability of Turning Out to Vote&quot;) + ggtitle(&quot;Probability of Voter Turnout by Income &amp; Education Level in the 2014 \nMidterm Elections&quot;) + theme(legend.position=&quot;bottom&quot;, legend.box.just = &quot;left&quot;, legend.key.size = unit(1,&quot;line&quot;), legend.key = element_rect(size = 0, color = &#39;white&#39;), legend.text.align = 0, legend.box = &quot;horizontal&quot;) + scale_fill_discrete(&quot;&quot;) + scale_linetype_discrete(&quot;&quot;)</code></pre>
 <p><img src="UCD_PS_ggplot_tutorial_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
-<p>Among those with no HS diploma, income has a pronounced positive effect on the probability of turning out to vote. For the other education categories, not so much, especially among those with a post-grad. We can also use the code to estimate predicted probabilities for models with categorical dependent variables. Let’s explore this by specifying a multinomial logistic regression evaluating the effect of social network poltiical disagreement on a citizen’s approval evaluation of President Barack Obama in 2016. For this analysis, we will use data from the 2016 UCD &amp; UGA modeul.</p>
+<p>Among those with no HS diploma, income has a pronounced positive
+effect on the probability of turning out to vote. For the other
+education categories, not so much, especially among those with a
+post-grad. We can also use the code to estimate predicted probabilities
+for models with categorical dependent variables. Let’s explore this by
+specifying a multinomial logistic regression evaluating the effect of
+social network poltiical disagreement on a citizen’s approval evaluation
+of President Barack Obama in 2016. For this analysis, we will use data
+from the 2016 UCD &amp; UGA modeul.</p>
 <pre class="r"><code>library(nnet)
 summary(model &lt;- multinom(pres_approve_clean_factor ~ dem_pid3 + hetero, data=cces, weights=weight, hess=T))</code></pre>
 <pre><code>## # weights:  16 (9 variable)
@@ -845,11 +957,29 @@ predict$approval &lt;- factor(predict$approval,levels=c(&quot;Strongly Disapprov
 
 ggplot(data= predict, mapping=aes(x=hetero, y=fit)) + geom_line(aes(x = hetero, y = fit), size = 0.50) + geom_ribbon(aes(ymin=lower, ymax=upper), alpha = .2) + scale_colour_manual(&quot;&quot;,values=&quot;black&quot;) + scale_fill_manual(&quot;&quot;,values=&quot;grey12&quot;) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + scale_x_continuous(limits=c(-1,1), breaks=c(-1,0,1), labels=c(&quot;GOP&quot;, &quot;Neutral&quot;,&quot;Dem&quot;), &quot;Partisan Network Homogenity&quot;) + scale_y_continuous(limits=c(0,0.70), breaks=seq(0,0.70,0.10), &quot;Predicted Probability of Presidential Approval&quot;) + geom_rug(data=cces, aes(x=hetero, y=1),color = &quot;gray30&quot;, alpha=.5, size = 0.25, position=&#39;jitter&#39;) + ggtitle(&quot;Probability of Approving of President Obama by Partisan Network Homogenity&quot;) + facet_wrap(~approval, ncol = 2, scales = &quot;free_y&quot;) </code></pre>
 <p><img src="UCD_PS_ggplot_tutorial_files/figure-html/unnamed-chunk-20-1.png" width="672" /></p>
-<p>The results of the multinomial logit model are stirking. After accounting for a respondent’s partisanship, being in a social network full of Democrats lowers the probability of disapproving of Obama relative to all other categories of approval. Moreover, being in a political social network full of Democrats increases the probability of approval relative to all other categories of approval. This is one way in which you can specify a multinomial logit, extract the estimates, and use <span class="math inline">\(\texttt{ggplot}\)</span> to articulate the results.</p>
+<p>The results of the multinomial logit model are stirking. After
+accounting for a respondent’s partisanship, being in a social network
+full of Democrats lowers the probability of disapproving of Obama
+relative to all other categories of approval. Moreover, being in a
+political social network full of Democrats increases the probability of
+approval relative to all other categories of approval. This is one way
+in which you can specify a multinomial logit, extract the estimates, and
+use <span class="math inline">\(\texttt{ggplot}\)</span> to articulate
+the results.</p>
 </div>
-<div id="short-introduction-into-ggplot-add-ons-for-plotting-maps-networks" class="section level2">
-<h2><em>Short Introduction into ggplot add-ons for plotting Maps &amp; Networks</em></h2>
-<p>We can also use <span class="math inline">\(\texttt{ggplot}\)</span> to make nice maps and convey the structure of social networks. Let’s start with making a map of 2016 presidential approval by state. These data are dynamic MRP estimates derived from the 2016 CCES sample. For more information on how to estimate group-level political attitudes using dynamic MRP model estimation, see <a href="http://caughey.mit.edu/sites/default/files/documents/CaugheyWarshaw_DIRT140803.pdf">Caughey &amp; Warshaw 2015</a>.</p>
+<div
+id="short-introduction-into-ggplot-add-ons-for-plotting-maps-networks"
+class="section level2">
+<h2><em>Short Introduction into ggplot add-ons for plotting Maps &amp;
+Networks</em></h2>
+<p>We can also use <span class="math inline">\(\texttt{ggplot}\)</span>
+to make nice maps and convey the structure of social networks. Let’s
+start with making a map of 2016 presidential approval by state. These
+data are dynamic MRP estimates derived from the 2016 CCES sample. For
+more information on how to estimate group-level political attitudes
+using dynamic MRP model estimation, see <a
+href="http://caughey.mit.edu/sites/default/files/documents/CaugheyWarshaw_DIRT140803.pdf">Caughey
+&amp; Warshaw 2015</a>.</p>
 <p>For this exercise, we need to load a shapefile into R.</p>
 <pre class="r"><code># Load the shapefile that has the data to plot maps in ggplot!
 # Let&#39;s play around with mapping
@@ -868,19 +998,19 @@ state_shp &lt;- readOGR(&quot;/Users/caalgara/Desktop/carlos_school/PhD_UC Davis
 
 as_tibble(state_shp@data) # Dataframe embedded in the Spatial Polygons Data Frame</code></pre>
 <pre><code>## # A tibble: 52 × 9
-##    STATEFP STATENS  AFFGEOID    GEOID STUSPS NAME        LSAD  ALAND    AWATER  
-##    &lt;chr&gt;   &lt;chr&gt;    &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt;   
-##  1 23      01779787 0400000US23 23    ME     Maine       00    7988522… 1174875…
-##  2 15      01779782 0400000US15 15    HI     Hawaii      00    1663410… 1177769…
-##  3 04      01779777 0400000US04 04    AZ     Arizona     00    2941985… 1027346…
-##  4 05      00068085 0400000US05 05    AR     Arkansas    00    1347715… 2960191…
-##  5 10      01779781 0400000US10 10    DE     Delaware    00    5047194… 1398720…
-##  6 13      01705317 0400000US13 13    GA     Georgia     00    1491698… 4741100…
-##  7 27      00662849 0400000US27 27    MN     Minnesota   00    2062322… 1892917…
-##  8 02      01785533 0400000US02 02    AK     Alaska      00    1477946… 2453904…
-##  9 06      01779778 0400000US06 06    CA     California  00    4035011… 2046671…
-## 10 11      01702382 0400000US11 11    DC     District o… 00    1583649… 18633403
-## # … with 42 more rows</code></pre>
+##    STATEFP STATENS  AFFGEOID    GEOID STUSPS NAME             LSAD  ALAND AWATER
+##    &lt;chr&gt;   &lt;chr&gt;    &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt;            &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; 
+##  1 23      01779787 0400000US23 23    ME     Maine            00    7988… 11748…
+##  2 15      01779782 0400000US15 15    HI     Hawaii           00    1663… 11777…
+##  3 04      01779777 0400000US04 04    AZ     Arizona          00    2941… 10273…
+##  4 05      00068085 0400000US05 05    AR     Arkansas         00    1347… 29601…
+##  5 10      01779781 0400000US10 10    DE     Delaware         00    5047… 13987…
+##  6 13      01705317 0400000US13 13    GA     Georgia          00    1491… 47411…
+##  7 27      00662849 0400000US27 27    MN     Minnesota        00    2062… 18929…
+##  8 02      01785533 0400000US02 02    AK     Alaska           00    1477… 24539…
+##  9 06      01779778 0400000US06 06    CA     California       00    4035… 20466…
+## 10 11      01702382 0400000US11 11    DC     District of Col… 00    1583… 18633…
+## # ℹ 42 more rows</code></pre>
 <pre class="r"><code>as_tibble(state_shp@data$NAME) # What type of states are in the file? We don&#39;t want territories!</code></pre>
 <pre><code>## # A tibble: 52 × 1
 ##    value               
@@ -895,7 +1025,7 @@ as_tibble(state_shp@data) # Dataframe embedded in the Spatial Polygons Data Fram
 ##  8 Alaska              
 ##  9 California          
 ## 10 District of Columbia
-## # … with 42 more rows</code></pre>
+## # ℹ 42 more rows</code></pre>
 <pre class="r"><code>state_shp &lt;- subset(state_shp,state_shp@data$NAME != &quot;Puerto Rico&quot;)
 state_shp &lt;- subset(state_shp,state_shp@data$NAME != &quot;Alaska&quot;)
 state_shp &lt;- subset(state_shp,state_shp@data$NAME != &quot;Hawaii&quot;)
@@ -905,7 +1035,10 @@ state_shp &lt;- subset(state_shp,state_shp@data$NAME != &quot;District of Columb
 
 ggplot(state_shp, aes(x = long, y = lat, group = group)) + geom_polygon(fill = &quot;gray&quot;, color = &quot;black&quot;) + theme_void() + coord_equal() + coord_fixed(1.3)</code></pre>
 <p><img src="UCD_PS_ggplot_tutorial_files/figure-html/unnamed-chunk-21-1.png" width="672" /></p>
-<p>Now that we have successfully loaded our shapefile containing our mapping data into R, let’s merge some state presidential approval data and make a map showing the spatial variation in approval for President Barack Obama in 2016.</p>
+<p>Now that we have successfully loaded our shapefile containing our
+mapping data into R, let’s merge some state presidential approval data
+and make a map showing the spatial variation in approval for President
+Barack Obama in 2016.</p>
 <pre class="r"><code>state_pres_approval &lt;- read.dta13(&quot;/Users/caalgara/Desktop/carlos_school/PhD_UC Davis/Dissertation Project/Ch2_Electoral_Implications_Approval/MRP_Estimation/state_presidential_approval_dynamic_mrp_estimates.dta&quot;) # Load the data
 
 as_tibble(state_pres_approval) # Get a glimpse of the data structure. These are Dynamic MRP state-level estimates (see: Caughey &amp; Warshaw (2015) for technical details on the Dynamic MRP model) of presidential approval from 2008-2017. </code></pre>
@@ -922,7 +1055,7 @@ as_tibble(state_pres_approval) # Get a glimpse of the data structure. These are 
 ##  8 theta_bar AK     2015 0.421 0.0531  0.414 0.334 0.498
 ##  9 theta_bar AK     2016 0.495 0.0538  0.503 0.411 0.559
 ## 10 theta_bar AK     2017 0.434 0.0482  0.443 0.368 0.512
-## # … with 500 more rows</code></pre>
+## # ℹ 500 more rows</code></pre>
 <pre class="r"><code># Explore map making descriptives. Let&#39;s make a plot of presidential approval for December 2017.
 
 # Make a percentage
@@ -931,7 +1064,7 @@ state_pres_approval$state_pres_approval_percent &lt;- state_pres_approval$median
 
 as_tibble(state_pres_approval) # Check to see if it worked. Clearly it did!</code></pre>
 <pre><code>## # A tibble: 510 × 9
-##    param     state  year  mean     sd median q_025 q_975 state_pres_approval_pe…
+##    param     state  year  mean     sd median q_025 q_975 state_pres_approval_p…¹
 ##    &lt;chr&gt;     &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;                   &lt;dbl&gt;
 ##  1 theta_bar AK     2008 0.396 0.0549  0.403 0.309 0.490                    40.3
 ##  2 theta_bar AK     2009 0.443 0.0403  0.449 0.376 0.495                    44.9
@@ -943,7 +1076,8 @@ as_tibble(state_pres_approval) # Check to see if it worked. Clearly it did!</cod
 ##  8 theta_bar AK     2015 0.421 0.0531  0.414 0.334 0.498                    41.4
 ##  9 theta_bar AK     2016 0.495 0.0538  0.503 0.411 0.559                    50.3
 ## 10 theta_bar AK     2017 0.434 0.0482  0.443 0.368 0.512                    44.3
-## # … with 500 more rows</code></pre>
+## # ℹ 500 more rows
+## # ℹ abbreviated name: ¹​state_pres_approval_percent</code></pre>
 <pre class="r"><code>approval_2016 &lt;- subset(state_pres_approval,state_pres_approval$year == 2016) # Subet our data
 
 # Let&#39;s merge our data onto the map!
@@ -960,33 +1094,39 @@ state_shp.df &lt;- merge(state_shp.df,approval_2016,by=c(&quot;state&quot;))
 
 ggplot(state_shp.df, aes(x = long, y = lat, group = group,fill=state_pres_approval_percent),color=&quot;white&quot;) + geom_polygon(color = &quot;black&quot;) + theme_void() + scale_fill_gradient(&quot;Presidential Approval&quot;,low = &#39;red&#39;, high = &#39;blue&#39;) + ggtitle(&quot;Presidential Approval in the U.S. States, 2016&quot;)  + coord_equal() + coord_fixed(1.3)</code></pre>
 <p><img src="UCD_PS_ggplot_tutorial_files/figure-html/unnamed-chunk-22-1.png" width="672" /></p>
-<p>As one can see, we have some pretty good face validity with our MRP estimates. First, President Obama is popular where you would expect him to be in states such as California, New York, and Vermont. Moreover, he is chronically unpopular where you would expect him to be, in states such as West Virginia and Idaho.</p>
-<p>We can also use R to create social network graphs. In the following example, we will visualize the cosponsorship network on programmatic issues in the 113th United States Senate. Let’s explore our data.</p>
+<p>As one can see, we have some pretty good face validity with our MRP
+estimates. First, President Obama is popular where you would expect him
+to be in states such as California, New York, and Vermont. Moreover, he
+is chronically unpopular where you would expect him to be, in states
+such as West Virginia and Idaho.</p>
+<p>We can also use R to create social network graphs. In the following
+example, we will visualize the cosponsorship network on programmatic
+issues in the 113th United States Senate. Let’s explore our data.</p>
 <pre class="r"><code>library(network)
 library(igraph)
 library(ggnet)
 
 as_tibble(x) # This network data is in dyadic form, where each row indicates a pair of Senators.</code></pre>
 <pre><code>## # A tibble: 4,802 × 43
-##    state_senator_j state_senator_i senator_j senator_i number_cosponso… congress
-##    &lt;chr&gt;           &lt;chr&gt;               &lt;int&gt;     &lt;int&gt;            &lt;int&gt;    &lt;int&gt;
-##  1 AK              AL                   1898      1548               22      113
-##  2 AK              AL                   1898      1049                9      113
-##  3 AK              AL                   1694      1548               28      113
-##  4 AK              AL                   1694      1049               13      113
-##  5 AK              AR                   1898      1687               43      113
-##  6 AK              AR                   1694      1701               37      113
-##  7 AK              AR                   1898      1701               54      113
-##  8 AK              AR                   1694      1687               47      113
-##  9 AK              AZ                   1694      1633               22      113
-## 10 AK              AZ                   1694       754               27      113
-## # … with 4,792 more rows, and 37 more variables: icpsr_id_senator_i &lt;int&gt;,
+##    state_senator_j state_senator_i senator_j senator_i number_cosponsored_bill…¹
+##    &lt;chr&gt;           &lt;chr&gt;               &lt;int&gt;     &lt;int&gt;                     &lt;int&gt;
+##  1 AK              AL                   1898      1548                        22
+##  2 AK              AL                   1898      1049                         9
+##  3 AK              AL                   1694      1548                        28
+##  4 AK              AL                   1694      1049                        13
+##  5 AK              AR                   1898      1687                        43
+##  6 AK              AR                   1694      1701                        37
+##  7 AK              AR                   1898      1701                        54
+##  8 AK              AR                   1694      1687                        47
+##  9 AK              AZ                   1694      1633                        22
+## 10 AK              AZ                   1694       754                        27
+## # ℹ 4,792 more rows
+## # ℹ abbreviated name: ¹​number_cosponsored_bills_programmatic
+## # ℹ 38 more variables: congress &lt;int&gt;, icpsr_id_senator_i &lt;int&gt;,
 ## #   NameFull_senator_i &lt;chr&gt;, Class_senator_i &lt;int&gt;, Party_senator_i &lt;int&gt;,
 ## #   ComC_senator_i &lt;int&gt;, ComR_senator_i &lt;int&gt;, DW1_senator_i &lt;dbl&gt;,
 ## #   Gender_senator_i &lt;int&gt;, Majority_senator_i &lt;int&gt;,
-## #   bioguide_id_senator_i &lt;chr&gt;, seniority_num_of_congresses_senator_i &lt;int&gt;,
-## #   election_year_senator_i &lt;int&gt;, senator_up_for_relection_senator_i &lt;int&gt;,
-## #   icpsr_id_senator_j &lt;int&gt;, NameFull_senator_j &lt;chr&gt;, …</code></pre>
+## #   bioguide_id_senator_i &lt;chr&gt;, seniority_num_of_congresses_senator_i &lt;int&gt;, …</code></pre>
 <pre class="r"><code>adj &lt;- graph.data.frame(x[,c(8,21,43)],directed=T) # Let&#39;s create a network object! What we want to extract is a dataframe where the first column is Senator i, the second column is Senator J, and the last column is a binary variable indicating
 adj &lt;- get.adjacency(adj,attr=&#39;edge&#39;,sparse=FALSE) # Convert the edge list to an adjacency matrix
 x_ergm &lt;- network(adj, matrix.type = &quot;adjacency&quot;, ignore.eval = FALSE,directed = F,weighted = F,names.eval=&quot;edge&quot;) # Convert the adjacency matrix to a network object
@@ -1042,7 +1182,8 @@ network.vertex.names(x_ergm)</code></pre>
 <pre class="r"><code>x_ergm%v%&#39;party&#39;&lt;- party$Party_senator # Merge the party attributes for each Senator!
 x_ergm%v%&#39;state&#39;&lt;- party$State_senator # Merge the state attributes for each Senator!
 x_ergm%v%&quot;color&quot; = ifelse(x_ergm%v%&quot;party&quot; == &quot;R&quot;, &quot;red&quot;, &quot;blue&quot;) # Create color indicators!</code></pre>
-<p>Now, let’s create three network graphs using various labels for our nodes!</p>
+<p>Now, let’s create three network graphs using various labels for our
+nodes!</p>
 <pre class="r"><code>ggnet2(x_ergm, label = &quot;state&quot;, color = &quot;grey15&quot;, label.color = &quot;color&quot;,alpha = 0, size = 0, edge.alpha = 0.5,mode = &quot;kamadakawai&quot;,label.size = 3) + ggtitle(&quot;113th U.S. Senate Particularistic Cosponsorship Network&quot;)</code></pre>
 <p><img src="UCD_PS_ggplot_tutorial_files/figure-html/unnamed-chunk-25-1.png" width="672" /></p>
 <pre class="r"><code>ggnet2(x_ergm, label = &quot;vertex.names&quot;, color = &quot;grey15&quot;, label.color = &quot;color&quot;,alpha = 0, size = 0, edge.alpha = 0.5,mode = &quot;kamadakawai&quot;,label.size = 3) + ggtitle(&quot;113th U.S. Senate Particularistic Cosponsorship Network&quot;)</code></pre>
@@ -1060,7 +1201,7 @@ x_ergm%v%&quot;color&quot; = ifelse(x_ergm%v%&quot;party&quot; == &quot;R&quot;,
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -1078,7 +1219,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
