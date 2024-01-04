@@ -90,6 +90,11 @@ Thank you for visiting my media coverage page! Much of my research focuses on th
 <br/>
 
 ### ***VIDEO + AUDIO MEDIA***  
+* [Civics 101 (NHPR): Expulsion from Congress](https://www.civics101podcast.org/civics-101-episodes/expulsion)  
+
+<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/us/podcast/expulsion-from-congress/id1195657423?i=1000640301295"></iframe>
+
+
 * [Civics 101 (NHPR): Term Limits for Congress?](https://www.civics101podcast.org/civics-101-episodes/termlimitsforcongress)  
 
 <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/us/podcast/term-limits-for-congress/id1195657423?i=1000636760166"></iframe>
