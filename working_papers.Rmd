@@ -56,6 +56,18 @@ gtag('config', 'UA-100362112-1');
   <br/>
   <br/>
   <center>
+*Relationship Between Majority Electoral Support (t) & Party Passage Support (t+1), 1991-2019* <br> 
+![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/t3_h1_linear_predictions.png "Relationship Between Majority Electoral Support & Minority Passage Support"){ width=70% }
+  </center><br/>  
+  <center> **The Electoral Costs of Legislative Action: Dynamic Partisanship and Agenda Control in the U.S. Congress** </center>
+  <center> **With [Josh Ryan](https://joshmryan.github.io), Utah State University** </center><br/>
+  <center> ***$\star$[Manuscript Published in the Journal of Political Institutions & Political Economy]() $\star$ <br/> [Publication Link](https://www.nowpublishers.com/article/Details/PIP-0089) $\star$[Manuscript Data Materials](mailto:carlos.algara@cgu.edu)***<br/>
+  <center> ***$\star$[Research featured as part of 30th Anniversary Special Issue Commerating The Legislative Leviathan (Cox & McCubbins 1993)](https://www.nowpublishers.com/PIP?vol=4)$\star$***
+  </center><br/>
+          *Abstract:* Members and congressional parties go to great lengths to signal bipartisanship to voters, believing they will be electorally rewarded for cooperating with the other party. However, the House majority party also has an incentive to enact its preferred, party-oriented policy program and obtaining minority party support requires legislative compromise. We theorize that electorally strong majority parties are relatively unconcerned about their public support, and are thus more willing to pass partisan bills. When the majority party’s public support is tenuous, it moderates bills to receive minority support and reap electoral benefits from bipartisanship. Using time-series data of public opinion polling and measures of bipartisanship in Congress, we find support for this claim. We also find that salient bills increase the strength of the relationship between majority party electoral standing and bill extremity. Finally, our results demonstrate the extent to which the majority party is electorally risk averse; proximity to an election does not change the relationship between electoral standing and bipartisanship on passage. Our results speak to the ability of the majority party to set the level of bipartisanship within the House and the inherent trade-off between dramatic policy change and public support.    
+  <br/>
+  <br/>
+  <center>
 *The Decline of Quality Challengers in U.S. House \& Senate Elections* <br> 
 ![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/quality_challengers.png "Quality Challengers"){ width=70% }
   </center><br/>  
@@ -72,7 +84,7 @@ gtag('config', 'UA-100362112-1');
 ![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/jrep_attitudes.png "Scaled Latent Racial Attitudes"){ width=70% }
   </center><br/>  
   <center> **Race, Partisanship, and Democratic Politics: The Role of Racial Attitudes in Motivating White Americans’ Electoral Participation** </center>
-  <center> **With [Isaac Hale](https://simmonsdj.com), Assistant Professor, Occidental College** </center><br/>
+  <center> **With [Isaac Hale](https://isaacdhale.com), Occidental College** </center><br/>
   <center> ***$\star$[Manuscript Published in the Journal of Race, Ethnicity, and Politics](https://doi.org/10.1017/rep.2023.16) $\star$ <br/> [Publication Link](https://doi.org/10.1017/rep.2023.16) $\star$[Manuscript Data Materials](mailto:carlos.algara@cgu.edu)***   <br/>
 <br/>
           *Abstract:* While there is considerable research on the role racial attitudes play in shaping white political preferences, relatively little is known about how racial attitudes influence white participation in democratic politics. We present a model examining the relationship between racial attitudes and political participation in the 2016, 2018, and 2020 U.S. national elections. Using a variety of measures of political participation, our analysis presents a clear finding: the direction of the relationship between latent conservative racial attitudes and political participation is asymmetrical among partisan sub-groups, with conservative racial attitudes motivating participation among white Republicans and, to a greater degree, depressing participation among white Democrats. This finding has stark implications for how racialized appeals are likely to be deployed in an era of increasing affective partisan polarization.  
@@ -83,7 +95,7 @@ gtag('config', 'UA-100362112-1');
 ![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/lucid_conjoint_full_sample_effects.png "Conjoint Experimental Causal Effects"){ width=70% }
   </center><br/>  
   <center> **Incentivizing COVID-19 Vaccination in a Polarized and Partisan United States** </center>
-  <center> **With [Daniel Simmons](https://simmonsdj.com), Assistant Professor, University of Wisconsin-Eau Claire** </center><br/>
+  <center> **With [Daniel Simmons](https://simmonsdj.com), University of Wisconsin-Eau Claire** </center><br/>
   <center> ***$\star$[Manuscript Published in Journal of Health Politics, Policy, and Law](https://doi.org/10.1215/03616878-10637717) $\star$ <br/> [Publication Link](https://doi.org/10.1215/03616878-10637717) $\star$[Manuscript Data Materials](mailto:carlos.algara@cgu.edu)***   <br/>
     <center> ***$\star$[Research featured in The Washington Post (August 25, 2021)](https://www.washingtonpost.com/politics/2021/08/25/little-20-cash-might-persuade-reluctant-get-vaccinated-our-research-finds/)$\star$***
   </center><br/>
@@ -95,7 +107,7 @@ gtag('config', 'UA-100362112-1');
 ![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/algara_zur.jpeg "By-Country Ideal Points & Party Positions"){ width=70% }
   </center><br/>  
   <center> **The Downsian Roots of Affective Polarization** </center>
-  <center> **With [Roi Zur](https://www.roizur.com), Assistant Professor (Lecturer), University of Essex** </center><br/>
+  <center> **With [Roi Zur](https://www.roizur.com), University of Essex** </center><br/>
   <center> ***$\star$[Manuscript Published in Electoral Studies](https://www.sciencedirect.com/science/article/pii/S0261379423000033) $\star$ <br/> [Publication Link](https://www.sciencedirect.com/science/article/pii/S0261379423000033) $\star$[Manuscript Data Materials](mailto:carlos.algara@cgu.edu)***   <br/>
 <br/>
           *Abstract:* A growing literature studies the relationship between ideological and affective polarization. By taking a Downsian approach to affective polarization we contribute to this literature and demonstrating that affective polarization is driven by congruence between citizens and their party, relative to other parties, in the general liberal-conservative space and across a host of salient issue domains. We find robust support for our theory using individual-level national election survey data from the United States, United Kingdom, Germany, and Finland. Moreover, we find that ideological differences inform affective polarization independently from partisan identifications and that they drive more out-party animosity than in-party affinity. These findings have implications towards a more unified understanding of the citizen determinants of affective polarization and the role ideology plays in shaping the views held by partisans across democracies.  
@@ -109,7 +121,7 @@ gtag('config', 'UA-100362112-1');
 <center> **With [Sharif Amlani](https://www.sharifamlani.com/home), PhD Candidate, Political Science, University of California, Davis** </center>
   <center> **With [Samuel Collitt](), PhD Candidate, Department of Political Science, University of California, Davis** </center>
   <center> **With [Sara Kazemian](https://www.sarakazemian.com/home), PhD Candidate, Department of Political Science, University of California, Davis** </center>
-  <center> **& [Isaac Hale](https://www.isaacdhale.com), Assistant Professor, Department of Political Science, Occidental College** </center><br/>
+  <center> **& [Isaac Hale](https://www.isaacdhale.com), Occidental College** </center><br/>
   <center> ***$\star$[Manuscript Published in Political Behavior]() $\star$ <br/> [Publication Link](https://link.springer.com/article/10.1007/s11109-022-09826-x) $\star$[Manuscript Data Materials](https://doi.org/10.7910/DVN/RX2WBG)***   <br/>
 <br/>
   <center> ***$\star$[Research featured in London School of Economics United States Politics \& Policy Blog Post (October 31, 2022)](https://tinyurl.com/yc2jn88s)$\star$***
@@ -124,7 +136,7 @@ gtag('config', 'UA-100362112-1');
   <center> **Assessing the effectiveness of COVID-19 vaccine lotteries: A cross-state synthetic control methods approach** </center>
   <center> **With [Sam Fuller](ps.ucdavis.edu), PhD Candidate, Department of Political Science, University of California, Davis** </center>
   <center> **With [Sara Kazemian](https://www.sarakazemian.com/home), PhD Candidate, Department of Political Science, University of California, Davis** </center>
-<center> **& [Daniel J. Simmons](https://simmonsdj.com), Assistant Professor, Department of Political Science, Saint Michael's College** </center><br/>
+<center> **& [Daniel J. Simmons](https://simmonsdj.com), Saint Michael's College** </center><br/>
   <center> ***$\star$[Manuscript Published in PLoS One](https://journals.plos.org/plosone/article/authors?id=10.1371/journal.pone.0274374) $\star$ <br/> [Publication Link](https://journals.plos.org/plosone/article/authors?id=10.1371/journal.pone.0274374) $\star$[Manuscript Data Materials](https://doi.org/10.7910/DVN/K1XX02)***   <br/>
 <br/>
           *Abstract:* Vaccines are the most effective means at combating sickness and death caused by COVID-19. Yet, there are significant populations within the United States who are vaccine-hesitant, some due to ideological or pseudo-scientific motivations, others due to significant perceived and real costs from vaccination. Given this vaccine hesitancy, twenty state governors from May 12th to July 21st 2021 implemented some form of vaccination lottery aiming to increase low vaccination rates. In the aftermath of these programs, however, the critical question of whether these lotteries had a direct effect on vaccination remains. Previous literature on financial incentives for public health behaviors is consistent: Financial incentives significantly increase incentivized behaviors. Yet, work done specifically on state vaccine lotteries is both limited in scope and mixed in its conclusions. To help fill this gap in the literature, we use synthetic control methods to analyze all 20 states and causally identify, for eighteen states, the effects of their lotteries on both first-dose and complete vaccination rates. Within those eighteen states, we find strong evidence that all but three states’ lotteries had positive effects on first-dose vaccination. We find for complete vaccinations, however, over half the states analyzed had negative or null effects. We explore possibilities related to these mixed results including the states’ overall partisanship, vaccine hesitancy, and the size of their lotteries finding null effects for each of these explanations. Therefore, we conclude that the design of these programs is likely to blame: Every state lottery only incentivized first-doses with no additional or contingent incentive based on a second dose. Our findings suggest that the design of financial incentives is critical to their success, or failure, but generally, these programs can induce an uptake in vaccination across diverse demographic, ideological, and geographic contexts in the United States.  
@@ -146,8 +158,8 @@ gtag('config', 'UA-100362112-1');
 ![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/senate_scatterplots.png "Senate scatterplots"){ width=60% }
   </center><br/>
   <center> **Do Voters Balance Partisan Control of the Federal Government During the Partisan Era? Assessing the Case of the 2021 Georgia U.S. Senate Runoffs** </center>
-<center> **With [Isaac Hale](www.isaacdhale.com), Assistant Professor, Department of Political Science, Occidental College** </center>
-<center> **& [Cory Struthers](https://corystruthers.weebly.com), Assistant Professor, Department of Political Science, University of Georgia** </center><br/>
+<center> **With [Isaac Hale](www.isaacdhale.com), Occidental College** </center>
+<center> **& [Cory Struthers](https://corystruthers.weebly.com), Department of Political Science, University of Georgia** </center><br/>
   <center> ***$\star$[Manuscript Published in American Politics Research](https://doi.org/10.1177/1532673X211070819) $\star$ <br/> [Publication Link](https://doi.org/10.1177/1532673X211070819) $\star$[Manuscript Data Materials](mailto:carlos.algara@cgu.edu)***   <br/>
 <br/>
           *Abstract:* Recent work on American presidential elections posits that voters engage in anticipatory balancing. Anticipatory balancing predicts voters who prefer divided government will split their ticket in order to moderate collective policy outcomes by forcing agreement among institutions controlled by opposing parties. We test this theory within the case of the 2021 Georgia U.S. Senate runoffs, which solely determined whether Democrats would have unified control of the federal government by determining majority control of the Senate given preceding November victories by President-elect Biden and House Democrats. Leveraging an original survey of Georgia voters, we find no evidence of balancing within the general electorate and among partisans across differing model specifications. We confirm this lack of balancing in qualitative content analysis of voter electoral runoff intentions. We reconcile this lack of evidence for balancing to original analysis showing the unprecedented partisan nature of contemporary Senate elections since direct-election began in 1914.  
@@ -228,7 +240,7 @@ gtag('config', 'UA-100362112-1');
 </center><br/>
   <center> **The Interactive Effects of Scientific Knowledge \& Gender on COVID-19 Social Distancing Compliance** </center>
   <center> **with [Sam Fuller](http://ps.ucdavis.edu), PhD Candidate, Political Science, University of California, Davis** </center>
-  <center> **[Christopher Hare](http://www.christopherdhare.com), Assistant Professor of Political Science, University of California, Davis** </center>
+  <center> **[Christopher Hare](http://www.christopherdhare.com), University of California, Davis** </center>
   <center> **& [Sara Kazemian](https://www.sarakazemian.com/home), PhD Candidate, Political Science, University of California, Davis** </center><br/>
   <center> ***$\star$[Manuscript Published in Social Science Quarterly (2020)](https://onlinelibrary.wiley.com/doi/full/10.1111/ssqu.12894) $\star$[Publication Link](https://onlinelibrary.wiley.com/doi/full/10.1111/ssqu.12894) $\star$[Manuscript Data Materials](mailto:carlos.algara@cgu.edu)*** </center><br/>
   *Abstract:* With the onset of the 2020 COVID-19 pandemic in the United States, state governments and the federal administration were forced to craft social distancing recommendations advising the general public on how they could combat the transmission of the deadly virus. These recommendations, and sometimes orders, advised against many daily social activities such as visiting family members, restaurant dining, and sporting event attendance. Adherence to and support of these measures has been varied, with many flouting mask and group-gathering recommendations/orders. This has reduced the effectiveness of these measures and lead to virus resurgences across the U.S. In this research note, we examine the role scientific knowledge and gender play in influencing citizens' comfort and risk perceptions regarding social distancing recommendations and orders. In both the general population and within parties, we find that women with high scientific knowledge are much less comfortable breaking social distancing guidelines than their male counterparts and women with lower scientific knowledge. These findings shed light on how both knowledge and gender interact to drive (non)compliance with government policies during a public health crisis in an increasingly polarized America.  
@@ -259,7 +271,7 @@ gtag('config', 'UA-100362112-1');
 </center><br/>
   <center> **The Conditional Effects of Scientific Knowledge & Gender on Support for COVID-19 Government Containment Policies in a Partisan America** </center>
   <center> **with [Sam Fuller](http://ps.ucdavis.edu), PhD Candidate, Political Science, University of California, Davis** </center>
-  <center> **& [Christopher Hare](http://www.christopherdhare.com), Assistant Professor of Political Science, University of California, Davis** </center><br/>
+  <center> **& [Christopher Hare](http://www.christopherdhare.com), University of California, Davis** </center><br/>
   <center> ***$\star$[Manuscript Published in Politics & Gender (2020)](https://www.cambridge.org/core/journals/politics-and-gender/article/conditional-effects-of-scientific-knowledge-gender-on-support-for-covid19-government-containment-policies-in-a-partisan-america/C4AEB27D4046433749A883941AC74809) $\star$[Publication Link](https://www.cambridge.org/core/journals/politics-and-gender/article/conditional-effects-of-scientific-knowledge-gender-on-support-for-covid19-government-containment-policies-in-a-partisan-america/C4AEB27D4046433749A883941AC74809) $\star$[Manuscript Data Materials](mailto:carlos.algara@cgu.edu)*** </center><br/>
   <center> ***$\star$[Research accepted for Politics & Gender as part of the Cambridge Coronavirus Collection](https://www.cambridge.org/core/journals/politics-and-gender/virtual-special-issues/gender-politics-and-the-global-pandemic)$\star$***</center><br/>
   <center> ***$\star$[Research reprinted as part of the Public Health Emergency COVID-19 Initiative, U.S. National Library of Medicine: National Institutes of Health](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7684197/)$\star$***
