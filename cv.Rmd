@@ -1,6 +1,6 @@
 ---
 title: Curriculum Vitae
-date: April 23, 2024
+date: April 30, 2024
 share: FALSE
 output: html_document
 ---
