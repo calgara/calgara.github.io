@@ -56,12 +56,47 @@ gtag('config', 'UA-100362112-1');
   <br/>
   <br/>
   <center>
+  *Distribution of National & State Institutional Job Approval, 2006-2020* <br> 
+![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/histogram_state_mrp_estimates.png "Institutional Job Approval"){ width=60% }
+  </center><br/>  
+  <center> **The Role of State & National Institutional Evaluations in Fostering Collective Accountability Across the U.S. States** </center>
+  <center> **With [Alexander Specht](https://www.uwyo.edu/economics/faculty-staff/cbea-researchers/alexander-specht.html), University of Wyoming** </center><br/>
+  <center> ***$\star$[Manuscript Forthcoming at Political Research Quarterly]() $\star$ <br/> [Publication Link]() $\star$[Manuscript Data Materials](https://doi.org/10.7910/DVN/KI4UXA)***</center><br/>
+          *Abstract:* 		Theories of collective accountability in American elections center on the ability, and willingness, of voters to hold legislators accountable for the job performance of the president and his party in Congress. While this work finds that legislators pay an electoral penalty for low institutional approval ratings under their party’s control, little is known whether this form of collective accountability translates to the state legislative context. We argue that collective accountability in state legislative elections follows a two-tiered approach, with state legislators being held accountable for national and state policymaking institutions. Using new state-level measures of institutional approval for national and state institutions, along with voter-level data from the 2007-2020 Cooperative Election Study, we find that presidential approval is the principal growing motivator of state legislative partisan choice with other policymaking institutions playing a minimal role, at best. These findings suggest that the electoral fortune of state legislative candidates, and state parties, are largely and increasingly determined by national forces outside of the purview of state-level policymaking institutions.  
+  <br/>
+  <br/>
+  <center>
+*The Decline of Quality Challengers in U.S. House \& Senate Elections* <br> 
+![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/quality_challengers.png "Quality Challengers"){ width=70% }
+  </center><br/>  
+  <center> **Do Quality Candidates and Incumbents Still Matter in the Partisan World? Comparing Trends & Relationship Between Candidate Differentials and Congressional Election Outcomes, 1900-2022** </center>
+  <center> **With [Byengseon Bae](https://www.cgu.edu/school/ssspe/division-of-politics-economics/), Graduate Student, Department of Politics & Government, Claremont Graduate University** </center><br/>
+  <center> ***$\star$[Manuscript Forthcoming in the Journal of Political Marketing]() $\star$ <br/> [Publication Link]() $\star$[Manuscript Data Materials](mailto:carlos.algara@cgu.edu)***<br/>
+  <center> ***$\star$[Research featured in The Washington Post (December 7, 2022)](https://www.washingtonpost.com/politics/2022/12/07/walker-warnock-senate-democrats-republicans/)$\star$***
+  </center><br/>
+          *Abstract:* The increase in elite-level polarization and changing partisan nature of elections to the U.S. House led scholars to posit that candidate characteristics are minor considerations in determining these election outcomes. However, it is not clear if these trends extend to the U.S. Senate or if candidate considerations have lost the relatively minor predictive power they exhibited during the 2010s, particularly as partisanship continued to rise as a predictor of election outcomes. Using historical data on elections to the U.S. House and Senate from 1900 to the recent 2022 midterm elections, we test whether the incumbency advantage and candidate quality differentials are still salient predictors of congressional elections. We find that the incumbency advantage largely disappeared as a salient component of election outcomes for both chambers as partisanship increasingly shapes these outcomes. By contrast, we find that candidate quality differentials, while waning, still can play a considerable role in shaping congressional election outcomes, particularly in the Senate. We conclude by showing that the declining emergence of quality candidates may have played a pivotal role during the 2022 election cycle by costing Republicans control of the U.S. Senate.  
+  <br/>
+  <br/>
+  <center>
+  *Monthly Congressional Generic Ballot, 1959-2020* <br> 
+![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/maj_party_generic_leads.png "Majority Party Generic Ballot"){ width=60% }
+  </center><br/>  
+  <center> **Dynamics of Partisan Competition for Legislative Majorities in the U.S. House & Senate, 1959–2020** </center>
+  <br/>
+  <center> ***$\star$[Manuscript Published at American Politics Research](https://journals.sagepub.com/doi/10.1177/1532673X241263091) $\star$ <br/> [Publication Link](https://journals.sagepub.com/doi/10.1177/1532673X241263091) $\star$[Manuscript Data Materials](mailto:carlos.algara@cgu.edu)***<br/>
+  <center> ***$\star$[Research featured in The New Yorker](https://nymag.com/intelligencer/2022/03/bidens-war-bounce-isnt-big-enough-to-save-the-midterms.html)$\star$***<br/>
+  <center>
+  ***$\star$[Research featured in Vox](https://www.vox.com/22899204/midterm-elections-president-biden-thermostatic-opinion)$\star$***</center><br/>
+          *Abstract:* 		Theories of collective accountability in American elections center on the ability, and willingness, of voters to hold legislators accountable for the job performance of the president and his party in Congress. While this work finds that legislators pay an electoral penalty for low institutional approval ratings under their party’s control, little is known whether this form of collective accountability translates to the state legislative context. We argue that collective accountability in state legislative elections follows a two-tiered approach, with state legislators being held accountable for national and state policymaking institutions. Using new state-level measures of institutional approval for national and state institutions, along with voter-level data from the 2007-2020 Cooperative Election Study, we find that presidential approval is the principal growing motivator of state legislative partisan choice with other policymaking institutions playing a minimal role, at best. These findings suggest that the electoral fortune of state legislative candidates, and state parties, are largely and increasingly determined by national forces outside of the purview of state-level policymaking institutions.  
+  <br/>
+  <br/>
+  <center>
 *Additive Effect of Candidate Attributes on Probability of Candidate Choice* <br> 
 ![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/candidate_unconditional.png "Additive Effect of Candidate Attributes"){ width=60% }
   </center><br/>  
   <center> **The Greater Effects of Sexual Harassment: A Conjoint Analysis Assessing Variation in Political Scandal Effects on Candidate Evaluations in the United Kingdom** </center>
   <center> **With [Tzu-Ping Liu](https://tzuliu.github.io/tpphd/), University of Taipei** </center><br/>
-  <center> ***$\star$[Manuscript Forthcoming at Sexuality Research & Social Policy]() $\star$ <br/> [Publication Link]() $\star$[Manuscript Data Materials](mailto:carlos.algara@cgu.edu)***
+  <center> ***$\star$[Manuscript Published at Sexuality Research & Social Policy]() $\star$ <br/> [Publication Link](https://link.springer.com/article/10.1007/s13178-024-00978-5) $\star$[Manuscript Data Materials](mailto:carlos.algara@cgu.edu)***
   </center><br/>
           *Abstract:* While the literature largely agrees that candidates are electorally punished for political scandals, it is unclear whether citizens differentiate between varying types of scandals, limiting our collective understanding of whether certain types of scandals are more salient in the eyes of citizens. To overcome this gap, we argue that citizens not only differentiate between types of scandals, but they also perceive sexual harassment to be a far worse scandal than other types of scandals, such as plagiarism and corruption. Using a conjoint experiment to simultaneously estimate the effect of differing scandals on candidate evaluations in the United Kingdom, we find strong evidence that involvement in sexual harassment scandals lowers candidate support to a greater degree than other types of scandals and is conditional while voters and candidates are both male. These results suggest that citizens do strategically punish candidates for the substance of their scandals rather than the mere presence of scandal.  
   <br/>
@@ -76,18 +111,6 @@ gtag('config', 'UA-100362112-1');
   <center> ***$\star$[Research featured as part of 30th Anniversary Special Issue Commerating The Legislative Leviathan (Cox & McCubbins 1993)](https://www.nowpublishers.com/PIP?vol=4)$\star$***
   </center><br/>
           *Abstract:* Members and congressional parties go to great lengths to signal bipartisanship to voters, believing they will be electorally rewarded for cooperating with the other party. However, the House majority party also has an incentive to enact its preferred, party-oriented policy program and obtaining minority party support requires legislative compromise. We theorize that electorally strong majority parties are relatively unconcerned about their public support, and are thus more willing to pass partisan bills. When the majority party’s public support is tenuous, it moderates bills to receive minority support and reap electoral benefits from bipartisanship. Using time-series data of public opinion polling and measures of bipartisanship in Congress, we find support for this claim. We also find that salient bills increase the strength of the relationship between majority party electoral standing and bill extremity. Finally, our results demonstrate the extent to which the majority party is electorally risk averse; proximity to an election does not change the relationship between electoral standing and bipartisanship on passage. Our results speak to the ability of the majority party to set the level of bipartisanship within the House and the inherent trade-off between dramatic policy change and public support.    
-  <br/>
-  <br/>
-  <center>
-*The Decline of Quality Challengers in U.S. House \& Senate Elections* <br> 
-![alt text](/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/quality_challengers.png "Quality Challengers"){ width=70% }
-  </center><br/>  
-  <center> **Do Quality Candidates and Incumbents Still Matter in the Partisan World? Comparing Trends & Relationship Between Candidate Differentials and Congressional Election Outcomes, 1900-2022** </center>
-  <center> **With [Byengseon Bae](https://www.cgu.edu/school/ssspe/division-of-politics-economics/), Graduate Student, Department of Politics & Government, Claremont Graduate University** </center><br/>
-  <center> ***$\star$[Manuscript Forthcoming in the Journal of Political Marketing]() $\star$ <br/> [Publication Link]() $\star$[Manuscript Data Materials](mailto:carlos.algara@cgu.edu)***<br/>
-  <center> ***$\star$[Research featured in The Washington Post (December 7, 2022)](https://www.washingtonpost.com/politics/2022/12/07/walker-warnock-senate-democrats-republicans/)$\star$***
-  </center><br/>
-          *Abstract:* The increase in elite-level polarization and changing partisan nature of elections to the U.S. House led scholars to posit that candidate characteristics are minor considerations in determining these election outcomes. However, it is not clear if these trends extend to the U.S. Senate or if candidate considerations have lost the relatively minor predictive power they exhibited during the 2010s, particularly as partisanship continued to rise as a predictor of election outcomes. Using historical data on elections to the U.S. House and Senate from 1900 to the recent 2022 midterm elections, we test whether the incumbency advantage and candidate quality differentials are still salient predictors of congressional elections. We find that the incumbency advantage largely disappeared as a salient component of election outcomes for both chambers as partisanship increasingly shapes these outcomes. By contrast, we find that candidate quality differentials, while waning, still can play a considerable role in shaping congressional election outcomes, particularly in the Senate. We conclude by showing that the declining emergence of quality candidates may have played a pivotal role during the 2022 election cycle by costing Republicans control of the U.S. Senate.  
   <br/>
   <br/>
   <center>
