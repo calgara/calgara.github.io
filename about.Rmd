@@ -46,7 +46,7 @@ output: html_document
 ```{r echo=FALSE, fig.align="center",  out.width = "90%", fig.cap="*El Dorado County, California.*"}
 knitr::include_graphics("/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/me_hiking.jpg")
 ```
-<a href = "https://twitter.com/algaraca"><img src="/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/twitter.png" alt="Twitter Logo" style="width:125px;" align ="center"></a>
+<!-- <a href = "https://twitter.com/algaraca"><img src="/Users/caalgara/Dropbox/Github_Website/calgara.github.io/figures/twitter.png" alt="Twitter Logo" style="width:125px;" align ="center"></a>-->
 </div>
 
 
