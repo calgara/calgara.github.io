@@ -524,7 +524,6 @@ cces$weight <- as.numeric(cces$weight)
 cces$pres_approve_clean_factor <- factor(cces$pres_approve_clean,levels=c("Strongly disapprove","Somewhat disapprove","Somewhat approve","Strongly approve"))
 
 library(mlogit)
-library(mnlogit)
 library(clusterSEs)
 #cluster.bs.mlogit(model,data,~chid,ci.level=0.95,cluster.se=F)
 cces$constant <- 1
