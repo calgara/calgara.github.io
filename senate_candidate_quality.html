@@ -24,6 +24,7 @@
     --tip-bg: #1D2026; --focus: #7FA8F3;
   }
   * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
   body { background: var(--bg); color: var(--text); font-family: Georgia, "Times New Roman", Times, serif; font-size: 16px; line-height: 1.55; margin: 0; }
   .sans { font-family: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif; }
   h1, h2, h3, h4, nav, .seg, .btn, th { font-family: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif; }
@@ -73,6 +74,22 @@
   .toast { font-size: 14px; color: var(--muted); min-height: 1.4em; }
 
   .tbl-wrap { overflow-x: auto; }
+  .ex-tools { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: flex-end; padding: 10px 14px; border-bottom: 1px solid var(--rule); }
+  .ex-tools input, .ex-tools select { font: inherit; font-size: 14px; padding: 6px 8px; border: 1px solid var(--rule); border-radius: 4px; background: var(--bg); color: var(--text); }
+  .ex-tools input[type="text"] { min-width: 280px; }
+  .ex-tools input[type="number"] { width: 92px; }
+  .ex-tools .yrs { display: flex; gap: 6px; align-items: center; }
+  .ex-table { overflow: auto; max-height: 560px; border-bottom: 1px solid var(--rule); }
+  .ex-table table { width: max-content; min-width: 100%; }
+  .ex-table th { position: sticky; top: 0; background: var(--bg-soft); cursor: pointer; white-space: nowrap; user-select: none; border-bottom: 1px solid var(--rule); }
+  .ex-table th:hover { color: var(--blue); }
+  .ex-table th.asc::after { content: " \25B2"; font-size: 10px; } .ex-table th.desc::after { content: " \25BC"; font-size: 10px; }
+  .ex-table td { white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .ex-table td.num { text-align: right; }
+  .ex-table mark { background: #FFF3B0; color: inherit; padding: 0 1px; }
+  .ex-foot { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; justify-content: space-between; padding: 10px 14px; font-size: 14px; color: var(--muted); }
+  .pager { display: inline-flex; gap: 8px; align-items: center; }
+  .btn.small { padding: 4px 10px; font-size: 13px; }
   table { border-collapse: collapse; width: 100%; font-size: 14px; }
   th, td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--rule); vertical-align: top; }
   th { font-size: 12.5px; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
@@ -98,6 +115,7 @@
       <a href="#trends">Quality over time</a>
       <a href="#categories">Experience categories</a>
       <a href="#supply">Candidate supply</a>
+      <a href="#explore">Explore</a>
       <a href="#download">Download</a>
       <a href="#codebook">Codebook</a>
       <a href="#about">About</a>
@@ -206,6 +224,35 @@
   </div>
 </section>
 
+<section id="explore">
+  <h1 class="page-title">Explore the Data</h1>
+  <p class="lede">Pick a dataset, then search or filter its rows. Click a column heading to sort. The download gives you exactly the rows you have filtered.</p>
+  <div class="panel">
+    <div class="controls">
+      <div class="ctl"><span>Dataset</span>
+        <div class="seg" role="group" aria-label="Dataset" id="x_file">
+          <button data-v="cand" aria-pressed="true">Candidates, 1980–2024</button>
+          <button data-v="elec" aria-pressed="false">Party primaries, 1980–2024</button>
+          <button data-v="races" aria-pressed="false">General-election races, 1914–2024</button>
+        </div></div>
+    </div>
+    <div class="ex-tools">
+      <div class="ctl"><span>Search all columns</span><input type="text" id="x_q" placeholder="e.g. gruening · AK · State Legislator · 1996" autocomplete="off"></div>
+      <div class="ctl"><span>Years</span><div class="yrs"><input type="number" id="x_y0" placeholder="from"> <span>–</span> <input type="number" id="x_y1" placeholder="to"></div></div>
+      <div class="ctl"><span>State</span><select id="x_state"><option value="">All states</option></select></div>
+      <div class="ctl" id="x_party_wrap"><span>Party</span><select id="x_party"><option value="">Both parties</option><option value="Democratic">Democratic</option><option value="Republican">Republican</option></select></div>
+      <div class="ctl"><span>&nbsp;</span><button class="btn secondary" id="x_reset" type="button">Reset</button></div>
+    </div>
+    <div class="ex-table"><table id="x_table" aria-label="Filtered rows"></table></div>
+    <div class="ex-foot">
+      <span id="x_count"></span>
+      <span class="pager"><button class="btn secondary small" id="x_prev" type="button">&lsaquo; Prev</button><span id="x_page"></span><button class="btn secondary small" id="x_next" type="button">Next &rsaquo;</button></span>
+      <button class="btn" id="x_dl" type="button">Download filtered rows (CSV)</button>
+    </div>
+    <p class="note" style="padding: 0 14px 12px; margin: 0;">Search matches any column; several words must all match. Blanks are missing values. Variable definitions are in the <a href="#codebook">codebook</a>.</p>
+  </div>
+</section>
+
 <section id="download">
   <h1 class="page-title">Download the Data</h1>
   <p class="lede">The same three files posted with the article's replication package, trimmed to the variables used in the published analysis, as CSV. Each download asks you to confirm before saving.</p>
@@ -229,7 +276,6 @@
   <h1 class="page-title">About the Data</h1>
   <div class="about">
     <div>
-      <span class="status">Draft for coauthor review</span>
       <h3>The Rise of Amateur Candidate Pipelines &amp; Declining Value of Candidate Experience in U.S. Senate Primaries, 1980–2024</h3>
       <p><strong>Authors:</strong> Carlos Algara, Byengseon Bae, Isaac Hale, Michael Heseltine, and Evan Lieber. <em>Legislative Studies Quarterly.</em></p>
       <p>These are the cleaned analysis data behind the article: every major-party candidate who filed with the Federal Election Commission for the U.S. Senate from 1980 to 2024, coded for most recent prior elected office, primary participation and outcomes, and pre-primary fundraising; a primary-level file with candidate counts; and a general-election file (1914–2024) with nominee experience.</p>
@@ -10737,6 +10783,123 @@
       toast.textContent = code === "declined" ? "Save cancelled." : code === "rate_limited" ? "A save prompt is already open. Try again in a moment." : "This file could not be saved in this view. The same file is on Dataverse.";
     }
   }));
+
+  async function saveFile(filename, data) {
+    if (!downloads) {
+      if (inClaude) { toast.textContent = "Downloads are unavailable in this view."; return; }
+      try { browserSave(filename, data); toast.textContent = "Downloading " + filename + "."; }
+      catch (e) { toast.textContent = "Your browser blocked the download."; }
+      return;
+    }
+    toast.textContent = "Waiting for you to confirm the save…";
+    try { await downloads.save({ filename, data }); toast.textContent = "Saved " + filename + "."; }
+    catch (err) { const code = err && err.code; toast.textContent = code === "declined" ? "Save cancelled." : code === "rate_limited" ? "A save prompt is already open. Try again in a moment." : "This file could not be saved in this view."; }
+  }
+
+  // ---- data explorer ---------------------------------------------------------------
+  function parseCSV(text) {
+    const rows = []; let row = [], field = "", q = false;
+    for (let i = 0; i < text.length; i++) {
+      const c = text[i];
+      if (q) { if (c === '"') { if (text[i + 1] === '"') { field += '"'; i++; } else q = false; } else field += c; }
+      else if (c === '"') q = true;
+      else if (c === ",") { row.push(field); field = ""; }
+      else if (c === "\n") { row.push(field); rows.push(row); row = []; field = ""; }
+      else if (c !== "\r") field += c;
+    }
+    if (field.length || row.length) { row.push(field); rows.push(row); }
+    return rows;
+  }
+  const XDS = {
+    cand:  { id: "csv_cand",  file: "senate_candidates_cleaned_1980_2024", year: "fecyear", party: true },
+    elec:  { id: "csv_elec",  file: "senate_elections_cleaned_1980_2024",  year: "fecyear", party: true },
+    races: { id: "csv_races", file: "clean_senate_races_1914_2024",        year: "year",    party: false }
+  };
+  const xcache = {};
+  function xload(key) {
+    if (!xcache[key]) {
+      const rows = parseCSV(document.getElementById(XDS[key].id).textContent.trim());
+      const header = rows.shift();
+      const numeric = header.map((_, j) => rows.every(r => r[j] === "" || (r[j] !== "" && !isNaN(r[j]))));
+      xcache[key] = { header, rows, numeric, yi: header.indexOf(XDS[key].year), si: header.indexOf("state"), pi: header.indexOf("party"),
+                      lower: rows.map(r => r.join(" \u0001 ").toLowerCase()) };
+    }
+    return xcache[key];
+  }
+  const xs = { file: "cand", q: "", y0: "", y1: "", state: "", party: "", sort: -1, dir: 1, page: 0, per: 25 };
+  const X = { q: $("#x_q"), y0: $("#x_y0"), y1: $("#x_y1"), state: $("#x_state"), party: $("#x_party"), partyWrap: $("#x_party_wrap"),
+              table: $("#x_table"), count: $("#x_count"), page: $("#x_page"), prev: $("#x_prev"), next: $("#x_next") };
+  function xsetup() {
+    const d = xload(xs.file);
+    const states = [...new Set(d.rows.map(r => r[d.si]))].filter(Boolean).sort();
+    X.state.innerHTML = '<option value="">All states</option>' + states.map(st => `<option value="${st}">${st}</option>`).join("");
+    const yrs = d.rows.map(r => +r[d.yi]).filter(Number.isFinite);
+    X.y0.placeholder = Math.min(...yrs); X.y1.placeholder = Math.max(...yrs);
+    X.partyWrap.hidden = !XDS[xs.file].party;
+    xs.q = ""; xs.y0 = ""; xs.y1 = ""; xs.state = ""; xs.party = ""; xs.sort = -1; xs.dir = 1; xs.page = 0;
+    X.q.value = ""; X.y0.value = ""; X.y1.value = ""; X.state.value = ""; X.party.value = "";
+    xrender();
+  }
+  function xfiltered() {
+    const d = xload(xs.file);
+    const terms = xs.q.toLowerCase().split(/\s+/).filter(Boolean);
+    const y0 = xs.y0 === "" ? -Infinity : +xs.y0, y1 = xs.y1 === "" ? Infinity : +xs.y1;
+    let idx = [];
+    for (let i = 0; i < d.rows.length; i++) {
+      const r = d.rows[i];
+      if (terms.length && !terms.every(t => d.lower[i].includes(t))) continue;
+      const y = +r[d.yi]; if (y < y0 || y > y1) continue;
+      if (xs.state && r[d.si] !== xs.state) continue;
+      if (xs.party && XDS[xs.file].party && r[d.pi] !== xs.party) continue;
+      idx.push(i);
+    }
+    if (xs.sort >= 0) {
+      const j = xs.sort, num = d.numeric[j], dir = xs.dir;
+      idx.sort((a, b) => {
+        const va = d.rows[a][j], vb = d.rows[b][j];
+        if (va === "" && vb === "") return 0; if (va === "") return 1; if (vb === "") return -1;
+        return num ? dir * (+va - +vb) : dir * va.localeCompare(vb);
+      });
+    }
+    return idx;
+  }
+  function esc(t) { return t.replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])); }
+  function xrender() {
+    const d = xload(xs.file), idx = xfiltered();
+    const pages = Math.max(1, Math.ceil(idx.length / xs.per));
+    xs.page = Math.min(xs.page, pages - 1);
+    const terms = xs.q.toLowerCase().split(/\s+/).filter(Boolean);
+    const hl = (t) => { let h = esc(t); if (!terms.length) return h;
+      for (const term of terms) { const re = new RegExp(term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "ig"); h = h.replace(re, m => "<mark>" + m + "</mark>"); }
+      return h; };
+    let html = "<thead><tr>" + d.header.map((h, j) => `<th data-j="${j}" class="${xs.sort === j ? (xs.dir > 0 ? "asc" : "desc") : ""}" title="Sort by ${esc(h)}">${esc(h)}</th>`).join("") + "</tr></thead><tbody>";
+    const slice = idx.slice(xs.page * xs.per, (xs.page + 1) * xs.per);
+    for (const i of slice) html += "<tr>" + d.rows[i].map((v, j) => `<td class="${d.numeric[j] ? "num" : ""}">${hl(v)}</td>`).join("") + "</tr>";
+    if (!slice.length) html += `<tr><td colspan="${d.header.length}" style="color:var(--muted)">No rows match these filters.</td></tr>`;
+    X.table.innerHTML = html + "</tbody>";
+    X.count.textContent = `${fmtN(idx.length)} of ${fmtN(d.rows.length)} rows`;
+    X.page.textContent = `Page ${xs.page + 1} of ${pages}`;
+    X.prev.disabled = xs.page === 0; X.next.disabled = xs.page >= pages - 1;
+  }
+  X.table.addEventListener("click", e => { const th = e.target.closest("th"); if (!th) return; const j = +th.dataset.j;
+    if (xs.sort === j) xs.dir = -xs.dir; else { xs.sort = j; xs.dir = 1; } xs.page = 0; xrender(); });
+  let xtimer; X.q.addEventListener("input", () => { clearTimeout(xtimer); xtimer = setTimeout(() => { xs.q = X.q.value; xs.page = 0; xrender(); }, 150); });
+  X.y0.addEventListener("input", () => { xs.y0 = X.y0.value; xs.page = 0; xrender(); });
+  X.y1.addEventListener("input", () => { xs.y1 = X.y1.value; xs.page = 0; xrender(); });
+  X.state.addEventListener("change", () => { xs.state = X.state.value; xs.page = 0; xrender(); });
+  X.party.addEventListener("change", () => { xs.party = X.party.value; xs.page = 0; xrender(); });
+  X.prev.addEventListener("click", () => { xs.page--; xrender(); });
+  X.next.addEventListener("click", () => { xs.page++; xrender(); });
+  $("#x_reset").addEventListener("click", xsetup);
+  seg("#x_file", v => { xs.file = v; xsetup(); });
+  $("#x_dl").addEventListener("click", () => {
+    const d = xload(xs.file), idx = xfiltered();
+    const cell = v => /[",\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v;
+    const csv = [d.header.map(cell).join(",")].concat(idx.map(i => d.rows[i].map(cell).join(","))).join("\n") + "\n";
+    const suffix = (xs.q || xs.y0 || xs.y1 || xs.state || xs.party) ? "_filtered" : "";
+    saveFile(XDS[xs.file].file + suffix + ".csv", csv);
+  });
+  xsetup();
 
   // ---- nav highlight + theme redraw --------------------------------------------------
   const links = [...document.querySelectorAll("nav a")].filter(a => a.getAttribute("href").startsWith("#"));
