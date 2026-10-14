@@ -13,6 +13,8 @@ navbar:
       href: media.html
     - text: Publications
       href: working_papers.html
+    - text: U.S. Senate Candidate Data
+      href: senate_candidate_quality.html
   - text: Teaching
     menu:
     - text: Teaching Resources
